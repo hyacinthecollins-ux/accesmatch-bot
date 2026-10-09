@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
-AccesMatch MatchDay — affiches de match generees par IA + posts Buffer automatiques.
+AccesMatch MatchDay — affiches de match (logos officiels des clubs + VS) + posts Buffer automatiques.
 
 Ce que fait le script a chaque passage (toutes les 30 min via GitHub Actions) :
   1. Interroge football-data.org : matchs des 10 clubs suivis (prochaines 36 h + resultats recents)
-  2. Genere une affiche par match avec l'API images d'OpenAI (le moteur d'images de ChatGPT)
+  2. Cree une affiche par match : logos officiels des deux clubs, VS, date, competition, heure (gratuit, sans IA)
   3. Programme sur Buffer (@accesmatch) un post avec l'affiche, 1 h avant le coup d'envoi
   4. Apres le match : poste le score final avec une affiche "score final"
   5. Anti-doublons (state.json) : un match = une affiche = un post
@@ -15,10 +15,11 @@ Commandes :
   python3 matchday.py publish     # envoie les affiches pretes vers Buffer
   python3 matchday.py all         # prepare + publish (usage local)
   python3 matchday.py all --dry-run   # affiche ce qui serait fait, sans rien depenser ni publier
-  python3 matchday.py --sample    # genere UNE affiche d'essai (cout : quelques centimes)
+  python3 matchday.py --sample    # genere UNE affiche d'essai (gratuit)
 
 Variables d'environnement (secrets GitHub) :
-  FOOTBALL_DATA_TOKEN, OPENAI_API_KEY, BUFFER_API_KEY
+  FOOTBALL_DATA_TOKEN, BUFFER_API_KEY, TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID
+  (OPENAI_API_KEY n'est plus necessaire : seulement si POSTER_MODE=ai)
 """
 
 import argparse
@@ -33,6 +34,8 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 import requests
+
+import poster
 
 # ============================================================
 # CONFIGURATION
@@ -60,6 +63,10 @@ TELEGRAM_BUTTON_TEXT = "🎁 Obtenir mon essai gratuit"
 TELEGRAM_MIN_BEFORE_KICKOFF_MIN = 5   # on n'annonce plus un match a moins de 5 min du coup d'envoi
 
 # Modele d'images OpenAI (celui de ChatGPT). Qualite : low / medium / high
+# Mode d'affiche : "render" = logos officiels + VS (gratuit, par defaut) ; "ai" = ancienne version OpenAI
+POSTER_MODE = (os.environ.get("POSTER_MODE") or "render").strip().lower()
+# Change quand le design change : les affiches pas encore publiees sont alors refaites automatiquement
+DESIGN_VERSION = "crests-v1" if POSTER_MODE == "render" else "ai-v1"
 IMAGE_MODEL = os.environ.get("OPENAI_IMAGE_MODEL", "gpt-image-1")
 IMAGE_SIZE = os.environ.get("OPENAI_IMAGE_SIZE", "1024x1536")
 FORCE_QUALITY = os.environ.get("OPENAI_IMAGE_QUALITY", "")  # vide = auto (high pour gros matchs)
@@ -242,14 +249,24 @@ def team_entry(team):
     return None
 
 
+def crest_urls(team):
+    tid = team.get("id")
+    urls = [team.get("crest")]
+    if tid:
+        urls += [f"https://crests.football-data.org/{tid}.png", f"https://crests.football-data.org/{tid}.svg"]
+    return [u for u in urls if u]
+
+
 def side(team):
     e = team_entry(team)
     if e:
         return dict(tracked=True, key=e["key"], short=e["short"], long=e["long"], colors=e["colors"],
-                    landmark=e["landmark"], stadium=e["stadium"], tag=e["tag"])
+                    landmark=e["landmark"], stadium=e["stadium"], tag=e["tag"],
+                    id=team.get("id"), crest_urls=crest_urls(team))
     short = (team.get("shortName") or team.get("name") or "").strip()
     return dict(tracked=False, key=None, short=short.upper(), long=team.get("name") or short,
-                colors=None, landmark=None, stadium=None, tag=None)
+                colors=None, landmark=None, stadium=None, tag=None,
+                id=team.get("id"), crest_urls=crest_urls(team))
 
 
 def parse_match(m):
@@ -403,6 +420,22 @@ def generate_image(prompt, quality, out_path):
     data = r.json()["data"][0]
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_bytes(base64.b64decode(data["b64_json"]))
+
+
+def make_poster(m, kind, out_path):
+    """Cree l'affiche (logos officiels + VS) ou, si POSTER_MODE=ai, la version OpenAI."""
+    if POSTER_MODE == "ai":
+        prompt = build_preview_prompt(m) if kind == "preview" else build_result_prompt(m)
+        generate_image(prompt, quality_for(m), out_path)
+        return
+    h, a = m["home"], m["away"]
+    poster.render_poster(
+        out_path, kind,
+        {"id": h.get("id"), "short": h["short"], "crest_urls": h.get("crest_urls")},
+        {"id": a.get("id"), "short": a["short"], "crest_urls": a.get("crest_urls")},
+        fr_date(m["kickoff"]), m["comp_poster"],
+        time_text=fr_hour(m["kickoff"]).upper(),
+        score=(m["hs"], m["as_"]) if kind == "result" else None)
 
 
 # ============================================================
@@ -601,6 +634,28 @@ def prepare(raw_matches, state, now, dry_run=False):
     today = now.date().isoformat()
     images_today = sum(1 for it in items.values() if it.get("created", "")[:10] == today)
 
+    # 0) Nouveau design : les affiches pas encore publiées (ancien design) sont retirées puis refaites
+    for key, it in list(items.items()):
+        if it.get("design") == DESIGN_VERSION or it["status"] not in ("poster_ready", "scheduled"):
+            continue
+        if it.get("tg") in ("sent",) or parse_iso(it.get("due") or it["kickoff"]) <= now:
+            continue  # déjà parti (X ou Telegram) : on ne touche pas
+        log(f"♻️  {it['label']} : nouveau design → l'ancienne affiche est refaite")
+        if dry_run:
+            continue
+        if it["status"] == "scheduled" and it.get("post_id"):
+            try:
+                buffer_delete_post(it["post_id"])
+            except RuntimeError as e:
+                log(f"   ⚠️ suppression Buffer impossible, on réessaie au prochain passage : {e}")
+                continue
+        old = ROOT / it["poster"] if it.get("poster") else None
+        if old and old.exists():
+            old.unlink()
+        del items[key]
+    if not dry_run:
+        save_state(state)
+
     # 1) Changements : horaire modifié / match reporté ou annulé
     for m in matches:
         key = f"p{m['id']}"
@@ -648,19 +703,18 @@ def prepare(raw_matches, state, now, dry_run=False):
             if dry_run:
                 log("   texte :\n      " + build_post_text(m, kind).replace("\n", "\n      "))
                 due = due_for(kind, m["kickoff"], now)
-                log(f"   publication : {due or 'immédiate'}  | qualité image : {quality_for(m)}")
+                log(f"   publication : {due or 'immédiate'}  | affiche : {POSTER_MODE}")
                 created += 1
                 continue
             if with_image:
-                prompt = build_preview_prompt(m) if kind == "preview" else build_result_prompt(m)
                 try:
-                    generate_image(prompt, quality_for(m), ROOT / rel)
-                except RuntimeError as e:
-                    log(f"   ❌ génération image échouée : {e}")
+                    make_poster(m, kind, ROOT / rel)
+                except Exception as e:  # noqa: BLE001 - une affiche ratée ne doit pas bloquer les autres
+                    log(f"   ❌ création de l'affiche échouée : {e}")
                     continue
             items[key] = dict(kind=kind, match_id=m["id"], label=label, kickoff=iso(m["kickoff"]),
                               status="poster_ready", poster=rel, post_id=None, due=None,
-                              created=iso(now), fails=0)
+                              created=iso(now), fails=0, design=DESIGN_VERSION)
             save_state(state)
             created += 1
             images_today += 1
@@ -745,8 +799,8 @@ def sample(raw_matches, now):
                    away=side({"id": 516, "name": "Olympique de Marseille"}), hs=None, as_=None)]
     m = sorted(ms, key=lambda x: x["kickoff"])[0]
     out = ROOT / "sample-poster.jpg"
-    log(f"🎨 Affiche d'essai : {m['home']['short']} VS {m['away']['short']} (qualité {quality_for(m)})…")
-    generate_image(build_preview_prompt(m), quality_for(m), out)
+    log(f"🎨 Affiche d'essai : {m['home']['short']} VS {m['away']['short']} (mode {POSTER_MODE})…")
+    make_poster(m, "preview", out)
     log(f"✅ Enregistrée : {out}")
     log("Texte du post qui irait avec :\n\n" + build_post_text(m, "preview"))
 
@@ -757,7 +811,7 @@ def sample(raw_matches, now):
 def main(argv=None):
     ap = argparse.ArgumentParser(description="AccesMatch MatchDay")
     ap.add_argument("mode", nargs="?", choices=["prepare", "publish", "all"], default="all")
-    ap.add_argument("--dry-run", action="store_true", help="n'appelle ni OpenAI ni Buffer, affiche le plan")
+    ap.add_argument("--dry-run", action="store_true", help="n'envoie rien (ni Buffer ni Telegram), affiche le plan")
     ap.add_argument("--sample", action="store_true", help="génère une seule affiche d'essai")
     ap.add_argument("--mock-file", help="(tests) fichier JSON de matchs à la place de l'API")
     ap.add_argument("--now", help="(tests) date/heure UTC simulée, ex 2026-10-10T07:00:00Z")
