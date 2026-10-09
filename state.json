@@ -83,10 +83,10 @@
       "match_id": 564702,
       "label": "REAL MADRID-VILLARREAL",
       "kickoff": "2026-10-10T19:00:00Z",
-      "status": "poster_ready",
+      "status": "scheduled",
       "poster": "posters/p564702-20261010.jpg",
-      "post_id": null,
-      "due": null,
+      "post_id": "6ac92c44d9cab260a79b4ee4",
+      "due": "2026-10-10T18:00:00Z",
       "created": "2026-10-09T18:02:37Z",
       "fails": 0,
       "design": "crests-v1"
