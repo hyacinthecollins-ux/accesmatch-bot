@@ -1,0 +1,60 @@
+name: AccesMatch MatchDay
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"   # toutes les 30 minutes
+  workflow_dispatch:          # bouton "Run workflow" pour lancer à la main
+
+permissions:
+  contents: write
+
+concurrency:
+  group: matchday
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: 1/ Matchs + affiches
+        run: python matchday.py prepare
+
+      - name: Sauvegarde des affiches (nécessaire pour que Buffer les récupère)
+        run: |
+          mkdir -p posters
+          git config user.name "accesmatch-bot"
+          git config user.email "accesmatch-bot@users.noreply.github.com"
+          git add posters state.json
+          if ! git diff --cached --quiet; then
+            git commit -m "affiches"
+            git pull --rebase
+            git push
+          fi
+
+      - name: 2/ Envoi vers Buffer
+        run: python matchday.py publish
+
+      - name: Sauvegarde de l'état
+        run: |
+          git add posters state.json
+          if ! git diff --cached --quiet; then
+            git commit -m "etat"
+            git pull --rebase
+            git push
+          fi
