@@ -259,9 +259,11 @@ def queue_stats():
         for e in data.get("edges") or []:
             node = e["node"]
             due = node.get("dueAt")
-            if due:
-                occupied.add(due[:16])
             vids = [a for a in node.get("assets") or [] if a.get("type") == "video"]
+            # Seules les VIDÉOS occupent un créneau : une affiche MatchDay à la même minute
+            # ne doit jamais décaler une vidéo (les deux peuvent partir en même temps).
+            if due and vids:
+                occupied.add(due[:16])
             if vids:
                 count += 1
                 for a in vids:
