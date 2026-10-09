@@ -1,0 +1,76 @@
+{
+  "items": {
+    "p560593": {
+      "kind": "preview",
+      "match_id": 560593,
+      "label": "ARSENAL-LEEDS UNITED",
+      "kickoff": "2026-10-10T11:30:00Z",
+      "status": "poster_ready",
+      "poster": "posters/p560593-20261010.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-10-09T16:36:02Z",
+      "fails": 0
+    },
+    "p565819": {
+      "kind": "preview",
+      "match_id": 565819,
+      "label": "AUGSBURG-BAYERN",
+      "kickoff": "2026-10-10T13:30:00Z",
+      "status": "poster_ready",
+      "poster": "posters/p565819-20261010.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-10-09T16:36:02Z",
+      "fails": 0
+    },
+    "p560595": {
+      "kind": "preview",
+      "match_id": 560595,
+      "label": "CHELSEA-BOURNEMOUTH",
+      "kickoff": "2026-10-10T14:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/p560595-20261010.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-10-09T16:36:02Z",
+      "fails": 0
+    },
+    "p560600": {
+      "kind": "preview",
+      "match_id": 560600,
+      "label": "MAN UNITED-TOTTENHAM",
+      "kickoff": "2026-10-10T16:30:00Z",
+      "status": "poster_ready",
+      "poster": "posters/p560600-20261010.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-10-09T16:36:02Z",
+      "fails": 0
+    },
+    "p564700": {
+      "kind": "preview",
+      "match_id": 564700,
+      "label": "BARÇA-GETAFE",
+      "kickoff": "2026-10-10T16:30:00Z",
+      "status": "poster_ready",
+      "poster": "posters/p564700-20261010.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-10-09T16:36:02Z",
+      "fails": 0
+    },
+    "p559672": {
+      "kind": "preview",
+      "match_id": 559672,
+      "label": "PSG-LE MANS",
+      "kickoff": "2026-10-10T18:45:00Z",
+      "status": "poster_ready",
+      "poster": "posters/p559672-20261010.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-10-09T16:36:02Z",
+      "fails": 0
+    }
+  }
+}
