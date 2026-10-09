@@ -41,9 +41,9 @@ ROOT = Path(__file__).resolve().parent
 POSTER_DIR = ROOT / "posters"
 STATE_FILE = ROOT / "state.json"
 
-FOOTBALL_DATA_TOKEN = os.environ.get("FOOTBALL_DATA_TOKEN", "")
-OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
-BUFFER_API_KEY = os.environ.get("BUFFER_API_KEY", "")
+FOOTBALL_DATA_TOKEN = os.environ.get("FOOTBALL_DATA_TOKEN", "").strip()
+OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "").strip()
+BUFFER_API_KEY = os.environ.get("BUFFER_API_KEY", "").strip()
 
 # Canal Buffer @accesmatch (id verifie via l'API Buffer)
 BUFFER_CHANNEL_ID = os.environ.get("BUFFER_CHANNEL_ID", "6ac7ca726a5c39ccb6535913")
@@ -52,8 +52,8 @@ BUFFER_URL = "https://api.buffer.com"
 TELEGRAM_URL = "t.me/accesmatch"
 
 # Telegram : meme affiche envoyee dans ton canal, avec un bouton vers ton DM (essai gratuit)
-TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
-TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID") or "@accesmatch"
+TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
+TELEGRAM_CHAT_ID = (os.environ.get("TELEGRAM_CHAT_ID") or "").strip() or "@accesmatch"
 # Ton lien de message prive (essai gratuit). A MODIFIER : https://t.me/TON_PSEUDO
 TELEGRAM_DM_URL = os.environ.get("TELEGRAM_DM_URL") or "https://t.me/EliteTVSupport"
 TELEGRAM_BUTTON_TEXT = "🎁 Obtenir mon essai gratuit"
