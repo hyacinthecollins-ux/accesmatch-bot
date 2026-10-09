@@ -5,9 +5,10 @@ AccesMatch VideoQueue — garde ta file Buffer pleine de vidéos, tout seul.
 Chaque jour, le robot :
   1. lit le catalogue de tes vidéos (catalog.json, hébergé sur Cloudflare R2)
   2. compte combien de vidéos sont déjà programmées dans la file Buffer de @accesmatch
-  3. ajoute les vidéos manquantes pour toujours avoir ~14 jours d'avance (4 posts/jour)
-     -> Buffer les place dans TES créneaux (9h15, 12h30, 18h30, 21h45), à la suite de ce qui existe
-  4. alterne les joueurs (jamais le même joueur 2 fois de suite) et glisse un CTA ~1 post sur 7
+  3. ajoute les vidéos manquantes pour toujours avoir ~14 jours d'avance (4 posts/jour),
+     dans tes créneaux (9h15, 12h30, 18h30, 21h45, heure de Paris), en comblant d'abord les trous
+  4. alterne les joueurs (jamais le même joueur 2 fois de suite) et applique le plan de CTA par créneau :
+       9h15  = vidéo seule | 12h30 = CTA "regarde ma bio" | 18h30 = lien Telegram en RÉPONSE | 21h45 = CTA bio
   5. t'alerte (le robot passe au rouge sur GitHub => email) quand il te reste moins de 14 jours de stock
 
 Commandes :
@@ -27,10 +28,11 @@ import random
 import re
 import sys
 import time
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 import requests
+from zoneinfo import ZoneInfo
 
 # ============================================================
 # CONFIGURATION
@@ -54,6 +56,14 @@ MAX_CONSECUTIVE_REJECTS = 3    # 3 refus d'affilée = problème général, on ar
 AVOID_LAST_PLAYERS = 3         # pas le même joueur dans les 3 derniers posts
 SHUFFLE_SEED = "accesmatch-v1"
 TWEET_MAX = 280
+
+POST_TZ = ZoneInfo("Europe/Paris")
+MIN_LEAD_MIN = 15              # un créneau doit être au moins 15 min dans le futur
+# Plan de CTA par créneau (heure de Paris) :
+#   none  = vidéo seule (le contenu qui fait grossir le compte)
+#   bio   = phrase d'accroche "regarde ma bio" (sans lien)
+#   reply = vidéo propre + lien Telegram dans une RÉPONSE (la portée de la vidéo est préservée)
+SLOT_PLAN = [("09:15", "none"), ("12:30", "bio"), ("18:30", "reply"), ("21:45", "bio")]
 
 
 def log(msg):
@@ -128,15 +138,28 @@ def clean_title(t):
     return re.sub(r"[ \t]{2,}", " ", t).strip()
 
 
-def build_text(v, counter, catalog):
-    every = catalog.get("cta_every", 7)
+def next_cta(state, kind, pool):
+    """CTA suivant dans une rotation mélangée : aucune phrase n'est répétée avant d'avoir fait tout le tour."""
+    if not pool:
+        return None
+    order = sorted(pool, key=lambda t: hashlib.sha1((t + SHUFFLE_SEED + kind).encode()).hexdigest())
+    key = f"cta_idx_{kind}"
+    idx = state.get(key, 0)
+    state[key] = idx + 1
+    return order[idx % len(order)]
+
+
+def build_post(v, kind, state, catalog):
+    """Retourne (texte du post, texte de la réponse ou None) selon le type de créneau."""
     title = clean_title(v["title"])
     tags = (v.get("hashtags") or "").strip()
-    kind, cta = "none", None
-    if every and (counter + 1) % every == 0 and catalog.get("ctas"):
-        rng = random.Random(f"cta-{counter}")
-        kind = "bio" if rng.random() < catalog.get("cta_bio_ratio", 0.7) else "direct"
-        cta = rng.choice(catalog["ctas"][kind])
+    cta = None
+    reply = None
+    ctas = catalog.get("ctas") or {}
+    if kind == "bio":
+        cta = next_cta(state, "bio", ctas.get("bio") or [])
+    elif kind == "reply":
+        reply = next_cta(state, "direct", ctas.get("direct") or [])
 
     def assemble(tag_list):
         parts = [title] + ([cta] if cta else []) + ([" ".join(tag_list)] if tag_list else [])
@@ -147,7 +170,37 @@ def build_text(v, counter, catalog):
     while len(text) > TWEET_MAX and tag_list:   # trop long : on retire des hashtags
         tag_list.pop()
         text = assemble(tag_list)
-    return text, kind
+    return text, reply
+
+
+# ============================================================
+# CRÉNEAUX (heure de Paris)
+# ============================================================
+def minute_key(dt):
+    return dt.astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M")
+
+
+def parse_iso(s):
+    return datetime.strptime(s[:16], "%Y-%m-%dT%H:%M").replace(tzinfo=timezone.utc)
+
+
+def kind_for_due(due_iso):
+    """Type de CTA prévu pour un post programmé à cette date (UTC) ; None si ce n'est pas un de nos créneaux."""
+    local = parse_iso(due_iso).astimezone(POST_TZ)
+    return dict(SLOT_PLAN).get(local.strftime("%H:%M"))
+
+
+def iter_free_slots(now, occupied):
+    """Prochains créneaux libres (UTC, type de CTA), dans l'ordre, en comblant les trous."""
+    earliest = now + timedelta(minutes=MIN_LEAD_MIN)
+    day = now.astimezone(POST_TZ).date()
+    for _ in range(3 * 365):
+        for hhmm, kind in SLOT_PLAN:
+            h, m = map(int, hhmm.split(":"))
+            dt = datetime(day.year, day.month, day.day, h, m, tzinfo=POST_TZ).astimezone(timezone.utc)
+            if dt >= earliest and minute_key(dt) not in occupied:
+                yield dt, kind
+        day += timedelta(days=1)
 
 
 # ============================================================
@@ -197,32 +250,40 @@ def gql(query, variables):
 
 
 def queue_stats():
-    """(nombre de vidéos déjà programmées dans la file, dernière date prévue, adresses des vidéos déjà en file)."""
-    after, count, last, urls = None, 0, None, set()
+    """(vidéos déjà programmées, dernière date prévue, adresses des vidéos en file, créneaux occupés)."""
+    after, count, last, urls, occupied = None, 0, None, set(), set()
     while True:
         inp = {"organizationId": BUFFER_ORG_ID,
                "filter": {"channelIds": [BUFFER_CHANNEL_ID], "status": ["scheduled"]}}
         data = gql(QUEUE_Q, {"input": inp, "after": after})["posts"]
         for e in data.get("edges") or []:
             node = e["node"]
+            due = node.get("dueAt")
+            if due:
+                occupied.add(due[:16])
             vids = [a for a in node.get("assets") or [] if a.get("type") == "video"]
             if vids:
                 count += 1
                 for a in vids:
                     if a.get("source"):
                         urls.add(a["source"])
-                due = node.get("dueAt")
                 if due and (last is None or due > last):
                     last = due
         if not data["pageInfo"]["hasNextPage"]:
             break
         after = data["pageInfo"]["endCursor"]
-    return count, last, urls
+    return count, last, urls, occupied
 
 
-def create_video_post(text, video_url):
-    inp = {"channelId": BUFFER_CHANNEL_ID, "schedulingType": "automatic", "mode": "addToQueue",
-           "text": text, "assets": [{"video": {"url": video_url}}]}
+def create_video_post(text, video_url, due_iso, reply=None):
+    """Programme une vidéo à une heure précise ; `reply` = 2e tweet (réponse) avec le lien Telegram."""
+    inp = {"channelId": BUFFER_CHANNEL_ID, "schedulingType": "automatic", "mode": "customScheduled",
+           "dueAt": due_iso, "text": text, "assets": [{"video": {"url": video_url}}]}
+    if reply:
+        inp["metadata"] = {"twitter": {"thread": [
+            {"text": text, "assets": [{"video": {"url": video_url}}]},
+            {"text": reply},
+        ]}}
     res = gql(CREATE_POST_Q, {"input": inp})["createPost"]
     t = res["__typename"]
     if t == "PostActionSuccess":
@@ -240,7 +301,7 @@ def run(dry_run=False, status_only=False):
     catalog = fetch_catalog()
     videos = catalog["videos"]
     state = load_state()
-    in_queue, last_due, queued_urls = queue_stats()
+    in_queue, last_due, queued_urls, occupied = queue_stats()
     cands = candidates(videos, state)
     # Sécurité anti-doublon : une vidéo déjà présente dans la file Buffer n'est jamais reprogrammée,
     # même si la mémoire du robot (video_state.json) n'a pas été sauvegardée.
@@ -262,18 +323,24 @@ def run(dry_run=False, status_only=False):
 
     created, rejects = 0, 0
     pool = list(cands)
+    slots = iter_free_slots(datetime.now(timezone.utc), set(occupied))
+    slot = next(slots)
     while need > 0 and created < MAX_NEW_PER_RUN and pool:
         v = pick_next(pool, state["recent_players"])
         if not v:
             break
-        text, kind = build_text(v, state["counter"], catalog)
+        slot_dt, kind = slot
+        due_iso = slot_dt.strftime("%Y-%m-%dT%H:%M:%S.000Z")
+        text, reply = build_post(v, kind, state, catalog)
         url = f"{R2_PUBLIC_BASE}/{v['key']}"
         if dry_run:
-            log(f"🆕 [dry-run] {v['title']} ({v.get('player') or '—'}) CTA={kind}\n      {text.replace(chr(10), ' | ')}")
+            log(f"🆕 [dry-run] {slot_dt.astimezone(POST_TZ):%a %d/%m %H:%M} [{kind}] {v['title']} "
+                f"({v.get('player') or '—'})\n      {text.replace(chr(10), ' | ')}"
+                + (f"\n      ↳ réponse : {reply.replace(chr(10), ' | ')}" if reply else ""))
             post_id, due = None, None
         else:
             try:
-                post_id, due = create_video_post(text, url)
+                post_id, due = create_video_post(text, url, due_iso, reply)
             except VideoRejected as e:
                 rejects += 1
                 f = state["failed"].setdefault(v["id"], {"count": 0})
@@ -285,12 +352,15 @@ def run(dry_run=False, status_only=False):
                 if rejects >= MAX_CONSECUTIVE_REJECTS:
                     log("❌ 3 refus d'affilée : problème général (clé, vidéos inaccessibles ?), arrêt.")
                     return 2
-                continue
+                continue          # le créneau n'est pas consommé : la vidéo suivante le prend
             rejects = 0
-            state["posted"][v["id"]] = {"post_id": post_id, "due": due, "at": now_iso(), "title": v["title"]}
-            log(f"📤 {v['title']} → file Buffer ({due or 'créneau auto'})")
+            state["posted"][v["id"]] = {"post_id": post_id, "due": due or due_iso, "at": now_iso(), "title": v["title"]}
+            log(f"📤 {v['title']} → {slot_dt.astimezone(POST_TZ):%a %d/%m %H:%M} [{kind}]"
+                + (" + lien en réponse" if reply else ""))
             time.sleep(API_DELAY)
         pool = [x for x in pool if x["id"] != v["id"]]
+        occupied.add(minute_key(slot_dt))
+        slot = next(slots)
         state["counter"] += 1
         state["recent_players"] = (state["recent_players"] + [v.get("player")] if v.get("player")
                                    else state["recent_players"])[-AVOID_LAST_PLAYERS:]
