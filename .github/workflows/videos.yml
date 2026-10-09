@@ -1,0 +1,46 @@
+name: AccesMatch VideoQueue
+
+on:
+  schedule:
+    - cron: "17 3 * * *"     # tous les jours à 03h17 UTC (10h17 à Bangkok)
+  workflow_dispatch:          # bouton "Run workflow" pour lancer à la main
+
+permissions:
+  contents: write
+
+concurrency:
+  group: videoqueue
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+      R2_PUBLIC_BASE: ${{ secrets.R2_PUBLIC_BASE }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Remplir la file Buffer
+        run: python videoqueue.py
+        # Code 3 = stock bas : l'étape devient rouge et GitHub t'envoie un email d'alerte.
+
+      - name: Sauvegarde de l'état
+        if: always()
+        run: |
+          git config user.name "accesmatch-bot"
+          git config user.email "accesmatch-bot@users.noreply.github.com"
+          git add video_state.json
+          if ! git diff --cached --quiet; then
+            git commit -m "etat videos"
+            git pull --rebase
+            git push
+          fi
