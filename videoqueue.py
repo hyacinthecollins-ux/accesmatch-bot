@@ -24,6 +24,7 @@ import hashlib
 import json
 import os
 import random
+import re
 import sys
 import time
 from datetime import datetime, timezone
@@ -120,9 +121,16 @@ def pick_next(cands, recent_players):
     return ordered[0] if ordered else None
 
 
+def clean_title(t):
+    """Nettoie le titre : '⧸' (faux slash des noms YouTube) -> '/', '#' orphelin retiré, espaces propres."""
+    t = (t or "").replace("\u29f8", "/").replace("\u2044", "/")
+    t = re.sub(r"\s#(?=\s|$)", "", t)
+    return re.sub(r"[ \t]{2,}", " ", t).strip()
+
+
 def build_text(v, counter, catalog):
     every = catalog.get("cta_every", 7)
-    title = v["title"].strip()
+    title = clean_title(v["title"])
     tags = (v.get("hashtags") or "").strip()
     kind, cta = "none", None
     if every and (counter + 1) % every == 0 and catalog.get("ctas"):
@@ -148,7 +156,7 @@ def build_text(v, counter, catalog):
 QUEUE_Q = """
 query Queue($input: PostsInput!, $after: String) {
   posts(first: 100, after: $after, input: $input) {
-    edges { node { id dueAt assets { type } } }
+    edges { node { id dueAt assets { type source } } }
     pageInfo { hasNextPage endCursor }
   }
 }"""
@@ -189,23 +197,27 @@ def gql(query, variables):
 
 
 def queue_stats():
-    """(nombre de vidéos déjà programmées dans la file, dernière date prévue)."""
-    after, count, last = None, 0, None
+    """(nombre de vidéos déjà programmées dans la file, dernière date prévue, adresses des vidéos déjà en file)."""
+    after, count, last, urls = None, 0, None, set()
     while True:
         inp = {"organizationId": BUFFER_ORG_ID,
                "filter": {"channelIds": [BUFFER_CHANNEL_ID], "status": ["scheduled"]}}
         data = gql(QUEUE_Q, {"input": inp, "after": after})["posts"]
         for e in data.get("edges") or []:
             node = e["node"]
-            if any(a.get("type") == "video" for a in node.get("assets") or []):
+            vids = [a for a in node.get("assets") or [] if a.get("type") == "video"]
+            if vids:
                 count += 1
+                for a in vids:
+                    if a.get("source"):
+                        urls.add(a["source"])
                 due = node.get("dueAt")
                 if due and (last is None or due > last):
                     last = due
         if not data["pageInfo"]["hasNextPage"]:
             break
         after = data["pageInfo"]["endCursor"]
-    return count, last
+    return count, last, urls
 
 
 def create_video_post(text, video_url):
@@ -228,8 +240,14 @@ def run(dry_run=False, status_only=False):
     catalog = fetch_catalog()
     videos = catalog["videos"]
     state = load_state()
-    in_queue, last_due = queue_stats()
+    in_queue, last_due, queued_urls = queue_stats()
     cands = candidates(videos, state)
+    # Sécurité anti-doublon : une vidéo déjà présente dans la file Buffer n'est jamais reprogrammée,
+    # même si la mémoire du robot (video_state.json) n'a pas été sauvegardée.
+    before = len(cands)
+    cands = [v for v in cands if f"{R2_PUBLIC_BASE}/{v['key']}" not in queued_urls]
+    if before != len(cands):
+        log(f"🛡️  {before - len(cands)} vidéo(s) déjà dans la file Buffer : ignorées (anti-doublon)")
 
     target = QUEUE_TARGET_DAYS * POSTS_PER_DAY
     need = max(0, target - in_queue)
