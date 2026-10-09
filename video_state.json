@@ -239,13 +239,45 @@
       "due": "2026-10-23T07:15:00.000Z",
       "at": "2026-10-09T07:42:42Z",
       "title": "Lionel Messi ⚽"
+    },
+    "4GSiPSfgkoQ": {
+      "post_id": "6ac8a93d55b3ae45da20a6e1",
+      "due": "2026-10-22T07:15:00.000Z",
+      "at": "2026-10-09T08:43:41Z",
+      "title": "Pogba Rare Moments 🤩 ⚽"
+    },
+    "4KUrWS3HCEg": {
+      "post_id": "6ac8a941a6fb1fa47b3e1bcf",
+      "due": "2026-10-22T10:30:00.000Z",
+      "at": "2026-10-09T08:43:45Z",
+      "title": "Art Of Ball Control 🥶 ⚽"
+    },
+    "-5ow9KYzD6M": {
+      "post_id": "6ac8a9441d1878e0690612cc",
+      "due": "2026-10-22T16:30:00.000Z",
+      "at": "2026-10-09T08:43:48Z",
+      "title": "10⧸10 FAKE Skills 😮 ⚽"
+    },
+    "cgh9_IM27ws": {
+      "post_id": "6ac8a9471d1878e06906132d",
+      "due": "2026-10-22T19:45:00.000Z",
+      "at": "2026-10-09T08:43:51Z",
+      "title": "Tragic Moments 💔 ⚽"
+    },
+    "kxBN3S2hYJ0": {
+      "post_id": "6ac8a94a55b3ae45da20a834",
+      "due": "2026-10-23T07:15:00.000Z",
+      "at": "2026-10-09T08:43:55Z",
+      "title": "Brazilian Skills 😮‍💨🇧🇷 ⚽"
     }
   },
   "failed": {},
-  "counter": 40,
+  "counter": 45,
   "recent_players": [
-    "barcola",
     "payet",
-    "messi"
-  ]
+    "messi",
+    "pogba"
+  ],
+  "cta_idx_bio": 2,
+  "cta_idx_direct": 1
 }
