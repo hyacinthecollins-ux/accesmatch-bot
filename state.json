@@ -193,6 +193,32 @@
       "fails": 0,
       "design": "crests-v1",
       "tg": "sent"
+    },
+    "r559672": {
+      "kind": "result",
+      "match_id": 559672,
+      "label": "PSG-LE MANS",
+      "kickoff": "2026-10-10T18:45:00Z",
+      "status": "poster_ready",
+      "poster": "posters/r559672-20261010.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-10-10T22:50:46Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "r564702": {
+      "kind": "result",
+      "match_id": 564702,
+      "label": "REAL MADRID-VILLARREAL",
+      "kickoff": "2026-10-10T19:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/r564702-20261010.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-10-10T22:50:46Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   }
 }
