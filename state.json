@@ -199,26 +199,28 @@
       "match_id": 559672,
       "label": "PSG-LE MANS",
       "kickoff": "2026-10-10T18:45:00Z",
-      "status": "poster_ready",
+      "status": "scheduled",
       "poster": "posters/r559672-20261010.jpg",
-      "post_id": null,
+      "post_id": "6acac14eb07d37ac978ac9c7",
       "due": null,
       "created": "2026-10-10T22:50:46Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "sent"
     },
     "r564702": {
       "kind": "result",
       "match_id": 564702,
       "label": "REAL MADRID-VILLARREAL",
       "kickoff": "2026-10-10T19:00:00Z",
-      "status": "poster_ready",
+      "status": "scheduled",
       "poster": "posters/r564702-20261010.jpg",
-      "post_id": null,
+      "post_id": "6acac152ed92ed8fa5e40cf9",
       "due": null,
       "created": "2026-10-10T22:50:46Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "sent"
     }
   }
 }
