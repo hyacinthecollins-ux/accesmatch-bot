@@ -269,15 +269,39 @@
       "due": "2026-10-23T07:15:00.000Z",
       "at": "2026-10-09T08:43:55Z",
       "title": "Brazilian Skills 😮‍💨🇧🇷 ⚽"
+    },
+    "HaMJYADFJv4": {
+      "post_id": "6aca0a5fbba9419ccbf8dc35",
+      "due": "2026-10-23T10:30:00.000Z",
+      "at": "2026-10-10T09:50:23Z",
+      "title": "Olise Ball Control 😳 ⚽"
+    },
+    "pIsUTpcCytA": {
+      "post_id": "6aca0a62f91f772d458ad2d6",
+      "due": "2026-10-23T16:30:00.000Z",
+      "at": "2026-10-10T09:50:26Z",
+      "title": "When Players Humiliate Goalkeepers 😳 ⚽"
+    },
+    "4QcNRkASq8c": {
+      "post_id": "6aca0a66c4de2d2b122105d3",
+      "due": "2026-10-23T19:45:00.000Z",
+      "at": "2026-10-10T09:50:30Z",
+      "title": "100% Funny Reactions 😂 ⚽"
+    },
+    "yjeNNz5RDsQ": {
+      "post_id": "6aca0a69bba9419ccbf8de55",
+      "due": "2026-10-24T07:15:00.000Z",
+      "at": "2026-10-10T09:50:33Z",
+      "title": "When Dembele Gets Bored 🥱 ⚽"
     }
   },
   "failed": {},
-  "counter": 45,
+  "counter": 49,
   "recent_players": [
-    "payet",
-    "messi",
-    "pogba"
+    "pogba",
+    "olise",
+    "dembele"
   ],
-  "cta_idx_bio": 2,
-  "cta_idx_direct": 1
+  "cta_idx_bio": 4,
+  "cta_idx_direct": 2
 }
