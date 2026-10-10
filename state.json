@@ -116,6 +116,19 @@
       "created": "2026-10-10T08:48:48Z",
       "fails": 0,
       "design": "crests-v1"
+    },
+    "r560593": {
+      "kind": "result",
+      "match_id": 560593,
+      "label": "ARSENAL-LEEDS UNITED",
+      "kickoff": "2026-10-10T11:30:00Z",
+      "status": "poster_ready",
+      "poster": "posters/r560593-20261010.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-10-10T15:04:45Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   }
 }
