@@ -221,6 +221,19 @@
       "fails": 0,
       "design": "crests-v1",
       "tg": "sent"
+    },
+    "r560598": {
+      "kind": "result",
+      "match_id": 560598,
+      "label": "LIVERPOOL-MAN CITY",
+      "kickoff": "2026-10-11T15:30:00Z",
+      "status": "poster_ready",
+      "poster": "posters/r560598-20261011.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-10-11T19:39:07Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   }
 }
