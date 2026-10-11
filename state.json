@@ -109,7 +109,8 @@
       "due": "2026-10-11T14:30:00Z",
       "created": "2026-10-10T08:48:48Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "skip"
     },
     "p559671": {
       "kind": "preview",
@@ -122,7 +123,8 @@
       "due": "2026-10-11T17:45:00Z",
       "created": "2026-10-10T08:48:48Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "skip"
     },
     "r560593": {
       "kind": "result",
@@ -227,13 +229,14 @@
       "match_id": 560598,
       "label": "LIVERPOOL-MAN CITY",
       "kickoff": "2026-10-11T15:30:00Z",
-      "status": "poster_ready",
+      "status": "scheduled",
       "poster": "posters/r560598-20261011.jpg",
-      "post_id": null,
+      "post_id": "6acbe5e08e8dd50ffc538dae",
       "due": null,
       "created": "2026-10-11T19:39:07Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "sent"
     }
   }
 }
