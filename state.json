@@ -237,6 +237,19 @@
       "fails": 0,
       "design": "crests-v1",
       "tg": "sent"
+    },
+    "r559671": {
+      "kind": "result",
+      "match_id": 559671,
+      "label": "TROYES-OM",
+      "kickoff": "2026-10-11T18:45:00Z",
+      "status": "poster_ready",
+      "poster": "posters/r559671-20261011.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-10-11T23:28:19Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   }
 }
