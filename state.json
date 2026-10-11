@@ -243,13 +243,14 @@
       "match_id": 559671,
       "label": "TROYES-OM",
       "kickoff": "2026-10-11T18:45:00Z",
-      "status": "poster_ready",
+      "status": "scheduled",
       "poster": "posters/r559671-20261011.jpg",
-      "post_id": null,
+      "post_id": "6acc1b998e8dd50ffc5c989d",
       "due": null,
       "created": "2026-10-11T23:28:19Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "sent"
     }
   }
 }
