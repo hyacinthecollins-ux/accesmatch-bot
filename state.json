@@ -303,6 +303,45 @@
       "created": "2026-10-12T10:20:06Z",
       "fails": 3,
       "design": "crests-v1"
+    },
+    "p575350": {
+      "kind": "preview",
+      "match_id": 575350,
+      "label": "LASK-LIVERPOOL",
+      "kickoff": "2026-10-14T16:45:00Z",
+      "status": "poster_ready",
+      "poster": "posters/p575350-20261014.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-10-13T09:04:21Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "p575353": {
+      "kind": "preview",
+      "match_id": 575353,
+      "label": "MAN CITY-PSG",
+      "kickoff": "2026-10-14T19:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/p575353-20261014.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-10-13T09:04:21Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "p575352": {
+      "kind": "preview",
+      "match_id": 575352,
+      "label": "ROMA-REAL MADRID",
+      "kickoff": "2026-10-14T19:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/p575352-20261014.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-10-13T09:04:21Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   }
 }
