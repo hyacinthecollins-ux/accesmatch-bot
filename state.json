@@ -398,6 +398,19 @@
       "fails": 3,
       "design": "crests-v1",
       "tg": "sent"
+    },
+    "r575350": {
+      "kind": "result",
+      "match_id": 575350,
+      "label": "LASK-LIVERPOOL",
+      "kickoff": "2026-10-14T16:45:00Z",
+      "status": "poster_ready",
+      "poster": "posters/r575350-20261014.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-10-14T20:04:33Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   }
 }
