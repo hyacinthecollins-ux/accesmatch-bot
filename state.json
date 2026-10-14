@@ -412,6 +412,32 @@
       "fails": 1,
       "design": "crests-v1",
       "tg": "sent"
+    },
+    "r575353": {
+      "kind": "result",
+      "match_id": 575353,
+      "label": "MAN CITY-PSG",
+      "kickoff": "2026-10-14T19:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/r575353-20261014.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-10-14T23:21:54Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "r575352": {
+      "kind": "result",
+      "match_id": 575352,
+      "label": "ROMA-REAL MADRID",
+      "kickoff": "2026-10-14T19:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/r575352-20261014.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-10-14T23:21:54Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   }
 }
