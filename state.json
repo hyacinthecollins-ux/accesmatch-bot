@@ -353,7 +353,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-10-13T21:55:51Z",
-      "fails": 1,
+      "fails": 2,
       "design": "crests-v1",
       "tg": "sent"
     },
@@ -367,7 +367,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-10-13T21:55:51Z",
-      "fails": 1,
+      "fails": 2,
       "design": "crests-v1",
       "tg": "sent"
     },
@@ -381,7 +381,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-10-13T21:55:51Z",
-      "fails": 1,
+      "fails": 2,
       "design": "crests-v1",
       "tg": "sent"
     },
@@ -395,7 +395,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-10-13T21:55:51Z",
-      "fails": 1,
+      "fails": 2,
       "design": "crests-v1",
       "tg": "sent"
     }
