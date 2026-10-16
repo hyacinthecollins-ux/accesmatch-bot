@@ -492,6 +492,32 @@
       "created": "2026-10-16T03:26:12Z",
       "fails": 1,
       "design": "crests-v1"
+    },
+    "p565825": {
+      "kind": "preview",
+      "match_id": 565825,
+      "label": "BAYERN-RB LEIPZIG",
+      "kickoff": "2026-10-17T16:30:00Z",
+      "status": "poster_ready",
+      "poster": "posters/p565825-20261017.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-10-16T08:26:34Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "p564713": {
+      "kind": "preview",
+      "match_id": 564713,
+      "label": "REAL BETIS-BARÇA",
+      "kickoff": "2026-10-17T16:30:00Z",
+      "status": "poster_ready",
+      "poster": "posters/p564713-20261017.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-10-16T08:26:34Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   }
 }
