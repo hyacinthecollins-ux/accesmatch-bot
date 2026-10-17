@@ -518,6 +518,32 @@
       "created": "2026-10-16T08:26:34Z",
       "fails": 3,
       "design": "crests-v1"
+    },
+    "p560605": {
+      "kind": "preview",
+      "match_id": 560605,
+      "label": "LEEDS UNITED-MAN UNITED",
+      "kickoff": "2026-10-18T13:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/p560605-20261018.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-10-17T01:25:36Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "p559664": {
+      "kind": "preview",
+      "match_id": 559664,
+      "label": "ANGERS SCO-OM",
+      "kickoff": "2026-10-18T13:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/p559664-20261018.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-10-17T01:25:36Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   }
 }
