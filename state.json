@@ -563,12 +563,12 @@
       "match_id": 564709,
       "label": "REAL MADRID-SEVILLA FC",
       "kickoff": "2026-10-18T19:00:00Z",
-      "status": "poster_ready",
+      "status": "failed",
       "poster": "posters/p564709-20261018.jpg",
       "post_id": null,
       "due": null,
       "created": "2026-10-17T10:23:50Z",
-      "fails": 2,
+      "fails": 3,
       "design": "crests-v1"
     },
     "r560603": {
@@ -581,7 +581,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-10-17T13:51:48Z",
-      "fails": 1,
+      "fails": 2,
       "design": "crests-v1",
       "tg": "sent"
     },
@@ -595,8 +595,9 @@
       "post_id": null,
       "due": null,
       "created": "2026-10-17T16:52:16Z",
-      "fails": 0,
-      "design": "crests-v1"
+      "fails": 1,
+      "design": "crests-v1",
+      "tg": "sent"
     },
     "r560611": {
       "kind": "result",
@@ -608,8 +609,9 @@
       "post_id": null,
       "due": null,
       "created": "2026-10-17T16:52:16Z",
-      "fails": 0,
-      "design": "crests-v1"
+      "fails": 1,
+      "design": "crests-v1",
+      "tg": "sent"
     }
   }
 }
