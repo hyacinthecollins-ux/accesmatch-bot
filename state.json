@@ -529,7 +529,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-10-17T01:25:36Z",
-      "fails": 1,
+      "fails": 2,
       "design": "crests-v1"
     },
     "p559664": {
@@ -542,7 +542,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-10-17T01:25:36Z",
-      "fails": 1,
+      "fails": 2,
       "design": "crests-v1"
     },
     "p560608": {
@@ -555,7 +555,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-10-17T05:56:44Z",
-      "fails": 0,
+      "fails": 1,
       "design": "crests-v1"
     }
   }
