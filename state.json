@@ -576,12 +576,12 @@
       "match_id": 560603,
       "label": "EVERTON-CHELSEA",
       "kickoff": "2026-10-17T11:30:00Z",
-      "status": "poster_ready",
+      "status": "failed",
       "poster": "posters/r560603-20261017.jpg",
       "post_id": null,
       "due": null,
       "created": "2026-10-17T13:51:48Z",
-      "fails": 2,
+      "fails": 3,
       "design": "crests-v1",
       "tg": "sent"
     },
@@ -595,7 +595,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-10-17T16:52:16Z",
-      "fails": 1,
+      "fails": 2,
       "design": "crests-v1",
       "tg": "sent"
     },
@@ -609,7 +609,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-10-17T16:52:16Z",
-      "fails": 1,
+      "fails": 2,
       "design": "crests-v1",
       "tg": "sent"
     },
@@ -623,8 +623,9 @@
       "post_id": null,
       "due": null,
       "created": "2026-10-17T19:03:00Z",
-      "fails": 0,
-      "design": "crests-v1"
+      "fails": 1,
+      "design": "crests-v1",
+      "tg": "sent"
     },
     "r565825": {
       "kind": "result",
@@ -636,8 +637,9 @@
       "post_id": null,
       "due": null,
       "created": "2026-10-17T19:03:00Z",
-      "fails": 0,
-      "design": "crests-v1"
+      "fails": 1,
+      "design": "crests-v1",
+      "tg": "sent"
     },
     "r564713": {
       "kind": "result",
@@ -649,8 +651,9 @@
       "post_id": null,
       "due": null,
       "created": "2026-10-17T19:03:00Z",
-      "fails": 0,
-      "design": "crests-v1"
+      "fails": 1,
+      "design": "crests-v1",
+      "tg": "sent"
     }
   }
 }
