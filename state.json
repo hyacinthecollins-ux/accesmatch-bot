@@ -584,6 +584,32 @@
       "fails": 1,
       "design": "crests-v1",
       "tg": "sent"
+    },
+    "r560610": {
+      "kind": "result",
+      "match_id": 560610,
+      "label": "MAN CITY-IPSWICH TOWN",
+      "kickoff": "2026-10-17T14:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/r560610-20261017.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-10-17T16:52:16Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "r560611": {
+      "kind": "result",
+      "match_id": 560611,
+      "label": "BRENTFORD-LIVERPOOL",
+      "kickoff": "2026-10-17T14:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/r560611-20261017.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-10-17T16:52:16Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   }
 }
