@@ -682,6 +682,19 @@
       "fails": 1,
       "design": "crests-v1",
       "tg": "sent"
+    },
+    "r560608": {
+      "kind": "result",
+      "match_id": 560608,
+      "label": "NOTTINGHAM-ARSENAL",
+      "kickoff": "2026-10-18T15:30:00Z",
+      "status": "poster_ready",
+      "poster": "posters/r560608-20261018.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-10-18T18:47:52Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   }
 }
