@@ -710,6 +710,45 @@
       "fails": 3,
       "design": "crests-v1",
       "tg": "sent"
+    },
+    "p575367": {
+      "kind": "preview",
+      "match_id": 575367,
+      "label": "PSG-BARÇA",
+      "kickoff": "2026-10-20T19:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/p575367-20261020.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-10-19T09:39:04Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "p575363": {
+      "kind": "preview",
+      "match_id": 575363,
+      "label": "LIVERPOOL-VILLARREAL",
+      "kickoff": "2026-10-20T19:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/p575363-20261020.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-10-19T09:39:04Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "p575361": {
+      "kind": "preview",
+      "match_id": 575361,
+      "label": "MAN CITY-PAE AEK",
+      "kickoff": "2026-10-20T19:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/p575361-20261020.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-10-19T09:39:04Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   }
 }
