@@ -755,12 +755,12 @@
       "match_id": 575368,
       "label": "COMO 1907-MAN UNITED",
       "kickoff": "2026-10-21T16:45:00Z",
-      "status": "poster_ready",
+      "status": "failed",
       "poster": "posters/p575368-20261021.jpg",
       "post_id": null,
       "due": null,
       "created": "2026-10-20T05:42:26Z",
-      "fails": 2,
+      "fails": 3,
       "design": "crests-v1"
     },
     "p575370": {
@@ -773,7 +773,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-10-20T11:00:34Z",
-      "fails": 1,
+      "fails": 2,
       "design": "crests-v1"
     },
     "p575372": {
@@ -786,7 +786,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-10-20T11:00:34Z",
-      "fails": 1,
+      "fails": 2,
       "design": "crests-v1"
     }
   }
