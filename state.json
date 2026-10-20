@@ -768,12 +768,12 @@
       "match_id": 575370,
       "label": "REAL MADRID-RB LEIPZIG",
       "kickoff": "2026-10-21T19:00:00Z",
-      "status": "poster_ready",
+      "status": "failed",
       "poster": "posters/p575370-20261021.jpg",
       "post_id": null,
       "due": null,
       "created": "2026-10-20T11:00:34Z",
-      "fails": 2,
+      "fails": 3,
       "design": "crests-v1"
     },
     "p575372": {
@@ -781,12 +781,12 @@
       "match_id": 575372,
       "label": "BAYERN-ARSENAL",
       "kickoff": "2026-10-21T19:00:00Z",
-      "status": "poster_ready",
+      "status": "failed",
       "poster": "posters/p575372-20261021.jpg",
       "post_id": null,
       "due": null,
       "created": "2026-10-20T11:00:34Z",
-      "fails": 2,
+      "fails": 3,
       "design": "crests-v1"
     }
   }
