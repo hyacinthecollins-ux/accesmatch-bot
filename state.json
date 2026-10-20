@@ -762,6 +762,32 @@
       "created": "2026-10-20T05:42:26Z",
       "fails": 1,
       "design": "crests-v1"
+    },
+    "p575370": {
+      "kind": "preview",
+      "match_id": 575370,
+      "label": "REAL MADRID-RB LEIPZIG",
+      "kickoff": "2026-10-21T19:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/p575370-20261021.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-10-20T11:00:34Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "p575372": {
+      "kind": "preview",
+      "match_id": 575372,
+      "label": "BAYERN-ARSENAL",
+      "kickoff": "2026-10-21T19:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/p575372-20261021.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-10-20T11:00:34Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   }
 }
