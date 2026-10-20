@@ -799,8 +799,9 @@
       "post_id": null,
       "due": null,
       "created": "2026-10-20T22:57:55Z",
-      "fails": 0,
-      "design": "crests-v1"
+      "fails": 1,
+      "design": "crests-v1",
+      "tg": "sent"
     },
     "r575361": {
       "kind": "result",
@@ -812,8 +813,9 @@
       "post_id": null,
       "due": null,
       "created": "2026-10-20T22:57:55Z",
-      "fails": 0,
-      "design": "crests-v1"
+      "fails": 1,
+      "design": "crests-v1",
+      "tg": "sent"
     },
     "r575367": {
       "kind": "result",
@@ -825,8 +827,9 @@
       "post_id": null,
       "due": null,
       "created": "2026-10-20T22:57:55Z",
-      "fails": 0,
-      "design": "crests-v1"
+      "fails": 1,
+      "design": "crests-v1",
+      "tg": "sent"
     }
   }
 }
