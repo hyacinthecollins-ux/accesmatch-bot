@@ -749,6 +749,19 @@
       "created": "2026-10-19T09:39:04Z",
       "fails": 3,
       "design": "crests-v1"
+    },
+    "p575368": {
+      "kind": "preview",
+      "match_id": 575368,
+      "label": "COMO 1907-MAN UNITED",
+      "kickoff": "2026-10-21T16:45:00Z",
+      "status": "poster_ready",
+      "poster": "posters/p575368-20261021.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-10-20T05:42:26Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   }
 }
