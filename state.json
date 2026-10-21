@@ -830,6 +830,45 @@
       "fails": 3,
       "design": "crests-v1",
       "tg": "sent"
+    },
+    "r575368": {
+      "kind": "result",
+      "match_id": 575368,
+      "label": "COMO 1907-MAN UNITED",
+      "kickoff": "2026-10-21T16:45:00Z",
+      "status": "poster_ready",
+      "poster": "posters/r575368-20261021.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-10-21T21:19:46Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "r575372": {
+      "kind": "result",
+      "match_id": 575372,
+      "label": "BAYERN-ARSENAL",
+      "kickoff": "2026-10-21T19:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/r575372-20261021.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-10-21T21:19:46Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "r575370": {
+      "kind": "result",
+      "match_id": 575370,
+      "label": "REAL MADRID-RB LEIPZIG",
+      "kickoff": "2026-10-21T19:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/r575370-20261021.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-10-21T21:19:46Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   }
 }
