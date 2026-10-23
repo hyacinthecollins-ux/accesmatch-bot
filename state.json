@@ -883,7 +883,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-10-23T01:24:38Z",
-      "fails": 1,
+      "fails": 2,
       "design": "crests-v1"
     },
     "p560616": {
@@ -896,7 +896,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-10-23T06:19:33Z",
-      "fails": 0,
+      "fails": 1,
       "design": "crests-v1"
     },
     "p560617": {
@@ -909,7 +909,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-10-23T06:19:33Z",
-      "fails": 0,
+      "fails": 1,
       "design": "crests-v1"
     }
   }
