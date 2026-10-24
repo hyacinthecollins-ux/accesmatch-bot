@@ -963,6 +963,19 @@
       "created": "2026-10-24T06:55:18Z",
       "fails": 1,
       "design": "crests-v1"
+    },
+    "p564723": {
+      "kind": "preview",
+      "match_id": 564723,
+      "label": "BARÇA-REAL MADRID",
+      "kickoff": "2026-10-25T20:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/p564723-20261025.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-10-24T11:52:38Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   }
 }
