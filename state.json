@@ -987,7 +987,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-10-25T08:58:38Z",
-      "fails": 0,
+      "fails": 1,
       "design": "crests-v1"
     }
   }
