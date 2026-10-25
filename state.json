@@ -1017,6 +1017,32 @@
       "fails": 1,
       "design": "crests-v1",
       "tg": "sent"
+    },
+    "r559649": {
+      "kind": "result",
+      "match_id": 559649,
+      "label": "OM-LE HAVRE",
+      "kickoff": "2026-10-25T16:15:00Z",
+      "status": "poster_ready",
+      "poster": "posters/r559649-20261025.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-10-25T19:53:18Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "r565836": {
+      "kind": "result",
+      "match_id": 565836,
+      "label": "FREIBURG-BAYERN",
+      "kickoff": "2026-10-25T16:30:00Z",
+      "status": "poster_ready",
+      "poster": "posters/r565836-20261025.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-10-25T19:53:18Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   }
 }
