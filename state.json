@@ -976,6 +976,19 @@
       "created": "2026-10-24T11:52:38Z",
       "fails": 3,
       "design": "crests-v1"
+    },
+    "p559648": {
+      "kind": "preview",
+      "match_id": 559648,
+      "label": "PSG-OLYMPIQUE LYON",
+      "kickoff": "2026-10-26T19:30:00Z",
+      "status": "poster_ready",
+      "poster": "posters/p559648-20261026.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-10-25T08:58:38Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   }
 }
