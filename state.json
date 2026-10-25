@@ -989,6 +989,32 @@
       "created": "2026-10-25T08:58:38Z",
       "fails": 2,
       "design": "crests-v1"
+    },
+    "r560612": {
+      "kind": "result",
+      "match_id": 560612,
+      "label": "LIVERPOOL-BRIGHTON HOVE",
+      "kickoff": "2026-10-25T14:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/r560612-20261025.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-10-25T17:26:35Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "r560615": {
+      "kind": "result",
+      "match_id": 560615,
+      "label": "MAN UNITED-BOURNEMOUTH",
+      "kickoff": "2026-10-25T14:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/r560615-20261025.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-10-25T17:26:35Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   }
 }
