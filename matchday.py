@@ -3,9 +3,10 @@
 AccesMatch MatchDay — affiches de match (logos officiels des clubs + VS) + posts Buffer automatiques.
 
 Ce que fait le script a chaque passage (toutes les 30 min via GitHub Actions) :
-  1. Interroge football-data.org : matchs des 10 clubs suivis (prochaines 36 h + resultats recents)
+  1. Interroge football-data.org : matchs des 10 clubs suivis (prochaines 49 h + resultats recents)
   2. Cree une affiche par match : logos officiels des deux clubs, VS, date, competition, heure (gratuit, sans IA)
-  3. Programme sur Buffer (@accesmatch) un post avec l'affiche, 1 h avant le coup d'envoi
+  3. Programme sur Buffer un post avec l'affiche, 48 h avant le coup d'envoi
+     (CTA : "chope ton acces avant le coup d'envoi", plus d'essai gratuit pour regarder le match)
   4. Apres le match : poste le score final avec une affiche "score final"
   5. Anti-doublons (state.json) : un match = une affiche = un post
      Si l'horaire change, l'ancien post est supprime et recree avec la bonne heure.
@@ -54,12 +55,12 @@ BUFFER_URL = "https://api.buffer.com"
 
 TELEGRAM_URL = "t.me/accesmatch"
 
-# Telegram : meme affiche envoyee dans ton canal, avec un bouton vers ton DM (essai gratuit)
+# Telegram : meme affiche envoyee dans ton canal, avec un bouton vers ton DM (prise d'accès)
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
 TELEGRAM_CHAT_ID = (os.environ.get("TELEGRAM_CHAT_ID") or "").strip() or "@accesmatch"
-# Ton lien de message prive (essai gratuit). A MODIFIER : https://t.me/TON_PSEUDO
+# Ton lien de message prive (prise d'accès). A MODIFIER : https://t.me/TON_PSEUDO
 TELEGRAM_DM_URL = os.environ.get("TELEGRAM_DM_URL") or "https://t.me/EliteTVSupport"
-TELEGRAM_BUTTON_TEXT = "🎁 Obtenir mon essai gratuit"
+TELEGRAM_BUTTON_TEXT = "🔓 Prendre mon accès"
 TELEGRAM_MIN_BEFORE_KICKOFF_MIN = 5   # on n'annonce plus un match a moins de 5 min du coup d'envoi
 
 # Modele d'images OpenAI (celui de ChatGPT). Qualite : low / medium / high
@@ -75,8 +76,8 @@ FORCE_QUALITY = os.environ.get("OPENAI_IMAGE_QUALITY", "")  # vide = auto (high 
 AUDIENCE_TZ = ZoneInfo("Europe/Paris")
 
 # Reglages
-POST_BEFORE_MIN = 60          # post programme 1 h avant le coup d'envoi
-LOOKAHEAD_H = 36              # on prepare les matchs des 36 prochaines heures
+POST_BEFORE_MIN = 48 * 60     # affiche annoncee 48 h avant le coup d'envoi (X + Telegram)
+LOOKAHEAD_H = 49              # on prepare les matchs des 49 prochaines heures (48 h + 1 passage de marge)
 MIN_LEAD_MIN = 10             # on ignore un match qui commence dans moins de 10 min
 RESULT_MAX_AGE_H = 6          # score final poste seulement si le coup d'envoi date de moins de 6 h
 MAX_NEW_ITEMS_PER_RUN = 6     # garde-fou cout : max 6 nouvelles affiches par passage
@@ -140,27 +141,23 @@ TEAMS = {
 # TEXTES DES POSTS
 # ============================================================
 PREVIEW_TEMPLATES = [
-    "🔥 {m} à {h} !\n\nTu veux le voir en direct en HD ? Test gratuit 👉 {url}",
-    "⚽ {m} — coup d'envoi à {h}\n\nPas envie de chercher un stream qui lag ? Teste gratuitement 📺\n{url}",
-    "🚨 {c} : {m} à {h}\n\nChope ton accès gratuit pour suivre le match 👇\n{url}",
-    "📺 {m} à {h}\n\nRegarde-le en direct, en HD, sans galère — test gratuit 👉 {url}",
-    "🔴 Gros match : {m} ({h})\n\nTon test gratuit pour le voir en direct est ici 👇\n{url}",
-    "👀 {m}, c'est à {h}\n\nÉvite les streams pourris, teste gratuitement 👉 {url}",
-    "⏰ {h} : {m}\n\nAccès gratuit pour regarder le match en direct ⬇️\n{url}",
-    "🏟️ {c} — {m} à {h}\n\nTest gratuit, en HD 👉 {url}",
-    "💥 {m} à {h} !\n\nOn te file un test gratuit pour tout voir en direct 👇\n{url}",
-    "⚡ {m} ({h})\n\nLe match en direct, en HD : essaie gratuitement 👉 {url}",
-    "🔥 Le choc {m} arrive à {h}\n\nTeste gratuitement pour ne rien rater 📺\n{url}",
-    "🚀 {m} — {h}\n\nPrends ton test gratuit et regarde-le en direct 👇\n{url}",
+    "🔥 {m} — {d} à {h}\n\nChope ton accès avant le coup d'envoi : une fois le match lancé, il sera trop tard 👉 {url}",
+    "⚽ {c} : {m}\n{d} à {h}\n\nAssure-toi d'avoir ton accès avant que le match commence 📺\n{url}",
+    "🚨 {m} — {d} à {h}\n\nPrends ton accès maintenant, pas pendant le match 👇\n{url}",
+    "📺 {m} — {d} à {h}\n\nLe match en direct, en HD : récupère ton accès avant le coup d'envoi 👉 {url}",
+    "🏟️ {c} — {m}\n{d} à {h}\n\nTon accès se prend AVANT le match, pas pendant 👇\n{url}",
+    "👀 {m}, {d} à {h}\n\nNe cherche pas un stream à la dernière minute : chope ton accès dès maintenant 👉 {url}",
+    "⏰ {d} à {h} : {m}\n\nLes accès se prennent avant le coup d'envoi. Après, c'est trop tard ⬇️\n{url}",
+    "💥 Gros match : {m} ({d}, {h})\n\nChope ton accès avant le coup d'envoi pour le suivre en direct, en HD 👇\n{url}",
 ]
 
 RESULT_TEMPLATES = [
-    "🏁 Terminé : {s}\n\nLe prochain match en direct ? Test gratuit 👉 {url}",
-    "⏱️ Score final : {s}\n\nNe rate pas le prochain, teste gratuitement 📺\n{url}",
-    "📊 {s} — c'est fini !\n\nPour les prochains matchs en direct, test gratuit 👇\n{url}",
-    "🔔 Fin du match : {s}\n\nProchain choc en direct, en HD : essaie gratuitement 👉 {url}",
-    "✅ {s}\n\nTu veux vivre le prochain match en direct ? Test gratuit ⬇️\n{url}",
-    "⚽ Résultat : {s}\n\nAccès gratuit pour le prochain match 👇\n{url}",
+    "🏁 Terminé : {s}\n\nLe prochain match en direct ? Chope ton accès avant le coup d'envoi 👉 {url}",
+    "⏱️ Score final : {s}\n\nPour le prochain, prends ton accès avant que le match commence 📺\n{url}",
+    "📊 {s} — c'est fini !\n\nProchain match : ton accès se prend avant le coup d'envoi 👇\n{url}",
+    "🔔 Fin du match : {s}\n\nLe prochain en direct, en HD : récupère ton accès avant le coup d'envoi 👉 {url}",
+    "✅ {s}\n\nTu veux vivre le prochain en direct ? Prends ton accès avant le match ⬇️\n{url}",
+    "⚽ Résultat : {s}\n\nAccès à prendre avant le prochain coup d'envoi 👇\n{url}",
 ]
 
 JOURS = ["LUNDI", "MARDI", "MERCREDI", "JEUDI", "VENDREDI", "SAMEDI", "DIMANCHE"]
@@ -194,6 +191,11 @@ def norm(s):
 def fr_date(dt_utc):
     d = dt_utc.astimezone(AUDIENCE_TZ)
     return f"{JOURS[d.weekday()]} {d.day} {MOIS[d.month - 1]}"
+
+
+def fr_day(dt_utc):
+    """Date pour les textes de post : 'Mercredi 21 octobre' (fr_date reste en majuscules pour les affiches)."""
+    return fr_date(dt_utc).capitalize()
 
 
 def fr_hour(dt_utc):
@@ -386,7 +388,8 @@ def build_post_text(m, kind):
     tags = hashtags(m)
     if kind == "preview":
         title = f"{m['home']['short']} × {m['away']['short']}"
-        t = rng.choice(PREVIEW_TEMPLATES).format(m=title, h=fr_hour(m["kickoff"]), c=m["comp_fr"], url=TELEGRAM_URL)
+        t = rng.choice(PREVIEW_TEMPLATES).format(m=title, d=fr_day(m["kickoff"]), h=fr_hour(m["kickoff"]),
+                                                 c=m["comp_fr"], url=TELEGRAM_URL)
     else:
         score = f"{m['home']['short']} {m['hs']}-{m['as_']} {m['away']['short']}"
         t = rng.choice(RESULT_TEMPLATES).format(s=score, url=TELEGRAM_URL)
@@ -531,13 +534,13 @@ def wait_for_url(url, tries=10, delay=6):
 # TELEGRAM — meme affiche dans le canal, message plus direct
 # ============================================================
 TG_PREVIEW_TEMPLATES = [
-    "⚽ <b>{m}</b>\n{c} · coup d'envoi à <b>{h}</b> (heure de Paris)\n\nPlus de lien mort ni de stream qui coupe 🔥\n🎁 Ton <b>essai gratuit</b> : écris-moi en privé, je te l'envoie tout de suite 👇",
-    "🔥 <b>{m}</b> — ça démarre à <b>{h}</b> !\n{c}\n\nTu veux le regarder en HD, sans pub ? 📺\n🎁 Essai gratuit : clique sur le bouton et envoie-moi un message 👇",
-    "🚨 Match dans 1h : <b>{m}</b>\n{c} · <b>{h}</b> (heure de Paris)\n\nActive ton <b>essai gratuit</b> en 2 minutes, avant le coup d'envoi 👇",
+    "⚽ <b>{m}</b>\n{c} · <b>{d}</b> à <b>{h}</b> (heure de Paris)\n\n📺 Le match en direct, en HD, sans stream qui coupe.\n🔓 Récupère ton accès <b>avant le coup d'envoi</b> : une fois le match lancé, il sera trop tard.\n\nÉcris-moi en privé 👇",
+    "🔥 <b>{m}</b> — <b>{d}</b> à <b>{h}</b>\n{c}\n\nPour suivre ce match en direct, ton accès se prend <b>avant</b> le coup d'envoi, pas pendant 🔓\nClique sur le bouton et écris-moi 👇",
+    "🚨 <b>{m}</b>\n{c} · <b>{d}</b> à <b>{h}</b> (heure de Paris)\n\nN'attends pas le dernier moment : sécurise ton accès dès maintenant, avant le début du match 🔓\nÉcris-moi en privé 👇",
 ]
 TG_RESULT_TEMPLATES = [
-    "🏁 <b>SCORE FINAL</b> : {s}\n\nTu l'as raté ? La prochaine fois, tu le regardes en direct 🔥\n🎁 Essai gratuit : écris-moi en privé 👇",
-    "📣 Terminé : <b>{s}</b>\n\nÀ la prochaine, plus aucun match à rater 📺\n🎁 Ton essai gratuit se demande ici 👇",
+    "🏁 <b>SCORE FINAL</b> : {s}\n\nTu l'as raté ? Pour le prochain, prends ton accès <b>avant</b> le coup d'envoi 🔓\nÉcris-moi en privé 👇",
+    "📣 Terminé : <b>{s}</b>\n\nLe prochain match en direct ? Ton accès se prend avant qu'il commence 📺\nClique sur le bouton et écris-moi 👇",
 ]
 
 
@@ -545,7 +548,8 @@ def build_telegram_text(m, kind):
     rng = random.Random(f"tg-{m['id']}-{kind}")
     if kind == "preview":
         title = f"{m['home']['short']} × {m['away']['short']}"
-        return rng.choice(TG_PREVIEW_TEMPLATES).format(m=title, h=fr_hour(m["kickoff"]), c=m["comp_fr"])
+        return rng.choice(TG_PREVIEW_TEMPLATES).format(m=title, d=fr_day(m["kickoff"]), h=fr_hour(m["kickoff"]),
+                                                       c=m["comp_fr"])
     score = f"{m['home']['short']} {m['hs']}-{m['as_']} {m['away']['short']}"
     return rng.choice(TG_RESULT_TEMPLATES).format(s=score)
 
@@ -570,7 +574,8 @@ def telegram_send(text, photo_path=None):
 
 
 def telegram_step(raw_matches, state, now, dry_run=False):
-    """Envoie dans le canal Telegram : avant-match au meme moment que le post Buffer (1 h avant), score final tout de suite."""
+    """Envoie dans le canal Telegram : avant-match au meme moment que le post Buffer (48 h avant), score final tout de suite.
+    Independant de Buffer : un post X en echec ne bloque plus l'annonce Telegram."""
     if not dry_run and not telegram_ready():
         if TELEGRAM_BOT_TOKEN:
             log("ℹ️ Telegram : TELEGRAM_DM_URL pas encore renseigné dans matchday.py, étape ignorée")
@@ -578,7 +583,7 @@ def telegram_step(raw_matches, state, now, dry_run=False):
     by_id = {p["id"]: p for p in tracked_matches(raw_matches)}
     sent = 0
     for key, it in list(state["items"].items()):
-        if it.get("tg") in ("sent", "skip", "failed") or it["status"] in ("cancelled", "failed"):
+        if it.get("tg") in ("sent", "skip", "failed") or it["status"] == "cancelled":
             continue
         kickoff = parse_iso(it["kickoff"])
         if it["kind"] == "preview":
