@@ -208,10 +208,11 @@ def place_crest(canvas, img, center, box, color):
 # ------------------------------------------------------------
 # Affiche
 # ------------------------------------------------------------
-def render_poster(out_path, kind, home, away, date_text, comp_text, time_text=None, score=None):
+def render_poster(out_path, kind, home, away, date_text, comp_text, time_text=None, score=None, footer=None):
     """
     kind : "preview" (logos + VS + heure) ou "result" (logos + score final).
     home / away : {"id", "short", "crest_urls"}.
+    footer : pied de page (défaut @accesmatch ; @monfootballfr pour les affiches X)
     date_text : "SAMEDI 10 OCTOBRE" — comp_text : "PREMIER LEAGUE" — time_text : "20H45" — score : (2, 1)
     """
     sides = []
@@ -276,7 +277,7 @@ def render_poster(out_path, kind, home, away, date_text, comp_text, time_text=No
 
     # --- pied
     d.line([(390, 1262), (690, 1262)], fill=(255, 255, 255, 50), width=2)
-    draw_spaced(d, FOOTER, font(34), W / 2, 1305, 4, (170, 182, 210, 255))
+    draw_spaced(d, footer or FOOTER, font(34), W / 2, 1305, 4, (170, 182, 210, 255))
 
     out_path = Path(out_path)
     out_path.parent.mkdir(parents=True, exist_ok=True)

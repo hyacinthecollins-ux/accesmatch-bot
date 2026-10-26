@@ -5,8 +5,9 @@ AccesMatch MatchDay — affiches de match (logos officiels des clubs + VS) + pos
 Ce que fait le script a chaque passage (toutes les 30 min via GitHub Actions) :
   1. Interroge football-data.org : matchs des 10 clubs suivis (prochaines 49 h + resultats recents)
   2. Cree une affiche par match : logos officiels des deux clubs, VS, date, competition, heure (gratuit, sans IA)
-  3. Envoie l'affiche sur Telegram uniquement, 48 h avant le coup d'envoi
-     (message : "teste avant le match pour obtenir ton acces"). X/Buffer desactive (POST_TO_X = False).
+  3. Telegram : envoie l'affiche 48 h avant le coup d'envoi (message : "teste avant le match pour obtenir ton acces")
+     X : poste une affiche (pied de page @monfootballfr) ~3 h avant les matchs des 6 clubs X_CLUBS, sans CTA,
+         via Buffer sur le compte monfootballfr (jamais sur un creneau video, 3 affiches max par jour)
   4. Apres le match : poste le score final avec une affiche "score final"
   5. Anti-doublons (state.json) : un match = une affiche = un post
      Si l'horaire change, l'ancien post est supprime et recree avec la bonne heure.
@@ -49,8 +50,8 @@ FOOTBALL_DATA_TOKEN = os.environ.get("FOOTBALL_DATA_TOKEN", "").strip()
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "").strip()
 BUFFER_API_KEY = os.environ.get("BUFFER_API_KEY", "").strip()
 
-# Canal Buffer @accesmatch (id verifie via l'API Buffer)
-BUFFER_CHANNEL_ID = os.environ.get("BUFFER_CHANNEL_ID", "6ac7ca726a5c39ccb6535913")
+# Canal Buffer monfootballfr (id verifie via l'API Buffer). L'ancien canal @accesmatch (suspendu) n'existe plus.
+BUFFER_CHANNEL_ID = os.environ.get("BUFFER_CHANNEL_ID", "6ade26c62f1f5ed648ca2250")
 BUFFER_URL = "https://api.buffer.com"
 
 TELEGRAM_URL = "t.me/accesmatch"
@@ -80,10 +81,17 @@ POST_BEFORE_MIN = 48 * 60     # affiche annoncee 48 h avant le coup d'envoi (X +
 LOOKAHEAD_H = 49              # on prepare les matchs des 49 prochaines heures (48 h + 1 passage de marge)
 MIN_LEAD_MIN = 10             # on ignore un match qui commence dans moins de 10 min
 RESULT_MAX_AGE_H = 6          # score final poste seulement si le coup d'envoi date de moins de 6 h
-MAX_NEW_ITEMS_PER_RUN = 6     # garde-fou cout : max 6 nouvelles affiches par passage
-MAX_IMAGES_PER_DAY = 12       # garde-fou cout : max 12 affiches par jour (UTC)
+MAX_NEW_ITEMS_PER_RUN = 12    # garde-fou : max 12 nouvelles affiches par passage
+MAX_IMAGES_PER_DAY = 40       # garde-fou : max 40 affiches par jour (UTC) ; le rendu logos + VS est gratuit
 KEEP_DAYS = 10                # on supprime les affiches de plus de 10 jours
-POST_TO_X = False             # affiches uniquement sur Telegram : le compte X ne publie que des vidéos (chauffe du compte)
+POST_TO_X = True              # affiche de jour de match sur X (monfootballfr), sans CTA
+X_CLUBS = {524, 516, 81, 86, 64, 65}   # 6 clubs : PSG, OM, Barça, Real Madrid, Liverpool, Man City (ids football-data.org)
+X_POST_BEFORE_MIN = 180       # post X ~3 h avant le coup d'envoi
+X_LOOKAHEAD_H = 24            # l'affiche X est préparée et programmée dans Buffer jusqu'à 24 h à l'avance
+X_MAX_PER_DAY = 3             # plafond d'affiches X par jour de match (compte neuf : pas de spam), les gros chocs d'abord
+X_FOOTER = "@monfootballfr"   # pied de page des affiches X (celles de Telegram gardent @accesmatch)
+X_VIDEO_SLOTS = ["09:15", "12:30", "18:30", "21:45"]   # créneaux vidéo (heure de Paris) : une affiche ne tombe jamais dessus
+X_SLOT_MARGIN_MIN = 20        # écart minimum entre une affiche X et un créneau vidéo
 RESULT_POSTS = True           # poster les scores finaux
 RESULT_IMAGES = True          # avec une affiche "score final" (sinon texte seul)
 
@@ -141,24 +149,15 @@ TEAMS = {
 # ============================================================
 # TEXTES DES POSTS
 # ============================================================
-PREVIEW_TEMPLATES = [
-    "🔥 {m} — {d} à {h}\n\nChope ton accès avant le coup d'envoi : une fois le match lancé, il sera trop tard 👉 {url}",
-    "⚽ {c} : {m}\n{d} à {h}\n\nAssure-toi d'avoir ton accès avant que le match commence 📺\n{url}",
-    "🚨 {m} — {d} à {h}\n\nPrends ton accès maintenant, pas pendant le match 👇\n{url}",
-    "📺 {m} — {d} à {h}\n\nLe match en direct, en HD : récupère ton accès avant le coup d'envoi 👉 {url}",
-    "🏟️ {c} — {m}\n{d} à {h}\n\nTon accès se prend AVANT le match, pas pendant 👇\n{url}",
-    "👀 {m}, {d} à {h}\n\nNe cherche pas un stream à la dernière minute : chope ton accès dès maintenant 👉 {url}",
-    "⏰ {d} à {h} : {m}\n\nLes accès se prennent avant le coup d'envoi. Après, c'est trop tard ⬇️\n{url}",
-    "💥 Gros match : {m} ({d}, {h})\n\nChope ton accès avant le coup d'envoi pour le suivre en direct, en HD 👇\n{url}",
-]
-
-RESULT_TEMPLATES = [
-    "🏁 Terminé : {s}\n\nLe prochain match en direct ? Chope ton accès avant le coup d'envoi 👉 {url}",
-    "⏱️ Score final : {s}\n\nPour le prochain, prends ton accès avant que le match commence 📺\n{url}",
-    "📊 {s} — c'est fini !\n\nProchain match : ton accès se prend avant le coup d'envoi 👇\n{url}",
-    "🔔 Fin du match : {s}\n\nLe prochain en direct, en HD : récupère ton accès avant le coup d'envoi 👉 {url}",
-    "✅ {s}\n\nTu veux vivre le prochain en direct ? Prends ton accès avant le match ⬇️\n{url}",
-    "⚽ Résultat : {s}\n\nAccès à prendre avant le prochain coup d'envoi 👇\n{url}",
+X_PREVIEW_TEMPLATES = [
+    "🔥 {m} aujourd'hui à {h}\n\nTon pronostic ? 👇",
+    "⚽ {c} : {m} — {h}\n\nQui gagne ? 👇",
+    "🚨 Jour de match : {m} à {h}\n\nTon score ? 👇",
+    "🏟️ {m} — {h}\n{c}\n\nTu vois quoi comme résultat ? 👇",
+    "👀 {m} à {h}\n\nTon favori ? 👇",
+    "💥 {m} ({h})\n\nVotre pronostic ? 👇",
+    "⏰ {h} : {m}\n\nOn parie sur quel score ? 👇",
+    "📅 Au programme : {m} à {h}\n{c}\n\nTon pronostic en commentaire 👇",
 ]
 
 JOURS = ["LUNDI", "MARDI", "MERCREDI", "JEUDI", "VENDREDI", "SAMEDI", "DIMANCHE"]
@@ -385,20 +384,15 @@ def hashtags(m):
 
 
 def build_post_text(m, kind):
+    """Texte du post X (affiche de jour de match) : aucun CTA, une question pour faire réagir, puis les hashtags."""
     rng = random.Random(f"{m['id']}-{kind}")  # stable : meme match = meme texte
-    tags = hashtags(m)
-    if kind == "preview":
-        title = f"{m['home']['short']} × {m['away']['short']}"
-        t = rng.choice(PREVIEW_TEMPLATES).format(m=title, d=fr_day(m["kickoff"]), h=fr_hour(m["kickoff"]),
-                                                 c=m["comp_fr"], url=TELEGRAM_URL)
-    else:
-        score = f"{m['home']['short']} {m['hs']}-{m['as_']} {m['away']['short']}"
-        t = rng.choice(RESULT_TEMPLATES).format(s=score, url=TELEGRAM_URL)
-    return f"{t}\n\n{tags}".strip()
+    title = f"{m['home']['short']} × {m['away']['short']}"
+    t = rng.choice(X_PREVIEW_TEMPLATES).format(m=title, h=fr_hour(m["kickoff"]), c=m["comp_fr"])
+    return f"{t}\n\n{hashtags(m)}".strip()
 
 
 def alt_text(m, kind):
-    if kind == "preview":
+    if kind in ("preview", "xpreview"):
         return f"Affiche du match {m['home']['short']} contre {m['away']['short']} - {m['comp_fr']}"
     return f"Score final {m['home']['short']} {m['hs']}-{m['as_']} {m['away']['short']}"
 
@@ -427,19 +421,22 @@ def generate_image(prompt, quality, out_path):
 
 
 def make_poster(m, kind, out_path):
-    """Cree l'affiche (logos officiels + VS) ou, si POSTER_MODE=ai, la version OpenAI."""
+    """Cree l'affiche (logos officiels + VS) ou, si POSTER_MODE=ai, la version OpenAI.
+    kind : preview / result (Telegram, pied de page @accesmatch) ou xpreview (X, pied de page @monfootballfr)."""
+    base = "preview" if kind in ("preview", "xpreview") else "result"
     if POSTER_MODE == "ai":
-        prompt = build_preview_prompt(m) if kind == "preview" else build_result_prompt(m)
+        prompt = build_preview_prompt(m) if base == "preview" else build_result_prompt(m)
         generate_image(prompt, quality_for(m), out_path)
         return
     h, a = m["home"], m["away"]
     poster.render_poster(
-        out_path, kind,
+        out_path, base,
         {"id": h.get("id"), "short": h["short"], "crest_urls": h.get("crest_urls")},
         {"id": a.get("id"), "short": a["short"], "crest_urls": a.get("crest_urls")},
         fr_date(m["kickoff"]), m["comp_poster"],
         time_text=fr_hour(m["kickoff"]).upper(),
-        score=(m["hs"], m["as_"]) if kind == "result" else None)
+        score=(m["hs"], m["as_"]) if base == "result" else None,
+        footer=X_FOOTER if kind == "xpreview" else None)
 
 
 # ============================================================
@@ -584,7 +581,7 @@ def telegram_step(raw_matches, state, now, dry_run=False):
     by_id = {p["id"]: p for p in tracked_matches(raw_matches)}
     sent = 0
     for key, it in list(state["items"].items()):
-        if it.get("tg") in ("sent", "skip", "failed") or it["status"] == "cancelled":
+        if it["kind"] == "xpreview" or it.get("tg") in ("sent", "skip", "failed") or it["status"] == "cancelled":
             continue
         kickoff = parse_iso(it["kickoff"])
         if it["kind"] == "preview":
@@ -621,10 +618,70 @@ def telegram_step(raw_matches, state, now, dry_run=False):
 # ============================================================
 # LOGIQUE : PREPARE
 # ============================================================
+def is_x_match(m):
+    return m["home"].get("id") in X_CLUBS or m["away"].get("id") in X_CLUBS
+
+
+def x_priority(m):
+    """Importance d'un match pour le plafond du jour : +2 choc entre deux clubs X_CLUBS, +1 Ligue des champions,
+    +1 si PSG ou OM (public francophone)."""
+    ids = {m["home"].get("id"), m["away"].get("id")}
+    return ((2 if len(ids & X_CLUBS) == 2 else 0) + (1 if m["comp_code"] == "CL" else 0)
+            + (1 if ids & {524, 516} else 0))
+
+
+def x_selection(matches, items):
+    """Ids des matchs qui ont droit à une affiche X : par jour de match (heure de Paris), au plus X_MAX_PER_DAY
+    affiches, les plus importantes d'abord (celles déjà créées comptent dans le plafond)."""
+    used = {}
+    for k, it in items.items():
+        if k.startswith("x") and it["status"] != "cancelled":
+            d = parse_iso(it["kickoff"]).astimezone(AUDIENCE_TZ).date()
+            used[d] = used.get(d, 0) + 1
+    by_day = {}
+    for m in matches:
+        if m["status"] in ("TIMED", "SCHEDULED") and is_x_match(m) and f"x{m['id']}" not in items:
+            by_day.setdefault(m["kickoff"].astimezone(AUDIENCE_TZ).date(), []).append(m)
+    keep = set()
+    for d, ms in by_day.items():
+        ms.sort(key=lambda m: (-x_priority(m), m["kickoff"]))
+        keep.update(m["id"] for m in ms[:max(0, X_MAX_PER_DAY - used.get(d, 0))])
+    return keep
+
+
+def avoid_video_slots(dt_utc, earlier=True):
+    """Décale une heure de post X pour qu'elle ne tombe jamais à moins de X_SLOT_MARGIN_MIN d'un créneau vidéo
+    (les vidéos ne bougent pas : c'est l'affiche qui s'adapte)."""
+    margin = timedelta(minutes=X_SLOT_MARGIN_MIN)
+    for _ in range(4):
+        local = dt_utc.astimezone(AUDIENCE_TZ)
+        for hhmm in X_VIDEO_SLOTS:
+            hh, mm = map(int, hhmm.split(":"))
+            slot = local.replace(hour=hh, minute=mm, second=0, microsecond=0)
+            if abs(local - slot) < margin:
+                dt_utc = ((slot - margin) if earlier else (slot + margin)).astimezone(timezone.utc)
+                break
+        else:
+            return dt_utc
+    return dt_utc
+
+
+def x_due(kickoff, now):
+    """Heure de publication de l'affiche X : ~3 h avant le coup d'envoi, hors créneaux vidéo. 'SKIP' si trop tard."""
+    due = avoid_video_slots(kickoff - timedelta(minutes=X_POST_BEFORE_MIN))
+    if due >= now + timedelta(minutes=3):
+        return iso(due)
+    if kickoff > now + timedelta(minutes=30):         # affiche tardive mais encore utile
+        return iso(avoid_video_slots(now + timedelta(minutes=3), earlier=False))
+    return "SKIP"
+
+
 def due_for(item_kind, kickoff, now):
     """Retourne l'heure de publication (iso) ou None pour 'maintenant'. 'SKIP' si trop tard."""
     if item_kind == "result":
         return None
+    if item_kind == "xpreview":
+        return x_due(kickoff, now)
     due = kickoff - timedelta(minutes=POST_BEFORE_MIN)
     if due >= now + timedelta(minutes=3):
         return iso(due)
@@ -663,8 +720,7 @@ def prepare(raw_matches, state, now, dry_run=False):
         save_state(state)
 
     # 1) Changements : horaire modifié / match reporté ou annulé
-    for m in matches:
-        key = f"p{m['id']}"
+    for m, key in ((m, f"{pre}{m['id']}") for m in matches for pre in ("p", "x")):
         it = items.get(key)
         if not it or it["status"] in ("cancelled", "missed"):
             continue
@@ -684,6 +740,7 @@ def prepare(raw_matches, state, now, dry_run=False):
                 del items[key]
 
     # 2) Nouvelles affiches
+    x_ok = x_selection(matches, items) if POST_TO_X else set()
     for m in sorted(matches, key=lambda x: x["kickoff"]):
         label = f"{m['home']['short']}-{m['away']['short']}"
         candidates = []
@@ -692,6 +749,11 @@ def prepare(raw_matches, state, now, dry_run=False):
                 and now + timedelta(minutes=MIN_LEAD_MIN) < m["kickoff"] <= now + timedelta(hours=LOOKAHEAD_H)
                 and f"p{m['id']}" not in items):
             candidates.append("preview")
+        # affiche X de jour de match (6 clubs, plafond par jour)
+        if (POST_TO_X and m["id"] in x_ok
+                and now + timedelta(minutes=30) < m["kickoff"] <= now + timedelta(hours=X_LOOKAHEAD_H)
+                and f"x{m['id']}" not in items):
+            candidates.append("xpreview")
         # score final
         if (RESULT_POSTS and m["status"] == "FINISHED" and m["hs"] is not None and m["as_"] is not None
                 and now - timedelta(hours=RESULT_MAX_AGE_H) < m["kickoff"] <= now
@@ -702,14 +764,16 @@ def prepare(raw_matches, state, now, dry_run=False):
             if created >= MAX_NEW_ITEMS_PER_RUN or images_today >= MAX_IMAGES_PER_DAY:
                 log(f"⛔ Garde-fou coût atteint, {label} ({kind}) repoussé au prochain passage")
                 continue
-            key = ("p" if kind == "preview" else "r") + str(m["id"])
-            with_image = kind == "preview" or RESULT_IMAGES
+            key = {"preview": "p", "result": "r", "xpreview": "x"}[kind] + str(m["id"])
+            with_image = kind in ("preview", "xpreview") or RESULT_IMAGES
             rel = f"posters/{key}-{m['kickoff'].strftime('%Y%m%d')}.jpg" if with_image else None
             log(f"🆕 {label} [{m['comp_fr']}] {kind} — coup d'envoi {fr_date(m['kickoff'])} {fr_hour(m['kickoff'])}")
             if dry_run:
-                log("   texte :\n      " + build_post_text(m, kind).replace("\n", "\n      "))
+                txt = build_post_text(m, kind) if kind == "xpreview" else build_telegram_text(m, kind)
+                log("   texte :\n      " + txt.replace("\n", "\n      "))
                 due = due_for(kind, m["kickoff"], now)
-                log(f"   publication : {due or 'immédiate'}  | affiche : {POSTER_MODE}")
+                log(f"   publication {'X/Buffer' if kind == 'xpreview' else 'Telegram'} : {due or 'immédiate'}"
+                    f"  | affiche : {POSTER_MODE}")
                 created += 1
                 continue
             if with_image:
@@ -733,14 +797,14 @@ def prepare(raw_matches, state, now, dry_run=False):
 # ============================================================
 def publish(raw_matches, state, now, dry_run=False):
     if not POST_TO_X:
-        log("ℹ️ Affiches : Telegram uniquement (POST_TO_X = False), rien n'est envoyé à Buffer/X")
+        log("ℹ️ Affiches X désactivées (POST_TO_X = False) : rien n'est envoyé à Buffer")
         return 0
     items = state["items"]
     by_id = {p["id"]: p for p in tracked_matches(raw_matches)}
     sent = 0
     for key, it in list(items.items()):
-        if it["status"] != "poster_ready":
-            continue
+        if it["kind"] != "xpreview" or it["status"] != "poster_ready":
+            continue          # les affiches Telegram (preview / result) ne passent pas par Buffer
         kickoff = parse_iso(it["kickoff"])
         due = due_for(it["kind"], kickoff, now)
         if due == "SKIP":
