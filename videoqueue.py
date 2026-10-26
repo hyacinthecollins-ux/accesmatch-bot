@@ -96,6 +96,13 @@ API_DELAY = 2.0                # pause entre deux posts (limite Buffer : 100 / 1
 MAX_FAILS = 2                  # une vidéo refusée 2 fois est mise de côté
 MAX_CONSECUTIVE_REJECTS = 3    # 3 refus d'affilée = problème général, on arrête
 AVOID_LAST_PLAYERS = 3         # pas le même joueur dans les 3 derniers posts
+# Mélange des créateurs (champ "folder" du catalogue) : jamais un stock vidé avant de passer au suivant.
+# Poids d'un créateur = (vidéos restantes) ** CREATOR_WEIGHT_POWER :
+#   0   = tour égal (chacun son tour, les petits stocks fondent vite)
+#   0.5 = compromis (le gros stock passe plus souvent sans écraser les petits)  <- défaut
+#   1   = proportionnel (tous les créateurs se vident en même temps, mais 2/3 des posts viennent du plus gros)
+CREATOR_WEIGHT_POWER = 0.5
+CREATOR_WINDOW = 24            # le dosage se calcule sur les 24 derniers posts (~6 jours à 4/jour)
 SHUFFLE_SEED = PROFILE["seed"]
 TWEET_MAX = 280
 
@@ -156,10 +163,11 @@ def load_state():
             st.setdefault("failed", {})
             st.setdefault("counter", 0)
             st.setdefault("recent_players", [])
+            st.setdefault("recent_creators", [])
             return st
         except json.JSONDecodeError:
             log("⚠️  video_state.json illisible, on repart de zéro")
-    return {"posted": {}, "failed": {}, "counter": 0, "recent_players": []}
+    return {"posted": {}, "failed": {}, "counter": 0, "recent_players": [], "recent_creators": []}
 
 
 def save_state(state):
@@ -192,14 +200,50 @@ def order_key(v):
     return hashlib.sha1((v["id"] + SHUFFLE_SEED).encode()).hexdigest()
 
 
-def pick_next(cands, recent_players):
-    """Mélange stable + jamais le même joueur dans les derniers posts."""
-    ordered = sorted(cands, key=order_key)
-    for v in ordered:
-        p = v.get("player")
-        if not p or p not in recent_players:
-            return v
-    return ordered[0] if ordered else None
+def creator_of(v):
+    """Créateur d'une vidéo = son dossier d'origine dans le catalogue (ex. 'L7-Shorts')."""
+    return (v.get("folder") or "").strip() or "(sans dossier)"
+
+
+def creator_stock(cands):
+    """{créateur: nombre de vidéos restantes}, du plus gros au plus petit."""
+    from collections import Counter
+    return dict(Counter(creator_of(v) for v in cands).most_common())
+
+
+def pick_next(cands, recent_players, recent_creators=()):
+    """Choisit la prochaine vidéo en mélangeant les créateurs.
+
+    1. Créateur : celui qui est le plus "en retard" sur sa part, calculée sur les derniers posts
+       (poids = stock restant ** CREATOR_WEIGHT_POWER). Jamais le même créateur deux fois d'affilée
+       tant qu'un autre en a en stock. Un nouveau créateur (ou de nouvelles vidéos) entre
+       automatiquement dans le tour, sans rien changer.
+    2. Vidéo : dans l'ordre mélangé stable, en évitant les joueurs déjà vus dans les derniers posts.
+    """
+    by_creator = {}
+    for v in sorted(cands, key=order_key):
+        by_creator.setdefault(creator_of(v), []).append(v)
+    if not by_creator:
+        return None
+    weights = {c: len(vs) ** CREATOR_WEIGHT_POWER for c, vs in by_creator.items()}
+    total = sum(weights.values())
+    window = list(recent_creators)[-CREATOR_WINDOW:]
+    n = len(window) + 1
+
+    def rank(c):
+        retard = weights[c] / total * n - window.count(c)
+        return (-retard, hashlib.sha1(f"{c}|{len(window)}|{SHUFFLE_SEED}".encode()).hexdigest())
+
+    ranked = sorted(by_creator, key=rank)
+    last = window[-1] if window else None
+    if len(ranked) > 1 and last in ranked:
+        ranked = [c for c in ranked if c != last] + [last]      # le dernier créateur passe en dernier recours
+    for c in ranked:
+        for v in by_creator[c]:
+            p = v.get("player")
+            if not p or p not in recent_players:
+                return v
+    return by_creator[ranked[0]][0]
 
 
 def clean_title(t):
@@ -402,7 +446,7 @@ def run(dry_run=False, status_only=False):
     slots = iter_free_slots(datetime.now(timezone.utc), set(occupied))
     slot = next(slots)
     while need > 0 and created < MAX_NEW_PER_RUN and pool:
-        v = pick_next(pool, state["recent_players"])
+        v = pick_next(pool, state["recent_players"], state["recent_creators"])
         if not v:
             break
         slot_dt, kind = slot
@@ -411,11 +455,12 @@ def run(dry_run=False, status_only=False):
         url = f"{R2_PUBLIC_BASE}/{v['key']}"
         if dry_run:
             log(f"🆕 [dry-run] {slot_dt.astimezone(POST_TZ):%a %d/%m %H:%M} [{kind}] {v['title']} "
-                f"({v.get('player') or '—'})\n      {text.replace(chr(10), ' | ')}"
+                f"({v.get('player') or '—'} · {creator_of(v)})\n      {text.replace(chr(10), ' | ')}"
                 + (f"\n      ↳ réponse : {reply.replace(chr(10), ' | ')}" if reply else ""))
             post_id, due = None, None
             if created < 6:
-                gh_notice(f"[simulation] {slot_dt.astimezone(POST_TZ):%a %d/%m %H:%M} [{kind}] {clean_title(v['title'])}")
+                gh_notice(f"[simulation] {slot_dt.astimezone(POST_TZ):%a %d/%m %H:%M} [{kind}] "
+                          f"{creator_of(v)} · {clean_title(v['title'])}")
         else:
             try:
                 post_id, due = create_video_post(text, url, due_iso, reply)
@@ -443,6 +488,7 @@ def run(dry_run=False, status_only=False):
         state["counter"] += 1
         state["recent_players"] = (state["recent_players"] + [v.get("player")] if v.get("player")
                                    else state["recent_players"])[-AVOID_LAST_PLAYERS:]
+        state["recent_creators"] = (state["recent_creators"] + [creator_of(v)])[-CREATOR_WINDOW:]
         created += 1
         need -= 1
         if not dry_run:
@@ -454,6 +500,9 @@ def run(dry_run=False, status_only=False):
         f"(~{days_left:.0f} jours au total)")
     gh_notice(f"[{ACCOUNT}] {'simulation : ' if dry_run else ''}{created} vidéo(s) ajoutée(s), "
               f"stock restant {remaining} (~{days_left:.0f} jours)")
+    stock = creator_stock(pool)
+    log("🎬 Stock par créateur : " + " | ".join(f"{c} {n}" for c, n in stock.items()))
+    gh_notice("[stock par créateur] " + " | ".join(f"{c} {n}" for c, n in stock.items()))
     if not dry_run:
         save_state(state)
     if days_left < LOW_STOCK_DAYS:
