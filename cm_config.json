@@ -1,5 +1,5 @@
 {
-  "enabled": false,
+  "enabled": true,
   "start_date": "2026-10-27",
   "phases": [[7, ["20:15"]], [14, ["16:30", "20:15"]], [null, ["10:45", "16:30", "20:15"]]],
   "max_reactions_per_day": 2,
