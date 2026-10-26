@@ -103,6 +103,7 @@ AVOID_LAST_PLAYERS = 3         # pas le même joueur dans les 3 derniers posts
 #   1   = proportionnel (tous les créateurs se vident en même temps, mais 2/3 des posts viennent du plus gros)
 CREATOR_WEIGHT_POWER = 0.5
 CREATOR_WINDOW = 24            # le dosage se calcule sur les 24 derniers posts (~6 jours à 4/jour)
+AVOID_LAST_TITLES = 30         # pas deux fois le même texte de post dans les 30 derniers (~1 semaine à 4/jour)
 SHUFFLE_SEED = PROFILE["seed"]
 TWEET_MAX = 280
 
@@ -164,10 +165,12 @@ def load_state():
             st.setdefault("counter", 0)
             st.setdefault("recent_players", [])
             st.setdefault("recent_creators", [])
+            st.setdefault("recent_titles", [])
             return st
         except json.JSONDecodeError:
             log("⚠️  video_state.json illisible, on repart de zéro")
-    return {"posted": {}, "failed": {}, "counter": 0, "recent_players": [], "recent_creators": []}
+    return {"posted": {}, "failed": {}, "counter": 0, "recent_players": [], "recent_creators": [],
+            "recent_titles": []}
 
 
 def save_state(state):
@@ -211,14 +214,15 @@ def creator_stock(cands):
     return dict(Counter(creator_of(v) for v in cands).most_common())
 
 
-def pick_next(cands, recent_players, recent_creators=()):
+def pick_next(cands, recent_players, recent_creators=(), recent_titles=()):
     """Choisit la prochaine vidéo en mélangeant les créateurs.
 
     1. Créateur : celui qui est le plus "en retard" sur sa part, calculée sur les derniers posts
        (poids = stock restant ** CREATOR_WEIGHT_POWER). Jamais le même créateur deux fois d'affilée
        tant qu'un autre en a en stock. Un nouveau créateur (ou de nouvelles vidéos) entre
        automatiquement dans le tour, sans rien changer.
-    2. Vidéo : dans l'ordre mélangé stable, en évitant les joueurs déjà vus dans les derniers posts.
+    2. Vidéo : dans l'ordre mélangé stable, en évitant les joueurs et les textes de post déjà vus
+       dans les derniers posts.
     """
     by_creator = {}
     for v in sorted(cands, key=order_key):
@@ -238,7 +242,13 @@ def pick_next(cands, recent_players, recent_creators=()):
     last = window[-1] if window else None
     if len(ranked) > 1 and last in ranked:
         ranked = [c for c in ranked if c != last] + [last]      # le dernier créateur passe en dernier recours
-    for c in ranked:
+    seen_titles = set(recent_titles)
+    for c in ranked:                                            # joueur ET texte de post pas déjà vus
+        for v in by_creator[c]:
+            p, tk = v.get("player"), title_key(v)
+            if (not p or p not in recent_players) and (tk is None or tk not in seen_titles):
+                return v
+    for c in ranked:                                            # repli : on ne garde que la règle des joueurs
         for v in by_creator[c]:
             p = v.get("player")
             if not p or p not in recent_players:
@@ -255,14 +265,65 @@ def clean_title(t):
     return re.sub(r"[ \t]{2,}", " ", t).strip()
 
 
+def is_blank_title(t):
+    """Titre sans texte exploitable : vide, emojis seuls, ou juste le num\u00e9ro de la vid\u00e9o (TikTok sans l\u00e9gende)."""
+    core = re.sub(r"[\W_]+", "", t or "", flags=re.UNICODE)
+    return not core or core.isdigit()
+
+
+FALLBACK_TITLES = ["\U0001F525⚽", "⚽\U0001F525", "\U0001F440⚽", "\U0001F929⚽"]   # 🔥⚽ ⚽🔥 👀⚽ 🤩⚽
+
+
+def post_title(v):
+    """Texte d'ouverture du post : le titre nettoy\u00e9, ou \u00e0 d\u00e9faut le joueur, ou un simple emoji (jamais un num\u00e9ro)."""
+    t = clean_title(v.get("title"))
+    if not is_blank_title(t):
+        return t
+    p = (v.get("player") or "").strip()
+    if p and not p.isdigit():
+        return f"{p.title()} \u26bd"
+    return FALLBACK_TITLES[int(hashlib.sha1(str(v.get("id")).encode()).hexdigest(), 16) % len(FALLBACK_TITLES)]
+
+
+def title_key(v):
+    """Cl\u00e9 de comparaison du texte d'un post (None si le titre n'a pas de texte propre)."""
+    t = clean_title(v.get("title"))
+    return None if is_blank_title(t) else t.lower()
+
+
+# Hashtags g\u00e9n\u00e9riques TikTok, jamais utiles sur X (y compris leurs versions coup\u00e9es : "#footballtikto", "#vira")
+GENERIC_TAG_RE = re.compile(r"^#(footballtik\w*|tiktok\w*|fyp\w*|foryou\w*|pourtoi\w*|viral\w*|vira|xyzbca\w*|trending)$",
+                            re.I)
+TAG_VOCAB = {}       # hashtag (minuscules) -> nombre de vid\u00e9os du catalogue qui l'utilisent (rempli \u00e0 chaque passage)
+_TRUNCATED = {}      # cache : hashtag -> True s'il ressemble \u00e0 un hashtag coup\u00e9 par TikTok
+
+
+def set_tag_vocab(videos):
+    """M\u00e9morise les hashtags du catalogue pour rep\u00e9rer les hashtags coup\u00e9s ('#cham' alors que '#championsleague' existe)."""
+    from collections import Counter
+    TAG_VOCAB.clear()
+    TAG_VOCAB.update(Counter(t.lower() for v in videos for t in set((v.get("hashtags") or "").split())
+                             if t.startswith("#")))
+    _TRUNCATED.clear()
+
+
+def looks_truncated(low):
+    if low not in _TRUNCATED:
+        mine = max(TAG_VOCAB.get(low, 0), 1)
+        _TRUNCATED[low] = any(u != low and u.startswith(low) and n >= 3 * mine for u, n in TAG_VOCAB.items())
+    return _TRUNCATED[low]
+
+
 def clean_tags(tags):
-    """Liste de hashtags propres : sans doublon, sans hashtag tronqu\u00e9 ("#foo...") ni "#" orphelin."""
+    """Hashtags propres : sans doublon, sans "#" orphelin, sans hashtag g\u00e9n\u00e9rique TikTok, sans hashtag coup\u00e9."""
     out, seen = [], set()
     for tag in (tags or "").split():
-        if not tag.startswith("#") or len(tag) < 2 or tag.endswith("...") or tag.endswith("\u2026"):
+        low = tag.lower()
+        if (not tag.startswith("#") or len(tag) < 2 or tag.endswith(("...", "\u2026"))
+                or GENERIC_TAG_RE.match(tag) or looks_truncated(low)):
             continue
-        if tag.lower() not in seen:
-            seen.add(tag.lower())
+        if low not in seen:
+            seen.add(low)
             out.append(tag)
     return out
 
@@ -280,7 +341,7 @@ def next_cta(state, kind, pool):
 
 def build_post(v, kind, state, catalog):
     """Retourne (texte du post, texte de la réponse ou None) selon le type de créneau."""
-    title = clean_title(v["title"])
+    title = post_title(v)
     tags = (v.get("hashtags") or "").strip()
     cta = None
     reply = None
@@ -432,6 +493,10 @@ def run(dry_run=False, status_only=False):
     catalog = fetch_catalog()
     videos = catalog["videos"]
     state = load_state()
+    set_tag_vocab(videos)
+    if not state["recent_titles"] and state["posted"]:       # état d'avant cette règle : on la reconstruit
+        last = sorted(state["posted"].values(), key=lambda p: p.get("due", ""))[-AVOID_LAST_TITLES:]
+        state["recent_titles"] = [k for k in (title_key({"title": p.get("title")}) for p in last) if k]
     in_queue, last_due, queued_urls, occupied = queue_stats()
     cands = candidates(videos, state)
     # Sécurité anti-doublon : une vidéo déjà présente dans la file Buffer n'est jamais reprogrammée,
@@ -460,7 +525,7 @@ def run(dry_run=False, status_only=False):
     slots = iter_free_slots(datetime.now(timezone.utc), set(occupied))
     slot = next(slots)
     while need > 0 and created < MAX_NEW_PER_RUN and pool:
-        v = pick_next(pool, state["recent_players"], state["recent_creators"])
+        v = pick_next(pool, state["recent_players"], state["recent_creators"], state["recent_titles"])
         if not v:
             break
         slot_dt, kind = slot
@@ -503,6 +568,9 @@ def run(dry_run=False, status_only=False):
         state["recent_players"] = (state["recent_players"] + [v.get("player")] if v.get("player")
                                    else state["recent_players"])[-AVOID_LAST_PLAYERS:]
         state["recent_creators"] = (state["recent_creators"] + [creator_of(v)])[-CREATOR_WINDOW:]
+        tk = title_key(v)
+        if tk:
+            state["recent_titles"] = (state["recent_titles"] + [tk])[-AVOID_LAST_TITLES:]
         created += 1
         need -= 1
         if not dry_run:
@@ -527,54 +595,39 @@ def run(dry_run=False, status_only=False):
 
 
 def catalog_summary():
-    """Résume le catalogue R2 (dossiers, créateurs, joueurs...) en annotations GitHub. N'envoie rien à Buffer."""
+    """Contrôle du catalogue R2, en peu d'annotations GitHub (max 10 par étape). N'envoie rien à Buffer."""
     from collections import Counter
     videos = fetch_catalog()["videos"]
-    fields = sorted({k for v in videos for k in v})
-    log(f"📦 Catalogue : {len(videos)} vidéos | champs : {', '.join(fields)}")
-    gh_notice(f"[catalogue] {len(videos)} vidéos | champs : {', '.join(fields)}")
-
-    def top(counter, n=40):
-        return " | ".join(f"{k} : {c}" for k, c in counter.most_common(n))
-
-    folders = Counter((v["key"].rsplit("/", 1)[0] if "/" in v["key"] else "(racine)") for v in videos)
-    log(f"📁 {len(folders)} dossier(s) sur R2 : {top(folders, 200)}")
-    gh_notice(f"[catalogue] {len(folders)} dossier(s) sur R2 → {top(folders)}"[:2500])
-    if len(folders) > 40:
-        tops = Counter(v["key"].split("/", 1)[0] for v in videos)
-        gh_notice(f"[catalogue] dossiers de 1er niveau → {top(tops)}"[:2500])
-    for field in [f for f in fields if f not in ("id", "key", "title", "hashtags")][:5]:
-        vals = Counter(str(v.get(field)) for v in videos if v.get(field) not in (None, ""))
-        if vals:
-            log(f"🏷️  champ « {field} » ({len(vals)} valeurs) : {top(vals, 200)}")
-            gh_notice(f"[catalogue] champ « {field} » ({len(vals)} valeurs) → {top(vals, 30)}"[:2500])
-    gh_notice("[catalogue] exemples de clés : " + " | ".join(v["key"] for v in videos[:3]))
-
-    # --- contrôle qualité par créateur : ce qui donnerait un mauvais post ---
+    set_tag_vocab(videos)
     by_creator = {}
     for v in videos:
         by_creator.setdefault(creator_of(v), []).append(v)
+    ordered = sorted(by_creator.items(), key=lambda kv: -len(kv[1]))
+    head = f"{len(videos)} vidéos, {len(by_creator)} créateurs : " + " | ".join(f"{c} {len(vs)}" for c, vs in ordered)
+    log("📦 " + head)
+    gh_notice("[catalogue] " + head)
+
     ids = Counter(v["id"] for v in videos)
     keys = Counter(v["key"] for v in videos)
-    dup_ids = sum(1 for c in ids.values() if c > 1)
-    dup_keys = sum(1 for c in keys.values() if c > 1)
-    titles = Counter((v.get("title") or "").strip().lower() for v in videos)
-    dup_titles = sum(c for t, c in titles.items() if t and c > 1)
-    log(f"🔎 doublons : {dup_ids} id, {dup_keys} fichier(s), {dup_titles} vidéo(s) au titre identique")
-    gh_notice(f"[contrôle] doublons : {dup_ids} id, {dup_keys} fichier(s), {dup_titles} vidéo(s) au titre identique")
-    for c, vs in sorted(by_creator.items(), key=lambda kv: -len(kv[1])):
-        cut = sum(1 for v in vs if "..." in (v.get("title") or "") or "…" in (v.get("title") or "")
-                  or any(t.endswith(("...", "…")) for t in (v.get("hashtags") or "").split()))
-        no_title = sum(1 for v in vs if not clean_title(v.get("title")))
+    titles = Counter(title_key(v) for v in videos if title_key(v))
+    dup_titles = sum(c for c in titles.values() if c > 1)
+    lines = [f"doublons : {sum(1 for c in ids.values() if c > 1)} id, {sum(1 for c in keys.values() if c > 1)} fichier(s) | "
+             f"{dup_titles} vidéos partagent un titre avec une autre (normal : titres du type « Neymar ⚽ »)"]
+    samples = []
+    for c, vs in ordered:
+        blank = sum(1 for v in vs if is_blank_title(clean_title(v.get("title"))))
+        cut = sum(1 for v in vs if "..." in (v.get("title") or "") or "\u2026" in (v.get("title") or "")
+                  or any(t.endswith(("...", "\u2026")) for t in (v.get("hashtags") or "").split()))
         no_tags = sum(1 for v in vs if not clean_tags(v.get("hashtags")))
         long_posts = sum(1 for v in vs if len(build_post(v, "none", {"counter": 0}, {})[0]) > TWEET_MAX)
-        msg = (f"[contrôle] {c} : {len(vs)} vidéos | titre/hashtag coupé « ... » : {cut} | sans titre : {no_title} | "
-               f"sans hashtag : {no_tags} | post > {TWEET_MAX} car. : {long_posts}")
-        log("🔎 " + msg)
-        gh_notice(msg)
-        for v in vs[-2:]:                       # les 2 dernières entrées du créateur (les plus récemment ajoutées)
-            sample = build_post(v, "none", {"counter": 0}, {})[0].replace("\n", " | ")
-            gh_notice(f"[exemple de post] {c} → {sample}"[:600])
+        lines.append(f"{c} : {len(vs)} | titre sans texte (numéro) {blank} | coupé « ... » {cut} | "
+                     f"sans hashtag {no_tags} | trop long {long_posts}")
+        for v in vs[-2:]:                         # les 2 dernières entrées du créateur (les plus récemment ajoutées)
+            samples.append(f"{c} → " + build_post(v, "none", {"counter": 0}, {})[0].replace("\n", " | "))
+    for line in lines:
+        log("🔎 " + line)
+    gh_notice("[contrôle] " + "\n".join(lines))
+    gh_notice("[exemples de posts]\n" + "\n".join(samples))
     return 0
 
 
