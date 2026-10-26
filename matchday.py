@@ -6,7 +6,7 @@ Ce que fait le script a chaque passage (toutes les 30 min via GitHub Actions) :
   1. Interroge football-data.org : matchs des 10 clubs suivis (prochaines 49 h + resultats recents)
   2. Cree une affiche par match : logos officiels des deux clubs, VS, date, competition, heure (gratuit, sans IA)
   3. Telegram : envoie l'affiche 48 h avant le coup d'envoi (message : "teste avant le match pour obtenir ton acces")
-     X : poste une affiche (pied de page @monfootballfr) ~3 h avant les matchs des 6 clubs X_CLUBS, sans CTA,
+     X : poste une affiche (pied de page @monfootballfr) ~3 h avant les matchs des clubs X_CLUBS, sans CTA,
          via Buffer sur le compte monfootballfr (jamais sur un creneau video, 3 affiches max par jour)
   4. Apres le match : poste le score final avec une affiche "score final"
   5. Anti-doublons (state.json) : un match = une affiche = un post
@@ -85,7 +85,7 @@ MAX_NEW_ITEMS_PER_RUN = 12    # garde-fou : max 12 nouvelles affiches par passag
 MAX_IMAGES_PER_DAY = 40       # garde-fou : max 40 affiches par jour (UTC) ; le rendu logos + VS est gratuit
 KEEP_DAYS = 10                # on supprime les affiches de plus de 10 jours
 POST_TO_X = True              # affiche de jour de match sur X (monfootballfr), sans CTA
-X_CLUBS = {524, 516, 81, 86, 64, 65}   # 6 clubs : PSG, OM, Barça, Real Madrid, Liverpool, Man City (ids football-data.org)
+X_CLUBS = {524, 516, 81, 86, 64, 65, 5}   # PSG, OM, Barça, Real Madrid, Liverpool, Man City, Bayern (ids football-data.org)
 X_POST_BEFORE_MIN = 180       # post X ~3 h avant le coup d'envoi
 X_LOOKAHEAD_H = 24            # l'affiche X est préparée et programmée dans Buffer jusqu'à 24 h à l'avance
 X_MAX_PER_DAY = 3             # plafond d'affiches X par jour de match (compte neuf : pas de spam), les gros chocs d'abord
