@@ -1,0 +1,54 @@
+name: CM monfootballfr
+
+on:
+  schedule:
+    - cron: "7,37 * * * *"    # toutes les 30 min (GitHub peut retarder de quelques minutes à quelques heures)
+  workflow_dispatch:          # bouton "Run workflow" pour lancer à la main
+    inputs:
+      mode:
+        description: "normal = programme vraiment | dry-run = simule | samples = exemples de posts | diag = diagnostic"
+        type: choice
+        options: [normal, dry-run, samples, diag]
+        default: diag
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cm
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+      FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Community manager
+        run: python cm.py ${{ inputs.mode == 'dry-run' && '--dry-run' || inputs.mode == 'samples' && '--samples' || inputs.mode == 'diag' && '--diag' || '' }}
+        # Interrupteur d'urgence : "enabled": false dans cm_config.json.
+        # Code 2 = clé OpenAI refusée / crédit épuisé : l'étape devient rouge et GitHub envoie un email d'alerte.
+
+      - name: Sauvegarde de l'état
+        if: always()
+        run: |
+          git config user.name "accesmatch-bot"
+          git config user.email "accesmatch-bot@users.noreply.github.com"
+          git add cm_state.json 2>/dev/null || true
+          if ! git diff --cached --quiet; then
+            git commit -m "etat cm"
+            git pull --rebase
+            git push
+          fi
