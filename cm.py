@@ -44,12 +44,12 @@ ROOT = Path(__file__).resolve().parent
 CONFIG_FILE = ROOT / "cm_config.json"
 STATE_FILE = ROOT / "cm_state.json"
 
-BUFFER_API_KEY = os.environ.get("BUFFER_API_KEY", "")
+BUFFER_API_KEY = os.environ.get("BUFFER_API_KEY", "").strip()
 BUFFER_URL = "https://api.buffer.com"
 BUFFER_CHANNEL_ID = os.environ.get("BUFFER_CHANNEL_ID") or "6ade26c62f1f5ed648ca2250"   # monfootballfr
 BUFFER_ORG_ID = os.environ.get("BUFFER_ORG_ID", "6ab1f781b91aadc0d8a2a8ca")
-OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
-FOOTBALL_DATA_TOKEN = os.environ.get("FOOTBALL_DATA_TOKEN", "")
+OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "").strip()
+FOOTBALL_DATA_TOKEN = os.environ.get("FOOTBALL_DATA_TOKEN", "").strip()
 
 PARIS = ZoneInfo("Europe/Paris")
 UA = {"User-Agent": "Mozilla/5.0 (compatible; monfootballfr-cm/1.0)"}
@@ -256,11 +256,14 @@ def _openai_headers():
 
 
 def list_models():
+    """Liste des modeles du compte. Une cle restreinte (sans droit de lecture des modeles) donne une liste vide :
+    ce n'est pas bloquant, on essaie alors les modeles habituels directement."""
     if _MODEL["list"] is None:
         r = requests.get("https://api.openai.com/v1/models", headers=_openai_headers(), timeout=30)
-        if r.status_code in (401, 403):
-            raise Fatal(f"OpenAI refuse la cle (HTTP {r.status_code}) : {r.text[:200]}")
+        if r.status_code == 401:
+            raise Fatal(f"OpenAI refuse la cle (HTTP 401) : {r.text[:200]}")
         _MODEL["list"] = sorted(m["id"] for m in r.json().get("data", [])) if r.status_code == 200 else []
+        _MODEL["list_status"] = r.status_code
     return _MODEL["list"]
 
 
@@ -269,11 +272,13 @@ def candidate_models(cfg):
     if forced:
         return [forced]
     avail = set(list_models())
+    if not avail:
+        return list(MODEL_PREFERENCE)
     ordered = [m for m in MODEL_PREFERENCE if m in avail]
     if not ordered:
         ordered = [m for m in sorted(avail) if re.search(r"(luna|mini|nano)", m) and "audio" not in m
                    and "realtime" not in m and "transcribe" not in m and "tts" not in m][:3]
-    return ordered or MODEL_PREFERENCE[:3]    # liste d'modeles inaccessible : on essaie les habituels
+    return ordered or list(MODEL_PREFERENCE)
 
 
 def llm_json(messages, cfg, state, max_tokens=2500):
@@ -307,8 +312,12 @@ def llm_json(messages, cfg, state, max_tokens=2500):
                     raise ValueError(f"reponse sans JSON : {txt[:120]!r} (fin: {j['choices'][0].get('finish_reason')})")
                 return json.loads(m.group(0))
             msg = r.text[:600]
+            if r.status_code == 403 and ("access to model" in msg or "model_not_found" in msg or "does not exist" in msg):
+                last_err = f"{model} : acces refuse a ce modele"
+                _MODEL.setdefault("fails", []).append(f"{model}: {msg[:120]}")
+                break
             if r.status_code in (401, 403):
-                raise Fatal(f"OpenAI refuse la cle (HTTP {r.status_code}) : {msg[:200]}")
+                raise Fatal(f"OpenAI refuse la cle (HTTP {r.status_code}) : {msg[:300]}")
             if r.status_code == 402 or (r.status_code == 429 and ("insufficient_quota" in msg or "billing" in msg.lower())):
                 raise Fatal("Credit OpenAI epuise (insufficient_quota) : recharge sur platform.openai.com")
             if r.status_code == 429:
@@ -316,6 +325,7 @@ def llm_json(messages, cfg, state, max_tokens=2500):
                 continue
             if r.status_code == 404 or "model_not_found" in msg or "does not exist" in msg:
                 last_err = f"modele {model} indisponible"
+                _MODEL.setdefault("fails", []).append(f"{model}: {msg[:120]}")
                 break
             if r.status_code == 400:   # parametre non supporte par ce modele : on le retire ou on le renomme
                 changed = False
@@ -865,11 +875,14 @@ def diag():
     notes = []
     try:
         models = list_models()
-        notes.append(f"OpenAI : {len(models)} modeles | gpt* : " + ", ".join(m for m in models if m.startswith("gpt"))[:900])
+        notes.append(f"OpenAI liste des modeles : HTTP {_MODEL.get('list_status')} | {len(models)} modeles | gpt* : "
+                     + ", ".join(m for m in models if m.startswith("gpt"))[:700])
         cands = candidate_models(cfg)
         notes.append(f"Modeles essayes dans l'ordre : {cands}")
         out = llm_json([{"role": "user", "content": "Reponds en JSON : {\"ok\": true, \"mot\": \"but\"}"}], cfg, state, 300)
         notes.append(f"Test IA : {out} | modele retenu : {_MODEL['name']} | usage : {state['usage']}")
+        if _MODEL.get("fails"):
+            notes.append("Modeles refuses : " + " ; ".join(_MODEL["fails"]))
     except Fatal as e:
         notes.append(f"OpenAI : ERREUR FATALE {e}")
     except Exception as e:
