@@ -1,22 +1,27 @@
 #!/usr/bin/env python3
 """
-AccesMatch VideoQueue — garde ta file Buffer pleine de vidéos, tout seul.
+VideoQueue — garde ta file Buffer pleine de vidéos, tout seul (un profil par compte X : monfootballfr, accesmatch).
 
 Chaque jour, le robot :
   1. lit le catalogue de tes vidéos (catalog.json, hébergé sur Cloudflare R2)
-  2. compte combien de vidéos sont déjà programmées dans la file Buffer de @accesmatch
-  3. ajoute les vidéos manquantes pour toujours avoir ~14 jours d'avance (4 posts/jour),
-     dans tes créneaux (9h15, 12h30, 18h30, 21h45, heure de Paris), en comblant d'abord les trous
-  4. alterne les joueurs (jamais le même joueur 2 fois de suite) et applique le plan de CTA par créneau :
-       9h15  = vidéo seule | 12h30 = CTA "regarde ma bio" | 18h30 = lien Telegram en RÉPONSE | 21h45 = CTA bio
+  2. compte combien de vidéos sont déjà programmées dans la file Buffer du compte
+  3. ajoute les vidéos manquantes pour toujours avoir ~14 jours d'avance, dans les créneaux du profil
+     (heure de Paris), en comblant d'abord les trous
+  4. alterne les joueurs (jamais le même joueur 2 fois de suite) et applique le plan de CTA par créneau
   5. t'alerte (le robot passe au rouge sur GitHub => email) quand il te reste moins de 14 jours de stock
+
+Compte actif : variable VQ_ACCOUNT (défaut : monfootballfr).
+Chauffe de monfootballfr (chaque phase AJOUTE des créneaux, aucun ne bouge) :
+  jours 1-7  : 2 vidéos/jour (12h30, 21h45), sans CTA
+  jours 8-14 : 3 vidéos/jour (+18h30), sans CTA
+  jour 15+   : 4 vidéos/jour (+9h15) avec le plan de CTA (bio / lien Telegram en réponse)
 
 Commandes :
   python3 videoqueue.py             # remplit la file
   python3 videoqueue.py --dry-run   # montre ce qui serait ajouté, sans rien envoyer
   python3 videoqueue.py --status    # état du stock et de la file
 
-Variables d'environnement : BUFFER_API_KEY, R2_PUBLIC_BASE (ex: https://pub-xxxx.r2.dev)
+Variables d'environnement : BUFFER_API_KEY, R2_PUBLIC_BASE (ex: https://pub-xxxx.r2.dev), VQ_ACCOUNT (optionnel)
 Codes de sortie : 0 = OK, 2 = erreur, 3 = stock bas (alerte)
 """
 
@@ -28,7 +33,7 @@ import random
 import re
 import sys
 import time
-from datetime import datetime, timedelta, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 import requests
@@ -38,15 +43,51 @@ from zoneinfo import ZoneInfo
 # CONFIGURATION
 # ============================================================
 ROOT = Path(__file__).resolve().parent
-STATE_FILE = ROOT / "video_state.json"
+
+# ------------------------------------------------------------
+# PROFILS DE COMPTES
+# ------------------------------------------------------------
+# Plan de CTA par créneau (heure de Paris) :
+#   none  = vidéo seule (le contenu qui fait grossir le compte)
+#   bio   = phrase d'accroche "regarde ma bio" (sans lien)
+#   reply = vidéo propre + lien Telegram dans une RÉPONSE (la portée de la vidéo est préservée)
+# "phases" = montée en charge : (jusqu'au jour N exclu, créneaux). None = pour toujours.
+# Chaque phase AJOUTE des créneaux : aucun créneau déjà en place ne bouge.
+CRUISE_PLAN = [("09:15", "none"), ("12:30", "bio"), ("18:30", "reply"), ("21:45", "bio")]
+ACCOUNTS = {
+    "monfootballfr": dict(
+        channel_id="6ade26c62f1f5ed648ca2250",          # canal Buffer vérifié via l'API
+        state_file="video_state_monfootballfr.json",
+        seed="monfootballfr-v1",
+        start_date="2026-10-27",                         # 1er jour de publication (jour 1 de la chauffe)
+        phases=[
+            (7, [("12:30", "none"), ("21:45", "none")]),                        # jours 1-7  : 2/jour, sans CTA
+            (14, [("12:30", "none"), ("18:30", "none"), ("21:45", "none")]),    # jours 8-14 : 3/jour, sans CTA
+            (None, CRUISE_PLAN),                                                 # jour 15+   : 4/jour + CTA
+        ]),
+    # Compte suspendu le 12/10/2026 : pour le réactiver (appel accepté), reconnecter le canal dans Buffer,
+    # mettre son nouvel identifiant ci-dessous et lancer le robot avec VQ_ACCOUNT=accesmatch.
+    "accesmatch": dict(
+        channel_id="6ac7ca726a5c39ccb6535913",
+        state_file="video_state.json",
+        seed="accesmatch-v1",
+        start_date=None,
+        phases=[(None, CRUISE_PLAN)]),
+}
+ACCOUNT = (os.environ.get("VQ_ACCOUNT") or "monfootballfr").strip()
+if ACCOUNT not in ACCOUNTS:
+    raise SystemExit(f"❌ VQ_ACCOUNT inconnu : {ACCOUNT} (choix : {', '.join(ACCOUNTS)})")
+PROFILE = ACCOUNTS[ACCOUNT]
+START_DATE = date.fromisoformat(PROFILE["start_date"]) if PROFILE["start_date"] else None
+STATE_FILE = ROOT / PROFILE["state_file"]
 
 BUFFER_API_KEY = os.environ.get("BUFFER_API_KEY", "")
 BUFFER_URL = "https://api.buffer.com"
-BUFFER_CHANNEL_ID = os.environ.get("BUFFER_CHANNEL_ID", "6ac7ca726a5c39ccb6535913")   # @accesmatch
+BUFFER_CHANNEL_ID = os.environ.get("BUFFER_CHANNEL_ID") or PROFILE["channel_id"]
 BUFFER_ORG_ID = os.environ.get("BUFFER_ORG_ID", "6ab1f781b91aadc0d8a2a8ca")
 R2_PUBLIC_BASE = os.environ.get("R2_PUBLIC_BASE", "").rstrip("/")
 
-POSTS_PER_DAY = 4              # tes 4 créneaux Buffer
+POSTS_PER_DAY = len(PROFILE["phases"][-1][1])   # rythme de croisière (sert au calcul du stock en jours)
 QUEUE_TARGET_DAYS = 14         # jours de vidéos gardés d'avance dans Buffer
 MAX_NEW_PER_RUN = 70           # garde-fou par passage
 LOW_STOCK_DAYS = 14            # alerte si stock (file + non programmées) < 14 jours
@@ -54,16 +95,11 @@ API_DELAY = 2.0                # pause entre deux posts (limite Buffer : 100 / 1
 MAX_FAILS = 2                  # une vidéo refusée 2 fois est mise de côté
 MAX_CONSECUTIVE_REJECTS = 3    # 3 refus d'affilée = problème général, on arrête
 AVOID_LAST_PLAYERS = 3         # pas le même joueur dans les 3 derniers posts
-SHUFFLE_SEED = "accesmatch-v1"
+SHUFFLE_SEED = PROFILE["seed"]
 TWEET_MAX = 280
 
 POST_TZ = ZoneInfo("Europe/Paris")
 MIN_LEAD_MIN = 15              # un créneau doit être au moins 15 min dans le futur
-# Plan de CTA par créneau (heure de Paris) :
-#   none  = vidéo seule (le contenu qui fait grossir le compte)
-#   bio   = phrase d'accroche "regarde ma bio" (sans lien)
-#   reply = vidéo propre + lien Telegram dans une RÉPONSE (la portée de la vidéo est préservée)
-SLOT_PLAN = [("09:15", "none"), ("12:30", "bio"), ("18:30", "reply"), ("21:45", "bio")]
 
 
 def log(msg):
@@ -72,6 +108,40 @@ def log(msg):
 
 def now_iso():
     return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
+def plan_for(day):
+    """Créneaux [(heure de Paris, type de CTA)] prévus pour une date, selon la phase de chauffe du compte."""
+    if START_DATE is None:
+        n = 10 ** 6
+    else:
+        n = (day - START_DATE).days
+        if n < 0:
+            return []                      # avant le jour 1 : rien n'est publié
+    for until, slots in PROFILE["phases"]:
+        if until is None or n < until:
+            return slots
+    return PROFILE["phases"][-1][1]
+
+
+def queue_target(today):
+    """Nombre de vidéos à garder programmées : tous les créneaux des QUEUE_TARGET_DAYS prochains jours."""
+    return sum(len(plan_for(today + timedelta(days=i))) for i in range(QUEUE_TARGET_DAYS))
+
+
+def _gh_annotation(kind, msg):
+    """Annotation GitHub (visible dans l'onglet Actions sans ouvrir les logs). Sans effet hors GitHub."""
+    if os.environ.get("GITHUB_ACTIONS"):
+        msg = str(msg).replace("%", "%25").replace("\r", "").replace("\n", "%0A")
+        print(f"::{kind}::{msg}", flush=True)
+
+
+def gh_notice(msg):
+    _gh_annotation("notice", msg)
+
+
+def gh_error(msg):
+    _gh_annotation("error", msg)
 
 
 # ============================================================
@@ -187,7 +257,7 @@ def parse_iso(s):
 def kind_for_due(due_iso):
     """Type de CTA prévu pour un post programmé à cette date (UTC) ; None si ce n'est pas un de nos créneaux."""
     local = parse_iso(due_iso).astimezone(POST_TZ)
-    return dict(SLOT_PLAN).get(local.strftime("%H:%M"))
+    return dict(plan_for(local.date())).get(local.strftime("%H:%M"))
 
 
 def iter_free_slots(now, occupied):
@@ -195,7 +265,7 @@ def iter_free_slots(now, occupied):
     earliest = now + timedelta(minutes=MIN_LEAD_MIN)
     day = now.astimezone(POST_TZ).date()
     for _ in range(3 * 365):
-        for hhmm, kind in SLOT_PLAN:
+        for hhmm, kind in plan_for(day):
             h, m = map(int, hhmm.split(":"))
             dt = datetime(day.year, day.month, day.day, h, m, tzinfo=POST_TZ).astimezone(timezone.utc)
             if dt >= earliest and minute_key(dt) not in occupied:
@@ -312,11 +382,14 @@ def run(dry_run=False, status_only=False):
     if before != len(cands):
         log(f"🛡️  {before - len(cands)} vidéo(s) déjà dans la file Buffer : ignorées (anti-doublon)")
 
-    target = QUEUE_TARGET_DAYS * POSTS_PER_DAY
+    target = queue_target(datetime.now(POST_TZ).date())
     need = max(0, target - in_queue)
     log(f"📦 Catalogue : {len(videos)} vidéos | déjà postées par le robot : {len(state['posted'])} | "
         f"disponibles : {len(cands)}")
     log(f"📅 File Buffer : {in_queue} vidéos programmées (jusqu'au {last_due or '—'}) | objectif {target}")
+    log(f"🎯 Compte : {ACCOUNT} → canal Buffer {BUFFER_CHANNEL_ID} | 1er jour de publication : {START_DATE or '—'}")
+    gh_notice(f"[{ACCOUNT}] catalogue {len(videos)} vidéos, {len(cands)} disponibles, "
+              f"file Buffer {in_queue} (objectif {target})")
 
     if status_only:
         days = (in_queue + len(cands)) / POSTS_PER_DAY
@@ -340,6 +413,8 @@ def run(dry_run=False, status_only=False):
                 f"({v.get('player') or '—'})\n      {text.replace(chr(10), ' | ')}"
                 + (f"\n      ↳ réponse : {reply.replace(chr(10), ' | ')}" if reply else ""))
             post_id, due = None, None
+            if created < 6:
+                gh_notice(f"[simulation] {slot_dt.astimezone(POST_TZ):%a %d/%m %H:%M} [{kind}] {clean_title(v['title'])}")
         else:
             try:
                 post_id, due = create_video_post(text, url, due_iso, reply)
@@ -353,6 +428,7 @@ def run(dry_run=False, status_only=False):
                 pool = [x for x in pool if x["id"] != v["id"]]
                 if rejects >= MAX_CONSECUTIVE_REJECTS:
                     log("❌ 3 refus d'affilée : problème général (clé, vidéos inaccessibles ?), arrêt.")
+                    gh_error(f"3 refus d'affilée de Buffer, dernière erreur : {e}")
                     return 2
                 continue          # le créneau n'est pas consommé : la vidéo suivante le prend
             rejects = 0
@@ -375,6 +451,8 @@ def run(dry_run=False, status_only=False):
     days_left = (in_queue + created + remaining) / POSTS_PER_DAY
     log(f"✅ {created} vidéo(s) ajoutée(s). Stock restant : {remaining} non programmées "
         f"(~{days_left:.0f} jours au total)")
+    gh_notice(f"[{ACCOUNT}] {'simulation : ' if dry_run else ''}{created} vidéo(s) ajoutée(s), "
+              f"stock restant {remaining} (~{days_left:.0f} jours)")
     if not dry_run:
         save_state(state)
     if days_left < LOW_STOCK_DAYS:
@@ -385,14 +463,21 @@ def run(dry_run=False, status_only=False):
 
 
 def main(argv=None):
-    ap = argparse.ArgumentParser(description="AccesMatch VideoQueue")
+    ap = argparse.ArgumentParser(description="VideoQueue")
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--status", action="store_true")
     args = ap.parse_args(argv)
     try:
         code = run(dry_run=args.dry_run, status_only=args.status)
+    except SystemExit as e:
+        if not isinstance(e.code, str):
+            raise
+        log(e.code)
+        gh_error(e.code)
+        code = 2
     except (RuntimeError, requests.RequestException) as e:
         log(f"❌ {e}")
+        gh_error(e)
         code = 2
     sys.exit(code)
 

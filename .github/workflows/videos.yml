@@ -1,9 +1,14 @@
-name: AccesMatch VideoQueue
+name: VideoQueue monfootballfr
 
 on:
   schedule:
     - cron: "17 3 * * *"     # tous les jours à 03h17 UTC (10h17 à Bangkok)
   workflow_dispatch:          # bouton "Run workflow" pour lancer à la main
+    inputs:
+      dry_run:
+        description: "Simulation : montre ce qui serait programmé, n'envoie rien à Buffer"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -19,6 +24,7 @@ jobs:
     env:
       BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
       R2_PUBLIC_BASE: ${{ secrets.R2_PUBLIC_BASE }}
+      VQ_ACCOUNT: monfootballfr   # compte X servi par ce robot (voir ACCOUNTS dans videoqueue.py)
     steps:
       - uses: actions/checkout@v4
 
@@ -30,15 +36,16 @@ jobs:
         run: pip install requests
 
       - name: Remplir la file Buffer
-        run: python videoqueue.py
+        run: python videoqueue.py ${{ inputs.dry_run && '--dry-run' || '' }}
         # Code 3 = stock bas : l'étape devient rouge et GitHub t'envoie un email d'alerte.
+        # Le résultat (ou la cause d'une erreur) apparaît en annotation sur la page du run.
 
       - name: Sauvegarde de l'état
         if: always()
         run: |
           git config user.name "accesmatch-bot"
           git config user.email "accesmatch-bot@users.noreply.github.com"
-          git add video_state.json
+          git add video_state*.json
           if ! git diff --cached --quiet; then
             git commit -m "etat videos"
             git pull --rebase
