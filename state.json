@@ -263,7 +263,8 @@
       "due": null,
       "created": "2026-10-12T10:20:06Z",
       "fails": 3,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "skip"
     },
     "p575346": {
       "kind": "preview",
@@ -276,7 +277,8 @@
       "due": null,
       "created": "2026-10-12T10:20:06Z",
       "fails": 3,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "skip"
     },
     "p575345": {
       "kind": "preview",
@@ -289,7 +291,8 @@
       "due": null,
       "created": "2026-10-12T10:20:06Z",
       "fails": 3,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "skip"
     },
     "p575347": {
       "kind": "preview",
@@ -302,7 +305,8 @@
       "due": null,
       "created": "2026-10-12T10:20:06Z",
       "fails": 3,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "skip"
     },
     "p575350": {
       "kind": "preview",
@@ -315,7 +319,8 @@
       "due": null,
       "created": "2026-10-13T09:04:21Z",
       "fails": 3,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "skip"
     },
     "p575353": {
       "kind": "preview",
@@ -328,7 +333,8 @@
       "due": null,
       "created": "2026-10-13T09:04:21Z",
       "fails": 3,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "skip"
     },
     "p575352": {
       "kind": "preview",
@@ -341,7 +347,8 @@
       "due": null,
       "created": "2026-10-13T09:04:21Z",
       "fails": 3,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "skip"
     },
     "r575347": {
       "kind": "result",
@@ -452,7 +459,8 @@
       "due": null,
       "created": "2026-10-16T03:26:12Z",
       "fails": 3,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "skip"
     },
     "p560611": {
       "kind": "preview",
@@ -465,7 +473,8 @@
       "due": null,
       "created": "2026-10-16T03:26:12Z",
       "fails": 3,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "skip"
     },
     "p560610": {
       "kind": "preview",
@@ -478,7 +487,8 @@
       "due": null,
       "created": "2026-10-16T03:26:12Z",
       "fails": 3,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "skip"
     },
     "p559662": {
       "kind": "preview",
@@ -491,7 +501,8 @@
       "due": null,
       "created": "2026-10-16T03:26:12Z",
       "fails": 3,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "skip"
     },
     "p565825": {
       "kind": "preview",
@@ -504,7 +515,8 @@
       "due": null,
       "created": "2026-10-16T08:26:34Z",
       "fails": 3,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "skip"
     },
     "p564713": {
       "kind": "preview",
@@ -517,7 +529,8 @@
       "due": null,
       "created": "2026-10-16T08:26:34Z",
       "fails": 3,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "skip"
     },
     "p560605": {
       "kind": "preview",
@@ -530,7 +543,8 @@
       "due": null,
       "created": "2026-10-17T01:25:36Z",
       "fails": 3,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "skip"
     },
     "p559664": {
       "kind": "preview",
@@ -543,7 +557,8 @@
       "due": null,
       "created": "2026-10-17T01:25:36Z",
       "fails": 3,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "skip"
     },
     "p560608": {
       "kind": "preview",
@@ -556,7 +571,8 @@
       "due": null,
       "created": "2026-10-17T05:56:44Z",
       "fails": 3,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "skip"
     },
     "p564709": {
       "kind": "preview",
@@ -569,7 +585,8 @@
       "due": null,
       "created": "2026-10-17T10:23:50Z",
       "fails": 3,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "skip"
     },
     "r560603": {
       "kind": "result",
@@ -722,7 +739,8 @@
       "due": null,
       "created": "2026-10-19T09:39:04Z",
       "fails": 3,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "skip"
     },
     "p575363": {
       "kind": "preview",
@@ -735,7 +753,8 @@
       "due": null,
       "created": "2026-10-19T09:39:04Z",
       "fails": 3,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "skip"
     },
     "p575361": {
       "kind": "preview",
@@ -748,7 +767,8 @@
       "due": null,
       "created": "2026-10-19T09:39:04Z",
       "fails": 3,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "skip"
     },
     "p575368": {
       "kind": "preview",
@@ -761,7 +781,8 @@
       "due": null,
       "created": "2026-10-20T05:42:26Z",
       "fails": 3,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "skip"
     },
     "p575370": {
       "kind": "preview",
@@ -774,7 +795,8 @@
       "due": null,
       "created": "2026-10-20T11:00:34Z",
       "fails": 3,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "skip"
     },
     "p575372": {
       "kind": "preview",
@@ -787,7 +809,8 @@
       "due": null,
       "created": "2026-10-20T11:00:34Z",
       "fails": 3,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "skip"
     },
     "r575363": {
       "kind": "result",
@@ -884,7 +907,8 @@
       "due": null,
       "created": "2026-10-23T01:24:38Z",
       "fails": 3,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "skip"
     },
     "p560616": {
       "kind": "preview",
@@ -897,7 +921,8 @@
       "due": null,
       "created": "2026-10-23T06:19:33Z",
       "fails": 3,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "skip"
     },
     "p560617": {
       "kind": "preview",
@@ -910,7 +935,8 @@
       "due": null,
       "created": "2026-10-23T06:19:33Z",
       "fails": 3,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "skip"
     },
     "p560612": {
       "kind": "preview",
@@ -923,7 +949,8 @@
       "due": null,
       "created": "2026-10-24T06:55:18Z",
       "fails": 3,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "skip"
     },
     "p560615": {
       "kind": "preview",
@@ -936,7 +963,8 @@
       "due": null,
       "created": "2026-10-24T06:55:18Z",
       "fails": 3,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "skip"
     },
     "p559649": {
       "kind": "preview",
@@ -949,7 +977,8 @@
       "due": null,
       "created": "2026-10-24T06:55:18Z",
       "fails": 3,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "skip"
     },
     "p565836": {
       "kind": "preview",
@@ -962,7 +991,8 @@
       "due": null,
       "created": "2026-10-24T06:55:18Z",
       "fails": 3,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "skip"
     },
     "p564723": {
       "kind": "preview",
@@ -975,7 +1005,8 @@
       "due": null,
       "created": "2026-10-24T11:52:38Z",
       "fails": 3,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "skip"
     },
     "p559648": {
       "kind": "preview",
@@ -988,7 +1019,8 @@
       "due": null,
       "created": "2026-10-25T08:58:38Z",
       "fails": 3,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "sent"
     },
     "r560612": {
       "kind": "result",
@@ -1065,10 +1097,10 @@
       "match_id": 559648,
       "label": "PSG-OLYMPIQUE LYON",
       "kickoff": "2026-10-26T19:30:00Z",
-      "status": "poster_ready",
+      "status": "scheduled",
       "poster": "posters/x559648-20261026.jpg",
-      "post_id": null,
-      "due": null,
+      "post_id": "6adee9b3b217de1f80548ce3",
+      "due": "2026-10-26T16:30:00Z",
       "created": "2026-10-26T05:48:30Z",
       "fails": 0,
       "design": "crests-v1"
