@@ -1,0 +1,11 @@
+{
+  "posts": [],
+  "slots": {},
+  "slot_tries": {},
+  "reacted": [],
+  "used_news": [],
+  "counter": 0,
+  "usage": {
+    "by_model": {}
+  }
+}
