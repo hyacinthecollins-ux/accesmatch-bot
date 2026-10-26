@@ -250,7 +250,21 @@ def clean_title(t):
     """Nettoie le titre : '⧸' (faux slash des noms YouTube) -> '/', '#' orphelin retiré, espaces propres."""
     t = (t or "").replace("\u29f8", "/").replace("\u2044", "/")
     t = re.sub(r"\s#(?=\s|$)", "", t)
+    # l\u00e9gende TikTok coup\u00e9e par TikTok \u00e0 72 caract\u00e8res : un hashtag tronqu\u00e9 en fin de titre ("#foo...") est retir\u00e9
+    t = re.sub(r"\s*#[^\s#]*(?:\.{3}|\u2026)\s*$", "", t)
     return re.sub(r"[ \t]{2,}", " ", t).strip()
+
+
+def clean_tags(tags):
+    """Liste de hashtags propres : sans doublon, sans hashtag tronqu\u00e9 ("#foo...") ni "#" orphelin."""
+    out, seen = [], set()
+    for tag in (tags or "").split():
+        if not tag.startswith("#") or len(tag) < 2 or tag.endswith("...") or tag.endswith("\u2026"):
+            continue
+        if tag.lower() not in seen:
+            seen.add(tag.lower())
+            out.append(tag)
+    return out
 
 
 def next_cta(state, kind, pool):
@@ -280,7 +294,7 @@ def build_post(v, kind, state, catalog):
         parts = [title] + ([cta] if cta else []) + ([" ".join(tag_list)] if tag_list else [])
         return "\n\n".join(parts)
 
-    tag_list = tags.split()
+    tag_list = clean_tags(tags)
     text = assemble(tag_list)
     while len(text) > TWEET_MAX and tag_list:   # trop long : on retire des hashtags
         tag_list.pop()
@@ -535,6 +549,32 @@ def catalog_summary():
             log(f"🏷️  champ « {field} » ({len(vals)} valeurs) : {top(vals, 200)}")
             gh_notice(f"[catalogue] champ « {field} » ({len(vals)} valeurs) → {top(vals, 30)}"[:2500])
     gh_notice("[catalogue] exemples de clés : " + " | ".join(v["key"] for v in videos[:3]))
+
+    # --- contrôle qualité par créateur : ce qui donnerait un mauvais post ---
+    by_creator = {}
+    for v in videos:
+        by_creator.setdefault(creator_of(v), []).append(v)
+    ids = Counter(v["id"] for v in videos)
+    keys = Counter(v["key"] for v in videos)
+    dup_ids = sum(1 for c in ids.values() if c > 1)
+    dup_keys = sum(1 for c in keys.values() if c > 1)
+    titles = Counter((v.get("title") or "").strip().lower() for v in videos)
+    dup_titles = sum(c for t, c in titles.items() if t and c > 1)
+    log(f"🔎 doublons : {dup_ids} id, {dup_keys} fichier(s), {dup_titles} vidéo(s) au titre identique")
+    gh_notice(f"[contrôle] doublons : {dup_ids} id, {dup_keys} fichier(s), {dup_titles} vidéo(s) au titre identique")
+    for c, vs in sorted(by_creator.items(), key=lambda kv: -len(kv[1])):
+        cut = sum(1 for v in vs if "..." in (v.get("title") or "") or "…" in (v.get("title") or "")
+                  or any(t.endswith(("...", "…")) for t in (v.get("hashtags") or "").split()))
+        no_title = sum(1 for v in vs if not clean_title(v.get("title")))
+        no_tags = sum(1 for v in vs if not clean_tags(v.get("hashtags")))
+        long_posts = sum(1 for v in vs if len(build_post(v, "none", {"counter": 0}, {})[0]) > TWEET_MAX)
+        msg = (f"[contrôle] {c} : {len(vs)} vidéos | titre/hashtag coupé « ... » : {cut} | sans titre : {no_title} | "
+               f"sans hashtag : {no_tags} | post > {TWEET_MAX} car. : {long_posts}")
+        log("🔎 " + msg)
+        gh_notice(msg)
+        for v in vs[-2:]:                       # les 2 dernières entrées du créateur (les plus récemment ajoutées)
+            sample = build_post(v, "none", {"counter": 0}, {})[0].replace("\n", " | ")
+            gh_notice(f"[exemple de post] {c} → {sample}"[:600])
     return 0
 
 
