@@ -14,7 +14,7 @@ Compte actif : variable VQ_ACCOUNT (défaut : monfootballfr).
 Chauffe de monfootballfr (chaque phase AJOUTE des créneaux, aucun ne bouge) :
   jours 1-7  : 2 vidéos/jour (12h30, 21h45), sans CTA
   jours 8-14 : 3 vidéos/jour (+18h30), sans CTA
-  jour 15+   : 4 vidéos/jour (+9h15) avec le plan de CTA (bio / lien Telegram en réponse)
+  jour 15+   : 4 vidéos/jour (+9h15), toujours sans CTA : posts "edit" purs (titre + hashtags)
 
 Commandes :
   python3 videoqueue.py             # remplit la file
@@ -53,7 +53,8 @@ ROOT = Path(__file__).resolve().parent
 #   reply = vidéo propre + lien Telegram dans une RÉPONSE (la portée de la vidéo est préservée)
 # "phases" = montée en charge : (jusqu'au jour N exclu, créneaux). None = pour toujours.
 # Chaque phase AJOUTE des créneaux : aucun créneau déjà en place ne bouge.
-CRUISE_PLAN = [("09:15", "none"), ("12:30", "bio"), ("18:30", "reply"), ("21:45", "bio")]
+CRUISE_PLAN = [("09:15", "none"), ("12:30", "bio"), ("18:30", "reply"), ("21:45", "bio")]   # plan de CTA d'accesmatch
+EDIT_PLAN = [("09:15", "none"), ("12:30", "none"), ("18:30", "none"), ("21:45", "none")]     # posts "edit" purs, sans aucun CTA
 ACCOUNTS = {
     "monfootballfr": dict(
         channel_id="6ade26c62f1f5ed648ca2250",          # canal Buffer vérifié via l'API
@@ -63,7 +64,7 @@ ACCOUNTS = {
         phases=[
             (7, [("12:30", "none"), ("21:45", "none")]),                        # jours 1-7  : 2/jour, sans CTA
             (14, [("12:30", "none"), ("18:30", "none"), ("21:45", "none")]),    # jours 8-14 : 3/jour, sans CTA
-            (None, CRUISE_PLAN),                                                 # jour 15+   : 4/jour + CTA
+            (None, EDIT_PLAN),                                                   # jour 15+   : 4/jour, toujours sans CTA
         ]),
     # Compte suspendu le 12/10/2026 : pour le réactiver (appel accepté), reconnecter le canal dans Buffer,
     # mettre son nouvel identifiant ci-dessous et lancer le robot avec VQ_ACCOUNT=accesmatch.
