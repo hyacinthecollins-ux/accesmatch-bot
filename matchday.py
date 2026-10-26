@@ -5,8 +5,8 @@ AccesMatch MatchDay — affiches de match (logos officiels des clubs + VS) + pos
 Ce que fait le script a chaque passage (toutes les 30 min via GitHub Actions) :
   1. Interroge football-data.org : matchs des 10 clubs suivis (prochaines 49 h + resultats recents)
   2. Cree une affiche par match : logos officiels des deux clubs, VS, date, competition, heure (gratuit, sans IA)
-  3. Programme sur Buffer un post avec l'affiche, 48 h avant le coup d'envoi
-     (CTA : "chope ton acces avant le coup d'envoi", plus d'essai gratuit pour regarder le match)
+  3. Envoie l'affiche sur Telegram uniquement, 48 h avant le coup d'envoi
+     (message : "teste avant le match pour obtenir ton acces"). X/Buffer desactive (POST_TO_X = False).
   4. Apres le match : poste le score final avec une affiche "score final"
   5. Anti-doublons (state.json) : un match = une affiche = un post
      Si l'horaire change, l'ancien post est supprime et recree avec la bonne heure.
@@ -60,7 +60,7 @@ TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
 TELEGRAM_CHAT_ID = (os.environ.get("TELEGRAM_CHAT_ID") or "").strip() or "@accesmatch"
 # Ton lien de message prive (prise d'accès). A MODIFIER : https://t.me/TON_PSEUDO
 TELEGRAM_DM_URL = os.environ.get("TELEGRAM_DM_URL") or "https://t.me/EliteTVSupport"
-TELEGRAM_BUTTON_TEXT = "🔓 Prendre mon accès"
+TELEGRAM_BUTTON_TEXT = "🧪 Tester avant le match"
 TELEGRAM_MIN_BEFORE_KICKOFF_MIN = 5   # on n'annonce plus un match a moins de 5 min du coup d'envoi
 
 # Modele d'images OpenAI (celui de ChatGPT). Qualite : low / medium / high
@@ -83,6 +83,7 @@ RESULT_MAX_AGE_H = 6          # score final poste seulement si le coup d'envoi d
 MAX_NEW_ITEMS_PER_RUN = 6     # garde-fou cout : max 6 nouvelles affiches par passage
 MAX_IMAGES_PER_DAY = 12       # garde-fou cout : max 12 affiches par jour (UTC)
 KEEP_DAYS = 10                # on supprime les affiches de plus de 10 jours
+POST_TO_X = False             # affiches uniquement sur Telegram : le compte X ne publie que des vidéos (chauffe du compte)
 RESULT_POSTS = True           # poster les scores finaux
 RESULT_IMAGES = True          # avec une affiche "score final" (sinon texte seul)
 
@@ -534,13 +535,13 @@ def wait_for_url(url, tries=10, delay=6):
 # TELEGRAM — meme affiche dans le canal, message plus direct
 # ============================================================
 TG_PREVIEW_TEMPLATES = [
-    "⚽ <b>{m}</b>\n{c} · <b>{d}</b> à <b>{h}</b> (heure de Paris)\n\n📺 Le match en direct, en HD, sans stream qui coupe.\n🔓 Récupère ton accès <b>avant le coup d'envoi</b> : une fois le match lancé, il sera trop tard.\n\nÉcris-moi en privé 👇",
-    "🔥 <b>{m}</b> — <b>{d}</b> à <b>{h}</b>\n{c}\n\nPour suivre ce match en direct, ton accès se prend <b>avant</b> le coup d'envoi, pas pendant 🔓\nClique sur le bouton et écris-moi 👇",
-    "🚨 <b>{m}</b>\n{c} · <b>{d}</b> à <b>{h}</b> (heure de Paris)\n\nN'attends pas le dernier moment : sécurise ton accès dès maintenant, avant le début du match 🔓\nÉcris-moi en privé 👇",
+    "⚽ <b>{m}</b>\n{c} · <b>{d}</b> à <b>{h}</b> (heure de Paris)\n\n🧪 Teste avant le match pour obtenir ton accès : une fois le match lancé, plus de test.\n📺 Direct, HD, sans stream qui coupe.\n\nÉcris-moi en privé 👇",
+    "🔥 <b>{m}</b> — <b>{d}</b> à <b>{h}</b>\n{c}\n\nFais ton test <b>avant</b> le match pour obtenir ton accès, pas pendant 🔓\nClique sur le bouton et écris-moi 👇",
+    "🚨 <b>{m}</b>\n{c} · <b>{d}</b> à <b>{h}</b> (heure de Paris)\n\nN'attends pas le dernier moment : teste dès maintenant pour obtenir ton accès avant le début du match 🧪\nÉcris-moi en privé 👇",
 ]
 TG_RESULT_TEMPLATES = [
-    "🏁 <b>SCORE FINAL</b> : {s}\n\nTu l'as raté ? Pour le prochain, prends ton accès <b>avant</b> le coup d'envoi 🔓\nÉcris-moi en privé 👇",
-    "📣 Terminé : <b>{s}</b>\n\nLe prochain match en direct ? Ton accès se prend avant qu'il commence 📺\nClique sur le bouton et écris-moi 👇",
+    "🏁 <b>SCORE FINAL</b> : {s}\n\nTu l'as raté ? Pour le prochain, teste <b>avant</b> le match pour obtenir ton accès 🔓\nÉcris-moi en privé 👇",
+    "📣 Terminé : <b>{s}</b>\n\nLe prochain match en direct ? Teste avant qu'il commence pour obtenir ton accès 📺\nClique sur le bouton et écris-moi 👇",
 ]
 
 
@@ -731,6 +732,9 @@ def prepare(raw_matches, state, now, dry_run=False):
 # LOGIQUE : PUBLISH
 # ============================================================
 def publish(raw_matches, state, now, dry_run=False):
+    if not POST_TO_X:
+        log("ℹ️ Affiches : Telegram uniquement (POST_TO_X = False), rien n'est envoyé à Buffer/X")
+        return 0
     items = state["items"]
     by_id = {p["id"]: p for p in tracked_matches(raw_matches)}
     sent = 0
