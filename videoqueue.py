@@ -292,7 +292,7 @@ def title_key(v):
 
 
 # Hashtags g\u00e9n\u00e9riques TikTok, jamais utiles sur X (y compris leurs versions coup\u00e9es : "#footballtikto", "#vira")
-GENERIC_TAG_RE = re.compile(r"^#(footballtik\w*|tiktok\w*|fyp\w*|foryou\w*|pourtoi\w*|viral\w*|vira|xyzbca\w*|trending)$",
+GENERIC_TAG_RE = re.compile(r"^#(footballt(?:i\w*)?|tikt\w*|fyp\w*|foryou\w*|pourtoi\w*|viral\w*|vira|xyzbca\w*|trending)$",
                             re.I)
 TAG_VOCAB = {}       # hashtag (minuscules) -> nombre de vid\u00e9os du catalogue qui l'utilisent (rempli \u00e0 chaque passage)
 _TRUNCATED = {}      # cache : hashtag -> True s'il ressemble \u00e0 un hashtag coup\u00e9 par TikTok
