@@ -19,7 +19,7 @@ Commandes :
   python cm.py --diag         # diagnostic : modeles OpenAI, flux d'actu, football-data
 
 Interrupteur : "enabled": false dans cm_config.json (ou variable CM_DISABLED=1).
-Variables : OPENAI_API_KEY, BUFFER_API_KEY, FOOTBALL_DATA_TOKEN (optionnelles : OPENAI_MODEL, BUFFER_CHANNEL_ID)
+Variables : OPENAI_API_KEY, BUFFER_API_KEY, FOOTBALL_DATA_TOKEN (optionnelles : OPENAI_MODEL, OPENAI_MODEL_VERIFIER, BUFFER_CHANNEL_ID)
 Codes de sortie : 0 = OK, 2 = erreur (cle OpenAI refusee, credit epuise...) -> email d'alerte GitHub
 """
 
@@ -60,7 +60,8 @@ DEFAULT_CONFIG = {
     # chauffe progressive : [jours depuis le depart, creneaux de Paris] ; null = jusqu'a la fin
     "phases": [[7, ["20:15"]], [14, ["16:30", "20:15"]], [None, ["10:45", "16:30", "20:15"]]],
     "max_reactions_per_day": 2,
-    "model": "",                    # vide = choix automatique du modele economique disponible
+    "model": "gpt-6-luna",          # redacteur des posts
+    "verifier_model": "gpt-6.1-sol",  # relecteur (controle les faits avant programmation)
     "quiet_hours": ["00:30", "07:30"],
     "video_slots": ["09:15", "12:30", "18:30", "21:45"],
     "slot_margin_min": 30,          # jamais de post a moins de 30 min d'un autre post
@@ -124,11 +125,12 @@ BAD_RE = re.compile(
     r"negre\w*|bougnoul\w*|mongol\w*|debile\w*|attarde\w*|handicape\w*|cancer|suicide\w*|mort|mourir|deces|tuer|"
     r"juif\w*|arabe\w*|noir\w*|singe\w*|nain)\b")
 
-PRICES = {  # dollars par million de tokens (entree, sortie) : indicatif, pour le journal de cout
-    "gpt-6-luna": (0.10, 0.50), "gpt-5-mini": (0.25, 2.00), "gpt-4.1-mini": (0.40, 1.60),
-    "gpt-4o-mini": (0.15, 0.60), "gpt-5-nano": (0.05, 0.40),
+PRICES = {  # dollars par million de tokens (entree, sortie), page tarifs OpenAI d'octobre 2026
+    "gpt-6-luna": (0.10, 0.50), "gpt-6.1-sol": (2.00, 10.00), "gpt-6-astra": (10.00, 50.00),
 }
-MODEL_PREFERENCE = ["gpt-6-luna", "gpt-5-mini", "gpt-4.1-mini", "gpt-4o-mini", "gpt-5-nano"]
+# redaction : modele le moins cher ; relecture : modele plus fiable (appel court, quelques centimes par mois)
+WRITER_MODELS = ["gpt-6-luna", "gpt-6.1-sol"]
+VERIFIER_MODELS = ["gpt-6.1-sol", "gpt-6-luna"]
 
 STYLES = [
     "une question qui divise les supporters",
@@ -207,7 +209,7 @@ def load_state():
         except json.JSONDecodeError:
             log("etat illisible, on repart de zero")
     for k, v in (("posts", []), ("slots", {}), ("slot_tries", {}), ("reacted", []), ("used_news", []),
-                 ("counter", 0), ("usage", {"calls": 0, "prompt_tokens": 0, "completion_tokens": 0})):
+                 ("counter", 0), ("usage", {"by_model": {}})):
         st.setdefault(k, v)
     return st
 
@@ -246,7 +248,9 @@ def phase_slots(day, cfg):
 # ============================================================
 # OPENAI
 # ============================================================
-_MODEL = {"name": None, "list": None}
+_OK = {}            # role -> modele qui a repondu
+_PARAMS = {}        # modele -> reglages qui ont marche (noms de parametres acceptes)
+_FAILS = []         # modeles refuses (pour le diagnostic)
 
 
 def _openai_headers():
@@ -255,57 +259,50 @@ def _openai_headers():
     return {"Authorization": f"Bearer {OPENAI_API_KEY}", "Content-Type": "application/json"}
 
 
-def list_models():
-    """Liste des modeles du compte. Une cle restreinte (sans droit de lecture des modeles) donne une liste vide :
-    ce n'est pas bloquant, on essaie alors les modeles habituels directement."""
-    if _MODEL["list"] is None:
-        r = requests.get("https://api.openai.com/v1/models", headers=_openai_headers(), timeout=30)
-        if r.status_code == 401:
-            raise Fatal(f"OpenAI refuse la cle (HTTP 401) : {r.text[:200]}")
-        _MODEL["list"] = sorted(m["id"] for m in r.json().get("data", [])) if r.status_code == 200 else []
-        _MODEL["list_status"] = r.status_code
-    return _MODEL["list"]
+def models_for(role, cfg):
+    """Modeles a essayer pour un role ("writer" ou "verifier"), le modele choisi d'abord, puis les secours."""
+    key, env, base = (("verifier_model", "OPENAI_MODEL_VERIFIER", VERIFIER_MODELS) if role == "verifier"
+                      else ("model", "OPENAI_MODEL", WRITER_MODELS))
+    forced = (os.environ.get(env) or cfg.get(key) or "").strip()
+    return ([forced] if forced else []) + [m for m in base if m != forced]
 
 
-def candidate_models(cfg):
-    forced = os.environ.get("OPENAI_MODEL") or cfg.get("model")
-    if forced:
-        return [forced]
-    avail = set(list_models())
-    if not avail:
-        return list(MODEL_PREFERENCE)
-    ordered = [m for m in MODEL_PREFERENCE if m in avail]
-    if not ordered:
-        ordered = [m for m in sorted(avail) if re.search(r"(luna|mini|nano)", m) and "audio" not in m
-                   and "realtime" not in m and "transcribe" not in m and "tts" not in m][:3]
-    return ordered or list(MODEL_PREFERENCE)
+def usage_cost(usage):
+    total = 0.0
+    for m, u in (usage.get("by_model") or {}).items():
+        p = PRICES.get(m)
+        if p:
+            total += (u["in"] * p[0] + u["out"] * p[1]) / 1e6
+    return total
 
 
-def llm_json(messages, cfg, state, max_tokens=2500):
+def usage_text(usage):
+    parts = [f"{m}: {u['calls']} appels, {u['in']} tokens in, {u['out']} out" for m, u in (usage.get("by_model") or {}).items()]
+    return " | ".join(parts) + f" | ~{usage_cost(usage):.4f} $ cumules"
+
+
+def llm_json(messages, cfg, state, role="writer", max_tokens=2500):
     """Appel OpenAI (chat completions) qui renvoie un dict JSON. S'adapte aux parametres refuses par un modele
     (renomme ou retire ce que l'erreur 400 designe) et retient les reglages qui marchent pour les appels suivants."""
-    models = [_MODEL["name"]] if _MODEL["name"] else candidate_models(cfg)
+    models = [_OK[role]] if role in _OK else models_for(role, cfg)
     last_err = None
     for model in models:
-        extra = _MODEL.get("params") or {"reasoning_effort": "low", "response_format": {"type": "json_object"}}
-        body = {"model": model, "messages": messages, "max_completion_tokens": max_tokens, **extra}
-        if _MODEL.get("tokens_param") == "max_tokens":
-            body["max_tokens"] = body.pop("max_completion_tokens")
+        prm = _PARAMS.setdefault(model, {"extra": {"reasoning_effort": "low", "response_format": {"type": "json_object"}},
+                                         "tokens_param": "max_completion_tokens"})
+        body = {"model": model, "messages": messages, prm["tokens_param"]: max_tokens, **prm["extra"]}
         for _ in range(6):
             r = requests.post("https://api.openai.com/v1/chat/completions", headers=_openai_headers(),
                               json=body, timeout=120)
             if r.status_code == 200:
                 j = r.json()
                 u = j.get("usage") or {}
-                st = state["usage"]
-                st["calls"] += 1
-                st["prompt_tokens"] += u.get("prompt_tokens", 0)
-                st["completion_tokens"] += u.get("completion_tokens", 0)
-                st["model"] = model
-                _MODEL["name"] = model
-                _MODEL["params"] = {k: v for k, v in body.items()
-                                    if k in ("reasoning_effort", "response_format", "temperature")}
-                _MODEL["tokens_param"] = "max_tokens" if "max_tokens" in body else "max_completion_tokens"
+                mu = state["usage"].setdefault("by_model", {}).setdefault(model, {"calls": 0, "in": 0, "out": 0})
+                mu["calls"] += 1
+                mu["in"] += u.get("prompt_tokens", 0)
+                mu["out"] += u.get("completion_tokens", 0)
+                _OK[role] = model
+                prm["extra"] = {k: v for k, v in body.items() if k in ("reasoning_effort", "response_format", "temperature")}
+                prm["tokens_param"] = "max_tokens" if "max_tokens" in body else "max_completion_tokens"
                 txt = (j["choices"][0]["message"].get("content") or "").strip()
                 m = re.search(r"\{.*\}", txt, re.S)
                 if not m:
@@ -314,7 +311,7 @@ def llm_json(messages, cfg, state, max_tokens=2500):
             msg = r.text[:600]
             if r.status_code == 403 and ("access to model" in msg or "model_not_found" in msg or "does not exist" in msg):
                 last_err = f"{model} : acces refuse a ce modele"
-                _MODEL.setdefault("fails", []).append(f"{model}: {msg[:120]}")
+                _FAILS.append(f"{model}: {msg[:120]}")
                 break
             if r.status_code in (401, 403):
                 raise Fatal(f"OpenAI refuse la cle (HTTP {r.status_code}) : {msg[:300]}")
@@ -325,7 +322,7 @@ def llm_json(messages, cfg, state, max_tokens=2500):
                 continue
             if r.status_code == 404 or "model_not_found" in msg or "does not exist" in msg:
                 last_err = f"modele {model} indisponible"
-                _MODEL.setdefault("fails", []).append(f"{model}: {msg[:120]}")
+                _FAILS.append(f"{model}: {msg[:120]}")
                 break
             if r.status_code == 400:   # parametre non supporte par ce modele : on le retire ou on le renomme
                 changed = False
@@ -542,7 +539,7 @@ def local_check(post, facts, state):
 def verify(post, facts, cfg, state):
     out = llm_json([{"role": "system", "content": VERIFIER_PROMPT},
                     {"role": "user", "content": "FAITS :\n" + "\n".join(f"- {f}" for f in facts)
-                     + f"\n\nPOST :\n{post}"}], cfg, state, max_tokens=800)
+                     + f"\n\nPOST :\n{post}"}], cfg, state, role="verifier", max_tokens=1500)
     return bool(out.get("ok")), str(out.get("raison", ""))[:160]
 
 
@@ -825,12 +822,8 @@ def run(dry=False):
         if not dry:
             save_state(state)
         return 2
-    u = state["usage"]
-    price = PRICES.get(u.get("model", ""), None)
-    cost = f" (~{(u['prompt_tokens'] * price[0] + u['completion_tokens'] * price[1]) / 1e6:.3f} $ cumules)" if price else ""
-    gh_notice(f"[CM] {'simulation : ' if dry else ''}{created} post(s) | {u['calls']} appels IA cumules, "
-              f"modele {u.get('model', '?')}{cost}")
-    log(f"{created} post(s) | usage cumule : {u}")
+    gh_notice(f"[CM] {'simulation : ' if dry else ''}{created} post(s) | {usage_text(state['usage'])}")
+    log(f"{created} post(s) | usage cumule : {usage_text(state['usage'])}")
     if not dry:
         save_state(state)
     return 0
@@ -861,8 +854,7 @@ def samples():
     except Fatal as e:
         gh_error(f"CM : {e}")
         return 2
-    u = state["usage"]
-    lines.append(f"USAGE : {u}")
+    lines.append(f"USAGE : {usage_text(state['usage'])}")
     for ln in lines:
         log(ln.replace("\n", " | "))
     gh_notice("[CM echantillons]\n" + "\n".join(ln.replace("\n", " | ") for ln in lines))
@@ -873,20 +865,19 @@ def diag():
     cfg = load_config()
     state = load_state()
     notes = []
-    try:
-        models = list_models()
-        notes.append(f"OpenAI liste des modeles : HTTP {_MODEL.get('list_status')} | {len(models)} modeles | gpt* : "
-                     + ", ".join(m for m in models if m.startswith("gpt"))[:700])
-        cands = candidate_models(cfg)
-        notes.append(f"Modeles essayes dans l'ordre : {cands}")
-        out = llm_json([{"role": "user", "content": "Reponds en JSON : {\"ok\": true, \"mot\": \"but\"}"}], cfg, state, 300)
-        notes.append(f"Test IA : {out} | modele retenu : {_MODEL['name']} | usage : {state['usage']}")
-        if _MODEL.get("fails"):
-            notes.append("Modeles refuses : " + " ; ".join(_MODEL["fails"]))
-    except Fatal as e:
-        notes.append(f"OpenAI : ERREUR FATALE {e}")
-    except Exception as e:
-        notes.append(f"OpenAI : ERREUR {e}")
+    for role in ("writer", "verifier"):
+        try:
+            notes.append(f"Modeles {role} (ordre d'essai) : {models_for(role, cfg)}")
+            out = llm_json([{"role": "user", "content": "Reponds en JSON : {\"ok\": true, \"mot\": \"but\"}"}],
+                           cfg, state, role=role, max_tokens=500)
+            notes.append(f"  test {role} : {out} | modele retenu : {_OK.get(role)}")
+        except Fatal as e:
+            notes.append(f"  {role} : ERREUR FATALE {e}")
+        except Exception as e:
+            notes.append(f"  {role} : ERREUR {e}")
+    if _FAILS:
+        notes.append("Modeles refuses : " + " ; ".join(_FAILS))
+    notes.append("Usage du test : " + usage_text(state["usage"]))
     now = datetime.now(timezone.utc)
     items, report = news_items(now)
     notes.append("Flux d'actu : " + " | ".join(report) + f" | exploitables : {len(items)}")
