@@ -622,6 +622,8 @@ def catalog_summary():
         long_posts = sum(1 for v in vs if len(build_post(v, "none", {"counter": 0}, {})[0]) > TWEET_MAX)
         lines.append(f"{c} : {len(vs)} | titre sans texte (numéro) {blank} | coupé « ... » {cut} | "
                      f"sans hashtag {no_tags} | trop long {long_posts}")
+        for v in [x for x in vs if "..." in (x.get("title") or "") or "…" in (x.get("title") or "")][:2]:
+            samples.append(f"{c} (titre avec « ... ») → {(v.get('title') or '')[:100]} || hashtags : {v.get('hashtags')}")
         for v in vs[-2:]:                         # les 2 dernières entrées du créateur (les plus récemment ajoutées)
             samples.append(f"{c} → " + build_post(v, "none", {"counter": 0}, {})[0].replace("\n", " | "))
     for line in lines:
