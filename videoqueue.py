@@ -463,13 +463,40 @@ def run(dry_run=False, status_only=False):
     return 0
 
 
+def catalog_summary():
+    """Résume le catalogue R2 (dossiers, créateurs, joueurs...) en annotations GitHub. N'envoie rien à Buffer."""
+    from collections import Counter
+    videos = fetch_catalog()["videos"]
+    fields = sorted({k for v in videos for k in v})
+    log(f"📦 Catalogue : {len(videos)} vidéos | champs : {', '.join(fields)}")
+    gh_notice(f"[catalogue] {len(videos)} vidéos | champs : {', '.join(fields)}")
+
+    def top(counter, n=40):
+        return " | ".join(f"{k} : {c}" for k, c in counter.most_common(n))
+
+    folders = Counter((v["key"].rsplit("/", 1)[0] if "/" in v["key"] else "(racine)") for v in videos)
+    log(f"📁 {len(folders)} dossier(s) sur R2 : {top(folders, 200)}")
+    gh_notice(f"[catalogue] {len(folders)} dossier(s) sur R2 → {top(folders)}"[:2500])
+    if len(folders) > 40:
+        tops = Counter(v["key"].split("/", 1)[0] for v in videos)
+        gh_notice(f"[catalogue] dossiers de 1er niveau → {top(tops)}"[:2500])
+    for field in [f for f in fields if f not in ("id", "key", "title", "hashtags")][:5]:
+        vals = Counter(str(v.get(field)) for v in videos if v.get(field) not in (None, ""))
+        if vals:
+            log(f"🏷️  champ « {field} » ({len(vals)} valeurs) : {top(vals, 200)}")
+            gh_notice(f"[catalogue] champ « {field} » ({len(vals)} valeurs) → {top(vals, 30)}"[:2500])
+    gh_notice("[catalogue] exemples de clés : " + " | ".join(v["key"] for v in videos[:3]))
+    return 0
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description="VideoQueue")
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--status", action="store_true")
+    ap.add_argument("--catalog", action="store_true", help="résume le catalogue R2 (dossiers, créateurs), n'envoie rien")
     args = ap.parse_args(argv)
     try:
-        code = run(dry_run=args.dry_run, status_only=args.status)
+        code = catalog_summary() if args.catalog else run(dry_run=args.dry_run, status_only=args.status)
     except SystemExit as e:
         if not isinstance(e.code, str):
             raise

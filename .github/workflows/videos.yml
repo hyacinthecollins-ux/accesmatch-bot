@@ -9,6 +9,10 @@ on:
         description: "Simulation : montre ce qui serait programmé, n'envoie rien à Buffer"
         type: boolean
         default: false
+      catalog:
+        description: "Résumé du catalogue R2 (dossiers, créateurs) : n'envoie rien à Buffer"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -36,7 +40,7 @@ jobs:
         run: pip install requests
 
       - name: Remplir la file Buffer
-        run: python videoqueue.py ${{ inputs.dry_run && '--dry-run' || '' }}
+        run: python videoqueue.py ${{ inputs.catalog && '--catalog' || inputs.dry_run && '--dry-run' || '' }}
         # Code 3 = stock bas : l'étape devient rouge et GitHub t'envoie un email d'alerte.
         # Le résultat (ou la cause d'une erreur) apparaît en annotation sur la page du run.
 
