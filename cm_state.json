@@ -1,23 +1,39 @@
 {
-  "posts": [],
-  "slots": {},
-  "slot_tries": {},
+  "posts": [
+    {
+      "id": "6ae0a2828fa8b2f716df0889",
+      "kind": "news",
+      "text": "Selon L’Équipe, Kane aurait décroché le Ballon d’Or 2026 devant Mbappé et Yamal, et pourrait déjà retrouver le Bayern en Coupe d’Allemagne. Mérité ou choix qui divise ?\n\n#FCBayern",
+      "due": "2026-10-27T19:15Z",
+      "day": "2026-10-27",
+      "source": "L'Equipe",
+      "at": "2026-10-27T13:09:22Z"
+    }
+  ],
+  "slots": {
+    "2026-10-27T20:15": "done"
+  },
+  "slot_tries": {
+    "2026-10-27T20:15": 1
+  },
   "reacted": [
     "559648"
   ],
-  "used_news": [],
-  "counter": 0,
+  "used_news": [
+    "0323d7e5074e"
+  ],
+  "counter": 1,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 1,
-        "in": 479,
-        "out": 178
+        "calls": 2,
+        "in": 985,
+        "out": 512
       },
       "gpt-6.1-sol": {
-        "calls": 1,
-        "in": 231,
-        "out": 48
+        "calls": 2,
+        "in": 491,
+        "out": 102
       }
     }
   }
