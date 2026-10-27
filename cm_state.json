@@ -2,10 +2,23 @@
   "posts": [],
   "slots": {},
   "slot_tries": {},
-  "reacted": [],
+  "reacted": [
+    "559648"
+  ],
   "used_news": [],
   "counter": 0,
   "usage": {
-    "by_model": {}
+    "by_model": {
+      "gpt-6-luna": {
+        "calls": 1,
+        "in": 479,
+        "out": 178
+      },
+      "gpt-6.1-sol": {
+        "calls": 1,
+        "in": 231,
+        "out": 48
+      }
+    }
   }
 }
