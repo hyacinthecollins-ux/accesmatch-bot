@@ -180,6 +180,8 @@ def news_score(title):
     score = sum(3 if st in BOOST_SET else 2 for st in stars)
     score += len(set(CLUB_RE.findall(n)))
     score += 0.5 * len(set(COMP_RE.findall(n)))
+    if "?" in title:                                  # titre-question : souvent de l'appat a clics, rien de solide a raconter
+        score -= 2
     return score
 
 
@@ -850,7 +852,7 @@ def star_counts_today(state, day_iso):
     return counts
 
 
-def pick_news(now, state, min_score=1.0, max_age_h=None, day_iso=None):
+def pick_news(now, state, min_score=1.0, max_age_h=None, day_iso=None, no_question=False):
     """Meilleure actu pas encore utilisee : gros joueur / grosse equipe, pas une histoire deja racontee,
     pas un joueur deja cite 2 fois aujourd'hui."""
     items, report = news_items(now)
@@ -860,6 +862,8 @@ def pick_news(now, state, min_score=1.0, max_age_h=None, day_iso=None):
         if it["key"] in used or it["score"] < min_score:
             continue
         if max_age_h is not None and it["age_h"] > max_age_h:
+            continue
+        if no_question and "?" in it["title"]:
             continue
         if same_story(it["title"], state):
             continue
@@ -1036,7 +1040,8 @@ def build(kind, now, cfg, state, dry, hhmm="20:15", day_iso=None):
     """Prepare les faits d'un type de post. Renvoie {"facts", "instr", "code", "source", "after"} ou None."""
     if kind in ("news", "breaking"):
         it, _ = pick_news(now, state, min_score=2.0 if kind == "breaking" else 1.0,
-                          max_age_h=cfg["breaking_max_age_h"] if kind == "breaking" else None, day_iso=day_iso)
+                          max_age_h=cfg["breaking_max_age_h"] if kind == "breaking" else None, day_iso=day_iso,
+                          no_question=(kind == "breaking"))
         if not it:
             return None
         log(f"[{kind}] {it['source']} : {it['title'][:90]} (score {it['score']:.1f}, {it['age_h']:.0f} h)")
