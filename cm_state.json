@@ -26,38 +26,63 @@
       "day": "2026-10-29",
       "source": "L'Équipe",
       "at": "2026-10-29T14:12:23Z"
+    },
+    {
+      "id": "6ae36b8d10365a6fbef2eec5",
+      "kind": "breaking",
+      "text": "🚨 Selon Le Figaro, le message « Travaille dur en silence » publié par Harry Kane ne visait pas Mbappé. Ça remet les choses au clair ! Vous aviez pensé à lui ?\n\n#Mbappé #Kane",
+      "due": "2026-10-29T16:01Z",
+      "day": "2026-10-29",
+      "source": "Le Figaro",
+      "at": "2026-10-29T15:51:41Z"
+    },
+    {
+      "id": "6ae36b9625e7fa4a8db630d9",
+      "kind": "debate",
+      "text": "Le PSG mène, mais Rennes n’est qu’à un point. Lille, Monaco, Lyon et le Paris FC restent au contact. Le vrai patron de ce début de saison, c’est qui ?\n\n#PSG #OL",
+      "due": "2026-10-29T21:35Z",
+      "day": "2026-10-29",
+      "source": "football-data FL1",
+      "at": "2026-10-29T15:51:50Z"
     }
   ],
   "slots": {
     "2026-10-27T20:15": "done",
     "2026-10-28T20:15": "done",
-    "2026-10-29T20:15": "done"
+    "2026-10-29T20:15": "done",
+    "2026-10-29T22:35": "done"
   },
   "slot_tries": {
     "2026-10-27T20:15": 1,
     "2026-10-28T20:15": 1,
-    "2026-10-29T20:15": 1
+    "2026-10-29T20:15": 1,
+    "2026-10-29T22:35": 1
   },
   "reacted": [
     "559648"
   ],
   "used_news": [
     "0323d7e5074e",
-    "7f2e274c7849"
+    "7f2e274c7849",
+    "66d9fd67d2e3"
   ],
-  "counter": 3,
+  "counter": 5,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 4,
-        "in": 2046,
-        "out": 846
+        "calls": 6,
+        "in": 3197,
+        "out": 1288
       },
       "gpt-6.1-sol": {
-        "calls": 4,
-        "in": 1053,
-        "out": 178
+        "calls": 6,
+        "in": 1763,
+        "out": 249
       }
     }
-  }
+  },
+  "used_titles": [
+    "«Travaille dur en silence», le message publié par le Ballon d’Or Harry Kane ne visait pas Mbappé"
+  ],
+  "recent_stats": []
 }
