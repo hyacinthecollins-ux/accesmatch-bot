@@ -10,7 +10,7 @@
   "max_breaking_per_day": 3,
   "breaking_max_age_h": 4,
   "news_horizon_h": 3.5,
-  "lookahead_h": 8,
+  "lookahead_h": 4,
   "model": "gpt-6-luna",
   "verifier_model": "gpt-6.1-sol",
   "quiet_hours": ["00:30", "07:30"],
