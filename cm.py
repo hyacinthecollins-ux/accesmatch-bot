@@ -120,7 +120,6 @@ TAGS_BY_KEYWORD = [
 FEEDS = [
     ("L'Equipe", "https://dwh.lequipe.fr/api/edito/rss?path=/Football/"),
     ("RMC Sport", "https://rmcsport.bfmtv.com/rss/football/"),
-    ("So Foot", "https://www.sofoot.com/rss.xml"),
     ("Foot Mercato", "https://www.footmercato.net/flux-rss"),
     ("Le Parisien", "https://feeds.leparisien.fr/leparisien/rss/sports/football"),
     ("Google Actualites", "https://news.google.com/rss/search?q=football+ligue+1+OR+PSG+OR+OM+when:1d&hl=fr&gl=FR&ceid=FR:fr"),
@@ -131,7 +130,6 @@ FEEDS = [
                           "+OR+Liverpool+OR+Bayern+OR+Arsenal+when:1d&hl=fr&gl=FR&ceid=FR:fr"),
     ("Google Actualites", "https://news.google.com/rss/search?q=%22Ligue+des+champions%22+OR+mercato+OR+%22Ballon+d%27Or%22"
                           "+when:1d&hl=fr&gl=FR&ceid=FR:fr"),
-    ("Eurosport", "https://www.eurosport.fr/football/rss.xml"),
     ("20 Minutes", "https://www.20minutes.fr/feeds/rss-sport.xml"),
 ]
 
@@ -190,7 +188,7 @@ SENSITIVE_RE = re.compile(
     r"\b(deces|decede\w*|mort\w*|mourir|deuil|hommage|obseques|cancer|suicide\w*|accident\w*|tragedie|drame\w*|"
     r"viol\w*|agress\w*|violence\w*|racis\w*|homophob\w*|antisemit\w*|terror\w*|attentat\w*|guerre\w*|"
     r"politique\w*|election\w*|proces|garde a vue|interpelle\w*|mis en examen|plainte\w*|dopage|dope\w*|"
-    r"paris sportifs?|pronostic\w*|cotes?|bookmaker\w*|escroquer\w*|coma|hospitalis\w*|grave\w*|menace\w*|"
+    r"paris sportifs?|parieur\w*|pronostic\w*|cotes?|bookmaker\w*|projectile\w*|escroquer\w*|coma|hospitalis\w*|grave\w*|menace\w*|"
     r"insulte\w*|police|justice|tribunal|prison|drogue\w*|cannabis|deprime\w*|burn.?out)\b")
 
 # mots interdits dans le post genere
