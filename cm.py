@@ -624,15 +624,19 @@ def verify(post, facts, cfg, state):
     return bool(out.get("ok")), str(out.get("raison", ""))[:160]
 
 
-def hashtags_for(facts, comp_code=None):
-    text = norm(" ".join(facts))
+def hashtags_for(post, comp_code=None):
+    """Hashtags d'apres ce que le post cite vraiment (joueurs d'abord, puis clubs, puis la competition)."""
+    text = " " + re.sub(r"[^a-z0-9]+", " ", norm(post)) + " "
     tags = []
     for words, tag in TAGS_BY_KEYWORD:
-        if any(w in text for w in words) and tag not in tags:
+        if any(f" {w} " in text or f" {w}s " in text for w in words) and tag not in tags:
             tags.append(tag)
     if comp_code in COMP_TAGS and COMP_TAGS[comp_code] not in tags:
         tags.append(COMP_TAGS[comp_code])
     return tags[:2]
+
+
+_REJECTS = []       # derniers refus (affiches par --samples pour comprendre pourquoi un post est jete)
 
 
 def generate(kind, instruction, facts, cfg, state, comp_code=None):
@@ -653,6 +657,7 @@ def generate(kind, instruction, facts, cfg, state, comp_code=None):
         why = local_check(post, facts, state)
         if why:
             log(f"   essai {attempt + 1} refuse ({why}) : {post[:90]}")
+            _REJECTS.append(f"{why} : {post[:110]}")
             continue
         try:
             ok, raison = verify(post, facts, cfg, state)
@@ -661,8 +666,9 @@ def generate(kind, instruction, facts, cfg, state, comp_code=None):
             continue
         if not ok:
             log(f"   essai {attempt + 1} refuse par la relecture ({raison}) : {post[:90]}")
+            _REJECTS.append(f"relecture ({raison}) : {post[:110]}")
             continue
-        tags = hashtags_for(facts, comp_code)
+        tags = hashtags_for(post, comp_code)
         return (post + ("\n\n" + " ".join(tags) if tags else "")).strip()
     return None
 
@@ -1228,6 +1234,8 @@ def samples():
                 continue
             t = generate(b["instr"], INSTR[b["instr"]], b["facts"], cfg, state, b["code"])
             lines.append(f"{kind.upper()} [{' | '.join(b['facts'])[:170]}] -> {t}")
+            if not t and _REJECTS:
+                lines.append("   refus : " + " || ".join(_REJECTS[-2:]))
     except Fatal as e:
         gh_error(f"CM : {e}")
         return 2
