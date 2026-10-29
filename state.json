@@ -1130,7 +1130,8 @@
       "due": null,
       "created": "2026-10-29T01:35:31Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "sent"
     }
   }
 }
