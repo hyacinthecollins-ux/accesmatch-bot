@@ -166,8 +166,11 @@ def main(argv=None):
     todo = priority_order(todo, by_id)
     log(f"{len(todo)} vidéo(s) à réparer sur {len(videos)} (déjà réparées : {len(done)})")
     if args.dry_run:
-        for v in todo[:20]:
-            log(f"  {v['id']}  {v.get('folder')}  {v.get('title', '')[:50]}  {probe[v['id']].get('r')}")
+        lines = [f"{v.get('folder')} | {v.get('player') or '-'} | {v.get('title', '')[:45]} | {','.join(probe[v['id']].get('r') or [])}"
+                 for v in todo[:12]]
+        for line in lines:
+            log("  " + line)
+        gh_notice(f"[réparation, simulation] {len(todo)} vidéos à convertir. Les 12 premières :\n" + "\n".join(lines))
         return 0
     if not todo:
         gh_notice("[réparation] rien à réparer")
