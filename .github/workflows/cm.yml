@@ -2,7 +2,7 @@ name: CM monfootballfr
 
 on:
   schedule:
-    - cron: "7,37 * * * *"    # toutes les 30 min (GitHub peut retarder de quelques minutes à quelques heures)
+    - cron: "*/15 * * * *"    # toutes les 15 min (GitHub le retarde souvent de plusieurs heures : un déclencheur externe est prévu)
   workflow_dispatch:          # bouton "Run workflow" pour lancer à la main
     inputs:
       mode:

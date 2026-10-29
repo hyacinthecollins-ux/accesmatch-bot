@@ -1,12 +1,15 @@
 #!/usr/bin/env python3
 """
-CM monfootballfr : community manager foot automatique (X, via Buffer), ton "pote passionne".
+CM monfootballfr : community manager foot automatique (X, via Buffer), facon "grosse chaine foot" : info d'abord,
+focus sur les grosses equipes et les gros joueurs (Mbappe, Yamal, Olise...), avec la ferveur d'un supporter.
 
-Ce que fait le robot (toutes les 30 min, dans GitHub Actions) :
-  1. REACTIONS : quand un match d'un des 7 clubs suivis (ou de Ligue des champions / Ligue 1) vient de finir,
-     il ecrit une reaction a chaud et la programme dans les minutes qui suivent.
-  2. CRENEAUX : aux heures prevues (chauffe progressive du compte), il ecrit soit un avis sur l'actu du jour
-     (flux de medias francais, avec "Selon <media>"), soit un debat lance a partir d'un classement.
+Ce que fait le robot (a chaque passage, declenche toutes les 10 a 15 min) :
+  1. REACTIONS : quand un match d'une grosse equipe (ou de Ligue des champions / Ligue 1) vient de finir,
+     il ecrit une reaction a chaud (avec les buteurs si disponibles) et la programme dans les minutes qui suivent.
+  2. BREAKING : une actu chaude (un gros joueur, une grosse equipe, publiee il y a moins de 4 h) part en quelques
+     minutes, sans attendre un creneau.
+  3. CRENEAUX : ~6 a 8 par jour. Selon l'heure : actu, chiffre du jour (meilleurs buteurs), anecdote "il y a N ans",
+     programme / affiche du soir, recap des resultats, debat.
   3. GARDE-FOUS (aucun humain ne relit) : l'IA ne recoit QUE des faits (football-data + titres d'actu),
      le post est controle par le code (chiffres, insultes, liens, doublons) puis par une 2e IA "relectrice".
      Au moindre doute le post est jete : mieux vaut ne rien publier que publier une betise.
@@ -58,8 +61,14 @@ DEFAULT_CONFIG = {
     "enabled": True,
     "start_date": "2026-10-27",     # 1er jour de publication du compte (meme jour que la chauffe des videos)
     # chauffe progressive : [jours depuis le depart, creneaux de Paris] ; null = jusqu'a la fin
-    "phases": [[7, ["20:15"]], [14, ["16:30", "20:15"]], [None, ["10:45", "16:30", "20:15"]]],
-    "max_reactions_per_day": 2,
+    "phases": [[14, ["08:05", "10:45", "14:00", "16:30", "20:15", "22:35"]],
+               [30, ["08:05", "10:45", "14:00", "16:30", "19:15", "20:15", "22:35"]],
+               [None, ["08:05", "10:45", "13:15", "15:00", "16:30", "19:15", "20:15", "22:35"]]],
+    "max_reactions_per_day": 4,
+    "max_breaking_per_day": 3,      # posts d'actu chaude hors creneaux
+    "breaking_max_age_h": 4,        # une actu chaude doit avoir moins de 4 h
+    "news_horizon_h": 3.5,          # un creneau plus lointain que ca n'utilise pas l'actu (elle serait deja froide)
+    "lookahead_h": 8,               # on prepare un creneau au plus 8 h avant (baisser a 3 quand le declencheur est frequent)
     "model": "gpt-6-luna",          # redacteur des posts
     "verifier_model": "gpt-6.1-sol",  # relecteur (controle les faits avant programmation)
     "quiet_hours": ["00:30", "07:30"],
@@ -68,7 +77,6 @@ DEFAULT_CONFIG = {
 }
 
 MIN_LEAD_MIN = 10                   # un post doit etre programme au moins 10 min a l'avance
-SLOT_LOOKAHEAD_H = 8                # on prepare un creneau au plus 8 h avant (les crons GitHub sont parfois en retard)
 MAX_SLOT_TRIES = 3
 MAX_POST_CHARS = 235                # hors hashtags
 NEWS_MAX_AGE_H = 30
@@ -80,10 +88,16 @@ COMP_NAMES = {"FL1": "Ligue 1", "CL": "Ligue des champions", "PL": "Premier Leag
               "BL1": "Bundesliga", "SA": "Serie A"}
 COMP_TAGS = {"FL1": "#Ligue1", "CL": "#LDC", "PL": "#PremierLeague", "PD": "#LaLiga", "BL1": "#Bundesliga",
              "SA": "#SerieA"}
-X_CLUBS = {524, 516, 81, 86, 64, 65, 5}     # PSG, OM, Barca, Real, Liverpool, City, Bayern (ids football-data.org)
+# grosses equipes (ids football-data.org) : PSG, OM, Lyon, Monaco, Lille, Barca, Real, Atletico, Liverpool, City, Arsenal,
+# Chelsea, Man United, Tottenham, Bayern, Dortmund, Leverkusen, Juventus, Inter, Milan, Napoli, Roma
+X_CLUBS = {524, 516, 523, 548, 521, 81, 86, 78, 64, 65, 57, 61, 66, 73, 5, 4, 3, 109, 108, 98, 113, 100}
 
 # mots-cles -> hashtag (sur les faits, pas sur le texte de l'IA)
 TAGS_BY_KEYWORD = [
+    (("mbappe",), "#Mbappé"), (("yamal",), "#Yamal"), (("olise",), "#Olise"), (("dembele",), "#Dembélé"),
+    (("haaland",), "#Haaland"), (("vinicius", "vini jr"), "#Vinicius"), (("messi",), "#Messi"),
+    (("ronaldo", "cr7"), "#Ronaldo"), (("bellingham",), "#Bellingham"), (("kane",), "#Kane"),
+    (("salah",), "#Salah"), (("doue",), "#Doué"), (("cherki",), "#Cherki"), (("raphinha",), "#Raphinha"),
     (("paris saint-germain", "psg", "paris sg"), "#PSG"),
     (("marseille", "olympique de marseille"), "#OM"),
     (("barcelone", "barcelona", "barca"), "#FCBarcelona"),
@@ -91,6 +105,11 @@ TAGS_BY_KEYWORD = [
     (("liverpool",), "#Liverpool"),
     (("manchester city", "man city"), "#ManCity"),
     (("bayern",), "#FCBayern"),
+    (("manchester united", "man united"), "#MUFC"),
+    (("arsenal",), "#Arsenal"),
+    (("chelsea",), "#Chelsea"),
+    (("atletico",), "#Atleti"),
+    (("juventus",), "#Juve"),
     (("lyon",), "#OL"),
     (("monaco",), "#ASM"),
     (("lille",), "#LOSC"),
@@ -105,11 +124,66 @@ FEEDS = [
     ("Foot Mercato", "https://www.footmercato.net/flux-rss"),
     ("Le Parisien", "https://feeds.leparisien.fr/leparisien/rss/sports/football"),
     ("Google Actualites", "https://news.google.com/rss/search?q=football+ligue+1+OR+PSG+OR+OM+when:1d&hl=fr&gl=FR&ceid=FR:fr"),
+    # recherches ciblees sur les gros noms et les grosses equipes (Google Actualites renvoie "titre - media")
+    ("Google Actualites", "https://news.google.com/rss/search?q=Mbapp%C3%A9+OR+Yamal+OR+Olise+OR+Demb%C3%A9l%C3%A9"
+                          "+OR+Haaland+OR+Vinicius+OR+Messi+OR+Ronaldo+when:1d&hl=fr&gl=FR&ceid=FR:fr"),
+    ("Google Actualites", "https://news.google.com/rss/search?q=%22Real+Madrid%22+OR+Bar%C3%A7a+OR+%22Manchester+City%22"
+                          "+OR+Liverpool+OR+Bayern+OR+Arsenal+when:1d&hl=fr&gl=FR&ceid=FR:fr"),
+    ("Google Actualites", "https://news.google.com/rss/search?q=%22Ligue+des+champions%22+OR+mercato+OR+%22Ballon+d%27Or%22"
+                          "+when:1d&hl=fr&gl=FR&ceid=FR:fr"),
+    ("Eurosport", "https://www.eurosport.fr/football/rss.xml"),
+    ("20 Minutes", "https://www.20minutes.fr/feeds/rss-sport.xml"),
 ]
 
-WATCH_RE = re.compile(r"\b(psg|paris|marseille|om|barca|barcelone|real madrid|liverpool|manchester city|bayern|"
-                      r"ligue 1|ligue des champions|mbappe|dembele|yamal|haaland|messi|ronaldo|vinicius|bellingham|"
-                      r"bleus|deschamps|clasico|classique|olise|doue)\b")
+def norm(s):
+    """minuscules sans accents (comparaisons)"""
+    s = unicodedata.normalize("NFKD", s or "")
+    return "".join(c for c in s if not unicodedata.combining(c)).lower()
+
+
+def flat(s):
+    """norm() + ponctuation d'apostrophes et tirets remplacee par des espaces (pour chercher des noms)."""
+    return re.sub(r"[-'\u2019`]", " ", norm(s))
+
+
+def _load_stars():
+    """Gros joueurs : meme liste que le robot video (video_priority.json) pour rester coherent."""
+    stars, boost, aliases = [], [], {}
+    try:
+        d = json.loads((ROOT / "video_priority.json").read_text(encoding="utf-8"))
+        stars, boost, aliases = d.get("stars", []), d.get("boost", []), d.get("aliases", {})
+    except (OSError, json.JSONDecodeError):
+        stars = ["mbappe", "yamal", "olise", "dembele", "haaland", "vinicius", "messi", "ronaldo", "bellingham"]
+        boost = stars[:3]
+    return stars, boost, aliases
+
+
+_STARS, _BOOST, _ALIASES = _load_stars()
+STAR_WORDS = sorted({norm(x) for x in _STARS} | {norm(k) for k in _ALIASES}, key=len, reverse=True)
+STAR_RE = re.compile(r"\b(" + "|".join(re.escape(w) for w in STAR_WORDS) + r")\b")
+STAR_CANON = {**{norm(x): norm(x) for x in _STARS}, **{norm(k): norm(v) for k, v in _ALIASES.items()}}
+BOOST_SET = {norm(x) for x in _BOOST} | {"yamal", "olise"}
+CLUB_RE = re.compile(r"\b(psg|paris saint germain|paris sg|marseille|om|real madrid|real|barca|barcelone|liverpool|"
+                     r"manchester city|man city|manchester united|man united|arsenal|chelsea|bayern|atletico|"
+                     r"juventus|juve|inter milan|inter de milan|ac milan|dortmund|tottenham|napoli|lyon|monaco|"
+                     r"equipe de france|bleus|deschamps|clasico|classique)\b")
+COMP_RE = re.compile(r"\b(ligue des champions|ligue 1|ballon d or|mercato|premier league|liga|bundesliga)\b")
+
+
+def stars_in(text):
+    """Gros joueurs cites dans un texte (noms canoniques, sans accent)."""
+    return {STAR_CANON.get(m, m) for m in STAR_RE.findall(flat(text))}
+
+
+def news_score(title):
+    """Interet d'une actu : gros joueur = 2 (stars du moment = 3), grosse equipe = 1, competition/mercato = 0,5."""
+    n = flat(title)
+    stars = stars_in(title)
+    score = sum(3 if st in BOOST_SET else 2 for st in stars)
+    score += len(set(CLUB_RE.findall(n)))
+    score += 0.5 * len(set(COMP_RE.findall(n)))
+    return score
+
 
 # sujets qu'on ne touche JAMAIS (actu sensible, paris sportifs, justice...) : normalises sans accents
 SENSITIVE_RE = re.compile(
@@ -136,38 +210,37 @@ STYLES = [
     "une question qui divise les supporters",
     "un avis tranche mais drole",
     "une petite vanne de supporter, bon enfant",
-    "un constat qui fait reflechir, avec une question a la fin",
     "un enthousiasme sincere de passionne",
 ]
 
 SYSTEM_PROMPT = (
-    "Tu es la plume de @monfootballfr, un compte X francophone de foot tenu par un pote passionne, pas par un "
-    "media corporate.\n"
-    "Ton : on parle comme entre potes au bar, pas comme un journal : tutoiement, phrases courtes, un peu de familier "
-    "propre (franchement, clairement, sérieux), de l'humour, un avis tranche assume (pas de \"d'un cote... de l'autre\"), "
-    "toujours respectueux. Exemples de ton, a ne JAMAIS recopier : \"Franchement, ce milieu c'est une machine. Dis-moi "
-    "qu'il y a mieux en Europe, je t'ecoute.\" / \"Je veux bien un match nul de temps en temps, mais la c'etait pas "
-    "possible de jouer comme ca. Vous en pensez quoi ?\" "
-    "Jamais d'insulte, jamais de moquerie "
-    "sur le physique, l'origine, la religion, une blessure, un deces ou une affaire judiciaire. On chambre avec "
-    "humour, on ne rabaisse pas un joueur ou un club.\n"
-    "REGLE D'OR : tu n'utilises QUE les FAITS fournis. Aucun score, chiffre, stat, transfert, blessure, citation ou "
-    "date qui n'est pas dans les faits. Si tu n'es pas sur, pose une question au lieu d'affirmer.\n"
-    "Si l'info vient d'un media, ecris \"Selon <media>\" et reformule avec tes propres mots (ne recopie jamais le "
-    "titre), sans presenter une rumeur comme un fait etabli.\n"
-    "Format : UN seul post de 80 a 230 caracteres, en francais, 1 emoji dans la plupart des posts (2 maximum), AUCUN hashtag (ils sont ajoutes "
-    "ensuite), aucun lien, aucune @mention, pas de guillemets autour du post. Finis de preference par une question "
-    "courte qui donne envie de repondre.\n"
+    "Tu es la plume de @monfootballfr, grosse chaine X francophone d'actu foot, animee par des passionnes : "
+    "l'efficacite d'une chaine d'info foot (type Foot Mercato, Actu Foot) et la ferveur d'un supporter. "
+    "L'info d'abord, une reaction ou un avis ensuite. Phrases courtes et nettes, vocabulaire de supporter "
+    "(ca claque, enorme, quelle masse), un peu d'humour, jamais de langue de bois ni de \"d'un cote... de l'autre\".\n"
+    "Tu parles des grosses equipes et des gros joueurs (Mbappe, Yamal, Olise, Dembele, Haaland, Vinicius...). "
+    "Toujours respectueux : jamais d'insulte, jamais de moquerie sur le physique, l'origine, la religion, une "
+    "blessure, un deces ou une affaire judiciaire. On chambre avec humour, on ne rabaisse pas un joueur ou un club.\n"
+    "REGLE D'OR : tu n'utilises QUE les FAITS fournis. Aucun score, chiffre, stat, transfert, blessure, citation, "
+    "date ou heure qui n'est pas dans les faits. Si tu n'es pas sur, tu ne l'affirmes pas.\n"
+    "Si l'info vient d'un media, cite-le (\"Selon L'Equipe\", \"D'apres RMC Sport\") et reformule avec tes propres mots "
+    "(ne recopie jamais le titre). Une rumeur, une piste ou un \"pourrait\" reste au conditionnel, jamais presentee "
+    "comme un fait etabli.\n"
+    "Format : UN seul post de 80 a 230 caracteres, en francais, 2 emojis maximum (celui d'accroche compte), AUCUN "
+    "hashtag (ils sont ajoutes ensuite), aucun lien, aucune @mention, pas de guillemets autour du post. "
+    "Evite les formules creuses (\"alors, vous en pensez quoi ?\") : une question seulement si on te le demande.\n"
     "Reponds uniquement en JSON : {\"post\": \"...\"}"
 )
 
 VERIFIER_PROMPT = (
     "Tu es le relecteur strict d'un compte de foot automatique. On te donne des FAITS et un POST. "
     "Reponds uniquement en JSON : {\"ok\": true ou false, \"raison\": \"...\"}.\n"
-    "ok=false si : le post contient un chiffre, un nom, une stat, un transfert, une blessure ou une citation absents "
-    "des FAITS ; il presente une rumeur comme un fait ; il contient une insulte ou une moquerie sur le physique, "
-    "l'origine, la religion, une blessure, un deces ou une affaire judiciaire ; il contient un lien ou une @mention ; "
-    "il est incomprehensible ou hors sujet. Sinon ok=true."
+    "ok=false si : le post contient un chiffre, un nom, une stat, un score, un transfert, une blessure, une heure, une "
+    "date ou une citation absents des FAITS ; il presente une rumeur comme un fait ; il attribue une info a un autre "
+    "media que celui des FAITS ; il contient une insulte ou une moquerie sur le physique, l'origine, la religion, une "
+    "blessure, un deces ou une affaire judiciaire ; il contient un lien ou une @mention ; il est incomprehensible ou "
+    "hors sujet. Un style punchy, un emoji d'accroche (🚨 📊 📆 ⏱️ 🔥) et un avis de supporter sont normaux. "
+    "Un chiffre ou un nom qui figure dans les FAITS est valide. Sinon ok=true."
 )
 
 
@@ -214,7 +287,7 @@ def load_state():
         except json.JSONDecodeError:
             log("etat illisible, on repart de zero")
     for k, v in (("posts", []), ("slots", {}), ("slot_tries", {}), ("reacted", []), ("used_news", []),
-                 ("counter", 0), ("usage", {"by_model": {}})):
+                 ("used_titles", []), ("recent_stats", []), ("counter", 0), ("usage", {"by_model": {}})):
         st.setdefault(k, v)
     return st
 
@@ -223,15 +296,11 @@ def save_state(st):
     st["posts"] = st["posts"][-KEEP_POSTS:]
     st["reacted"] = st["reacted"][-300:]
     st["used_news"] = st["used_news"][-600:]
+    st["used_titles"] = st["used_titles"][-120:]
+    st["recent_stats"] = st["recent_stats"][-30:]
     st["slots"] = dict(sorted(st["slots"].items())[-120:])
     st["slot_tries"] = dict(sorted(st["slot_tries"].items())[-120:])
     STATE_FILE.write_text(json.dumps(st, indent=2, ensure_ascii=False), encoding="utf-8")
-
-
-def norm(s):
-    """minuscules sans accents (comparaisons)"""
-    s = unicodedata.normalize("NFKD", s or "")
-    return "".join(c for c in s if not unicodedata.combining(c)).lower()
 
 
 def hhmm_to_dt(day, hhmm):
@@ -462,8 +531,14 @@ def fetch_feed(name, url):
         source = name
         if name == "Google Actualites" and " - " in title:
             title, source = title.rsplit(" - ", 1)
+        summary = ""
+        if name != "Google Actualites":
+            summary = re.sub(r"\s+", " ", _text(it.find("description")) or _text(it.find("{http://www.w3.org/2005/Atom}summary"))).strip()
+            if summary.lower().startswith(title.lower()[:40]) or len(summary) < 50:
+                summary = ""
         if title:
-            items.append({"title": re.sub(r"\s+", " ", title).strip(), "source": source.strip(), "ts": ts})
+            items.append({"title": re.sub(r"\s+", " ", title).strip(), "source": source.strip(), "ts": ts,
+                          "summary": summary[:280]})
     return items
 
 
@@ -487,17 +562,20 @@ def news_items(now):
             n = norm(it["title"])
             if SENSITIVE_RE.search(n) or len(it["title"]) < 25 or n.startswith(("direct", "live", "en direct")):
                 continue
-            score = len(set(WATCH_RE.findall(n)))
+            score = news_score(it["title"])
             age_h = (now - it["ts"]).total_seconds() / 3600 if it["ts"] else 12
             it.update(key=key, score=score, age_h=age_h)
             out.append(it)
-    out.sort(key=lambda it: (-min(it["score"], 3), it["age_h"]))
+    out.sort(key=lambda it: -(it["score"] - 0.2 * min(it["age_h"], 24)))      # gros noms d'abord, puis le plus frais
     return out, report
 
 
 def news_facts(it):
-    return [f"Source : {it['source']}", f"Titre publie par {it['source']} : {it['title']}",
-            f"Publie il y a environ {max(1, round(it['age_h']))} h"]
+    facts = [f"Source : {it['source']}", f"Titre publie par {it['source']} : {it['title']}",
+             f"Publie il y a environ {max(1, round(it['age_h']))} h"]
+    if it.get("summary"):
+        facts.append(f"Resume de l'article ({it['source']}) : {it['summary']}")
+    return facts
 
 
 # ============================================================
@@ -561,8 +639,11 @@ def hashtags_for(facts, comp_code=None):
 
 def generate(kind, instruction, facts, cfg, state, comp_code=None):
     """Un post valide (texte final avec hashtags) ou None. Jamais d'exception pour un simple refus de contenu."""
-    style = STYLES[state["counter"] % len(STYLES)]
-    user = (f"{instruction}\nStyle du jour : {style}.\n\nFAITS :\n" + "\n".join(f"- {f}" for f in facts))
+    ending = ("Termine par une question courte qui donne envie de repondre."
+              if kind == "debate" or (state["counter"] % 3 == 0 and kind in ("news", "breaking", "reaction", "stat"))
+              else "Pas de question finale : termine sur une phrase qui claque.")
+    style = f"\nStyle du jour : {STYLES[state['counter'] % len(STYLES)]}." if kind in ("debate", "news") else ""
+    user = (f"{instruction}\n{ending}{style}\n\nFAITS :\n" + "\n".join(f"- {f}" for f in facts))
     for attempt in range(2):
         try:
             out = llm_json([{"role": "system", "content": SYSTEM_PROMPT}, {"role": "user", "content": user}],
@@ -589,8 +670,21 @@ def generate(kind, instruction, facts, cfg, state, comp_code=None):
 
 
 INSTR = {
-    "reaction": "Ecris la reaction a chaud d'un supporter juste apres la fin de ce match.",
-    "news": "Ecris l'avis d'un supporter sur cette actu (cite la source avec \"Selon ...\", reformule, pose une question).",
+    "reaction": "Ecris la reaction a chaud, juste apres le coup de sifflet final : accroche \"⏱️\", le score exact, "
+                "puis ton avis de passionne (cite un buteur ou un fait du match seulement s'il est dans les faits).",
+    "news": "Ecris un post d'actu sur cette info : va droit au fait en une ou deux phrases, cite le media "
+            "(\"Selon ...\"), reformule avec tes mots, puis une courte reaction de supporter.",
+    "breaking": "Ecris un post d'actu CHAUDE facon chaine info foot : commence par \"🚨\", l'info en une phrase nette, "
+                "le media cite (\"Selon ...\"), conditionnel si c'est une piste ou une rumeur, puis une courte "
+                "reaction qui claque.",
+    "stat": "Ecris le post \"chiffre du jour\" : accroche \"📊\", mets en avant le joueur indique avec ses chiffres "
+            "EXACTS des faits, puis un commentaire qui claque. Aucune comparaison, aucun record, aucun chiffre "
+            "qui n'est pas dans les faits.",
+    "history": "Ecris une anecdote \"il y a N ans\" : accroche \"📆\", raconte le fait en une ou deux phrases avec les "
+               "infos exactes des faits, finis sur un clin d'oeil de supporter. N'ajoute aucun detail absent des faits.",
+    "preview": "Ecris le post \"au programme\" : accroche \"🔥\" ou \"⚽\", les matchs avec leur heure (heure de Paris, "
+               "telle qu'indiquee dans les faits), puis une phrase d'envie.",
+    "recap": "Ecris le recap des resultats : accroche \"📋\", les scores exacts des faits, puis un mini avis de passionne.",
     "debate": "Lance un debat de supporters a partir de ce classement (n'invente aucune prediction chiffree).",
 }
 
@@ -707,7 +801,7 @@ def run_reactions(now, cfg, state, busy, dry):
     cands.sort(key=reaction_priority)
     created = 0
     for m in cands[: cfg["max_reactions_per_day"] - made]:
-        facts = match_facts(m)
+        facts = match_facts(m) + goal_facts(m)
         log(f"[reaction] {facts[0]}")
         state["reacted"].append(str(m["id"]))      # on ne retente jamais le meme match (cout)
         text = generate("reaction", INSTR["reaction"], facts, cfg, state, (m.get("competition") or {}).get("code"))
@@ -722,49 +816,329 @@ def run_reactions(now, cfg, state, busy, dry):
     return created
 
 
-def pick_news(now, state):
+STAR_DAILY_CAP = 2                  # au plus 2 posts par jour sur le meme joueur
+
+
+def same_story(title, state):
+    a = tokens(title)
+    for t in state["used_titles"][-80:]:
+        b = tokens(t)
+        if a and b and len(a & b) / len(a | b) >= 0.4:
+            return True
+    return False
+
+
+def star_counts_today(state, day_iso):
+    counts = {}
+    for p in state["posts"]:
+        if p.get("day") == day_iso:
+            for st in stars_in(p.get("text", "")):
+                counts[st] = counts.get(st, 0) + 1
+    return counts
+
+
+def pick_news(now, state, min_score=1.0, max_age_h=None, day_iso=None):
+    """Meilleure actu pas encore utilisee : gros joueur / grosse equipe, pas une histoire deja racontee,
+    pas un joueur deja cite 2 fois aujourd'hui."""
     items, report = news_items(now)
     used = set(state["used_news"])
+    counts = star_counts_today(state, day_iso or now.astimezone(PARIS).date().isoformat())
     for it in items:
-        if it["key"] not in used:
-            return it, report
+        if it["key"] in used or it["score"] < min_score:
+            continue
+        if max_age_h is not None and it["age_h"] > max_age_h:
+            continue
+        if same_story(it["title"], state):
+            continue
+        if any(counts.get(st, 0) >= STAR_DAILY_CAP for st in stars_in(it["title"])):
+            continue
+        return it, report
     return None, report
+
+
+# ---------- chiffre du jour : meilleurs buteurs (football-data) ----------
+STAT_COMPS = ["PD", "FL1", "PL", "CL", "BL1", "SA"]
+
+
+def scorers_facts(code, state):
+    """(faits, joueur mis en avant) pour le classement des buteurs d'une competition, ou (None, None)."""
+    data = fd_get(f"/competitions/{code}/scorers", {"limit": 10})
+    rows = [r for r in (data.get("scorers") or []) if r.get("goals") is not None and (r.get("player") or {}).get("name")]
+    if not rows:
+        return None, None
+    recent = set(state["recent_stats"][-8:])
+    pick = None
+    for r in rows:
+        name = r["player"]["name"]
+        if stars_in(name) and norm(name) not in recent:
+            pick = r
+            break
+    if pick is None:
+        for r in rows[:3]:
+            if norm(r["player"]["name"]) not in recent and (r.get("team") or {}).get("id") in X_CLUBS:
+                pick = r
+                break
+    if pick is None:
+        return None, None
+
+    def line(i, r):
+        g, a, pm = r["goals"], r.get("assists"), r.get("playedMatches")
+        out = f"{i}. {r['player']['name']} ({team_name(r.get('team') or {})}) : {g} but" + ("s" if g > 1 else "")
+        if a:
+            out += f", {a} passe" + ("s" if a > 1 else "") + " decisive" + ("s" if a > 1 else "")
+        if pm:
+            out += f" en {pm} match" + ("s" if pm > 1 else "")
+        return out
+
+    comp = COMP_NAMES.get(code, code)
+    idx = rows.index(pick) + 1
+    facts = [f"Joueur a mettre en avant : {pick['player']['name']} ({team_name(pick.get('team') or {})}), "
+             f"{idx}e du classement des buteurs de {comp}",
+             f"Classement des buteurs {comp} (saison en cours) :"] + [line(i, r) for i, r in enumerate(rows[:6], 1)]
+    if idx > 6:
+        facts.append(line(idx, pick))
+    return facts, norm(pick["player"]["name"])
+
+
+# ---------- anecdote : "il y a N ans" (Wikipedia, evenements du jour) ----------
+MOIS = ["", "janvier", "fevrier", "mars", "avril", "mai", "juin", "juillet", "aout", "septembre", "octobre",
+        "novembre", "decembre"]
+FOOT_EVENT_RE = re.compile(r"\b(football|footballeur|coupe du monde|ligue des champions|ballon d or|championnat d europe|"
+                           r"euro \d{4}|psg|paris saint germain|olympique de marseille|real madrid|fc barcelone|"
+                           r"barcelone|manchester united|manchester city|liverpool|bayern|juventus|equipe de france|"
+                           r"ligue 1|premier league|coupe de france|ligue europa|coupe de l uefa)\b")
+OTHER_SPORT_RE = re.compile(r"\b(rugby|cricket|ski|handball|basket\w*|volley\w*|hockey|football americain|football australien|"
+                            r"football gaelique|football canadien|futsal|tennis|cyclisme|tour de france)\b")
+
+
+def history_facts(now, state):
+    """(cle, faits) pour une anecdote football survenue le meme jour d'une annee passee, ou (None, None)."""
+    d = now.astimezone(PARIS).date()
+    r = requests.get(f"https://fr.wikipedia.org/api/rest_v1/feed/onthisday/events/{d.month:02d}/{d.day:02d}",
+                     headers=UA, timeout=25)
+    if r.status_code != 200:
+        raise RuntimeError(f"Wikipedia HTTP {r.status_code}")
+    used = set(state["used_news"])
+    cands = []
+    for ev in r.json().get("events", []):
+        text, year = (ev.get("text") or "").strip(), ev.get("year")
+        n = flat(text)
+        if not text or not isinstance(year, int) or d.year - year < 1:
+            continue
+        if not FOOT_EVENT_RE.search(n) or OTHER_SPORT_RE.search(n) or SENSITIVE_RE.search(norm(text)):
+            continue
+        key = "h" + hashlib.sha1(f"{d.month}-{d.day}-{year}-{text}".encode()).hexdigest()[:10]
+        if key in used:
+            continue
+        cands.append((year, key, text))
+    if not cands:
+        return None, None
+    year, key, text = sorted(cands, reverse=True)[state["counter"] % len(cands)]
+    n_years = d.year - year
+    return key, [f"Aujourd'hui, {d.day} {MOIS[d.month]}", f"Il y a {n_years} ans, en {year} (meme jour) : {text}",
+                 f"Ecart : {n_years} ans"]
+
+
+# ---------- programme du jour / affiche du soir, recap des resultats ----------
+def local_dt(m):
+    return datetime.fromisoformat(m["utcDate"].replace("Z", "+00:00")).astimezone(PARIS)
+
+
+def is_big(m):
+    ids = {m["homeTeam"].get("id"), m["awayTeam"].get("id")}
+    return bool(ids & X_CLUBS) or (m.get("competition") or {}).get("code") == "CL"
+
+
+def fixtures_facts(now, whole_day):
+    """Matchs a venir aujourd'hui (grosses equipes + Ligue des champions) : tout le jour, ou ceux qui commencent
+    dans plus de 20 min. None s'il n'y en a pas."""
+    today = now.astimezone(PARIS).date()
+    data = fd_get("/matches", {"dateFrom": (today - timedelta(days=1)).isoformat(),
+                               "dateTo": (today + timedelta(days=1)).isoformat(), "competitions": COMPETITIONS})
+    ms = []
+    for m in data.get("matches", []):
+        if m.get("status") not in ("TIMED", "SCHEDULED") or not is_big(m):
+            continue
+        ko = local_dt(m)
+        if ko.date() != today or (not whole_day and ko.astimezone(timezone.utc) < now + timedelta(minutes=20)):
+            continue
+        ms.append((reaction_priority(m), ko, m))
+    if not ms:
+        return None
+    ms.sort(key=lambda x: (x[0], x[1]))
+    top = sorted(ms[:4], key=lambda x: x[1])
+    facts = [f"Programme du jour ({today.day} {MOIS[today.month]}), heures de Paris :"]
+    for _, ko, m in top:
+        comp = COMP_NAMES.get((m.get("competition") or {}).get("code"), "")
+        facts.append(f"{ko.hour}h{ko.minute:02d} : {team_name(m['homeTeam'])} - {team_name(m['awayTeam'])} ({comp})")
+    return facts
+
+
+def results_facts(now):
+    today = now.astimezone(PARIS).date()
+    ms = [m for m in recent_finished(now, hours=20) if is_big(m) and local_dt(m).date() == today]
+    if len(ms) < 2:
+        return None
+    ms.sort(key=lambda m: (reaction_priority(m), local_dt(m)))
+    facts = [f"Resultats du jour ({today.day} {MOIS[today.month]}) :"]
+    for m in ms[:5]:
+        ft = (m.get("score") or {}).get("fullTime") or {}
+        comp = COMP_NAMES.get((m.get("competition") or {}).get("code"), "")
+        facts.append(f"{team_name(m['homeTeam'])} {ft.get('home')}-{ft.get('away')} {team_name(m['awayTeam'])} ({comp})")
+    return facts
+
+
+def goal_facts(m):
+    """Buteurs du match si football-data les donne (sinon liste vide : le post se passe de buteurs)."""
+    try:
+        d = fd_get(f"/matches/{m['id']}")
+    except RuntimeError:
+        return []
+    parts = []
+    for g in (d.get("goals") or [])[:8]:
+        who, mn = (g.get("scorer") or {}).get("name"), g.get("minute")
+        if who and mn is not None:
+            parts.append(f"{who} {mn}e")
+    return ["Buteurs : " + ", ".join(parts)] if parts else []
 
 
 DEBATE_COMPS = ["FL1", "CL", "PL", "PD"]
 
+# type de post prefere selon l'heure du creneau (le suivant prend le relais si le premier n'a rien de bon)
+SLOT_KINDS = {
+    "08:05": ["preview", "news", "stat", "history"],
+    "10:45": ["news", "stat", "history", "debate"],
+    "13:15": ["news", "stat", "history", "debate"],
+    "14:00": ["history", "stat", "news", "debate"],
+    "15:00": ["stat", "news", "history", "debate"],
+    "16:30": ["news", "stat", "debate", "history"],
+    "19:15": ["preview", "news", "stat", "debate"],
+    "20:15": ["preview", "news", "debate", "stat"],
+    "22:35": ["recap", "news", "debate", "stat"],
+}
+DEFAULT_KINDS = ["news", "stat", "preview", "debate", "history"]
 
-def make_slot_post(now, cfg, state, dry):
-    """Choisit le type de post du creneau (alternance actu / debat, avec repli) et le genere."""
-    order = ["news", "debate"] if state["counter"] % 2 == 0 else ["debate", "news"]
-    for kind in order:
-        if kind == "news":
-            it, _ = pick_news(now, state)
-            if not it:
+
+def build(kind, now, cfg, state, dry, hhmm="20:15", day_iso=None):
+    """Prepare les faits d'un type de post. Renvoie {"facts", "instr", "code", "source", "after"} ou None."""
+    if kind in ("news", "breaking"):
+        it, _ = pick_news(now, state, min_score=2.0 if kind == "breaking" else 1.0,
+                          max_age_h=cfg["breaking_max_age_h"] if kind == "breaking" else None, day_iso=day_iso)
+        if not it:
+            return None
+        log(f"[{kind}] {it['source']} : {it['title'][:90]} (score {it['score']:.1f}, {it['age_h']:.0f} h)")
+        if not dry:
+            state["used_news"].append(it["key"])
+            state["used_titles"].append(it["title"])
+        return {"facts": news_facts(it), "instr": kind, "code": None, "source": it["source"], "after": None}
+    if kind == "stat":
+        offset = state["counter"] % len(STAT_COMPS)
+        for code in (STAT_COMPS[offset:] + STAT_COMPS[:offset])[:3]:
+            try:
+                facts, who = scorers_facts(code, state)
+            except RuntimeError as e:
+                log(f"   buteurs {code} indisponibles ({e})")
                 continue
-            log(f"[actu] {it['source']} : {it['title'][:90]}")
-            if not dry:
-                state["used_news"].append(it["key"])
-            facts = news_facts(it)
-            text = generate("news", INSTR["news"], facts, cfg, state)
-            if text:
-                return kind, text, it["source"]
-        else:
-            comps = DEBATE_COMPS[state["counter"] % len(DEBATE_COMPS):] + DEBATE_COMPS[:state["counter"] % len(DEBATE_COMPS)]
-            for code in comps:
-                try:
-                    facts = standings_facts(code)
-                except RuntimeError as e:
-                    log(f"   classement {code} indisponible ({e})")
-                    continue
-                if not facts:
-                    continue
+            if facts:
+                log(f"[stat] {COMP_NAMES[code]} : {facts[0]}")
+                return {"facts": facts, "instr": "stat", "code": code, "source": f"football-data {code}",
+                        "after": (lambda who=who: state["recent_stats"].append(who)) if not dry else None}
+        return None
+    if kind == "history":
+        try:
+            key, facts = history_facts(now, state)
+        except (RuntimeError, requests.RequestException, ValueError) as e:
+            log(f"   anecdote indisponible ({e})")
+            return None
+        if not facts:
+            return None
+        log(f"[anecdote] {facts[1][:100]}")
+        if not dry:
+            state["used_news"].append(key)
+        return {"facts": facts, "instr": "history", "code": None, "source": "Wikipedia", "after": None}
+    if kind == "preview":
+        try:
+            facts = fixtures_facts(now, whole_day=int(hhmm.split(":")[0]) < 12)
+        except RuntimeError as e:
+            log(f"   programme indisponible ({e})")
+            return None
+        if not facts:
+            return None
+        log(f"[programme] {facts[1]}")
+        return {"facts": facts, "instr": "preview", "code": None, "source": "football-data", "after": None}
+    if kind == "recap":
+        try:
+            facts = results_facts(now)
+        except RuntimeError as e:
+            log(f"   resultats indisponibles ({e})")
+            return None
+        if not facts:
+            return None
+        log(f"[recap] {facts[1]}")
+        return {"facts": facts, "instr": "recap", "code": None, "source": "football-data", "after": None}
+    if kind == "debate":
+        n = state["counter"] % len(DEBATE_COMPS)
+        for code in DEBATE_COMPS[n:] + DEBATE_COMPS[:n]:
+            try:
+                facts = standings_facts(code)
+            except RuntimeError as e:
+                log(f"   classement {code} indisponible ({e})")
+                continue
+            if facts:
                 log(f"[debat] {COMP_NAMES[code]}")
-                text = generate("debate", INSTR["debate"], facts, cfg, state, code)
-                if text:
-                    return kind, text, f"football-data {code}"
-                break
+                return {"facts": facts, "instr": "debate", "code": code, "source": f"football-data {code}", "after": None}
+        return None
+    return None
+
+
+def make_slot_post(now, cfg, state, dry, hhmm="20:15", hours_ahead=0.0, day_iso=None):
+    """Genere le post d'un creneau : essaie les types preferes pour cette heure, dans l'ordre."""
+    kinds = list(SLOT_KINDS.get(hhmm, DEFAULT_KINDS))
+    if hours_ahead > cfg["news_horizon_h"]:               # creneau lointain : l'actu serait deja froide
+        kinds = [k for k in kinds if k != "news"] + ["news"]
+    last = state["posts"][-1]["kind"] if state["posts"] else None
+    if len(kinds) > 1 and kinds[0] == last:                # pas deux fois le meme type d'affilee
+        kinds = kinds[1:] + kinds[:1]
+    for kind in kinds:
+        b = build(kind, now, cfg, state, dry, hhmm, day_iso)
+        if not b:
+            continue
+        text = generate(b["instr"], INSTR[b["instr"]], b["facts"], cfg, state, b["code"])
+        if text:
+            if b["after"]:
+                b["after"]()
+            return kind, text, b["source"]
     return None, None, None
+
+
+BREAKING_GAP_MIN = 60               # au moins 1 h entre deux posts "breaking"
+
+
+def run_breaking(now, cfg, state, busy, dry):
+    """Actu chaude (gros joueur / grosse equipe, moins de 4 h) : on la poste en quelques minutes, sans attendre un creneau."""
+    today = now.astimezone(PARIS).date()
+    if today < date.fromisoformat(cfg["start_date"]) or cfg["max_breaking_per_day"] <= 0:
+        return 0
+    if in_quiet_hours(now + timedelta(minutes=MIN_LEAD_MIN), cfg):
+        return 0
+    mine = [p for p in state["posts"] if p["kind"] == "breaking"]
+    if sum(1 for p in mine if p["day"] == today.isoformat()) >= cfg["max_breaking_per_day"]:
+        return 0
+    if mine:
+        last_at = datetime.strptime(mine[-1]["at"], "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
+        if now - last_at < timedelta(minutes=BREAKING_GAP_MIN):
+            return 0
+    due = free_time(now + timedelta(minutes=MIN_LEAD_MIN), cfg, busy, shifts=(0, 5, 10, 15, 20, 30, 40, 50, 60))
+    if not due:
+        return 0
+    b = build("breaking", now, cfg, state, dry)
+    if not b:
+        return 0
+    text = generate("breaking", INSTR["breaking"], b["facts"], cfg, state)
+    if not text:
+        log("   breaking : aucun post valide")
+        return 0
+    return publish(state, "breaking", text, due, busy, dry, b["source"])
 
 
 def publish(state, kind, text, due, busy, dry, source=""):
@@ -788,7 +1162,7 @@ def run_slots(now, cfg, state, busy, dry):
         for hhmm in phase_slots(day, cfg):
             key = f"{day.isoformat()}T{hhmm}"
             dt = hhmm_to_dt(day, hhmm)
-            if key in state["slots"] or not (now + timedelta(minutes=MIN_LEAD_MIN) <= dt <= now + timedelta(hours=SLOT_LOOKAHEAD_H)):
+            if key in state["slots"] or not (now + timedelta(minutes=MIN_LEAD_MIN) <= dt <= now + timedelta(hours=cfg["lookahead_h"])):
                 continue
             if state["slot_tries"].get(key, 0) >= MAX_SLOT_TRIES:
                 continue
@@ -799,7 +1173,8 @@ def run_slots(now, cfg, state, busy, dry):
                 continue
             state["slot_tries"][key] = state["slot_tries"].get(key, 0) + 1
             log(f"creneau {key} (essai {state['slot_tries'][key]})")
-            kind, text, source = make_slot_post(now, cfg, state, dry)
+            kind, text, source = make_slot_post(now, cfg, state, dry, hhmm=hhmm,
+                                                hours_ahead=(dt - now).total_seconds() / 3600, day_iso=day.isoformat())
             if not text:
                 log("   aucun post valide pour ce creneau, nouvel essai au prochain passage")
                 continue
@@ -820,6 +1195,7 @@ def run(dry=False):
     created = 0
     try:
         created += run_reactions(now, cfg, state, busy, dry)
+        created += run_breaking(now, cfg, state, busy, dry)
         created += run_slots(now, cfg, state, busy, dry)
     except Fatal as e:
         gh_error(f"CM arrete : {e}")
@@ -841,28 +1217,27 @@ def samples():
     now = datetime.now(timezone.utc)
     lines = []
     try:
-        ms = sorted([m for m in recent_finished(now, hours=72) if reaction_priority(m) < 9], key=reaction_priority)[:2]
+        ms = sorted([m for m in recent_finished(now, hours=72) if reaction_priority(m) < 9], key=reaction_priority)[:1]
         for m in ms:
-            facts = match_facts(m)
+            facts = match_facts(m) + goal_facts(m)
             t = generate("reaction", INSTR["reaction"], facts, cfg, state, (m.get("competition") or {}).get("code"))
-            lines.append(f"REACTION [{facts[0]}] -> {t}")
-        items, report = news_items(now)
-        lines.append("FLUX : " + " | ".join(report))
-        for it in items[:2]:
-            t = generate("news", INSTR["news"], news_facts(it), cfg, state)
-            lines.append(f"ACTU [{it['source']} : {it['title'][:80]}] -> {t}")
-        for code in ("FL1", "CL"):
-            facts = standings_facts(code)
-            if facts:
-                t = generate("debate", INSTR["debate"], facts, cfg, state, code)
-                lines.append(f"DEBAT [{COMP_NAMES[code]}] -> {t}")
+            lines.append(f"REACTION [{' | '.join(facts)[:160]}] -> {t}")
+        for kind in ("breaking", "news", "stat", "history", "preview", "recap", "debate"):
+            state["counter"] += 1
+            b = build(kind, now, cfg, state, True, hhmm="08:05" if kind == "preview" else "20:15")
+            if not b:
+                lines.append(f"{kind.upper()} : rien de disponible maintenant")
+                continue
+            t = generate(b["instr"], INSTR[b["instr"]], b["facts"], cfg, state, b["code"])
+            lines.append(f"{kind.upper()} [{' | '.join(b['facts'])[:170]}] -> {t}")
     except Fatal as e:
         gh_error(f"CM : {e}")
         return 2
     lines.append(f"USAGE : {usage_text(state['usage'])}")
     for ln in lines:
         log(ln.replace("\n", " | "))
-    gh_notice("[CM echantillons]\n" + "\n".join(ln.replace("\n", " | ") for ln in lines))
+    for i in range(0, len(lines), 4):          # annotations de taille raisonnable
+        gh_notice("[CM echantillons]\n" + "\n".join(ln.replace("\n", " | ") for ln in lines[i:i + 4]))
     return 0
 
 
@@ -886,8 +1261,19 @@ def diag():
     now = datetime.now(timezone.utc)
     items, report = news_items(now)
     notes.append("Flux d'actu : " + " | ".join(report) + f" | exploitables : {len(items)}")
-    for it in items[:4]:
-        notes.append(f"  actu : [{it['source']}] {it['title'][:100]} (score {it['score']}, {it['age_h']:.0f} h)")
+    for it in items[:6]:
+        notes.append(f"  actu : [{it['source']}] {it['title'][:100]} (score {it['score']:.1f}, {it['age_h']:.0f} h)")
+    notes.append(f"  actus chaudes (score >= 2, < {cfg['breaking_max_age_h']} h) : "
+                 f"{sum(1 for it in items if it['score'] >= 2 and it['age_h'] <= cfg['breaking_max_age_h'])}")
+    for label, fn in (("buteurs PD", lambda: scorers_facts("PD", state)[0]),
+                      ("anecdote du jour", lambda: history_facts(now, state)[1]),
+                      ("programme du jour", lambda: fixtures_facts(now, True)),
+                      ("resultats du jour", lambda: results_facts(now))):
+        try:
+            r = fn()
+            notes.append(f"{label} : " + (" | ".join(r)[:200] if r else "rien"))
+        except Exception as e:
+            notes.append(f"{label} : ERREUR {str(e)[:120]}")
     try:
         ms = recent_finished(now, hours=72)
         notes.append(f"football-data : {len(ms)} matchs termines (72 h) | " + " ; ".join(match_facts(m)[0] for m in ms[:4]))
