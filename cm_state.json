@@ -44,6 +44,15 @@
       "day": "2026-10-29",
       "source": "football-data FL1",
       "at": "2026-10-29T15:51:50Z"
+    },
+    {
+      "id": "6ae37bb8e21785fad769e864",
+      "kind": "breaking",
+      "text": "🚨 Selon Le Parisien, quand connaîtra-t-on le détail des votes et l’écart entre Harry Kane et Kylian Mbappé pour le Ballon d’or 2026 ? Le suspense est lancé !\n\n#Mbappé #Kane",
+      "due": "2026-10-29T18:00Z",
+      "day": "2026-10-29",
+      "source": "Le Parisien",
+      "at": "2026-10-29T17:00:40Z"
     }
   ],
   "slots": {
@@ -64,25 +73,27 @@
   "used_news": [
     "0323d7e5074e",
     "7f2e274c7849",
-    "66d9fd67d2e3"
+    "66d9fd67d2e3",
+    "f45dff85ceb6"
   ],
-  "counter": 5,
+  "counter": 6,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 6,
-        "in": 3197,
-        "out": 1288
+        "calls": 7,
+        "in": 3757,
+        "out": 1626
       },
       "gpt-6.1-sol": {
-        "calls": 6,
-        "in": 1763,
-        "out": 249
+        "calls": 7,
+        "in": 2097,
+        "out": 285
       }
     }
   },
   "used_titles": [
-    "«Travaille dur en silence», le message publié par le Ballon d’Or Harry Kane ne visait pas Mbappé"
+    "«Travaille dur en silence», le message publié par le Ballon d’Or Harry Kane ne visait pas Mbappé",
+    "Ballon d’or 2026 : quand connaîtra-t-on le détail des votes et l’écart de points entre Harry Kane et Kylian Mbappé"
   ],
   "recent_stats": []
 }
