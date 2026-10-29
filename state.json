@@ -1138,10 +1138,10 @@
       "match_id": 559644,
       "label": "LE HAVRE-PSG",
       "kickoff": "2026-10-30T18:00:00Z",
-      "status": "poster_ready",
+      "status": "scheduled",
       "poster": "posters/x559644-20261030.jpg",
-      "post_id": null,
-      "due": null,
+      "post_id": "6ae3ac42f1e846b65afc1ae5",
+      "due": "2026-10-30T15:00:00Z",
       "created": "2026-10-29T20:27:40Z",
       "fails": 0,
       "design": "crests-v1"
