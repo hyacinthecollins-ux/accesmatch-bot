@@ -16,6 +16,9 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
+      - name: Installer ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+
       - name: Examiner les vidéos (codec, taille, fréquence d'images)
         env:
           BASE: https://pub-b5e401cd6e3245d6aacd181820e22aba.r2.dev
