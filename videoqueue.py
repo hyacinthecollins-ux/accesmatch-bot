@@ -33,6 +33,7 @@ import random
 import re
 import sys
 import time
+import unicodedata
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
@@ -95,7 +96,7 @@ LOW_STOCK_DAYS = 14            # alerte si stock (file + non programmées) < 14 
 API_DELAY = 2.0                # pause entre deux posts (limite Buffer : 100 / 15 min)
 MAX_FAILS = 2                  # une vidéo refusée 2 fois est mise de côté
 MAX_CONSECUTIVE_REJECTS = 3    # 3 refus d'affilée = problème général, on arrête
-AVOID_LAST_PLAYERS = 3         # pas le même joueur dans les 3 derniers posts
+AVOID_LAST_PLAYERS = 4         # pas le même joueur dans les 4 derniers posts
 # Mélange des créateurs (champ "folder" du catalogue) : jamais un stock vidé avant de passer au suivant.
 # Poids d'un créateur = (vidéos restantes) ** CREATOR_WEIGHT_POWER :
 #   0   = tour égal (chacun son tour, les petits stocks fondent vite)
@@ -106,6 +107,79 @@ CREATOR_WINDOW = 24            # le dosage se calcule sur les 24 derniers posts 
 AVOID_LAST_TITLES = 30         # pas deux fois le même texte de post dans les 30 derniers (~1 semaine à 4/jour)
 SHUFFLE_SEED = PROFILE["seed"]
 TWEET_MAX = 280
+
+# --- Stars : les gros noms du moment sont privilégiés (l'engagement vient plus vite) -----------------------
+# Réglages dans video_priority.json (modifiable sans toucher au code) :
+#   star_share = part visée de posts avec une star (0.7 = 7 posts sur 10), 0 = désactivé
+#   stars      = joueurs prioritaires (nom en minuscules sans accent, comme dans le champ "player" du catalogue)
+#   boost      = stars "du moment" qui passent 1,5 fois plus souvent
+#   aliases    = autres écritures d'un même joueur (vini -> vinicius)
+PRIORITY_FILE = ROOT / "video_priority.json"
+DEFAULT_PRIORITY = {
+    "star_share": 0.7,
+    "stars": ["mbappe", "yamal", "dembele", "messi", "ronaldo", "haaland", "vinicius", "olise", "doue",
+              "bellingham", "neymar", "cherki", "barcola", "pedri", "kvaratskhelia", "musiala", "kane", "salah",
+              "wirtz", "raphinha", "camavinga", "lewandowski", "rodri", "foden", "saka"],
+    "boost": ["mbappe", "yamal", "dembele", "haaland", "vinicius", "olise", "doue", "bellingham"],
+    "aliases": {"vini": "vinicius", "cr7": "ronaldo", "cristiano": "ronaldo", "kylian": "mbappe", "lamine": "yamal",
+                "kvara": "kvaratskhelia", "khvicha": "kvaratskhelia"},
+}
+STAR_WINDOW = 20               # la part de stars se calcule sur les 20 derniers posts
+STAR_WEIGHT_POWER = 0.5        # une star avec plus de vidéos passe plus souvent, sans écraser les autres
+BOOST_FACTOR = 1.5
+
+
+def _plain(s):
+    """minuscules sans accents ('Mbappé' -> 'mbappe')."""
+    s = unicodedata.normalize("NFKD", s or "")
+    return "".join(c for c in s if not unicodedata.combining(c)).lower().strip()
+
+
+def load_priority():
+    cfg = dict(DEFAULT_PRIORITY)
+    if PRIORITY_FILE.exists():
+        try:
+            cfg.update(json.loads(PRIORITY_FILE.read_text(encoding="utf-8")))
+        except json.JSONDecodeError:
+            print("⚠️  video_priority.json illisible, valeurs par défaut", flush=True)
+    return cfg
+
+
+PRIORITY = load_priority()
+ALIASES = {_plain(k): _plain(v) for k, v in PRIORITY["aliases"].items()}
+STAR_ORDER = [ALIASES.get(_plain(x), _plain(x)) for x in PRIORITY["stars"]]
+STAR_SET = set(STAR_ORDER)
+BOOST = {ALIASES.get(_plain(x), _plain(x)) for x in PRIORITY["boost"]}
+STAR_SHARE = float(os.environ.get("VQ_STAR_SHARE") or PRIORITY["star_share"])
+_words = sorted(STAR_SET | set(ALIASES), key=len, reverse=True)
+STAR_TEXT_RE = re.compile(r"(?<![a-z0-9])(" + "|".join(re.escape(w) for w in _words) + r")(?![a-z0-9])") if _words else None
+_STAR_CACHE = {}
+
+
+def player_slug(v):
+    """Joueur de la vidéo, normalisé ('Mbappé' et 'mbappe' sont le même joueur, 'vini' = 'vinicius')."""
+    p = _plain(v.get("player"))
+    return ALIASES.get(p, p)
+
+
+def star_of(v):
+    """La star de la vidéo (minuscules sans accent) ou None. Joueur du catalogue d'abord ;
+    sans joueur, on cherche le nom d'une star dans le titre et les hashtags."""
+    key = v.get("id")
+    if key in _STAR_CACHE:
+        return _STAR_CACHE[key]
+    p = player_slug(v)
+    if p:
+        res = p if p in STAR_SET else None
+    elif STAR_TEXT_RE:
+        m = STAR_TEXT_RE.search(_plain((v.get("title") or "") + " " + (v.get("hashtags") or "")))
+        res = ALIASES.get(m.group(1), m.group(1)) if m else None
+    else:
+        res = None
+    if key is not None:
+        _STAR_CACHE[key] = res
+    return res
+
 
 POST_TZ = ZoneInfo("Europe/Paris")
 MIN_LEAD_MIN = 15              # un créneau doit être au moins 15 min dans le futur
@@ -166,11 +240,13 @@ def load_state():
             st.setdefault("recent_players", [])
             st.setdefault("recent_creators", [])
             st.setdefault("recent_titles", [])
+            st.setdefault("recent_stars", [])
+            st.setdefault("recent_long", [])
             return st
         except json.JSONDecodeError:
             log("⚠️  video_state.json illisible, on repart de zéro")
     return {"posted": {}, "failed": {}, "counter": 0, "recent_players": [], "recent_creators": [],
-            "recent_titles": []}
+            "recent_titles": [], "recent_stars": [], "recent_long": []}
 
 
 def save_state(state):
@@ -214,16 +290,21 @@ def creator_stock(cands):
     return dict(Counter(creator_of(v) for v in cands).most_common())
 
 
-def pick_next(cands, recent_players, recent_creators=(), recent_titles=()):
-    """Choisit la prochaine vidéo en mélangeant les créateurs.
+def pick_next(cands, recent_players, recent_creators=(), recent_titles=(), recent_stars=(), recent_long=()):
+    """Choisit la prochaine vidéo : mélange des créateurs + priorité aux stars.
 
     1. Créateur : celui qui est le plus "en retard" sur sa part, calculée sur les derniers posts
        (poids = stock restant ** CREATOR_WEIGHT_POWER). Jamais le même créateur deux fois d'affilée
        tant qu'un autre en a en stock. Un nouveau créateur (ou de nouvelles vidéos) entre
        automatiquement dans le tour, sans rien changer.
-    2. Vidéo : dans l'ordre mélangé stable, en évitant les joueurs et les textes de post déjà vus
+    2. Star ou pas : STAR_SHARE des posts (ex. 7 sur 10) montrent une star (Mbappé, Yamal, Messi...),
+       le reste est du contenu varié. Parmi les stars, celle qui est passée le moins récemment
+       (pondérée par son stock et son statut "du moment") prend le tour.
+    3. Vidéo : dans l'ordre mélangé stable, en évitant les joueurs et les textes de post déjà vus
        dans les derniers posts.
+    Si une préférence est impossible (plus de stars en stock, par ex.), elle est simplement relâchée.
     """
+    from collections import Counter
     by_creator = {}
     for v in sorted(cands, key=order_key):
         by_creator.setdefault(creator_of(v), []).append(v)
@@ -243,17 +324,60 @@ def pick_next(cands, recent_players, recent_creators=(), recent_titles=()):
     if len(ranked) > 1 and last in ranked:
         ranked = [c for c in ranked if c != last] + [last]      # le dernier créateur passe en dernier recours
     seen_titles = set(recent_titles)
-    for c in ranked:                                            # joueur ET texte de post pas déjà vus
-        for v in by_creator[c]:
-            p, tk = v.get("player"), title_key(v)
-            if (not p or p not in recent_players) and (tk is None or tk not in seen_titles):
-                return v
-    for c in ranked:                                            # repli : on ne garde que la règle des joueurs
-        for v in by_creator[c]:
-            p = v.get("player")
-            if not p or p not in recent_players:
-                return v
+    recent = {ALIASES.get(_plain(p), _plain(p)) for p in recent_players if p}
+
+    flags = list(recent_stars)[-STAR_WINDOW:]
+    if STAR_SHARE > 0:
+        want_star = sum(flags) < STAR_SHARE * (len(flags) + 1)
+        prefs = (want_star, not want_star)
+    else:
+        prefs = (None,)
+    star_stock = Counter(star_of(v) for v in cands if star_of(v))
+    long_counts = Counter(x for x in list(recent_long)[-STAR_WINDOW:] if x)
+
+    def choose(pool, pref):
+        if not pref:
+            return pool[0]
+        by_star = {}
+        for v in pool:
+            by_star.setdefault(star_of(v), []).append(v)
+
+        def score(s):
+            w = (star_stock[s] ** STAR_WEIGHT_POWER) * (BOOST_FACTOR if s in BOOST else 1.0)
+            return (long_counts[s] / w, -w, STAR_ORDER.index(s) if s in STAR_ORDER else 99)
+
+        return by_star[min(by_star, key=score)][0]
+
+    for strict in (True, False):          # d'abord joueur ET texte de post jamais vus, puis seulement le joueur
+        for pref in prefs:
+            for c in ranked:
+                pool = []
+                for v in by_creator[c]:
+                    p = player_slug(v)
+                    if p and p in recent:
+                        continue
+                    if strict:
+                        tk = title_key(v)
+                        if tk is not None and tk in seen_titles:
+                            continue
+                    if pref is not None and bool(star_of(v)) != pref:
+                        continue
+                    pool.append(v)
+                if pool:
+                    return choose(pool, pref)
     return by_creator[ranked[0]][0]
+
+
+def rebuild_recent(state, videos):
+    """Recalcule les mémoires "derniers posts" à partir des vidéos réellement programmées (après un nettoyage de file)."""
+    by_id = {v["id"]: v for v in videos}
+    seq = [by_id[i] for i, _ in sorted(state["posted"].items(), key=lambda kv: kv[1].get("due", "")) if i in by_id]
+    state["recent_players"] = [player_slug(v) for v in seq if v.get("player")][-AVOID_LAST_PLAYERS:]
+    state["recent_creators"] = [creator_of(v) for v in seq][-CREATOR_WINDOW:]
+    state["recent_titles"] = [k for k in (title_key(v) for v in seq) if k][-AVOID_LAST_TITLES:]
+    state["recent_stars"] = [1 if star_of(v) else 0 for v in seq][-STAR_WINDOW:]
+    state["recent_long"] = [star_of(v) or "" for v in seq][-STAR_WINDOW:]
+    state["counter"] = len(state["posted"])
 
 
 def clean_title(t):
@@ -494,6 +618,9 @@ def run(dry_run=False, status_only=False):
     videos = catalog["videos"]
     state = load_state()
     set_tag_vocab(videos)
+    if state.pop("rebuild_recent", False):
+        rebuild_recent(state, videos)
+        log("🔁 Mémoires des derniers posts reconstruites à partir des vidéos programmées")
     if not state["recent_titles"] and state["posted"]:       # état d'avant cette règle : on la reconstruit
         last = sorted(state["posted"].values(), key=lambda p: p.get("due", ""))[-AVOID_LAST_TITLES:]
         state["recent_titles"] = [k for k in (title_key({"title": p.get("title")}) for p in last) if k]
@@ -525,7 +652,8 @@ def run(dry_run=False, status_only=False):
     slots = iter_free_slots(datetime.now(timezone.utc), set(occupied))
     slot = next(slots)
     while need > 0 and created < MAX_NEW_PER_RUN and pool:
-        v = pick_next(pool, state["recent_players"], state["recent_creators"], state["recent_titles"])
+        v = pick_next(pool, state["recent_players"], state["recent_creators"], state["recent_titles"],
+                      state["recent_stars"], state["recent_long"])
         if not v:
             break
         slot_dt, kind = slot
@@ -534,7 +662,7 @@ def run(dry_run=False, status_only=False):
         url = f"{R2_PUBLIC_BASE}/{v['key']}"
         if dry_run:
             log(f"🆕 [dry-run] {slot_dt.astimezone(POST_TZ):%a %d/%m %H:%M} [{kind}] {v['title']} "
-                f"({v.get('player') or '—'} · {creator_of(v)})\n      {text.replace(chr(10), ' | ')}"
+                f"({v.get('player') or '—'}{' ⭐' if star_of(v) else ''} · {creator_of(v)})\n      {text.replace(chr(10), ' | ')}"
                 + (f"\n      ↳ réponse : {reply.replace(chr(10), ' | ')}" if reply else ""))
             post_id, due = None, None
             if created < 6:
@@ -565,8 +693,10 @@ def run(dry_run=False, status_only=False):
         occupied.add(minute_key(slot_dt))
         slot = next(slots)
         state["counter"] += 1
-        state["recent_players"] = (state["recent_players"] + [v.get("player")] if v.get("player")
+        state["recent_players"] = (state["recent_players"] + [player_slug(v)] if v.get("player")
                                    else state["recent_players"])[-AVOID_LAST_PLAYERS:]
+        state["recent_stars"] = (state["recent_stars"] + [1 if star_of(v) else 0])[-STAR_WINDOW:]
+        state["recent_long"] = (state["recent_long"] + [star_of(v) or ""])[-STAR_WINDOW:]
         state["recent_creators"] = (state["recent_creators"] + [creator_of(v)])[-CREATOR_WINDOW:]
         tk = title_key(v)
         if tk:
@@ -609,7 +739,14 @@ def catalog_summary():
     pc = Counter(v.get("player") for v in videos if v.get("player"))
     no_player = sum(1 for v in videos if not v.get("player"))
     gh_notice(f"[joueurs] {len(pc)} joueurs, {no_player} vidéos sans joueur | "
-              + " | ".join(f"{p} {n}" for p, n in pc.most_common(90)))
+              + " | ".join(f"{p} {n}" for p, n in pc.most_common(30)))
+    sc = Counter(star_of(v) for v in videos if star_of(v))
+    via_text = [v for v in videos if star_of(v) and not v.get("player")]
+    gh_notice(f"[stars] {sum(sc.values())} vidéos de stars sur {len(videos)} ({100 * sum(sc.values()) / len(videos):.0f} %), "
+              f"dont {len(via_text)} repérées par le titre | part visée {STAR_SHARE:.0%} | "
+              + " | ".join(f"{p} {n}" for p, n in sc.most_common())
+              + "\nexemples repérés par le titre : "
+              + " || ".join(f"{star_of(v)} <- {(v.get('title') or '')[:50]}" for v in via_text[:8]))
 
     ids = Counter(v["id"] for v in videos)
     keys = Counter(v["key"] for v in videos)

@@ -1,0 +1,9 @@
+{
+  "star_share": 0.7,
+  "stars": ["mbappe", "yamal", "dembele", "messi", "ronaldo", "haaland", "vinicius", "olise", "doue",
+            "bellingham", "neymar", "cherki", "barcola", "pedri", "kvaratskhelia", "musiala", "kane", "salah",
+            "wirtz", "raphinha", "camavinga", "lewandowski", "rodri", "foden", "saka"],
+  "boost": ["mbappe", "yamal", "dembele", "haaland", "vinicius", "olise", "doue", "bellingham"],
+  "aliases": {"vini": "vinicius", "cr7": "ronaldo", "cristiano": "ronaldo", "kylian": "mbappe", "lamine": "yamal",
+              "kvara": "kvaratskhelia", "khvicha": "kvaratskhelia"}
+}
