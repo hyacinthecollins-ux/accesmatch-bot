@@ -221,5 +221,19 @@ def main(argv=None):
     return 0 if fail_n <= max(3, ok_n) else 1
 
 
+def safe_main():
+    """Toute erreur imprévue est écrite en annotation GitHub (les logs complets ne sont pas toujours lisibles)."""
+    import traceback
+    try:
+        return main()
+    except Exception as e:
+        tb = traceback.format_exc()
+        print(tb, flush=True)
+        if os.environ.get("GITHUB_ACTIONS"):
+            print("::error::[réparation] " + (type(e).__name__ + " : " + str(e)[:300] + "\n" + tb[-700:])
+                  .replace("%", "%25").replace("\r", "").replace("\n", "%0A"), flush=True)
+        return 1
+
+
 if __name__ == "__main__":
-    sys.exit(main())
+    sys.exit(safe_main())
