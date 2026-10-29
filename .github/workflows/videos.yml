@@ -13,6 +13,14 @@ on:
         description: "Résumé du catalogue R2 (dossiers, créateurs) : n'envoie rien à Buffer"
         type: boolean
         default: false
+      probe_only:
+        description: "Sonde du format des vidéos seulement (codec, images/s, taille) : ne remplit pas la file"
+        type: boolean
+        default: false
+      probe_all:
+        description: "Sonde : ré-examine tout le catalogue (sinon seulement les nouvelles et les refusées)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -39,7 +47,15 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
+      - name: Installer ffmpeg (lecture du format des vidéos)
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+
+      - name: Sonde du format des vidéos (X refuse AV1 / VP9 / 60 images/s / 4K)
+        continue-on-error: true
+        run: python probe_catalog.py ${{ inputs.probe_all && '--all' || '' }}
+
       - name: Remplir la file Buffer
+        if: ${{ !inputs.probe_only }}
         run: python videoqueue.py ${{ inputs.catalog && '--catalog' || inputs.dry_run && '--dry-run' || '' }}
         # Code 3 = stock bas : l'étape devient rouge et GitHub t'envoie un email d'alerte.
         # Le résultat (ou la cause d'une erreur) apparaît en annotation sur la page du run.
@@ -49,7 +65,7 @@ jobs:
         run: |
           git config user.name "accesmatch-bot"
           git config user.email "accesmatch-bot@users.noreply.github.com"
-          git add video_state*.json
+          git add video_state*.json video_probe.json
           if ! git diff --cached --quiet; then
             git commit -m "etat videos"
             git pull --rebase

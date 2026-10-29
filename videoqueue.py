@@ -269,10 +269,45 @@ def fetch_catalog():
     return cat
 
 
+# --- Format vidéo accepté par X ---------------------------------------------------------------------------
+# probe_catalog.py (lancé chaque jour juste avant ce robot) lit l'en-tête de chaque vidéo et écrit video_probe.json.
+# X refuse les vidéos AV1 / VP9 (YouTube Shorts brut), à 60 images/s ou en 4K : elles partent en "unknown error".
+# Une vidéo marquée refusée, ou pas encore examinée, n'est jamais programmée. Sans fichier de sonde, aucun filtre.
+PROBE_FILE = ROOT / "video_probe.json"
+EXCLUDE_FOLDERS = {_plain(x) for x in PRIORITY.get("exclude_folders", [])}      # exclusion manuelle d'un créateur
+
+
+def load_probe():
+    if PROBE_FILE.exists():
+        try:
+            return json.loads(PROBE_FILE.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            log("⚠️  video_probe.json illisible : pas de filtre de format ce jour-là")
+    return None
+
+
+PROBE = load_probe()
+
+
+def unusable(v):
+    """Raison pour laquelle la vidéo ne doit pas être programmée, ou None."""
+    if _plain(v.get("folder")) in EXCLUDE_FOLDERS:
+        return "créateur exclu"
+    if PROBE is None:
+        return None
+    p = PROBE.get(v["id"])
+    if p is None or p.get("ok") is None:
+        return "format pas encore vérifié"
+    if not p.get("ok"):
+        return "format refusé par X (" + ", ".join(p.get("r") or ["?"]) + ")"
+    return None
+
+
 def candidates(videos, state):
     return [v for v in videos
             if v["id"] not in state["posted"]
-            and state["failed"].get(v["id"], {}).get("count", 0) < MAX_FAILS]
+            and state["failed"].get(v["id"], {}).get("count", 0) < MAX_FAILS
+            and not unusable(v)]
 
 
 def order_key(v):
@@ -637,6 +672,11 @@ def run(dry_run=False, status_only=False):
     need = max(0, target - in_queue)
     log(f"📦 Catalogue : {len(videos)} vidéos | déjà postées par le robot : {len(state['posted'])} | "
         f"disponibles : {len(cands)}")
+    from collections import Counter as _C
+    skipped = _C((creator_of(v), (unusable(v) or "").split(" (")[0]) for v in videos
+                 if v["id"] not in state["posted"] and unusable(v))
+    if skipped:
+        log("🚫 Écartées (format) : " + " | ".join(f"{c} {r} {n}" for (c, r), n in skipped.most_common()))
     log(f"📅 File Buffer : {in_queue} vidéos programmées (jusqu'au {last_due or '—'}) | objectif {target}")
     log(f"🎯 Compte : {ACCOUNT} → canal Buffer {BUFFER_CHANNEL_ID} | 1er jour de publication : {START_DATE or '—'}")
     gh_notice(f"[{ACCOUNT}] catalogue {len(videos)} vidéos, {len(cands)} disponibles, "
@@ -748,6 +788,11 @@ def catalog_summary():
               + "\nexemples repérés par le titre : "
               + " || ".join(f"{star_of(v)} <- {(v.get('title') or '')[:50]}" for v in via_text[:8]))
 
+    bad = Counter((creator_of(v), (unusable(v) or "").split(" (")[0]) for v in videos if unusable(v))
+    gh_notice("[format X] " + (f"{sum(bad.values())} vidéos écartées sur {len(videos)} : "
+                                + " | ".join(f"{c} {r} {n}" for (c, r), n in bad.most_common())
+                                if bad else "aucune vidéo écartée")
+              + ("" if PROBE is not None else " (pas de fichier de sonde : aucun filtre)"))
     ids = Counter(v["id"] for v in videos)
     keys = Counter(v["key"] for v in videos)
     titles = Counter(title_key(v) for v in videos if title_key(v))
