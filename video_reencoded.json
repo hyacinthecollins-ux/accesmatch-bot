@@ -22,5 +22,2405 @@
   "bytes_before": 16763080,
   "bytes_after": 5918209,
   "at": "2026-10-29T13:12:34Z"
+ },
+ "P-VghQS250c": {
+  "key": "videos/l7-shorts-P-VghQS250c.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 13s",
+  "bytes_before": 14985678,
+  "bytes_after": 6742221,
+  "at": "2026-10-29T13:15:44Z"
+ },
+ "Q92hNaP9zC4": {
+  "key": "videos/l7-shorts-Q92hNaP9zC4.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 24s",
+  "bytes_before": 29827775,
+  "bytes_after": 10823731,
+  "at": "2026-10-29T13:16:00Z"
+ },
+ "Rg0M6vm_jeY": {
+  "key": "videos/l7-shorts-Rg0M6vm_jeY.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 13s",
+  "bytes_before": 15690884,
+  "bytes_after": 8512578,
+  "at": "2026-10-29T13:16:15Z"
+ },
+ "UxlFbm5yP_U": {
+  "key": "videos/l7-shorts-UxlFbm5yP_U.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 18s",
+  "bytes_before": 22194666,
+  "bytes_after": 11002106,
+  "at": "2026-10-29T13:16:28Z"
+ },
+ "V1l_QPF3N_k": {
+  "key": "videos/l7-shorts-V1l_QPF3N_k.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 18s",
+  "bytes_before": 21887415,
+  "bytes_after": 9115011,
+  "at": "2026-10-29T13:16:40Z"
+ },
+ "XAi-NPILS9Y": {
+  "key": "videos/l7-shorts-XAi-NPILS9Y.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 22s",
+  "bytes_before": 4584270,
+  "bytes_after": 8154040,
+  "at": "2026-10-29T13:16:48Z"
+ },
+ "a0HeOzmvVb0": {
+  "key": "videos/l7-shorts-a0HeOzmvVb0.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 22s",
+  "bytes_before": 27248243,
+  "bytes_after": 10888837,
+  "at": "2026-10-29T13:17:03Z"
+ },
+ "aLRcwz5ulvs": {
+  "key": "videos/l7-shorts-aLRcwz5ulvs.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 30s",
+  "bytes_before": 4595757,
+  "bytes_after": 7028366,
+  "at": "2026-10-29T13:17:12Z"
+ },
+ "dKbabrgjU5Q": {
+  "key": "videos/l7-shorts-dKbabrgjU5Q.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 28s",
+  "bytes_before": 36260256,
+  "bytes_after": 19914027,
+  "at": "2026-10-29T13:17:33Z"
+ },
+ "eU3Wz2cgFUw": {
+  "key": "videos/l7-shorts-eU3Wz2cgFUw.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 34s",
+  "bytes_before": 10380472,
+  "bytes_after": 13189663,
+  "at": "2026-10-29T13:17:49Z"
+ },
+ "ebZWhg-mG9o": {
+  "key": "videos/l7-shorts-ebZWhg-mG9o.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 26s",
+  "bytes_before": 31553104,
+  "bytes_after": 16592137,
+  "at": "2026-10-29T13:18:08Z"
+ },
+ "hw3DAgnqWCE": {
+  "key": "videos/l7-shorts-hw3DAgnqWCE.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 22s",
+  "bytes_before": 22781237,
+  "bytes_after": 9287022,
+  "at": "2026-10-29T13:18:22Z"
+ },
+ "jRgLGVlwTDk": {
+  "key": "videos/l7-shorts-jRgLGVlwTDk.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 27s",
+  "bytes_before": 8019992,
+  "bytes_after": 12799300,
+  "at": "2026-10-29T13:18:33Z"
+ },
+ "luQT-0mmvX8": {
+  "key": "videos/l7-shorts-luQT-0mmvX8.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 23s",
+  "bytes_before": 29726294,
+  "bytes_after": 16278754,
+  "at": "2026-10-29T13:18:49Z"
+ },
+ "n9cRl-neYDQ": {
+  "key": "videos/l7-shorts-n9cRl-neYDQ.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 35s",
+  "bytes_before": 9870641,
+  "bytes_after": 15024742,
+  "at": "2026-10-29T13:19:02Z"
+ },
+ "nSa8vA330Dg": {
+  "key": "videos/l7-shorts-nSa8vA330Dg.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 25s",
+  "bytes_before": 31595826,
+  "bytes_after": 11869718,
+  "at": "2026-10-29T13:19:19Z"
+ },
+ "oRDkqrbBtR8": {
+  "key": "videos/l7-shorts-oRDkqrbBtR8.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 16s",
+  "bytes_before": 19739387,
+  "bytes_after": 8139263,
+  "at": "2026-10-29T13:19:31Z"
+ },
+ "oWTi-hLymcA": {
+  "key": "videos/l7-shorts-oWTi-hLymcA.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 24s",
+  "bytes_before": 6792193,
+  "bytes_after": 8112716,
+  "at": "2026-10-29T13:19:40Z"
+ },
+ "ogtgGQgzvEg": {
+  "key": "videos/l7-shorts-ogtgGQgzvEg.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 12s",
+  "bytes_before": 14960009,
+  "bytes_after": 7373162,
+  "at": "2026-10-29T13:19:50Z"
+ },
+ "qjMNdlOaEUo": {
+  "key": "videos/l7-shorts-qjMNdlOaEUo.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 23s",
+  "bytes_before": 29927773,
+  "bytes_after": 16234292,
+  "at": "2026-10-29T13:20:09Z"
+ },
+ "quRVUrK6Tf0": {
+  "key": "videos/l7-shorts-quRVUrK6Tf0.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 23s",
+  "bytes_before": 28059168,
+  "bytes_after": 14107256,
+  "at": "2026-10-29T13:20:27Z"
+ },
+ "r895btZliug": {
+  "key": "videos/l7-shorts-r895btZliug.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 15s",
+  "bytes_before": 17948632,
+  "bytes_after": 8912117,
+  "at": "2026-10-29T13:20:38Z"
+ },
+ "sJufogYpEmE": {
+  "key": "videos/l7-shorts-sJufogYpEmE.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 25s",
+  "bytes_before": 29331959,
+  "bytes_after": 11097136,
+  "at": "2026-10-29T13:20:54Z"
+ },
+ "tDvlVx9wQkk": {
+  "key": "videos/l7-shorts-tDvlVx9wQkk.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 23s",
+  "bytes_before": 27577030,
+  "bytes_after": 11247607,
+  "at": "2026-10-29T13:21:11Z"
+ },
+ "vqEc-wmDidw": {
+  "key": "videos/l7-shorts-vqEc-wmDidw.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 18s",
+  "bytes_before": 23175537,
+  "bytes_after": 10491021,
+  "at": "2026-10-29T13:21:25Z"
+ },
+ "zBPpD76IWi4": {
+  "key": "videos/l7-shorts-zBPpD76IWi4.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 34s",
+  "bytes_before": 7164437,
+  "bytes_after": 10425145,
+  "at": "2026-10-29T13:21:36Z"
+ },
+ "-tbblLBCNE0": {
+  "key": "videos/l7-shorts--tbblLBCNE0.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 16s",
+  "bytes_before": 19702392,
+  "bytes_after": 11040940,
+  "at": "2026-10-29T13:21:49Z"
+ },
+ "-wSr3fCMKcw": {
+  "key": "videos/l7-shorts--wSr3fCMKcw.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 23s",
+  "bytes_before": 28451113,
+  "bytes_after": 13505068,
+  "at": "2026-10-29T13:22:07Z"
+ },
+ "0CXFSx0AGEE": {
+  "key": "videos/l7-shorts-0CXFSx0AGEE.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 21s",
+  "bytes_before": 25941920,
+  "bytes_after": 15999284,
+  "at": "2026-10-29T13:22:24Z"
+ },
+ "0Gojinf0ObI": {
+  "key": "videos/l7-shorts-0Gojinf0ObI.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 20s",
+  "bytes_before": 26906541,
+  "bytes_after": 13400329,
+  "at": "2026-10-29T13:22:40Z"
+ },
+ "0podVqfxkUM": {
+  "key": "videos/l7-shorts-0podVqfxkUM.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 20s",
+  "bytes_before": 25746105,
+  "bytes_after": 8920247,
+  "at": "2026-10-29T13:22:54Z"
+ },
+ "2dIIdIKptE4": {
+  "key": "videos/l7-shorts-2dIIdIKptE4.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 38s",
+  "bytes_before": 8154089,
+  "bytes_after": 10201227,
+  "at": "2026-10-29T13:23:06Z"
+ },
+ "3L0A7McZixc": {
+  "key": "videos/l7-shorts-3L0A7McZixc.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 21s",
+  "bytes_before": 27162140,
+  "bytes_after": 16164287,
+  "at": "2026-10-29T13:23:22Z"
+ },
+ "4IsR2weo1yo": {
+  "key": "videos/l7-shorts-4IsR2weo1yo.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 19s",
+  "bytes_before": 23582969,
+  "bytes_after": 12290291,
+  "at": "2026-10-29T13:23:35Z"
+ },
+ "63AtespTPd0": {
+  "key": "videos/l7-shorts-63AtespTPd0.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 22s",
+  "bytes_before": 26983603,
+  "bytes_after": 12668085,
+  "at": "2026-10-29T13:23:50Z"
+ },
+ "7fhwS7yRXCw": {
+  "key": "videos/l7-shorts-7fhwS7yRXCw.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 20s",
+  "bytes_before": 24013714,
+  "bytes_after": 14529283,
+  "at": "2026-10-29T13:24:20Z"
+ },
+ "7qR3IhWWYMc": {
+  "key": "videos/l7-shorts-7qR3IhWWYMc.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 19s",
+  "bytes_before": 24744942,
+  "bytes_after": 12083985,
+  "at": "2026-10-29T13:24:34Z"
+ },
+ "8-m0o6TmQQo": {
+  "key": "videos/l7-shorts-8-m0o6TmQQo.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 29s",
+  "bytes_before": 6083382,
+  "bytes_after": 9361664,
+  "at": "2026-10-29T13:24:44Z"
+ },
+ "9lIMhki_dRg": {
+  "key": "videos/l7-shorts-9lIMhki_dRg.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 13s",
+  "bytes_before": 16472410,
+  "bytes_after": 7384871,
+  "at": "2026-10-29T13:24:55Z"
+ },
+ "ARj2U-WItKU": {
+  "key": "videos/l7-shorts-ARj2U-WItKU.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 20s",
+  "bytes_before": 25513451,
+  "bytes_after": 11938161,
+  "at": "2026-10-29T13:25:09Z"
+ },
+ "B-SL1R9Dh_c": {
+  "key": "videos/l7-shorts-B-SL1R9Dh_c.mp4",
+  "from": "av1 1440x1920 60fps",
+  "to": "h264 1080x1440 30fps 35s",
+  "bytes_before": 20767649,
+  "bytes_after": 9932407,
+  "at": "2026-10-29T13:25:25Z"
+ },
+ "C4Fzzi4jSak": {
+  "key": "videos/l7-shorts-C4Fzzi4jSak.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 29s",
+  "bytes_before": 36895525,
+  "bytes_after": 15537899,
+  "at": "2026-10-29T13:25:46Z"
+ },
+ "CBunUTCQ9Yk": {
+  "key": "videos/l7-shorts-CBunUTCQ9Yk.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 20s",
+  "bytes_before": 25957469,
+  "bytes_after": 11711642,
+  "at": "2026-10-29T13:26:00Z"
+ },
+ "FMmARTruAa8": {
+  "key": "videos/l7-shorts-FMmARTruAa8.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 35s",
+  "bytes_before": 9644320,
+  "bytes_after": 13195458,
+  "at": "2026-10-29T13:26:13Z"
+ },
+ "FXDCU_C_zjs": {
+  "key": "videos/l7-shorts-FXDCU_C_zjs.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 36s",
+  "bytes_before": 46342513,
+  "bytes_after": 25748864,
+  "at": "2026-10-29T13:26:40Z"
+ },
+ "JyPIhRkp3eI": {
+  "key": "videos/l7-shorts-JyPIhRkp3eI.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 27s",
+  "bytes_before": 33097436,
+  "bytes_after": 16993955,
+  "at": "2026-10-29T13:27:00Z"
+ },
+ "KZUKaFNMwXQ": {
+  "key": "videos/l7-shorts-KZUKaFNMwXQ.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 29s",
+  "bytes_before": 7467634,
+  "bytes_after": 11929459,
+  "at": "2026-10-29T13:27:11Z"
+ },
+ "KujNnyd_m7o": {
+  "key": "videos/l7-shorts-KujNnyd_m7o.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 21s",
+  "bytes_before": 26621889,
+  "bytes_after": 13691182,
+  "at": "2026-10-29T13:27:28Z"
+ },
+ "QwYBJgR7L0M": {
+  "key": "videos/l7-shorts-QwYBJgR7L0M.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 19s",
+  "bytes_before": 22998641,
+  "bytes_after": 10065632,
+  "at": "2026-10-29T13:27:43Z"
+ },
+ "Qy00XAOmR1c": {
+  "key": "videos/l7-shorts-Qy00XAOmR1c.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 29s",
+  "bytes_before": 36351237,
+  "bytes_after": 16700047,
+  "at": "2026-10-29T13:28:04Z"
+ },
+ "RHO7_DmqGiI": {
+  "key": "videos/l7-shorts-RHO7_DmqGiI.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 27s",
+  "bytes_before": 7937866,
+  "bytes_after": 10367189,
+  "at": "2026-10-29T13:28:22Z"
+ },
+ "RQqouLLeV7o": {
+  "key": "videos/l7-shorts-RQqouLLeV7o.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 20s",
+  "bytes_before": 26069257,
+  "bytes_after": 15320535,
+  "at": "2026-10-29T13:28:37Z"
+ },
+ "SD57unS6ISU": {
+  "key": "videos/l7-shorts-SD57unS6ISU.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 35s",
+  "bytes_before": 10095476,
+  "bytes_after": 12726979,
+  "at": "2026-10-29T13:28:50Z"
+ },
+ "SFIu_TPlBcE": {
+  "key": "videos/l7-shorts-SFIu_TPlBcE.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 20s",
+  "bytes_before": 25646423,
+  "bytes_after": 15390082,
+  "at": "2026-10-29T13:29:07Z"
+ },
+ "Sp_51uyF3yk": {
+  "key": "videos/l7-shorts-Sp_51uyF3yk.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 14s",
+  "bytes_before": 17418178,
+  "bytes_after": 6956763,
+  "at": "2026-10-29T13:29:17Z"
+ },
+ "TlJgBvlltIM": {
+  "key": "videos/l7-shorts-TlJgBvlltIM.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 20s",
+  "bytes_before": 25280644,
+  "bytes_after": 11929476,
+  "at": "2026-10-29T13:29:34Z"
+ },
+ "VGftNzkfuug": {
+  "key": "videos/l7-shorts-VGftNzkfuug.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 20s",
+  "bytes_before": 24726699,
+  "bytes_after": 9176013,
+  "at": "2026-10-29T13:30:10Z"
+ },
+ "VP39gp7ahjU": {
+  "key": "videos/l7-shorts-VP39gp7ahjU.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 36s",
+  "bytes_before": 5829896,
+  "bytes_after": 9058388,
+  "at": "2026-10-29T13:30:21Z"
+ },
+ "VXP6qvjCZBg": {
+  "key": "videos/l7-shorts-VXP6qvjCZBg.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 35s",
+  "bytes_before": 8737398,
+  "bytes_after": 12217451,
+  "at": "2026-10-29T13:30:34Z"
+ },
+ "WxZ_6udP5h0": {
+  "key": "videos/l7-shorts-WxZ_6udP5h0.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 33s",
+  "bytes_before": 8803025,
+  "bytes_after": 10267063,
+  "at": "2026-10-29T13:30:44Z"
+ },
+ "ZPBNHF6DduQ": {
+  "key": "videos/l7-shorts-ZPBNHF6DduQ.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 38s",
+  "bytes_before": 11233965,
+  "bytes_after": 17115309,
+  "at": "2026-10-29T13:30:58Z"
+ },
+ "Zr2JXxkZW_8": {
+  "key": "videos/l7-shorts-Zr2JXxkZW_8.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 21s",
+  "bytes_before": 28813631,
+  "bytes_after": 11523019,
+  "at": "2026-10-29T13:31:16Z"
+ },
+ "bMo5sgy9iyg": {
+  "key": "videos/l7-shorts-bMo5sgy9iyg.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 36s",
+  "bytes_before": 9926927,
+  "bytes_after": 14992322,
+  "at": "2026-10-29T13:31:29Z"
+ },
+ "c9rbj8cIXYk": {
+  "key": "videos/l7-shorts-c9rbj8cIXYk.mp4",
+  "from": "av1 1080x1436 60fps",
+  "to": "h264 1080x1436 30fps 42s",
+  "bytes_before": 8589965,
+  "bytes_after": 11160323,
+  "at": "2026-10-29T13:31:41Z"
+ },
+ "dwd2N47RUKc": {
+  "key": "videos/l7-shorts-dwd2N47RUKc.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 24s",
+  "bytes_before": 29920412,
+  "bytes_after": 15844423,
+  "at": "2026-10-29T13:31:58Z"
+ },
+ "h6WhDarhldI": {
+  "key": "videos/l7-shorts-h6WhDarhldI.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 22s",
+  "bytes_before": 27804023,
+  "bytes_after": 15027073,
+  "at": "2026-10-29T13:32:14Z"
+ },
+ "jIFJ4bBbrzI": {
+  "key": "videos/l7-shorts-jIFJ4bBbrzI.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 36s",
+  "bytes_before": 10005270,
+  "bytes_after": 13249147,
+  "at": "2026-10-29T13:32:29Z"
+ },
+ "jRR8dr2PHG8": {
+  "key": "videos/l7-shorts-jRR8dr2PHG8.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 24s",
+  "bytes_before": 30020055,
+  "bytes_after": 9143795,
+  "at": "2026-10-29T13:32:43Z"
+ },
+ "mVZMl6A_Y_8": {
+  "key": "videos/l7-shorts-mVZMl6A_Y_8.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 22s",
+  "bytes_before": 26011085,
+  "bytes_after": 8518949,
+  "at": "2026-10-29T13:32:58Z"
+ },
+ "mbG5p-H8EXU": {
+  "key": "videos/l7-shorts-mbG5p-H8EXU.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 14s",
+  "bytes_before": 18319751,
+  "bytes_after": 8570969,
+  "at": "2026-10-29T13:33:09Z"
+ },
+ "pp8D9puxmf0": {
+  "key": "videos/l7-shorts-pp8D9puxmf0.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 23s",
+  "bytes_before": 28953868,
+  "bytes_after": 17050787,
+  "at": "2026-10-29T13:33:25Z"
+ },
+ "qFsphXGQ7RU": {
+  "key": "videos/l7-shorts-qFsphXGQ7RU.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 46s",
+  "bytes_before": 8368862,
+  "bytes_after": 13301295,
+  "at": "2026-10-29T13:33:40Z"
+ },
+ "rYV_9H5d0xU": {
+  "key": "videos/l7-shorts-rYV_9H5d0xU.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 22s",
+  "bytes_before": 28272804,
+  "bytes_after": 16479742,
+  "at": "2026-10-29T13:33:57Z"
+ },
+ "ss5jAeSusds": {
+  "key": "videos/l7-shorts-ss5jAeSusds.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 25s",
+  "bytes_before": 31113134,
+  "bytes_after": 14568382,
+  "at": "2026-10-29T13:34:14Z"
+ },
+ "ykjb9H7W66c": {
+  "key": "videos/l7-shorts-ykjb9H7W66c.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 18s",
+  "bytes_before": 23085880,
+  "bytes_after": 11491890,
+  "at": "2026-10-29T13:34:27Z"
+ },
+ "zFtUwYwu4qk": {
+  "key": "videos/l7-shorts-zFtUwYwu4qk.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 28s",
+  "bytes_before": 5799736,
+  "bytes_after": 8816877,
+  "at": "2026-10-29T13:34:37Z"
+ },
+ "WUOr-o89LHI": {
+  "key": "videos/l7-shorts-WUOr-o89LHI.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 21s",
+  "bytes_before": 5317126,
+  "bytes_after": 7072398,
+  "at": "2026-10-29T13:34:44Z"
+ },
+ "kxaI65PMkNk": {
+  "key": "videos/l7-shorts-kxaI65PMkNk.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 16s",
+  "bytes_before": 20841319,
+  "bytes_after": 8952147,
+  "at": "2026-10-29T13:34:55Z"
+ },
+ "uy3OqiuVu2E": {
+  "key": "videos/l7-shorts-uy3OqiuVu2E.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 22s",
+  "bytes_before": 5904223,
+  "bytes_after": 7600297,
+  "at": "2026-10-29T13:35:03Z"
+ },
+ "yjeNNz5RDsQ": {
+  "key": "videos/l7-shorts-yjeNNz5RDsQ.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 25s",
+  "bytes_before": 28712840,
+  "bytes_after": 10316527,
+  "at": "2026-10-29T13:35:19Z"
+ },
+ "zSD3BkLHDIY": {
+  "key": "videos/l7-shorts-zSD3BkLHDIY.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 24s",
+  "bytes_before": 29920896,
+  "bytes_after": 13768041,
+  "at": "2026-10-29T13:35:36Z"
+ },
+ "U7H1OeroJWU": {
+  "key": "videos/l7-shorts-U7H1OeroJWU.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 20s",
+  "bytes_before": 25925370,
+  "bytes_after": 14445836,
+  "at": "2026-10-29T13:35:55Z"
+ },
+ "Zm68nnEEb4U": {
+  "key": "videos/l7-shorts-Zm68nnEEb4U.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 22s",
+  "bytes_before": 6051530,
+  "bytes_after": 10540007,
+  "at": "2026-10-29T13:36:04Z"
+ },
+ "iaMXtCT4SO8": {
+  "key": "videos/l7-shorts-iaMXtCT4SO8.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 17s",
+  "bytes_before": 22178438,
+  "bytes_after": 11508508,
+  "at": "2026-10-29T13:36:17Z"
+ },
+ "oM3frfd0ERo": {
+  "key": "videos/l7-shorts-oM3frfd0ERo.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 21s",
+  "bytes_before": 27163758,
+  "bytes_after": 11960790,
+  "at": "2026-10-29T13:36:32Z"
+ },
+ "-oKZbjtCcg0": {
+  "key": "videos/l7-shorts--oKZbjtCcg0.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 16s",
+  "bytes_before": 19049694,
+  "bytes_after": 10434501,
+  "at": "2026-10-29T13:36:44Z"
+ },
+ "06a_pGFLE9M": {
+  "key": "videos/l7-shorts-06a_pGFLE9M.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 30s",
+  "bytes_before": 6837251,
+  "bytes_after": 9446698,
+  "at": "2026-10-29T13:36:53Z"
+ },
+ "5SoezsG9Ncs": {
+  "key": "videos/l7-shorts-5SoezsG9Ncs.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 18s",
+  "bytes_before": 22146331,
+  "bytes_after": 11881484,
+  "at": "2026-10-29T13:37:05Z"
+ },
+ "9A3i5qucWe4": {
+  "key": "videos/l7-shorts-9A3i5qucWe4.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 24s",
+  "bytes_before": 31034649,
+  "bytes_after": 18075828,
+  "at": "2026-10-29T13:37:27Z"
+ },
+ "Lwby2MXC4Ig": {
+  "key": "videos/l7-shorts-Lwby2MXC4Ig.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 24s",
+  "bytes_before": 30700733,
+  "bytes_after": 15368576,
+  "at": "2026-10-29T13:37:43Z"
+ },
+ "P7J6jdzwRhg": {
+  "key": "videos/l7-shorts-P7J6jdzwRhg.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 26s",
+  "bytes_before": 32803300,
+  "bytes_after": 16495437,
+  "at": "2026-10-29T13:38:02Z"
+ },
+ "XbgDxI2_KWE": {
+  "key": "videos/l7-shorts-XbgDxI2_KWE.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 26s",
+  "bytes_before": 32583844,
+  "bytes_after": 20552391,
+  "at": "2026-10-29T13:38:20Z"
+ },
+ "voC9yrINCt4": {
+  "key": "videos/l7-shorts-voC9yrINCt4.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 21s",
+  "bytes_before": 5336173,
+  "bytes_after": 8595166,
+  "at": "2026-10-29T13:38:29Z"
+ },
+ "3C7It53hNbk": {
+  "key": "videos/l7-shorts-3C7It53hNbk.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 25s",
+  "bytes_before": 29607942,
+  "bytes_after": 12898663,
+  "at": "2026-10-29T13:38:45Z"
+ },
+ "5O5HL0AilS4": {
+  "key": "videos/l7-shorts-5O5HL0AilS4.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 16s",
+  "bytes_before": 19459330,
+  "bytes_after": 9879823,
+  "at": "2026-10-29T13:38:57Z"
+ },
+ "AuSmYbaCDH0": {
+  "key": "videos/l7-shorts-AuSmYbaCDH0.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 20s",
+  "bytes_before": 24729020,
+  "bytes_after": 8404047,
+  "at": "2026-10-29T13:39:12Z"
+ },
+ "DvQ6ATlqhJc": {
+  "key": "videos/l7-shorts-DvQ6ATlqhJc.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 16s",
+  "bytes_before": 19721200,
+  "bytes_after": 8958421,
+  "at": "2026-10-29T13:39:23Z"
+ },
+ "FXYRaR1LTkw": {
+  "key": "videos/l7-shorts-FXYRaR1LTkw.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 28s",
+  "bytes_before": 6957137,
+  "bytes_after": 10921830,
+  "at": "2026-10-29T13:39:32Z"
+ },
+ "GBnk6NshXQc": {
+  "key": "videos/l7-shorts-GBnk6NshXQc.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 29s",
+  "bytes_before": 35655658,
+  "bytes_after": 24678016,
+  "at": "2026-10-29T13:39:53Z"
+ },
+ "HaMJYADFJv4": {
+  "key": "videos/l7-shorts-HaMJYADFJv4.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 23s",
+  "bytes_before": 29625191,
+  "bytes_after": 14046106,
+  "at": "2026-10-29T13:40:10Z"
+ },
+ "IfgLy0x2MIA": {
+  "key": "videos/l7-shorts-IfgLy0x2MIA.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 20s",
+  "bytes_before": 24528655,
+  "bytes_after": 11586594,
+  "at": "2026-10-29T13:40:23Z"
+ },
+ "JkWConluVMs": {
+  "key": "videos/l7-shorts-JkWConluVMs.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 21s",
+  "bytes_before": 27135181,
+  "bytes_after": 14374413,
+  "at": "2026-10-29T13:40:38Z"
+ },
+ "M2rrVEJgAFY": {
+  "key": "videos/l7-shorts-M2rrVEJgAFY.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 23s",
+  "bytes_before": 28916590,
+  "bytes_after": 12618953,
+  "at": "2026-10-29T13:41:00Z"
+ },
+ "MTK7IBjIiEE": {
+  "key": "videos/l7-shorts-MTK7IBjIiEE.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 23s",
+  "bytes_before": 28819083,
+  "bytes_after": 13177760,
+  "at": "2026-10-29T13:41:16Z"
+ },
+ "PwfLNKu8nIU": {
+  "key": "videos/l7-shorts-PwfLNKu8nIU.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 21s",
+  "bytes_before": 26115991,
+  "bytes_after": 12126437,
+  "at": "2026-10-29T13:41:31Z"
+ },
+ "TVLinfuxm7E": {
+  "key": "videos/l7-shorts-TVLinfuxm7E.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 24s",
+  "bytes_before": 29999440,
+  "bytes_after": 11897983,
+  "at": "2026-10-29T13:41:47Z"
+ },
+ "VMNyZTOFYVk": {
+  "key": "videos/l7-shorts-VMNyZTOFYVk.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 27s",
+  "bytes_before": 8096340,
+  "bytes_after": 12733039,
+  "at": "2026-10-29T13:41:59Z"
+ },
+ "Vn7xkFa15vI": {
+  "key": "videos/l7-shorts-Vn7xkFa15vI.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 19s",
+  "bytes_before": 24513920,
+  "bytes_after": 12038355,
+  "at": "2026-10-29T13:42:13Z"
+ },
+ "W_q-Uk1_bKY": {
+  "key": "videos/l7-shorts-W_q-Uk1_bKY.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 21s",
+  "bytes_before": 25981634,
+  "bytes_after": 9892078,
+  "at": "2026-10-29T13:42:27Z"
+ },
+ "YhSQJDoOwfk": {
+  "key": "videos/l7-shorts-YhSQJDoOwfk.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 25s",
+  "bytes_before": 31586940,
+  "bytes_after": 14137643,
+  "at": "2026-10-29T13:42:47Z"
+ },
+ "Yqu9WF7PDRQ": {
+  "key": "videos/l7-shorts-Yqu9WF7PDRQ.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 22s",
+  "bytes_before": 26893167,
+  "bytes_after": 14281133,
+  "at": "2026-10-29T13:43:02Z"
+ },
+ "_W7c87WLrfQ": {
+  "key": "videos/l7-shorts-_W7c87WLrfQ.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 19s",
+  "bytes_before": 23816269,
+  "bytes_after": 11021422,
+  "at": "2026-10-29T13:43:16Z"
+ },
+ "eO7gRDOovpY": {
+  "key": "videos/l7-shorts-eO7gRDOovpY.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 18s",
+  "bytes_before": 20620649,
+  "bytes_after": 7294702,
+  "at": "2026-10-29T13:43:28Z"
+ },
+ "f6HDA24EsQw": {
+  "key": "videos/l7-shorts-f6HDA24EsQw.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 19s",
+  "bytes_before": 23815282,
+  "bytes_after": 9274189,
+  "at": "2026-10-29T13:43:41Z"
+ },
+ "giOWftHFKfg": {
+  "key": "videos/l7-shorts-giOWftHFKfg.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 20s",
+  "bytes_before": 23440601,
+  "bytes_after": 7539294,
+  "at": "2026-10-29T13:43:54Z"
+ },
+ "h8SNnOwDSPE": {
+  "key": "videos/l7-shorts-h8SNnOwDSPE.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 24s",
+  "bytes_before": 28247202,
+  "bytes_after": 8554698,
+  "at": "2026-10-29T13:44:09Z"
+ },
+ "iJoMI66U7gQ": {
+  "key": "videos/l7-shorts-iJoMI66U7gQ.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 17s",
+  "bytes_before": 21340624,
+  "bytes_after": 9538235,
+  "at": "2026-10-29T13:44:22Z"
+ },
+ "isS99CeCSqo": {
+  "key": "videos/l7-shorts-isS99CeCSqo.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 24s",
+  "bytes_before": 30438755,
+  "bytes_after": 10545210,
+  "at": "2026-10-29T13:44:36Z"
+ },
+ "kEJdWgUlhRA": {
+  "key": "videos/l7-shorts-kEJdWgUlhRA.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 23s",
+  "bytes_before": 28874255,
+  "bytes_after": 11977326,
+  "at": "2026-10-29T13:45:08Z"
+ },
+ "kIr59eLINmw": {
+  "key": "videos/l7-shorts-kIr59eLINmw.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 20s",
+  "bytes_before": 24865542,
+  "bytes_after": 11042775,
+  "at": "2026-10-29T13:45:21Z"
+ },
+ "pJJS5E5VSnE": {
+  "key": "videos/l7-shorts-pJJS5E5VSnE.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 19s",
+  "bytes_before": 24401401,
+  "bytes_after": 10996999,
+  "at": "2026-10-29T13:45:34Z"
+ },
+ "pnXxm8980kU": {
+  "key": "videos/l7-shorts-pnXxm8980kU.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 21s",
+  "bytes_before": 26776180,
+  "bytes_after": 11304672,
+  "at": "2026-10-29T13:45:48Z"
+ },
+ "ppiAGshBcW0": {
+  "key": "videos/l7-shorts-ppiAGshBcW0.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 21s",
+  "bytes_before": 26531201,
+  "bytes_after": 12109500,
+  "at": "2026-10-29T13:46:03Z"
+ },
+ "sgxpgb3wP08": {
+  "key": "videos/l7-shorts-sgxpgb3wP08.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 26s",
+  "bytes_before": 8067629,
+  "bytes_after": 13067031,
+  "at": "2026-10-29T13:46:12Z"
+ },
+ "wOq5UTRQrHY": {
+  "key": "videos/l7-shorts-wOq5UTRQrHY.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 24s",
+  "bytes_before": 7311945,
+  "bytes_after": 10827635,
+  "at": "2026-10-29T13:46:21Z"
+ },
+ "xiq7yq0uv-k": {
+  "key": "videos/l7-shorts-xiq7yq0uv-k.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 20s",
+  "bytes_before": 25063144,
+  "bytes_after": 11949331,
+  "at": "2026-10-29T13:46:34Z"
+ },
+ "zOS2ARVgPi8": {
+  "key": "videos/l7-shorts-zOS2ARVgPi8.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 22s",
+  "bytes_before": 27284984,
+  "bytes_after": 11886560,
+  "at": "2026-10-29T13:46:48Z"
+ },
+ "L9Zw7rt9rzc": {
+  "key": "videos/l7-shorts-L9Zw7rt9rzc.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 22s",
+  "bytes_before": 6360302,
+  "bytes_after": 8955633,
+  "at": "2026-10-29T13:46:56Z"
+ },
+ "NUteJ9DAWic": {
+  "key": "videos/l7-shorts-NUteJ9DAWic.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 42s",
+  "bytes_before": 9329217,
+  "bytes_after": 14228082,
+  "at": "2026-10-29T13:47:08Z"
+ },
+ "an5W2W8EElY": {
+  "key": "videos/l7-shorts-an5W2W8EElY.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 26s",
+  "bytes_before": 32396216,
+  "bytes_after": 19247632,
+  "at": "2026-10-29T13:47:26Z"
+ },
+ "dQA-i-6EDS4": {
+  "key": "videos/l7-shorts-dQA-i-6EDS4.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 20s",
+  "bytes_before": 24359433,
+  "bytes_after": 11587947,
+  "at": "2026-10-29T13:47:39Z"
+ },
+ "iXB0MtuNZtU": {
+  "key": "videos/l7-shorts-iXB0MtuNZtU.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 21s",
+  "bytes_before": 26553179,
+  "bytes_after": 7656953,
+  "at": "2026-10-29T13:47:52Z"
+ },
+ "zzq2pnUTrvs": {
+  "key": "videos/l7-shorts-zzq2pnUTrvs.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 29s",
+  "bytes_before": 8681491,
+  "bytes_after": 12919725,
+  "at": "2026-10-29T13:48:04Z"
+ },
+ "-MCWcQGg3Og": {
+  "key": "videos/l7-shorts--MCWcQGg3Og.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 20s",
+  "bytes_before": 24866275,
+  "bytes_after": 11465310,
+  "at": "2026-10-29T13:48:17Z"
+ },
+ "6rhkwtclhRI": {
+  "key": "videos/l7-shorts-6rhkwtclhRI.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 24s",
+  "bytes_before": 30827117,
+  "bytes_after": 12119252,
+  "at": "2026-10-29T13:48:34Z"
+ },
+ "9h4Tb7PPFTg": {
+  "key": "videos/l7-shorts-9h4Tb7PPFTg.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 32s",
+  "bytes_before": 8655183,
+  "bytes_after": 14445098,
+  "at": "2026-10-29T13:48:52Z"
+ },
+ "FVIVsMj6tQ4": {
+  "key": "videos/l7-shorts-FVIVsMj6tQ4.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 18s",
+  "bytes_before": 22017551,
+  "bytes_after": 8561759,
+  "at": "2026-10-29T13:49:11Z"
+ },
+ "NGw9qAtufOQ": {
+  "key": "videos/l7-shorts-NGw9qAtufOQ.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 49s",
+  "bytes_before": 12610074,
+  "bytes_after": 17567782,
+  "at": "2026-10-29T13:49:25Z"
+ },
+ "PvMxYr2dcvU": {
+  "key": "videos/l7-shorts-PvMxYr2dcvU.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 24s",
+  "bytes_before": 29116499,
+  "bytes_after": 15955519,
+  "at": "2026-10-29T13:49:41Z"
+ },
+ "W4ItY2UYnII": {
+  "key": "videos/l7-shorts-W4ItY2UYnII.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 14s",
+  "bytes_before": 17155815,
+  "bytes_after": 7129542,
+  "at": "2026-10-29T13:49:50Z"
+ },
+ "bFnveZPnW8U": {
+  "key": "videos/l7-shorts-bFnveZPnW8U.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 26s",
+  "bytes_before": 6891692,
+  "bytes_after": 9778708,
+  "at": "2026-10-29T13:49:59Z"
+ },
+ "hSCID9e0GBM": {
+  "key": "videos/l7-shorts-hSCID9e0GBM.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 19s",
+  "bytes_before": 24222861,
+  "bytes_after": 10942228,
+  "at": "2026-10-29T13:50:13Z"
+ },
+ "oUKF3qobBIA": {
+  "key": "videos/l7-shorts-oUKF3qobBIA.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 27s",
+  "bytes_before": 34154340,
+  "bytes_after": 14466800,
+  "at": "2026-10-29T13:50:31Z"
+ },
+ "qe3FAh9jyV0": {
+  "key": "videos/l7-shorts-qe3FAh9jyV0.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 24s",
+  "bytes_before": 6089647,
+  "bytes_after": 8970669,
+  "at": "2026-10-29T13:50:40Z"
+ },
+ "-9wK2fVjsfw": {
+  "key": "videos/l7-shorts--9wK2fVjsfw.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 33s",
+  "bytes_before": 7086586,
+  "bytes_after": 12001618,
+  "at": "2026-10-29T13:50:49Z"
+ },
+ "RhPNZphA1QI": {
+  "key": "videos/l7-shorts-RhPNZphA1QI.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 22s",
+  "bytes_before": 4819222,
+  "bytes_after": 9266655,
+  "at": "2026-10-29T13:50:57Z"
+ },
+ "c2CP-d0PVrg": {
+  "key": "videos/l7-shorts-c2CP-d0PVrg.mp4",
+  "from": "vp9 1080x1440 30fps",
+  "to": "h264 1080x1440 30fps 29s",
+  "bytes_before": 6366646,
+  "bytes_after": 11454147,
+  "at": "2026-10-29T13:51:05Z"
+ },
+ "1ABOjyOKgs4": {
+  "key": "videos/l7-shorts-1ABOjyOKgs4.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 22s",
+  "bytes_before": 6916976,
+  "bytes_after": 11695985,
+  "at": "2026-10-29T13:51:13Z"
+ },
+ "3B1RmfdFYfE": {
+  "key": "videos/l7-shorts-3B1RmfdFYfE.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 27s",
+  "bytes_before": 6733054,
+  "bytes_after": 11412580,
+  "at": "2026-10-29T13:51:22Z"
+ },
+ "463EuNpSjng": {
+  "key": "videos/l7-shorts-463EuNpSjng.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 22s",
+  "bytes_before": 5031703,
+  "bytes_after": 10131553,
+  "at": "2026-10-29T13:51:31Z"
+ },
+ "5HgVqfiWIBU": {
+  "key": "videos/l7-shorts-5HgVqfiWIBU.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 28s",
+  "bytes_before": 7721854,
+  "bytes_after": 10562148,
+  "at": "2026-10-29T13:51:39Z"
+ },
+ "6WU3R7rz4DE": {
+  "key": "videos/l7-shorts-6WU3R7rz4DE.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 27s",
+  "bytes_before": 7113342,
+  "bytes_after": 12088008,
+  "at": "2026-10-29T13:51:47Z"
+ },
+ "9B9xukt40_0": {
+  "key": "videos/l7-shorts-9B9xukt40_0.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 28s",
+  "bytes_before": 6957698,
+  "bytes_after": 12244683,
+  "at": "2026-10-29T13:51:56Z"
+ },
+ "9LpQhfmcIo0": {
+  "key": "videos/l7-shorts-9LpQhfmcIo0.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 24s",
+  "bytes_before": 6378270,
+  "bytes_after": 11250441,
+  "at": "2026-10-29T13:52:05Z"
+ },
+ "9fuWkLgPdno": {
+  "key": "videos/l7-shorts-9fuWkLgPdno.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 24s",
+  "bytes_before": 28687378,
+  "bytes_after": 10364776,
+  "at": "2026-10-29T13:52:20Z"
+ },
+ "An2631S76uk": {
+  "key": "videos/l7-shorts-An2631S76uk.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 27s",
+  "bytes_before": 6394174,
+  "bytes_after": 10522178,
+  "at": "2026-10-29T13:52:30Z"
+ },
+ "B4pot_b0mdE": {
+  "key": "videos/l7-shorts-B4pot_b0mdE.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 16s",
+  "bytes_before": 19749477,
+  "bytes_after": 11301130,
+  "at": "2026-10-29T13:52:42Z"
+ },
+ "E1KCY70HY9Y": {
+  "key": "videos/l7-shorts-E1KCY70HY9Y.mp4",
+  "from": "vp9 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 28s",
+  "bytes_before": 3816785,
+  "bytes_after": 7597581,
+  "at": "2026-10-29T13:52:51Z"
+ },
+ "ESdGMs2CXvE": {
+  "key": "videos/l7-shorts-ESdGMs2CXvE.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 20s",
+  "bytes_before": 26082212,
+  "bytes_after": 11294684,
+  "at": "2026-10-29T13:53:06Z"
+ },
+ "F406mOVmNq8": {
+  "key": "videos/l7-shorts-F406mOVmNq8.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 31s",
+  "bytes_before": 6604580,
+  "bytes_after": 11309784,
+  "at": "2026-10-29T13:53:16Z"
+ },
+ "FXy75Zpadyw": {
+  "key": "videos/l7-shorts-FXy75Zpadyw.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 27s",
+  "bytes_before": 5597520,
+  "bytes_after": 8486818,
+  "at": "2026-10-29T13:53:24Z"
+ },
+ "FwqyOsu-lO4": {
+  "key": "videos/l7-shorts-FwqyOsu-lO4.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 16s",
+  "bytes_before": 19272891,
+  "bytes_after": 9411510,
+  "at": "2026-10-29T13:53:37Z"
+ },
+ "G43tsLtheW8": {
+  "key": "videos/l7-shorts-G43tsLtheW8.mp4",
+  "from": "av1 1080x1440 30fps",
+  "to": "h264 1080x1440 30fps 24s",
+  "bytes_before": 4718416,
+  "bytes_after": 11403099,
+  "at": "2026-10-29T13:53:46Z"
+ },
+ "IOPtDnnySTA": {
+  "key": "videos/l7-shorts-IOPtDnnySTA.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 26s",
+  "bytes_before": 9342181,
+  "bytes_after": 16035912,
+  "at": "2026-10-29T13:53:55Z"
+ },
+ "IxUvPKSv7-4": {
+  "key": "videos/l7-shorts-IxUvPKSv7-4.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 19s",
+  "bytes_before": 23735490,
+  "bytes_after": 12366983,
+  "at": "2026-10-29T13:54:09Z"
+ },
+ "JAMeaWmB6d0": {
+  "key": "videos/l7-shorts-JAMeaWmB6d0.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 30s",
+  "bytes_before": 8006608,
+  "bytes_after": 11074618,
+  "at": "2026-10-29T13:54:19Z"
+ },
+ "Klv-A4bGqkc": {
+  "key": "videos/l7-shorts-Klv-A4bGqkc.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 27s",
+  "bytes_before": 4707025,
+  "bytes_after": 9078354,
+  "at": "2026-10-29T13:54:28Z"
+ },
+ "NqDPBSscs2A": {
+  "key": "videos/l7-shorts-NqDPBSscs2A.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 33s",
+  "bytes_before": 8385655,
+  "bytes_after": 13201239,
+  "at": "2026-10-29T13:54:39Z"
+ },
+ "P5BeN694Obg": {
+  "key": "videos/l7-shorts-P5BeN694Obg.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 26s",
+  "bytes_before": 30391919,
+  "bytes_after": 16734759,
+  "at": "2026-10-29T13:54:57Z"
+ },
+ "P7f4Kw4i6AM": {
+  "key": "videos/l7-shorts-P7f4Kw4i6AM.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 22s",
+  "bytes_before": 4144179,
+  "bytes_after": 8151471,
+  "at": "2026-10-29T13:55:06Z"
+ },
+ "TbvESN5gHqY": {
+  "key": "videos/l7-shorts-TbvESN5gHqY.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 19s",
+  "bytes_before": 4244977,
+  "bytes_after": 7563009,
+  "at": "2026-10-29T13:55:13Z"
+ },
+ "W-OvnB8YUI4": {
+  "key": "videos/l7-shorts-W-OvnB8YUI4.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 26s",
+  "bytes_before": 32411031,
+  "bytes_after": 12157348,
+  "at": "2026-10-29T13:55:32Z"
+ },
+ "X7v_lFwI1Vc": {
+  "key": "videos/l7-shorts-X7v_lFwI1Vc.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 24s",
+  "bytes_before": 5846937,
+  "bytes_after": 7598254,
+  "at": "2026-10-29T13:55:40Z"
+ },
+ "YpbyLthuWrc": {
+  "key": "videos/l7-shorts-YpbyLthuWrc.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 19s",
+  "bytes_before": 24370925,
+  "bytes_after": 11298064,
+  "at": "2026-10-29T13:55:55Z"
+ },
+ "bVnWcdoFzGk": {
+  "key": "videos/l7-shorts-bVnWcdoFzGk.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 20s",
+  "bytes_before": 24966900,
+  "bytes_after": 13422503,
+  "at": "2026-10-29T13:56:11Z"
+ },
+ "dQXinK0o1FU": {
+  "key": "videos/l7-shorts-dQXinK0o1FU.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 27s",
+  "bytes_before": 34322121,
+  "bytes_after": 13322117,
+  "at": "2026-10-29T13:56:30Z"
+ },
+ "hlIELGpegXA": {
+  "key": "videos/l7-shorts-hlIELGpegXA.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 35s",
+  "bytes_before": 7302155,
+  "bytes_after": 11350288,
+  "at": "2026-10-29T13:56:42Z"
+ },
+ "iuBUUrp25J0": {
+  "key": "videos/l7-shorts-iuBUUrp25J0.mp4",
+  "from": "vp9 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 32s",
+  "bytes_before": 6974033,
+  "bytes_after": 13683962,
+  "at": "2026-10-29T13:56:53Z"
+ },
+ "kCpn4Rp6iag": {
+  "key": "videos/l7-shorts-kCpn4Rp6iag.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 31s",
+  "bytes_before": 8524954,
+  "bytes_after": 12680704,
+  "at": "2026-10-29T13:57:03Z"
+ },
+ "m0o8hnmjOpI": {
+  "key": "videos/l7-shorts-m0o8hnmjOpI.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 22s",
+  "bytes_before": 5504016,
+  "bytes_after": 10170876,
+  "at": "2026-10-29T13:57:13Z"
+ },
+ "w6Rbq9EVgaE": {
+  "key": "videos/l7-shorts-w6Rbq9EVgaE.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 18s",
+  "bytes_before": 22391890,
+  "bytes_after": 11869457,
+  "at": "2026-10-29T13:57:31Z"
+ },
+ "yeMVCqLkCJs": {
+  "key": "videos/l7-shorts-yeMVCqLkCJs.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 28s",
+  "bytes_before": 36041540,
+  "bytes_after": 15084112,
+  "at": "2026-10-29T13:57:49Z"
+ },
+ "zxaqPUr708I": {
+  "key": "videos/l7-shorts-zxaqPUr708I.mp4",
+  "from": "vp9 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 31s",
+  "bytes_before": 8041135,
+  "bytes_after": 12074267,
+  "at": "2026-10-29T13:57:59Z"
+ },
+ "8h_c-CX0oeg": {
+  "key": "videos/l7-shorts-8h_c-CX0oeg.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 24s",
+  "bytes_before": 29760149,
+  "bytes_after": 25010506,
+  "at": "2026-10-29T13:58:17Z"
+ },
+ "CFbsBheRWVw": {
+  "key": "videos/l7-shorts-CFbsBheRWVw.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 36s",
+  "bytes_before": 8129771,
+  "bytes_after": 10747934,
+  "at": "2026-10-29T13:58:28Z"
+ },
+ "OP-qgW6WcmY": {
+  "key": "videos/l7-shorts-OP-qgW6WcmY.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 24s",
+  "bytes_before": 30041117,
+  "bytes_after": 16113608,
+  "at": "2026-10-29T13:58:45Z"
+ },
+ "OmHOEu79Qr8": {
+  "key": "videos/l7-shorts-OmHOEu79Qr8.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 47s",
+  "bytes_before": 12868990,
+  "bytes_after": 17831088,
+  "at": "2026-10-29T13:58:58Z"
+ },
+ "RUQtgHpAajE": {
+  "key": "videos/l7-shorts-RUQtgHpAajE.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 24s",
+  "bytes_before": 29382072,
+  "bytes_after": 14743508,
+  "at": "2026-10-29T13:59:14Z"
+ },
+ "TFp5sgEbsJ4": {
+  "key": "videos/l7-shorts-TFp5sgEbsJ4.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 22s",
+  "bytes_before": 27579315,
+  "bytes_after": 15303631,
+  "at": "2026-10-29T13:59:29Z"
+ },
+ "W4gdmJfAiIs": {
+  "key": "videos/teocri-shorts-W4gdmJfAiIs.mp4",
+  "from": "vp9 1080x1440 30fps",
+  "to": "h264 1080x1440 30fps 29s",
+  "bytes_before": 13649511,
+  "bytes_after": 14463175,
+  "at": "2026-10-29T13:59:38Z"
+ },
+ "aQXlVRYqhUo": {
+  "key": "videos/l7-shorts-aQXlVRYqhUo.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 23s",
+  "bytes_before": 29349546,
+  "bytes_after": 21603355,
+  "at": "2026-10-29T13:59:55Z"
+ },
+ "g8AnD06OhJI": {
+  "key": "videos/l7-shorts-g8AnD06OhJI.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 21s",
+  "bytes_before": 26918131,
+  "bytes_after": 15190860,
+  "at": "2026-10-29T14:00:11Z"
+ },
+ "jXALPp3uF0M": {
+  "key": "videos/l7-shorts-jXALPp3uF0M.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 24s",
+  "bytes_before": 5853862,
+  "bytes_after": 10699161,
+  "at": "2026-10-29T14:00:20Z"
+ },
+ "trevlB0NSck": {
+  "key": "videos/l7-shorts-trevlB0NSck.mp4",
+  "from": "av1 1080x1436 60fps",
+  "to": "h264 1080x1436 30fps 50s",
+  "bytes_before": 8621864,
+  "bytes_after": 12409012,
+  "at": "2026-10-29T14:00:33Z"
+ },
+ "z32z8Km14YA": {
+  "key": "videos/l7-shorts-z32z8Km14YA.mp4",
+  "from": "vp9 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 21s",
+  "bytes_before": 7389981,
+  "bytes_after": 9915711,
+  "at": "2026-10-29T14:00:41Z"
+ },
+ "-EqJsJ3Xpd4": {
+  "key": "videos/l7-shorts--EqJsJ3Xpd4.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 21s",
+  "bytes_before": 26344423,
+  "bytes_after": 11025798,
+  "at": "2026-10-29T14:00:55Z"
+ },
+ "Vh2lO-yZ4dI": {
+  "key": "videos/l7-shorts-Vh2lO-yZ4dI.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 21s",
+  "bytes_before": 22574373,
+  "bytes_after": 7920064,
+  "at": "2026-10-29T14:01:09Z"
+ },
+ "blMSMPuWLMw": {
+  "key": "videos/l7-shorts-blMSMPuWLMw.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 24s",
+  "bytes_before": 31217181,
+  "bytes_after": 20086050,
+  "at": "2026-10-29T14:01:27Z"
+ },
+ "c10u7-UwSmo": {
+  "key": "videos/l7-shorts-c10u7-UwSmo.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 18s",
+  "bytes_before": 22901016,
+  "bytes_after": 11909743,
+  "at": "2026-10-29T14:01:41Z"
+ },
+ "g57pSsqkSlg": {
+  "key": "videos/l7-shorts-g57pSsqkSlg.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 25s",
+  "bytes_before": 31206322,
+  "bytes_after": 13338535,
+  "at": "2026-10-29T14:01:58Z"
+ },
+ "K_RIvYdFtwg": {
+  "key": "videos/l7-shorts-K_RIvYdFtwg.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 22s",
+  "bytes_before": 27681155,
+  "bytes_after": 13801278,
+  "at": "2026-10-29T14:02:14Z"
+ },
+ "6sL_KZPf_PQ": {
+  "key": "videos/l7-shorts-6sL_KZPf_PQ.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 24s",
+  "bytes_before": 7321029,
+  "bytes_after": 12456922,
+  "at": "2026-10-29T14:02:25Z"
+ },
+ "l2lTQrTN3L8": {
+  "key": "videos/l7-shorts-l2lTQrTN3L8.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 41s",
+  "bytes_before": 10384961,
+  "bytes_after": 15555243,
+  "at": "2026-10-29T14:02:40Z"
+ },
+ "r3rBq1vdods": {
+  "key": "videos/l7-shorts-r3rBq1vdods.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 21s",
+  "bytes_before": 26232192,
+  "bytes_after": 9771938,
+  "at": "2026-10-29T14:02:55Z"
+ },
+ "-j8IW6i246I": {
+  "key": "videos/l7-shorts--j8IW6i246I.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 25s",
+  "bytes_before": 29840807,
+  "bytes_after": 9765445,
+  "at": "2026-10-29T14:03:11Z"
+ },
+ "69xd0mfS7Vo": {
+  "key": "videos/l7-shorts-69xd0mfS7Vo.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 14s",
+  "bytes_before": 16771154,
+  "bytes_after": 7366694,
+  "at": "2026-10-29T14:03:21Z"
+ },
+ "TRVLQsiYXYY": {
+  "key": "videos/l7-shorts-TRVLQsiYXYY.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 20s",
+  "bytes_before": 25100978,
+  "bytes_after": 8290170,
+  "at": "2026-10-29T14:03:35Z"
+ },
+ "--54UcFQfeo": {
+  "key": "videos/l7-shorts---54UcFQfeo.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 27s",
+  "bytes_before": 32148524,
+  "bytes_after": 11942922,
+  "at": "2026-10-29T14:03:53Z"
+ },
+ "-0TwP44Z79Q": {
+  "key": "videos/l7-shorts--0TwP44Z79Q.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 18s",
+  "bytes_before": 22941811,
+  "bytes_after": 10339196,
+  "at": "2026-10-29T14:04:06Z"
+ },
+ "-1Hh6X6F3Xs": {
+  "key": "videos/l7-shorts--1Hh6X6F3Xs.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 22s",
+  "bytes_before": 26917554,
+  "bytes_after": 11987508,
+  "at": "2026-10-29T14:04:21Z"
+ },
+ "-4wLZDhjvtA": {
+  "key": "videos/l7-shorts--4wLZDhjvtA.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 24s",
+  "bytes_before": 30087295,
+  "bytes_after": 11238868,
+  "at": "2026-10-29T14:04:38Z"
+ },
+ "-5nGN_25hBY": {
+  "key": "videos/l7-shorts--5nGN_25hBY.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 32s",
+  "bytes_before": 8955691,
+  "bytes_after": 12345036,
+  "at": "2026-10-29T14:04:48Z"
+ },
+ "-5ow9KYzD6M": {
+  "key": "videos/l7-shorts--5ow9KYzD6M.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 21s",
+  "bytes_before": 26525299,
+  "bytes_after": 13070693,
+  "at": "2026-10-29T14:05:05Z"
+ },
+ "-LA8HaWEyiw": {
+  "key": "videos/l7-shorts--LA8HaWEyiw.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 42s",
+  "bytes_before": 9897537,
+  "bytes_after": 15089494,
+  "at": "2026-10-29T14:05:18Z"
+ },
+ "-PHMGjMvxG0": {
+  "key": "videos/l7-shorts--PHMGjMvxG0.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 21s",
+  "bytes_before": 27083231,
+  "bytes_after": 13876255,
+  "at": "2026-10-29T14:05:34Z"
+ },
+ "-Y9ubtDc3BI": {
+  "key": "videos/l7-shorts--Y9ubtDc3BI.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 17s",
+  "bytes_before": 21046214,
+  "bytes_after": 8649953,
+  "at": "2026-10-29T14:05:48Z"
+ },
+ "-ZVIAOQARsw": {
+  "key": "videos/l7-shorts--ZVIAOQARsw.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 36s",
+  "bytes_before": 7722214,
+  "bytes_after": 11442756,
+  "at": "2026-10-29T14:06:00Z"
+ },
+ "-iFy3p87MOw": {
+  "key": "videos/l7-shorts--iFy3p87MOw.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 26s",
+  "bytes_before": 3911558,
+  "bytes_after": 6275333,
+  "at": "2026-10-29T14:06:08Z"
+ },
+ "004f88Ev6ko": {
+  "key": "videos/l7-shorts-004f88Ev6ko.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 24s",
+  "bytes_before": 4744931,
+  "bytes_after": 9541464,
+  "at": "2026-10-29T14:06:16Z"
+ },
+ "0IfmOkiD-V4": {
+  "key": "videos/l7-shorts-0IfmOkiD-V4.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 20s",
+  "bytes_before": 25756527,
+  "bytes_after": 12203090,
+  "at": "2026-10-29T14:06:31Z"
+ },
+ "0Ly0b241D00": {
+  "key": "videos/l7-shorts-0Ly0b241D00.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 42s",
+  "bytes_before": 10212804,
+  "bytes_after": 15015372,
+  "at": "2026-10-29T14:06:45Z"
+ },
+ "0R6joIgYePM": {
+  "key": "videos/l7-shorts-0R6joIgYePM.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 23s",
+  "bytes_before": 18441094,
+  "bytes_after": 8162061,
+  "at": "2026-10-29T14:07:00Z"
+ },
+ "0S4wZpSxQqU": {
+  "key": "videos/l7-shorts-0S4wZpSxQqU.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 29s",
+  "bytes_before": 7298575,
+  "bytes_after": 9963865,
+  "at": "2026-10-29T14:07:09Z"
+ },
+ "0V52baLEB04": {
+  "key": "videos/l7-shorts-0V52baLEB04.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 32s",
+  "bytes_before": 7986720,
+  "bytes_after": 10779195,
+  "at": "2026-10-29T14:07:20Z"
+ },
+ "0ak5h7Cq-3s": {
+  "key": "videos/l7-shorts-0ak5h7Cq-3s.mp4",
+  "from": "av1 1440x1920 60fps",
+  "to": "h264 1080x1440 30fps 32s",
+  "bytes_before": 19198762,
+  "bytes_after": 10284871,
+  "at": "2026-10-29T14:07:51Z"
+ },
+ "0r0SKnHrp4s": {
+  "key": "videos/l7-shorts-0r0SKnHrp4s.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 22s",
+  "bytes_before": 5136073,
+  "bytes_after": 6691618,
+  "at": "2026-10-29T14:08:00Z"
+ },
+ "0zAf2N4zPbE": {
+  "key": "videos/l7-shorts-0zAf2N4zPbE.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 28s",
+  "bytes_before": 7785254,
+  "bytes_after": 11178274,
+  "at": "2026-10-29T14:08:10Z"
+ },
+ "18EQHhBxzHA": {
+  "key": "videos/l7-shorts-18EQHhBxzHA.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 28s",
+  "bytes_before": 6414513,
+  "bytes_after": 9628512,
+  "at": "2026-10-29T14:08:20Z"
+ },
+ "1Cq__hKflRI": {
+  "key": "videos/l7-shorts-1Cq__hKflRI.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 35s",
+  "bytes_before": 9877492,
+  "bytes_after": 14151576,
+  "at": "2026-10-29T14:08:32Z"
+ },
+ "1T4r6wIXJJQ": {
+  "key": "videos/l7-shorts-1T4r6wIXJJQ.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 25s",
+  "bytes_before": 22732254,
+  "bytes_after": 8023961,
+  "at": "2026-10-29T14:08:49Z"
+ },
+ "1dkvVELy-9Q": {
+  "key": "videos/l7-shorts-1dkvVELy-9Q.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 21s",
+  "bytes_before": 33735038,
+  "bytes_after": 10617894,
+  "at": "2026-10-29T14:09:05Z"
+ },
+ "1grnhlS18CQ": {
+  "key": "videos/l7-shorts-1grnhlS18CQ.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 31s",
+  "bytes_before": 8507500,
+  "bytes_after": 13873520,
+  "at": "2026-10-29T14:09:17Z"
+ },
+ "1qH8iXeSisI": {
+  "key": "videos/l7-shorts-1qH8iXeSisI.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 25s",
+  "bytes_before": 6768196,
+  "bytes_after": 9955857,
+  "at": "2026-10-29T14:09:25Z"
+ },
+ "213XnfPF4vE": {
+  "key": "videos/l7-shorts-213XnfPF4vE.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 26s",
+  "bytes_before": 5291482,
+  "bytes_after": 7314520,
+  "at": "2026-10-29T14:09:34Z"
+ },
+ "2NQ2S2DNi6E": {
+  "key": "videos/l7-shorts-2NQ2S2DNi6E.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 35s",
+  "bytes_before": 10200322,
+  "bytes_after": 13762437,
+  "at": "2026-10-29T14:09:46Z"
+ },
+ "2Nq1ZrgX_bo": {
+  "key": "videos/l7-shorts-2Nq1ZrgX_bo.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 29s",
+  "bytes_before": 8073709,
+  "bytes_after": 10761934,
+  "at": "2026-10-29T14:09:57Z"
+ },
+ "2UjfS0F-XVo": {
+  "key": "videos/l7-shorts-2UjfS0F-XVo.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 21s",
+  "bytes_before": 26576521,
+  "bytes_after": 14945712,
+  "at": "2026-10-29T14:10:13Z"
+ },
+ "2cAaGsgeEYE": {
+  "key": "videos/l7-shorts-2cAaGsgeEYE.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 27s",
+  "bytes_before": 5823177,
+  "bytes_after": 8965328,
+  "at": "2026-10-29T14:10:23Z"
+ },
+ "2jd2cYivhn4": {
+  "key": "videos/l7-shorts-2jd2cYivhn4.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 18s",
+  "bytes_before": 22666051,
+  "bytes_after": 12617156,
+  "at": "2026-10-29T14:10:37Z"
+ },
+ "2lB_laIDmc8": {
+  "key": "videos/l7-shorts-2lB_laIDmc8.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 29s",
+  "bytes_before": 5809386,
+  "bytes_after": 9431029,
+  "at": "2026-10-29T14:10:45Z"
+ },
+ "2q5G9tuqhDI": {
+  "key": "videos/l7-shorts-2q5G9tuqhDI.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 20s",
+  "bytes_before": 23884943,
+  "bytes_after": 12837762,
+  "at": "2026-10-29T14:11:00Z"
+ },
+ "2xmdrHvHHVc": {
+  "key": "videos/l7-shorts-2xmdrHvHHVc.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 35s",
+  "bytes_before": 6086773,
+  "bytes_after": 11319637,
+  "at": "2026-10-29T14:11:11Z"
+ },
+ "3GjeDbWk9sc": {
+  "key": "videos/l7-shorts-3GjeDbWk9sc.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 25s",
+  "bytes_before": 7229040,
+  "bytes_after": 10390190,
+  "at": "2026-10-29T14:11:20Z"
+ },
+ "3MaGhHNMJrY": {
+  "key": "videos/l7-shorts-3MaGhHNMJrY.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 28s",
+  "bytes_before": 8008058,
+  "bytes_after": 10049566,
+  "at": "2026-10-29T14:11:30Z"
+ },
+ "3YRaTqHh6mg": {
+  "key": "videos/l7-shorts-3YRaTqHh6mg.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 19s",
+  "bytes_before": 5542408,
+  "bytes_after": 7447000,
+  "at": "2026-10-29T14:11:37Z"
+ },
+ "3qyBG48quvQ": {
+  "key": "videos/l7-shorts-3qyBG48quvQ.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 20s",
+  "bytes_before": 25561245,
+  "bytes_after": 10957025,
+  "at": "2026-10-29T14:11:51Z"
+ },
+ "49iSGf3sZ-o": {
+  "key": "videos/teocri-shorts-49iSGf3sZ-o.mp4",
+  "from": "vp9 1080x1440 30fps",
+  "to": "h264 1080x1440 30fps 30s",
+  "bytes_before": 15010724,
+  "bytes_after": 18979398,
+  "at": "2026-10-29T14:12:01Z"
+ },
+ "4GSiPSfgkoQ": {
+  "key": "videos/l7-shorts-4GSiPSfgkoQ.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 40s",
+  "bytes_before": 9062441,
+  "bytes_after": 16479845,
+  "at": "2026-10-29T14:12:15Z"
+ },
+ "4KUrWS3HCEg": {
+  "key": "videos/l7-shorts-4KUrWS3HCEg.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 16s",
+  "bytes_before": 19969993,
+  "bytes_after": 9865013,
+  "at": "2026-10-29T14:12:28Z"
+ },
+ "4QcNRkASq8c": {
+  "key": "videos/l7-shorts-4QcNRkASq8c.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 30s",
+  "bytes_before": 6853502,
+  "bytes_after": 9382104,
+  "at": "2026-10-29T14:12:38Z"
+ },
+ "4SjllZQ44lY": {
+  "key": "videos/l7-shorts-4SjllZQ44lY.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 29s",
+  "bytes_before": 7616477,
+  "bytes_after": 12884002,
+  "at": "2026-10-29T14:12:48Z"
+ },
+ "4cfu9U8qynQ": {
+  "key": "videos/l7-shorts-4cfu9U8qynQ.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 29s",
+  "bytes_before": 7077615,
+  "bytes_after": 12213717,
+  "at": "2026-10-29T14:12:59Z"
+ },
+ "4dqhrNhc_aE": {
+  "key": "videos/l7-shorts-4dqhrNhc_aE.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 33s",
+  "bytes_before": 8113632,
+  "bytes_after": 12217801,
+  "at": "2026-10-29T14:13:19Z"
+ },
+ "4iUFTicx_DA": {
+  "key": "videos/teocri-shorts-4iUFTicx_DA.mp4",
+  "from": "vp9 1080x1440 30fps",
+  "to": "h264 1080x1440 30fps 29s",
+  "bytes_before": 13940218,
+  "bytes_after": 15182940,
+  "at": "2026-10-29T14:13:28Z"
+ },
+ "4kWUt3zUeCY": {
+  "key": "videos/l7-shorts-4kWUt3zUeCY.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 28s",
+  "bytes_before": 8194822,
+  "bytes_after": 11485617,
+  "at": "2026-10-29T14:13:39Z"
+ },
+ "5IMc5YXtzw0": {
+  "key": "videos/l7-shorts-5IMc5YXtzw0.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 31s",
+  "bytes_before": 9345633,
+  "bytes_after": 14639560,
+  "at": "2026-10-29T14:14:10Z"
+ },
+ "5JIhqiJrHAs": {
+  "key": "videos/l7-shorts-5JIhqiJrHAs.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 25s",
+  "bytes_before": 6306454,
+  "bytes_after": 9522363,
+  "at": "2026-10-29T14:14:19Z"
+ },
+ "5KcEBWmM0x8": {
+  "key": "videos/l7-shorts-5KcEBWmM0x8.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 21s",
+  "bytes_before": 6445679,
+  "bytes_after": 10540397,
+  "at": "2026-10-29T14:14:54Z"
+ },
+ "5SH86T9H_Kg": {
+  "key": "videos/l7-shorts-5SH86T9H_Kg.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 18s",
+  "bytes_before": 5798746,
+  "bytes_after": 8877469,
+  "at": "2026-10-29T14:15:01Z"
+ },
+ "5Syd6yfwW1o": {
+  "key": "videos/l7-shorts-5Syd6yfwW1o.mp4",
+  "from": "vp9 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 26s",
+  "bytes_before": 7311269,
+  "bytes_after": 10303028,
+  "at": "2026-10-29T14:15:09Z"
+ },
+ "5icb6KqdjVE": {
+  "key": "videos/l7-shorts-5icb6KqdjVE.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 26s",
+  "bytes_before": 31233297,
+  "bytes_after": 15971050,
+  "at": "2026-10-29T14:15:28Z"
+ },
+ "5lHPFM8QCxI": {
+  "key": "videos/l7-shorts-5lHPFM8QCxI.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 14s",
+  "bytes_before": 17951983,
+  "bytes_after": 7815084,
+  "at": "2026-10-29T14:15:38Z"
+ },
+ "61VD9zA1BQI": {
+  "key": "videos/l7-shorts-61VD9zA1BQI.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 18s",
+  "bytes_before": 22704965,
+  "bytes_after": 13299565,
+  "at": "2026-10-29T14:15:51Z"
+ },
+ "627kb4j0jmo": {
+  "key": "videos/l7-shorts-627kb4j0jmo.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 26s",
+  "bytes_before": 7503034,
+  "bytes_after": 10674580,
+  "at": "2026-10-29T14:16:01Z"
+ },
+ "62t3E6GTQU0": {
+  "key": "videos/l7-shorts-62t3E6GTQU0.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 17s",
+  "bytes_before": 21136974,
+  "bytes_after": 10094800,
+  "at": "2026-10-29T14:16:12Z"
+ },
+ "65FhRZR1Hkk": {
+  "key": "videos/l7-shorts-65FhRZR1Hkk.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 32s",
+  "bytes_before": 9197728,
+  "bytes_after": 12695156,
+  "at": "2026-10-29T14:16:23Z"
+ },
+ "68Ttt3RMOHg": {
+  "key": "videos/l7-shorts-68Ttt3RMOHg.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 26s",
+  "bytes_before": 6392627,
+  "bytes_after": 9339216,
+  "at": "2026-10-29T14:16:31Z"
+ },
+ "6AsKjfjUT_I": {
+  "key": "videos/l7-shorts-6AsKjfjUT_I.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 21s",
+  "bytes_before": 26289432,
+  "bytes_after": 12794495,
+  "at": "2026-10-29T14:16:45Z"
+ },
+ "6Gr8CFs9Kj4": {
+  "key": "videos/l7-shorts-6Gr8CFs9Kj4.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 27s",
+  "bytes_before": 5750118,
+  "bytes_after": 9916255,
+  "at": "2026-10-29T14:16:53Z"
+ },
+ "6P5DlpKUYbQ": {
+  "key": "videos/teocri-shorts-6P5DlpKUYbQ.mp4",
+  "from": "vp9 1080x1440 30fps",
+  "to": "h264 1080x1440 30fps 30s",
+  "bytes_before": 14754326,
+  "bytes_after": 17485139,
+  "at": "2026-10-29T14:17:03Z"
+ },
+ "6QLlBKe2H6s": {
+  "key": "videos/l7-shorts-6QLlBKe2H6s.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 26s",
+  "bytes_before": 32547018,
+  "bytes_after": 11195988,
+  "at": "2026-10-29T14:17:20Z"
+ },
+ "6aS3NYBfVkg": {
+  "key": "videos/l7-shorts-6aS3NYBfVkg.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 23s",
+  "bytes_before": 6696779,
+  "bytes_after": 8055049,
+  "at": "2026-10-29T14:17:28Z"
+ },
+ "6kTC8q7DgBQ": {
+  "key": "videos/l7-shorts-6kTC8q7DgBQ.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 31s",
+  "bytes_before": 4510557,
+  "bytes_after": 8321912,
+  "at": "2026-10-29T14:17:37Z"
+ },
+ "6tOEV3aDayY": {
+  "key": "videos/l7-shorts-6tOEV3aDayY.mp4",
+  "from": "vp9 1080x1440 30fps",
+  "to": "h264 1080x1440 30fps 38s",
+  "bytes_before": 10160196,
+  "bytes_after": 11668302,
+  "at": "2026-10-29T14:17:48Z"
+ },
+ "73VlPZ3TCBo": {
+  "key": "videos/l7-shorts-73VlPZ3TCBo.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 31s",
+  "bytes_before": 6361852,
+  "bytes_after": 12268806,
+  "at": "2026-10-29T14:17:58Z"
+ },
+ "7_Wmv9PiETo": {
+  "key": "videos/l7-shorts-7_Wmv9PiETo.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 31s",
+  "bytes_before": 9066164,
+  "bytes_after": 13927157,
+  "at": "2026-10-29T14:18:09Z"
+ },
+ "7egBU2cWGdY": {
+  "key": "videos/l7-shorts-7egBU2cWGdY.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 32s",
+  "bytes_before": 8325113,
+  "bytes_after": 11643571,
+  "at": "2026-10-29T14:18:20Z"
+ },
+ "80RuZVpsLfw": {
+  "key": "videos/l7-shorts-80RuZVpsLfw.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 20s",
+  "bytes_before": 4190939,
+  "bytes_after": 7852037,
+  "at": "2026-10-29T14:18:27Z"
+ },
+ "85t-7tjDSps": {
+  "key": "videos/l7-shorts-85t-7tjDSps.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 29s",
+  "bytes_before": 6140470,
+  "bytes_after": 10118463,
+  "at": "2026-10-29T14:18:36Z"
+ },
+ "8EZsYHun_ds": {
+  "key": "videos/l7-shorts-8EZsYHun_ds.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 24s",
+  "bytes_before": 29928122,
+  "bytes_after": 10083854,
+  "at": "2026-10-29T14:18:52Z"
+ },
+ "8Uvg-ebn3Ng": {
+  "key": "videos/l7-shorts-8Uvg-ebn3Ng.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 24s",
+  "bytes_before": 6204152,
+  "bytes_after": 9822604,
+  "at": "2026-10-29T14:18:59Z"
+ },
+ "8Wdqc7m2hQU": {
+  "key": "videos/l7-shorts-8Wdqc7m2hQU.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 32s",
+  "bytes_before": 9932388,
+  "bytes_after": 16281556,
+  "at": "2026-10-29T14:19:13Z"
+ },
+ "8g1cGdCH7kM": {
+  "key": "videos/l7-shorts-8g1cGdCH7kM.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 21s",
+  "bytes_before": 5848851,
+  "bytes_after": 8442098,
+  "at": "2026-10-29T14:19:22Z"
+ },
+ "8vtWHbJQlCE": {
+  "key": "videos/l7-shorts-8vtWHbJQlCE.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 24s",
+  "bytes_before": 29352500,
+  "bytes_after": 10718511,
+  "at": "2026-10-29T14:19:37Z"
+ },
+ "8wd1Gk2v-Qw": {
+  "key": "videos/l7-shorts-8wd1Gk2v-Qw.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 29s",
+  "bytes_before": 8564656,
+  "bytes_after": 13285079,
+  "at": "2026-10-29T14:19:47Z"
+ },
+ "95m-hvL3n-M": {
+  "key": "videos/l7-shorts-95m-hvL3n-M.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 18s",
+  "bytes_before": 22995217,
+  "bytes_after": 13309420,
+  "at": "2026-10-29T14:20:02Z"
+ },
+ "9ECgIBvJFD0": {
+  "key": "videos/l7-shorts-9ECgIBvJFD0.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 30s",
+  "bytes_before": 6777575,
+  "bytes_after": 10341321,
+  "at": "2026-10-29T14:20:11Z"
+ },
+ "9EqDnC-KRwg": {
+  "key": "videos/l7-shorts-9EqDnC-KRwg.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 22s",
+  "bytes_before": 27883573,
+  "bytes_after": 10966907,
+  "at": "2026-10-29T14:20:26Z"
+ },
+ "9GocmzI01iY": {
+  "key": "videos/l7-shorts-9GocmzI01iY.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 34s",
+  "bytes_before": 9154061,
+  "bytes_after": 14270761,
+  "at": "2026-10-29T14:20:38Z"
+ },
+ "9RXVJbPpeko": {
+  "key": "videos/l7-shorts-9RXVJbPpeko.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 39s",
+  "bytes_before": 8526017,
+  "bytes_after": 11993896,
+  "at": "2026-10-29T14:20:50Z"
+ },
+ "9RoBkqn9DuY": {
+  "key": "videos/l7-shorts-9RoBkqn9DuY.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 30s",
+  "bytes_before": 6098803,
+  "bytes_after": 10470042,
+  "at": "2026-10-29T14:21:02Z"
+ },
+ "9RvH8qwdLfI": {
+  "key": "videos/l7-shorts-9RvH8qwdLfI.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 30s",
+  "bytes_before": 6784634,
+  "bytes_after": 10294986,
+  "at": "2026-10-29T14:21:12Z"
+ },
+ "9_K75EmpCkU": {
+  "key": "videos/l7-shorts-9_K75EmpCkU.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 24s",
+  "bytes_before": 27708821,
+  "bytes_after": 9369651,
+  "at": "2026-10-29T14:21:28Z"
+ },
+ "9gT-VsvUq-4": {
+  "key": "videos/l7-shorts-9gT-VsvUq-4.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 31s",
+  "bytes_before": 7827274,
+  "bytes_after": 10843592,
+  "at": "2026-10-29T14:21:45Z"
+ },
+ "9t5B9_P2Teg": {
+  "key": "videos/l7-shorts-9t5B9_P2Teg.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 34s",
+  "bytes_before": 10630222,
+  "bytes_after": 16445594,
+  "at": "2026-10-29T14:21:58Z"
+ },
+ "9wf_PCF12Mc": {
+  "key": "videos/l7-shorts-9wf_PCF12Mc.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 26s",
+  "bytes_before": 5928053,
+  "bytes_after": 7740837,
+  "at": "2026-10-29T14:22:06Z"
+ },
+ "A7eGWKwr6b8": {
+  "key": "videos/l7-shorts-A7eGWKwr6b8.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 33s",
+  "bytes_before": 6595773,
+  "bytes_after": 10583983,
+  "at": "2026-10-29T14:22:16Z"
+ },
+ "ABCvJQAZqbI": {
+  "key": "videos/l7-shorts-ABCvJQAZqbI.mp4",
+  "from": "av1 2160x2880 60fps",
+  "to": "h264 1080x1440 30fps 23s",
+  "bytes_before": 28948453,
+  "bytes_after": 16375261,
+  "at": "2026-10-29T14:22:33Z"
+ },
+ "AEFUeeJuQZY": {
+  "key": "videos/l7-shorts-AEFUeeJuQZY.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 21s",
+  "bytes_before": 6311322,
+  "bytes_after": 9344891,
+  "at": "2026-10-29T14:22:39Z"
+ },
+ "APCCI6hrcNI": {
+  "key": "videos/l7-shorts-APCCI6hrcNI.mp4",
+  "from": "av1 1080x1440 60fps",
+  "to": "h264 1080x1440 30fps 34s",
+  "bytes_before": 8134992,
+  "bytes_after": 10738572,
+  "at": "2026-10-29T14:22:50Z"
  }
 }
