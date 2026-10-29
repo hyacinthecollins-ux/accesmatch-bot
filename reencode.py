@@ -112,10 +112,34 @@ def verify(dst, dur_src):
     return problems, (codec, w, h, round(fps), round(dur, 1), size)
 
 
+def clean_account_id(raw):
+    """Accepte l'identifiant seul, ou par erreur l'adresse complète (https://xxxx.r2.cloudflarestorage.com/...)."""
+    s = (raw or "").strip().strip("\"'")
+    for prefix in ("https://", "http://"):
+        if s.lower().startswith(prefix):
+            s = s[len(prefix):]
+    s = s.split("/")[0].split(".")[0].strip()
+    return s
+
+
+def account_id_problem(acct):
+    """Décrit le défaut de l'identifiant sans jamais l'afficher."""
+    import re
+    if re.fullmatch(r"[0-9a-f]{32}", acct):
+        return None
+    raw = R2_ACCOUNT_ID
+    return (f"R2_ACCOUNT_ID n'a pas la bonne forme (attendu : 32 caractères hexadécimaux) : "
+            f"longueur {len(raw)}, longueur après nettoyage {len(acct)}, "
+            f"contient un espace/saut de ligne : {any(c.isspace() for c in raw)}, "
+            f"contient « / » ou « : » ou « . » : {any(c in raw for c in '/:.')}, "
+            f"caractères non hexadécimaux : {sum(1 for c in acct if c not in '0123456789abcdef')}")
+
+
 def make_s3():
     import boto3
     from botocore.config import Config
-    kw = dict(endpoint_url=f"https://{R2_ACCOUNT_ID}.r2.cloudflarestorage.com", aws_access_key_id=R2_ACCESS_KEY_ID,
+    acct = clean_account_id(R2_ACCOUNT_ID)
+    kw = dict(endpoint_url=f"https://{acct}.r2.cloudflarestorage.com", aws_access_key_id=R2_ACCESS_KEY_ID,
               aws_secret_access_key=R2_SECRET_ACCESS_KEY, region_name="auto")
     try:   # boto3 récent : pas de somme de contrôle automatique, que R2 ne demande pas
         kw["config"] = Config(request_checksum_calculation="when_required", response_checksum_validation="when_required")
@@ -180,6 +204,10 @@ def main(argv=None):
                    "(R2_ACCOUNT_ID, R2_ACCESS_KEY_ID, R2_SECRET_ACCESS_KEY) ne sont pas encore enregistrés dans GitHub "
                    "(Settings → Secrets and variables → Actions).")
         return 0
+    problem = account_id_problem(clean_account_id(R2_ACCOUNT_ID))
+    if problem:
+        print("::error::[réparation] " + problem, flush=True)
+        return 1
     s3 = make_s3()
     t0 = time.time()
     ok_n, fail_n, saved = 0, 0, 0
