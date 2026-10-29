@@ -17,34 +17,46 @@
       "day": "2026-10-28",
       "source": "football-data CL",
       "at": "2026-10-28T15:57:52Z"
+    },
+    {
+      "id": "6ae35447465f44defad63188",
+      "kind": "news",
+      "text": "Selon L’Équipe, Luis Enrique souligne l’énorme capacité de travail de Désiré Doué. À ce rythme, même le réveil doit demander une pause 😄 Vous validez ?\n\n#PSG",
+      "due": "2026-10-29T19:15Z",
+      "day": "2026-10-29",
+      "source": "L'Équipe",
+      "at": "2026-10-29T14:12:23Z"
     }
   ],
   "slots": {
     "2026-10-27T20:15": "done",
-    "2026-10-28T20:15": "done"
+    "2026-10-28T20:15": "done",
+    "2026-10-29T20:15": "done"
   },
   "slot_tries": {
     "2026-10-27T20:15": 1,
-    "2026-10-28T20:15": 1
+    "2026-10-28T20:15": 1,
+    "2026-10-29T20:15": 1
   },
   "reacted": [
     "559648"
   ],
   "used_news": [
-    "0323d7e5074e"
+    "0323d7e5074e",
+    "7f2e274c7849"
   ],
-  "counter": 2,
+  "counter": 3,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 3,
-        "in": 1547,
-        "out": 660
+        "calls": 4,
+        "in": 2046,
+        "out": 846
       },
       "gpt-6.1-sol": {
-        "calls": 3,
-        "in": 807,
-        "out": 141
+        "calls": 4,
+        "in": 1053,
+        "out": 178
       }
     }
   }
