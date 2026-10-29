@@ -53,6 +53,15 @@
       "day": "2026-10-29",
       "source": "Le Parisien",
       "at": "2026-10-29T17:00:40Z"
+    },
+    {
+      "id": "6ae38c14a23f0986fe0b9f13",
+      "kind": "breaking",
+      "text": "🚨 Selon TV-Programme, le replay de Ligue 1 du 29 octobre met Désiré Doué à l’honneur : « unstoppable ». Ça claque ! Vous l’avez vu ?\n\n#Doué",
+      "due": "2026-10-29T18:20Z",
+      "day": "2026-10-29",
+      "source": "TV-Programme",
+      "at": "2026-10-29T18:10:29Z"
     }
   ],
   "slots": {
@@ -74,26 +83,28 @@
     "0323d7e5074e",
     "7f2e274c7849",
     "66d9fd67d2e3",
-    "f45dff85ceb6"
+    "f45dff85ceb6",
+    "8a981df9c424"
   ],
-  "counter": 6,
+  "counter": 7,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 7,
-        "in": 3757,
-        "out": 1626
+        "calls": 8,
+        "in": 4324,
+        "out": 1848
       },
       "gpt-6.1-sol": {
-        "calls": 7,
-        "in": 2097,
-        "out": 285
+        "calls": 8,
+        "in": 2430,
+        "out": 326
       }
     }
   },
   "used_titles": [
     "«Travaille dur en silence», le message publié par le Ballon d’Or Harry Kane ne visait pas Mbappé",
-    "Ballon d’or 2026 : quand connaîtra-t-on le détail des votes et l’écart de points entre Harry Kane et Kylian Mbappé"
+    "Ballon d’or 2026 : quand connaîtra-t-on le détail des votes et l’écart de points entre Harry Kane et Kylian Mbappé",
+    "Football Ligue 1 replay du 29/10/2026 : Désiré Doué is UNSTOPPABLE😮‍💨⭐️ #football #ligue1 #psg…"
   ],
   "recent_stats": []
 }
