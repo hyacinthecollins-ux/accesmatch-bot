@@ -1,0 +1,35 @@
+name: Sonde vidéos (diagnostic)
+
+on:
+  workflow_dispatch:
+    inputs:
+      files:
+        description: "Fichiers R2 à examiner (chemins séparés par des espaces, ex: videos/abc.mp4)"
+        type: string
+        default: ""
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Examiner les vidéos (codec, taille, fréquence d'images)
+        env:
+          BASE: https://pub-b5e401cd6e3245d6aacd181820e22aba.r2.dev
+          FILES: ${{ inputs.files }}
+        run: |
+          out=""
+          for f in $FILES; do
+            curl -sS -L -o /tmp/v.mp4 -w "%{http_code}" "$BASE/$f" > /tmp/code || true
+            code=$(cat /tmp/code)
+            size=$(stat -c %s /tmp/v.mp4 2>/dev/null || echo 0)
+            info=$(ffprobe -v error -show_entries stream=codec_type,codec_name,profile,pix_fmt,width,height,r_frame_rate,bit_rate,sample_rate,channels:format=format_name,duration -of compact=p=0:nk=0 /tmp/v.mp4 2>&1 | tr '\n' ' ')
+            out="$out$f | HTTP $code | $size octets | $info"$'\n'
+            rm -f /tmp/v.mp4
+          done
+          echo "$out"
+          out="${out//'%'/'%25'}"; out="${out//$'\n'/'%0A'}"
+          echo "::notice::[sonde] $out"
