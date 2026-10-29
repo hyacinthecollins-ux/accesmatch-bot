@@ -606,6 +606,10 @@ def catalog_summary():
     head = f"{len(videos)} vidéos, {len(by_creator)} créateurs : " + " | ".join(f"{c} {len(vs)}" for c, vs in ordered)
     log("📦 " + head)
     gh_notice("[catalogue] " + head)
+    pc = Counter(v.get("player") for v in videos if v.get("player"))
+    no_player = sum(1 for v in videos if not v.get("player"))
+    gh_notice(f"[joueurs] {len(pc)} joueurs, {no_player} vidéos sans joueur | "
+              + " | ".join(f"{p} {n}" for p, n in pc.most_common(90)))
 
     ids = Counter(v["id"] for v in videos)
     keys = Counter(v["key"] for v in videos)
