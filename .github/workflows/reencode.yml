@@ -1,0 +1,64 @@
+name: Reparation des videos (H.264)
+
+# X refuse les vidéos YouTube Shorts brutes (AV1 / VP9, 60 images/s, 4K). Ce robot les convertit en H.264 1080p 30 i/s
+# et remplace le fichier au même endroit sur R2 : le robot vidéo peut ensuite les programmer (voir reencode.py).
+# Nécessite 3 secrets GitHub : R2_ACCOUNT_ID, R2_ACCESS_KEY_ID, R2_SECRET_ACCESS_KEY (accès R2 en écriture).
+# Sans eux, le robot prévient en annotation et ne touche à rien.
+
+on:
+  schedule:
+    - cron: "23 5 * * *"      # chaque jour, après le robot vidéo
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "Nombre maximal de vidéos converties pendant ce passage"
+        default: "60"
+      dry_run:
+        description: "Simulation : liste ce qui serait converti, ne modifie rien"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: reencode
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 170
+    env:
+      R2_PUBLIC_BASE: ${{ secrets.R2_PUBLIC_BASE }}
+      R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+      R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+      R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+      R2_BUCKET: accesmatch-videos
+      BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          pip install requests boto3
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+
+      - name: Convertir les videos refusees par X
+        run: python reencode.py --limit "${{ inputs.limit || '60' }}" --budget-min 140 ${{ inputs.dry_run && '--dry-run' || '' }}
+
+      - name: Sauvegarde de la liste des videos reparees
+        if: always()
+        run: |
+          git config user.name "accesmatch-bot"
+          git config user.email "accesmatch-bot@users.noreply.github.com"
+          git add video_reencoded.json 2>/dev/null || true
+          if ! git diff --cached --quiet; then
+            git commit -m "etat reparation videos"
+            git pull --rebase
+            git push
+          fi
