@@ -529,6 +529,7 @@ def fetch_feed(name, url):
         source = name
         if name == "Google Actualites" and " - " in title:
             title, source = title.rsplit(" - ", 1)
+        source = re.sub(r"\.(com|fr|net|org|info)$", "", source.strip(), flags=re.I)
         summary = ""
         if name != "Google Actualites":
             summary = re.sub(r"\s+", " ", _text(it.find("description")) or _text(it.find("{http://www.w3.org/2005/Atom}summary"))).strip()
@@ -853,7 +854,7 @@ def pick_news(now, state, min_score=1.0, max_age_h=None, day_iso=None):
     """Meilleure actu pas encore utilisee : gros joueur / grosse equipe, pas une histoire deja racontee,
     pas un joueur deja cite 2 fois aujourd'hui."""
     items, report = news_items(now)
-    used = set(state["used_news"])
+    used = set(state["used_news"]) | set(state.get("_dry_used", []))
     counts = star_counts_today(state, day_iso or now.astimezone(PARIS).date().isoformat())
     for it in items:
         if it["key"] in used or it["score"] < min_score:
@@ -1042,6 +1043,8 @@ def build(kind, now, cfg, state, dry, hhmm="20:15", day_iso=None):
         if not dry:
             state["used_news"].append(it["key"])
             state["used_titles"].append(it["title"])
+        else:
+            state.setdefault("_dry_used", []).append(it["key"])
         return {"facts": news_facts(it), "instr": kind, "code": None, "source": it["source"], "after": None}
     if kind == "stat":
         offset = state["counter"] % len(STAT_COMPS)
@@ -1112,14 +1115,15 @@ def make_slot_post(now, cfg, state, dry, hhmm="20:15", hours_ahead=0.0, day_iso=
     if len(kinds) > 1 and kinds[0] == last:                # pas deux fois le meme type d'affilee
         kinds = kinds[1:] + kinds[:1]
     for kind in kinds:
-        b = build(kind, now, cfg, state, dry, hhmm, day_iso)
-        if not b:
-            continue
-        text = generate(b["instr"], INSTR[b["instr"]], b["facts"], cfg, state, b["code"])
-        if text:
-            if b["after"]:
-                b["after"]()
-            return kind, text, b["source"]
+        for _ in range(2 if kind == "news" else 1):          # si l'actu est refusee, on tente la suivante
+            b = build(kind, now, cfg, state, dry, hhmm, day_iso)
+            if not b:
+                break
+            text = generate(b["instr"], INSTR[b["instr"]], b["facts"], cfg, state, b["code"])
+            if text:
+                if b["after"]:
+                    b["after"]()
+                return kind, text, b["source"]
     return None, None, None
 
 
@@ -1146,15 +1150,16 @@ def run_breaking(now, cfg, state, busy, dry):
     if not due:
         note("breaking : aucun horaire libre dans l'heure (autres posts trop proches)")
         return 0
-    b = build("breaking", now, cfg, state, dry)
-    if not b:
-        note("breaking : aucune actu chaude exploitable (score >= 2, < 4 h, pas deja traitee)")
-        return 0
-    text = generate("breaking", INSTR["breaking"], b["facts"], cfg, state)
-    if not text:
+    for _ in range(3):                                      # si l'actu est refusee, on tente la suivante
+        b = build("breaking", now, cfg, state, dry)
+        if not b:
+            note("breaking : aucune actu chaude exploitable (score >= 2, < 4 h, pas deja traitee)")
+            return 0
+        text = generate("breaking", INSTR["breaking"], b["facts"], cfg, state)
+        if text:
+            return publish(state, "breaking", text, due, busy, dry, b["source"])
         note("breaking : post refuse par les garde-fous (" + (_REJECTS[-1][:140] if _REJECTS else "?") + ")")
-        return 0
-    return publish(state, "breaking", text, due, busy, dry, b["source"])
+    return 0
 
 
 def publish(state, kind, text, due, busy, dry, source=""):
