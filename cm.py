@@ -636,6 +636,14 @@ def hashtags_for(post, comp_code=None):
     return tags[:2]
 
 
+_STATUS = []        # raisons "rien programme" du passage (affichees dans l'annotation GitHub)
+
+
+def note(msg):
+    log(msg)
+    _STATUS.append(msg.strip())
+
+
 _REJECTS = []       # derniers refus (affiches par --samples pour comprendre pourquoi un post est jete)
 
 
@@ -1127,20 +1135,24 @@ def run_breaking(now, cfg, state, busy, dry):
         return 0
     mine = [p for p in state["posts"] if p["kind"] == "breaking"]
     if sum(1 for p in mine if p["day"] == today.isoformat()) >= cfg["max_breaking_per_day"]:
+        note("breaking : plafond du jour atteint")
         return 0
     if mine:
         last_at = datetime.strptime(mine[-1]["at"], "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
         if now - last_at < timedelta(minutes=BREAKING_GAP_MIN):
+            note("breaking : dernier il y a moins d'1 h")
             return 0
     due = free_time(now + timedelta(minutes=MIN_LEAD_MIN), cfg, busy, shifts=(0, 5, 10, 15, 20, 30, 40, 50, 60))
     if not due:
+        note("breaking : aucun horaire libre dans l'heure (autres posts trop proches)")
         return 0
     b = build("breaking", now, cfg, state, dry)
     if not b:
+        note("breaking : aucune actu chaude exploitable (score >= 2, < 4 h, pas deja traitee)")
         return 0
     text = generate("breaking", INSTR["breaking"], b["facts"], cfg, state)
     if not text:
-        log("   breaking : aucun post valide")
+        note("breaking : post refuse par les garde-fous (" + (_REJECTS[-1][:140] if _REJECTS else "?") + ")")
         return 0
     return publish(state, "breaking", text, due, busy, dry, b["source"])
 
@@ -1207,7 +1219,8 @@ def run(dry=False):
         if not dry:
             save_state(state)
         return 2
-    gh_notice(f"[CM] {'simulation : ' if dry else ''}{created} post(s) | {usage_text(state['usage'])}")
+    gh_notice(f"[CM] {'simulation : ' if dry else ''}{created} post(s) | {usage_text(state['usage'])}"
+              + ("\n" + "\n".join(_STATUS[:8]) if _STATUS else ""))
     log(f"{created} post(s) | usage cumule : {usage_text(state['usage'])}")
     if not dry:
         save_state(state)
