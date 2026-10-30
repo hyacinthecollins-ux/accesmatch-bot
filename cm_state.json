@@ -107,6 +107,15 @@
       "day": "2026-10-30",
       "source": "Sud Radio",
       "at": "2026-10-30T07:30:34Z"
+    },
+    {
+      "id": "6ae45cb958a62337fb769b04",
+      "kind": "stat",
+      "text": "📊 Raphinha (Barça), en tête des buteurs de Liga : 13 buts et 2 passes décisives en 9 matchs. Ça claque fort ! Vous le voyez continuer ?\n\n#Raphinha #FCBarcelona",
+      "due": "2026-10-30T13:00Z",
+      "day": "2026-10-30",
+      "source": "football-data PD",
+      "at": "2026-10-30T09:00:41Z"
     }
   ],
   "slots": {
@@ -115,7 +124,8 @@
     "2026-10-29T20:15": "done",
     "2026-10-29T22:35": "done",
     "2026-10-30T08:05": "done",
-    "2026-10-30T10:45": "done"
+    "2026-10-30T10:45": "done",
+    "2026-10-30T14:00": "done"
   },
   "slot_tries": {
     "2026-10-27T20:15": 1,
@@ -123,7 +133,8 @@
     "2026-10-29T20:15": 1,
     "2026-10-29T22:35": 1,
     "2026-10-30T08:05": 1,
-    "2026-10-30T10:45": 1
+    "2026-10-30T10:45": 1,
+    "2026-10-30T14:00": 1
   },
   "reacted": [
     "559648"
@@ -138,18 +149,18 @@
     "7811ff9a6b0e",
     "e912c7e25f56"
   ],
-  "counter": 12,
+  "counter": 13,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 13,
-        "in": 7217,
-        "out": 2584
+        "calls": 14,
+        "in": 7905,
+        "out": 2750
       },
       "gpt-6.1-sol": {
-        "calls": 13,
-        "in": 4186,
-        "out": 565
+        "calls": 14,
+        "in": 4644,
+        "out": 598
       }
     }
   },
@@ -162,6 +173,7 @@
     "\"Mbappé, le Réal Madrid et la Liga se sont couchés devant la Chine. Voilà où nous a mené le foot business !\""
   ],
   "recent_stats": [
-    "erling haaland"
+    "erling haaland",
+    "raphinha"
   ]
 }
