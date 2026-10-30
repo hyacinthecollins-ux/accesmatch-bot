@@ -1201,6 +1201,32 @@
       "fails": 0,
       "design": "crests-v1",
       "tg": "sent"
+    },
+    "x560623": {
+      "kind": "xpreview",
+      "match_id": 560623,
+      "label": "MAN CITY-BRIGHTON HOVE",
+      "kickoff": "2026-10-31T15:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/x560623-20261031.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-10-30T18:44:47Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "x565845": {
+      "kind": "xpreview",
+      "match_id": 565845,
+      "label": "BAYERN-DORTMUND",
+      "kickoff": "2026-10-31T17:30:00Z",
+      "status": "poster_ready",
+      "poster": "posters/x565845-20261031.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-10-30T18:44:47Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   }
 }
