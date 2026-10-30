@@ -251,20 +251,35 @@
       "due": "2026-11-12T08:15:00.000Z",
       "at": "2026-10-29T11:49:48Z",
       "title": "When Raphinha loses Control 😡 ⚽"
+    },
+    "xiq7yq0uv-k": {
+      "post_id": "6ae46ae538b96b6f5ba0fb92",
+      "due": "2026-11-12T11:30:00.000Z",
+      "at": "2026-10-30T10:01:09Z",
+      "title": "Olise Touch Line Skills 😮‍💨 ⚽"
+    },
+    "7684819094075378977": {
+      "post_id": "6ae46ae8ceb12661efdc48fc",
+      "due": "2026-11-12T17:30:00.000Z",
+      "at": "2026-10-30T10:01:12Z",
+      "title": "The Brain of Pedri Sees Passes Nobody Else Can! 🧠✨ ⚽"
+    },
+    "NUteJ9DAWic": {
+      "post_id": "6ae46aebc2427e8527cb5d3d",
+      "due": "2026-11-12T20:45:00.000Z",
+      "at": "2026-10-30T10:01:16Z",
+      "title": "Desiré Doué vs Liverpool ⚽"
     }
   },
   "failed": {},
-  "counter": 42,
+  "counter": 45,
   "recent_players": [
-    "yamal",
-    "dembele",
-    "neymar",
-    "hazard"
+    "hazard",
+    "olise",
+    "pedri",
+    "doue"
   ],
   "recent_creators": [
-    "F11Skillz-TikTok",
-    "FootballEditsHD-TikTok",
-    "FootH25-TikTok",
     "KickVibesEdit-TikTok",
     "HRPlays01-TikTok",
     "F11Skillz-TikTok",
@@ -285,12 +300,12 @@
     "KickVibesEdit-TikTok",
     "R10Comps-TikTok",
     "FootballEditsHD-TikTok",
-    "HRPlays01-TikTok"
+    "HRPlays01-TikTok",
+    "L7-Shorts",
+    "Football8568-TikTok",
+    "L7-Shorts"
   ],
   "recent_titles": [
-    "le jour où raphinha a brisé 9 ans de malédictions ⚽",
-    "haaland friendship moments 😍 ⚽",
-    "ryan cherki what a baller 🤯🤯 ⚽",
     "bradley barcola 🇫🇷 ⚽",
     "pedri ⚽",
     "200 iq free kicks ⚽",
@@ -317,7 +332,10 @@
     "was joining madrid a mistake ？ 😳 you forget ⚽",
     "doué x neymar ⚽",
     "eden hazard ⚽",
-    "when raphinha loses control 😡 ⚽"
+    "when raphinha loses control 😡 ⚽",
+    "olise touch line skills 😮‍💨 ⚽",
+    "the brain of pedri sees passes nobody else can! 🧠✨ ⚽",
+    "desiré doué vs liverpool ⚽"
   ],
   "recent_stars": [
     1,
@@ -325,9 +343,6 @@
     1,
     1,
     1,
-    1,
-    1,
-    1,
     0,
     1,
     0,
@@ -339,12 +354,12 @@
     1,
     0,
     0,
+    1,
+    1,
+    1,
     1
   ],
   "recent_long": [
-    "messi",
-    "mbappe",
-    "ronaldo",
     "bellingham",
     "mbappe",
     "vinicius",
@@ -361,6 +376,9 @@
     "neymar",
     "",
     "",
-    "raphinha"
+    "raphinha",
+    "olise",
+    "pedri",
+    "doue"
   ]
 }
