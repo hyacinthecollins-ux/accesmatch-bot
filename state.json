@@ -1239,17 +1239,18 @@
       "due": null,
       "created": "2026-10-30T22:48:44Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "sent"
     },
     "x564732": {
       "kind": "xpreview",
       "match_id": 564732,
       "label": "BARÇA-ALAVÉS",
       "kickoff": "2026-10-31T20:00:00Z",
-      "status": "poster_ready",
+      "status": "scheduled",
       "poster": "posters/x564732-20261031.jpg",
-      "post_id": null,
-      "due": null,
+      "post_id": "6ae51ed11891472093a03804",
+      "due": "2026-10-31T17:00:00Z",
       "created": "2026-10-30T22:48:44Z",
       "fails": 0,
       "design": "crests-v1"
