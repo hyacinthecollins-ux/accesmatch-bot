@@ -1145,6 +1145,58 @@
       "created": "2026-10-29T20:27:40Z",
       "fails": 0,
       "design": "crests-v1"
+    },
+    "p560626": {
+      "kind": "preview",
+      "match_id": 560626,
+      "label": "CHELSEA-MAN UNITED",
+      "kickoff": "2026-10-31T12:30:00Z",
+      "status": "poster_ready",
+      "poster": "posters/p560626-20261031.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-10-30T00:10:51Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "p560623": {
+      "kind": "preview",
+      "match_id": 560623,
+      "label": "MAN CITY-BRIGHTON HOVE",
+      "kickoff": "2026-10-31T15:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/p560623-20261031.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-10-30T00:10:51Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "p565845": {
+      "kind": "preview",
+      "match_id": 565845,
+      "label": "BAYERN-DORTMUND",
+      "kickoff": "2026-10-31T17:30:00Z",
+      "status": "poster_ready",
+      "poster": "posters/p565845-20261031.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-10-30T00:10:51Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "p564732": {
+      "kind": "preview",
+      "match_id": 564732,
+      "label": "BARÇA-ALAVÉS",
+      "kickoff": "2026-10-31T20:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/p564732-20261031.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-10-30T00:10:51Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   }
 }
