@@ -71,19 +71,30 @@
       "day": "2026-10-30",
       "source": "Goal",
       "at": "2026-10-29T23:00:42Z"
+    },
+    {
+      "id": "6ae40a9eba1ca51fd3f14faa",
+      "kind": "preview",
+      "text": "🔥 Au programme aujourd’hui : Le Havre - PSG à 19h00, puis Lille - RC Lens à 21h05. Deux affiches de Ligue 1 pour une soirée qui s’annonce brûlante !\n\n#PSG #LOSC",
+      "due": "2026-10-30T07:05Z",
+      "day": "2026-10-30",
+      "source": "football-data",
+      "at": "2026-10-30T03:10:22Z"
     }
   ],
   "slots": {
     "2026-10-27T20:15": "done",
     "2026-10-28T20:15": "done",
     "2026-10-29T20:15": "done",
-    "2026-10-29T22:35": "done"
+    "2026-10-29T22:35": "done",
+    "2026-10-30T08:05": "done"
   },
   "slot_tries": {
     "2026-10-27T20:15": 1,
     "2026-10-28T20:15": 1,
     "2026-10-29T20:15": 1,
-    "2026-10-29T22:35": 1
+    "2026-10-29T22:35": 1,
+    "2026-10-30T08:05": 1
   },
   "reacted": [
     "559648"
@@ -96,18 +107,18 @@
     "8a981df9c424",
     "0c8d615c5997"
   ],
-  "counter": 8,
+  "counter": 9,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 9,
-        "in": 4887,
-        "out": 2014
+        "calls": 10,
+        "in": 5418,
+        "out": 2069
       },
       "gpt-6.1-sol": {
-        "calls": 9,
-        "in": 2754,
-        "out": 364
+        "calls": 10,
+        "in": 3069,
+        "out": 417
       }
     }
   },
