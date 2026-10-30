@@ -1157,7 +1157,8 @@
       "due": null,
       "created": "2026-10-30T00:10:51Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "sent"
     },
     "p560623": {
       "kind": "preview",
@@ -1170,7 +1171,8 @@
       "due": null,
       "created": "2026-10-30T00:10:51Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "sent"
     },
     "p565845": {
       "kind": "preview",
@@ -1183,7 +1185,8 @@
       "due": null,
       "created": "2026-10-30T00:10:51Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "sent"
     },
     "p564732": {
       "kind": "preview",
@@ -1196,7 +1199,8 @@
       "due": null,
       "created": "2026-10-30T00:10:51Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "sent"
     }
   }
 }
