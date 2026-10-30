@@ -152,6 +152,15 @@
       "day": "2026-10-30",
       "source": "Match termine (Ligue 1) : Le Havre 1-5 PSG",
       "at": "2026-10-30T20:00:49Z"
+    },
+    {
+      "id": "6ae521a3a11457434973e9c4",
+      "kind": "breaking",
+      "text": "🚨 Selon Goal, un vote pour le Ballon d’Or place Lamine Yamal et Kylian Mbappé hors du top 10, avec Pacho et Cucurella devant Harry Kane. Un classement qui fait lever des sourcils !\n\n#Mbappé #Yamal",
+      "due": "2026-10-30T23:10Z",
+      "day": "2026-10-31",
+      "source": "Goal",
+      "at": "2026-10-30T23:00:51Z"
     }
   ],
   "slots": {
@@ -192,20 +201,21 @@
     "8a981df9c424",
     "0c8d615c5997",
     "7811ff9a6b0e",
-    "e912c7e25f56"
+    "e912c7e25f56",
+    "ce68eff0eaac"
   ],
-  "counter": 17,
+  "counter": 18,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 26,
-        "in": 14715,
-        "out": 3862
+        "calls": 27,
+        "in": 15278,
+        "out": 4032
       },
       "gpt-6.1-sol": {
-        "calls": 24,
-        "in": 8205,
-        "out": 1196
+        "calls": 25,
+        "in": 8548,
+        "out": 1228
       }
     }
   },
@@ -215,7 +225,8 @@
     "Football Ligue 1 replay du 29/10/2026 : Désiré Doué is UNSTOPPABLE😮‍💨⭐️ #football #ligue1 #psg…",
     "Comment obtenir des billets pour Bayern Munich - Borussia Dortmund : voir Harry Kane, lauréat du Ballon d’Or, en direct, prix des places pour la Bundesliga, informations sur le Klassiker et plus encore",
     "Harry Kane assure ne pas avoir « trop fait la fête » après son sacre au Ballon d’Or et explique pourquoi il était sur le banc du Bayern Munich lors de la victoire 6-1 en Coupe d’Allemagne",
-    "\"Mbappé, le Réal Madrid et la Liga se sont couchés devant la Chine. Voilà où nous a mené le foot business !\""
+    "\"Mbappé, le Réal Madrid et la Liga se sont couchés devant la Chine. Voilà où nous a mené le foot business !\"",
+    "Lamine Yamal et Kylian Mbappé même pas dans le top 10, Pacho et Cucurella devant Harry Kane ! Un vote absurde pour le Ballon d’Or dévoilé"
   ],
   "recent_stats": [
     "erling haaland",
