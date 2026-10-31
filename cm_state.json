@@ -242,6 +242,24 @@
       "day": "2026-10-31",
       "source": "football-data",
       "at": "2026-10-31T17:40:23Z"
+    },
+    {
+      "id": "6ae662a137c1acd2a0d15ad2",
+      "kind": "reaction",
+      "text": "⏱️ Milan s’impose 3-1 face à l’Inter en Serie A ! Le score était déjà de 3-1 à la pause : quelle victoire pour les Milanais. Vous l’aviez vu venir ?\n\n#SerieA",
+      "due": "2026-10-31T22:00Z",
+      "day": "2026-10-31",
+      "source": "Match termine (Serie A) : Milan 3-1 Inter",
+      "at": "2026-10-31T21:50:25Z"
+    },
+    {
+      "id": "6ae662a537c1acd2a0d15c35",
+      "kind": "reaction",
+      "text": "⏱️ Troyes s’impose 2-0 face au Mans après avoir mené 1-0 à la pause. Une victoire nette pour les Troyens, qui frappent fort dans cette 9e journée !\n\n#Ligue1",
+      "due": "2026-10-31T22:30Z",
+      "day": "2026-10-31",
+      "source": "Match termine (Ligue 1) : Troyes 2-0 Le Mans",
+      "at": "2026-10-31T21:50:29Z"
     }
   ],
   "slots": {
@@ -291,7 +309,9 @@
     "560623",
     "558542",
     "560627",
-    "565845"
+    "565845",
+    "558548",
+    "559643"
   ],
   "used_news": [
     "0323d7e5074e",
@@ -308,18 +328,18 @@
     "771ac1f99033",
     "69c5db8ef8a4"
   ],
-  "counter": 27,
+  "counter": 29,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 51,
-        "in": 28917,
-        "out": 7487
+        "calls": 53,
+        "in": 29989,
+        "out": 7750
       },
       "gpt-6.1-sol": {
-        "calls": 47,
-        "in": 15971,
-        "out": 2483
+        "calls": 49,
+        "in": 16601,
+        "out": 2551
       }
     }
   },
