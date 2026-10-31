@@ -206,6 +206,15 @@
       "day": "2026-10-31",
       "source": "football-data BL1",
       "at": "2026-10-31T09:00:39Z"
+    },
+    {
+      "id": "6ae5d157ceb491e585f2ee47",
+      "kind": "debate",
+      "text": "Le Barça en tête, l’Atleti et le Real juste derrière : quelle bataille en Liga ! Et le Betis dans le top 4, ça claque aussi. Vous misez sur qui pour le titre ? 🔥\n\n#FCBarcelona #LaLiga",
+      "due": "2026-10-31T15:50Z",
+      "day": "2026-10-31",
+      "source": "football-data PD",
+      "at": "2026-10-31T11:30:31Z"
     }
   ],
   "slots": {
@@ -221,7 +230,8 @@
     "2026-10-30T22:35": "done",
     "2026-10-31T08:05": "done",
     "2026-10-31T10:45": "done",
-    "2026-10-31T14:00": "done"
+    "2026-10-31T14:00": "done",
+    "2026-10-31T16:30": "done"
   },
   "slot_tries": {
     "2026-10-27T20:15": 1,
@@ -236,7 +246,8 @@
     "2026-10-30T22:35": 1,
     "2026-10-31T08:05": 1,
     "2026-10-31T10:45": 1,
-    "2026-10-31T14:00": 1
+    "2026-10-31T14:00": 1,
+    "2026-10-31T16:30": 1
   },
   "reacted": [
     "559648",
@@ -259,18 +270,18 @@
     "771ac1f99033",
     "69c5db8ef8a4"
   ],
-  "counter": 23,
+  "counter": 24,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 36,
-        "in": 20807,
-        "out": 5585
+        "calls": 37,
+        "in": 21404,
+        "out": 5641
       },
       "gpt-6.1-sol": {
-        "calls": 32,
-        "in": 11175,
-        "out": 1597
+        "calls": 33,
+        "in": 11570,
+        "out": 1627
       }
     }
   },
