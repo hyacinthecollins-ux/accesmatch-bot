@@ -170,6 +170,15 @@
       "day": "2026-10-31",
       "source": "football-data",
       "at": "2026-10-31T03:10:22Z"
+    },
+    {
+      "id": "6ae5819f406ab8a0189f50e3",
+      "kind": "stat",
+      "text": "📊 Bukayo Saka est 9e du classement des buteurs de Premier League avec 3 buts en 7 matchs. L’ailier d’Arsenal est lancé, et ça promet !\n\n#Arsenal #PremierLeague",
+      "due": "2026-10-31T09:45Z",
+      "day": "2026-10-31",
+      "source": "football-data PL",
+      "at": "2026-10-31T05:50:23Z"
     }
   ],
   "slots": {
@@ -183,7 +192,8 @@
     "2026-10-30T16:30": "done",
     "2026-10-30T20:15": "done",
     "2026-10-30T22:35": "done",
-    "2026-10-31T08:05": "done"
+    "2026-10-31T08:05": "done",
+    "2026-10-31T10:45": "done"
   },
   "slot_tries": {
     "2026-10-27T20:15": 1,
@@ -196,7 +206,8 @@
     "2026-10-30T16:30": 1,
     "2026-10-30T20:15": 1,
     "2026-10-30T22:35": 1,
-    "2026-10-31T08:05": 1
+    "2026-10-31T08:05": 1,
+    "2026-10-31T10:45": 1
   },
   "reacted": [
     "559648",
@@ -215,18 +226,18 @@
     "e912c7e25f56",
     "ce68eff0eaac"
   ],
-  "counter": 19,
+  "counter": 20,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 28,
-        "in": 15836,
-        "out": 4176
+        "calls": 29,
+        "in": 16530,
+        "out": 4227
       },
       "gpt-6.1-sol": {
-        "calls": 26,
-        "in": 8902,
-        "out": 1261
+        "calls": 27,
+        "in": 9366,
+        "out": 1341
       }
     }
   },
@@ -242,6 +253,7 @@
   "recent_stats": [
     "erling haaland",
     "raphinha",
-    "rayan cherki"
+    "rayan cherki",
+    "bukayo saka"
   ]
 }
