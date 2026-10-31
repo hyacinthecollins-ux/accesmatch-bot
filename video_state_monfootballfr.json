@@ -269,21 +269,41 @@
       "due": "2026-11-12T20:45:00.000Z",
       "at": "2026-10-30T10:01:16Z",
       "title": "Desiré Doué vs Liverpool ⚽"
+    },
+    "W4gdmJfAiIs": {
+      "post_id": "6ae5b7391891472093c50a67",
+      "due": "2026-11-13T08:15:00.000Z",
+      "at": "2026-10-31T09:39:05Z",
+      "title": "Neymar Jr 🇧🇷 ⚽"
+    },
+    "X7v_lFwI1Vc": {
+      "post_id": "6ae5b73cceb491e585eafa12",
+      "due": "2026-11-13T11:30:00.000Z",
+      "at": "2026-10-31T09:39:08Z",
+      "title": "Ronaldo vs Barcelona ⚽"
+    },
+    "7476119267654503702": {
+      "post_id": "6ae5b740ceb491e585eafaf4",
+      "due": "2026-11-13T17:30:00.000Z",
+      "at": "2026-10-31T09:39:12Z",
+      "title": "FRANCE WC 2026 🇫🇷 ⚽"
+    },
+    "PvMxYr2dcvU": {
+      "post_id": "6ae5b743406ab8a018ad8e21",
+      "due": "2026-11-13T20:45:00.000Z",
+      "at": "2026-10-31T09:39:15Z",
+      "title": "When Bellingham Gets Bored 🥱 ⚽"
     }
   },
   "failed": {},
-  "counter": 45,
+  "counter": 49,
   "recent_players": [
-    "hazard",
-    "olise",
-    "pedri",
-    "doue"
+    "neymar",
+    "ronaldo",
+    "mbappe",
+    "bellingham"
   ],
   "recent_creators": [
-    "KickVibesEdit-TikTok",
-    "HRPlays01-TikTok",
-    "F11Skillz-TikTok",
-    "Football8568-TikTok",
     "HRPlays01-TikTok",
     "F11Skillz-TikTok",
     "FootballEditsHD-TikTok",
@@ -303,13 +323,13 @@
     "HRPlays01-TikTok",
     "L7-Shorts",
     "Football8568-TikTok",
+    "L7-Shorts",
+    "TeoCRi-Shorts",
+    "L7-Shorts",
+    "KickVibesEdit-TikTok",
     "L7-Shorts"
   ],
   "recent_titles": [
-    "bradley barcola 🇫🇷 ⚽",
-    "pedri ⚽",
-    "200 iq free kicks ⚽",
-    "👉 ＂neymar & coutinho： pure samba magic! 🇧🇷⚡＂ ⚽",
     "mbappé x benzema ☠️🔥",
     "alexandre pato ⚽",
     "ils doit rejouer ailier🔥 kylian mbappé 🇫🇷🇫🇷 ⚽",
@@ -335,14 +355,14 @@
     "when raphinha loses control 😡 ⚽",
     "olise touch line skills 😮‍💨 ⚽",
     "the brain of pedri sees passes nobody else can! 🧠✨ ⚽",
-    "desiré doué vs liverpool ⚽"
+    "desiré doué vs liverpool ⚽",
+    "neymar jr 🇧🇷 ⚽",
+    "ronaldo vs barcelona ⚽",
+    "france wc 2026 🇫🇷 ⚽",
+    "when bellingham gets bored 🥱 ⚽"
   ],
   "recent_stars": [
     1,
-    1,
-    1,
-    1,
-    1,
     0,
     1,
     0,
@@ -354,16 +374,16 @@
     1,
     0,
     0,
+    1,
+    1,
+    1,
+    1,
     1,
     1,
     1,
     1
   ],
   "recent_long": [
-    "bellingham",
-    "mbappe",
-    "vinicius",
-    "cherki",
     "messi",
     "",
     "haaland",
@@ -379,6 +399,10 @@
     "raphinha",
     "olise",
     "pedri",
-    "doue"
+    "doue",
+    "neymar",
+    "ronaldo",
+    "mbappe",
+    "bellingham"
   ]
 }
