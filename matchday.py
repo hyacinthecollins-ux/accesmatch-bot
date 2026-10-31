@@ -87,7 +87,7 @@ RESULT_MAX_AGE_H = 6          # score final poste seulement si le coup d'envoi d
 MAX_NEW_ITEMS_PER_RUN = 30    # garde-fou : max 30 nouvelles affiches par passage (le rendu logos + VS est gratuit)
 MAX_IMAGES_PER_DAY = 80       # garde-fou : max 80 affiches par jour (UTC) ; le rendu logos + VS est gratuit
 KEEP_DAYS = 10                # on supprime les affiches de plus de 10 jours
-POST_TO_X = False             # (provisoire le temps du test des textes) affiches J-24h / H-1 sur X (monfootballfr), sans CTA
+POST_TO_X = True              # affiches J-24h + H-1 sur X (monfootballfr), sans CTA : 4 matchs max par jour
 X_CLUBS = {524, 516, 81, 86, 57, 64, 65, 61, 66, 5}   # les 10 clubs de Telegram : PSG, OM, Barça, Real, Arsenal, Liverpool, City, Chelsea, United, Bayern
 X_KINDS = ("xpreview", "x24", "x1")   # xpreview = ancien post unique 3 h avant (n'existe plus que dans l'historique)
 X_J1_MIN = 24 * 60            # 1er post X : 24 h avant le coup d'envoi
