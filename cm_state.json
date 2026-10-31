@@ -161,6 +161,15 @@
       "day": "2026-10-31",
       "source": "Goal",
       "at": "2026-10-30T23:00:51Z"
+    },
+    {
+      "id": "6ae55c1eceb491e585d4b6f0",
+      "kind": "preview",
+      "text": "🔥 Au programme du 31 octobre : 13h30 Chelsea - Man United, 14h Levante - Atleti, 15h30 Leverkusen - Stuttgart, 16h Man City - Brighton Hove. Grosse journée de foot, ça va claquer !\n\n#ManCity #MUFC",
+      "due": "2026-10-31T07:05Z",
+      "day": "2026-10-31",
+      "source": "football-data",
+      "at": "2026-10-31T03:10:22Z"
     }
   ],
   "slots": {
@@ -173,7 +182,8 @@
     "2026-10-30T14:00": "done",
     "2026-10-30T16:30": "done",
     "2026-10-30T20:15": "done",
-    "2026-10-30T22:35": "done"
+    "2026-10-30T22:35": "done",
+    "2026-10-31T08:05": "done"
   },
   "slot_tries": {
     "2026-10-27T20:15": 1,
@@ -185,7 +195,8 @@
     "2026-10-30T14:00": 1,
     "2026-10-30T16:30": 1,
     "2026-10-30T20:15": 1,
-    "2026-10-30T22:35": 1
+    "2026-10-30T22:35": 1,
+    "2026-10-31T08:05": 1
   },
   "reacted": [
     "559648",
@@ -204,18 +215,18 @@
     "e912c7e25f56",
     "ce68eff0eaac"
   ],
-  "counter": 18,
+  "counter": 19,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 27,
-        "in": 15278,
-        "out": 4032
+        "calls": 28,
+        "in": 15836,
+        "out": 4176
       },
       "gpt-6.1-sol": {
-        "calls": 25,
-        "in": 8548,
-        "out": 1228
+        "calls": 26,
+        "in": 8902,
+        "out": 1261
       }
     }
   },
