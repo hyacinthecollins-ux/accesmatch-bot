@@ -188,6 +188,15 @@
       "day": "2026-10-31",
       "source": "وكالة سبأ",
       "at": "2026-10-31T06:20:47Z"
+    },
+    {
+      "id": "6ae59916ceb491e585e28cb2",
+      "kind": "breaking",
+      "text": "🚨 Selon L’Équipe, deux jurés ont écarté Kane de leur top 10, trois Mbappé et quatre Yamal, tous sur le podium final du Ballon d’Or 2026. Des choix qui claquent ! Lequel vous surprend le plus ?\n\n#Mbappé #Yamal",
+      "due": "2026-10-31T07:40Z",
+      "day": "2026-10-31",
+      "source": "L'Equipe",
+      "at": "2026-10-31T07:30:30Z"
     }
   ],
   "slots": {
@@ -236,20 +245,21 @@
     "ce68eff0eaac",
     "ae4f81a8e698",
     "594666b4df8b",
-    "771ac1f99033"
+    "771ac1f99033",
+    "69c5db8ef8a4"
   ],
-  "counter": 21,
+  "counter": 22,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 34,
-        "in": 19502,
-        "out": 5227
+        "calls": 35,
+        "in": 20119,
+        "out": 5410
       },
       "gpt-6.1-sol": {
-        "calls": 30,
-        "in": 10312,
-        "out": 1524
+        "calls": 31,
+        "in": 10713,
+        "out": 1560
       }
     }
   },
@@ -263,7 +273,8 @@
     "Lamine Yamal et Kylian Mbappé même pas dans le top 10, Pacho et Cucurella devant Harry Kane ! Un vote absurde pour le Ballon d’Or dévoilé",
     "28 points d'écart entre Kane et Mbappé, Lamine Yamal distancé, Putellas confortablement élue : retrouvez les classements masculins et féminins du Ballon d'Or 2026",
     "THE OLISE TO LIVERPOOL DREAM IS OVER! + SZOBO & MUNOZ INJURY UPDATES! Liverpool Latest Transfer News",
-    "Manchester City et Arsenal affrontent respectivement Brighton et Liverpool lors de la 9e journée de la Premier League"
+    "Manchester City et Arsenal affrontent respectivement Brighton et Liverpool lors de la 9e journée de la Premier League",
+    "Ballon d'Or 2026 : ces jurés qui ont écarté Kane, Mbappé ou Yamal de leur top 10"
   ],
   "recent_stats": [
     "erling haaland",
