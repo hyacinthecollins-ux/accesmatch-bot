@@ -1266,7 +1266,8 @@
       "due": null,
       "created": "2026-10-31T02:03:50Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "sent"
     },
     "p560631": {
       "kind": "preview",
@@ -1279,7 +1280,8 @@
       "due": null,
       "created": "2026-10-31T02:03:50Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "sent"
     },
     "p559645": {
       "kind": "preview",
@@ -1292,7 +1294,8 @@
       "due": null,
       "created": "2026-10-31T02:03:50Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "sent"
     }
   }
 }
