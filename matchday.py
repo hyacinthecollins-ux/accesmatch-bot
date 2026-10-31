@@ -456,7 +456,10 @@ def player_tag(post, names):
                 return tag
     best = None
     for n in names:
-        for cand in (n, n.split()[-1]):
+        parts = n.split()
+        # un joueur est connu par son nom ; sauf João Pedro, Bruno Fernandes... connus par les deux
+        full_first = len(parts) == 2 and parts[0].lower() in {"joão", "joao", "bruno", "jean", "luis", "josé", "pedro", "diogo", "nuno", "marc"}
+        for cand in ((n, parts[-1]) if full_first or len(parts) > 2 else (parts[-1],)):
             pos = post.find(cand)
             if pos >= 0 and len(cand) >= 4 and (best is None or pos < best[0]):
                 best = (pos, cand)
