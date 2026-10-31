@@ -1263,91 +1263,199 @@
       "match_id": 560626,
       "label": "CHELSEA-MAN UNITED",
       "kickoff": "2026-10-31T12:30:00Z",
-      "status": "poster_ready",
+      "status": "scheduled",
       "poster": "posters/x560626-20261031.jpg",
-      "post_id": null,
-      "due": null,
+      "post_id": "6ae55950406ab8a01896447a",
+      "due": "2026-10-31T11:06:00Z",
       "created": "2026-10-31T02:58:08Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "text": "⏰ Chelsea-Man United, choc de Premier League : coup d’envoi dans 1h24, à 13h30 ! João Pedro (5 buts, 3 passes décisives) et Bryan Mbeumo (4 buts) sont attendus. Qui gagne ?\n\n#CFC #MUFC #PremierLeague #JoãoPedro",
+      "text_src": "IA"
     },
     "h560623": {
       "kind": "x1",
       "match_id": 560623,
       "label": "MAN CITY-BRIGHTON HOVE",
       "kickoff": "2026-10-31T15:00:00Z",
-      "status": "poster_ready",
+      "status": "scheduled",
       "poster": "posters/x560623-20261031.jpg",
-      "post_id": null,
-      "due": null,
+      "post_id": "6ae559571891472093ae76a8",
+      "due": "2026-10-31T14:00:00Z",
       "created": "2026-10-31T02:58:08Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "text": "⏰ Dans 1 heure, Man City reçoit Brighton Hove en Premier League : coup d’envoi à 16h (heure de Paris). Haaland (9 buts), Cherki (4 buts, 2 passes décisives) et Groß (3 buts, 4 passes décisives) à surveiller. Qui gagne ?\n\n#MCFC #BrightonHove #PremierLeague #Haaland",
+      "text_src": "IA"
     },
     "h565845": {
       "kind": "x1",
       "match_id": 565845,
       "label": "BAYERN-DORTMUND",
       "kickoff": "2026-10-31T17:30:00Z",
-      "status": "poster_ready",
+      "status": "scheduled",
       "poster": "posters/x565845-20261031.jpg",
-      "post_id": null,
-      "due": null,
+      "post_id": "6ae55961ceb491e585d3acca",
+      "due": "2026-10-31T16:30:00Z",
       "created": "2026-10-31T02:58:08Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "text": "⏰ Dans 1 heure, Bayern-Dortmund en Bundesliga : coup d’envoi à 18h30 ! Michael Olise (6 buts, 3 passes décisives) et Sehrou Guirassy (2 buts, 2 passes décisives) à surveiller. Ton score ?\n\n#FCBayern #Dortmund #Bundesliga #Olise",
+      "text_src": "IA"
     },
     "h564732": {
       "kind": "x1",
       "match_id": 564732,
       "label": "BARÇA-ALAVÉS",
       "kickoff": "2026-10-31T20:00:00Z",
-      "status": "poster_ready",
+      "status": "scheduled",
       "poster": "posters/x564732-20261031.jpg",
-      "post_id": null,
-      "due": null,
+      "post_id": "6ae559a7eaa24d6f9a512e42",
+      "due": "2026-10-31T19:00:00Z",
       "created": "2026-10-31T02:58:08Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "text": "⏰ Barça-Alavés, coup d’envoi dans 1 heure, à 21h ! Raphinha (13 buts, 2 passes) et Lamine Yamal (8 buts, 6 passes) sont attendus. Alavés vient gâcher la fête ? Ton score ?\n\n#FCBarcelona #Alavés #LaLiga #Yamal",
+      "text_src": "IA"
     },
     "a564734": {
       "kind": "x24",
       "match_id": 564734,
       "label": "SANTANDER-REAL MADRID",
       "kickoff": "2026-11-01T15:15:00Z",
-      "status": "poster_ready",
+      "status": "scheduled",
       "poster": "posters/x564734-20261101.jpg",
-      "post_id": null,
-      "due": null,
+      "post_id": "6ae559b0b84259308bb4b33e",
+      "due": "2026-10-31T15:15:00Z",
       "created": "2026-10-31T02:58:08Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "text": "🔥 Santander reçoit le Real Madrid demain à 16h15 (heure de Paris) en Liga. Yassir Zabiri (8 buts en Liga cette saison) face à Kylian Mbappé (11 buts et 2 passes décisives) : ça sent la poudre ! Qui gagne ?\n\n#Santander #RealMadrid #LaLiga #Mbappé",
+      "text_src": "IA"
     },
     "a560631": {
       "kind": "x24",
       "match_id": 560631,
       "label": "LIVERPOOL-ARSENAL",
       "kickoff": "2026-11-01T16:30:00Z",
-      "status": "poster_ready",
+      "status": "scheduled",
       "poster": "posters/x560631-20261101.jpg",
-      "post_id": null,
-      "due": null,
+      "post_id": "6ae559baeaa24d6f9a514613",
+      "due": "2026-10-31T16:38:00Z",
       "created": "2026-10-31T02:58:08Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "text": "🔥 Demain à 17h30, Liverpool reçoit Arsenal en Premier League : choc entre deux très grosses équipes ! Alexander Isak, 6 buts, et Bukayo Saka, 3, sont à surveiller. Qui gagne ?\n\n#LFC #Arsenal #PremierLeague #AlexanderIsak",
+      "text_src": "IA"
     },
     "a559645": {
       "kind": "x24",
       "match_id": 559645,
       "label": "OM-TOULOUSE",
       "kickoff": "2026-11-01T19:45:00Z",
-      "status": "poster_ready",
+      "status": "scheduled",
       "poster": "posters/x559645-20261101.jpg",
-      "post_id": null,
-      "due": null,
+      "post_id": "6ae55a041891472093aec1f4",
+      "due": "2026-10-31T19:45:00Z",
       "created": "2026-10-31T02:58:08Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "text": "🔥 Demain à 20h45, l’OM reçoit Toulouse en Ligue 1. Amine Gouiri (5 buts, 2 passes décisives) et Casper Tengstedt (5 buts, 1 passe) à surveiller. Ça va cogner : qui gagne ?\n\n#OM #Toulouse #Ligue1 #AmineGouiri",
+      "text_src": "IA"
     }
-  }
+  },
+  "squads": {
+    "61": {
+      "t": "2026-10-31T02:58:16Z",
+      "stars": []
+    },
+    "66": {
+      "t": "2026-10-31T02:58:16Z",
+      "stars": []
+    },
+    "65": {
+      "t": "2026-10-31T02:58:16Z",
+      "stars": [
+        "Phil Foden",
+        "Rayan Cherki",
+        "Erling Haaland"
+      ]
+    },
+    "397": {
+      "t": "2026-10-31T02:58:16Z",
+      "stars": []
+    },
+    "5": {
+      "t": "2026-10-31T02:58:16Z",
+      "stars": [
+        "Jamal Musiala",
+        "Harry Kane",
+        "Michael Olise"
+      ]
+    },
+    "4": {
+      "t": "2026-10-31T02:58:16Z",
+      "stars": [
+        "Jobe Bellingham"
+      ]
+    },
+    "81": {
+      "t": "2026-10-31T02:58:16Z",
+      "stars": [
+        "Rodri",
+        "Pedri",
+        "Raphinha",
+        "Lamine Yamal"
+      ]
+    },
+    "263": {
+      "t": "2026-10-31T02:58:16Z",
+      "stars": []
+    },
+    "5335": {
+      "t": "2026-10-31T02:58:16Z",
+      "stars": []
+    },
+    "86": {
+      "t": "2026-10-31T02:58:16Z",
+      "stars": [
+        "Eduardo Camavinga",
+        "Jude Bellingham",
+        "Vinicius Junior",
+        "Kylian Mbappé"
+      ]
+    },
+    "64": {
+      "t": "2026-10-31T02:58:16Z",
+      "stars": [
+        "Florian Wirtz",
+        "Bradley Barcola"
+      ]
+    },
+    "57": {
+      "t": "2026-10-31T02:58:16Z",
+      "stars": [
+        "Bukayo Saka"
+      ]
+    },
+    "516": {
+      "t": "2026-10-31T02:58:16Z",
+      "stars": []
+    },
+    "511": {
+      "t": "2026-10-31T02:58:16Z",
+      "stars": []
+    }
+  },
+  "llm_calls": 14,
+  "llm_posts": 7,
+  "x_texts": [
+    "⏰ Chelsea-Man United, choc de Premier League : coup d’envoi dans 1h24, à 13h30 ! João Pedro (5 buts, 3 passes décisives) et Bryan Mbeumo (4 buts) sont attendus. Qui gagne ?",
+    "⏰ Dans 1 heure, Man City reçoit Brighton Hove en Premier League : coup d’envoi à 16h (heure de Paris). Haaland (9 buts), Cherki (4 buts, 2 passes décisives) et Groß (3 buts, 4 passes décisives) à surveiller. Qui gagne ?",
+    "⏰ Dans 1 heure, Bayern-Dortmund en Bundesliga : coup d’envoi à 18h30 ! Michael Olise (6 buts, 3 passes décisives) et Sehrou Guirassy (2 buts, 2 passes décisives) à surveiller. Ton score ?",
+    "⏰ Barça-Alavés, coup d’envoi dans 1 heure, à 21h ! Raphinha (13 buts, 2 passes) et Lamine Yamal (8 buts, 6 passes) sont attendus. Alavés vient gâcher la fête ? Ton score ?",
+    "🔥 Santander reçoit le Real Madrid demain à 16h15 (heure de Paris) en Liga. Yassir Zabiri (8 buts en Liga cette saison) face à Kylian Mbappé (11 buts et 2 passes décisives) : ça sent la poudre ! Qui gagne ?",
+    "🔥 Demain à 17h30, Liverpool reçoit Arsenal en Premier League : choc entre deux très grosses équipes ! Alexander Isak, 6 buts, et Bukayo Saka, 3, sont à surveiller. Qui gagne ?",
+    "🔥 Demain à 20h45, l’OM reçoit Toulouse en Ligue 1. Amine Gouiri (5 buts, 2 passes décisives) et Casper Tengstedt (5 buts, 1 passe) à surveiller. Ça va cogner : qui gagne ?"
+  ]
 }
