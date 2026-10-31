@@ -599,11 +599,11 @@ def too_similar(post, state):
     return False
 
 
-def local_check(post, facts, state):
+def local_check(post, facts, state, max_chars=None):
     """Controle par le code. Renvoie la raison du refus, ou None si le post est correct."""
     if not post:
         return "post vide"
-    if len(post) < 40 or len(post) > MAX_POST_CHARS:
+    if len(post) < 40 or len(post) > (max_chars or MAX_POST_CHARS):
         return f"longueur {len(post)}"
     if re.search(r"https?:|www\.|\.com\b|\.fr\b|@|#", post):
         return "lien, mention ou hashtag"
@@ -650,13 +650,17 @@ def note(msg):
 _REJECTS = []       # derniers refus (affiches par --samples pour comprendre pourquoi un post est jete)
 
 
-def generate(kind, instruction, facts, cfg, state, comp_code=None):
-    """Un post valide (texte final avec hashtags) ou None. Jamais d'exception pour un simple refus de contenu."""
-    ending = ("Termine par une question courte qui donne envie de repondre."
-              if kind == "debate" or (state["counter"] % 3 == 0 and kind in ("news", "breaking", "reaction", "stat"))
-              else "Pas de question finale : termine sur une phrase qui claque.")
+def generate(kind, instruction, facts, cfg, state, comp_code=None, ending=None, tags=None, max_chars=None):
+    """Un post valide (texte final avec hashtags) ou None. Jamais d'exception pour un simple refus de contenu.
+    ending : consigne de fin de post ("" = deja dans l'instruction) ; tags : liste de hashtags, ou fonction(post) -> liste
+    (par defaut : deduits du texte) ; max_chars : longueur maximale du texte hors hashtags."""
+    if ending is None:
+        ending = ("Termine par une question courte qui donne envie de repondre."
+                  if kind == "debate" or (state["counter"] % 3 == 0 and kind in ("news", "breaking", "reaction", "stat"))
+                  else "Pas de question finale : termine sur une phrase qui claque.")
     style = f"\nStyle du jour : {STYLES[state['counter'] % len(STYLES)]}." if kind in ("debate", "news") else ""
-    user = (f"{instruction}\n{ending}{style}\n\nFAITS :\n" + "\n".join(f"- {f}" for f in facts))
+    user = (f"{instruction}\n" + (f"{ending}\n" if ending else "") + f"{style}\nFAITS :\n"
+            + "\n".join(f"- {f}" for f in facts))
     for attempt in range(2):
         try:
             out = llm_json([{"role": "system", "content": SYSTEM_PROMPT}, {"role": "user", "content": user}],
@@ -665,7 +669,7 @@ def generate(kind, instruction, facts, cfg, state, comp_code=None):
             log(f"   reponse inexploitable : {e}")
             continue
         post = re.sub(r"\s+", " ", str(out.get("post", ""))).strip().strip('"').strip("«» ").strip()
-        why = local_check(post, facts, state)
+        why = local_check(post, facts, state, max_chars)
         if why:
             log(f"   essai {attempt + 1} refuse ({why}) : {post[:90]}")
             _REJECTS.append(f"{why} : {post[:110]}")
@@ -679,8 +683,8 @@ def generate(kind, instruction, facts, cfg, state, comp_code=None):
             log(f"   essai {attempt + 1} refuse par la relecture ({raison}) : {post[:90]}")
             _REJECTS.append(f"relecture ({raison}) : {post[:110]}")
             continue
-        tags = hashtags_for(post, comp_code)
-        return (post + ("\n\n" + " ".join(tags) if tags else "")).strip()
+        tg = tags(post) if callable(tags) else (tags if tags is not None else hashtags_for(post, comp_code))
+        return (post + ("\n\n" + " ".join(tg) if tg else "")).strip()
     return None
 
 

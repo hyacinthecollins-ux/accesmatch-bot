@@ -3,7 +3,13 @@ name: AccesMatch MatchDay
 on:
   schedule:
     - cron: "*/30 * * * *"   # toutes les 30 minutes
-  workflow_dispatch:          # bouton "Run workflow" pour lancer à la main
+  workflow_dispatch:          # bouton "Run workflow" pour lancer à la main (le robot community manager le réveille aussi)
+    inputs:
+      mode:
+        description: "normal = tourne pour de vrai | xtest = écrit les posts X J-24h/H-1 des prochains matchs, sans rien programmer | dry-run = simule"
+        type: choice
+        options: [normal, xtest, dry-run]
+        default: normal
 
 permissions:
   contents: write
@@ -34,10 +40,20 @@ jobs:
           sudo apt-get install -y libcairo2 > /dev/null
           pip install -r requirements.txt
 
+      - name: Test des textes X (rien n'est programmé)
+        if: ${{ inputs.mode == 'xtest' }}
+        run: python matchday.py xtest
+
+      - name: Simulation (rien n'est programmé ni envoyé)
+        if: ${{ inputs.mode == 'dry-run' }}
+        run: python matchday.py all --dry-run
+
       - name: 1/ Matchs + affiches
+        if: ${{ inputs.mode != 'xtest' && inputs.mode != 'dry-run' }}
         run: python matchday.py prepare
 
       - name: Sauvegarde des affiches (nécessaire pour que Buffer les récupère)
+        if: ${{ inputs.mode != 'xtest' && inputs.mode != 'dry-run' }}
         run: |
           mkdir -p posters crests
           git config user.name "accesmatch-bot"
@@ -50,9 +66,11 @@ jobs:
           fi
 
       - name: 2/ Envoi vers Buffer
+        if: ${{ inputs.mode != 'xtest' && inputs.mode != 'dry-run' }}
         run: python matchday.py publish
 
       - name: Sauvegarde de l'état
+        if: ${{ inputs.mode != 'xtest' && inputs.mode != 'dry-run' }}
         run: |
           git add posters crests state.json
           if ! git diff --cached --quiet; then

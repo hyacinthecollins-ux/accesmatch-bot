@@ -13,6 +13,7 @@ on:
 
 permissions:
   contents: write
+  actions: write            # pour réveiller le robot d'affiches (matchday.yml)
 
 concurrency:
   group: cm
@@ -51,4 +52,16 @@ jobs:
             git commit -m "etat cm"
             git pull --rebase
             git push
+          fi
+
+      # Le déclencheur de GitHub pour les affiches est lent (plusieurs heures) : ce robot-ci est réveillé toutes les
+      # 10 min par le Worker Cloudflare, il réveille donc les affiches (J-24h, H-1, Telegram) une fois par demi-heure.
+      - name: Réveil du robot d'affiches
+        if: always() && inputs.mode != 'dry-run' && inputs.mode != 'samples' && inputs.mode != 'diag'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          m=$(date -u +%-M)
+          if [ $((m % 30)) -lt 10 ]; then
+            gh workflow run matchday.yml --ref main || echo "réveil des affiches impossible"
           fi
