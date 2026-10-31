@@ -29,6 +29,8 @@ jobs:
       FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main   # toujours la dernière version : une exécution en attente ne doit pas repartir d'un état périmé (doublons)
 
       - uses: actions/setup-python@v5
         with:

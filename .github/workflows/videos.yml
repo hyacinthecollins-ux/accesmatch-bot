@@ -39,6 +39,8 @@ jobs:
       VQ_ACCOUNT: monfootballfr   # compte X servi par ce robot (voir ACCOUNTS dans videoqueue.py)
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main   # toujours la dernière version : une exécution en attente ne doit pas repartir d'un état périmé (doublons)
 
       - uses: actions/setup-python@v5
         with:

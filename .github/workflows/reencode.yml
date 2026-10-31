@@ -38,6 +38,8 @@ jobs:
       BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main   # toujours la dernière version : une exécution en attente ne doit pas repartir d'un état périmé (doublons)
 
       - uses: actions/setup-python@v5
         with:

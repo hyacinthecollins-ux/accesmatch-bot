@@ -30,6 +30,8 @@ jobs:
       TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main   # toujours la dernière version : une exécution en attente ne doit pas repartir d'un état périmé (doublons)
 
       - uses: actions/setup-python@v5
         with:
@@ -70,7 +72,7 @@ jobs:
         run: python matchday.py publish
 
       - name: Sauvegarde de l'état
-        if: ${{ inputs.mode != 'xtest' && inputs.mode != 'dry-run' }}
+        if: ${{ always() && inputs.mode != 'xtest' && inputs.mode != 'dry-run' }}
         run: |
           git add posters crests state.json
           if ! git diff --cached --quiet; then
