@@ -1383,13 +1383,15 @@
       "match_id": 560631,
       "label": "LIVERPOOL-ARSENAL",
       "kickoff": "2026-11-01T16:30:00Z",
-      "status": "poster_ready",
+      "status": "scheduled",
       "poster": "posters/x560631-20261101.jpg",
-      "post_id": null,
-      "due": null,
+      "post_id": "6ae5ed95ab019b908705d7ac",
+      "due": "2026-11-01T15:30:00Z",
       "created": "2026-10-31T13:30:49Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "text": "⏰ Dans 1 heure, Liverpool-Arsenal : coup d’envoi à 17h30, heure de Paris. Un choc de Premier League, avec Alexander Isak (6 buts) et Bukayo Saka (3) à surveiller. Soirée de gala : qui gagne ?\n\n#LFC #Arsenal #PremierLeague #Isak",
+      "text_src": "IA"
     }
   },
   "squads": {
@@ -1475,8 +1477,8 @@
       "stars": []
     }
   },
-  "llm_calls": 16,
-  "llm_posts": 8,
+  "llm_calls": 18,
+  "llm_posts": 9,
   "x_texts": [
     "⏰ Chelsea-Man United, choc de Premier League : coup d’envoi dans 1h24, à 13h30 ! João Pedro (5 buts, 3 passes décisives) et Bryan Mbeumo (4 buts) sont attendus. Qui gagne ?",
     "⏰ Dans 1 heure, Man City reçoit Brighton Hove en Premier League : coup d’envoi à 16h (heure de Paris). Haaland (9 buts), Cherki (4 buts, 2 passes décisives) et Groß (3 buts, 4 passes décisives) à surveiller. Qui gagne ?",
@@ -1485,6 +1487,7 @@
     "🔥 Santander reçoit le Real Madrid demain à 16h15 (heure de Paris) en Liga. Yassir Zabiri (8 buts en Liga cette saison) face à Kylian Mbappé (11 buts et 2 passes décisives) : ça sent la poudre ! Qui gagne ?",
     "🔥 Demain à 17h30, Liverpool reçoit Arsenal en Premier League : choc entre deux très grosses équipes ! Alexander Isak, 6 buts, et Bukayo Saka, 3, sont à surveiller. Qui gagne ?",
     "🔥 Demain à 20h45, l’OM reçoit Toulouse en Ligue 1. Amine Gouiri (5 buts, 2 passes décisives) et Casper Tengstedt (5 buts, 1 passe) à surveiller. Ça va cogner : qui gagne ?",
-    "⏰ Dans 1 heure, Santander reçoit le Real Madrid en Liga : coup d’envoi à 16h15. Yassir Zabiri (8 buts) et Kylian Mbappé (11 buts) sont à surveiller. Qui gagne ?"
+    "⏰ Dans 1 heure, Santander reçoit le Real Madrid en Liga : coup d’envoi à 16h15. Yassir Zabiri (8 buts) et Kylian Mbappé (11 buts) sont à surveiller. Qui gagne ?",
+    "⏰ Dans 1 heure, Liverpool-Arsenal : coup d’envoi à 17h30, heure de Paris. Un choc de Premier League, avec Alexander Isak (6 buts) et Bukayo Saka (3) à surveiller. Soirée de gala : qui gagne ?"
   ]
 }
