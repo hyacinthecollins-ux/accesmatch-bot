@@ -269,6 +269,15 @@
       "day": "2026-11-01",
       "source": "Match termine (Liga) : Barça 6-1 Alavés",
       "at": "2026-10-31T22:10:24Z"
+    },
+    {
+      "id": "6ae675661ee172cd6dcb02c3",
+      "kind": "breaking",
+      "text": "🚨 Selon Sport, Lamine Yamal et Raphinha ont signé un doublé face à Alavés, qui paie la note du Clasico perdu par le Barça. Quelle réponse des deux cracks !\n\n#Yamal #Raphinha",
+      "due": "2026-10-31T23:20Z",
+      "day": "2026-11-01",
+      "source": "Sport",
+      "at": "2026-10-31T23:10:30Z"
     }
   ],
   "slots": {
@@ -336,20 +345,21 @@
     "ae4f81a8e698",
     "594666b4df8b",
     "771ac1f99033",
-    "69c5db8ef8a4"
+    "69c5db8ef8a4",
+    "d6004102ac3b"
   ],
-  "counter": 30,
+  "counter": 31,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 54,
-        "in": 30523,
-        "out": 7804
+        "calls": 55,
+        "in": 31070,
+        "out": 8007
       },
       "gpt-6.1-sol": {
-        "calls": 50,
-        "in": 16911,
-        "out": 2628
+        "calls": 51,
+        "in": 17228,
+        "out": 2818
       }
     }
   },
@@ -364,7 +374,8 @@
     "28 points d'écart entre Kane et Mbappé, Lamine Yamal distancé, Putellas confortablement élue : retrouvez les classements masculins et féminins du Ballon d'Or 2026",
     "THE OLISE TO LIVERPOOL DREAM IS OVER! + SZOBO & MUNOZ INJURY UPDATES! Liverpool Latest Transfer News",
     "Manchester City et Arsenal affrontent respectivement Brighton et Liverpool lors de la 9e journée de la Premier League",
-    "Ballon d'Or 2026 : ces jurés qui ont écarté Kane, Mbappé ou Yamal de leur top 10"
+    "Ballon d'Or 2026 : ces jurés qui ont écarté Kane, Mbappé ou Yamal de leur top 10",
+    "Barça : Lamine Yamal et Raphinha doublés, Alavés paie la note du Clasico perdu"
   ],
   "recent_stats": [
     "erling haaland",
