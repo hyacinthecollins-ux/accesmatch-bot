@@ -260,6 +260,15 @@
       "day": "2026-10-31",
       "source": "Match termine (Ligue 1) : Troyes 2-0 Le Mans",
       "at": "2026-10-31T21:50:29Z"
+    },
+    {
+      "id": "6ae66750ab019b9087295d00",
+      "kind": "reaction",
+      "text": "⏱️ Barça 6-1 Alavés ! Une victoire énorme pour les Blaugrana, déjà devant 4-0 à la pause. Le Barça a frappé fort et fait parler la poudre.\n\n#FCBarcelona #LaLiga",
+      "due": "2026-10-31T23:00Z",
+      "day": "2026-11-01",
+      "source": "Match termine (Liga) : Barça 6-1 Alavés",
+      "at": "2026-10-31T22:10:24Z"
     }
   ],
   "slots": {
@@ -311,7 +320,8 @@
     "560627",
     "565845",
     "558548",
-    "559643"
+    "559643",
+    "564732"
   ],
   "used_news": [
     "0323d7e5074e",
@@ -328,18 +338,18 @@
     "771ac1f99033",
     "69c5db8ef8a4"
   ],
-  "counter": 29,
+  "counter": 30,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 53,
-        "in": 29989,
-        "out": 7750
+        "calls": 54,
+        "in": 30523,
+        "out": 7804
       },
       "gpt-6.1-sol": {
-        "calls": 49,
-        "in": 16601,
-        "out": 2551
+        "calls": 50,
+        "in": 16911,
+        "out": 2628
       }
     }
   },
