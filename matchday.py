@@ -397,6 +397,13 @@ def get_cm():
     return _CM or None
 
 
+def disp(side_):
+    """Nom du club tel qu'on l'écrit dans un post : PSG, OM, Real Madrid, Barça, Man City, Toulouse..."""
+    if side_.get("raw_short"):
+        return side_["raw_short"]
+    return side_["short"] if side_["short"] in ("PSG", "OM") else side_["short"].title()
+
+
 def when_word(kickoff, due):
     """Quand a lieu le match, vu depuis l'heure de publication : 'demain', 'ce soir', 'samedi 31'."""
     k, d = kickoff.astimezone(AUDIENCE_TZ), due.astimezone(AUDIENCE_TZ)
@@ -439,20 +446,32 @@ def match_tags(m):
     return tags
 
 
-def x_tags_for(m):
-    """Fonction(post) -> hashtags : les 3 de base + le joueur cité dans le texte (#Mbappé...), 4 au maximum."""
+def player_tag(post, names):
+    """Hashtag du premier joueur cité dans le post (#Mbappé pour les stars connues, sinon #Gouiri, #JoãoPedro...)."""
+    cm = get_cm()
+    if cm:
+        text = " " + re.sub(r"[^a-z0-9]+", " ", cm.norm(post)) + " "
+        for words, tag in cm.TAGS_BY_KEYWORD:
+            if cm.norm(words[0]) in cm.STAR_CANON and any(f" {w} " in text for w in words):
+                return tag
+    best = None
+    for n in names:
+        for cand in (n, n.split()[-1]):
+            pos = post.find(cand)
+            if pos >= 0 and len(cand) >= 4 and (best is None or pos < best[0]):
+                best = (pos, cand)
+    return "#" + re.sub(r"[^A-Za-zÀ-ÿ0-9]", "", best[1]) if best else None
+
+
+def x_tags_for(m, names=()):
+    """Fonction(post) -> hashtags : les 3 de base (club, club, compétition) + le joueur cité, 4 au maximum."""
     base = match_tags(m)
 
     def f(post):
         tags = list(base)
-        cm = get_cm()
-        if cm:
-            for words, tag in cm.TAGS_BY_KEYWORD:
-                if cm.norm(words[0]) in cm.STAR_CANON and tag not in tags:     # étiquettes de joueurs seulement
-                    text = " " + re.sub(r"[^a-z0-9]+", " ", cm.norm(post)) + " "
-                    if any(f" {w} " in text for w in words):
-                        tags.append(tag)
-                        break
+        pt = player_tag(post, names)
+        if pt and pt not in tags:
+            tags.append(pt)
         tags = tags[:4]
         while len(tags) > 2 and len(post) + 2 + len(" ".join(tags)) > 276:     # 280 caractères max sur X
             tags.pop()
@@ -539,7 +558,7 @@ def players_facts(m, state, now):
             if n not in have and len(picks) < 3:
                 picks.append((n, n))
         if picks:
-            facts.append(f"Joueurs à suivre, {s_['short']} : " + ", ".join(t for _, t in picks))
+            facts.append(f"Joueurs à suivre, {disp(s_)} : " + ", ".join(t for _, t in picks))
             names += [n for n, _ in picks]
     return facts, names
 
@@ -548,7 +567,7 @@ def x_facts(m, kind, due, state, now):
     h, a = m["home"], m["away"]
     k = m["kickoff"]
     facts = [f"Match : {h['long']} (à domicile) contre {a['long']}",
-             f"Noms courts à utiliser : {h['short']} et {a['short']}",
+             f"Noms à utiliser dans le post : {disp(h)} et {disp(a)}",
              f"Compétition : {m['comp_fr']}"]
     if kind == "x1":
         facts += [f"Heure du coup d'envoi : {fr_hour(k)} (heure de Paris)", f"Le coup d'envoi est {delta_word(k, due)}"]
@@ -560,25 +579,31 @@ def x_facts(m, kind, due, state, now):
     return facts + pf, names
 
 
+TONES = ["intensite maximale, phrases courtes et nerveuses", "complice de supporter, bon enfant",
+         "soiree de gala, on annonce un gros morceau", "taquin et confiant, avec une petite vanne bon enfant",
+         "tension d'avant-match, ca sent la poudre"]
 X_INSTR = {
     "x24": ("Ecris le post de chauffe 24 h avant le match (il accompagne l'affiche du match) : accroche \"🔥\" ou \"🚨\", "
             "annonce le match avec la formulation de date indiquee dans les faits (\"Quand\") et l'heure, cite 2 ou 3 joueurs "
             "des faits, avec leur chiffre exact s'il y en a un. On ne connait pas les compositions : un joueur est \"a "
             "suivre\", \"attendu\" ou \"a surveiller\", JAMAIS annonce titulaire ni forcement present. Monte la pression "
             "avec une phrase qui claque (sans rien inventer), puis termine par une question courte qui fait reagir "
-            "(ton score ? ton buteur ? qui gagne ?). N'ecris jamais le mot \"pronostic\"."),
+            "(ton score ? ton buteur ? qui gagne ?). N'ecris jamais le mot \"pronostic\". Evite les formules usees "
+            "(\"la tension monte\", \"ca promet\", \"a suivre de pres\") et ecris les noms de clubs comme dans les faits "
+            "(jamais en majuscules)."),
     "x1": ("Ecris le post de chauffe a 1 h du coup d'envoi (il accompagne l'affiche du match) : accroche \"⏰\" ou \"🚨\", "
            "annonce que le coup d'envoi est dans le delai indique dans les faits, avec l'heure, cite 2 ou 3 joueurs des "
            "faits, avec leur chiffre exact s'il y en a un. On ne connait pas les compositions : un joueur est \"a suivre\", "
            "\"attendu\" ou \"a surveiller\", JAMAIS annonce titulaire ni forcement present. Ambiance d'avant-match, "
            "tension qui monte, puis termine par une question courte qui fait reagir (ton score ? ton buteur ? "
-           "qui gagne ?). N'ecris jamais le mot \"pronostic\"."),
+           "qui gagne ?). N'ecris jamais le mot \"pronostic\". Evite les formules usees (\"la tension monte\", "
+           "\"ca promet\", \"a suivre de pres\") et ecris les noms de clubs comme dans les faits (jamais en majuscules)."),
 }
 
 
 def fallback_text(m, kind, due, names):
     """Texte de secours (sans IA) : que des infos exactes, avec les noms de joueurs quand on en a."""
-    title = f"{m['home']['short']} × {m['away']['short']}"
+    title = f"{disp(m['home'])} × {disp(m['away'])}"
     k = m["kickoff"]
     rng = random.Random(f"{m['id']}-{kind}")
     who = [short_name(n) for n in dict.fromkeys(names)][:3]
@@ -605,14 +630,16 @@ def build_post_text(m, kind, due, state, now=None, quiet=False):
     texte de secours si l'IA est indisponible ou refuse. Hashtags toujours ajoutés (3 à 4)."""
     now = now or now_utc()
     facts, names = x_facts(m, kind, due, state, now)
-    tags = x_tags_for(m)
+    tags = x_tags_for(m, names)
     text = None
     cm = get_cm()
     if cm and OPENAI_API_KEY:
         hs = {"usage": {"by_model": {}}, "counter": int(m["id"]) % 97,
               "posts": [{"text": t} for t in state.get("x_texts", [])[-12:]]}
         try:
-            text = cm.generate("x_" + kind, X_INSTR[kind], facts, cm.load_config(), hs, comp_code=m["comp_code"],
+            tone = TONES[(int(m["id"]) + (kind == "x1")) % len(TONES)]
+            text = cm.generate("x_" + kind, X_INSTR[kind] + f" Tonalite : {tone}.", facts, cm.load_config(), hs,
+                               comp_code=m["comp_code"],
                                ending="", tags=tags, max_chars=X_TEXT_MAX)
         except Exception as e:  # noqa: BLE001 - jamais bloquer l'affiche : on prend le texte de secours
             log(f"   ⚠️ rédaction IA impossible ({type(e).__name__}: {str(e)[:120]}) : texte de secours")
@@ -623,7 +650,7 @@ def build_post_text(m, kind, due, state, now=None, quiet=False):
         src = "IA"
     else:
         post = fallback_text(m, kind, due, names)
-        tg = tags("".join([post]))
+        tg = tags(post)
         text = (post + "\n\n" + " ".join(tg)).strip()
         src = "secours"
     if not quiet:
