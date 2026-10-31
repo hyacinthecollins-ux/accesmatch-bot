@@ -1392,6 +1392,19 @@
       "design": "crests-v1",
       "text": "⏰ Dans 1 heure, Liverpool-Arsenal : coup d’envoi à 17h30, heure de Paris. Un choc de Premier League, avec Alexander Isak (6 buts) et Bukayo Saka (3) à surveiller. Soirée de gala : qui gagne ?\n\n#LFC #Arsenal #PremierLeague #Isak",
       "text_src": "IA"
+    },
+    "r560626": {
+      "kind": "result",
+      "match_id": 560626,
+      "label": "CHELSEA-MAN UNITED",
+      "kickoff": "2026-10-31T12:30:00Z",
+      "status": "poster_ready",
+      "poster": "posters/r560626-20261031.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-10-31T15:00:58Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   },
   "squads": {
