@@ -215,6 +215,15 @@
       "day": "2026-10-31",
       "source": "football-data PD",
       "at": "2026-10-31T11:30:31Z"
+    },
+    {
+      "id": "6ae6073cab019b90870d4b72",
+      "kind": "preview",
+      "text": "🔥 Au programme aujourd’hui : 18h00 Udinese-Roma, 18h30 Tottenham-Crystal Palace et Bayern-Dortmund, 20h45 Milan-Inter. Une soirée de foot qui s’annonce énorme !\n\n#FCBayern",
+      "due": "2026-10-31T20:15Z",
+      "day": "2026-10-31",
+      "source": "football-data",
+      "at": "2026-10-31T15:20:29Z"
     }
   ],
   "slots": {
@@ -231,7 +240,8 @@
     "2026-10-31T08:05": "done",
     "2026-10-31T10:45": "done",
     "2026-10-31T14:00": "done",
-    "2026-10-31T16:30": "done"
+    "2026-10-31T16:30": "done",
+    "2026-10-31T20:15": "done"
   },
   "slot_tries": {
     "2026-10-27T20:15": 1,
@@ -247,7 +257,8 @@
     "2026-10-31T08:05": 1,
     "2026-10-31T10:45": 1,
     "2026-10-31T14:00": 1,
-    "2026-10-31T16:30": 1
+    "2026-10-31T16:30": 1,
+    "2026-10-31T20:15": 1
   },
   "reacted": [
     "559648",
@@ -272,18 +283,18 @@
     "771ac1f99033",
     "69c5db8ef8a4"
   ],
-  "counter": 24,
+  "counter": 25,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 41,
-        "in": 23546,
-        "out": 6382
+        "calls": 42,
+        "in": 24099,
+        "out": 6531
       },
       "gpt-6.1-sol": {
-        "calls": 37,
-        "in": 12811,
-        "out": 1945
+        "calls": 38,
+        "in": 13150,
+        "out": 1980
       }
     }
   },
