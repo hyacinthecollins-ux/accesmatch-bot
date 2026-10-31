@@ -197,6 +197,15 @@
       "day": "2026-10-31",
       "source": "L'Equipe",
       "at": "2026-10-31T07:30:30Z"
+    },
+    {
+      "id": "6ae5ae37b84259308bc8cecf",
+      "kind": "stat",
+      "text": "📊 Michael Olise est 2e du classement des buteurs de Bundesliga avec 6 buts et 3 passes décisives en 7 matchs. Le Bayern a trouvé un sacré chef d’orchestre !\n\n#Olise #FCBayern",
+      "due": "2026-10-31T13:00Z",
+      "day": "2026-10-31",
+      "source": "football-data BL1",
+      "at": "2026-10-31T09:00:39Z"
     }
   ],
   "slots": {
@@ -211,7 +220,8 @@
     "2026-10-30T20:15": "done",
     "2026-10-30T22:35": "done",
     "2026-10-31T08:05": "done",
-    "2026-10-31T10:45": "done"
+    "2026-10-31T10:45": "done",
+    "2026-10-31T14:00": "done"
   },
   "slot_tries": {
     "2026-10-27T20:15": 1,
@@ -225,7 +235,8 @@
     "2026-10-30T20:15": 1,
     "2026-10-30T22:35": 1,
     "2026-10-31T08:05": 1,
-    "2026-10-31T10:45": 1
+    "2026-10-31T10:45": 1,
+    "2026-10-31T14:00": 1
   },
   "reacted": [
     "559648",
@@ -248,18 +259,18 @@
     "771ac1f99033",
     "69c5db8ef8a4"
   ],
-  "counter": 22,
+  "counter": 23,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 35,
-        "in": 20119,
-        "out": 5410
+        "calls": 36,
+        "in": 20807,
+        "out": 5585
       },
       "gpt-6.1-sol": {
-        "calls": 31,
-        "in": 10713,
-        "out": 1560
+        "calls": 32,
+        "in": 11175,
+        "out": 1597
       }
     }
   },
@@ -280,6 +291,7 @@
     "erling haaland",
     "raphinha",
     "rayan cherki",
-    "bukayo saka"
+    "bukayo saka",
+    "michael olise"
   ]
 }
