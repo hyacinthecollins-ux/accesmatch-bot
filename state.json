@@ -1362,6 +1362,19 @@
       "design": "crests-v1",
       "text": "🔥 Demain à 20h45, l’OM reçoit Toulouse en Ligue 1. Amine Gouiri (5 buts, 2 passes décisives) et Casper Tengstedt (5 buts, 1 passe) à surveiller. Ça va cogner : qui gagne ?\n\n#OM #Toulouse #Ligue1 #AmineGouiri",
       "text_src": "IA"
+    },
+    "h564734": {
+      "kind": "x1",
+      "match_id": 564734,
+      "label": "SANTANDER-REAL MADRID",
+      "kickoff": "2026-11-01T15:15:00Z",
+      "status": "poster_ready",
+      "poster": "posters/x564734-20261101.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-10-31T12:30:52Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   },
   "squads": {
