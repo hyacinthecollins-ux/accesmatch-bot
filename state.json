@@ -1449,6 +1449,19 @@
       "fails": 0,
       "design": "crests-v1",
       "tg": "sent"
+    },
+    "r564732": {
+      "kind": "result",
+      "match_id": 564732,
+      "label": "BARÇA-ALAVÉS",
+      "kickoff": "2026-10-31T20:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/r564732-20261031.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-10-31T22:30:34Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   },
   "squads": {
