@@ -386,6 +386,15 @@
       "day": "2026-11-02",
       "source": "Match termine (Ligue 1) : Marseille 2-0 Toulouse",
       "at": "2026-11-01T23:00:33Z"
+    },
+    {
+      "id": "6ae7c6e22da2578c18894615",
+      "kind": "breaking",
+      "text": "🚨 Selon L’Équipe, Kylian Mbappé répond sur le terrain avec le Real Madrid après le Ballon d’Or et la polémique avec la Chine. Le terrain parle, et ça claque !\n\n#Mbappé #RealMadrid",
+      "due": "2026-11-01T23:20Z",
+      "day": "2026-11-02",
+      "source": "L'Équipe",
+      "at": "2026-11-01T23:10:26Z"
     }
   ],
   "slots": {
@@ -476,20 +485,21 @@
     "d6004102ac3b",
     "e06e8160a672",
     "375037ce2377",
-    "hea517258c7"
+    "hea517258c7",
+    "80ef949e7be6"
   ],
-  "counter": 43,
+  "counter": 44,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 75,
-        "in": 42301,
-        "out": 10046
+        "calls": 76,
+        "in": 42855,
+        "out": 10182
       },
       "gpt-6.1-sol": {
-        "calls": 71,
-        "in": 23975,
-        "out": 3743
+        "calls": 72,
+        "in": 24301,
+        "out": 3782
       }
     }
   },
@@ -507,7 +517,8 @@
     "Ballon d'Or 2026 : ces jurés qui ont écarté Kane, Mbappé ou Yamal de leur top 10",
     "Barça : Lamine Yamal et Raphinha doublés, Alavés paie la note du Clasico perdu",
     "Le représentant de l'Espagne : j'ai préféré Mbappé à Yamal pour le Ballon d'Or, voici pourquoi",
-    "Comment Erling Haaland, « l’homme du moment », a détrôné Cristiano Ronaldo pour devenir le footballeur le plus attractif pour les marques au monde"
+    "Comment Erling Haaland, « l’homme du moment », a détrôné Cristiano Ronaldo pour devenir le footballeur le plus attractif pour les marques au monde",
+    "Après le Ballon d'Or et la polémique avec la Chine, Kylian Mbappé répond sur le terrain avec le Real Madrid"
   ],
   "recent_stats": [
     "erling haaland",
