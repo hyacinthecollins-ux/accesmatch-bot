@@ -341,6 +341,15 @@
       "day": "2026-11-01",
       "source": "football-data",
       "at": "2026-11-01T15:20:24Z"
+    },
+    {
+      "id": "6ae7646f354a6ae7df8a4f7c",
+      "kind": "reaction",
+      "text": "⏱️ Strasbourg 5-1 Auxerre ! Une victoire énorme pour les Alsaciens, qui ont transformé leur avantage de la pause en véritable démonstration. Ça claque !\n\n#Ligue1",
+      "due": "2026-11-01T16:20Z",
+      "day": "2026-11-01",
+      "source": "Match termine (Ligue 1) : Strasbourg 5-1 Auxerre",
+      "at": "2026-11-01T16:10:23Z"
     }
   ],
   "slots": {
@@ -403,7 +412,8 @@
     "565845",
     "558548",
     "559643",
-    "564732"
+    "564732",
+    "559647"
   ],
   "used_news": [
     "0323d7e5074e",
@@ -424,18 +434,18 @@
     "375037ce2377",
     "hea517258c7"
   ],
-  "counter": 38,
+  "counter": 39,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 64,
-        "in": 36343,
-        "out": 8940
+        "calls": 65,
+        "in": 36880,
+        "out": 9147
       },
       "gpt-6.1-sol": {
-        "calls": 60,
-        "in": 20505,
-        "out": 3225
+        "calls": 61,
+        "in": 20815,
+        "out": 3263
       }
     }
   },
