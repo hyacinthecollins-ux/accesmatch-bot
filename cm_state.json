@@ -305,6 +305,15 @@
       "day": "2026-11-01",
       "source": "Goal",
       "at": "2026-11-01T06:20:28Z"
+    },
+    {
+      "id": "6ae6ea9c21c807e9d5a82683",
+      "kind": "breaking",
+      "text": "🚨 Selon Goal, Erling Haaland a détrôné Cristiano Ronaldo et devient le footballeur le plus attractif pour les marques au monde. L’homme du moment, ça claque !\n\n#Haaland #Ronaldo",
+      "due": "2026-11-01T07:40Z",
+      "day": "2026-11-01",
+      "source": "Goal",
+      "at": "2026-11-01T07:30:36Z"
     }
   ],
   "slots": {
@@ -378,20 +387,21 @@
     "771ac1f99033",
     "69c5db8ef8a4",
     "d6004102ac3b",
-    "e06e8160a672"
+    "e06e8160a672",
+    "375037ce2377"
   ],
-  "counter": 34,
+  "counter": 35,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 58,
-        "in": 32842,
-        "out": 8294
+        "calls": 59,
+        "in": 33398,
+        "out": 8440
       },
       "gpt-6.1-sol": {
-        "calls": 54,
-        "in": 18325,
-        "out": 2927
+        "calls": 55,
+        "in": 18650,
+        "out": 2962
       }
     }
   },
@@ -408,7 +418,8 @@
     "Manchester City et Arsenal affrontent respectivement Brighton et Liverpool lors de la 9e journée de la Premier League",
     "Ballon d'Or 2026 : ces jurés qui ont écarté Kane, Mbappé ou Yamal de leur top 10",
     "Barça : Lamine Yamal et Raphinha doublés, Alavés paie la note du Clasico perdu",
-    "Le représentant de l'Espagne : j'ai préféré Mbappé à Yamal pour le Ballon d'Or, voici pourquoi"
+    "Le représentant de l'Espagne : j'ai préféré Mbappé à Yamal pour le Ballon d'Or, voici pourquoi",
+    "Comment Erling Haaland, « l’homme du moment », a détrôné Cristiano Ronaldo pour devenir le footballeur le plus attractif pour les marques au monde"
   ],
   "recent_stats": [
     "erling haaland",
