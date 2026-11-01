@@ -323,6 +323,15 @@
       "day": "2026-11-01",
       "source": "football-data SA",
       "at": "2026-11-01T09:00:33Z"
+    },
+    {
+      "id": "6ae722d421c807e9d5b63dc9",
+      "kind": "debate",
+      "text": "Le PSG est en tête, mais Lille n’est qu’à deux points et Rennes à quatre. Le favori est déjà tout trouvé ou le classement est trop serré ?\n\n#PSG #LOSC",
+      "due": "2026-11-01T16:00Z",
+      "day": "2026-11-01",
+      "source": "football-data FL1",
+      "at": "2026-11-01T11:30:28Z"
     }
   ],
   "slots": {
@@ -344,7 +353,8 @@
     "2026-10-31T22:35": "done",
     "2026-11-01T08:05": "done",
     "2026-11-01T10:45": "done",
-    "2026-11-01T14:00": "done"
+    "2026-11-01T14:00": "done",
+    "2026-11-01T16:30": "done"
   },
   "slot_tries": {
     "2026-10-27T20:15": 1,
@@ -365,7 +375,8 @@
     "2026-10-31T22:35": 1,
     "2026-11-01T08:05": 1,
     "2026-11-01T10:45": 1,
-    "2026-11-01T14:00": 1
+    "2026-11-01T14:00": 1,
+    "2026-11-01T16:30": 1
   },
   "reacted": [
     "559648",
@@ -402,18 +413,18 @@
     "375037ce2377",
     "hea517258c7"
   ],
-  "counter": 36,
+  "counter": 37,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 62,
-        "in": 35183,
-        "out": 8610
+        "calls": 63,
+        "in": 35782,
+        "out": 8823
       },
       "gpt-6.1-sol": {
-        "calls": 58,
-        "in": 19766,
-        "out": 3113
+        "calls": 59,
+        "in": 20150,
+        "out": 3195
       }
     }
   },
