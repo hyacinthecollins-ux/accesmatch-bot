@@ -377,6 +377,15 @@
       "day": "2026-11-01",
       "source": "Match termine (Serie A) : Juventus 2-0 Napoli",
       "at": "2026-11-01T21:50:27Z"
+    },
+    {
+      "id": "6ae7c4912da2578c188859d2",
+      "kind": "reaction",
+      "text": "⏱️ Marseille 2-0 Toulouse ! L’OM avait déjà fait le travail à la pause et s’offre la victoire. Solide jusqu’au bout : convaincus ?\n\n#OM #Ligue1",
+      "due": "2026-11-01T23:10Z",
+      "day": "2026-11-02",
+      "source": "Match termine (Ligue 1) : Marseille 2-0 Toulouse",
+      "at": "2026-11-01T23:00:33Z"
     }
   ],
   "slots": {
@@ -447,7 +456,8 @@
     "559642",
     "559640",
     "560631",
-    "558547"
+    "558547",
+    "559645"
   ],
   "used_news": [
     "0323d7e5074e",
@@ -468,18 +478,18 @@
     "375037ce2377",
     "hea517258c7"
   ],
-  "counter": 42,
+  "counter": 43,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 74,
-        "in": 41765,
-        "out": 9871
+        "calls": 75,
+        "in": 42301,
+        "out": 10046
       },
       "gpt-6.1-sol": {
-        "calls": 70,
-        "in": 23671,
-        "out": 3700
+        "calls": 71,
+        "in": 23975,
+        "out": 3743
       }
     }
   },
