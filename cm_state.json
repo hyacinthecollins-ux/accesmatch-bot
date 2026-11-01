@@ -287,6 +287,15 @@
       "day": "2026-11-01",
       "source": "football-data",
       "at": "2026-11-01T03:10:23Z"
+    },
+    {
+      "id": "6ae6d31f1ee172cd6ddf295e",
+      "kind": "stat",
+      "text": "📊 Alexander Isak, 2e du classement des buteurs de Premier League avec Liverpool : 6 buts en 7 matchs. Ça claque déjà très fort !\n\n#Liverpool #PremierLeague",
+      "due": "2026-11-01T09:45Z",
+      "day": "2026-11-01",
+      "source": "football-data PL",
+      "at": "2026-11-01T05:50:23Z"
     }
   ],
   "slots": {
@@ -306,7 +315,8 @@
     "2026-10-31T16:30": "done",
     "2026-10-31T20:15": "done",
     "2026-10-31T22:35": "done",
-    "2026-11-01T08:05": "done"
+    "2026-11-01T08:05": "done",
+    "2026-11-01T10:45": "done"
   },
   "slot_tries": {
     "2026-10-27T20:15": 1,
@@ -325,7 +335,8 @@
     "2026-10-31T16:30": 1,
     "2026-10-31T20:15": 1,
     "2026-10-31T22:35": 1,
-    "2026-11-01T08:05": 1
+    "2026-11-01T08:05": 1,
+    "2026-11-01T10:45": 1
   },
   "reacted": [
     "559648",
@@ -359,18 +370,18 @@
     "69c5db8ef8a4",
     "d6004102ac3b"
   ],
-  "counter": 32,
+  "counter": 33,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 56,
-        "in": 31629,
-        "out": 8127
+        "calls": 57,
+        "in": 32293,
+        "out": 8243
       },
       "gpt-6.1-sol": {
-        "calls": 52,
-        "in": 17580,
-        "out": 2857
+        "calls": 53,
+        "in": 18008,
+        "out": 2891
       }
     }
   },
@@ -393,6 +404,7 @@
     "raphinha",
     "rayan cherki",
     "bukayo saka",
-    "michael olise"
+    "michael olise",
+    "alexander isak"
   ]
 }
