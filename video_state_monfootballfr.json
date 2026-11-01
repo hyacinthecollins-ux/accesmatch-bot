@@ -293,21 +293,41 @@
       "due": "2026-11-13T20:45:00.000Z",
       "at": "2026-10-31T09:39:15Z",
       "title": "When Bellingham Gets Bored 🥱 ⚽"
+    },
+    "7580500205699747094": {
+      "post_id": "6ae7144fab019b908752d1f1",
+      "due": "2026-11-14T08:15:00.000Z",
+      "at": "2026-11-01T10:28:31Z",
+      "title": "Mbappe vs Haaland in World Cup ☠️🔥 ｜ Who’s gonna win ？ ⚽"
+    },
+    "7613526973960195350": {
+      "post_id": "6ae71452f0984eef335c7784",
+      "due": "2026-11-14T11:30:00.000Z",
+      "at": "2026-11-01T10:28:35Z",
+      "title": "Messi vs Goalkeepers 🥶😱 ⚽"
+    },
+    "6Gr8CFs9Kj4": {
+      "post_id": "6ae71456ab019b908752d2da",
+      "due": "2026-11-14T17:30:00.000Z",
+      "at": "2026-11-01T10:28:38Z",
+      "title": "Rare Penalty Moments 😳 ⚽"
+    },
+    "7532924391672270102": {
+      "post_id": "6ae7145aab019b908752d312",
+      "due": "2026-11-14T20:45:00.000Z",
+      "at": "2026-11-01T10:28:42Z",
+      "title": "Vini 23⧸24 ⚽"
     }
   },
   "failed": {},
-  "counter": 49,
+  "counter": 53,
   "recent_players": [
-    "neymar",
-    "ronaldo",
-    "mbappe",
-    "bellingham"
+    "bellingham",
+    "haaland",
+    "messi",
+    "vinicius"
   ],
   "recent_creators": [
-    "HRPlays01-TikTok",
-    "F11Skillz-TikTok",
-    "FootballEditsHD-TikTok",
-    "Football8568-TikTok",
     "FootH25-TikTok",
     "HRPlays01-TikTok",
     "F11Skillz-TikTok",
@@ -327,13 +347,13 @@
     "TeoCRi-Shorts",
     "L7-Shorts",
     "KickVibesEdit-TikTok",
-    "L7-Shorts"
+    "L7-Shorts",
+    "F11Skillz-TikTok",
+    "HRPlays01-TikTok",
+    "L7-Shorts",
+    "FootballEditsHD-TikTok"
   ],
   "recent_titles": [
-    "mbappé x benzema ☠️🔥",
-    "alexandre pato ⚽",
-    "ils doit rejouer ailier🔥 kylian mbappé 🇫🇷🇫🇷 ⚽",
-    "michael olise 🇫🇷 ⚽",
     "100% epic messi moments ⚽",
     "mbappe’s dribbling is underrated 😾🔥",
     "cristiano renald's skills👏🏻❤️",
@@ -359,14 +379,14 @@
     "neymar jr 🇧🇷 ⚽",
     "ronaldo vs barcelona ⚽",
     "france wc 2026 🇫🇷 ⚽",
-    "when bellingham gets bored 🥱 ⚽"
+    "when bellingham gets bored 🥱 ⚽",
+    "mbappe vs haaland in world cup ☠️🔥 ｜ who’s gonna win ？ ⚽",
+    "messi vs goalkeepers 🥶😱 ⚽",
+    "rare penalty moments 😳 ⚽",
+    "vini 23/24 ⚽"
   ],
   "recent_stars": [
     1,
-    0,
-    1,
-    0,
-    1,
     1,
     0,
     1,
@@ -381,13 +401,13 @@
     1,
     1,
     1,
+    1,
+    1,
+    1,
+    0,
     1
   ],
   "recent_long": [
-    "messi",
-    "",
-    "haaland",
-    "",
     "yamal",
     "kvaratskhelia",
     "",
@@ -403,6 +423,10 @@
     "neymar",
     "ronaldo",
     "mbappe",
-    "bellingham"
+    "bellingham",
+    "haaland",
+    "messi",
+    "",
+    "vinicius"
   ]
 }
