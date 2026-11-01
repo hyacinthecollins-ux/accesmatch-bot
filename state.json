@@ -1491,6 +1491,19 @@
       "fails": 0,
       "design": "crests-v1",
       "tg": "sent"
+    },
+    "r559645": {
+      "kind": "result",
+      "match_id": 559645,
+      "label": "OM-TOULOUSE",
+      "kickoff": "2026-11-01T19:45:00Z",
+      "status": "poster_ready",
+      "poster": "posters/r559645-20261101.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-01T22:00:34Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   },
   "squads": {
