@@ -278,6 +278,15 @@
       "day": "2026-11-01",
       "source": "Sport",
       "at": "2026-10-31T23:10:30Z"
+    },
+    {
+      "id": "6ae6ad9eab019b90873a8acc",
+      "kind": "preview",
+      "text": "🔥 Au programme ce 1er novembre : 16h15, Santander - Real Madrid ; 17h15, Lyon - Angers et Paris FC - Monaco ; 17h30, Liverpool - Arsenal. Du beau monde, préparez-vous à vibrer !\n\n#RealMadrid #Liverpool",
+      "due": "2026-11-01T07:05Z",
+      "day": "2026-11-01",
+      "source": "football-data",
+      "at": "2026-11-01T03:10:23Z"
     }
   ],
   "slots": {
@@ -296,7 +305,8 @@
     "2026-10-31T14:00": "done",
     "2026-10-31T16:30": "done",
     "2026-10-31T20:15": "done",
-    "2026-10-31T22:35": "done"
+    "2026-10-31T22:35": "done",
+    "2026-11-01T08:05": "done"
   },
   "slot_tries": {
     "2026-10-27T20:15": 1,
@@ -314,7 +324,8 @@
     "2026-10-31T14:00": 1,
     "2026-10-31T16:30": 1,
     "2026-10-31T20:15": 1,
-    "2026-10-31T22:35": 1
+    "2026-10-31T22:35": 1,
+    "2026-11-01T08:05": 1
   },
   "reacted": [
     "559648",
@@ -348,18 +359,18 @@
     "69c5db8ef8a4",
     "d6004102ac3b"
   ],
-  "counter": 31,
+  "counter": 32,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 55,
-        "in": 31070,
-        "out": 8007
+        "calls": 56,
+        "in": 31629,
+        "out": 8127
       },
       "gpt-6.1-sol": {
-        "calls": 51,
-        "in": 17228,
-        "out": 2818
+        "calls": 52,
+        "in": 17580,
+        "out": 2857
       }
     }
   },
