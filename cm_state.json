@@ -296,6 +296,15 @@
       "day": "2026-11-01",
       "source": "football-data PL",
       "at": "2026-11-01T05:50:23Z"
+    },
+    {
+      "id": "6ae6da2cab019b908744416b",
+      "kind": "breaking",
+      "text": "🚨 Selon Goal, le représentant de l’Espagne a préféré Mbappé à Yamal pour le Ballon d’Or et explique son choix. Ça va faire parler ! Vous auriez choisi qui ?\n\n#Mbappé #Yamal",
+      "due": "2026-11-01T06:30Z",
+      "day": "2026-11-01",
+      "source": "Goal",
+      "at": "2026-11-01T06:20:28Z"
     }
   ],
   "slots": {
@@ -368,20 +377,21 @@
     "594666b4df8b",
     "771ac1f99033",
     "69c5db8ef8a4",
-    "d6004102ac3b"
+    "d6004102ac3b",
+    "e06e8160a672"
   ],
-  "counter": 33,
+  "counter": 34,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 57,
-        "in": 32293,
-        "out": 8243
+        "calls": 58,
+        "in": 32842,
+        "out": 8294
       },
       "gpt-6.1-sol": {
-        "calls": 53,
-        "in": 18008,
-        "out": 2891
+        "calls": 54,
+        "in": 18325,
+        "out": 2927
       }
     }
   },
@@ -397,7 +407,8 @@
     "THE OLISE TO LIVERPOOL DREAM IS OVER! + SZOBO & MUNOZ INJURY UPDATES! Liverpool Latest Transfer News",
     "Manchester City et Arsenal affrontent respectivement Brighton et Liverpool lors de la 9e journée de la Premier League",
     "Ballon d'Or 2026 : ces jurés qui ont écarté Kane, Mbappé ou Yamal de leur top 10",
-    "Barça : Lamine Yamal et Raphinha doublés, Alavés paie la note du Clasico perdu"
+    "Barça : Lamine Yamal et Raphinha doublés, Alavés paie la note du Clasico perdu",
+    "Le représentant de l'Espagne : j'ai préféré Mbappé à Yamal pour le Ballon d'Or, voici pourquoi"
   ],
   "recent_stats": [
     "erling haaland",
