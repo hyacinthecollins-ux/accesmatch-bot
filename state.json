@@ -1503,7 +1503,8 @@
       "due": null,
       "created": "2026-11-01T22:00:34Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "sent"
     }
   },
   "squads": {
