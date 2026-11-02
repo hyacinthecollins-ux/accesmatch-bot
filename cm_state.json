@@ -395,6 +395,15 @@
       "day": "2026-11-02",
       "source": "L'Équipe",
       "at": "2026-11-01T23:10:26Z"
+    },
+    {
+      "id": "6ae7ff22c181038f3ba694ba",
+      "kind": "stat",
+      "text": "📊 Harry Kane est 6e du classement des buteurs de Ligue des champions : 4 buts et 2 passes décisives en 3 matchs avec le Bayern. Déjà décisif partout, ça claque !\n\n#Kane #FCBayern",
+      "due": "2026-11-02T07:05Z",
+      "day": "2026-11-02",
+      "source": "football-data CL",
+      "at": "2026-11-02T03:10:27Z"
     }
   ],
   "slots": {
@@ -419,7 +428,8 @@
     "2026-11-01T14:00": "done",
     "2026-11-01T16:30": "done",
     "2026-11-01T20:15": "done",
-    "2026-11-01T22:35": "done"
+    "2026-11-01T22:35": "done",
+    "2026-11-02T08:05": "done"
   },
   "slot_tries": {
     "2026-10-27T20:15": 1,
@@ -443,7 +453,8 @@
     "2026-11-01T14:00": 1,
     "2026-11-01T16:30": 1,
     "2026-11-01T20:15": 1,
-    "2026-11-01T22:35": 1
+    "2026-11-01T22:35": 1,
+    "2026-11-02T08:05": 1
   },
   "reacted": [
     "559648",
@@ -488,18 +499,18 @@
     "hea517258c7",
     "80ef949e7be6"
   ],
-  "counter": 44,
+  "counter": 45,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 76,
-        "in": 42855,
-        "out": 10182
+        "calls": 77,
+        "in": 43530,
+        "out": 10324
       },
       "gpt-6.1-sol": {
-        "calls": 72,
-        "in": 24301,
-        "out": 3782
+        "calls": 73,
+        "in": 24752,
+        "out": 3820
       }
     }
   },
@@ -527,6 +538,7 @@
     "bukayo saka",
     "michael olise",
     "alexander isak",
-    "donyell malen"
+    "donyell malen",
+    "harry kane"
   ]
 }
