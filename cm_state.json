@@ -458,6 +458,15 @@
       "day": "2026-11-02",
       "source": "football-data PL",
       "at": "2026-11-02T15:20:37Z"
+    },
+    {
+      "id": "6ae8cb0bcd7f345290cc9d4a",
+      "kind": "debate",
+      "text": "Le Barça en tête, l’Atlético et le Real juste derrière : quel début de Liga ! Et le Betis s’invite dans le top 4. Vous voyez qui finir devant ? 🔥\n\n#FCBarcelona #Atleti",
+      "due": "2026-11-02T21:35Z",
+      "day": "2026-11-02",
+      "source": "football-data PD",
+      "at": "2026-11-02T17:40:27Z"
     }
   ],
   "slots": {
@@ -487,7 +496,8 @@
     "2026-11-02T10:45": "done",
     "2026-11-02T14:00": "done",
     "2026-11-02T16:30": "done",
-    "2026-11-02T20:15": "done"
+    "2026-11-02T20:15": "done",
+    "2026-11-02T22:35": "done"
   },
   "slot_tries": {
     "2026-10-27T20:15": 1,
@@ -516,7 +526,8 @@
     "2026-11-02T10:45": 1,
     "2026-11-02T14:00": 1,
     "2026-11-02T16:30": 1,
-    "2026-11-02T20:15": 1
+    "2026-11-02T20:15": 1,
+    "2026-11-02T22:35": 1
   },
   "reacted": [
     "559648",
@@ -563,18 +574,18 @@
     "88b571547e52",
     "5d28bc45e365"
   ],
-  "counter": 51,
+  "counter": 52,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 85,
-        "in": 48344,
-        "out": 11685
+        "calls": 86,
+        "in": 48941,
+        "out": 11736
       },
       "gpt-6.1-sol": {
-        "calls": 81,
-        "in": 27839,
-        "out": 4227
+        "calls": 82,
+        "in": 28229,
+        "out": 4257
       }
     }
   },
