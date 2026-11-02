@@ -413,6 +413,15 @@
       "day": "2026-11-02",
       "source": "football-data CL",
       "at": "2026-11-02T05:50:24Z"
+    },
+    {
+      "id": "6ae82bb276279ec7eb979b69",
+      "kind": "breaking",
+      "text": "🚨 Selon Ouest-France, Mbappé est resté imperturbable, Maignan a été impérial et Olise est sorti blessé avec les Bleus. Coup dur pour les Bleus !\n\n#Mbappé #Olise",
+      "due": "2026-11-02T06:30Z",
+      "day": "2026-11-02",
+      "source": "Ouest-France",
+      "at": "2026-11-02T06:20:34Z"
     }
   ],
   "slots": {
@@ -508,20 +517,21 @@
     "e06e8160a672",
     "375037ce2377",
     "hea517258c7",
-    "80ef949e7be6"
+    "80ef949e7be6",
+    "88b571547e52"
   ],
-  "counter": 46,
+  "counter": 47,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 78,
-        "in": 44127,
-        "out": 10620
+        "calls": 80,
+        "in": 45251,
+        "out": 11008
       },
       "gpt-6.1-sol": {
-        "calls": 74,
-        "in": 25145,
-        "out": 3861
+        "calls": 76,
+        "in": 25811,
+        "out": 3993
       }
     }
   },
@@ -540,7 +550,8 @@
     "Barça : Lamine Yamal et Raphinha doublés, Alavés paie la note du Clasico perdu",
     "Le représentant de l'Espagne : j'ai préféré Mbappé à Yamal pour le Ballon d'Or, voici pourquoi",
     "Comment Erling Haaland, « l’homme du moment », a détrôné Cristiano Ronaldo pour devenir le footballeur le plus attractif pour les marques au monde",
-    "Après le Ballon d'Or et la polémique avec la Chine, Kylian Mbappé répond sur le terrain avec le Real Madrid"
+    "Après le Ballon d'Or et la polémique avec la Chine, Kylian Mbappé répond sur le terrain avec le Real Madrid",
+    "Équipe de France. Kylian Mbappé imperturbable, Mike Maignan impérial, Michael Olise sort blessé… Le baromètre des Bleus"
   ],
   "recent_stats": [
     "erling haaland",
