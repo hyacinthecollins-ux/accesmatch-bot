@@ -422,6 +422,15 @@
       "day": "2026-11-02",
       "source": "Ouest-France",
       "at": "2026-11-02T06:20:34Z"
+    },
+    {
+      "id": "6ae83c27759fc887b6d53672",
+      "kind": "breaking",
+      "text": "🚨 Selon RMC Sport, le père de Lamine Yamal a précisé que le nom de famille de son fils est Nasraoui Ebana, en marge de la victoire du Barça contre Alavés. Mise au point nette !\n\n#Yamal #FCBarcelona",
+      "due": "2026-11-02T07:40Z",
+      "day": "2026-11-02",
+      "source": "RMC Sport",
+      "at": "2026-11-02T07:30:47Z"
     }
   ],
   "slots": {
@@ -518,20 +527,21 @@
     "375037ce2377",
     "hea517258c7",
     "80ef949e7be6",
-    "88b571547e52"
+    "88b571547e52",
+    "5d28bc45e365"
   ],
-  "counter": 47,
+  "counter": 48,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 80,
-        "in": 45251,
-        "out": 11008
+        "calls": 81,
+        "in": 45857,
+        "out": 11192
       },
       "gpt-6.1-sol": {
-        "calls": 76,
-        "in": 25811,
-        "out": 3993
+        "calls": 77,
+        "in": 26193,
+        "out": 4030
       }
     }
   },
@@ -551,7 +561,8 @@
     "Le représentant de l'Espagne : j'ai préféré Mbappé à Yamal pour le Ballon d'Or, voici pourquoi",
     "Comment Erling Haaland, « l’homme du moment », a détrôné Cristiano Ronaldo pour devenir le footballeur le plus attractif pour les marques au monde",
     "Après le Ballon d'Or et la polémique avec la Chine, Kylian Mbappé répond sur le terrain avec le Real Madrid",
-    "Équipe de France. Kylian Mbappé imperturbable, Mike Maignan impérial, Michael Olise sort blessé… Le baromètre des Bleus"
+    "Équipe de France. Kylian Mbappé imperturbable, Mike Maignan impérial, Michael Olise sort blessé… Le baromètre des Bleus",
+    "\"Son nom de famille, c'est Nasraoui Ebana\", la mise au point du père de Lamine Yamal"
   ],
   "recent_stats": [
     "erling haaland",
