@@ -440,6 +440,15 @@
       "day": "2026-11-02",
       "source": "football-data PD",
       "at": "2026-11-02T09:10:32Z"
+    },
+    {
+      "id": "6ae876ac339e85e6016a911f",
+      "kind": "debate",
+      "text": "Le PSG en tête, Aston Villa juste derrière : la Ligue des champions a déjà sorti le classement qui fait parler. Liverpool et le Real sont aussi à 9 points. Le meilleur bulletin ? 🤔\n\n#PSG #Liverpool",
+      "due": "2026-11-02T15:30Z",
+      "day": "2026-11-02",
+      "source": "football-data CL",
+      "at": "2026-11-02T11:40:28Z"
     }
   ],
   "slots": {
@@ -467,7 +476,8 @@
     "2026-11-01T22:35": "done",
     "2026-11-02T08:05": "done",
     "2026-11-02T10:45": "done",
-    "2026-11-02T14:00": "done"
+    "2026-11-02T14:00": "done",
+    "2026-11-02T16:30": "done"
   },
   "slot_tries": {
     "2026-10-27T20:15": 1,
@@ -494,7 +504,8 @@
     "2026-11-01T22:35": 1,
     "2026-11-02T08:05": 1,
     "2026-11-02T10:45": 1,
-    "2026-11-02T14:00": 1
+    "2026-11-02T14:00": 1,
+    "2026-11-02T16:30": 1
   },
   "reacted": [
     "559648",
@@ -541,18 +552,18 @@
     "88b571547e52",
     "5d28bc45e365"
   ],
-  "counter": 49,
+  "counter": 50,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 82,
-        "in": 46549,
-        "out": 11326
+        "calls": 83,
+        "in": 47146,
+        "out": 11376
       },
       "gpt-6.1-sol": {
-        "calls": 78,
-        "in": 26659,
-        "out": 4056
+        "calls": 79,
+        "in": 27048,
+        "out": 4097
       }
     }
   },
