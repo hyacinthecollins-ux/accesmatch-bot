@@ -467,6 +467,15 @@
       "day": "2026-11-02",
       "source": "football-data PD",
       "at": "2026-11-02T17:40:27Z"
+    },
+    {
+      "id": "6ae905a290c1e19b0348550d",
+      "kind": "reaction",
+      "text": "⏱️ Lorient 0-2 Brest ! Après un 0-0 à la pause, les Brestois ont fait la différence. Une victoire nette à l’extérieur, ça claque !\n\n#Ligue1",
+      "due": "2026-11-02T22:00Z",
+      "day": "2026-11-02",
+      "source": "Match termine (Ligue 1) : Lorient 0-2 Brest",
+      "at": "2026-11-02T21:50:26Z"
     }
   ],
   "slots": {
@@ -550,7 +559,8 @@
     "559640",
     "560631",
     "558547",
-    "559645"
+    "559645",
+    "559641"
   ],
   "used_news": [
     "0323d7e5074e",
@@ -574,18 +584,18 @@
     "88b571547e52",
     "5d28bc45e365"
   ],
-  "counter": 52,
+  "counter": 53,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 86,
-        "in": 48941,
-        "out": 11736
+        "calls": 87,
+        "in": 49477,
+        "out": 11972
       },
       "gpt-6.1-sol": {
-        "calls": 82,
-        "in": 28229,
-        "out": 4257
+        "calls": 83,
+        "in": 28538,
+        "out": 4300
       }
     }
   },
