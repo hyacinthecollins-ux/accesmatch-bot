@@ -1517,20 +1517,23 @@
       "due": null,
       "created": "2026-11-02T00:00:44Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "sent"
     },
     "a575380": {
       "kind": "x24",
       "match_id": 575380,
       "label": "BARÇA-ASTON VILLA",
       "kickoff": "2026-11-03T20:00:00Z",
-      "status": "poster_ready",
+      "status": "scheduled",
       "poster": "posters/x575380-20261103.jpg",
-      "post_id": null,
-      "due": null,
+      "post_id": "6ae7d2bb2da2578c188c6ee5",
+      "due": "2026-11-02T20:00:00Z",
       "created": "2026-11-02T00:00:44Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "text": "🔥 Demain à 21h (heure de Paris), Barça-Aston Villa en Ligue des champions ! Raphinha et Adeyemi, 2 buts chacun, face à Nicolas Jackson, déjà 3 buts. Ça va cogner ! Ton buteur ?\n\n#FCBarcelona #AstonVilla #UCL #Raphinha",
+      "text_src": "IA"
     },
     "p575382": {
       "kind": "preview",
@@ -1543,20 +1546,23 @@
       "due": null,
       "created": "2026-11-02T00:00:44Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "sent"
     },
     "a575382": {
       "kind": "x24",
       "match_id": 575382,
       "label": "VILLARREAL-PSG",
       "kickoff": "2026-11-03T20:00:00Z",
-      "status": "poster_ready",
+      "status": "scheduled",
       "poster": "posters/x575382-20261103.jpg",
-      "post_id": null,
-      "due": null,
+      "post_id": "6ae7d2c72da2578c188c73b6",
+      "due": "2026-11-02T20:08:00Z",
       "created": "2026-11-02T00:00:44Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "text": "🔥 Villarreal reçoit le PSG demain à 21h (heure de Paris) en Ligue des champions ! Santiago Mouriño (2 buts) et Ousmane Dembélé (3 buts, 3 passes décisives) sont à surveiller. Gros morceau européen : qui gagne ?\n\n#Villarreal #PSG #UCL #Dembélé",
+      "text_src": "IA"
     },
     "p575381": {
       "kind": "preview",
@@ -1569,20 +1575,23 @@
       "due": null,
       "created": "2026-11-02T00:00:44Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "sent"
     },
     "a575381": {
       "kind": "x24",
       "match_id": 575381,
       "label": "ATLETI-BAYERN",
       "kickoff": "2026-11-03T20:00:00Z",
-      "status": "poster_ready",
+      "status": "scheduled",
       "poster": "posters/x575381-20261103.jpg",
-      "post_id": null,
-      "due": null,
+      "post_id": "6ae7d2cfd016796999fa0b94",
+      "due": "2026-11-02T20:16:00Z",
       "created": "2026-11-02T00:00:44Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "text": "🔥 Demain à 21h (heure de Paris), Atleti reçoit le Bayern en Ligue des champions ! Marcos Llorente (1 but) et Harry Kane (4 buts, 2 passes décisives en C1 cette saison) sont à surveiller. Ça va jouer gros ! Qui gagne ?\n\n#Atleti #FCBayern #UCL #Kane",
+      "text_src": "IA"
     },
     "p575383": {
       "kind": "preview",
@@ -1595,20 +1604,23 @@
       "due": null,
       "created": "2026-11-02T00:00:44Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "sent"
     },
     "a575383": {
       "kind": "x24",
       "match_id": 575383,
       "label": "MAN UNITED-ROMA",
       "kickoff": "2026-11-03T20:00:00Z",
-      "status": "poster_ready",
+      "status": "scheduled",
       "poster": "posters/x575383-20261103.jpg",
-      "post_id": null,
-      "due": null,
+      "post_id": "6ae7d2da48ce42a6b43319fa",
+      "due": "2026-11-02T20:24:00Z",
       "created": "2026-11-02T00:00:44Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "text": "🔥 Man United reçoit Roma demain à 21h (heure de Paris) en Ligue des champions. Donyell Malen, à 3 buts et 2 passes décisives, est à surveiller, tout comme Bryan Cristante (1 but). Les filets sont prévenus ! Qui gagne ?\n\n#MUFC #Roma #UCL #Malen",
+      "text_src": "IA"
     }
   },
   "squads": {
@@ -1692,10 +1704,36 @@
     "511": {
       "t": "2026-10-31T02:58:16Z",
       "stars": []
+    },
+    "58": {
+      "t": "2026-11-02T00:00:52Z",
+      "stars": []
+    },
+    "94": {
+      "t": "2026-11-02T00:00:52Z",
+      "stars": []
+    },
+    "524": {
+      "t": "2026-11-02T00:00:52Z",
+      "stars": [
+        "Ousmane Dembélé",
+        "Khvicha Kvaratskhelia",
+        "Desire Doue"
+      ]
+    },
+    "78": {
+      "t": "2026-11-02T00:00:52Z",
+      "stars": []
+    },
+    "100": {
+      "t": "2026-11-02T00:00:52Z",
+      "stars": [
+        "Anass Salah-Eddine"
+      ]
     }
   },
-  "llm_calls": 20,
-  "llm_posts": 10,
+  "llm_calls": 30,
+  "llm_posts": 14,
   "x_texts": [
     "⏰ Chelsea-Man United, choc de Premier League : coup d’envoi dans 1h24, à 13h30 ! João Pedro (5 buts, 3 passes décisives) et Bryan Mbeumo (4 buts) sont attendus. Qui gagne ?",
     "⏰ Dans 1 heure, Man City reçoit Brighton Hove en Premier League : coup d’envoi à 16h (heure de Paris). Haaland (9 buts), Cherki (4 buts, 2 passes décisives) et Groß (3 buts, 4 passes décisives) à surveiller. Qui gagne ?",
@@ -1706,6 +1744,10 @@
     "🔥 Demain à 20h45, l’OM reçoit Toulouse en Ligue 1. Amine Gouiri (5 buts, 2 passes décisives) et Casper Tengstedt (5 buts, 1 passe) à surveiller. Ça va cogner : qui gagne ?",
     "⏰ Dans 1 heure, Santander reçoit le Real Madrid en Liga : coup d’envoi à 16h15. Yassir Zabiri (8 buts) et Kylian Mbappé (11 buts) sont à surveiller. Qui gagne ?",
     "⏰ Dans 1 heure, Liverpool-Arsenal : coup d’envoi à 17h30, heure de Paris. Un choc de Premier League, avec Alexander Isak (6 buts) et Bukayo Saka (3) à surveiller. Soirée de gala : qui gagne ?",
-    "⏰ OM-Toulouse en Ligue 1 : coup d’envoi dans 1 heure, à 20h45 ! Amine Gouiri (5 buts, 2 passes décisives) et Casper Tengstedt (5 buts, 1 passe décisive) à surveiller. Ton buteur ?"
+    "⏰ OM-Toulouse en Ligue 1 : coup d’envoi dans 1 heure, à 20h45 ! Amine Gouiri (5 buts, 2 passes décisives) et Casper Tengstedt (5 buts, 1 passe décisive) à surveiller. Ton buteur ?",
+    "🔥 Demain à 21h (heure de Paris), Barça-Aston Villa en Ligue des champions ! Raphinha et Adeyemi, 2 buts chacun, face à Nicolas Jackson, déjà 3 buts. Ça va cogner ! Ton buteur ?",
+    "🔥 Villarreal reçoit le PSG demain à 21h (heure de Paris) en Ligue des champions ! Santiago Mouriño (2 buts) et Ousmane Dembélé (3 buts, 3 passes décisives) sont à surveiller. Gros morceau européen : qui gagne ?",
+    "🔥 Demain à 21h (heure de Paris), Atleti reçoit le Bayern en Ligue des champions ! Marcos Llorente (1 but) et Harry Kane (4 buts, 2 passes décisives en C1 cette saison) sont à surveiller. Ça va jouer gros ! Qui gagne ?",
+    "🔥 Man United reçoit Roma demain à 21h (heure de Paris) en Ligue des champions. Donyell Malen, à 3 buts et 2 passes décisives, est à surveiller, tout comme Bryan Cristante (1 but). Les filets sont prévenus ! Qui gagne ?"
   ]
 }
