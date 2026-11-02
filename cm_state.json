@@ -404,6 +404,15 @@
       "day": "2026-11-02",
       "source": "football-data CL",
       "at": "2026-11-02T03:10:27Z"
+    },
+    {
+      "id": "6ae8249f64604db314420398",
+      "kind": "debate",
+      "text": "Le classement a déjà des airs de casting de gala… et le Betis s’est invité à la table 😄 PSG et Aston Villa en tête, cinq équipes à 9 points : qui vous surprend le plus ?\n\n#PSG #LDC",
+      "due": "2026-11-02T09:45Z",
+      "day": "2026-11-02",
+      "source": "football-data CL",
+      "at": "2026-11-02T05:50:24Z"
     }
   ],
   "slots": {
@@ -429,7 +438,8 @@
     "2026-11-01T16:30": "done",
     "2026-11-01T20:15": "done",
     "2026-11-01T22:35": "done",
-    "2026-11-02T08:05": "done"
+    "2026-11-02T08:05": "done",
+    "2026-11-02T10:45": "done"
   },
   "slot_tries": {
     "2026-10-27T20:15": 1,
@@ -454,7 +464,8 @@
     "2026-11-01T16:30": 1,
     "2026-11-01T20:15": 1,
     "2026-11-01T22:35": 1,
-    "2026-11-02T08:05": 1
+    "2026-11-02T08:05": 1,
+    "2026-11-02T10:45": 1
   },
   "reacted": [
     "559648",
@@ -499,18 +510,18 @@
     "hea517258c7",
     "80ef949e7be6"
   ],
-  "counter": 45,
+  "counter": 46,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 77,
-        "in": 43530,
-        "out": 10324
+        "calls": 78,
+        "in": 44127,
+        "out": 10620
       },
       "gpt-6.1-sol": {
-        "calls": 73,
-        "in": 24752,
-        "out": 3820
+        "calls": 74,
+        "in": 25145,
+        "out": 3861
       }
     }
   },
