@@ -317,21 +317,41 @@
       "due": "2026-11-14T20:45:00.000Z",
       "at": "2026-11-01T10:28:42Z",
       "title": "Vini 23⧸24 ⚽"
+    },
+    "7608718039764454659": {
+      "post_id": "6ae86eccb6121434b5361b7c",
+      "due": "2026-11-15T08:15:00.000Z",
+      "at": "2026-11-02T11:06:52Z",
+      "title": "Marsilo⚽ 🤕 ⚽"
+    },
+    "7490107099314310422": {
+      "post_id": "6ae86ecf8b29b4b46d13569f",
+      "due": "2026-11-15T11:30:00.000Z",
+      "at": "2026-11-02T11:06:55Z",
+      "title": "The day Mbappe almost saved Paris after entering ⚽"
+    },
+    "7395561805977750816": {
+      "post_id": "6ae86ed3b9450b6b7419e253",
+      "due": "2026-11-15T17:30:00.000Z",
+      "at": "2026-11-02T11:06:59Z",
+      "title": "100% Epic Yamal Moments ⚽"
+    },
+    "7585120880594930966": {
+      "post_id": "6ae86ed6c3158f6789b36c81",
+      "due": "2026-11-15T20:45:00.000Z",
+      "at": "2026-11-02T11:07:02Z",
+      "title": "3 years ago… ☠️ Peope will provoke you when ⚽"
     }
   },
   "failed": {},
-  "counter": 53,
+  "counter": 57,
   "recent_players": [
-    "bellingham",
-    "haaland",
     "messi",
-    "vinicius"
+    "vinicius",
+    "mbappe",
+    "yamal"
   ],
   "recent_creators": [
-    "FootH25-TikTok",
-    "HRPlays01-TikTok",
-    "F11Skillz-TikTok",
-    "FootH25-TikTok",
     "FootballEditsHD-TikTok",
     "Football8568-TikTok",
     "FootH25-TikTok",
@@ -351,13 +371,13 @@
     "F11Skillz-TikTok",
     "HRPlays01-TikTok",
     "L7-Shorts",
-    "FootballEditsHD-TikTok"
+    "FootballEditsHD-TikTok",
+    "Football8568-TikTok",
+    "F11Skillz-TikTok",
+    "HRPlays01-TikTok",
+    "F11Skillz-TikTok"
   ],
   "recent_titles": [
-    "100% epic messi moments ⚽",
-    "mbappe’s dribbling is underrated 😾🔥",
-    "cristiano renald's skills👏🏻❤️",
-    "rare bellingham moments ⚽",
     "💔 ｜ happy 27th birthday kylian 💫🎂 crazy to think ⚽",
     "vini jr ⚽",
     "＂both feet, pure control： rayan cherki unlocked!＂ 👣⚡ ⚽",
@@ -383,13 +403,13 @@
     "mbappe vs haaland in world cup ☠️🔥 ｜ who’s gonna win ？ ⚽",
     "messi vs goalkeepers 🥶😱 ⚽",
     "rare penalty moments 😳 ⚽",
-    "vini 23/24 ⚽"
+    "vini 23/24 ⚽",
+    "marsilo⚽ 🤕 ⚽",
+    "the day mbappe almost saved paris after entering ⚽",
+    "100% epic yamal moments ⚽",
+    "3 years ago… ☠️ peope will provoke you when ⚽"
   ],
   "recent_stars": [
-    1,
-    1,
-    0,
-    1,
     0,
     1,
     0,
@@ -405,13 +425,13 @@
     1,
     1,
     0,
-    1
+    1,
+    0,
+    1,
+    1,
+    0
   ],
   "recent_long": [
-    "yamal",
-    "kvaratskhelia",
-    "",
-    "dembele",
     "",
     "neymar",
     "",
@@ -427,6 +447,10 @@
     "haaland",
     "messi",
     "",
-    "vinicius"
+    "vinicius",
+    "",
+    "mbappe",
+    "yamal",
+    ""
   ]
 }
