@@ -476,6 +476,15 @@
       "day": "2026-11-02",
       "source": "Match termine (Ligue 1) : Lorient 0-2 Brest",
       "at": "2026-11-02T21:50:26Z"
+    },
+    {
+      "id": "6ae91616fced03f719ffb810",
+      "kind": "breaking",
+      "text": "🚨 Selon FotMob, le Bayern se montre prudent avec Olise avant son déplacement chez l’Atlético. Prudence maximale avant le rendez-vous.\n\n#Olise #FCBayern",
+      "due": "2026-11-02T23:10Z",
+      "day": "2026-11-03",
+      "source": "FotMob",
+      "at": "2026-11-02T23:00:38Z"
     }
   ],
   "slots": {
@@ -582,20 +591,21 @@
     "hea517258c7",
     "80ef949e7be6",
     "88b571547e52",
-    "5d28bc45e365"
+    "5d28bc45e365",
+    "f4ad7cc11f35"
   ],
-  "counter": 53,
+  "counter": 54,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 87,
-        "in": 49477,
-        "out": 11972
+        "calls": 88,
+        "in": 50015,
+        "out": 12151
       },
       "gpt-6.1-sol": {
-        "calls": 83,
-        "in": 28538,
-        "out": 4300
+        "calls": 84,
+        "in": 28835,
+        "out": 4337
       }
     }
   },
@@ -616,7 +626,8 @@
     "Comment Erling Haaland, « l’homme du moment », a détrôné Cristiano Ronaldo pour devenir le footballeur le plus attractif pour les marques au monde",
     "Après le Ballon d'Or et la polémique avec la Chine, Kylian Mbappé répond sur le terrain avec le Real Madrid",
     "Équipe de France. Kylian Mbappé imperturbable, Mike Maignan impérial, Michael Olise sort blessé… Le baromètre des Bleus",
-    "\"Son nom de famille, c'est Nasraoui Ebana\", la mise au point du père de Lamine Yamal"
+    "\"Son nom de famille, c'est Nasraoui Ebana\", la mise au point du père de Lamine Yamal",
+    "Le Bayern prudent avec Olise avant son déplacement chez l'Atlético"
   ],
   "recent_stats": [
     "erling haaland",
