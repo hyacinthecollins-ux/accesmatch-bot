@@ -449,6 +449,15 @@
       "day": "2026-11-02",
       "source": "football-data CL",
       "at": "2026-11-02T11:40:28Z"
+    },
+    {
+      "id": "6ae8aa452426d4fa35045374",
+      "kind": "debate",
+      "text": "Après 9 journées, Arsenal mène avec 24 points, mais Brighton est 3e avec la meilleure différence (+17). City suit à 21 : le classement est déjà bien épicé. Vous misez sur qui ?\n\n#Arsenal #PremierLeague",
+      "due": "2026-11-02T19:15Z",
+      "day": "2026-11-02",
+      "source": "football-data PL",
+      "at": "2026-11-02T15:20:37Z"
     }
   ],
   "slots": {
@@ -477,7 +486,8 @@
     "2026-11-02T08:05": "done",
     "2026-11-02T10:45": "done",
     "2026-11-02T14:00": "done",
-    "2026-11-02T16:30": "done"
+    "2026-11-02T16:30": "done",
+    "2026-11-02T20:15": "done"
   },
   "slot_tries": {
     "2026-10-27T20:15": 1,
@@ -505,7 +515,8 @@
     "2026-11-02T08:05": 1,
     "2026-11-02T10:45": 1,
     "2026-11-02T14:00": 1,
-    "2026-11-02T16:30": 1
+    "2026-11-02T16:30": 1,
+    "2026-11-02T20:15": 1
   },
   "reacted": [
     "559648",
@@ -552,18 +563,18 @@
     "88b571547e52",
     "5d28bc45e365"
   ],
-  "counter": 50,
+  "counter": 51,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 83,
-        "in": 47146,
-        "out": 11376
+        "calls": 85,
+        "in": 48344,
+        "out": 11685
       },
       "gpt-6.1-sol": {
-        "calls": 79,
-        "in": 27048,
-        "out": 4097
+        "calls": 81,
+        "in": 27839,
+        "out": 4227
       }
     }
   },
