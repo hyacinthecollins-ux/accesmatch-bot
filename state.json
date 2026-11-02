@@ -1621,6 +1621,58 @@
       "design": "crests-v1",
       "text": "🔥 Man United reçoit Roma demain à 21h (heure de Paris) en Ligue des champions. Donyell Malen, à 3 buts et 2 passes décisives, est à surveiller, tout comme Bryan Cristante (1 but). Les filets sont prévenus ! Qui gagne ?\n\n#MUFC #Roma #UCL #Malen",
       "text_src": "IA"
+    },
+    "h575380": {
+      "kind": "x1",
+      "match_id": 575380,
+      "label": "BARÇA-ASTON VILLA",
+      "kickoff": "2026-11-03T20:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/x575380-20261103.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-02T17:00:41Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "h575382": {
+      "kind": "x1",
+      "match_id": 575382,
+      "label": "VILLARREAL-PSG",
+      "kickoff": "2026-11-03T20:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/x575382-20261103.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-02T17:00:41Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "h575381": {
+      "kind": "x1",
+      "match_id": 575381,
+      "label": "ATLETI-BAYERN",
+      "kickoff": "2026-11-03T20:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/x575381-20261103.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-02T17:00:41Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "h575383": {
+      "kind": "x1",
+      "match_id": 575383,
+      "label": "MAN UNITED-ROMA",
+      "kickoff": "2026-11-03T20:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/x575383-20261103.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-02T17:00:41Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   },
   "squads": {
