@@ -431,6 +431,15 @@
       "day": "2026-11-02",
       "source": "RMC Sport",
       "at": "2026-11-02T07:30:47Z"
+    },
+    {
+      "id": "6ae8538755a230dd719f952e",
+      "kind": "stat",
+      "text": "📊 Kylian Mbappé, 2e du classement des buteurs de Liga avec 12 buts et 2 passes décisives en 11 matchs. Ça claque déjà ! Jusqu’où ira-t-il ?\n\n#Mbappé #LaLiga",
+      "due": "2026-11-02T13:00Z",
+      "day": "2026-11-02",
+      "source": "football-data PD",
+      "at": "2026-11-02T09:10:32Z"
     }
   ],
   "slots": {
@@ -457,7 +466,8 @@
     "2026-11-01T20:15": "done",
     "2026-11-01T22:35": "done",
     "2026-11-02T08:05": "done",
-    "2026-11-02T10:45": "done"
+    "2026-11-02T10:45": "done",
+    "2026-11-02T14:00": "done"
   },
   "slot_tries": {
     "2026-10-27T20:15": 1,
@@ -483,7 +493,8 @@
     "2026-11-01T20:15": 1,
     "2026-11-01T22:35": 1,
     "2026-11-02T08:05": 1,
-    "2026-11-02T10:45": 1
+    "2026-11-02T10:45": 1,
+    "2026-11-02T14:00": 1
   },
   "reacted": [
     "559648",
@@ -530,18 +541,18 @@
     "88b571547e52",
     "5d28bc45e365"
   ],
-  "counter": 48,
+  "counter": 49,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 81,
-        "in": 45857,
-        "out": 11192
+        "calls": 82,
+        "in": 46549,
+        "out": 11326
       },
       "gpt-6.1-sol": {
-        "calls": 77,
-        "in": 26193,
-        "out": 4030
+        "calls": 78,
+        "in": 26659,
+        "out": 4056
       }
     }
   },
@@ -572,6 +583,7 @@
     "michael olise",
     "alexander isak",
     "donyell malen",
-    "harry kane"
+    "harry kane",
+    "kylian mbappe"
   ]
 }
