@@ -512,6 +512,15 @@
       "day": "2026-11-03",
       "source": "franceinfo",
       "at": "2026-11-03T06:20:27Z"
+    },
+    {
+      "id": "6ae98d956896a4441f698b03",
+      "kind": "breaking",
+      "text": "🚨 Selon RTL, Villarreal-PSG pourrait offrir à Désiré Doué une occasion en or de reprendre le flambeau de Dembélé et Kvara en Ligue des champions. Gros coup à jouer ! Il va saisir sa chance ?\n\n#Dembélé #Doué",
+      "due": "2026-11-03T07:40Z",
+      "day": "2026-11-03",
+      "source": "RTL",
+      "at": "2026-11-03T07:30:29Z"
     }
   ],
   "slots": {
@@ -624,20 +633,21 @@
     "88b571547e52",
     "5d28bc45e365",
     "f4ad7cc11f35",
-    "37acf568baea"
+    "37acf568baea",
+    "906e9bb7787c"
   ],
-  "counter": 57,
+  "counter": 58,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 91,
-        "in": 51826,
-        "out": 12528
+        "calls": 92,
+        "in": 52383,
+        "out": 12758
       },
       "gpt-6.1-sol": {
-        "calls": 87,
-        "in": 29969,
-        "out": 4465
+        "calls": 88,
+        "in": 30304,
+        "out": 4505
       }
     }
   },
@@ -660,7 +670,8 @@
     "Équipe de France. Kylian Mbappé imperturbable, Mike Maignan impérial, Michael Olise sort blessé… Le baromètre des Bleus",
     "\"Son nom de famille, c'est Nasraoui Ebana\", la mise au point du père de Lamine Yamal",
     "Le Bayern prudent avec Olise avant son déplacement chez l'Atlético",
-    "Ligue des champions : Désiré Doué, l'homme des grands soirs, va-t-il prendre les rênes de l'attaque du PSG"
+    "Ligue des champions : Désiré Doué, l'homme des grands soirs, va-t-il prendre les rênes de l'attaque du PSG",
+    "Villarreal-PSG : pour Désiré Doué, l'occasion en or de reprendre le flambeau de Dembélé et Kvara en Ligue des champions"
   ],
   "recent_stats": [
     "erling haaland",
