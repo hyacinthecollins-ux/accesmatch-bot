@@ -485,6 +485,15 @@
       "day": "2026-11-03",
       "source": "FotMob",
       "at": "2026-11-02T23:00:38Z"
+    },
+    {
+      "id": "6ae950a85d60da1eff713675",
+      "kind": "preview",
+      "text": "🔥 Au programme : Atleti - Bayern, Man United - Roma, Feyenoord - Inter et Villarreal - PSG, tous à 21h00. Quatre affiches de Ligue des champions, une soirée qui s’annonce énorme !\n\n#PSG #FCBayern",
+      "due": "2026-11-03T07:05Z",
+      "day": "2026-11-03",
+      "source": "football-data",
+      "at": "2026-11-03T03:10:32Z"
     }
   ],
   "slots": {
@@ -515,7 +524,8 @@
     "2026-11-02T14:00": "done",
     "2026-11-02T16:30": "done",
     "2026-11-02T20:15": "done",
-    "2026-11-02T22:35": "done"
+    "2026-11-02T22:35": "done",
+    "2026-11-03T08:05": "done"
   },
   "slot_tries": {
     "2026-10-27T20:15": 1,
@@ -545,7 +555,8 @@
     "2026-11-02T14:00": 1,
     "2026-11-02T16:30": 1,
     "2026-11-02T20:15": 1,
-    "2026-11-02T22:35": 1
+    "2026-11-02T22:35": 1,
+    "2026-11-03T08:05": 1
   },
   "reacted": [
     "559648",
@@ -594,18 +605,18 @@
     "5d28bc45e365",
     "f4ad7cc11f35"
   ],
-  "counter": 54,
+  "counter": 55,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 88,
-        "in": 50015,
-        "out": 12151
+        "calls": 89,
+        "in": 50578,
+        "out": 12209
       },
       "gpt-6.1-sol": {
-        "calls": 84,
-        "in": 28835,
-        "out": 4337
+        "calls": 85,
+        "in": 29185,
+        "out": 4394
       }
     }
   },
