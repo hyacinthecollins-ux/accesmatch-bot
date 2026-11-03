@@ -1827,6 +1827,32 @@
       "design": "crests-v1",
       "text": "⏰ Fenerbahçe reçoit Liverpool en Ligue des champions : coup d’envoi dans 1 heure, à 18h45 ! Mac Allister et Barcola, 3 buts chacun, Wirtz aussi à surveiller. Les Reds vont-ils gâcher la fête ?\n\n#Fenerbahçe #LFC #UCL #Allister",
       "text_src": "IA"
+    },
+    "h575389": {
+      "kind": "x1",
+      "match_id": 575389,
+      "label": "SLAVIA PRAHA-ARSENAL",
+      "kickoff": "2026-11-04T20:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/x575389-20261104.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-03T17:00:40Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "h575388": {
+      "kind": "x1",
+      "match_id": 575388,
+      "label": "RB LEIPZIG-MAN CITY",
+      "kickoff": "2026-11-04T20:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/x575388-20261104.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-03T17:00:40Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   },
   "squads": {
