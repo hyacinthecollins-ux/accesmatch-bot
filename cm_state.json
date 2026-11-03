@@ -503,6 +503,15 @@
       "day": "2026-11-03",
       "source": "football-data FL1",
       "at": "2026-11-03T05:50:23Z"
+    },
+    {
+      "id": "6ae97d2b3f84a453ac09f28f",
+      "kind": "breaking",
+      "text": "🚨 Selon franceinfo, Désiré Doué pourrait prendre les rênes de l’attaque du PSG en Ligue des champions. Les grands soirs l’attendent !\n\n#Doué #PSG",
+      "due": "2026-11-03T06:30Z",
+      "day": "2026-11-03",
+      "source": "franceinfo",
+      "at": "2026-11-03T06:20:27Z"
     }
   ],
   "slots": {
@@ -614,20 +623,21 @@
     "80ef949e7be6",
     "88b571547e52",
     "5d28bc45e365",
-    "f4ad7cc11f35"
+    "f4ad7cc11f35",
+    "37acf568baea"
   ],
-  "counter": 56,
+  "counter": 57,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 90,
-        "in": 51271,
-        "out": 12338
+        "calls": 91,
+        "in": 51826,
+        "out": 12528
       },
       "gpt-6.1-sol": {
-        "calls": 86,
-        "in": 29650,
-        "out": 4432
+        "calls": 87,
+        "in": 29969,
+        "out": 4465
       }
     }
   },
@@ -649,7 +659,8 @@
     "Après le Ballon d'Or et la polémique avec la Chine, Kylian Mbappé répond sur le terrain avec le Real Madrid",
     "Équipe de France. Kylian Mbappé imperturbable, Mike Maignan impérial, Michael Olise sort blessé… Le baromètre des Bleus",
     "\"Son nom de famille, c'est Nasraoui Ebana\", la mise au point du père de Lamine Yamal",
-    "Le Bayern prudent avec Olise avant son déplacement chez l'Atlético"
+    "Le Bayern prudent avec Olise avant son déplacement chez l'Atlético",
+    "Ligue des champions : Désiré Doué, l'homme des grands soirs, va-t-il prendre les rênes de l'attaque du PSG"
   ],
   "recent_stats": [
     "erling haaland",
