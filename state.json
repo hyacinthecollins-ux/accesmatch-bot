@@ -1797,6 +1797,32 @@
       "design": "crests-v1",
       "text": "🔥 Demain à 21h (heure de Paris), Slavia Praha reçoit Arsenal en Ligue des champions. Danijel Sturm et Eberechi Eze, 2 buts chacun, sont à surveiller. Ça sent le choc ! Qui gagne ?\n\n#SlaviaPraha #Arsenal #UCL #Sturm",
       "text_src": "IA"
+    },
+    "h575386": {
+      "kind": "x1",
+      "match_id": 575386,
+      "label": "PAE AEK-REAL MADRID",
+      "kickoff": "2026-11-04T17:45:00Z",
+      "status": "poster_ready",
+      "poster": "posters/x575386-20261104.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-03T15:00:40Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "h575387": {
+      "kind": "x1",
+      "match_id": 575387,
+      "label": "FENERBAHÇE-LIVERPOOL",
+      "kickoff": "2026-11-04T17:45:00Z",
+      "status": "poster_ready",
+      "poster": "posters/x575387-20261104.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-03T15:00:40Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   },
   "squads": {
