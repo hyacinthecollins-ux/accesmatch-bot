@@ -1833,26 +1833,30 @@
       "match_id": 575389,
       "label": "SLAVIA PRAHA-ARSENAL",
       "kickoff": "2026-11-04T20:00:00Z",
-      "status": "poster_ready",
+      "status": "scheduled",
       "poster": "posters/x575389-20261104.jpg",
-      "post_id": null,
-      "due": null,
+      "post_id": "6aea134451b33df410653abf",
+      "due": "2026-11-04T19:00:00Z",
       "created": "2026-11-03T17:00:40Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "text": "⏰ Dans 1 heure, Slavia Praha-Arsenal en Ligue des champions ! Coup d’envoi à 21h : Danijel Sturm et Eberechi Eze, 2 buts chacun, Martin Ødegaard, 1 but et 1 passe décisive. Qui gagne ?\n\n#SlaviaPraha #Arsenal #UCL #Sturm",
+      "text_src": "IA"
     },
     "h575388": {
       "kind": "x1",
       "match_id": 575388,
       "label": "RB LEIPZIG-MAN CITY",
       "kickoff": "2026-11-04T20:00:00Z",
-      "status": "poster_ready",
+      "status": "scheduled",
       "poster": "posters/x575388-20261104.jpg",
-      "post_id": null,
-      "due": null,
+      "post_id": "6aea135051b33df41065465f",
+      "due": "2026-11-04T18:52:00Z",
       "created": "2026-11-03T17:00:40Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "text": "⏰ Dans 1 heure, RB Leipzig reçoit Man City en Ligue des champions. Erling Haaland (4 buts) et Phil Foden (3 buts, 1 passe décisive) sont à surveiller. Qui gagne ?\n\n#RBLeipzig #MCFC #UCL #Haaland",
+      "text_src": "IA"
     }
   },
   "squads": {
@@ -1980,8 +1984,8 @@
       "stars": []
     }
   },
-  "llm_calls": 50,
-  "llm_posts": 23,
+  "llm_calls": 55,
+  "llm_posts": 25,
   "x_texts": [
     "⏰ Chelsea-Man United, choc de Premier League : coup d’envoi dans 1h24, à 13h30 ! João Pedro (5 buts, 3 passes décisives) et Bryan Mbeumo (4 buts) sont attendus. Qui gagne ?",
     "⏰ Dans 1 heure, Man City reçoit Brighton Hove en Premier League : coup d’envoi à 16h (heure de Paris). Haaland (9 buts), Cherki (4 buts, 2 passes décisives) et Groß (3 buts, 4 passes décisives) à surveiller. Qui gagne ?",
@@ -2006,6 +2010,8 @@
     "🔥 Demain à 21h (heure de Paris), RB Leipzig reçoit Man City en Ligue des champions. Haaland (4 buts) et Foden (3 buts, 1 passe décisive) en C1 cette saison, Cherki à surveiller : défenseurs, pas de sieste ! Qui gagne ?",
     "🔥 Demain à 21h (heure de Paris), Slavia Praha reçoit Arsenal en Ligue des champions. Danijel Sturm et Eberechi Eze, 2 buts chacun, sont à surveiller. Ça sent le choc ! Qui gagne ?",
     "🔥 C'est bientôt : PAE AEK × Real Madrid dans 1 heure !",
-    "⏰ Fenerbahçe reçoit Liverpool en Ligue des champions : coup d’envoi dans 1 heure, à 18h45 ! Mac Allister et Barcola, 3 buts chacun, Wirtz aussi à surveiller. Les Reds vont-ils gâcher la fête ?"
+    "⏰ Fenerbahçe reçoit Liverpool en Ligue des champions : coup d’envoi dans 1 heure, à 18h45 ! Mac Allister et Barcola, 3 buts chacun, Wirtz aussi à surveiller. Les Reds vont-ils gâcher la fête ?",
+    "⏰ Dans 1 heure, Slavia Praha-Arsenal en Ligue des champions ! Coup d’envoi à 21h : Danijel Sturm et Eberechi Eze, 2 buts chacun, Martin Ødegaard, 1 but et 1 passe décisive. Qui gagne ?",
+    "⏰ Dans 1 heure, RB Leipzig reçoit Man City en Ligue des champions. Erling Haaland (4 buts) et Phil Foden (3 buts, 1 passe décisive) sont à surveiller. Qui gagne ?"
   ]
 }
