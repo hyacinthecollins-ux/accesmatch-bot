@@ -341,21 +341,41 @@
       "due": "2026-11-15T20:45:00.000Z",
       "at": "2026-11-02T11:07:02Z",
       "title": "3 years ago… ☠️ Peope will provoke you when ⚽"
+    },
+    "7653812992378801441": {
+      "post_id": "6ae9bd055bd65daf78f16583",
+      "due": "2026-11-16T08:15:00.000Z",
+      "at": "2026-11-03T10:52:54Z",
+      "title": "Le fameux match dont dembelé parlait contre real ⚽"
+    },
+    "7528417991990529302": {
+      "post_id": "6ae9bd095b02786f00d0197d",
+      "due": "2026-11-16T11:30:00.000Z",
+      "at": "2026-11-03T10:52:57Z",
+      "title": "Bojan Krkić ⚽"
+    },
+    "7638046661113089302": {
+      "post_id": "6ae9bd0c238f8d399528e2cd",
+      "due": "2026-11-16T17:30:00.000Z",
+      "at": "2026-11-03T10:53:01Z",
+      "title": "⚽🔥👏 Cherki is a Vibe ⚽"
+    },
+    "7696121546095562017": {
+      "post_id": "6ae9bd10f3805fa210151f59",
+      "due": "2026-11-16T20:45:00.000Z",
+      "at": "2026-11-03T10:53:04Z",
+      "title": "Personne n’était prêt pour ce PSG vs Man City 🥶🔥 "
     }
   },
   "failed": {},
-  "counter": 57,
+  "counter": 61,
   "recent_players": [
-    "messi",
-    "vinicius",
     "mbappe",
-    "yamal"
+    "yamal",
+    "dembele",
+    "cherki"
   ],
   "recent_creators": [
-    "FootballEditsHD-TikTok",
-    "Football8568-TikTok",
-    "FootH25-TikTok",
-    "HRPlays01-TikTok",
     "F11Skillz-TikTok",
     "KickVibesEdit-TikTok",
     "R10Comps-TikTok",
@@ -375,13 +395,13 @@
     "Football8568-TikTok",
     "F11Skillz-TikTok",
     "HRPlays01-TikTok",
-    "F11Skillz-TikTok"
+    "F11Skillz-TikTok",
+    "FootH25-TikTok",
+    "FootballEditsHD-TikTok",
+    "Football8568-TikTok",
+    "FootH25-TikTok"
   ],
   "recent_titles": [
-    "💔 ｜ happy 27th birthday kylian 💫🎂 crazy to think ⚽",
-    "vini jr ⚽",
-    "＂both feet, pure control： rayan cherki unlocked!＂ 👣⚡ ⚽",
-    "8 fois où le goat messi a choqué le monde du ⚽",
     "players ve balls 😂 ⚽",
     "kylian clear them both ☠️🔥",
     "le real madrid ne meurt jamais 🔥☠️",
@@ -407,13 +427,13 @@
     "marsilo⚽ 🤕 ⚽",
     "the day mbappe almost saved paris after entering ⚽",
     "100% epic yamal moments ⚽",
-    "3 years ago… ☠️ peope will provoke you when ⚽"
+    "3 years ago… ☠️ peope will provoke you when ⚽",
+    "le fameux match dont dembelé parlait contre real ⚽",
+    "bojan krkić ⚽",
+    "⚽🔥👏 cherki is a vibe ⚽",
+    "personne n’était prêt pour ce psg vs man city 🥶🔥"
   ],
   "recent_stars": [
-    0,
-    1,
-    0,
-    0,
     1,
     1,
     1,
@@ -428,14 +448,14 @@
     1,
     0,
     1,
+    1,
+    0,
+    1,
+    0,
     1,
     0
   ],
   "recent_long": [
-    "",
-    "neymar",
-    "",
-    "",
     "raphinha",
     "olise",
     "pedri",
@@ -451,6 +471,10 @@
     "",
     "mbappe",
     "yamal",
+    "",
+    "dembele",
+    "",
+    "cherki",
     ""
   ]
 }
