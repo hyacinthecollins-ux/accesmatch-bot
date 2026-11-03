@@ -1857,6 +1857,58 @@
       "design": "crests-v1",
       "text": "⏰ Dans 1 heure, RB Leipzig reçoit Man City en Ligue des champions. Erling Haaland (4 buts) et Phil Foden (3 buts, 1 passe décisive) sont à surveiller. Qui gagne ?\n\n#RBLeipzig #MCFC #UCL #Haaland",
       "text_src": "IA"
+    },
+    "r575382": {
+      "kind": "result",
+      "match_id": 575382,
+      "label": "VILLARREAL-PSG",
+      "kickoff": "2026-11-03T20:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/r575382-20261103.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-03T22:01:22Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "r575380": {
+      "kind": "result",
+      "match_id": 575380,
+      "label": "BARÇA-ASTON VILLA",
+      "kickoff": "2026-11-03T20:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/r575380-20261103.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-03T22:01:22Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "r575381": {
+      "kind": "result",
+      "match_id": 575381,
+      "label": "ATLETI-BAYERN",
+      "kickoff": "2026-11-03T20:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/r575381-20261103.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-03T22:01:22Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "r575383": {
+      "kind": "result",
+      "match_id": 575383,
+      "label": "MAN UNITED-ROMA",
+      "kickoff": "2026-11-03T20:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/r575383-20261103.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-03T22:01:22Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   },
   "squads": {
