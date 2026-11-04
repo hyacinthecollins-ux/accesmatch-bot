@@ -656,6 +656,15 @@
       "day": "2026-11-04",
       "source": "football-data FL1",
       "at": "2026-11-04T17:40:25Z"
+    },
+    {
+      "id": "6aeb8c81b1d4b989c0c96029",
+      "kind": "reaction",
+      "text": "⏱️ PAE AEK 2-3 Real Madrid ! Après une première période sans but, les Madrilènes s’imposent en Ligue des champions. Une victoire qui claque !\n\n#RealMadrid #LDC",
+      "due": "2026-11-04T20:00Z",
+      "day": "2026-11-04",
+      "source": "Match termine (Ligue des champions) : PAE AEK 2-3 Real Madrid",
+      "at": "2026-11-04T19:50:25Z"
     }
   ],
   "slots": {
@@ -772,7 +781,9 @@
     "575380",
     "575379",
     "575383",
-    "575385"
+    "575385",
+    "575386",
+    "575387"
   ],
   "used_news": [
     "0323d7e5074e",
@@ -804,18 +815,18 @@
     "284c2a18098c",
     "0d16e7435ad4"
   ],
-  "counter": 73,
+  "counter": 74,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 124,
-        "in": 70458,
-        "out": 17382
+        "calls": 127,
+        "in": 72080,
+        "out": 17810
       },
       "gpt-6.1-sol": {
-        "calls": 118,
-        "in": 40532,
-        "out": 6283
+        "calls": 121,
+        "in": 41487,
+        "out": 6532
       }
     }
   },
