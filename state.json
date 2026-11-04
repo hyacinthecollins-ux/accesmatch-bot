@@ -1941,6 +1941,32 @@
       "fails": 0,
       "design": "crests-v1",
       "tg": "sent"
+    },
+    "r575389": {
+      "kind": "result",
+      "match_id": 575389,
+      "label": "SLAVIA PRAHA-ARSENAL",
+      "kickoff": "2026-11-04T20:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/r575389-20261104.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-04T22:01:04Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "r575388": {
+      "kind": "result",
+      "match_id": 575388,
+      "label": "RB LEIPZIG-MAN CITY",
+      "kickoff": "2026-11-04T20:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/r575388-20261104.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-04T22:01:04Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   },
   "squads": {
