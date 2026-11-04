@@ -593,6 +593,15 @@
       "day": "2026-11-04",
       "source": "football-data PD",
       "at": "2026-11-04T05:50:27Z"
+    },
+    {
+      "id": "6aeacebedc38f4d7bad22735",
+      "kind": "breaking",
+      "text": "🚨 Selon Goal, une star d’Aston Villa a surpris Yamal et raconté une anecdote amusante sur Rodri. Sacré mélange de stars ! Vous imaginez la scène ?\n\n#Yamal",
+      "due": "2026-11-04T06:30Z",
+      "day": "2026-11-04",
+      "source": "Goal",
+      "at": "2026-11-04T06:20:46Z"
     }
   ],
   "slots": {
@@ -727,20 +736,22 @@
     "f4ad7cc11f35",
     "37acf568baea",
     "906e9bb7787c",
-    "haee5dc32b1"
+    "haee5dc32b1",
+    "d0d75e4fc90e",
+    "6b278b3fb68d"
   ],
-  "counter": 66,
+  "counter": 67,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 110,
-        "in": 62452,
-        "out": 15087
+        "calls": 114,
+        "in": 64648,
+        "out": 15779
       },
       "gpt-6.1-sol": {
-        "calls": 106,
-        "in": 36347,
-        "out": 5483
+        "calls": 110,
+        "in": 37616,
+        "out": 5744
       }
     }
   },
@@ -764,7 +775,9 @@
     "\"Son nom de famille, c'est Nasraoui Ebana\", la mise au point du père de Lamine Yamal",
     "Le Bayern prudent avec Olise avant son déplacement chez l'Atlético",
     "Ligue des champions : Désiré Doué, l'homme des grands soirs, va-t-il prendre les rênes de l'attaque du PSG",
-    "Villarreal-PSG : pour Désiré Doué, l'occasion en or de reprendre le flambeau de Dembélé et Kvara en Ligue des champions"
+    "Villarreal-PSG : pour Désiré Doué, l'occasion en or de reprendre le flambeau de Dembélé et Kvara en Ligue des champions",
+    "Yamal dépasse Mbappé et détient le record du nombre de buts marqués avant l'âge de 20 ans en Ligue des champions.",
+    "La star d'Aston Villa surprend Yamal et raconte une anecdote amusante au sujet de Rodri"
   ],
   "recent_stats": [
     "erling haaland",
