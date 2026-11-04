@@ -665,6 +665,24 @@
       "day": "2026-11-04",
       "source": "Match termine (Ligue des champions) : PAE AEK 2-3 Real Madrid",
       "at": "2026-11-04T19:50:25Z"
+    },
+    {
+      "id": "6aebab053a6057e11e789f3f",
+      "kind": "reaction",
+      "text": "⏱️ Porto 4-1 Napoli ! À 1-1 à la pause, les Portistas ont fait la différence après le repos. Une victoire énorme en Ligue des champions, quelle démonstration !\n\n#LDC",
+      "due": "2026-11-04T22:10Z",
+      "day": "2026-11-04",
+      "source": "Match termine (Ligue des champions) : Porto 4-1 Napoli",
+      "at": "2026-11-04T22:00:37Z"
+    },
+    {
+      "id": "6aebab0e4cb090f0ac3fde11",
+      "kind": "reaction",
+      "text": "⏱️ Viking 4-1 Sabah FK ! Après une première période à 1-1, Viking a déroulé : quelle victoire marquante en Ligue des champions. Vous l’avez vu venir ?\n\n#LDC",
+      "due": "2026-11-04T22:40Z",
+      "day": "2026-11-04",
+      "source": "Match termine (Ligue des champions) : Viking 4-1 Sabah FK",
+      "at": "2026-11-04T22:00:46Z"
     }
   ],
   "slots": {
@@ -783,7 +801,9 @@
     "575383",
     "575385",
     "575386",
-    "575387"
+    "575387",
+    "575392",
+    "575394"
   ],
   "used_news": [
     "0323d7e5074e",
@@ -815,18 +835,18 @@
     "284c2a18098c",
     "0d16e7435ad4"
   ],
-  "counter": 74,
+  "counter": 76,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 127,
-        "in": 72080,
-        "out": 17810
+        "calls": 129,
+        "in": 73152,
+        "out": 18314
       },
       "gpt-6.1-sol": {
-        "calls": 121,
-        "in": 41487,
-        "out": 6532
+        "calls": 123,
+        "in": 42109,
+        "out": 6652
       }
     }
   },
