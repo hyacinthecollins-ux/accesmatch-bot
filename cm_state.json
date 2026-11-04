@@ -602,6 +602,15 @@
       "day": "2026-11-04",
       "source": "Goal",
       "at": "2026-11-04T06:20:46Z"
+    },
+    {
+      "id": "6aeadf1f2b43f8ba7d74027a",
+      "kind": "breaking",
+      "text": "🚨 Selon Sport, le Bayern Munich rêverait de Doué… mais le média garde le suspense sur la suite. Voilà un feuilleton qui démarre fort !\n\n#Doué #FCBayern",
+      "due": "2026-11-04T07:40Z",
+      "day": "2026-11-04",
+      "source": "Sport",
+      "at": "2026-11-04T07:30:39Z"
     }
   ],
   "slots": {
@@ -738,20 +747,21 @@
     "906e9bb7787c",
     "haee5dc32b1",
     "d0d75e4fc90e",
-    "6b278b3fb68d"
+    "6b278b3fb68d",
+    "284c2a18098c"
   ],
-  "counter": 67,
+  "counter": 68,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 114,
-        "in": 64648,
-        "out": 15779
+        "calls": 116,
+        "in": 65710,
+        "out": 16247
       },
       "gpt-6.1-sol": {
-        "calls": 110,
-        "in": 37616,
-        "out": 5744
+        "calls": 112,
+        "in": 38199,
+        "out": 5897
       }
     }
   },
@@ -777,7 +787,8 @@
     "Ligue des champions : Désiré Doué, l'homme des grands soirs, va-t-il prendre les rênes de l'attaque du PSG",
     "Villarreal-PSG : pour Désiré Doué, l'occasion en or de reprendre le flambeau de Dembélé et Kvara en Ligue des champions",
     "Yamal dépasse Mbappé et détient le record du nombre de buts marqués avant l'âge de 20 ans en Ligue des champions.",
-    "La star d'Aston Villa surprend Yamal et raconte une anecdote amusante au sujet de Rodri"
+    "La star d'Aston Villa surprend Yamal et raconte une anecdote amusante au sujet de Rodri",
+    "Le Bayern Munich rêve de Doué, mais…"
   ],
   "recent_stats": [
     "erling haaland",
