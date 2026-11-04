@@ -1953,7 +1953,8 @@
       "due": null,
       "created": "2026-11-04T22:01:04Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "sent"
     },
     "r575388": {
       "kind": "result",
@@ -1966,7 +1967,8 @@
       "due": null,
       "created": "2026-11-04T22:01:04Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "sent"
     }
   },
   "squads": {
