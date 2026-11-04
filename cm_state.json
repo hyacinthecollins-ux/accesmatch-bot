@@ -611,6 +611,15 @@
       "day": "2026-11-04",
       "source": "Sport",
       "at": "2026-11-04T07:30:39Z"
+    },
+    {
+      "id": "6aeaef7dc63bd995bd264af7",
+      "kind": "breaking",
+      "text": "🚨 Selon Sport, nouvelle alerte pour Rodri à quelques jours du choc face à l’Atlético. Le Barça retient son souffle !\n\n#FCBarcelona #Atleti",
+      "due": "2026-11-04T08:50Z",
+      "day": "2026-11-04",
+      "source": "Sport",
+      "at": "2026-11-04T08:40:29Z"
     }
   ],
   "slots": {
@@ -748,20 +757,21 @@
     "haee5dc32b1",
     "d0d75e4fc90e",
     "6b278b3fb68d",
-    "284c2a18098c"
+    "284c2a18098c",
+    "0d16e7435ad4"
   ],
-  "counter": 68,
+  "counter": 69,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 116,
-        "in": 65710,
-        "out": 16247
+        "calls": 117,
+        "in": 66252,
+        "out": 16428
       },
       "gpt-6.1-sol": {
-        "calls": 112,
-        "in": 38199,
-        "out": 5897
+        "calls": 113,
+        "in": 38499,
+        "out": 5935
       }
     }
   },
@@ -788,7 +798,8 @@
     "Villarreal-PSG : pour Désiré Doué, l'occasion en or de reprendre le flambeau de Dembélé et Kvara en Ligue des champions",
     "Yamal dépasse Mbappé et détient le record du nombre de buts marqués avant l'âge de 20 ans en Ligue des champions.",
     "La star d'Aston Villa surprend Yamal et raconte une anecdote amusante au sujet de Rodri",
-    "Le Bayern Munich rêve de Doué, mais…"
+    "Le Bayern Munich rêve de Doué, mais…",
+    "Barça : nouvelle alerte pour Rodri, à quelques jours du choc face à l’Atlético"
   ],
   "recent_stats": [
     "erling haaland",
