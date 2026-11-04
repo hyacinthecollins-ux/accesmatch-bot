@@ -629,6 +629,15 @@
       "day": "2026-11-04",
       "source": "football-data CL",
       "at": "2026-11-04T09:00:30Z"
+    },
+    {
+      "id": "6aeb175b9b828eded3a88ed0",
+      "kind": "debate",
+      "text": "Arsenal devant City, Brighton avec la meilleure différence de buts… et Brentford dans le top 6. La Premier League a déjà sorti le grand huit 😅 Qui vous surprend le plus ?\n\n#Arsenal #PremierLeague",
+      "due": "2026-11-04T15:30Z",
+      "day": "2026-11-04",
+      "source": "football-data PL",
+      "at": "2026-11-04T11:30:36Z"
     }
   ],
   "slots": {
@@ -668,7 +677,8 @@
     "2026-11-03T22:35": "done",
     "2026-11-04T08:05": "done",
     "2026-11-04T10:45": "done",
-    "2026-11-04T14:00": "done"
+    "2026-11-04T14:00": "done",
+    "2026-11-04T16:30": "done"
   },
   "slot_tries": {
     "2026-10-27T20:15": 1,
@@ -706,7 +716,8 @@
     "2026-11-03T22:35": 1,
     "2026-11-04T08:05": 1,
     "2026-11-04T10:45": 1,
-    "2026-11-04T14:00": 1
+    "2026-11-04T14:00": 1,
+    "2026-11-04T16:30": 1
   },
   "reacted": [
     "559648",
@@ -771,18 +782,18 @@
     "284c2a18098c",
     "0d16e7435ad4"
   ],
-  "counter": 70,
+  "counter": 71,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 118,
-        "in": 66930,
-        "out": 16556
+        "calls": 120,
+        "in": 68128,
+        "out": 16801
       },
       "gpt-6.1-sol": {
-        "calls": 114,
-        "in": 38947,
-        "out": 5978
+        "calls": 116,
+        "in": 39737,
+        "out": 6163
       }
     }
   },
