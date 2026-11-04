@@ -1913,6 +1913,32 @@
       "fails": 0,
       "design": "crests-v1",
       "tg": "sent"
+    },
+    "r575387": {
+      "kind": "result",
+      "match_id": 575387,
+      "label": "FENERBAHÇE-LIVERPOOL",
+      "kickoff": "2026-11-04T17:45:00Z",
+      "status": "poster_ready",
+      "poster": "posters/r575387-20261104.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-04T20:30:33Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "r575386": {
+      "kind": "result",
+      "match_id": 575386,
+      "label": "PAE AEK-REAL MADRID",
+      "kickoff": "2026-11-04T17:45:00Z",
+      "status": "poster_ready",
+      "poster": "posters/r575386-20261104.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-04T20:30:33Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   },
   "squads": {
