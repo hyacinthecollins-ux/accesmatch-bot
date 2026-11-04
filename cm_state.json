@@ -575,6 +575,15 @@
       "day": "2026-11-04",
       "source": "Match termine (Ligue des champions) : Barça 3-0 Aston Villa",
       "at": "2026-11-03T22:01:00Z"
+    },
+    {
+      "id": "6aeaa22469ad1ef03b73758a",
+      "kind": "preview",
+      "text": "🔥 Au programme ce 4 novembre : 18h45, PAE AEK - Real Madrid et Fenerbahçe - Liverpool ; 21h00, Porto - Napoli et RB Leipzig - Man City. Une soirée de Ligue des champions qui promet du lourd !\n\n#RealMadrid #Liverpool",
+      "due": "2026-11-04T07:05Z",
+      "day": "2026-11-04",
+      "source": "football-data",
+      "at": "2026-11-04T03:10:28Z"
     }
   ],
   "slots": {
@@ -611,7 +620,8 @@
     "2026-11-03T14:00": "done",
     "2026-11-03T16:30": "done",
     "2026-11-03T20:15": "skipped",
-    "2026-11-03T22:35": "done"
+    "2026-11-03T22:35": "done",
+    "2026-11-04T08:05": "done"
   },
   "slot_tries": {
     "2026-10-27T20:15": 1,
@@ -646,7 +656,8 @@
     "2026-11-03T10:45": 1,
     "2026-11-03T14:00": 1,
     "2026-11-03T16:30": 1,
-    "2026-11-03T22:35": 1
+    "2026-11-03T22:35": 1,
+    "2026-11-04T08:05": 1
   },
   "reacted": [
     "559648",
@@ -707,18 +718,18 @@
     "906e9bb7787c",
     "haee5dc32b1"
   ],
-  "counter": 64,
+  "counter": 65,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 108,
-        "in": 61196,
-        "out": 14832
+        "calls": 109,
+        "in": 61763,
+        "out": 14941
       },
       "gpt-6.1-sol": {
-        "calls": 104,
-        "in": 35517,
-        "out": 5409
+        "calls": 105,
+        "in": 35877,
+        "out": 5446
       }
     }
   },
