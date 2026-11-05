@@ -773,6 +773,15 @@
       "day": "2026-11-05",
       "source": "football-data CL",
       "at": "2026-11-05T15:20:33Z"
+    },
+    {
+      "id": "6aecbf88d7d39142cf519537",
+      "kind": "duel",
+      "text": "⚽ Erling Haaland (Man City) affiche 9 buts en 9 matchs de Premier League, Alexander Isak (Liverpool) en compte 6 en 8. Haaland mène au total des buts : Haaland ou Isak ?\n\n#Haaland #Liverpool",
+      "due": "2026-11-05T21:35Z",
+      "day": "2026-11-05",
+      "source": "football-data PL",
+      "at": "2026-11-05T17:40:24Z"
     }
   ],
   "slots": {
@@ -820,7 +829,8 @@
     "2026-11-05T10:45": "done",
     "2026-11-05T14:00": "done",
     "2026-11-05T16:30": "done",
-    "2026-11-05T20:15": "done"
+    "2026-11-05T20:15": "done",
+    "2026-11-05T22:35": "done"
   },
   "slot_tries": {
     "2026-10-27T20:15": 1,
@@ -866,7 +876,8 @@
     "2026-11-05T10:45": 1,
     "2026-11-05T14:00": 1,
     "2026-11-05T16:30": 1,
-    "2026-11-05T20:15": 1
+    "2026-11-05T20:15": 1,
+    "2026-11-05T22:35": 1
   },
   "reacted": [
     "559648",
@@ -943,18 +954,18 @@
     "0b125a51ec40",
     "ef9fcdc5b401"
   ],
-  "counter": 86,
+  "counter": 87,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 145,
-        "in": 82304,
-        "out": 20399
+        "calls": 146,
+        "in": 83257,
+        "out": 20459
       },
       "gpt-6.1-sol": {
-        "calls": 139,
-        "in": 47702,
-        "out": 7490
+        "calls": 140,
+        "in": 48053,
+        "out": 7529
       }
     }
   },
@@ -1005,5 +1016,7 @@
     "alexander isak"
   ],
   "debates": {},
-  "recent_duels": []
+  "recent_duels": [
+    "alexander isak|erling haaland"
+  ]
 }
