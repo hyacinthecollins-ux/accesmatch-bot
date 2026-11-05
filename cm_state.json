@@ -701,6 +701,15 @@
       "day": "2026-11-05",
       "source": "Match termine (Ligue des champions) : PSV 1-2 Club Brugge",
       "at": "2026-11-04T23:10:28Z"
+    },
+    {
+      "id": "6aebf3a3f283c8dd45b6928e",
+      "kind": "stat",
+      "text": "📊 Rayan Cherki est 8e des buteurs de Premier League avec 4 buts et 2 passes décisives en 9 matchs. Ça claque déjà ! Vous en pensez quoi ?\n\n#Cherki #PremierLeague",
+      "due": "2026-11-05T07:05Z",
+      "day": "2026-11-05",
+      "source": "football-data PL",
+      "at": "2026-11-05T03:10:27Z"
     }
   ],
   "slots": {
@@ -743,7 +752,8 @@
     "2026-11-04T14:00": "done",
     "2026-11-04T16:30": "done",
     "2026-11-04T20:15": "done",
-    "2026-11-04T22:35": "done"
+    "2026-11-04T22:35": "done",
+    "2026-11-05T08:05": "done"
   },
   "slot_tries": {
     "2026-10-27T20:15": 1,
@@ -784,7 +794,8 @@
     "2026-11-04T14:00": 1,
     "2026-11-04T16:30": 1,
     "2026-11-04T20:15": 1,
-    "2026-11-04T22:35": 1
+    "2026-11-04T22:35": 1,
+    "2026-11-05T08:05": 1
   },
   "reacted": [
     "559648",
@@ -858,18 +869,18 @@
     "284c2a18098c",
     "0d16e7435ad4"
   ],
-  "counter": 78,
+  "counter": 79,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 137,
-        "in": 77458,
-        "out": 19227
+        "calls": 138,
+        "in": 78152,
+        "out": 19340
       },
       "gpt-6.1-sol": {
-        "calls": 131,
-        "in": 44623,
-        "out": 7197
+        "calls": 132,
+        "in": 45087,
+        "out": 7236
       }
     }
   },
@@ -912,6 +923,7 @@
     "amine gouiri",
     "raphinha",
     "lamine yamal",
-    "erling haaland"
+    "erling haaland",
+    "rayan cherki"
   ]
 }
