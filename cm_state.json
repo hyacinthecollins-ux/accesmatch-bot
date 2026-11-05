@@ -782,6 +782,15 @@
       "day": "2026-11-05",
       "source": "football-data PL",
       "at": "2026-11-05T17:40:24Z"
+    },
+    {
+      "id": "6aed0aa0dbada656bedb32de",
+      "kind": "breaking",
+      "text": "🚨 Selon Sport News Africa, Messi et Ronaldo diraient adieu aux sélections, marquant la fin d’une ère pour le football mondial. Un chapitre se tourne ?\n\n#Messi #Ronaldo",
+      "due": "2026-11-05T23:10Z",
+      "day": "2026-11-06",
+      "source": "Sport News Africa",
+      "at": "2026-11-05T23:00:48Z"
     }
   ],
   "slots": {
@@ -952,20 +961,21 @@
     "0d16e7435ad4",
     "71bd8d410a05",
     "0b125a51ec40",
-    "ef9fcdc5b401"
+    "ef9fcdc5b401",
+    "5dd6f7b95546"
   ],
-  "counter": 87,
+  "counter": 88,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 146,
-        "in": 83257,
-        "out": 20459
+        "calls": 148,
+        "in": 85229,
+        "out": 20893
       },
       "gpt-6.1-sol": {
-        "calls": 140,
-        "in": 48053,
-        "out": 7529
+        "calls": 142,
+        "in": 48722,
+        "out": 7664
       }
     }
   },
@@ -996,7 +1006,8 @@
     "Barça : nouvelle alerte pour Rodri, à quelques jours du choc face à l’Atlético",
     "Grâce à Mbappé, le Real Madrid rejoint le PSG, Manchester City et Arsenal se sont fait peur… ce qu’il faut retenir de la soirée de Ligue des Champions",
     "« Nous devons hausser un peu notre niveau » : Erling Haaland appelle Manchester City à se montrer plus impitoyable après avoir inscrit le but de la victoire en fin de match lors du succès 3-2 contre le RB Leipzig en Ligue des champions",
-    "Jude Bellingham salue la « mentalité » du Real Madrid : la star de l’Angleterre inspire une nouvelle remontée spectaculaire en Ligue des champions face à l’AEK Athènes"
+    "Jude Bellingham salue la « mentalité » du Real Madrid : la star de l’Angleterre inspire une nouvelle remontée spectaculaire en Ligue des champions face à l’AEK Athènes",
+    "Messi et Ronaldo disent adieu aux sélections : la fin d’une ère pour le football mondial · SNA"
   ],
   "recent_stats": [
     "erling haaland",
