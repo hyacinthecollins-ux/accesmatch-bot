@@ -8,6 +8,8 @@
   ],
   "max_reactions_per_day": 4,
   "max_breaking_per_day": 3,
+  "max_debates_per_day": 1,
+  "debate_min_gap_h": 48,
   "breaking_max_age_h": 4,
   "news_horizon_h": 3.5,
   "lookahead_h": 4,

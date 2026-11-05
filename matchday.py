@@ -584,14 +584,14 @@ def x_facts(m, kind, due, state, now):
 
 TONES = ["intensite maximale, phrases courtes et nerveuses", "complice de supporter, bon enfant",
          "soiree de gala, on annonce un gros morceau", "taquin et confiant, avec une petite vanne bon enfant",
-         "tension d'avant-match, ca sent la poudre"]
+         "tension d'avant-match, ambiance electrique"]
 X_INSTR = {
     "x24": ("Ecris le post de chauffe 24 h avant le match (il accompagne l'affiche du match) : accroche \"🔥\" ou \"🚨\", "
             "annonce le match avec la formulation de date indiquee dans les faits (\"Quand\") et l'heure, cite 2 ou 3 joueurs "
             "des faits, avec leur chiffre exact s'il y en a un. On ne connait pas les compositions : un joueur est \"a "
             "suivre\", \"attendu\" ou \"a surveiller\", JAMAIS annonce titulaire ni forcement present. Monte la pression "
-            "avec une phrase qui claque (sans rien inventer), puis termine par une question courte qui fait reagir "
-            "(ton score ? ton buteur ? qui gagne ?). N'ecris jamais le mot \"pronostic\". Evite les formules usees "
+            "avec une phrase d'accroche originale (sans rien inventer), puis termine par une question courte qui fait reagir "
+            "(ton score ? ton buteur ? qui gagne ?), formulee autrement que dans les posts precedents. N'ecris jamais le mot \"pronostic\". Evite les formules usees "
             "(\"la tension monte\", \"ca promet\", \"a suivre de pres\") et ecris les noms de clubs comme dans les faits "
             "(jamais en majuscules)."),
     "x1": ("Ecris le post de chauffe a 1 h du coup d'envoi (il accompagne l'affiche du match) : accroche \"⏰\" ou \"🚨\", "

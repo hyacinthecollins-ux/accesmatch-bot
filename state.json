@@ -1969,6 +1969,62 @@
       "fails": 0,
       "design": "crests-v1",
       "tg": "sent"
+    },
+    "p565850": {
+      "kind": "preview",
+      "match_id": 565850,
+      "label": "BAYERN-LEVERKUSEN",
+      "kickoff": "2026-11-01T17:30:00Z",
+      "status": "poster_ready",
+      "poster": "posters/p565850-20261101.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-10-31T03:00:00Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "p559650": {
+      "kind": "preview",
+      "match_id": 559650,
+      "label": "PSG-NICE",
+      "kickoff": "2026-11-01T15:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/p559650-20261101.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-10-31T17:00:00Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "a559650": {
+      "kind": "x24",
+      "match_id": 559650,
+      "label": "PSG-NICE",
+      "kickoff": "2026-11-01T15:00:00Z",
+      "status": "scheduled",
+      "poster": "posters/x559650-20261101.jpg",
+      "post_id": "bp1",
+      "due": "2026-10-31T17:03:00Z",
+      "created": "2026-10-31T17:00:00Z",
+      "fails": 0,
+      "design": "crests-v1",
+      "text": "🔥 PSG × Nice demain à 16h !\n\nLes yeux sur Dembélé, Kvaratskhelia et Doue. Ton buteur ? 👇\n\n#PSG #Nice #Ligue1 #Dembélé",
+      "text_src": "secours"
+    },
+    "h559650": {
+      "kind": "x1",
+      "match_id": 559650,
+      "label": "PSG-NICE",
+      "kickoff": "2026-11-01T15:00:00Z",
+      "status": "scheduled",
+      "poster": "posters/x559650-20261101.jpg",
+      "post_id": "bp2",
+      "due": "2026-11-01T14:00:00Z",
+      "created": "2026-10-31T17:00:00Z",
+      "fails": 0,
+      "design": "crests-v1",
+      "text": "🔥 C'est bientôt : PSG × Nice dans 1 heure !\n\nLes yeux sur Dembélé, Kvaratskhelia et Doue. Qui plante en premier ? 👇\n\n#PSG #Nice #Ligue1 #Dembélé",
+      "text_src": "secours"
     }
   },
   "squads": {
@@ -2094,10 +2150,14 @@
     "930": {
       "t": "2026-11-03T00:01:11Z",
       "stars": []
+    },
+    "522": {
+      "t": "2026-10-31T03:00:00Z",
+      "stars": []
     }
   },
-  "llm_calls": 55,
-  "llm_posts": 25,
+  "llm_calls": 65,
+  "llm_posts": 27,
   "x_texts": [
     "⏰ Chelsea-Man United, choc de Premier League : coup d’envoi dans 1h24, à 13h30 ! João Pedro (5 buts, 3 passes décisives) et Bryan Mbeumo (4 buts) sont attendus. Qui gagne ?",
     "⏰ Dans 1 heure, Man City reçoit Brighton Hove en Premier League : coup d’envoi à 16h (heure de Paris). Haaland (9 buts), Cherki (4 buts, 2 passes décisives) et Groß (3 buts, 4 passes décisives) à surveiller. Qui gagne ?",
@@ -2124,6 +2184,10 @@
     "🔥 C'est bientôt : PAE AEK × Real Madrid dans 1 heure !",
     "⏰ Fenerbahçe reçoit Liverpool en Ligue des champions : coup d’envoi dans 1 heure, à 18h45 ! Mac Allister et Barcola, 3 buts chacun, Wirtz aussi à surveiller. Les Reds vont-ils gâcher la fête ?",
     "⏰ Dans 1 heure, Slavia Praha-Arsenal en Ligue des champions ! Coup d’envoi à 21h : Danijel Sturm et Eberechi Eze, 2 buts chacun, Martin Ødegaard, 1 but et 1 passe décisive. Qui gagne ?",
-    "⏰ Dans 1 heure, RB Leipzig reçoit Man City en Ligue des champions. Erling Haaland (4 buts) et Phil Foden (3 buts, 1 passe décisive) sont à surveiller. Qui gagne ?"
+    "⏰ Dans 1 heure, RB Leipzig reçoit Man City en Ligue des champions. Erling Haaland (4 buts) et Phil Foden (3 buts, 1 passe décisive) sont à surveiller. Qui gagne ?",
+    "🔥 PSG × Nice demain à 18h ! Dembélé à suivre de près. Ton buteur ?",
+    "⏰ PSG × Nice dans 1 heure (coup d'envoi 18h) ! Les yeux sur Dembélé. Ton score ?",
+    "🔥 PSG × Nice demain à 16h !",
+    "🔥 C'est bientôt : PSG × Nice dans 1 heure !"
   ]
 }
