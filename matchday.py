@@ -1374,7 +1374,11 @@ def xtest(raw_matches, now, n=3):
     ms = sorted((m for m in tracked_matches(raw_matches) if m["kickoff"] > now and m["status"] in ("TIMED", "SCHEDULED")),
                 key=lambda m: (-x_priority(m), m["kickoff"]))[:n]
     if not ms:
-        gh_notice("[test affiches X] aucun match à venir dans la fenêtre")
+        tm = tracked_matches(raw_matches)
+        gh_notice(f"[test affiches X] aucun match à venir dans la fenêtre ({len(raw_matches)} matchs récupérés, "
+                  f"{len(tm)} concernent les clubs suivis, dont à venir : "
+                  + (", ".join(f"{m['home']['short']}-{m['away']['short']} {m['status']} {iso(m['kickoff'])}"
+                               for m in tm if m["kickoff"] > now)[:400] or "aucun") + ")")
         return
     for m in ms:
         for kind, minutes in (("x24", X_J1_MIN), ("x1", X_H1_MIN)):
