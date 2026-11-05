@@ -755,6 +755,15 @@
       "day": "2026-11-05",
       "source": "football-data PD",
       "at": "2026-11-05T09:00:40Z"
+    },
+    {
+      "id": "6aec68d2f26542fc33d2dd2f",
+      "kind": "stat",
+      "text": "📊 Alexander Isak (Liverpool) est 2e des buteurs de Premier League avec 6 buts en 8 matchs. Ça claque déjà ! Peut-il viser encore plus haut ?\n\n#Liverpool #PremierLeague",
+      "due": "2026-11-05T15:30Z",
+      "day": "2026-11-05",
+      "source": "football-data PL",
+      "at": "2026-11-05T11:30:26Z"
     }
   ],
   "slots": {
@@ -800,7 +809,8 @@
     "2026-11-04T22:35": "done",
     "2026-11-05T08:05": "done",
     "2026-11-05T10:45": "done",
-    "2026-11-05T14:00": "done"
+    "2026-11-05T14:00": "done",
+    "2026-11-05T16:30": "done"
   },
   "slot_tries": {
     "2026-10-27T20:15": 1,
@@ -844,7 +854,8 @@
     "2026-11-04T22:35": 1,
     "2026-11-05T08:05": 1,
     "2026-11-05T10:45": 1,
-    "2026-11-05T14:00": 1
+    "2026-11-05T14:00": 1,
+    "2026-11-05T16:30": 1
   },
   "reacted": [
     "559648",
@@ -921,18 +932,18 @@
     "0b125a51ec40",
     "ef9fcdc5b401"
   ],
-  "counter": 84,
+  "counter": 85,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 143,
-        "in": 81041,
-        "out": 20082
+        "calls": 144,
+        "in": 81706,
+        "out": 20219
       },
       "gpt-6.1-sol": {
-        "calls": 137,
-        "in": 46877,
-        "out": 7407
+        "calls": 138,
+        "in": 47309,
+        "out": 7448
       }
     }
   },
@@ -979,6 +990,7 @@
     "raphinha",
     "lamine yamal",
     "erling haaland",
-    "rayan cherki"
+    "rayan cherki",
+    "alexander isak"
   ]
 }
