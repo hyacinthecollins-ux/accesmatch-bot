@@ -912,13 +912,14 @@ def wait_for_url(url, tries=10, delay=6):
 # TELEGRAM — meme affiche dans le canal, message plus direct
 # ============================================================
 TG_PREVIEW_TEMPLATES = [
-    "⚽ <b>{m}</b>\n{c} · <b>{d}</b> à <b>{h}</b> (heure de Paris)\n\n🧪 Teste avant le match pour obtenir ton accès : une fois le match lancé, plus de test.\n📺 Direct, HD, sans stream qui coupe.\n\nÉcris-moi en privé 👇",
-    "🔥 <b>{m}</b> — <b>{d}</b> à <b>{h}</b>\n{c}\n\nFais ton test <b>avant</b> le match pour obtenir ton accès, pas pendant 🔓\nClique sur le bouton et écris-moi 👇",
-    "🚨 <b>{m}</b>\n{c} · <b>{d}</b> à <b>{h}</b> (heure de Paris)\n\nN'attends pas le dernier moment : teste dès maintenant pour obtenir ton accès avant le début du match 🧪\nÉcris-moi en privé 👇",
+    "🚨 <b>{m}</b>\n{c} · <b>{d}</b> à <b>{h}</b> (heure de Paris)\n\n📺 <b>IPTV premium</b> : ce match et les gros matchs en direct, en HD, sans stream qui coupe.\n🔥 Du contenu exclusif en plus.\n\n🧪 <b>Teste AVANT le coup d'envoi</b> pour obtenir ton accès : une fois le match lancé, plus de test.\n\nÉcris-moi en privé 👇",
+    "🔥 <b>{m}</b> — <b>{d}</b> à <b>{h}</b>\n{c}\n\nTu veux le voir en direct, en HD, sans coupure ? 📺 Notre <b>IPTV</b> te donne accès aux plus gros matchs + du contenu exclusif.\n\n🧪 Le test se fait <b>avant</b> le match, pas pendant 🔓\nClique sur le bouton et écris-moi 👇",
+    "⚽ <b>{m}</b>\n{c} · <b>{d}</b> à <b>{h}</b> (heure de Paris)\n\n📡 <b>IPTV</b> : foot en direct, qualité HD, zéro stream qui coupe, contenu exclusif.\n⏳ Teste dès maintenant pour obtenir ton accès avant le début du match : une fois lancé, c'est trop tard (plus de test).\n\nÉcris-moi en privé 👇",
 ]
 TG_RESULT_TEMPLATES = [
-    "🏁 <b>SCORE FINAL</b> : {s}\n\nTu l'as raté ? Pour le prochain, teste <b>avant</b> le match pour obtenir ton accès 🔓\nÉcris-moi en privé 👇",
-    "📣 Terminé : <b>{s}</b>\n\nLe prochain match en direct ? Teste avant qu'il commence pour obtenir ton accès 📺\nClique sur le bouton et écris-moi 👇",
+    "🏁 <b>SCORE FINAL</b> : {s}\n\nTu l'as raté ? Avec notre <b>IPTV</b>, tu vis les gros matchs en direct, en HD, sans coupure 📺 + du contenu exclusif 🔥\n\n🧪 Pour le prochain : teste <b>avant</b> le coup d'envoi pour obtenir ton accès 🔓\nÉcris-moi en privé 👇",
+    "📣 Terminé : <b>{s}</b>\n\nLe prochain, tu le veux en direct ? 📺 <b>IPTV</b> HD, sans stream qui coupe, contenu exclusif.\nTeste avant qu'il commence pour obtenir ton accès (pas de test une fois le match lancé) 🧪\nClique sur le bouton et écris-moi 👇",
+    "⏱️ <b>{s}</b>\n\nPlus jamais de match raté : <b>IPTV</b> en HD, direct sans coupure, contenu exclusif 🔥\n🧪 Teste <b>avant</b> le prochain coup d'envoi pour obtenir ton accès 🔓\nÉcris-moi en privé 👇",
 ]
 
 
