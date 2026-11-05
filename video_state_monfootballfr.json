@@ -389,21 +389,41 @@
       "due": "2026-11-17T20:45:00.000Z",
       "at": "2026-11-04T10:55:48Z",
       "title": "Pose-toi 1 min 34 et admire le génie Micheal Olisé.🤩🇫🇷 ⚽"
+    },
+    "7491820393792146710": {
+      "post_id": "6aec60d2fa4508dd0083a4e1",
+      "due": "2026-11-18T08:15:00.000Z",
+      "at": "2026-11-05T10:56:19Z",
+      "title": "Desire doue ⚽"
+    },
+    "7479218738718395670": {
+      "post_id": "6aec60d6fa4508dd0083a5bf",
+      "due": "2026-11-18T11:30:00.000Z",
+      "at": "2026-11-05T10:56:22Z",
+      "title": "Rare Foden Son Moments 😂 ⚽"
+    },
+    "iuBUUrp25J0": {
+      "post_id": "6aec60d905327d0e3e91fb1a",
+      "due": "2026-11-18T17:30:00.000Z",
+      "at": "2026-11-05T10:56:25Z",
+      "title": "When Ronaldo Loses Control 🤬 ⚽"
+    },
+    "7686320453727702304": {
+      "post_id": "6aec60dd77fc3b318ac7bd8a",
+      "due": "2026-11-18T20:45:00.000Z",
+      "at": "2026-11-05T10:56:29Z",
+      "title": "This player is literally unstoppable🥶⚽️"
     }
   },
   "failed": {},
-  "counter": 65,
+  "counter": 69,
   "recent_players": [
-    "cherki",
-    "neymar",
     "barcola",
-    "olise"
+    "olise",
+    "doue",
+    "ronaldo"
   ],
   "recent_creators": [
-    "HRPlays01-TikTok",
-    "L7-Shorts",
-    "Football8568-TikTok",
-    "L7-Shorts",
     "TeoCRi-Shorts",
     "L7-Shorts",
     "KickVibesEdit-TikTok",
@@ -423,13 +443,13 @@
     "HRPlays01-TikTok",
     "F11Skillz-TikTok",
     "KickVibesEdit-TikTok",
-    "FootH25-TikTok"
+    "FootH25-TikTok",
+    "FootballEditsHD-TikTok",
+    "HRPlays01-TikTok",
+    "L7-Shorts",
+    "Football8568-TikTok"
   ],
   "recent_titles": [
-    "two birds, one stone by khvicha kvarat ⚽🔥👏 ⚽",
-    "2 eme etoile 🏆💙❤️ 🤩 ⚽",
-    "when dembele gets bored 😂 ⚽",
-    "was joining madrid a mistake ？ 😳 you forget ⚽",
     "doué x neymar ⚽",
     "eden hazard ⚽",
     "when raphinha loses control 😡 ⚽",
@@ -455,15 +475,15 @@
     "mesut ozil - when passing becomes art ⚽",
     "neymar’s reaction to mbappe revenging him 😂 ⚽",
     "barcola x doué 🇫🇷 🧊 ⚽",
-    "pose-toi 1 min 34 et admire le génie micheal olisé.🤩🇫🇷 ⚽"
+    "pose-toi 1 min 34 et admire le génie micheal olisé.🤩🇫🇷 ⚽",
+    "desire doue ⚽",
+    "rare foden son moments 😂 ⚽",
+    "when ronaldo loses control 🤬 ⚽",
+    "this player is literally unstoppable🥶⚽️"
   ],
   "recent_stars": [
     1,
     1,
-    1,
-    1,
-    1,
-    1,
     0,
     1,
     0,
@@ -475,15 +495,15 @@
     1,
     0,
     0,
+    1,
+    1,
+    1,
+    1,
     1,
     1,
     1
   ],
   "recent_long": [
-    "neymar",
-    "ronaldo",
-    "mbappe",
-    "bellingham",
     "haaland",
     "messi",
     "",
@@ -499,6 +519,10 @@
     "",
     "neymar",
     "barcola",
-    "olise"
+    "olise",
+    "doue",
+    "foden",
+    "ronaldo",
+    "kvaratskhelia"
   ]
 }
