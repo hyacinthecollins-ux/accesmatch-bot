@@ -108,6 +108,9 @@ X_RESULT_MAX_AGE_H = 5        # on ne poste plus un score final si le coup d'env
 X_REPLY_LINK = True           # lien discret dans une réponse sous l'affiche (jamais dans le post lui-même)
 X_REPLY_KINDS = ("x1",)       # sous l'affiche H-1 seulement (le moment où l'envie de regarder est la plus forte)
 X_REPLY_URL = "https://t.me/accesmatch"
+X_CTA = True                  # signature discrète en emoji dans le texte (« 📺 en bio 👆 »), sans lien ni argument de vente
+X_CTA_KINDS = ("x1", "xr")    # sous l'affiche H-1 et sous le score final ; jamais sur le J-24h (portée d'abord)
+X_CTA_TEXTS = ["📺 en bio 👆", "📲 bio 👆", "🔗 bio"]
 X_REPLY_TEXTS = ["📺 Le direct, c'est par ici 👉", "📺 Où suivre le match 👉"]
 X_TEXT_MAX = 225              # longueur max du texte (hors hashtags) pour tenir dans 280 caractères
 RESULT_POSTS = True           # poster les scores finaux
@@ -717,6 +720,16 @@ def fallback_text(m, kind, due, names):
     return f"{head}\n\n{eyes}{tail}".strip()
 
 
+def add_cta(text, m, kind):
+    """Ajoute la petite signature emoji sur sa propre ligne, juste avant les hashtags (si ça tient dans 280 car.)."""
+    if not X_CTA or kind not in X_CTA_KINDS:
+        return text
+    cta = X_CTA_TEXTS[int(m["id"]) % len(X_CTA_TEXTS)]
+    body, sep, tags = text.rpartition("\n\n")
+    new = f"{body}\n{cta}\n\n{tags}" if sep else f"{text}\n{cta}"
+    return new if len(new) + 4 <= 280 else text      # +4 : les emoji comptent double sur X
+
+
 def build_post_text(m, kind, due, state, now=None, quiet=False):
     """Texte final du post X : rédigé et relu par l'IA du community manager à partir de faits réels ;
     texte de secours si l'IA est indisponible ou refuse. Hashtags toujours ajoutés (3 à 4)."""
@@ -747,7 +760,7 @@ def build_post_text(m, kind, due, state, now=None, quiet=False):
         src = "secours"
     if not quiet:
         state["x_texts"] = (state.get("x_texts", []) + [text.split("\n\n")[0]])[-30:]
-    return text, src
+    return add_cta(text, m, kind), src
 
 
 def alt_text(m, kind):
