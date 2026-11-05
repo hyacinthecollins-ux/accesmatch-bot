@@ -940,6 +940,29 @@ def posts_on(state, day_iso):
     return sum(1 for p in state["posts"] if p.get("day") == day_iso)
 
 
+MATCHDAY_STATE = ROOT / "state.json"
+REACT_FALLBACK_MIN = 170        # si l'affiche "score final" n'est pas partie 170 min apres le coup d'envoi, le CM reagit lui-meme
+
+
+def matchday_handles(m, now):
+    """"done" : l'affiche "score final" de X est deja programmee ; "wait" : le robot d'affiches va la faire, on lui laisse
+    le temps ; None : il ne s'en occupe pas (match sans affiches J-24h/H-1, ou affiche ratee) -> le CM reagit."""
+    try:
+        items = json.loads(MATCHDAY_STATE.read_text(encoding="utf-8")).get("items", {})
+    except (OSError, json.JSONDecodeError):
+        return None
+    mid = str(m["id"])
+    it = items.get(f"f{mid}")
+    if it and it.get("status") in ("poster_ready", "scheduled"):
+        return "done"
+    if it:
+        return None
+    if not any(items.get(f"{pre}{mid}", {}).get("kind") in ("x24", "x1") for pre in ("a", "h")):
+        return None
+    ko = datetime.fromisoformat(m["utcDate"].replace("Z", "+00:00"))
+    return "wait" if now < ko + timedelta(minutes=REACT_FALLBACK_MIN) else None
+
+
 def run_reactions(now, cfg, state, busy, dry):
     today = now.astimezone(PARIS).date()
     if today < date.fromisoformat(cfg["start_date"]):
@@ -951,6 +974,15 @@ def run_reactions(now, cfg, state, busy, dry):
     cands.sort(key=reaction_priority)
     created = 0
     for m in cands[: cfg["max_reactions_per_day"] - made]:
+        mode = matchday_handles(m, now)
+        if mode == "done":
+            log(f"[reaction] {team_name(m['homeTeam'])}-{team_name(m['awayTeam'])} : affiche score final deja programmee, pas de doublon")
+            if not dry:
+                state["reacted"].append(str(m["id"]))
+            continue
+        if mode == "wait":
+            log(f"[reaction] {team_name(m['homeTeam'])}-{team_name(m['awayTeam'])} : l'affiche score final arrive, on attend")
+            continue
         facts = match_facts(m) + goal_facts(m)
         log(f"[reaction] {facts[0]}")
         state["reacted"].append(str(m["id"]))      # on ne retente jamais le meme match (cout)

@@ -88,31 +88,40 @@ MAX_NEW_ITEMS_PER_RUN = 30    # garde-fou : max 30 nouvelles affiches par passag
 MAX_IMAGES_PER_DAY = 80       # garde-fou : max 80 affiches par jour (UTC) ; le rendu logos + VS est gratuit
 KEEP_DAYS = 10                # on supprime les affiches de plus de 10 jours
 POST_TO_X = True              # affiches J-24h + H-1 sur X (monfootballfr), sans CTA : 4 matchs max par jour
-X_CLUBS = {524, 516, 81, 86, 57, 64, 65, 61, 66, 5}   # les 10 clubs de Telegram : PSG, OM, Barça, Real, Arsenal, Liverpool, City, Chelsea, United, Bayern
-X_KINDS = ("xpreview", "x24", "x1")   # xpreview = ancien post unique 3 h avant (n'existe plus que dans l'historique)
+# les 22 gros clubs de X : les 10 de Telegram (PSG, OM, Barça, Real, Arsenal, Liverpool, City, Chelsea, United, Bayern)
+# + Lyon, Monaco, Lille, Atlético, Tottenham, Dortmund, Leverkusen, Juventus, Inter, Milan, Napoli, Roma
+X_CLUBS = {524, 516, 81, 86, 57, 64, 65, 61, 66, 5, 523, 548, 521, 78, 73, 4, 3, 109, 108, 98, 113, 100}
+X_KINDS = ("xpreview", "x24", "x1", "xr")   # xpreview = ancien post unique 3 h avant (n'existe plus que dans l'historique)
 X_J1_MIN = 24 * 60            # 1er post X : 24 h avant le coup d'envoi
 X_H1_MIN = 60                 # 2e post X : 1 h avant le coup d'envoi (à ± 24 min si un créneau vidéo ou un autre post gêne)
 X_J1_LOOKAHEAD_H = 49         # le post J-24h est programmé dans Buffer dès qu'il reste moins de 49 h (marge si GitHub est lent)
 X_H1_LOOKAHEAD_H = 27         # le post H-1 est créé 27 h avant : ses chiffres restent frais
 X_LATE_J1_MIN_H = 18          # passage tardif : un post J-24h en retard (match déplacé, GitHub lent) n'est publié que s'il reste 18 h au moins
-X_MAX_PER_DAY = 4             # plafond de matchs avec affiches X par jour de match (2 posts chacun), les gros chocs d'abord
+X_MAX_PER_DAY = 5             # plafond de matchs avec affiches X par jour de match (2 posts chacun), les gros chocs d'abord
 X_MIN_GAP_MIN = 8             # écart minimum entre deux affiches X
 X_FOOTER = "@monfootballfr"   # pied de page des affiches X (celles de Telegram gardent @accesmatch)
 X_VIDEO_SLOTS = ["09:15", "12:30", "18:30", "21:45"]   # créneaux vidéo (heure de Paris) : une affiche ne tombe jamais dessus
 X_SLOT_MARGIN_MIN = 20        # écart minimum entre une affiche X et un créneau vidéo
 X_QUIET_HOURS = ("00:30", "07:30")   # pas de post J-24h la nuit (heure de Paris)
+X_RESULTS = True              # 3e affiche : le score final, juste après le match (pour les matchs qui ont eu J-24h / H-1)
+X_RESULT_MAX_AGE_H = 5        # on ne poste plus un score final si le coup d'envoi date de plus de 5 h
+X_REPLY_LINK = True           # lien discret dans une réponse sous l'affiche (jamais dans le post lui-même)
+X_REPLY_KINDS = ("x1",)       # sous l'affiche H-1 seulement (le moment où l'envie de regarder est la plus forte)
+X_REPLY_URL = "https://t.me/accesmatch"
+X_REPLY_TEXTS = ["📺 Le direct, c'est par ici 👉", "📺 Où suivre le match 👉"]
 X_TEXT_MAX = 225              # longueur max du texte (hors hashtags) pour tenir dans 280 caractères
 RESULT_POSTS = True           # poster les scores finaux
 RESULT_IMAGES = True          # avec une affiche "score final" (sinon texte seul)
 
 # Competitions suivies (ids football-data.org, plan gratuit)
-COMPETITION_IDS = "2021,2014,2002,2015,2001"  # PL, Liga, Bundesliga, Ligue 1, Ligue des champions
+COMPETITION_IDS = "2021,2014,2002,2015,2001,2019"  # PL, Liga, Bundesliga, Ligue 1, Ligue des champions, Serie A
 COMPETITIONS = {
     "CL": ("LIGUE DES CHAMPIONS", "Ligue des champions", "#UCL"),
     "PL": ("PREMIER LEAGUE", "Premier League", "#PremierLeague"),
     "PD": ("LIGA", "Liga", "#LaLiga"),
     "BL1": ("BUNDESLIGA", "Bundesliga", "#Bundesliga"),
     "FL1": ("LIGUE 1", "Ligue 1", "#Ligue1"),
+    "SA": ("SERIE A", "Serie A", "#SerieA"),
 }
 
 # Joueurs phares optionnels par club (cle = "key" du club). Laisse vide = joueurs generiques.
@@ -154,6 +163,44 @@ TEAMS = {
             landmark="the Frauenkirche towers of Munich", stadium="Allianz Arena", tag="#FCBayern",
             names=["fc bayern münchen", "fc bayern munchen", "fc bayern munich", "bayern munich",
                    "bayern münchen", "bayern"]),
+    # --- clubs ajoutés pour X seulement (tg=False : pas d'affiche Telegram) ---
+    523: dict(key="lyon", short="LYON", long="Olympique Lyonnais", colors="royal blue, red and white",
+              landmark="the Basilica of Fourvière", stadium="Groupama Stadium", tag="#OL", tg=False,
+              names=["olympique lyonnais", "olympique lyon", "lyon", "ol"]),
+    548: dict(key="monaco", short="MONACO", long="AS Monaco", colors="red and white",
+              landmark="the Monte Carlo harbour", stadium="Stade Louis-II", tag="#ASMonaco", tg=False,
+              names=["as monaco fc", "as monaco", "monaco"]),
+    521: dict(key="lille", short="LILLE", long="LOSC Lille", colors="red and navy blue",
+              landmark="the Grand Place of Lille", stadium="Decathlon Arena", tag="#LOSC", tg=False,
+              names=["losc lille", "lille osc", "lille"]),
+    78: dict(key="atletico", short="ATLÉTICO", long="Atlético de Madrid", colors="red and white stripes with navy",
+             landmark="the Puerta de Alcalá", stadium="Riyadh Air Metropolitano", tag="#Atleti", tg=False,
+             names=["club atlético de madrid", "club atletico de madrid", "atlético de madrid", "atletico madrid",
+                    "atleti"]),
+    73: dict(key="spurs", short="TOTTENHAM", long="Tottenham Hotspur", colors="white and navy blue",
+             landmark="the London skyline", stadium="Tottenham Hotspur Stadium", tag="#THFC", tg=False,
+             names=["tottenham hotspur fc", "tottenham hotspur", "tottenham", "spurs"]),
+    4: dict(key="dortmund", short="DORTMUND", long="Borussia Dortmund", colors="yellow and black",
+            landmark="the Florianturm tower", stadium="Signal Iduna Park", tag="#BVB", tg=False,
+            names=["borussia dortmund", "dortmund", "bvb"]),
+    3: dict(key="leverkusen", short="LEVERKUSEN", long="Bayer 04 Leverkusen", colors="red and black",
+            landmark="the Bayer Cross", stadium="BayArena", tag="#Bayer04", tg=False,
+            names=["bayer 04 leverkusen", "bayer leverkusen", "leverkusen"]),
+    109: dict(key="juve", short="JUVENTUS", long="Juventus", colors="black and white stripes",
+              landmark="the Mole Antonelliana", stadium="Allianz Stadium", tag="#Juve", tg=False,
+              names=["juventus fc", "juventus", "juve"]),
+    108: dict(key="inter", short="INTER", long="Inter Milan", colors="black and blue stripes",
+              landmark="the Duomo of Milan", stadium="San Siro", tag="#Inter", tg=False,
+              names=["fc internazionale milano", "internazionale", "inter milan", "inter"]),
+    98: dict(key="milan", short="AC MILAN", disp="AC Milan", long="AC Milan", colors="red and black stripes",
+             landmark="the Duomo of Milan", stadium="San Siro", tag="#ACMilan", tg=False,
+             names=["ac milan", "milan"]),
+    113: dict(key="napoli", short="NAPOLI", long="SSC Napoli", colors="sky blue",
+              landmark="Mount Vesuvius", stadium="Stadio Diego Armando Maradona", tag="#Napoli", tg=False,
+              names=["ssc napoli", "napoli"]),
+    100: dict(key="roma", short="ROMA", long="AS Roma", colors="maroon and orange",
+              landmark="the Colosseum", stadium="Stadio Olimpico", tag="#ASRoma", tg=False,
+              names=["as roma", "roma"]),
 }
 
 # ============================================================
@@ -261,7 +308,8 @@ def crest_urls(team):
 def side(team):
     e = team_entry(team)
     if e:
-        return dict(tracked=True, key=e["key"], short=e["short"], long=e["long"], colors=e["colors"],
+        return dict(tracked=True, tg=e.get("tg", True), disp=e.get("disp"), key=e["key"], short=e["short"],
+                    long=e["long"], colors=e["colors"],
                     landmark=e["landmark"], stadium=e["stadium"], tag=e["tag"],
                     id=team.get("id"), crest_urls=crest_urls(team))
     short = (team.get("shortName") or team.get("name") or "").strip()
@@ -401,6 +449,8 @@ def disp(side_):
     """Nom du club tel qu'on l'écrit dans un post : PSG, OM, Real Madrid, Barça, Man City, Toulouse..."""
     if side_.get("raw_short"):
         return side_["raw_short"]
+    if side_.get("disp"):
+        return side_["disp"]
     return side_["short"] if side_["short"] in ("PSG", "OM") else side_["short"].title()
 
 
@@ -566,7 +616,37 @@ def players_facts(m, state, now):
     return facts, names
 
 
+def goal_lines(m):
+    """(lignes de faits, noms) des buteurs du match si football-data les donne."""
+    try:
+        d = fd_get(f"/matches/{m['id']}")
+    except RuntimeError:
+        return [], []
+    parts, names = [], []
+    for g in (d.get("goals") or [])[:10]:
+        who, mn = (g.get("scorer") or {}).get("name"), g.get("minute")
+        if not who or mn is None:
+            continue
+        tag = " (csc)" if g.get("type") == "OWN" else (" (pen.)" if g.get("type") == "PENALTY" else "")
+        parts.append(f"{who} {mn}e{tag}")
+        if g.get("type") != "OWN" and who not in names:
+            names.append(who)
+    return (["Buteurs : " + ", ".join(parts)] if parts else []), names
+
+
+def x_result_facts(m):
+    h, a = m["home"], m["away"]
+    hs, as_ = m["hs"], m["as_"]
+    facts = [f"Match terminé ({m['comp_fr']}) : {disp(h)} {hs}-{as_} {disp(a)}",
+             f"Noms à utiliser dans le post : {disp(h)} et {disp(a)}",
+             "Match nul" if hs == as_ else f"Victoire de {disp(h) if hs > as_ else disp(a)}"]
+    goals, names = goal_lines(m)
+    return facts + goals, names
+
+
 def x_facts(m, kind, due, state, now):
+    if kind == "xr":
+        return x_result_facts(m)
     h, a = m["home"], m["away"]
     k = m["kickoff"]
     facts = [f"Match : {h['long']} (à domicile) contre {a['long']}",
@@ -586,6 +666,11 @@ TONES = ["intensite maximale, phrases courtes et nerveuses", "complice de suppor
          "soiree de gala, on annonce un gros morceau", "taquin et confiant, avec une petite vanne bon enfant",
          "tension d'avant-match, ambiance electrique"]
 X_INSTR = {
+    "xr": ("Ecris le post de score final (il accompagne l'affiche du score) : accroche \"⏱️\", le score exact, cite 1 ou 2 "
+           "buteurs des faits avec leur minute si elle est indiquee, puis un avis court et original (aucune formule toute "
+           "faite). Ecris les noms de clubs comme dans les faits (jamais en majuscules). Termine par une question courte "
+           "qui fait reagir (ton joueur du match ? ton avis ?), formulee autrement que dans les posts precedents. "
+           "Aucun chiffre ni information absents des faits."),
     "x24": ("Ecris le post de chauffe 24 h avant le match (il accompagne l'affiche du match) : accroche \"🔥\" ou \"🚨\", "
             "annonce le match avec la formulation de date indiquee dans les faits (\"Quand\") et l'heure, cite 2 ou 3 joueurs "
             "des faits, avec leur chiffre exact s'il y en a un. On ne connait pas les compositions : un joueur est \"a "
@@ -606,6 +691,10 @@ X_INSTR = {
 
 def fallback_text(m, kind, due, names):
     """Texte de secours (sans IA) : que des infos exactes, avec les noms de joueurs quand on en a."""
+    if kind == "xr":
+        who = [short_name(n) for n in dict.fromkeys(names)][:3]
+        return (f"⏱️ {disp(m['home'])} {m['hs']}-{m['as_']} {disp(m['away'])} !"
+                + (f" Buteurs : {', '.join(who)}." if who else "") + " Ton joueur du match ? 👇")
     title = f"{disp(m['home'])} × {disp(m['away'])}"
     k = m["kickoff"]
     rng = random.Random(f"{m['id']}-{kind}")
@@ -693,7 +782,7 @@ def generate_image(prompt, quality, out_path):
 def make_poster(m, kind, out_path):
     """Cree l'affiche (logos officiels + VS) ou, si POSTER_MODE=ai, la version OpenAI.
     kind : preview / result (Telegram, pied de page @accesmatch) ou x24 / x1 (X, pied de page @monfootballfr)."""
-    base = "preview" if kind in ("preview",) + X_KINDS else "result"
+    base = "preview" if kind in ("preview", "xpreview", "x24", "x1") else "result"
     if POSTER_MODE == "ai":
         prompt = build_preview_prompt(m) if base == "preview" else build_result_prompt(m)
         generate_image(prompt, quality_for(m), out_path)
@@ -752,14 +841,22 @@ def buffer_gql(query, variables):
     return j["data"]
 
 
-def buffer_create_post(text, image_url, alt, due_iso):
+def reply_text(m):
+    """Réponse discrète sous l'affiche : un lien, aucun argument de vente."""
+    return f"{X_REPLY_TEXTS[int(m['id']) % len(X_REPLY_TEXTS)]} {X_REPLY_URL}"
+
+
+def buffer_create_post(text, image_url, alt, due_iso, reply=None):
+    assets = [{"image": {"url": image_url, "metadata": {"altText": alt}}}] if image_url else []
     inp = {
         "channelId": BUFFER_CHANNEL_ID,
         "schedulingType": "automatic",
         "mode": "customScheduled" if due_iso else "shareNow",
         "text": text,
-        "assets": [{"image": {"url": image_url, "metadata": {"altText": alt}}}] if image_url else [],
+        "assets": assets,
     }
+    if reply:      # fil X : le post (avec son affiche) puis une réponse
+        inp["metadata"] = {"twitter": {"thread": [{"text": text, "assets": assets}, {"text": reply}]}}
     if due_iso:
         inp["dueAt"] = due_iso
     res = buffer_gql(CREATE_POST_Q, {"input": inp})["createPost"]
@@ -888,6 +985,11 @@ def telegram_step(raw_matches, state, now, dry_run=False):
 # ============================================================
 # LOGIQUE : PREPARE
 # ============================================================
+def is_tg_match(m):
+    """Telegram reste sur les 10 clubs d'origine (les 12 autres clubs ne sont suivis que pour X)."""
+    return bool(m["home"].get("tg") or m["away"].get("tg"))
+
+
 def is_x_match(m):
     return m["home"].get("id") in X_CLUBS or m["away"].get("id") in X_CLUBS
 
@@ -957,6 +1059,14 @@ def x_due(kind, kickoff, now, taken):
     """Heure de publication (datetime UTC) d'une affiche X, ou None si c'est trop tard / impossible.
     x24 : 24 h avant (puis jusqu'à +56 min plus tard si besoin) ; x1 : 1 h avant, à ± 24 min si un créneau vidéo gêne."""
     soon = now + timedelta(minutes=3)
+    if kind == "xr":                              # score final : tout de suite, jamais la nuit
+        for shift in range(0, 90, 8):
+            t = soon + timedelta(minutes=shift)
+            if in_quiet_hours(t):
+                return None
+            if not slot_clash(t, taken):
+                return t
+        return None
     if kind == "x24":
         ideal = kickoff - timedelta(minutes=X_J1_MIN)
         if ideal < soon:
@@ -1089,7 +1199,7 @@ def prepare(raw_matches, state, now, dry_run=False):
         # avant-match
         if (m["status"] in ("TIMED", "SCHEDULED")
                 and now + timedelta(minutes=MIN_LEAD_MIN) < m["kickoff"] <= now + timedelta(hours=LOOKAHEAD_H)
-                and f"p{m['id']}" not in items):
+                and f"p{m['id']}" not in items and is_tg_match(m)):
             candidates.append("preview")
         # affiches X : J-24h puis H-1 (10 clubs, plafond de matchs par jour)
         if POST_TO_X and m["id"] in x_ok and m["status"] in ("TIMED", "SCHEDULED"):
@@ -1103,16 +1213,22 @@ def prepare(raw_matches, state, now, dry_run=False):
         # score final
         if (RESULT_POSTS and m["status"] == "FINISHED" and m["hs"] is not None and m["as_"] is not None
                 and now - timedelta(hours=RESULT_MAX_AGE_H) < m["kickoff"] <= now
-                and f"r{m['id']}" not in items):
+                and f"r{m['id']}" not in items and is_tg_match(m)):
             candidates.append("result")
+        # score final sur X : seulement pour un match qui a eu ses affiches J-24h / H-1
+        if (POST_TO_X and X_RESULTS and m["id"] in x_ok and m["status"] == "FINISHED"
+                and m["hs"] is not None and m["as_"] is not None
+                and now - timedelta(hours=X_RESULT_MAX_AGE_H) < m["kickoff"] <= now
+                and f"f{m['id']}" not in items and x_due("xr", m["kickoff"], now, x_taken(items))):
+            candidates.append("xr")
 
         for kind in candidates:
             if created >= MAX_NEW_ITEMS_PER_RUN or images_today >= MAX_IMAGES_PER_DAY:
                 log(f"⛔ Garde-fou coût atteint, {label} ({kind}) repoussé au prochain passage")
                 continue
-            key = {"preview": "p", "result": "r", "x24": "a", "x1": "h"}[kind] + str(m["id"])
+            key = {"preview": "p", "result": "r", "x24": "a", "x1": "h", "xr": "f"}[kind] + str(m["id"])
             with_image = kind in ("preview",) + X_KINDS or RESULT_IMAGES
-            stem = f"x{m['id']}" if kind in X_KINDS else key        # J-24h et H-1 partagent la même affiche
+            stem = (f"xr{m['id']}" if kind == "xr" else f"x{m['id']}") if kind in X_KINDS else key   # J-24h et H-1 partagent la même affiche
             rel = f"posters/{stem}-{m['kickoff'].strftime('%Y%m%d')}.jpg" if with_image else None
             log(f"🆕 {label} [{m['comp_fr']}] {kind} — coup d'envoi {fr_date(m['kickoff'])} {fr_hour(m['kickoff'])}")
             if dry_run:
@@ -1120,6 +1236,8 @@ def prepare(raw_matches, state, now, dry_run=False):
                     due_dt = x_due(kind, m["kickoff"], now, x_taken(items))
                     names = []
                     txt = fallback_text(m, kind, due_dt, names) + "\n\n" + hashtags(m)
+                    if X_REPLY_LINK and kind in X_REPLY_KINDS:
+                        txt += "\n   ↳ réponse : " + reply_text(m)
                     log(f"   publication X/Buffer : {iso(due_dt)}  | affiche : {POSTER_MODE}")
                 else:
                     txt = build_telegram_text(m, kind)
@@ -1128,7 +1246,7 @@ def prepare(raw_matches, state, now, dry_run=False):
                 created += 1
                 continue
             if with_image:
-                twin = items.get("h" + str(m["id"]) if kind == "x24" else "a" + str(m["id"])) if kind in X_KINDS else None
+                twin = items.get("h" + str(m["id"]) if kind == "x24" else "a" + str(m["id"])) if kind in ("x24", "x1") else None
                 reuse = bool(twin and twin["status"] != "cancelled" and twin["kickoff"] == iso(m["kickoff"])
                              and twin.get("design") == DESIGN_VERSION and (ROOT / rel).exists())
                 if not reuse:
@@ -1158,7 +1276,7 @@ def publish(raw_matches, state, now, dry_run=False):
     by_id = {p["id"]: p for p in tracked_matches(raw_matches)}
     taken = x_taken(items)
     sent = 0
-    todo = sorted((it for it in items.values() if it["kind"] in ("x24", "x1") and it["status"] == "poster_ready"),
+    todo = sorted((it for it in items.values() if it["kind"] in ("x24", "x1", "xr") and it["status"] == "poster_ready"),
                   key=lambda it: it["kickoff"])
     for it in todo:       # les affiches Telegram (preview / result) ne passent pas par Buffer
         kickoff = parse_iso(it["kickoff"])
@@ -1184,14 +1302,23 @@ def publish(raw_matches, state, now, dry_run=False):
                 url = image_url_for(it["poster"])
                 if not wait_for_url(url):
                     raise RuntimeError(f"image pas encore accessible : {url}")
-            post_id = buffer_create_post(text, url, alt_text(m, it["kind"]), iso(due))
-            it.update(status="scheduled", post_id=post_id, due=iso(due), text=text, text_src=src)
+            reply = reply_text(m) if X_REPLY_LINK and it["kind"] in X_REPLY_KINDS else None
+            try:
+                post_id = buffer_create_post(text, url, alt_text(m, it["kind"]), iso(due), reply)
+            except RuntimeError as e:
+                if not reply:
+                    raise
+                log(f"   ⚠️ fil avec réponse refusé par Buffer ({str(e)[:140]}) : on publie sans la réponse")
+                reply = None
+                post_id = buffer_create_post(text, url, alt_text(m, it["kind"]), iso(due))
+            it.update(status="scheduled", post_id=post_id, due=iso(due), text=text, text_src=src, reply=reply)
             taken.append(due)
             save_state(state)
             sent += 1
             log(f"📤 {it['label']} ({it['kind']}) → Buffer OK, programmé {iso(due)} (texte {src})")
-            gh_notice(f"[affiche X] {it['label']} {'J-24h' if it['kind'] == 'x24' else 'H-1'} programmée "
-                      f"{due.astimezone(AUDIENCE_TZ).strftime('%d/%m %Hh%M')} (Paris), texte {src} :\n{text}")
+            gh_notice(f"[affiche X] {it['label']} {({'x24': 'J-24h', 'x1': 'H-1', 'xr': 'score final'})[it['kind']]} programmée "
+                      f"{due.astimezone(AUDIENCE_TZ).strftime('%d/%m %Hh%M')} (Paris), texte {src} :\n{text}"
+                      + (f"\n↳ réponse : {reply}" if reply else ""))
             time.sleep(1.5)
         except RuntimeError as e:
             it["fails"] = it.get("fails", 0) + 1
@@ -1255,7 +1382,8 @@ def xtest(raw_matches, now, n=3):
             text, src = build_post_text(m, kind, due, state, now, quiet=True)
             facts, names = x_facts(m, kind, due, state, now)
             gh_notice(f"[test X {kind}] {m['home']['short']}-{m['away']['short']} ({src}, {len(text)} car.)\n{text}\n"
-                      f"-- joueurs trouvés : {', '.join(names) or 'aucun'}")
+                      f"-- joueurs trouvés : {', '.join(names) or 'aucun'}"
+                      + (f"\n-- réponse sous l'affiche : {reply_text(m)}" if X_REPLY_LINK and kind in X_REPLY_KINDS else ""))
     log(f"IA : {state.get('llm_calls', 0)} appels")
 
 

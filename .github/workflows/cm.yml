@@ -57,13 +57,14 @@ jobs:
           fi
 
       # Le déclencheur de GitHub pour les affiches est lent (plusieurs heures) : ce robot-ci est réveillé toutes les
-      # 10 min par le Worker Cloudflare, il réveille donc les affiches (J-24h, H-1, Telegram) une fois par demi-heure.
+      # 10 min par le Worker Cloudflare, il réveille donc les affiches (J-24h, H-1, score final, Telegram) toutes les 10 min en journée.
       - name: Réveil du robot d'affiches
         if: always() && inputs.mode != 'dry-run' && inputs.mode != 'samples' && inputs.mode != 'diag'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          m=$(date -u +%-M)
-          if [ $((m % 30)) -lt 10 ]; then
+          h=$(date -u +%-H); m=$(date -u +%-M)
+          # journée (10 h-24 h UTC) : à chaque passage (10 min), pour que l'affiche "score final" sorte vite ; nuit : 1 fois / 30 min
+          if [ "$h" -ge 10 ] || [ $((m % 30)) -lt 10 ]; then
             gh workflow run matchday.yml --ref main || echo "réveil des affiches impossible"
           fi
