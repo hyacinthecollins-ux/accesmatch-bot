@@ -2173,13 +2173,16 @@
       "match_id": 560640,
       "label": "ARSENAL-HULL CITY",
       "kickoff": "2026-11-07T15:00:00Z",
-      "status": "poster_ready",
+      "status": "scheduled",
       "poster": "posters/x560640-20261107.jpg",
-      "post_id": null,
-      "due": null,
+      "post_id": "6aedc17164d4343f608cc67d",
+      "due": "2026-11-07T14:00:00Z",
       "created": "2026-11-06T12:00:36Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "text": "⏰ Arsenal reçoit Hull City dans 1 heure, à 16h (heure de Paris), en Premier League. Kai Havertz et Bukayo Saka, 3 buts chacun, sont à surveiller ; Mohamed Belloumi compte 3 buts et 2 passes décisives. Qui gagne ?\n📺 en bio 👆\n\n#Arsenal #HullCity #PremierLeague #Havertz",
+      "text_src": "IA",
+      "reply": "📺 Le direct, c'est par ici 👉 https://t.me/accesmatch"
     }
   },
   "squads": {
@@ -2331,10 +2334,9 @@
       "stars": []
     }
   },
-  "llm_calls": 77,
-  "llm_posts": 31,
+  "llm_calls": 80,
+  "llm_posts": 32,
   "x_texts": [
-    "🔥 Santander reçoit le Real Madrid demain à 16h15 (heure de Paris) en Liga. Yassir Zabiri (8 buts en Liga cette saison) face à Kylian Mbappé (11 buts et 2 passes décisives) : ça sent la poudre ! Qui gagne ?",
     "🔥 Demain à 17h30, Liverpool reçoit Arsenal en Premier League : choc entre deux très grosses équipes ! Alexander Isak, 6 buts, et Bukayo Saka, 3, sont à surveiller. Qui gagne ?",
     "🔥 Demain à 20h45, l’OM reçoit Toulouse en Ligue 1. Amine Gouiri (5 buts, 2 passes décisives) et Casper Tengstedt (5 buts, 1 passe) à surveiller. Ça va cogner : qui gagne ?",
     "⏰ Dans 1 heure, Santander reçoit le Real Madrid en Liga : coup d’envoi à 16h15. Yassir Zabiri (8 buts) et Kylian Mbappé (11 buts) sont à surveiller. Qui gagne ?",
@@ -2363,6 +2365,7 @@
     "🔥 Paris ne veut rien laisser respirer : demain à 21h05 (heure de Paris), le PSG reçoit Troyes en Ligue 1. Ferrán Torres (4 buts, 1 passe décisive) et Marquinhos (3 buts) à surveiller. Qui fera la différence ?",
     "🔥 C'est bientôt : Leeds United × Tottenham dans 1h24 !",
     "⏰ Mainz reçoit le Bayern dans 1 heure, à 15h30 (heure de Paris), en Bundesliga. Phillip Tietz (5 buts) et Michael Olise (6 buts, 3 passes décisives) sont attendus, Jamal Musiala aussi. Votre buteur ?",
-    "🚨 Dortmund × Elversberg dans 1 heure (Bundesliga) !"
+    "🚨 Dortmund × Elversberg dans 1 heure (Bundesliga) !",
+    "⏰ Arsenal reçoit Hull City dans 1 heure, à 16h (heure de Paris), en Premier League. Kai Havertz et Bukayo Saka, 3 buts chacun, sont à surveiller ; Mohamed Belloumi compte 3 buts et 2 passes décisives. Qui gagne ?"
   ]
 }
