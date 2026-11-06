@@ -800,6 +800,15 @@
       "day": "2026-11-06",
       "source": "football-data BL1",
       "at": "2026-11-06T03:10:25Z"
+    },
+    {
+      "id": "6aed6aa207f945cca9436e56",
+      "kind": "debate",
+      "text": "Le PSG devance le Real Madrid à égalité de points grâce à sa différence de buts : chaque but compte déjà double dans les discussions. Arsenal suit à deux points. Qui finira devant ?\n\n#PSG #RealMadrid",
+      "due": "2026-11-06T09:45Z",
+      "day": "2026-11-06",
+      "source": "football-data CL",
+      "at": "2026-11-06T05:50:27Z"
     }
   ],
   "slots": {
@@ -849,7 +858,8 @@
     "2026-11-05T16:30": "done",
     "2026-11-05T20:15": "done",
     "2026-11-05T22:35": "done",
-    "2026-11-06T08:05": "done"
+    "2026-11-06T08:05": "done",
+    "2026-11-06T10:45": "done"
   },
   "slot_tries": {
     "2026-10-27T20:15": 1,
@@ -897,7 +907,8 @@
     "2026-11-05T16:30": 1,
     "2026-11-05T20:15": 1,
     "2026-11-05T22:35": 1,
-    "2026-11-06T08:05": 1
+    "2026-11-06T08:05": 1,
+    "2026-11-06T10:45": 1
   },
   "reacted": [
     "559648",
@@ -975,18 +986,18 @@
     "ef9fcdc5b401",
     "5dd6f7b95546"
   ],
-  "counter": 89,
+  "counter": 90,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 149,
-        "in": 86338,
-        "out": 21072
+        "calls": 150,
+        "in": 87386,
+        "out": 21369
       },
       "gpt-6.1-sol": {
-        "calls": 143,
-        "in": 49207,
-        "out": 7704
+        "calls": 144,
+        "in": 49617,
+        "out": 7778
       }
     }
   },
@@ -1038,7 +1049,12 @@
     "alexander isak",
     "michael olise"
   ],
-  "debates": {},
+  "debates": {
+    "CL": {
+      "sig": "9278bec5e383",
+      "at": "2026-11-06T05:50:14.772966+00:00"
+    }
+  },
   "recent_duels": [
     "alexander isak|erling haaland"
   ]
