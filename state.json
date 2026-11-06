@@ -2119,6 +2119,19 @@
       "text": "🔥 Paris ne veut rien laisser respirer : demain à 21h05 (heure de Paris), le PSG reçoit Troyes en Ligue 1. Ferrán Torres (4 buts, 1 passe décisive) et Marquinhos (3 buts) à surveiller. Qui fera la différence ?\n\n#PSG #Troyes #Ligue1 #Torres",
       "text_src": "IA",
       "reply": null
+    },
+    "h560632": {
+      "kind": "x1",
+      "match_id": 560632,
+      "label": "LEEDS UNITED-TOTTENHAM",
+      "kickoff": "2026-11-07T12:30:00Z",
+      "status": "poster_ready",
+      "poster": "posters/x560632-20261107.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-06T09:30:41Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   },
   "squads": {
