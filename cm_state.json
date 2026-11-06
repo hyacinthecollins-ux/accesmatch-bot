@@ -845,6 +845,15 @@
       "day": "2026-11-06",
       "source": "football-data CL",
       "at": "2026-11-06T11:30:24Z"
+    },
+    {
+      "id": "6aedf03e263cb82eef0e57f3",
+      "kind": "duel",
+      "text": "⚽ Patrik Schick (Leverkusen) affiche 7 buts et 2 passes décisives en 8 matchs. Michael Olise (Bayern) compte 6 buts et 3 passes décisives en 8 matchs. Schick ou Olise ? Schick est 2e, Olise 3e du classement des buteurs.\n\n#Olise #FCBayern",
+      "due": "2026-11-06T19:15Z",
+      "day": "2026-11-06",
+      "source": "football-data BL1",
+      "at": "2026-11-06T15:20:30Z"
     }
   ],
   "slots": {
@@ -897,7 +906,8 @@
     "2026-11-06T08:05": "done",
     "2026-11-06T10:45": "done",
     "2026-11-06T14:00": "done",
-    "2026-11-06T16:30": "done"
+    "2026-11-06T16:30": "done",
+    "2026-11-06T20:15": "done"
   },
   "slot_tries": {
     "2026-10-27T20:15": 1,
@@ -948,7 +958,8 @@
     "2026-11-06T08:05": 1,
     "2026-11-06T10:45": 1,
     "2026-11-06T14:00": 1,
-    "2026-11-06T16:30": 1
+    "2026-11-06T16:30": 1,
+    "2026-11-06T20:15": 1
   },
   "reacted": [
     "559648",
@@ -1028,18 +1039,18 @@
     "900dc40b420e",
     "45bc4ce71538"
   ],
-  "counter": 94,
+  "counter": 95,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 155,
-        "in": 92279,
-        "out": 22388
+        "calls": 156,
+        "in": 93160,
+        "out": 22631
       },
       "gpt-6.1-sol": {
-        "calls": 149,
-        "in": 51485,
-        "out": 8057
+        "calls": 150,
+        "in": 51873,
+        "out": 8087
       }
     }
   },
@@ -1102,6 +1113,7 @@
   },
   "recent_duels": [
     "alexander isak|erling haaland",
-    "erling haaland|kylian mbappe"
+    "erling haaland|kylian mbappe",
+    "michael olise|patrik schick"
   ]
 }
