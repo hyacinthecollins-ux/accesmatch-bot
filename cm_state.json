@@ -791,6 +791,15 @@
       "day": "2026-11-06",
       "source": "Sport News Africa",
       "at": "2026-11-05T23:00:48Z"
+    },
+    {
+      "id": "6aed4520c1e74b84e5c2438d",
+      "kind": "stat",
+      "text": "📊 Michael Olise (Bayern), 3e des buteurs de Bundesliga : 6 buts et 3 passes décisives en 8 matchs. Il sait conclure et servir : Olise a la passe juste.\n\n#Olise #FCBayern",
+      "due": "2026-11-06T07:05Z",
+      "day": "2026-11-06",
+      "source": "football-data BL1",
+      "at": "2026-11-06T03:10:25Z"
     }
   ],
   "slots": {
@@ -839,7 +848,8 @@
     "2026-11-05T14:00": "done",
     "2026-11-05T16:30": "done",
     "2026-11-05T20:15": "done",
-    "2026-11-05T22:35": "done"
+    "2026-11-05T22:35": "done",
+    "2026-11-06T08:05": "done"
   },
   "slot_tries": {
     "2026-10-27T20:15": 1,
@@ -886,7 +896,8 @@
     "2026-11-05T14:00": 1,
     "2026-11-05T16:30": 1,
     "2026-11-05T20:15": 1,
-    "2026-11-05T22:35": 1
+    "2026-11-05T22:35": 1,
+    "2026-11-06T08:05": 1
   },
   "reacted": [
     "559648",
@@ -964,18 +975,18 @@
     "ef9fcdc5b401",
     "5dd6f7b95546"
   ],
-  "counter": 88,
+  "counter": 89,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 148,
-        "in": 85229,
-        "out": 20893
+        "calls": 149,
+        "in": 86338,
+        "out": 21072
       },
       "gpt-6.1-sol": {
-        "calls": 142,
-        "in": 48722,
-        "out": 7664
+        "calls": 143,
+        "in": 49207,
+        "out": 7704
       }
     }
   },
@@ -1024,7 +1035,8 @@
     "lamine yamal",
     "erling haaland",
     "rayan cherki",
-    "alexander isak"
+    "alexander isak",
+    "michael olise"
   ],
   "debates": {},
   "recent_duels": [
