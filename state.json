@@ -2135,6 +2135,32 @@
       "text": "🔥 C'est bientôt : Leeds United × Tottenham dans 1h24 !\n\nLes yeux sur Calvert-Lewin, Bogle et Jan Paul van Hecke. Ton score ? 👇\n📲 bio 👆\n\n#LeedsUnited #THFC #PremierLeague #CalvertLewin",
       "text_src": "secours",
       "reply": "📺 Le direct, c'est par ici 👉 https://t.me/accesmatch"
+    },
+    "h565851": {
+      "kind": "x1",
+      "match_id": 565851,
+      "label": "MAINZ-BAYERN",
+      "kickoff": "2026-11-07T14:30:00Z",
+      "status": "poster_ready",
+      "poster": "posters/x565851-20261107.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-06T11:30:45Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "h565850": {
+      "kind": "x1",
+      "match_id": 565850,
+      "label": "DORTMUND-ELVERSBERG",
+      "kickoff": "2026-11-07T14:30:00Z",
+      "status": "poster_ready",
+      "poster": "posters/x565850-20261107.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-06T11:30:45Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   },
   "squads": {
