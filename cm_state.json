@@ -809,6 +809,15 @@
       "day": "2026-11-06",
       "source": "football-data CL",
       "at": "2026-11-06T05:50:27Z"
+    },
+    {
+      "id": "6aed71abdbada656bef8a7aa",
+      "kind": "breaking",
+      "text": "🚨 Selon franceinfo, la deuxième liste de Zinédine Zidane avec les Bleus s’annoncerait avec Mbappé, mais sans Dembélé. Un choix qui ferait parler ! Vous auriez écarté Dembélé ?\n\n#Mbappé #Dembélé",
+      "due": "2026-11-06T06:30Z",
+      "day": "2026-11-06",
+      "source": "franceinfo",
+      "at": "2026-11-06T06:20:27Z"
     }
   ],
   "slots": {
@@ -984,20 +993,21 @@
     "71bd8d410a05",
     "0b125a51ec40",
     "ef9fcdc5b401",
-    "5dd6f7b95546"
+    "5dd6f7b95546",
+    "900dc40b420e"
   ],
-  "counter": 90,
+  "counter": 91,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 150,
-        "in": 87386,
-        "out": 21369
+        "calls": 151,
+        "in": 88356,
+        "out": 21598
       },
       "gpt-6.1-sol": {
-        "calls": 144,
-        "in": 49617,
-        "out": 7778
+        "calls": 145,
+        "in": 49974,
+        "out": 7814
       }
     }
   },
@@ -1029,7 +1039,8 @@
     "Grâce à Mbappé, le Real Madrid rejoint le PSG, Manchester City et Arsenal se sont fait peur… ce qu’il faut retenir de la soirée de Ligue des Champions",
     "« Nous devons hausser un peu notre niveau » : Erling Haaland appelle Manchester City à se montrer plus impitoyable après avoir inscrit le but de la victoire en fin de match lors du succès 3-2 contre le RB Leipzig en Ligue des champions",
     "Jude Bellingham salue la « mentalité » du Real Madrid : la star de l’Angleterre inspire une nouvelle remontée spectaculaire en Ligue des champions face à l’AEK Athènes",
-    "Messi et Ronaldo disent adieu aux sélections : la fin d’une ère pour le football mondial · SNA"
+    "Messi et Ronaldo disent adieu aux sélections : la fin d’une ère pour le football mondial · SNA",
+    "Avec Mbappé mais sans Dembélé, à quoi faut-il s'attendre pour la deuxième liste de Zinédine Zidane à la tête des Bleus"
   ],
   "recent_stats": [
     "erling haaland",
