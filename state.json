@@ -2189,13 +2189,16 @@
       "match_id": 559635,
       "label": "PSG-TROYES",
       "kickoff": "2026-11-07T20:05:00Z",
-      "status": "poster_ready",
+      "status": "scheduled",
       "poster": "posters/x559635-20261107.jpg",
-      "post_id": null,
-      "due": null,
+      "post_id": "6aee0a189214322f689d1122",
+      "due": "2026-11-07T19:05:00Z",
       "created": "2026-11-06T17:10:34Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "text": "⏰ Plus qu’une heure avant PSG-Troyes, coup d’envoi à 21h05 en Ligue 1 ! Ferrán Torres (4 buts, 1 passe décisive) et Marquinhos (3 buts) pourraient peser ; Ousmane Dembélé est aussi attendu. Votre buteur ?\n📺 en bio 👆\n\n#PSG #Troyes #Ligue1 #Dembélé",
+      "text_src": "IA",
+      "reply": "📺 Où suivre le match 👉 https://t.me/accesmatch"
     }
   },
   "squads": {
@@ -2347,10 +2350,9 @@
       "stars": []
     }
   },
-  "llm_calls": 80,
-  "llm_posts": 32,
+  "llm_calls": 83,
+  "llm_posts": 33,
   "x_texts": [
-    "🔥 Demain à 17h30, Liverpool reçoit Arsenal en Premier League : choc entre deux très grosses équipes ! Alexander Isak, 6 buts, et Bukayo Saka, 3, sont à surveiller. Qui gagne ?",
     "🔥 Demain à 20h45, l’OM reçoit Toulouse en Ligue 1. Amine Gouiri (5 buts, 2 passes décisives) et Casper Tengstedt (5 buts, 1 passe) à surveiller. Ça va cogner : qui gagne ?",
     "⏰ Dans 1 heure, Santander reçoit le Real Madrid en Liga : coup d’envoi à 16h15. Yassir Zabiri (8 buts) et Kylian Mbappé (11 buts) sont à surveiller. Qui gagne ?",
     "⏰ Dans 1 heure, Liverpool-Arsenal : coup d’envoi à 17h30, heure de Paris. Un choc de Premier League, avec Alexander Isak (6 buts) et Bukayo Saka (3) à surveiller. Soirée de gala : qui gagne ?",
@@ -2379,6 +2381,7 @@
     "🔥 C'est bientôt : Leeds United × Tottenham dans 1h24 !",
     "⏰ Mainz reçoit le Bayern dans 1 heure, à 15h30 (heure de Paris), en Bundesliga. Phillip Tietz (5 buts) et Michael Olise (6 buts, 3 passes décisives) sont attendus, Jamal Musiala aussi. Votre buteur ?",
     "🚨 Dortmund × Elversberg dans 1 heure (Bundesliga) !",
-    "⏰ Arsenal reçoit Hull City dans 1 heure, à 16h (heure de Paris), en Premier League. Kai Havertz et Bukayo Saka, 3 buts chacun, sont à surveiller ; Mohamed Belloumi compte 3 buts et 2 passes décisives. Qui gagne ?"
+    "⏰ Arsenal reçoit Hull City dans 1 heure, à 16h (heure de Paris), en Premier League. Kai Havertz et Bukayo Saka, 3 buts chacun, sont à surveiller ; Mohamed Belloumi compte 3 buts et 2 passes décisives. Qui gagne ?",
+    "⏰ Plus qu’une heure avant PSG-Troyes, coup d’envoi à 21h05 en Ligue 1 ! Ferrán Torres (4 buts, 1 passe décisive) et Marquinhos (3 buts) pourraient peser ; Ousmane Dembélé est aussi attendu. Votre buteur ?"
   ]
 }
