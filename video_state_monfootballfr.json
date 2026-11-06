@@ -413,21 +413,41 @@
       "due": "2026-11-18T20:45:00.000Z",
       "at": "2026-11-05T10:56:29Z",
       "title": "This player is literally unstoppable🥶⚽️"
+    },
+    "hSCID9e0GBM": {
+      "post_id": "6aedb17075db0573c8d26985",
+      "due": "2026-11-19T08:15:00.000Z",
+      "at": "2026-11-06T10:52:32Z",
+      "title": "Bellingham Comedy Moments 😂 ⚽"
+    },
+    "7402335921124674849": {
+      "post_id": "6aedb174f1ee5df4191d6c49",
+      "due": "2026-11-19T11:30:00.000Z",
+      "at": "2026-11-06T10:52:36Z",
+      "title": "When Haaland loses Control ⚽"
+    },
+    "c2CP-d0PVrg": {
+      "post_id": "6aedb177f1ee5df4191d6cfd",
+      "due": "2026-11-19T17:30:00.000Z",
+      "at": "2026-11-06T10:52:39Z",
+      "title": "When Players Cheat Against Messi 🐐 ⚽"
+    },
+    "mFrLygHlFE0": {
+      "post_id": "6aedb17bb7b345d9808492ff",
+      "due": "2026-11-19T20:45:00.000Z",
+      "at": "2026-11-06T10:52:43Z",
+      "title": "Revenge Moments 😲 ⚽"
     }
   },
   "failed": {},
-  "counter": 69,
+  "counter": 73,
   "recent_players": [
-    "barcola",
-    "olise",
-    "doue",
-    "ronaldo"
+    "ronaldo",
+    "bellingham",
+    "haaland",
+    "messi"
   ],
   "recent_creators": [
-    "TeoCRi-Shorts",
-    "L7-Shorts",
-    "KickVibesEdit-TikTok",
-    "L7-Shorts",
     "F11Skillz-TikTok",
     "HRPlays01-TikTok",
     "L7-Shorts",
@@ -447,13 +467,13 @@
     "FootballEditsHD-TikTok",
     "HRPlays01-TikTok",
     "L7-Shorts",
-    "Football8568-TikTok"
+    "Football8568-TikTok",
+    "L7-Shorts",
+    "HRPlays01-TikTok",
+    "L7-Shorts",
+    "TeoCRi-Shorts"
   ],
   "recent_titles": [
-    "doué x neymar ⚽",
-    "eden hazard ⚽",
-    "when raphinha loses control 😡 ⚽",
-    "olise touch line skills 😮‍💨 ⚽",
     "the brain of pedri sees passes nobody else can! 🧠✨ ⚽",
     "desiré doué vs liverpool ⚽",
     "neymar jr 🇧🇷 ⚽",
@@ -479,13 +499,13 @@
     "desire doue ⚽",
     "rare foden son moments 😂 ⚽",
     "when ronaldo loses control 🤬 ⚽",
-    "this player is literally unstoppable🥶⚽️"
+    "this player is literally unstoppable🥶⚽️",
+    "bellingham comedy moments 😂 ⚽",
+    "when haaland loses control ⚽",
+    "when players cheat against messi 🐐 ⚽",
+    "revenge moments 😲 ⚽"
   ],
   "recent_stars": [
-    1,
-    1,
-    0,
-    1,
     0,
     1,
     1,
@@ -501,13 +521,13 @@
     1,
     1,
     1,
-    1
+    1,
+    1,
+    1,
+    1,
+    0
   ],
   "recent_long": [
-    "haaland",
-    "messi",
-    "",
-    "vinicius",
     "",
     "mbappe",
     "yamal",
@@ -523,6 +543,10 @@
     "doue",
     "foden",
     "ronaldo",
-    "kvaratskhelia"
+    "kvaratskhelia",
+    "bellingham",
+    "haaland",
+    "messi",
+    ""
   ]
 }
