@@ -863,6 +863,15 @@
       "day": "2026-11-06",
       "source": "football-data SA",
       "at": "2026-11-06T17:40:26Z"
+    },
+    {
+      "id": "6aee5c159214322f68b85904",
+      "kind": "breaking",
+      "text": "🚨 Selon RMC Sport, Kylian Mbappé devrait retrouver l’axe des Bleus face à l’Italie et à la Turquie, notamment en raison de l’absence d’Ousmane Dembélé. Mbappé au cœur du jeu, ça vous parle ?\n\n#Mbappé #Dembélé",
+      "due": "2026-11-06T23:10Z",
+      "day": "2026-11-07",
+      "source": "RMC Sport",
+      "at": "2026-11-06T23:00:37Z"
     }
   ],
   "slots": {
@@ -1048,20 +1057,21 @@
     "ef9fcdc5b401",
     "5dd6f7b95546",
     "900dc40b420e",
-    "45bc4ce71538"
+    "45bc4ce71538",
+    "ebf502650673"
   ],
-  "counter": 96,
+  "counter": 97,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 157,
-        "in": 94113,
-        "out": 22910
+        "calls": 158,
+        "in": 95143,
+        "out": 23121
       },
       "gpt-6.1-sol": {
-        "calls": 151,
-        "in": 52253,
-        "out": 8125
+        "calls": 152,
+        "in": 52694,
+        "out": 8161
       }
     }
   },
@@ -1095,7 +1105,8 @@
     "Jude Bellingham salue la « mentalité » du Real Madrid : la star de l’Angleterre inspire une nouvelle remontée spectaculaire en Ligue des champions face à l’AEK Athènes",
     "Messi et Ronaldo disent adieu aux sélections : la fin d’une ère pour le football mondial · SNA",
     "Avec Mbappé mais sans Dembélé, à quoi faut-il s'attendre pour la deuxième liste de Zinédine Zidane à la tête des Bleus",
-    "On espère que Ronaldo rejoindra la MLS et retrouvera Messi."
+    "On espère que Ronaldo rejoindra la MLS et retrouvera Messi.",
+    "Equipe de France: \"Pas de souci\", le gros indice de Zidane sur l'utilisation de Mbappé chez les Bleus"
   ],
   "recent_stats": [
     "erling haaland",
