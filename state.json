@@ -2167,6 +2167,19 @@
       "text": "🚨 Dortmund × Elversberg dans 1 heure (Bundesliga) !\n\nLes yeux sur Guirassy, Silva et Bellingham. Qui plante en premier ? 👇\n🔗 bio\n\n#BVB #Elversberg #Bundesliga #Bellingham",
       "text_src": "secours",
       "reply": "📺 Le direct, c'est par ici 👉 https://t.me/accesmatch"
+    },
+    "h560640": {
+      "kind": "x1",
+      "match_id": 560640,
+      "label": "ARSENAL-HULL CITY",
+      "kickoff": "2026-11-07T15:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/x560640-20261107.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-06T12:00:36Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   },
   "squads": {
