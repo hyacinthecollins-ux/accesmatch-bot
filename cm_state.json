@@ -818,6 +818,15 @@
       "day": "2026-11-06",
       "source": "franceinfo",
       "at": "2026-11-06T06:20:27Z"
+    },
+    {
+      "id": "6aed82217b7e47e8f4152c77",
+      "kind": "breaking",
+      "text": "🚨 Selon Vietnam.vn, l’espoir est de voir Ronaldo rejoindre la MLS et retrouver Messi. Des retrouvailles qui feraient parler dans les tribunes !\n\n#Messi #Ronaldo",
+      "due": "2026-11-06T07:40Z",
+      "day": "2026-11-06",
+      "source": "Vietnam.vn",
+      "at": "2026-11-06T07:30:41Z"
     }
   ],
   "slots": {
@@ -994,20 +1003,21 @@
     "0b125a51ec40",
     "ef9fcdc5b401",
     "5dd6f7b95546",
-    "900dc40b420e"
+    "900dc40b420e",
+    "45bc4ce71538"
   ],
-  "counter": 91,
+  "counter": 92,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 151,
-        "in": 88356,
-        "out": 21598
+        "calls": 153,
+        "in": 90343,
+        "out": 22028
       },
       "gpt-6.1-sol": {
-        "calls": 145,
-        "in": 49974,
-        "out": 7814
+        "calls": 147,
+        "in": 50607,
+        "out": 7971
       }
     }
   },
@@ -1040,7 +1050,8 @@
     "« Nous devons hausser un peu notre niveau » : Erling Haaland appelle Manchester City à se montrer plus impitoyable après avoir inscrit le but de la victoire en fin de match lors du succès 3-2 contre le RB Leipzig en Ligue des champions",
     "Jude Bellingham salue la « mentalité » du Real Madrid : la star de l’Angleterre inspire une nouvelle remontée spectaculaire en Ligue des champions face à l’AEK Athènes",
     "Messi et Ronaldo disent adieu aux sélections : la fin d’une ère pour le football mondial · SNA",
-    "Avec Mbappé mais sans Dembélé, à quoi faut-il s'attendre pour la deuxième liste de Zinédine Zidane à la tête des Bleus"
+    "Avec Mbappé mais sans Dembélé, à quoi faut-il s'attendre pour la deuxième liste de Zinédine Zidane à la tête des Bleus",
+    "On espère que Ronaldo rejoindra la MLS et retrouvera Messi."
   ],
   "recent_stats": [
     "erling haaland",
