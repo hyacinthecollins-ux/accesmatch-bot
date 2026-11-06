@@ -2183,6 +2183,19 @@
       "text": "⏰ Arsenal reçoit Hull City dans 1 heure, à 16h (heure de Paris), en Premier League. Kai Havertz et Bukayo Saka, 3 buts chacun, sont à surveiller ; Mohamed Belloumi compte 3 buts et 2 passes décisives. Qui gagne ?\n📺 en bio 👆\n\n#Arsenal #HullCity #PremierLeague #Havertz",
       "text_src": "IA",
       "reply": "📺 Le direct, c'est par ici 👉 https://t.me/accesmatch"
+    },
+    "h559635": {
+      "kind": "x1",
+      "match_id": 559635,
+      "label": "PSG-TROYES",
+      "kickoff": "2026-11-07T20:05:00Z",
+      "status": "poster_ready",
+      "poster": "posters/x559635-20261107.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-06T17:10:34Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   },
   "squads": {
