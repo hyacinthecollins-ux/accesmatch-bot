@@ -2125,13 +2125,16 @@
       "match_id": 560632,
       "label": "LEEDS UNITED-TOTTENHAM",
       "kickoff": "2026-11-07T12:30:00Z",
-      "status": "poster_ready",
+      "status": "scheduled",
       "poster": "posters/x560632-20261107.jpg",
-      "post_id": null,
-      "due": null,
+      "post_id": "6aed9e4c07f945cca954a872",
+      "due": "2026-11-07T11:06:00Z",
       "created": "2026-11-06T09:30:41Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "text": "🔥 C'est bientôt : Leeds United × Tottenham dans 1h24 !\n\nLes yeux sur Calvert-Lewin, Bogle et Jan Paul van Hecke. Ton score ? 👇\n📲 bio 👆\n\n#LeedsUnited #THFC #PremierLeague #CalvertLewin",
+      "text_src": "secours",
+      "reply": "📺 Le direct, c'est par ici 👉 https://t.me/accesmatch"
     }
   },
   "squads": {
@@ -2283,10 +2286,9 @@
       "stars": []
     }
   },
-  "llm_calls": 68,
+  "llm_calls": 71,
   "llm_posts": 30,
   "x_texts": [
-    "⏰ Dans 1 heure, Man City reçoit Brighton Hove en Premier League : coup d’envoi à 16h (heure de Paris). Haaland (9 buts), Cherki (4 buts, 2 passes décisives) et Groß (3 buts, 4 passes décisives) à surveiller. Qui gagne ?",
     "⏰ Dans 1 heure, Bayern-Dortmund en Bundesliga : coup d’envoi à 18h30 ! Michael Olise (6 buts, 3 passes décisives) et Sehrou Guirassy (2 buts, 2 passes décisives) à surveiller. Ton score ?",
     "⏰ Barça-Alavés, coup d’envoi dans 1 heure, à 21h ! Raphinha (13 buts, 2 passes) et Lamine Yamal (8 buts, 6 passes) sont attendus. Alavés vient gâcher la fête ? Ton score ?",
     "🔥 Santander reçoit le Real Madrid demain à 16h15 (heure de Paris) en Liga. Yassir Zabiri (8 buts en Liga cette saison) face à Kylian Mbappé (11 buts et 2 passes décisives) : ça sent la poudre ! Qui gagne ?",
@@ -2315,6 +2317,7 @@
     "🔥 Demain à 15h30 (heure de Paris), Mainz reçoit Bayern en Bundesliga : chaque duel peut faire basculer l’affiche. Phillip Tietz (5 buts) et Michael Olise (6 buts, 3 passes décisives) à surveiller. Ton buteur ?",
     "🔥 Un rendez-vous à ne pas manquer : Dortmund reçoit Elversberg en Bundesliga demain à 15h30 (heure de Paris). Guirassy (3 buts, 2 passes décisives) et Krattenmacher (4 buts, 1 passe décisive) à surveiller. Qui l’emporte ?",
     "🔥 Arsenal reçoit Hull City demain à 16h (heure de Paris) en Premier League : place aux duels qui peuvent tout faire basculer. Kai Havertz (3 buts) et Mohamed Belloumi (3 buts, 2 passes décisives) à surveiller. Votre buteur ?",
-    "🔥 Paris ne veut rien laisser respirer : demain à 21h05 (heure de Paris), le PSG reçoit Troyes en Ligue 1. Ferrán Torres (4 buts, 1 passe décisive) et Marquinhos (3 buts) à surveiller. Qui fera la différence ?"
+    "🔥 Paris ne veut rien laisser respirer : demain à 21h05 (heure de Paris), le PSG reçoit Troyes en Ligue 1. Ferrán Torres (4 buts, 1 passe décisive) et Marquinhos (3 buts) à surveiller. Qui fera la différence ?",
+    "🔥 C'est bientôt : Leeds United × Tottenham dans 1h24 !"
   ]
 }
