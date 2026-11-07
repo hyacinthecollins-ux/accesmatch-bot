@@ -2475,6 +2475,19 @@
       "text": "⏰ Dans 1 heure, à 20h45, RC Lens reçoit l’OM en Ligue 1. Florian Thauvin (4 buts) et Amine Gouiri (6 buts) seront à surveiller. Ton score ?\n📲 bio 👆\n\n#Lens #OM #Ligue1 #Thauvin",
       "text_src": "IA",
       "reply": "📺 Le direct, c'est par ici 👉 https://t.me/accesmatch"
+    },
+    "h564746": {
+      "kind": "x1",
+      "match_id": 564746,
+      "label": "ATLÉTICO-BARÇA",
+      "kickoff": "2026-11-08T20:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/x564746-20261108.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-07T17:00:46Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   },
   "squads": {
