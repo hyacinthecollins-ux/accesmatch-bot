@@ -899,6 +899,15 @@
       "day": "2026-11-07",
       "source": "وكالة سبأ",
       "at": "2026-11-07T06:20:25Z"
+    },
+    {
+      "id": "6aeed390af7e526d43089ac9",
+      "kind": "breaking",
+      "text": "🚨 Selon Vietnam.vn, Messi et Ronaldo sont au cœur d’une réflexion sur l’art de prendre du recul. Même les plus grands savent parfois lever le pied.\n\n#Messi #Ronaldo",
+      "due": "2026-11-07T07:40Z",
+      "day": "2026-11-07",
+      "source": "Vietnam.vn",
+      "at": "2026-11-07T07:30:24Z"
     }
   ],
   "slots": {
@@ -1090,20 +1099,21 @@
     "900dc40b420e",
     "45bc4ce71538",
     "ebf502650673",
-    "1943c67e7d6e"
+    "1943c67e7d6e",
+    "d00592e97c64"
   ],
-  "counter": 100,
+  "counter": 101,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 161,
-        "in": 98187,
-        "out": 23628
+        "calls": 162,
+        "in": 99150,
+        "out": 23768
       },
       "gpt-6.1-sol": {
-        "calls": 155,
-        "in": 53918,
-        "out": 8289
+        "calls": 156,
+        "in": 54238,
+        "out": 8334
       }
     }
   },
@@ -1139,7 +1149,8 @@
     "Avec Mbappé mais sans Dembélé, à quoi faut-il s'attendre pour la deuxième liste de Zinédine Zidane à la tête des Bleus",
     "On espère que Ronaldo rejoindra la MLS et retrouvera Messi.",
     "Equipe de France: \"Pas de souci\", le gros indice de Zidane sur l'utilisation de Mbappé chez les Bleus",
-    "Le FC Barcelone affronte l'Atlético de Madrid dans un duel pour la tête de la Liga ; le Real Madrid guette un faux pas"
+    "Le FC Barcelone affronte l'Atlético de Madrid dans un duel pour la tête de la Liga ; le Real Madrid guette un faux pas",
+    "L'art de prendre du recul : les leçons de Messi et Ronaldo"
   ],
   "recent_stats": [
     "erling haaland",
