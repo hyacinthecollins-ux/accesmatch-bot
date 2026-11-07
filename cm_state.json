@@ -917,6 +917,15 @@
       "day": "2026-11-07",
       "source": "football-data SA",
       "at": "2026-11-07T11:30:27Z"
+    },
+    {
+      "id": "6aef628d562f2e6de96ff0fe",
+      "kind": "recap",
+      "text": "📋 Leeds 1-0 Tottenham, Mainz 1-2 Bayern, Dortmund 2-1 Elversberg, Arsenal 1-0 Hull City. Des victoires serrées, mais les points sont pris : Leeds et Arsenal s’imposent sans encaisser.\n\n#FCBayern #Arsenal",
+      "due": "2026-11-07T21:35Z",
+      "day": "2026-11-07",
+      "source": "football-data",
+      "at": "2026-11-07T17:40:29Z"
     }
   ],
   "slots": {
@@ -976,7 +985,8 @@
     "2026-11-07T10:45": "done",
     "2026-11-07T14:00": "skipped",
     "2026-11-07T16:30": "done",
-    "2026-11-07T20:15": "skipped"
+    "2026-11-07T20:15": "skipped",
+    "2026-11-07T22:35": "done"
   },
   "slot_tries": {
     "2026-10-27T20:15": 1,
@@ -1032,7 +1042,8 @@
     "2026-11-06T22:35": 1,
     "2026-11-07T08:05": 1,
     "2026-11-07T10:45": 1,
-    "2026-11-07T16:30": 1
+    "2026-11-07T16:30": 1,
+    "2026-11-07T22:35": 1
   },
   "reacted": [
     "559648",
@@ -1119,18 +1130,18 @@
     "1943c67e7d6e",
     "d00592e97c64"
   ],
-  "counter": 102,
+  "counter": 103,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 163,
-        "in": 100230,
-        "out": 23940
+        "calls": 164,
+        "in": 101016,
+        "out": 24312
       },
       "gpt-6.1-sol": {
-        "calls": 157,
-        "in": 54736,
-        "out": 8374
+        "calls": 158,
+        "in": 55099,
+        "out": 8419
       }
     }
   },
