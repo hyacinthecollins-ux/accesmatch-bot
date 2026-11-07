@@ -2535,6 +2535,45 @@
       "fails": 0,
       "design": "crests-v1",
       "tg": "sent"
+    },
+    "r564741": {
+      "kind": "result",
+      "match_id": 564741,
+      "label": "VALENCIA-REAL MADRID",
+      "kickoff": "2026-11-07T20:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/r564741-20261107.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-07T22:10:36Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "r559635": {
+      "kind": "result",
+      "match_id": 559635,
+      "label": "PSG-TROYES",
+      "kickoff": "2026-11-07T20:05:00Z",
+      "status": "poster_ready",
+      "poster": "posters/r559635-20261107.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-07T22:10:36Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "f559635": {
+      "kind": "xr",
+      "match_id": 559635,
+      "label": "PSG-TROYES",
+      "kickoff": "2026-11-07T20:05:00Z",
+      "status": "poster_ready",
+      "poster": "posters/xr559635-20261107.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-07T22:10:36Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   },
   "squads": {
