@@ -2547,7 +2547,8 @@
       "due": null,
       "created": "2026-11-07T22:10:36Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "sent"
     },
     "r559635": {
       "kind": "result",
@@ -2560,20 +2561,24 @@
       "due": null,
       "created": "2026-11-07T22:10:36Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "sent"
     },
     "f559635": {
       "kind": "xr",
       "match_id": 559635,
       "label": "PSG-TROYES",
       "kickoff": "2026-11-07T20:05:00Z",
-      "status": "poster_ready",
+      "status": "scheduled",
       "poster": "posters/xr559635-20261107.jpg",
-      "post_id": null,
-      "due": null,
+      "post_id": "6aefa1e951492b796e023dd9",
+      "due": "2026-11-07T22:13:41Z",
       "created": "2026-11-07T22:10:36Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "text": "⏱️ PSG s’impose 1-0 face à Troyes ! Un but suffit, et la tension reste jusqu’au bout. Qui a le plus pesé dans cette victoire ?\n📺 en bio 👆\n\n#PSG #Troyes #Ligue1",
+      "text_src": "IA",
+      "reply": null
     }
   },
   "squads": {
@@ -2749,10 +2754,9 @@
       "stars": []
     }
   },
-  "llm_calls": 120,
-  "llm_posts": 44,
+  "llm_calls": 122,
+  "llm_posts": 45,
   "x_texts": [
-    "🔥 Demain à 21h (heure de Paris), RB Leipzig reçoit Man City en Ligue des champions. Haaland (4 buts) et Foden (3 buts, 1 passe décisive) en C1 cette saison, Cherki à surveiller : défenseurs, pas de sieste ! Qui gagne ?",
     "🔥 Demain à 21h (heure de Paris), Slavia Praha reçoit Arsenal en Ligue des champions. Danijel Sturm et Eberechi Eze, 2 buts chacun, sont à surveiller. Ça sent le choc ! Qui gagne ?",
     "🔥 C'est bientôt : PAE AEK × Real Madrid dans 1 heure !",
     "⏰ Fenerbahçe reçoit Liverpool en Ligue des champions : coup d’envoi dans 1 heure, à 18h45 ! Mac Allister et Barcola, 3 buts chacun, Wirtz aussi à surveiller. Les Reds vont-ils gâcher la fête ?",
@@ -2781,6 +2785,7 @@
     "⏱️ Bayern s’impose 2-1 face à Mainz en Bundesliga. Un but d’écart, et les Bavarois repartent avec la victoire. Qui t’a le plus convaincu ?",
     "⏰ Dans 1 heure, à 20h45, RC Lens reçoit l’OM en Ligue 1. Florian Thauvin (4 buts) et Amine Gouiri (6 buts) seront à surveiller. Ton score ?",
     "⏰ Dans 1 heure, à 21h, Atlético-Barça lance un choc de gala en Liga. Álex Baena (5 buts), Raphinha (15) et Lamine Yamal (10) sont à surveiller. Qui gagne ?",
-    "⏱️ Arsenal s’impose 1-0 face à Hull City ! Un seul but, et le verrou tient jusqu’au bout. Qui mérite les lauriers ?"
+    "⏱️ Arsenal s’impose 1-0 face à Hull City ! Un seul but, et le verrou tient jusqu’au bout. Qui mérite les lauriers ?",
+    "⏱️ PSG s’impose 1-0 face à Troyes ! Un but suffit, et la tension reste jusqu’au bout. Qui a le plus pesé dans cette victoire ?"
   ]
 }
