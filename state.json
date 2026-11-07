@@ -2349,6 +2349,19 @@
       "text": "🔥 Atlético-Barça, c’est demain à 21h (heure de Paris) en Liga : Álex Baena (5 buts, 3 passes décisives) et Raphinha (15 buts, 2 passes) sont à surveiller, comme Lamine Yamal (10 buts, 7 passes). Qui fera pencher le match ?\n\n#Atleti #FCBarcelona #LaLiga #Yamal",
       "text_src": "IA",
       "reply": null
+    },
+    "h558533": {
+      "kind": "x1",
+      "match_id": 558533,
+      "label": "NAPOLI-LAZIO",
+      "kickoff": "2026-11-08T11:30:00Z",
+      "status": "poster_ready",
+      "poster": "posters/x558533-20261108.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-07T08:30:29Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   },
   "squads": {
