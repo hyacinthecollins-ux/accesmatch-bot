@@ -926,6 +926,15 @@
       "day": "2026-11-07",
       "source": "football-data",
       "at": "2026-11-07T17:40:29Z"
+    },
+    {
+      "id": "6aef9d289214322f6819988a",
+      "kind": "reaction",
+      "text": "⏱️ Roma 3-0 Sassuolo ! La Roma s’impose lors de la 11e journée de Serie A. Trois buts, zéro encaissé : les tifosi romains peuvent savourer !\n\n#SerieA",
+      "due": "2026-11-07T22:00Z",
+      "day": "2026-11-07",
+      "source": "Match termine (Serie A) : Roma 3-0 Sassuolo",
+      "at": "2026-11-07T21:50:32Z"
     }
   ],
   "slots": {
@@ -1090,7 +1099,8 @@
     "565851",
     "565850",
     "560640",
-    "560641"
+    "560641",
+    "558531"
   ],
   "used_news": [
     "0323d7e5074e",
@@ -1131,18 +1141,18 @@
     "1943c67e7d6e",
     "d00592e97c64"
   ],
-  "counter": 103,
+  "counter": 104,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 166,
-        "in": 102952,
-        "out": 24888
+        "calls": 169,
+        "in": 105938,
+        "out": 25419
       },
       "gpt-6.1-sol": {
-        "calls": 160,
-        "in": 55771,
-        "out": 8495
+        "calls": 163,
+        "in": 56775,
+        "out": 8681
       }
     }
   },
