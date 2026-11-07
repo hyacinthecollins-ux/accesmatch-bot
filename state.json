@@ -2397,6 +2397,19 @@
       "text": "⏰ Coup d'envoi dans 1 heure : Genoa × AC Milan !\n\nLes yeux sur Osmajić, Messias et Rabiot. Qui plante en premier ? 👇\n🔗 bio\n\n#Genoa #ACMilan #SerieA #Osmaji",
       "text_src": "secours",
       "reply": "📺 Le direct, c'est par ici 👉 https://t.me/accesmatch"
+    },
+    "f560632": {
+      "kind": "xr",
+      "match_id": 560632,
+      "label": "LEEDS UNITED-TOTTENHAM",
+      "kickoff": "2026-11-07T12:30:00Z",
+      "status": "poster_ready",
+      "poster": "posters/xr560632-20261107.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-07T14:40:33Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   },
   "squads": {
