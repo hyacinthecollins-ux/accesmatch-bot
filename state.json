@@ -2521,6 +2521,19 @@
       "text": "⏱️ Arsenal s’impose 1-0 face à Hull City ! Un seul but, et le verrou tient jusqu’au bout. Qui mérite les lauriers ?\n📺 en bio 👆\n\n#Arsenal #HullCity #PremierLeague",
       "text_src": "IA",
       "reply": null
+    },
+    "r560641": {
+      "kind": "result",
+      "match_id": 560641,
+      "label": "NOTTINGHAM-MAN CITY",
+      "kickoff": "2026-11-07T17:30:00Z",
+      "status": "poster_ready",
+      "poster": "posters/r560641-20261107.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-07T19:40:35Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   },
   "squads": {
