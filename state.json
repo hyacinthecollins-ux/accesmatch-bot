@@ -2355,13 +2355,16 @@
       "match_id": 558533,
       "label": "NAPOLI-LAZIO",
       "kickoff": "2026-11-08T11:30:00Z",
-      "status": "poster_ready",
+      "status": "scheduled",
       "poster": "posters/x558533-20261108.jpg",
-      "post_id": null,
-      "due": null,
+      "post_id": "6aeee1b1af7e526d430cca4b",
+      "due": "2026-11-08T10:30:00Z",
       "created": "2026-11-07T08:30:29Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "text": "⏰ Coup d'envoi dans 1 heure : Napoli × Lazio !\n\nLes yeux sur Kevin De Bruyne, Højlund et Noslin. Qui plante en premier ? 👇\n🔗 bio\n\n#Napoli #Lazio #SerieA #KevinDeBruyne",
+      "text_src": "secours",
+      "reply": "📺 Où suivre le match 👉 https://t.me/accesmatch"
     }
   },
   "squads": {
@@ -2537,10 +2540,9 @@
       "stars": []
     }
   },
-  "llm_calls": 98,
+  "llm_calls": 101,
   "llm_posts": 38,
   "x_texts": [
-    "🔥 Villarreal reçoit le PSG demain à 21h (heure de Paris) en Ligue des champions ! Santiago Mouriño (2 buts) et Ousmane Dembélé (3 buts, 3 passes décisives) sont à surveiller. Gros morceau européen : qui gagne ?",
     "🔥 Demain à 21h (heure de Paris), Atleti reçoit le Bayern en Ligue des champions ! Marcos Llorente (1 but) et Harry Kane (4 buts, 2 passes décisives en C1 cette saison) sont à surveiller. Ça va jouer gros ! Qui gagne ?",
     "🔥 Man United reçoit Roma demain à 21h (heure de Paris) en Ligue des champions. Donyell Malen, à 3 buts et 2 passes décisives, est à surveiller, tout comme Bryan Cristante (1 but). Les filets sont prévenus ! Qui gagne ?",
     "⏰ Dans 1 heure, Barça-Aston Villa en Ligue des champions : coup d’envoi à 21h ! Raphinha (2 buts), Nicolas Jackson (3) et Ross Barkley (3 buts, 1 passe) à surveiller. Votre buteur ?",
@@ -2569,6 +2571,7 @@
     "🔥 Crystal Palace reçoit Liverpool demain à 15h (heure de Paris) en Premier League. Tyrick Mitchell (2 buts) et Alexander Isak (6 buts) sont à surveiller, Florian Wirtz aussi. Qui fera la différence ?",
     "🔥 Genoa et AC Milan se retrouvent demain à 15h (heure de Paris) en Serie A. Milutin Osmajić (4 buts, 1 passe décisive) et Adrien Rabiot (5 buts, 3 passes) sont attendus. Qui repart avec les trois points ?",
     "🔥 RC Lens-OM, demain à 20h45 (heure de Paris) en Ligue 1 : chaque ballon pèsera lourd. Florian Thauvin (4 buts, 8 passes décisives) et Amine Gouiri (6 buts, 3 passes décisives) sont attendus. Qui fera basculer le match ?",
-    "🔥 Atlético-Barça, c’est demain à 21h (heure de Paris) en Liga : Álex Baena (5 buts, 3 passes décisives) et Raphinha (15 buts, 2 passes) sont à surveiller, comme Lamine Yamal (10 buts, 7 passes). Qui fera pencher le match ?"
+    "🔥 Atlético-Barça, c’est demain à 21h (heure de Paris) en Liga : Álex Baena (5 buts, 3 passes décisives) et Raphinha (15 buts, 2 passes) sont à surveiller, comme Lamine Yamal (10 buts, 7 passes). Qui fera pencher le match ?",
+    "⏰ Coup d'envoi dans 1 heure : Napoli × Lazio !"
   ]
 }
