@@ -2419,13 +2419,16 @@
       "match_id": 565850,
       "label": "DORTMUND-ELVERSBERG",
       "kickoff": "2026-11-07T14:30:00Z",
-      "status": "poster_ready",
+      "status": "scheduled",
       "poster": "posters/xr565850-20261107.jpg",
-      "post_id": null,
-      "due": null,
+      "post_id": "6aef56f0229bf05daf61145d",
+      "due": "2026-11-07T16:53:48Z",
       "created": "2026-11-07T16:50:42Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "text": "⏱️ Dortmund l’emporte 2-1 contre Elversberg en Bundesliga ! Une marge infime, mais la victoire est là. Qui a fait basculer le match ?\n🔗 bio\n\n#BVB #Elversberg #Bundesliga",
+      "text_src": "IA",
+      "reply": null
     },
     "r565851": {
       "kind": "result",
@@ -2438,33 +2441,40 @@
       "due": null,
       "created": "2026-11-07T16:50:42Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "sent"
     },
     "f565851": {
       "kind": "xr",
       "match_id": 565851,
       "label": "MAINZ-BAYERN",
       "kickoff": "2026-11-07T14:30:00Z",
-      "status": "poster_ready",
+      "status": "scheduled",
       "poster": "posters/xr565851-20261107.jpg",
-      "post_id": null,
-      "due": null,
+      "post_id": "6aef56fa229bf05daf6118c8",
+      "due": "2026-11-07T17:01:48Z",
       "created": "2026-11-07T16:50:42Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "text": "⏱️ Bayern s’impose 2-1 face à Mainz en Bundesliga. Un but d’écart, et les Bavarois repartent avec la victoire. Qui t’a le plus convaincu ?\n📺 en bio 👆\n\n#Mainz #FCBayern #Bundesliga",
+      "text_src": "IA",
+      "reply": null
     },
     "h559630": {
       "kind": "x1",
       "match_id": 559630,
       "label": "RC LENS-OM",
       "kickoff": "2026-11-08T19:45:00Z",
-      "status": "poster_ready",
+      "status": "scheduled",
       "poster": "posters/x559630-20261108.jpg",
-      "post_id": null,
-      "due": null,
+      "post_id": "6aef57039214322f6804553a",
+      "due": "2026-11-08T18:45:00Z",
       "created": "2026-11-07T16:50:42Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "text": "⏰ Dans 1 heure, à 20h45, RC Lens reçoit l’OM en Ligue 1. Florian Thauvin (4 buts) et Amine Gouiri (6 buts) seront à surveiller. Ton score ?\n📲 bio 👆\n\n#Lens #OM #Ligue1 #Thauvin",
+      "text_src": "IA",
+      "reply": "📺 Le direct, c'est par ici 👉 https://t.me/accesmatch"
     }
   },
   "squads": {
@@ -2640,12 +2650,9 @@
       "stars": []
     }
   },
-  "llm_calls": 109,
-  "llm_posts": 39,
+  "llm_calls": 115,
+  "llm_posts": 42,
   "x_texts": [
-    "⏰ Dans 1 heure, à 21h à Paris, Villarreal reçoit le PSG en Ligue des champions ! Dembélé (3 buts, 3 passes décisives) et Mikautadze (2 buts, 1 passe décisive) à surveiller. Les filets sont prévenus… Ton buteur ?",
-    "⏰ Atleti-Bayern, gros morceau en Ligue des champions ! Coup d’envoi dans 1 heure, à 21h (heure de Paris). Marcos Llorente (1 but), Harry Kane (4 buts, 2 passes décisives) et Jamal Musiala à surveiller. Votre buteur ?",
-    "⏰ Man United-Roma, c’est dans 1h16 en Ligue des champions : coup d’envoi à 21h. Malen, 3 buts et 2 passes, et Cristante, 1 but, seront à surveiller. Ça sent la poudre… Qui gagne ?",
     "🔥 Demain à 18h45 (heure de Paris), PAE AEK reçoit le Real Madrid en Ligue des champions ! Răzvan Marin (1 but), Kylian Mbappé (3 buts, 1 passe décisive) et Federico Valverde (1 but) à surveiller. Qui gagne ?",
     "🔥 Demain à 18h45 (heure de Paris), Fenerbahçe reçoit Liverpool en Ligue des champions. Alexis Mac Allister et Bradley Barcola, déjà 3 buts chacun cette saison, sont à surveiller. Gros morceau, soirée de gala ! Qui gagne ?",
     "🔥 Demain à 21h (heure de Paris), RB Leipzig reçoit Man City en Ligue des champions. Haaland (4 buts) et Foden (3 buts, 1 passe décisive) en C1 cette saison, Cherki à surveiller : défenseurs, pas de sieste ! Qui gagne ?",
@@ -2672,6 +2679,9 @@
     "⏰ Coup d'envoi dans 1 heure : Napoli × Lazio !",
     "🚨 Crystal Palace × Liverpool dans 1 heure (Premier League) !",
     "⏰ Coup d'envoi dans 1 heure : Genoa × AC Milan !",
-    "⏱️ Leeds United bat Tottenham 1-0 en Premier League. Le genre de soirée où un but suffit à faire chavirer tout un stade. Ton joueur du match ?"
+    "⏱️ Leeds United bat Tottenham 1-0 en Premier League. Le genre de soirée où un but suffit à faire chavirer tout un stade. Ton joueur du match ?",
+    "⏱️ Dortmund l’emporte 2-1 contre Elversberg en Bundesliga ! Une marge infime, mais la victoire est là. Qui a fait basculer le match ?",
+    "⏱️ Bayern s’impose 2-1 face à Mainz en Bundesliga. Un but d’écart, et les Bavarois repartent avec la victoire. Qui t’a le plus convaincu ?",
+    "⏰ Dans 1 heure, à 20h45, RC Lens reçoit l’OM en Ligue 1. Florian Thauvin (4 buts) et Amine Gouiri (6 buts) seront à surveiller. Ton score ?"
   ]
 }
