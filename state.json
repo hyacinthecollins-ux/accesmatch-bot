@@ -2205,13 +2205,16 @@
       "match_id": 558533,
       "label": "NAPOLI-LAZIO",
       "kickoff": "2026-11-08T11:30:00Z",
-      "status": "poster_ready",
+      "status": "scheduled",
       "poster": "posters/x558533-20261108.jpg",
-      "post_id": null,
-      "due": null,
+      "post_id": "6aee6a4b9214322f68bc7bf8",
+      "due": "2026-11-07T11:54:00Z",
       "created": "2026-11-07T00:00:44Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "text": "🔥 Napoli reçoit la Lazio demain à 12h30 (heure de Paris) en Serie A : Kevin De Bruyne (4 buts, 1 passe décisive) et Rasmus Højlund (3 buts) sont à surveiller, comme Tijjani Noslin (4 buts, 3 passes). Qui sortira du lot ?\n\n#Napoli #Lazio #SerieA #KevinDeBruyne",
+      "text_src": "IA",
+      "reply": null
     },
     "p560635": {
       "kind": "preview",
@@ -2224,33 +2227,40 @@
       "due": null,
       "created": "2026-11-07T00:00:44Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "sent"
     },
     "a560635": {
       "kind": "x24",
       "match_id": 560635,
       "label": "CRYSTAL PALACE-LIVERPOOL",
       "kickoff": "2026-11-08T14:00:00Z",
-      "status": "poster_ready",
+      "status": "scheduled",
       "poster": "posters/x560635-20261108.jpg",
-      "post_id": null,
-      "due": null,
+      "post_id": "6aee6a58af7e526d43ec5b1d",
+      "due": "2026-11-07T14:08:00Z",
       "created": "2026-11-07T00:00:44Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "text": "🔥 Crystal Palace reçoit Liverpool demain à 15h (heure de Paris) en Premier League. Tyrick Mitchell (2 buts) et Alexander Isak (6 buts) sont à surveiller, Florian Wirtz aussi. Qui fera la différence ?\n\n#CrystalPalace #LFC #PremierLeague #Mitchell",
+      "text_src": "IA",
+      "reply": null
     },
     "a558536": {
       "kind": "x24",
       "match_id": 558536,
       "label": "GENOA-AC MILAN",
       "kickoff": "2026-11-08T14:00:00Z",
-      "status": "poster_ready",
+      "status": "scheduled",
       "poster": "posters/x558536-20261108.jpg",
-      "post_id": null,
-      "due": null,
+      "post_id": "6aee6a679214322f68bc87bf",
+      "due": "2026-11-07T14:16:00Z",
       "created": "2026-11-07T00:00:44Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "text": "🔥 Genoa et AC Milan se retrouvent demain à 15h (heure de Paris) en Serie A. Milutin Osmajić (4 buts, 1 passe décisive) et Adrien Rabiot (5 buts, 3 passes) sont attendus. Qui repart avec les trois points ?\n\n#Genoa #ACMilan #SerieA #Osmaji",
+      "text_src": "IA",
+      "reply": null
     },
     "p560636": {
       "kind": "preview",
@@ -2263,7 +2273,8 @@
       "due": null,
       "created": "2026-11-07T00:00:44Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "sent"
     },
     "p560639": {
       "kind": "preview",
@@ -2276,7 +2287,8 @@
       "due": null,
       "created": "2026-11-07T00:00:44Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "sent"
     },
     "p559630": {
       "kind": "preview",
@@ -2289,20 +2301,24 @@
       "due": null,
       "created": "2026-11-07T00:00:44Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "sent"
     },
     "a559630": {
       "kind": "x24",
       "match_id": 559630,
       "label": "RC LENS-OM",
       "kickoff": "2026-11-08T19:45:00Z",
-      "status": "poster_ready",
+      "status": "scheduled",
       "poster": "posters/x559630-20261108.jpg",
-      "post_id": null,
-      "due": null,
+      "post_id": "6aee6a7ea7751de7c9b5c4b3",
+      "due": "2026-11-07T19:45:00Z",
       "created": "2026-11-07T00:00:44Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "text": "🔥 RC Lens-OM, demain à 20h45 (heure de Paris) en Ligue 1 : chaque ballon pèsera lourd. Florian Thauvin (4 buts, 8 passes décisives) et Amine Gouiri (6 buts, 3 passes décisives) sont attendus. Qui fera basculer le match ?\n\n#Lens #OM #Ligue1 #Thauvin",
+      "text_src": "IA",
+      "reply": null
     },
     "p564746": {
       "kind": "preview",
@@ -2315,20 +2331,24 @@
       "due": null,
       "created": "2026-11-07T00:00:44Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "sent"
     },
     "a564746": {
       "kind": "x24",
       "match_id": 564746,
       "label": "ATLÉTICO-BARÇA",
       "kickoff": "2026-11-08T20:00:00Z",
-      "status": "poster_ready",
+      "status": "scheduled",
       "poster": "posters/x564746-20261108.jpg",
-      "post_id": null,
-      "due": null,
+      "post_id": "6aee6a8a004e4879a7224286",
+      "due": "2026-11-07T20:00:00Z",
       "created": "2026-11-07T00:00:44Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "text": "🔥 Atlético-Barça, c’est demain à 21h (heure de Paris) en Liga : Álex Baena (5 buts, 3 passes décisives) et Raphinha (15 buts, 2 passes) sont à surveiller, comme Lamine Yamal (10 buts, 7 passes). Qui fera pencher le match ?\n\n#Atleti #FCBarcelona #LaLiga #Yamal",
+      "text_src": "IA",
+      "reply": null
     }
   },
   "squads": {
@@ -2478,16 +2498,35 @@
     "531": {
       "t": "2026-11-06T00:01:01Z",
       "stars": []
+    },
+    "113": {
+      "t": "2026-11-07T00:00:58Z",
+      "stars": []
+    },
+    "110": {
+      "t": "2026-11-07T00:00:58Z",
+      "stars": []
+    },
+    "354": {
+      "t": "2026-11-07T00:00:58Z",
+      "stars": []
+    },
+    "107": {
+      "t": "2026-11-07T00:00:58Z",
+      "stars": []
+    },
+    "98": {
+      "t": "2026-11-07T00:00:58Z",
+      "stars": []
+    },
+    "546": {
+      "t": "2026-11-07T00:00:58Z",
+      "stars": []
     }
   },
-  "llm_calls": 83,
-  "llm_posts": 33,
+  "llm_calls": 98,
+  "llm_posts": 38,
   "x_texts": [
-    "🔥 Demain à 20h45, l’OM reçoit Toulouse en Ligue 1. Amine Gouiri (5 buts, 2 passes décisives) et Casper Tengstedt (5 buts, 1 passe) à surveiller. Ça va cogner : qui gagne ?",
-    "⏰ Dans 1 heure, Santander reçoit le Real Madrid en Liga : coup d’envoi à 16h15. Yassir Zabiri (8 buts) et Kylian Mbappé (11 buts) sont à surveiller. Qui gagne ?",
-    "⏰ Dans 1 heure, Liverpool-Arsenal : coup d’envoi à 17h30, heure de Paris. Un choc de Premier League, avec Alexander Isak (6 buts) et Bukayo Saka (3) à surveiller. Soirée de gala : qui gagne ?",
-    "⏰ OM-Toulouse en Ligue 1 : coup d’envoi dans 1 heure, à 20h45 ! Amine Gouiri (5 buts, 2 passes décisives) et Casper Tengstedt (5 buts, 1 passe décisive) à surveiller. Ton buteur ?",
-    "🔥 Demain à 21h (heure de Paris), Barça-Aston Villa en Ligue des champions ! Raphinha et Adeyemi, 2 buts chacun, face à Nicolas Jackson, déjà 3 buts. Ça va cogner ! Ton buteur ?",
     "🔥 Villarreal reçoit le PSG demain à 21h (heure de Paris) en Ligue des champions ! Santiago Mouriño (2 buts) et Ousmane Dembélé (3 buts, 3 passes décisives) sont à surveiller. Gros morceau européen : qui gagne ?",
     "🔥 Demain à 21h (heure de Paris), Atleti reçoit le Bayern en Ligue des champions ! Marcos Llorente (1 but) et Harry Kane (4 buts, 2 passes décisives en C1 cette saison) sont à surveiller. Ça va jouer gros ! Qui gagne ?",
     "🔥 Man United reçoit Roma demain à 21h (heure de Paris) en Ligue des champions. Donyell Malen, à 3 buts et 2 passes décisives, est à surveiller, tout comme Bryan Cristante (1 but). Les filets sont prévenus ! Qui gagne ?",
@@ -2512,6 +2551,11 @@
     "⏰ Mainz reçoit le Bayern dans 1 heure, à 15h30 (heure de Paris), en Bundesliga. Phillip Tietz (5 buts) et Michael Olise (6 buts, 3 passes décisives) sont attendus, Jamal Musiala aussi. Votre buteur ?",
     "🚨 Dortmund × Elversberg dans 1 heure (Bundesliga) !",
     "⏰ Arsenal reçoit Hull City dans 1 heure, à 16h (heure de Paris), en Premier League. Kai Havertz et Bukayo Saka, 3 buts chacun, sont à surveiller ; Mohamed Belloumi compte 3 buts et 2 passes décisives. Qui gagne ?",
-    "⏰ Plus qu’une heure avant PSG-Troyes, coup d’envoi à 21h05 en Ligue 1 ! Ferrán Torres (4 buts, 1 passe décisive) et Marquinhos (3 buts) pourraient peser ; Ousmane Dembélé est aussi attendu. Votre buteur ?"
+    "⏰ Plus qu’une heure avant PSG-Troyes, coup d’envoi à 21h05 en Ligue 1 ! Ferrán Torres (4 buts, 1 passe décisive) et Marquinhos (3 buts) pourraient peser ; Ousmane Dembélé est aussi attendu. Votre buteur ?",
+    "🔥 Napoli reçoit la Lazio demain à 12h30 (heure de Paris) en Serie A : Kevin De Bruyne (4 buts, 1 passe décisive) et Rasmus Højlund (3 buts) sont à surveiller, comme Tijjani Noslin (4 buts, 3 passes). Qui sortira du lot ?",
+    "🔥 Crystal Palace reçoit Liverpool demain à 15h (heure de Paris) en Premier League. Tyrick Mitchell (2 buts) et Alexander Isak (6 buts) sont à surveiller, Florian Wirtz aussi. Qui fera la différence ?",
+    "🔥 Genoa et AC Milan se retrouvent demain à 15h (heure de Paris) en Serie A. Milutin Osmajić (4 buts, 1 passe décisive) et Adrien Rabiot (5 buts, 3 passes) sont attendus. Qui repart avec les trois points ?",
+    "🔥 RC Lens-OM, demain à 20h45 (heure de Paris) en Ligue 1 : chaque ballon pèsera lourd. Florian Thauvin (4 buts, 8 passes décisives) et Amine Gouiri (6 buts, 3 passes décisives) sont attendus. Qui fera basculer le match ?",
+    "🔥 Atlético-Barça, c’est demain à 21h (heure de Paris) en Liga : Álex Baena (5 buts, 3 passes décisives) et Raphinha (15 buts, 2 passes) sont à surveiller, comme Lamine Yamal (10 buts, 7 passes). Qui fera pencher le match ?"
   ]
 }
