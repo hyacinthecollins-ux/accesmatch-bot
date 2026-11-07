@@ -935,6 +935,15 @@
       "day": "2026-11-07",
       "source": "Match termine (Serie A) : Roma 3-0 Sassuolo",
       "at": "2026-11-07T21:50:32Z"
+    },
+    {
+      "id": "6aefa1ce004e4879a781344e",
+      "kind": "reaction",
+      "text": "⏱️ Valencia 0-3 Real Madrid ! Déjà devant de deux buts à la pause, le Real a plié l’affaire en Liga. À l’extérieur, les Madrilènes ont livré une copie nette.\n\n#RealMadrid #LaLiga",
+      "due": "2026-11-07T22:20Z",
+      "day": "2026-11-07",
+      "source": "Match termine (Liga) : Valencia 0-3 Real Madrid",
+      "at": "2026-11-07T22:10:22Z"
     }
   ],
   "slots": {
@@ -1100,7 +1109,8 @@
     "565850",
     "560640",
     "560641",
-    "558531"
+    "558531",
+    "564741"
   ],
   "used_news": [
     "0323d7e5074e",
@@ -1141,18 +1151,18 @@
     "1943c67e7d6e",
     "d00592e97c64"
   ],
-  "counter": 104,
+  "counter": 105,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 169,
-        "in": 105938,
-        "out": 25419
+        "calls": 170,
+        "in": 106869,
+        "out": 25475
       },
       "gpt-6.1-sol": {
-        "calls": 163,
-        "in": 56775,
-        "out": 8681
+        "calls": 164,
+        "in": 57108,
+        "out": 8747
       }
     }
   },
