@@ -437,21 +437,41 @@
       "due": "2026-11-19T20:45:00.000Z",
       "at": "2026-11-06T10:52:43Z",
       "title": "Revenge Moments 😲 ⚽"
+    },
+    "-oKZbjtCcg0": {
+      "post_id": "6aeef8a4229bf05daf40c247",
+      "due": "2026-11-20T08:15:00.000Z",
+      "at": "2026-11-07T10:08:36Z",
+      "title": "Vini Jr Backheels 💀 ⚽"
+    },
+    "7489100166914411798": {
+      "post_id": "6aeef8a8229bf05daf40c2e7",
+      "due": "2026-11-20T11:30:00.000Z",
+      "at": "2026-11-07T10:08:40Z",
+      "title": "POV ： you gave everything to win the champions ⚽"
+    },
+    "7670983034354683168": {
+      "post_id": "6aeef8aba7751de7c9dd5a71",
+      "due": "2026-11-20T17:30:00.000Z",
+      "at": "2026-11-07T10:08:44Z",
+      "title": "Ethan Mbappé 🇫🇷 ⚽"
+    },
+    "VGftNzkfuug": {
+      "post_id": "6aeef8afd6bbae6fa17bf1c0",
+      "due": "2026-11-20T20:45:00.000Z",
+      "at": "2026-11-07T10:08:47Z",
+      "title": "Yamal Backheels 💀 ⚽"
     }
   },
   "failed": {},
-  "counter": 73,
+  "counter": 77,
   "recent_players": [
-    "ronaldo",
-    "bellingham",
-    "haaland",
-    "messi"
+    "messi",
+    "vinicius",
+    "mbappe",
+    "yamal"
   ],
   "recent_creators": [
-    "F11Skillz-TikTok",
-    "HRPlays01-TikTok",
-    "L7-Shorts",
-    "FootballEditsHD-TikTok",
     "Football8568-TikTok",
     "F11Skillz-TikTok",
     "HRPlays01-TikTok",
@@ -471,13 +491,13 @@
     "L7-Shorts",
     "HRPlays01-TikTok",
     "L7-Shorts",
-    "TeoCRi-Shorts"
+    "TeoCRi-Shorts",
+    "L7-Shorts",
+    "F11Skillz-TikTok",
+    "KickVibesEdit-TikTok",
+    "L7-Shorts"
   ],
   "recent_titles": [
-    "the brain of pedri sees passes nobody else can! 🧠✨ ⚽",
-    "desiré doué vs liverpool ⚽",
-    "neymar jr 🇧🇷 ⚽",
-    "ronaldo vs barcelona ⚽",
     "france wc 2026 🇫🇷 ⚽",
     "when bellingham gets bored 🥱 ⚽",
     "mbappe vs haaland in world cup ☠️🔥 ｜ who’s gonna win ？ ⚽",
@@ -503,13 +523,13 @@
     "bellingham comedy moments 😂 ⚽",
     "when haaland loses control ⚽",
     "when players cheat against messi 🐐 ⚽",
-    "revenge moments 😲 ⚽"
+    "revenge moments 😲 ⚽",
+    "vini jr backheels 💀 ⚽",
+    "pov ： you gave everything to win the champions ⚽",
+    "ethan mbappé 🇫🇷 ⚽",
+    "yamal backheels 💀 ⚽"
   ],
   "recent_stars": [
-    0,
-    1,
-    1,
-    0,
     1,
     0,
     1,
@@ -525,13 +545,13 @@
     1,
     1,
     1,
-    0
+    0,
+    1,
+    0,
+    1,
+    1
   ],
   "recent_long": [
-    "",
-    "mbappe",
-    "yamal",
-    "",
     "dembele",
     "",
     "cherki",
@@ -547,6 +567,10 @@
     "bellingham",
     "haaland",
     "messi",
-    ""
+    "",
+    "vinicius",
+    "",
+    "mbappe",
+    "yamal"
   ]
 }
