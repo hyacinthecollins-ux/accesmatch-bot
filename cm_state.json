@@ -881,6 +881,15 @@
       "day": "2026-11-07",
       "source": "football-data",
       "at": "2026-11-07T03:10:23Z"
+    },
+    {
+      "id": "6aeebc27d6bbae6fa169cbf4",
+      "kind": "stat",
+      "text": "📊 Kylian Mbappé est 4e des buteurs de Ligue des champions avec 4 buts et 1 passe décisive en 4 matchs. Le Real Madrid peut compter sur lui dans les deux rôles.\n\n#Mbappé #RealMadrid",
+      "due": "2026-11-07T09:45Z",
+      "day": "2026-11-07",
+      "source": "football-data CL",
+      "at": "2026-11-07T05:50:31Z"
     }
   ],
   "slots": {
@@ -936,7 +945,8 @@
     "2026-11-06T16:30": "done",
     "2026-11-06T20:15": "done",
     "2026-11-06T22:35": "done",
-    "2026-11-07T08:05": "done"
+    "2026-11-07T08:05": "done",
+    "2026-11-07T10:45": "done"
   },
   "slot_tries": {
     "2026-10-27T20:15": 1,
@@ -990,7 +1000,8 @@
     "2026-11-06T16:30": 1,
     "2026-11-06T20:15": 1,
     "2026-11-06T22:35": 1,
-    "2026-11-07T08:05": 1
+    "2026-11-07T08:05": 1,
+    "2026-11-07T10:45": 1
   },
   "reacted": [
     "559648",
@@ -1071,18 +1082,18 @@
     "45bc4ce71538",
     "ebf502650673"
   ],
-  "counter": 98,
+  "counter": 99,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 159,
-        "in": 96137,
-        "out": 23315
+        "calls": 160,
+        "in": 97220,
+        "out": 23373
       },
       "gpt-6.1-sol": {
-        "calls": 153,
-        "in": 53064,
-        "out": 8195
+        "calls": 154,
+        "in": 53550,
+        "out": 8247
       }
     }
   },
@@ -1136,7 +1147,8 @@
     "rayan cherki",
     "alexander isak",
     "michael olise",
-    "harry kane"
+    "harry kane",
+    "kylian mbappe"
   ],
   "debates": {
     "CL": {
