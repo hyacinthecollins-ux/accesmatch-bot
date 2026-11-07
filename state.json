@@ -2365,6 +2365,32 @@
       "text": "⏰ Coup d'envoi dans 1 heure : Napoli × Lazio !\n\nLes yeux sur Kevin De Bruyne, Højlund et Noslin. Qui plante en premier ? 👇\n🔗 bio\n\n#Napoli #Lazio #SerieA #KevinDeBruyne",
       "text_src": "secours",
       "reply": "📺 Où suivre le match 👉 https://t.me/accesmatch"
+    },
+    "h560635": {
+      "kind": "x1",
+      "match_id": 560635,
+      "label": "CRYSTAL PALACE-LIVERPOOL",
+      "kickoff": "2026-11-08T14:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/x560635-20261108.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-07T11:00:48Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "h558536": {
+      "kind": "x1",
+      "match_id": 558536,
+      "label": "GENOA-AC MILAN",
+      "kickoff": "2026-11-08T14:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/x558536-20261108.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-07T11:00:48Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   },
   "squads": {
