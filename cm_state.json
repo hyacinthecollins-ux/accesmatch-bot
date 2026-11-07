@@ -890,6 +890,15 @@
       "day": "2026-11-07",
       "source": "football-data CL",
       "at": "2026-11-07T05:50:31Z"
+    },
+    {
+      "id": "6aeec3299214322f68d3ecba",
+      "kind": "breaking",
+      "text": "🚨 Selon l’agence Saba, le FC Barcelone affronte l’Atlético de Madrid dans la course à la tête de la Liga, avec le Real Madrid à l’affût d’un faux pas. La pression est aussi sur les épaules des poursuivants : qui en profitera ?\n\n#FCBarcelona #RealMadrid",
+      "due": "2026-11-07T06:30Z",
+      "day": "2026-11-07",
+      "source": "وكالة سبأ",
+      "at": "2026-11-07T06:20:25Z"
     }
   ],
   "slots": {
@@ -1080,20 +1089,21 @@
     "5dd6f7b95546",
     "900dc40b420e",
     "45bc4ce71538",
-    "ebf502650673"
+    "ebf502650673",
+    "1943c67e7d6e"
   ],
-  "counter": 99,
+  "counter": 100,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 160,
-        "in": 97220,
-        "out": 23373
+        "calls": 161,
+        "in": 98187,
+        "out": 23628
       },
       "gpt-6.1-sol": {
-        "calls": 154,
-        "in": 53550,
-        "out": 8247
+        "calls": 155,
+        "in": 53918,
+        "out": 8289
       }
     }
   },
@@ -1128,7 +1138,8 @@
     "Messi et Ronaldo disent adieu aux sélections : la fin d’une ère pour le football mondial · SNA",
     "Avec Mbappé mais sans Dembélé, à quoi faut-il s'attendre pour la deuxième liste de Zinédine Zidane à la tête des Bleus",
     "On espère que Ronaldo rejoindra la MLS et retrouvera Messi.",
-    "Equipe de France: \"Pas de souci\", le gros indice de Zidane sur l'utilisation de Mbappé chez les Bleus"
+    "Equipe de France: \"Pas de souci\", le gros indice de Zidane sur l'utilisation de Mbappé chez les Bleus",
+    "Le FC Barcelone affronte l'Atlético de Madrid dans un duel pour la tête de la Liga ; le Real Madrid guette un faux pas"
   ],
   "recent_stats": [
     "erling haaland",
