@@ -2371,26 +2371,32 @@
       "match_id": 560635,
       "label": "CRYSTAL PALACE-LIVERPOOL",
       "kickoff": "2026-11-08T14:00:00Z",
-      "status": "poster_ready",
+      "status": "scheduled",
       "poster": "posters/x560635-20261108.jpg",
-      "post_id": null,
-      "due": null,
+      "post_id": "6aef04f0229bf05daf44b3b5",
+      "due": "2026-11-08T13:00:00Z",
       "created": "2026-11-07T11:00:48Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "text": "🚨 Crystal Palace × Liverpool dans 1 heure (Premier League) !\n\nLes yeux sur Mitchell, Isak et Muñoz. Qui plante en premier ? 👇\n📲 bio 👆\n\n#CrystalPalace #LFC #PremierLeague #Mitchell",
+      "text_src": "secours",
+      "reply": "📺 Où suivre le match 👉 https://t.me/accesmatch"
     },
     "h558536": {
       "kind": "x1",
       "match_id": 558536,
       "label": "GENOA-AC MILAN",
       "kickoff": "2026-11-08T14:00:00Z",
-      "status": "poster_ready",
+      "status": "scheduled",
       "poster": "posters/x558536-20261108.jpg",
-      "post_id": null,
-      "due": null,
+      "post_id": "6aef04fea7751de7c9e121f3",
+      "due": "2026-11-08T12:52:00Z",
       "created": "2026-11-07T11:00:48Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "text": "⏰ Coup d'envoi dans 1 heure : Genoa × AC Milan !\n\nLes yeux sur Osmajić, Messias et Rabiot. Qui plante en premier ? 👇\n🔗 bio\n\n#Genoa #ACMilan #SerieA #Osmaji",
+      "text_src": "secours",
+      "reply": "📺 Le direct, c'est par ici 👉 https://t.me/accesmatch"
     }
   },
   "squads": {
@@ -2566,11 +2572,9 @@
       "stars": []
     }
   },
-  "llm_calls": 101,
+  "llm_calls": 107,
   "llm_posts": 38,
   "x_texts": [
-    "🔥 Demain à 21h (heure de Paris), Atleti reçoit le Bayern en Ligue des champions ! Marcos Llorente (1 but) et Harry Kane (4 buts, 2 passes décisives en C1 cette saison) sont à surveiller. Ça va jouer gros ! Qui gagne ?",
-    "🔥 Man United reçoit Roma demain à 21h (heure de Paris) en Ligue des champions. Donyell Malen, à 3 buts et 2 passes décisives, est à surveiller, tout comme Bryan Cristante (1 but). Les filets sont prévenus ! Qui gagne ?",
     "⏰ Dans 1 heure, Barça-Aston Villa en Ligue des champions : coup d’envoi à 21h ! Raphinha (2 buts), Nicolas Jackson (3) et Ross Barkley (3 buts, 1 passe) à surveiller. Votre buteur ?",
     "⏰ Dans 1 heure, à 21h à Paris, Villarreal reçoit le PSG en Ligue des champions ! Dembélé (3 buts, 3 passes décisives) et Mikautadze (2 buts, 1 passe décisive) à surveiller. Les filets sont prévenus… Ton buteur ?",
     "⏰ Atleti-Bayern, gros morceau en Ligue des champions ! Coup d’envoi dans 1 heure, à 21h (heure de Paris). Marcos Llorente (1 but), Harry Kane (4 buts, 2 passes décisives) et Jamal Musiala à surveiller. Votre buteur ?",
@@ -2598,6 +2602,8 @@
     "🔥 Genoa et AC Milan se retrouvent demain à 15h (heure de Paris) en Serie A. Milutin Osmajić (4 buts, 1 passe décisive) et Adrien Rabiot (5 buts, 3 passes) sont attendus. Qui repart avec les trois points ?",
     "🔥 RC Lens-OM, demain à 20h45 (heure de Paris) en Ligue 1 : chaque ballon pèsera lourd. Florian Thauvin (4 buts, 8 passes décisives) et Amine Gouiri (6 buts, 3 passes décisives) sont attendus. Qui fera basculer le match ?",
     "🔥 Atlético-Barça, c’est demain à 21h (heure de Paris) en Liga : Álex Baena (5 buts, 3 passes décisives) et Raphinha (15 buts, 2 passes) sont à surveiller, comme Lamine Yamal (10 buts, 7 passes). Qui fera pencher le match ?",
-    "⏰ Coup d'envoi dans 1 heure : Napoli × Lazio !"
+    "⏰ Coup d'envoi dans 1 heure : Napoli × Lazio !",
+    "🚨 Crystal Palace × Liverpool dans 1 heure (Premier League) !",
+    "⏰ Coup d'envoi dans 1 heure : Genoa × AC Milan !"
   ]
 }
