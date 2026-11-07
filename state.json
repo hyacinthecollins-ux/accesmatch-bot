@@ -2491,6 +2491,32 @@
       "text": "⏰ Dans 1 heure, à 21h, Atlético-Barça lance un choc de gala en Liga. Álex Baena (5 buts), Raphinha (15) et Lamine Yamal (10) sont à surveiller. Qui gagne ?\n🔗 bio\n\n#Atleti #FCBarcelona #LaLiga #Yamal",
       "text_src": "IA",
       "reply": "📺 Le direct, c'est par ici 👉 https://t.me/accesmatch"
+    },
+    "r560640": {
+      "kind": "result",
+      "match_id": 560640,
+      "label": "ARSENAL-HULL CITY",
+      "kickoff": "2026-11-07T15:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/r560640-20261107.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-07T17:10:43Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "f560640": {
+      "kind": "xr",
+      "match_id": 560640,
+      "label": "ARSENAL-HULL CITY",
+      "kickoff": "2026-11-07T15:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/xr560640-20261107.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-07T17:10:43Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   },
   "squads": {
