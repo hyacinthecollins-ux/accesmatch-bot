@@ -944,6 +944,15 @@
       "day": "2026-11-07",
       "source": "Match termine (Liga) : Valencia 0-3 Real Madrid",
       "at": "2026-11-07T22:10:22Z"
+    },
+    {
+      "id": "6aefad9a9214322f681e06c9",
+      "kind": "breaking",
+      "text": "🚨 Selon Sports, Mbappé, Lamine Yamal et Dembélé sont présentés comme des stars du foot version années 90. Le rétro leur va bien : lequel s’y fond le mieux ?\n\n#Mbappé #Yamal",
+      "due": "2026-11-07T23:10Z",
+      "day": "2026-11-08",
+      "source": "Sports",
+      "at": "2026-11-07T23:00:42Z"
     }
   ],
   "slots": {
@@ -1150,20 +1159,21 @@
     "45bc4ce71538",
     "ebf502650673",
     "1943c67e7d6e",
-    "d00592e97c64"
+    "d00592e97c64",
+    "389ba4c58eef"
   ],
-  "counter": 105,
+  "counter": 106,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 170,
-        "in": 106869,
-        "out": 25475
+        "calls": 173,
+        "in": 109727,
+        "out": 26046
       },
       "gpt-6.1-sol": {
-        "calls": 164,
-        "in": 57108,
-        "out": 8747
+        "calls": 166,
+        "in": 57783,
+        "out": 8861
       }
     }
   },
@@ -1200,7 +1210,8 @@
     "On espère que Ronaldo rejoindra la MLS et retrouvera Messi.",
     "Equipe de France: \"Pas de souci\", le gros indice de Zidane sur l'utilisation de Mbappé chez les Bleus",
     "Le FC Barcelone affronte l'Atlético de Madrid dans un duel pour la tête de la Liga ; le Real Madrid guette un faux pas",
-    "L'art de prendre du recul : les leçons de Messi et Ronaldo"
+    "L'art de prendre du recul : les leçons de Messi et Ronaldo",
+    "Mbappé, Lamine Yamal, Dembélé: les stars du foot version années 90"
   ],
   "recent_stats": [
     "erling haaland",
