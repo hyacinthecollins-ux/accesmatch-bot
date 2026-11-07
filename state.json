@@ -2413,6 +2413,58 @@
       "text": "⏱️ Leeds United bat Tottenham 1-0 en Premier League. Le genre de soirée où un but suffit à faire chavirer tout un stade. Ton joueur du match ?\n📲 bio 👆\n\n#LeedsUnited #THFC #PremierLeague",
       "text_src": "IA",
       "reply": null
+    },
+    "f565850": {
+      "kind": "xr",
+      "match_id": 565850,
+      "label": "DORTMUND-ELVERSBERG",
+      "kickoff": "2026-11-07T14:30:00Z",
+      "status": "poster_ready",
+      "poster": "posters/xr565850-20261107.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-07T16:50:42Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "r565851": {
+      "kind": "result",
+      "match_id": 565851,
+      "label": "MAINZ-BAYERN",
+      "kickoff": "2026-11-07T14:30:00Z",
+      "status": "poster_ready",
+      "poster": "posters/r565851-20261107.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-07T16:50:42Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "f565851": {
+      "kind": "xr",
+      "match_id": 565851,
+      "label": "MAINZ-BAYERN",
+      "kickoff": "2026-11-07T14:30:00Z",
+      "status": "poster_ready",
+      "poster": "posters/xr565851-20261107.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-07T16:50:42Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "h559630": {
+      "kind": "x1",
+      "match_id": 559630,
+      "label": "RC LENS-OM",
+      "kickoff": "2026-11-08T19:45:00Z",
+      "status": "poster_ready",
+      "poster": "posters/x559630-20261108.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-07T16:50:42Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   },
   "squads": {
