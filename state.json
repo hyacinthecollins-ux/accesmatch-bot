@@ -2481,13 +2481,16 @@
       "match_id": 564746,
       "label": "ATLÉTICO-BARÇA",
       "kickoff": "2026-11-08T20:00:00Z",
-      "status": "poster_ready",
+      "status": "scheduled",
       "poster": "posters/x564746-20261108.jpg",
-      "post_id": null,
-      "due": null,
+      "post_id": "6aef594a229bf05daf61ef9e",
+      "due": "2026-11-08T19:00:00Z",
       "created": "2026-11-07T17:00:46Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "text": "⏰ Dans 1 heure, à 21h, Atlético-Barça lance un choc de gala en Liga. Álex Baena (5 buts), Raphinha (15) et Lamine Yamal (10) sont à surveiller. Qui gagne ?\n🔗 bio\n\n#Atleti #FCBarcelona #LaLiga #Yamal",
+      "text_src": "IA",
+      "reply": "📺 Le direct, c'est par ici 👉 https://t.me/accesmatch"
     }
   },
   "squads": {
@@ -2663,10 +2666,9 @@
       "stars": []
     }
   },
-  "llm_calls": 115,
-  "llm_posts": 42,
+  "llm_calls": 117,
+  "llm_posts": 43,
   "x_texts": [
-    "🔥 Demain à 18h45 (heure de Paris), PAE AEK reçoit le Real Madrid en Ligue des champions ! Răzvan Marin (1 but), Kylian Mbappé (3 buts, 1 passe décisive) et Federico Valverde (1 but) à surveiller. Qui gagne ?",
     "🔥 Demain à 18h45 (heure de Paris), Fenerbahçe reçoit Liverpool en Ligue des champions. Alexis Mac Allister et Bradley Barcola, déjà 3 buts chacun cette saison, sont à surveiller. Gros morceau, soirée de gala ! Qui gagne ?",
     "🔥 Demain à 21h (heure de Paris), RB Leipzig reçoit Man City en Ligue des champions. Haaland (4 buts) et Foden (3 buts, 1 passe décisive) en C1 cette saison, Cherki à surveiller : défenseurs, pas de sieste ! Qui gagne ?",
     "🔥 Demain à 21h (heure de Paris), Slavia Praha reçoit Arsenal en Ligue des champions. Danijel Sturm et Eberechi Eze, 2 buts chacun, sont à surveiller. Ça sent le choc ! Qui gagne ?",
@@ -2695,6 +2697,7 @@
     "⏱️ Leeds United bat Tottenham 1-0 en Premier League. Le genre de soirée où un but suffit à faire chavirer tout un stade. Ton joueur du match ?",
     "⏱️ Dortmund l’emporte 2-1 contre Elversberg en Bundesliga ! Une marge infime, mais la victoire est là. Qui a fait basculer le match ?",
     "⏱️ Bayern s’impose 2-1 face à Mainz en Bundesliga. Un but d’écart, et les Bavarois repartent avec la victoire. Qui t’a le plus convaincu ?",
-    "⏰ Dans 1 heure, à 20h45, RC Lens reçoit l’OM en Ligue 1. Florian Thauvin (4 buts) et Amine Gouiri (6 buts) seront à surveiller. Ton score ?"
+    "⏰ Dans 1 heure, à 20h45, RC Lens reçoit l’OM en Ligue 1. Florian Thauvin (4 buts) et Amine Gouiri (6 buts) seront à surveiller. Ton score ?",
+    "⏰ Dans 1 heure, à 21h, Atlético-Barça lance un choc de gala en Liga. Álex Baena (5 buts), Raphinha (15) et Lamine Yamal (10) sont à surveiller. Qui gagne ?"
   ]
 }
