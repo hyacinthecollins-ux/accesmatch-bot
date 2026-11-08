@@ -989,6 +989,15 @@
       "day": "2026-11-08",
       "source": "Sports",
       "at": "2026-11-08T07:30:37Z"
+    },
+    {
+      "id": "6af03a35562f2e6de9a95e5f",
+      "kind": "stat",
+      "text": "📊 Patrik Schick (Leverkusen), 2e des buteurs de Bundesliga : 7 buts et 2 passes décisives en 8 matchs. Schick marque et distribue : ses deux rôles sont déjà visibles au compteur.\n\n#Bundesliga",
+      "due": "2026-11-08T13:30Z",
+      "day": "2026-11-08",
+      "source": "football-data BL1",
+      "at": "2026-11-08T09:00:37Z"
     }
   ],
   "slots": {
@@ -1051,7 +1060,8 @@
     "2026-11-07T20:15": "skipped",
     "2026-11-07T22:35": "done",
     "2026-11-08T08:05": "done",
-    "2026-11-08T10:45": "done"
+    "2026-11-08T10:45": "done",
+    "2026-11-08T14:00": "done"
   },
   "slot_tries": {
     "2026-10-27T20:15": 1,
@@ -1110,7 +1120,8 @@
     "2026-11-07T16:30": 1,
     "2026-11-07T22:35": 1,
     "2026-11-08T08:05": 1,
-    "2026-11-08T10:45": 1
+    "2026-11-08T10:45": 1,
+    "2026-11-08T14:00": 1
   },
   "reacted": [
     "559648",
@@ -1204,18 +1215,18 @@
     "66da0597a60c",
     "cf9aa2047b9d"
   ],
-  "counter": 110,
+  "counter": 111,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 179,
-        "in": 115687,
-        "out": 26928
+        "calls": 180,
+        "in": 116747,
+        "out": 27104
       },
       "gpt-6.1-sol": {
-        "calls": 172,
-        "in": 60142,
-        "out": 9189
+        "calls": 173,
+        "in": 60632,
+        "out": 9220
       }
     }
   },
@@ -1277,7 +1288,8 @@
     "harry kane",
     "kylian mbappe",
     "donyell malen",
-    "raphinha"
+    "raphinha",
+    "patrik schick"
   ],
   "debates": {
     "CL": {
