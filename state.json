@@ -2711,20 +2711,24 @@
       "due": null,
       "created": "2026-11-08T22:10:28Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "sent"
     },
     "f564746": {
       "kind": "xr",
       "match_id": 564746,
       "label": "ATLÉTICO-BARÇA",
       "kickoff": "2026-11-08T20:00:00Z",
-      "status": "poster_ready",
+      "status": "scheduled",
       "poster": "posters/xr564746-20261108.jpg",
-      "post_id": null,
-      "due": null,
+      "post_id": "6af0f364229bf05dafda2907",
+      "due": "2026-11-08T22:13:33Z",
       "created": "2026-11-08T22:10:28Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "text": "⏱️ Atlético 1-2 Barça ! Le Barça repart avec la victoire, l’Atlético n’a pas eu le dernier mot. Le café va refaire le match : qui mérite ta mention ?\n🔗 bio\n\n#Atleti #FCBarcelona #LaLiga",
+      "text_src": "IA",
+      "reply": null
     }
   },
   "squads": {
@@ -2900,10 +2904,9 @@
       "stars": []
     }
   },
-  "llm_calls": 137,
-  "llm_posts": 49,
+  "llm_calls": 140,
+  "llm_posts": 50,
   "x_texts": [
-    "⏰ Dans 1 heure, RB Leipzig reçoit Man City en Ligue des champions. Erling Haaland (4 buts) et Phil Foden (3 buts, 1 passe décisive) sont à surveiller. Qui gagne ?",
     "🔥 Demain à 13h30 (heure de Paris), Leeds United reçoit Tottenham en Premier League. Dominic Calvert-Lewin (3 buts, 1 passe décisive) et Jan Paul van Hecke (2 buts) à surveiller. Qui prend les points ?",
     "🔥 Demain à 15h30 (heure de Paris), Mainz reçoit Bayern en Bundesliga : chaque duel peut faire basculer l’affiche. Phillip Tietz (5 buts) et Michael Olise (6 buts, 3 passes décisives) à surveiller. Ton buteur ?",
     "🔥 Un rendez-vous à ne pas manquer : Dortmund reçoit Elversberg en Bundesliga demain à 15h30 (heure de Paris). Guirassy (3 buts, 2 passes décisives) et Krattenmacher (4 buts, 1 passe décisive) à surveiller. Qui l’emporte ?",
@@ -2932,6 +2935,7 @@
     "⏱️ Napoli et Lazio se quittent sur un 1-1 en Serie A. Un point chacun : même la calculette n’a pas réussi à les départager. Qui a mieux négocié ce nul ?",
     "⏱️ AC Milan s’impose 2-1 face à Genoa : succès serré, les points sont milanais. À qui irait ta mention spéciale ?",
     "⏱️ Crystal Palace 1-3 Liverpool ! Liverpool repart avec la victoire, Crystal Palace reste à distance. Le score parle fort : qui a fait la différence ?",
-    "⏱️ RC Lens 1-2 OM ! L’OM s’impose au terme d’un final sous tension. Le coup de sifflet libère les Marseillais : ton joueur du match ?"
+    "⏱️ RC Lens 1-2 OM ! L’OM s’impose au terme d’un final sous tension. Le coup de sifflet libère les Marseillais : ton joueur du match ?",
+    "⏱️ Atlético 1-2 Barça ! Le Barça repart avec la victoire, l’Atlético n’a pas eu le dernier mot. Le café va refaire le match : qui mérite ta mention ?"
   ]
 }
