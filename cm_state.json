@@ -1061,6 +1061,15 @@
       "day": "2026-11-08",
       "source": "Match termine (Serie A) : Fiorentina 2-2 Juventus",
       "at": "2026-11-08T22:00:40Z"
+    },
+    {
+      "id": "6af0ff16d6bbae6fa117f645",
+      "kind": "breaking",
+      "text": "🚨 Selon ski-nordique, Raphinha reste en tête des buteurs de Liga après J12, tandis que Mbappé passe à 13 buts. Le compteur du Français grimpe, mais le leader reste Raphinha.\n\n#Mbappé #Raphinha",
+      "due": "2026-11-08T23:10Z",
+      "day": "2026-11-09",
+      "source": "ski-nordique",
+      "at": "2026-11-08T23:00:38Z"
     }
   ],
   "slots": {
@@ -1293,20 +1302,21 @@
     "d00592e97c64",
     "389ba4c58eef",
     "66da0597a60c",
-    "cf9aa2047b9d"
+    "cf9aa2047b9d",
+    "66b32ad2fcb8"
   ],
-  "counter": 118,
+  "counter": 119,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 200,
-        "in": 134953,
-        "out": 29773
+        "calls": 201,
+        "in": 135856,
+        "out": 30093
       },
       "gpt-6.1-sol": {
-        "calls": 190,
-        "in": 66597,
-        "out": 10243
+        "calls": 191,
+        "in": 66955,
+        "out": 10338
       }
     }
   },
@@ -1346,7 +1356,8 @@
     "L'art de prendre du recul : les leçons de Messi et Ronaldo",
     "Mbappé, Lamine Yamal, Dembélé: les stars du foot version années 90",
     "Football : Le Real Madrid met la pression sur le Barça pour la tête de la Liga, Mbappé buteur",
-    "Real Madrid, Jude Bellingham et Antonio Rüdiger impliqués dans une bagarre !"
+    "Real Madrid, Jude Bellingham et Antonio Rüdiger impliqués dans une bagarre !",
+    "Liga 2026/2027 - Classement des buteurs après J12 : Raphinha toujours en tête, Mbappé passe à 13 buts"
   ],
   "recent_stats": [
     "erling haaland",
