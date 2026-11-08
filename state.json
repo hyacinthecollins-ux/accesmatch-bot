@@ -2669,6 +2669,32 @@
       "fails": 0,
       "design": "crests-v1",
       "tg": "sent"
+    },
+    "r559630": {
+      "kind": "result",
+      "match_id": 559630,
+      "label": "RC LENS-OM",
+      "kickoff": "2026-11-08T19:45:00Z",
+      "status": "poster_ready",
+      "poster": "posters/r559630-20261108.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-08T21:50:36Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "f559630": {
+      "kind": "xr",
+      "match_id": 559630,
+      "label": "RC LENS-OM",
+      "kickoff": "2026-11-08T19:45:00Z",
+      "status": "poster_ready",
+      "poster": "posters/xr559630-20261108.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-08T21:50:36Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   },
   "squads": {
