@@ -1034,6 +1034,15 @@
       "day": "2026-11-08",
       "source": "Match termine (Bundesliga) : 1. FC Köln 1-2 Leverkusen",
       "at": "2026-11-08T16:40:36Z"
+    },
+    {
+      "id": "6af0b40f51492b796e50980f",
+      "kind": "recap",
+      "text": "📋 Napoli 1-1 Lazio, Crystal Palace 1-3 Liverpool, Genoa 1-2 Milan, Rennes 1-2 Lille, Sunderland 1-0 Chelsea. Liverpool et Milan repartent avec les points, Sunderland aussi : les supporters peuvent savourer.\n\n#Liverpool #Chelsea",
+      "due": "2026-11-08T21:35Z",
+      "day": "2026-11-08",
+      "source": "football-data",
+      "at": "2026-11-08T17:40:31Z"
     }
   ],
   "slots": {
@@ -1099,7 +1108,8 @@
     "2026-11-08T10:45": "done",
     "2026-11-08T14:00": "done",
     "2026-11-08T16:30": "done",
-    "2026-11-08T20:15": "done"
+    "2026-11-08T20:15": "done",
+    "2026-11-08T22:35": "done"
   },
   "slot_tries": {
     "2026-10-27T20:15": 1,
@@ -1161,7 +1171,8 @@
     "2026-11-08T10:45": 1,
     "2026-11-08T14:00": 1,
     "2026-11-08T16:30": 1,
-    "2026-11-08T20:15": 1
+    "2026-11-08T20:15": 1,
+    "2026-11-08T22:35": 1
   },
   "reacted": [
     "559648",
@@ -1261,18 +1272,18 @@
     "66da0597a60c",
     "cf9aa2047b9d"
   ],
-  "counter": 115,
+  "counter": 116,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 190,
-        "in": 126026,
-        "out": 28836
+        "calls": 192,
+        "in": 127645,
+        "out": 29151
       },
       "gpt-6.1-sol": {
-        "calls": 182,
-        "in": 63824,
-        "out": 9757
+        "calls": 184,
+        "in": 64579,
+        "out": 9862
       }
     }
   },
