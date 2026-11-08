@@ -2699,6 +2699,32 @@
       "text": "⏱️ RC Lens 1-2 OM ! L’OM s’impose au terme d’un final sous tension. Le coup de sifflet libère les Marseillais : ton joueur du match ?\n📲 bio 👆\n\n#Lens #OM #Ligue1",
       "text_src": "IA",
       "reply": null
+    },
+    "r564746": {
+      "kind": "result",
+      "match_id": 564746,
+      "label": "ATLÉTICO-BARÇA",
+      "kickoff": "2026-11-08T20:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/r564746-20261108.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-08T22:10:28Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "f564746": {
+      "kind": "xr",
+      "match_id": 564746,
+      "label": "ATLÉTICO-BARÇA",
+      "kickoff": "2026-11-08T20:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/xr564746-20261108.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-08T22:10:28Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   },
   "squads": {
