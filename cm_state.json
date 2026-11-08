@@ -1016,6 +1016,15 @@
       "day": "2026-11-08",
       "source": "football-data",
       "at": "2026-11-08T15:20:30Z"
+    },
+    {
+      "id": "6af09cb2562f2e6de9ca10d9",
+      "kind": "reaction",
+      "text": "⏱️ Lille s’impose 2-1 sur la pelouse du Stade Rennais, après une première période conclue à 1-1. Les Dogues repartent avec la victoire, Rennes a raté le dernier mot.\n\n#LOSC #Ligue1",
+      "due": "2026-11-08T16:10Z",
+      "day": "2026-11-08",
+      "source": "Match termine (Ligue 1) : Stade Rennais 1-2 Lille",
+      "at": "2026-11-08T16:00:50Z"
     }
   ],
   "slots": {
@@ -1194,7 +1203,8 @@
     "558531",
     "564741",
     "559635",
-    "558533"
+    "558533",
+    "559636"
   ],
   "used_news": [
     "0323d7e5074e",
@@ -1238,18 +1248,18 @@
     "66da0597a60c",
     "cf9aa2047b9d"
   ],
-  "counter": 113,
+  "counter": 114,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 182,
-        "in": 118603,
-        "out": 27421
+        "calls": 184,
+        "in": 120422,
+        "out": 27549
       },
       "gpt-6.1-sol": {
-        "calls": 175,
-        "in": 61434,
-        "out": 9314
+        "calls": 177,
+        "in": 62122,
+        "out": 9466
       }
     }
   },
