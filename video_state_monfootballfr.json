@@ -461,21 +461,41 @@
       "due": "2026-11-20T20:45:00.000Z",
       "at": "2026-11-07T10:08:47Z",
       "title": "Yamal Backheels 💀 ⚽"
+    },
+    "7485067581141847318": {
+      "post_id": "6af04d84562f2e6de9afd814",
+      "due": "2026-11-21T08:15:00.000Z",
+      "at": "2026-11-08T10:23:00Z",
+      "title": "Paul Pogba ⚽"
+    },
+    "7648508448975408416": {
+      "post_id": "6af04d8751492b796e2f5529",
+      "due": "2026-11-21T11:30:00.000Z",
+      "at": "2026-11-08T10:23:03Z",
+      "title": "Messi first el Classico 😱 ⚽"
+    },
+    "7565443266024443158": {
+      "post_id": "6af04d8b004e4879a7ad9fd8",
+      "due": "2026-11-21T17:30:00.000Z",
+      "at": "2026-11-08T10:23:07Z",
+      "title": "Today or Never ⚽"
+    },
+    "7659206847152262422": {
+      "post_id": "6af04d8e562f2e6de9afdb06",
+      "due": "2026-11-21T20:45:00.000Z",
+      "at": "2026-11-08T10:23:10Z",
+      "title": "Ronaldo Unselfish Moments 😍 ⚽"
     }
   },
   "failed": {},
-  "counter": 77,
+  "counter": 81,
   "recent_players": [
+    "yamal",
+    "pogba",
     "messi",
-    "vinicius",
-    "mbappe",
-    "yamal"
+    "ronaldo"
   ],
   "recent_creators": [
-    "Football8568-TikTok",
-    "F11Skillz-TikTok",
-    "HRPlays01-TikTok",
-    "F11Skillz-TikTok",
     "FootH25-TikTok",
     "FootballEditsHD-TikTok",
     "Football8568-TikTok",
@@ -495,13 +515,13 @@
     "L7-Shorts",
     "F11Skillz-TikTok",
     "KickVibesEdit-TikTok",
-    "L7-Shorts"
+    "L7-Shorts",
+    "FootballEditsHD-TikTok",
+    "Football8568-TikTok",
+    "F11Skillz-TikTok",
+    "HRPlays01-TikTok"
   ],
   "recent_titles": [
-    "france wc 2026 🇫🇷 ⚽",
-    "when bellingham gets bored 🥱 ⚽",
-    "mbappe vs haaland in world cup ☠️🔥 ｜ who’s gonna win ？ ⚽",
-    "messi vs goalkeepers 🥶😱 ⚽",
     "rare penalty moments 😳 ⚽",
     "vini 23/24 ⚽",
     "marsilo⚽ 🤕 ⚽",
@@ -527,13 +547,13 @@
     "vini jr backheels 💀 ⚽",
     "pov ： you gave everything to win the champions ⚽",
     "ethan mbappé 🇫🇷 ⚽",
-    "yamal backheels 💀 ⚽"
+    "yamal backheels 💀 ⚽",
+    "paul pogba ⚽",
+    "messi first el classico 😱 ⚽",
+    "today or never ⚽",
+    "ronaldo unselfish moments 😍 ⚽"
   ],
   "recent_stars": [
-    1,
-    0,
-    1,
-    0,
     0,
     1,
     1,
@@ -549,13 +569,13 @@
     1,
     0,
     1,
+    1,
+    0,
+    1,
+    0,
     1
   ],
   "recent_long": [
-    "dembele",
-    "",
-    "cherki",
-    "",
     "",
     "neymar",
     "barcola",
@@ -571,6 +591,10 @@
     "vinicius",
     "",
     "mbappe",
-    "yamal"
+    "yamal",
+    "",
+    "messi",
+    "",
+    "ronaldo"
   ]
 }
