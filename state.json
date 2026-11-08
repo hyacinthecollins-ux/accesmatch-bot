@@ -2655,6 +2655,19 @@
       "text": "⏱️ Crystal Palace 1-3 Liverpool ! Liverpool repart avec la victoire, Crystal Palace reste à distance. Le score parle fort : qui a fait la différence ?\n📲 bio 👆\n\n#CrystalPalace #LFC #PremierLeague",
       "text_src": "IA",
       "reply": null
+    },
+    "r560639": {
+      "kind": "result",
+      "match_id": 560639,
+      "label": "MAN UNITED-ASTON VILLA",
+      "kickoff": "2026-11-08T16:30:00Z",
+      "status": "poster_ready",
+      "poster": "posters/r560639-20261108.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-08T18:40:45Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   },
   "squads": {
