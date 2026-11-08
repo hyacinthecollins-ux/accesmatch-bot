@@ -2595,6 +2595,58 @@
       "text": "⏱️ Napoli et Lazio se quittent sur un 1-1 en Serie A. Un point chacun : même la calculette n’a pas réussi à les départager. Qui a mieux négocié ce nul ?\n🔗 bio\n\n#Napoli #Lazio #SerieA",
       "text_src": "IA",
       "reply": null
+    },
+    "r560636": {
+      "kind": "result",
+      "match_id": 560636,
+      "label": "SUNDERLAND-CHELSEA",
+      "kickoff": "2026-11-08T14:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/r560636-20261108.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-08T16:10:49Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "f558536": {
+      "kind": "xr",
+      "match_id": 558536,
+      "label": "GENOA-AC MILAN",
+      "kickoff": "2026-11-08T14:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/xr558536-20261108.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-08T16:10:49Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "r560635": {
+      "kind": "result",
+      "match_id": 560635,
+      "label": "CRYSTAL PALACE-LIVERPOOL",
+      "kickoff": "2026-11-08T14:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/r560635-20261108.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-08T16:10:49Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "f560635": {
+      "kind": "xr",
+      "match_id": 560635,
+      "label": "CRYSTAL PALACE-LIVERPOOL",
+      "kickoff": "2026-11-08T14:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/xr560635-20261108.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-08T16:10:49Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   },
   "squads": {
