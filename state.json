@@ -2585,13 +2585,16 @@
       "match_id": 558533,
       "label": "NAPOLI-LAZIO",
       "kickoff": "2026-11-08T11:30:00Z",
-      "status": "poster_ready",
+      "status": "scheduled",
       "poster": "posters/xr558533-20261108.jpg",
-      "post_id": null,
-      "due": null,
+      "post_id": "6af0798b51492b796e3de5e3",
+      "due": "2026-11-08T13:33:41Z",
       "created": "2026-11-08T13:30:36Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "text": "⏱️ Napoli et Lazio se quittent sur un 1-1 en Serie A. Un point chacun : même la calculette n’a pas réussi à les départager. Qui a mieux négocié ce nul ?\n🔗 bio\n\n#Napoli #Lazio #SerieA",
+      "text_src": "IA",
+      "reply": null
     }
   },
   "squads": {
@@ -2767,10 +2770,9 @@
       "stars": []
     }
   },
-  "llm_calls": 122,
-  "llm_posts": 45,
+  "llm_calls": 124,
+  "llm_posts": 46,
   "x_texts": [
-    "🔥 Demain à 21h (heure de Paris), Slavia Praha reçoit Arsenal en Ligue des champions. Danijel Sturm et Eberechi Eze, 2 buts chacun, sont à surveiller. Ça sent le choc ! Qui gagne ?",
     "🔥 C'est bientôt : PAE AEK × Real Madrid dans 1 heure !",
     "⏰ Fenerbahçe reçoit Liverpool en Ligue des champions : coup d’envoi dans 1 heure, à 18h45 ! Mac Allister et Barcola, 3 buts chacun, Wirtz aussi à surveiller. Les Reds vont-ils gâcher la fête ?",
     "⏰ Dans 1 heure, Slavia Praha-Arsenal en Ligue des champions ! Coup d’envoi à 21h : Danijel Sturm et Eberechi Eze, 2 buts chacun, Martin Ødegaard, 1 but et 1 passe décisive. Qui gagne ?",
@@ -2799,6 +2801,7 @@
     "⏰ Dans 1 heure, à 20h45, RC Lens reçoit l’OM en Ligue 1. Florian Thauvin (4 buts) et Amine Gouiri (6 buts) seront à surveiller. Ton score ?",
     "⏰ Dans 1 heure, à 21h, Atlético-Barça lance un choc de gala en Liga. Álex Baena (5 buts), Raphinha (15) et Lamine Yamal (10) sont à surveiller. Qui gagne ?",
     "⏱️ Arsenal s’impose 1-0 face à Hull City ! Un seul but, et le verrou tient jusqu’au bout. Qui mérite les lauriers ?",
-    "⏱️ PSG s’impose 1-0 face à Troyes ! Un but suffit, et la tension reste jusqu’au bout. Qui a le plus pesé dans cette victoire ?"
+    "⏱️ PSG s’impose 1-0 face à Troyes ! Un but suffit, et la tension reste jusqu’au bout. Qui a le plus pesé dans cette victoire ?",
+    "⏱️ Napoli et Lazio se quittent sur un 1-1 en Serie A. Un point chacun : même la calculette n’a pas réussi à les départager. Qui a mieux négocié ce nul ?"
   ]
 }
