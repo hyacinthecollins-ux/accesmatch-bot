@@ -2681,20 +2681,24 @@
       "due": null,
       "created": "2026-11-08T21:50:36Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "sent"
     },
     "f559630": {
       "kind": "xr",
       "match_id": 559630,
       "label": "RC LENS-OM",
       "kickoff": "2026-11-08T19:45:00Z",
-      "status": "poster_ready",
+      "status": "scheduled",
       "poster": "posters/xr559630-20261108.jpg",
-      "post_id": null,
-      "due": null,
+      "post_id": "6af0eec4229bf05dafd8a210",
+      "due": "2026-11-08T21:53:40Z",
       "created": "2026-11-08T21:50:36Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "text": "⏱️ RC Lens 1-2 OM ! L’OM s’impose au terme d’un final sous tension. Le coup de sifflet libère les Marseillais : ton joueur du match ?\n📲 bio 👆\n\n#Lens #OM #Ligue1",
+      "text_src": "IA",
+      "reply": null
     }
   },
   "squads": {
@@ -2870,10 +2874,9 @@
       "stars": []
     }
   },
-  "llm_calls": 132,
-  "llm_posts": 48,
+  "llm_calls": 137,
+  "llm_posts": 49,
   "x_texts": [
-    "⏰ Dans 1 heure, Slavia Praha-Arsenal en Ligue des champions ! Coup d’envoi à 21h : Danijel Sturm et Eberechi Eze, 2 buts chacun, Martin Ødegaard, 1 but et 1 passe décisive. Qui gagne ?",
     "⏰ Dans 1 heure, RB Leipzig reçoit Man City en Ligue des champions. Erling Haaland (4 buts) et Phil Foden (3 buts, 1 passe décisive) sont à surveiller. Qui gagne ?",
     "🔥 Demain à 13h30 (heure de Paris), Leeds United reçoit Tottenham en Premier League. Dominic Calvert-Lewin (3 buts, 1 passe décisive) et Jan Paul van Hecke (2 buts) à surveiller. Qui prend les points ?",
     "🔥 Demain à 15h30 (heure de Paris), Mainz reçoit Bayern en Bundesliga : chaque duel peut faire basculer l’affiche. Phillip Tietz (5 buts) et Michael Olise (6 buts, 3 passes décisives) à surveiller. Ton buteur ?",
@@ -2902,6 +2905,7 @@
     "⏱️ PSG s’impose 1-0 face à Troyes ! Un but suffit, et la tension reste jusqu’au bout. Qui a le plus pesé dans cette victoire ?",
     "⏱️ Napoli et Lazio se quittent sur un 1-1 en Serie A. Un point chacun : même la calculette n’a pas réussi à les départager. Qui a mieux négocié ce nul ?",
     "⏱️ AC Milan s’impose 2-1 face à Genoa : succès serré, les points sont milanais. À qui irait ta mention spéciale ?",
-    "⏱️ Crystal Palace 1-3 Liverpool ! Liverpool repart avec la victoire, Crystal Palace reste à distance. Le score parle fort : qui a fait la différence ?"
+    "⏱️ Crystal Palace 1-3 Liverpool ! Liverpool repart avec la victoire, Crystal Palace reste à distance. Le score parle fort : qui a fait la différence ?",
+    "⏱️ RC Lens 1-2 OM ! L’OM s’impose au terme d’un final sous tension. Le coup de sifflet libère les Marseillais : ton joueur du match ?"
   ]
 }
