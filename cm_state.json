@@ -971,6 +971,15 @@
       "day": "2026-11-08",
       "source": "football-data PD",
       "at": "2026-11-08T05:50:31Z"
+    },
+    {
+      "id": "6af014aa562f2e6de99f533f",
+      "kind": "breaking",
+      "text": "🚨 Selon 20 Minutes, le Real Madrid met la pression sur le Barça pour la tête de la Liga, avec Mbappé buteur. Le Français répond présent : le Barça va-t-il réagir ?\n\n#Mbappé #FCBarcelona",
+      "due": "2026-11-08T06:30Z",
+      "day": "2026-11-08",
+      "source": "20 Minutes",
+      "at": "2026-11-08T06:20:26Z"
     }
   ],
   "slots": {
@@ -1182,20 +1191,21 @@
     "ebf502650673",
     "1943c67e7d6e",
     "d00592e97c64",
-    "389ba4c58eef"
+    "389ba4c58eef",
+    "66da0597a60c"
   ],
-  "counter": 108,
+  "counter": 109,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 176,
-        "in": 112893,
-        "out": 26342
+        "calls": 177,
+        "in": 113830,
+        "out": 26529
       },
       "gpt-6.1-sol": {
-        "calls": 169,
-        "in": 59130,
-        "out": 9007
+        "calls": 170,
+        "in": 59471,
+        "out": 9091
       }
     }
   },
@@ -1233,7 +1243,8 @@
     "Equipe de France: \"Pas de souci\", le gros indice de Zidane sur l'utilisation de Mbappé chez les Bleus",
     "Le FC Barcelone affronte l'Atlético de Madrid dans un duel pour la tête de la Liga ; le Real Madrid guette un faux pas",
     "L'art de prendre du recul : les leçons de Messi et Ronaldo",
-    "Mbappé, Lamine Yamal, Dembélé: les stars du foot version années 90"
+    "Mbappé, Lamine Yamal, Dembélé: les stars du foot version années 90",
+    "Football : Le Real Madrid met la pression sur le Barça pour la tête de la Liga, Mbappé buteur"
   ],
   "recent_stats": [
     "erling haaland",
