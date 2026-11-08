@@ -2579,6 +2579,19 @@
       "text": "⏱️ PSG s’impose 1-0 face à Troyes ! Un but suffit, et la tension reste jusqu’au bout. Qui a le plus pesé dans cette victoire ?\n📺 en bio 👆\n\n#PSG #Troyes #Ligue1",
       "text_src": "IA",
       "reply": null
+    },
+    "f558533": {
+      "kind": "xr",
+      "match_id": 558533,
+      "label": "NAPOLI-LAZIO",
+      "kickoff": "2026-11-08T11:30:00Z",
+      "status": "poster_ready",
+      "poster": "posters/xr558533-20261108.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-08T13:30:36Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   },
   "squads": {
