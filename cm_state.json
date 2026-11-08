@@ -1043,6 +1043,15 @@
       "day": "2026-11-08",
       "source": "football-data",
       "at": "2026-11-08T17:40:31Z"
+    },
+    {
+      "id": "6af0c92451492b796e578725",
+      "kind": "reaction",
+      "text": "⏱️ Inter 2-0 Como 1907. L’Inter avait déjà fait la différence à la pause et garde son avantage jusqu’au coup de sifflet final. Match plié avant le retour des vestiaires.\n\n#SerieA",
+      "due": "2026-11-08T20:10Z",
+      "day": "2026-11-08",
+      "source": "Match termine (Serie A) : Inter 2-0 Como 1907",
+      "at": "2026-11-08T19:10:28Z"
     }
   ],
   "slots": {
@@ -1231,7 +1240,8 @@
     "565855",
     "559632",
     "559631",
-    "560639"
+    "560639",
+    "558530"
   ],
   "used_news": [
     "0323d7e5074e",
@@ -1275,18 +1285,18 @@
     "66da0597a60c",
     "cf9aa2047b9d"
   ],
-  "counter": 116,
+  "counter": 117,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 197,
-        "in": 132195,
-        "out": 29462
+        "calls": 199,
+        "in": 134039,
+        "out": 29578
       },
       "gpt-6.1-sol": {
-        "calls": 187,
-        "in": 65584,
-        "out": 10104
+        "calls": 189,
+        "in": 66258,
+        "out": 10211
       }
     }
   },
