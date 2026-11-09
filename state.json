@@ -1,19 +1,5 @@
 {
   "items": {
-    "p559672": {
-      "kind": "preview",
-      "match_id": 559672,
-      "label": "PSG-LE MANS",
-      "kickoff": "2026-10-10T18:45:00Z",
-      "status": "scheduled",
-      "poster": "posters/p559672-20261010.jpg",
-      "post_id": "6ac92584c4de2d2b12ff2aa3",
-      "due": "2026-10-10T17:45:00Z",
-      "created": "2026-10-09T17:33:21Z",
-      "fails": 0,
-      "design": "crests-v1",
-      "tg": "skip"
-    },
     "p564702": {
       "kind": "preview",
       "match_id": 564702,
@@ -55,20 +41,6 @@
       "fails": 0,
       "design": "crests-v1",
       "tg": "skip"
-    },
-    "r559672": {
-      "kind": "result",
-      "match_id": 559672,
-      "label": "PSG-LE MANS",
-      "kickoff": "2026-10-10T18:45:00Z",
-      "status": "scheduled",
-      "poster": "posters/r559672-20261010.jpg",
-      "post_id": "6acac14eb07d37ac978ac9c7",
-      "due": null,
-      "created": "2026-10-10T22:50:46Z",
-      "fails": 0,
-      "design": "crests-v1",
-      "tg": "sent"
     },
     "r564702": {
       "kind": "result",
