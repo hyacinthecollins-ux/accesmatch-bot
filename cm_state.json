@@ -1142,6 +1142,15 @@
       "day": "2026-11-09",
       "source": "football-data PD",
       "at": "2026-11-09T17:40:28Z"
+    },
+    {
+      "id": "6af250a9223aa16048d3e98a",
+      "kind": "breaking",
+      "text": "🚨 Selon Ouest-France, Ibrahima Konaté voit Kylian Mbappé revenir chez les Bleus avec un très bon état d’esprit. Voilà un signal qui fait du bien au vestiaire.\n\n#Mbappé #EquipeDeFrance",
+      "due": "2026-11-09T23:10Z",
+      "day": "2026-11-10",
+      "source": "Ouest-France",
+      "at": "2026-11-09T23:00:57Z"
     }
   ],
   "slots": {
@@ -1391,20 +1400,22 @@
     "cf9aa2047b9d",
     "66b32ad2fcb8",
     "d982d9653835",
-    "cd3b5667df1c"
+    "cd3b5667df1c",
+    "86d43e914545",
+    "f14d77da54ed"
   ],
-  "counter": 127,
+  "counter": 128,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 211,
-        "in": 145497,
-        "out": 31994
+        "calls": 215,
+        "in": 149200,
+        "out": 32918
       },
       "gpt-6.1-sol": {
-        "calls": 201,
-        "in": 70792,
-        "out": 10890
+        "calls": 203,
+        "in": 71486,
+        "out": 11005
       }
     }
   },
@@ -1447,7 +1458,9 @@
     "Real Madrid, Jude Bellingham et Antonio Rüdiger impliqués dans une bagarre !",
     "Liga 2026/2027 - Classement des buteurs après J12 : Raphinha toujours en tête, Mbappé passe à 13 buts",
     "Le pire ennemi de Neymar au PSG n’était pas Mbappé",
-    "Le Real Madrid débarque en Angleterre pour aller chercher Haaland"
+    "Le Real Madrid débarque en Angleterre pour aller chercher Haaland",
+    "[Podcasts] Neuer, Musiala, Kane, Olise...Polo détaille les dossiers du moment du Bayern – 09/11",
+    "Équipe de France. Pour Ibrahima Konaté, Kylian Mbappé revient chez les Bleus avec « un très bon état d’esprit »"
   ],
   "recent_stats": [
     "erling haaland",
