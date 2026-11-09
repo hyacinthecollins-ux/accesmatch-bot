@@ -1115,6 +1115,15 @@
       "day": "2026-11-09",
       "source": "football-data CL",
       "at": "2026-11-09T09:00:40Z"
+    },
+    {
+      "id": "6af1aed69541fd37f940417a",
+      "kind": "duel",
+      "text": "⚽ Donyell Malen (Roma) : 8 buts et 2 passes décisives en 10 matchs. Marcus Thuram (Inter) : 6 buts et 2 passes décisives en 11 matchs. Malen ou Thuram ? Mon vote va à Malen.\n\n#SerieA",
+      "due": "2026-11-09T15:30Z",
+      "day": "2026-11-09",
+      "source": "football-data SA",
+      "at": "2026-11-09T11:30:30Z"
     }
   ],
   "slots": {
@@ -1184,7 +1193,8 @@
     "2026-11-08T22:35": "done",
     "2026-11-09T08:05": "done",
     "2026-11-09T10:45": "done",
-    "2026-11-09T14:00": "done"
+    "2026-11-09T14:00": "done",
+    "2026-11-09T16:30": "done"
   },
   "slot_tries": {
     "2026-10-27T20:15": 1,
@@ -1250,7 +1260,8 @@
     "2026-11-08T22:35": 1,
     "2026-11-09T08:05": 1,
     "2026-11-09T10:45": 1,
-    "2026-11-09T14:00": 1
+    "2026-11-09T14:00": 1,
+    "2026-11-09T16:30": 1
   },
   "reacted": [
     "559648",
@@ -1360,18 +1371,18 @@
     "d982d9653835",
     "cd3b5667df1c"
   ],
-  "counter": 124,
+  "counter": 125,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 208,
-        "in": 142598,
-        "out": 31269
+        "calls": 209,
+        "in": 143558,
+        "out": 31458
       },
       "gpt-6.1-sol": {
-        "calls": 198,
-        "in": 69652,
-        "out": 10779
+        "calls": 199,
+        "in": 70029,
+        "out": 10828
       }
     }
   },
@@ -1459,6 +1470,7 @@
     "alexander isak|erling haaland",
     "erling haaland|kylian mbappe",
     "michael olise|patrik schick",
-    "adrien rabiot|donyell malen"
+    "adrien rabiot|donyell malen",
+    "donyell malen|marcus thuram-ulien"
   ]
 }
