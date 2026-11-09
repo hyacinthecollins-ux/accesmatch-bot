@@ -1097,6 +1097,15 @@
       "day": "2026-11-09",
       "source": "Football365",
       "at": "2026-11-09T06:20:34Z"
+    },
+    {
+      "id": "6af17699e29b1359f0d86860",
+      "kind": "breaking",
+      "text": "🚨 Selon Sport, le Real Madrid serait arrivé en Angleterre pour tenter d’attirer Haaland. La piste madrilène se joue donc outre-Manche.\n\n#Haaland #RealMadrid",
+      "due": "2026-11-09T07:40Z",
+      "day": "2026-11-09",
+      "source": "Sport",
+      "at": "2026-11-09T07:30:33Z"
     }
   ],
   "slots": {
@@ -1337,20 +1346,21 @@
     "66da0597a60c",
     "cf9aa2047b9d",
     "66b32ad2fcb8",
-    "d982d9653835"
+    "d982d9653835",
+    "cd3b5667df1c"
   ],
-  "counter": 122,
+  "counter": 123,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 205,
-        "in": 139707,
-        "out": 30827
+        "calls": 207,
+        "in": 141547,
+        "out": 31117
       },
       "gpt-6.1-sol": {
-        "calls": 195,
-        "in": 68519,
-        "out": 10616
+        "calls": 197,
+        "in": 69164,
+        "out": 10738
       }
     }
   },
@@ -1392,7 +1402,8 @@
     "Football : Le Real Madrid met la pression sur le Barça pour la tête de la Liga, Mbappé buteur",
     "Real Madrid, Jude Bellingham et Antonio Rüdiger impliqués dans une bagarre !",
     "Liga 2026/2027 - Classement des buteurs après J12 : Raphinha toujours en tête, Mbappé passe à 13 buts",
-    "Le pire ennemi de Neymar au PSG n’était pas Mbappé"
+    "Le pire ennemi de Neymar au PSG n’était pas Mbappé",
+    "Le Real Madrid débarque en Angleterre pour aller chercher Haaland"
   ],
   "recent_stats": [
     "erling haaland",
