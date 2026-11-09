@@ -1079,6 +1079,15 @@
       "day": "2026-11-09",
       "source": "football-data PD",
       "at": "2026-11-09T03:10:25Z"
+    },
+    {
+      "id": "6af15f23cac9d7525f6f2d05",
+      "kind": "debate",
+      "text": "Le PSG mène, mais Lille n’est qu’à deux points et le Paris FC à trois. Le leader peut-il déjà se sentir tranquille, ou la pression est-elle déjà sur lui ? 🔥\n\n#PSG #LOSC",
+      "due": "2026-11-09T09:45Z",
+      "day": "2026-11-09",
+      "source": "football-data FL1",
+      "at": "2026-11-09T05:50:27Z"
     }
   ],
   "slots": {
@@ -1146,7 +1155,8 @@
     "2026-11-08T16:30": "done",
     "2026-11-08T20:15": "done",
     "2026-11-08T22:35": "done",
-    "2026-11-09T08:05": "done"
+    "2026-11-09T08:05": "done",
+    "2026-11-09T10:45": "done"
   },
   "slot_tries": {
     "2026-10-27T20:15": 1,
@@ -1210,7 +1220,8 @@
     "2026-11-08T16:30": 1,
     "2026-11-08T20:15": 1,
     "2026-11-08T22:35": 1,
-    "2026-11-09T08:05": 1
+    "2026-11-09T08:05": 1,
+    "2026-11-09T10:45": 1
   },
   "reacted": [
     "559648",
@@ -1318,18 +1329,18 @@
     "cf9aa2047b9d",
     "66b32ad2fcb8"
   ],
-  "counter": 120,
+  "counter": 121,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 202,
-        "in": 136907,
-        "out": 30283
+        "calls": 203,
+        "in": 137866,
+        "out": 30471
       },
       "gpt-6.1-sol": {
-        "calls": 192,
-        "in": 67448,
-        "out": 10374
+        "calls": 193,
+        "in": 67856,
+        "out": 10444
       }
     }
   },
@@ -1404,6 +1415,10 @@
     "PD": {
       "sig": "7b099506c712",
       "at": "2026-11-08T11:30:14.917790+00:00"
+    },
+    "FL1": {
+      "sig": "68bab02d12ee",
+      "at": "2026-11-09T05:50:15.827223+00:00"
     }
   },
   "recent_duels": [
