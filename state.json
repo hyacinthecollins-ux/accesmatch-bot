@@ -1,19 +1,5 @@
 {
   "items": {
-    "p560593": {
-      "kind": "preview",
-      "match_id": 560593,
-      "label": "ARSENAL-LEEDS UNITED",
-      "kickoff": "2026-10-10T11:30:00Z",
-      "status": "scheduled",
-      "poster": "posters/p560593-20261010.jpg",
-      "post_id": "6ac9257aea458ceb9a5661ec",
-      "due": "2026-10-10T10:30:00Z",
-      "created": "2026-10-09T17:33:21Z",
-      "fails": 0,
-      "design": "crests-v1",
-      "tg": "skip"
-    },
     "p565819": {
       "kind": "preview",
       "match_id": 565819,
@@ -125,20 +111,6 @@
       "fails": 0,
       "design": "crests-v1",
       "tg": "skip"
-    },
-    "r560593": {
-      "kind": "result",
-      "match_id": 560593,
-      "label": "ARSENAL-LEEDS UNITED",
-      "kickoff": "2026-10-10T11:30:00Z",
-      "status": "scheduled",
-      "poster": "posters/r560593-20261010.jpg",
-      "post_id": "6aca5412ed92ed8fa5d1a414",
-      "due": null,
-      "created": "2026-10-10T15:04:45Z",
-      "fails": 0,
-      "design": "crests-v1",
-      "tg": "sent"
     },
     "r565819": {
       "kind": "result",
