@@ -1,19 +1,5 @@
 {
   "items": {
-    "p560595": {
-      "kind": "preview",
-      "match_id": 560595,
-      "label": "CHELSEA-BOURNEMOUTH",
-      "kickoff": "2026-10-10T14:00:00Z",
-      "status": "scheduled",
-      "poster": "posters/p560595-20261010.jpg",
-      "post_id": "6ac9257e810582311aec8109",
-      "due": "2026-10-10T13:00:00Z",
-      "created": "2026-10-09T17:33:21Z",
-      "fails": 0,
-      "design": "crests-v1",
-      "tg": "skip"
-    },
     "p564700": {
       "kind": "preview",
       "match_id": 564700,
@@ -97,20 +83,6 @@
       "fails": 0,
       "design": "crests-v1",
       "tg": "skip"
-    },
-    "r560595": {
-      "kind": "result",
-      "match_id": 560595,
-      "label": "CHELSEA-BOURNEMOUTH",
-      "kickoff": "2026-10-10T14:00:00Z",
-      "status": "scheduled",
-      "poster": "posters/r560595-20261010.jpg",
-      "post_id": "6aca9165c4de2d2b123a9a9f",
-      "due": null,
-      "created": "2026-10-10T19:26:18Z",
-      "fails": 0,
-      "design": "crests-v1",
-      "tg": "sent"
     },
     "r564700": {
       "kind": "result",
