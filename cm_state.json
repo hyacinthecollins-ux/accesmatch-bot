@@ -1133,6 +1133,15 @@
       "day": "2026-11-09",
       "source": "football-data SA",
       "at": "2026-11-09T15:20:32Z"
+    },
+    {
+      "id": "6af2058cbee14f648c68475e",
+      "kind": "duel",
+      "text": "⚽ Raphinha (Barça) : 15 buts et 2 passes décisives en 11 matchs. Kylian Mbappé (Real Madrid) : 13 buts et 2 passes décisives en 12 matchs. Raphinha ou Mbappé ? Raphinha a inscrit deux buts de plus en un match de moins.\n\n#Mbappé #Raphinha",
+      "due": "2026-11-09T21:35Z",
+      "day": "2026-11-09",
+      "source": "football-data PD",
+      "at": "2026-11-09T17:40:28Z"
     }
   ],
   "slots": {
@@ -1204,7 +1213,8 @@
     "2026-11-09T10:45": "done",
     "2026-11-09T14:00": "done",
     "2026-11-09T16:30": "done",
-    "2026-11-09T20:15": "done"
+    "2026-11-09T20:15": "done",
+    "2026-11-09T22:35": "done"
   },
   "slot_tries": {
     "2026-10-27T20:15": 1,
@@ -1272,7 +1282,8 @@
     "2026-11-09T10:45": 1,
     "2026-11-09T14:00": 1,
     "2026-11-09T16:30": 1,
-    "2026-11-09T20:15": 1
+    "2026-11-09T20:15": 1,
+    "2026-11-09T22:35": 1
   },
   "reacted": [
     "559648",
@@ -1382,18 +1393,18 @@
     "d982d9653835",
     "cd3b5667df1c"
   ],
-  "counter": 126,
+  "counter": 127,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 210,
-        "in": 144525,
-        "out": 31721
+        "calls": 211,
+        "in": 145497,
+        "out": 31994
       },
       "gpt-6.1-sol": {
-        "calls": 200,
-        "in": 70403,
-        "out": 10862
+        "calls": 201,
+        "in": 70792,
+        "out": 10890
       }
     }
   },
@@ -1483,6 +1494,7 @@
     "michael olise|patrik schick",
     "adrien rabiot|donyell malen",
     "donyell malen|marcus thuram-ulien",
-    "alphadjo cisse|donyell malen"
+    "alphadjo cisse|donyell malen",
+    "kylian mbappe|raphinha"
   ]
 }
