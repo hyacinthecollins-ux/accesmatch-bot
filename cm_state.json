@@ -1088,6 +1088,15 @@
       "day": "2026-11-09",
       "source": "football-data FL1",
       "at": "2026-11-09T05:50:27Z"
+    },
+    {
+      "id": "6af166322f1ff83d451ca86b",
+      "kind": "breaking",
+      "text": "🚨 Selon Football365, le pire ennemi de Neymar au PSG n’était pas Mbappé. Le titre écarte déjà le Français, mais garde le nom du rival sous clé : même le vestiaire devra patienter.\n\n#Mbappé #PSG",
+      "due": "2026-11-09T06:30Z",
+      "day": "2026-11-09",
+      "source": "Football365",
+      "at": "2026-11-09T06:20:34Z"
     }
   ],
   "slots": {
@@ -1327,20 +1336,21 @@
     "389ba4c58eef",
     "66da0597a60c",
     "cf9aa2047b9d",
-    "66b32ad2fcb8"
+    "66b32ad2fcb8",
+    "d982d9653835"
   ],
-  "counter": 121,
+  "counter": 122,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 203,
-        "in": 137866,
-        "out": 30471
+        "calls": 205,
+        "in": 139707,
+        "out": 30827
       },
       "gpt-6.1-sol": {
-        "calls": 193,
-        "in": 67856,
-        "out": 10444
+        "calls": 195,
+        "in": 68519,
+        "out": 10616
       }
     }
   },
@@ -1381,7 +1391,8 @@
     "Mbappé, Lamine Yamal, Dembélé: les stars du foot version années 90",
     "Football : Le Real Madrid met la pression sur le Barça pour la tête de la Liga, Mbappé buteur",
     "Real Madrid, Jude Bellingham et Antonio Rüdiger impliqués dans une bagarre !",
-    "Liga 2026/2027 - Classement des buteurs après J12 : Raphinha toujours en tête, Mbappé passe à 13 buts"
+    "Liga 2026/2027 - Classement des buteurs après J12 : Raphinha toujours en tête, Mbappé passe à 13 buts",
+    "Le pire ennemi de Neymar au PSG n’était pas Mbappé"
   ],
   "recent_stats": [
     "erling haaland",
