@@ -485,22 +485,47 @@
       "due": "2026-11-21T20:45:00.000Z",
       "at": "2026-11-08T10:23:10Z",
       "title": "Ronaldo Unselfish Moments 😍 ⚽"
+    },
+    "7550046319470005526": {
+      "post_id": "6af1aef0a1c0ea97f8c06255",
+      "due": "2026-11-22T08:15:00.000Z",
+      "at": "2026-11-09T11:30:56Z",
+      "title": "People will provoke you because they’re scared of ⚽"
+    },
+    "7690377891946745096": {
+      "post_id": "6af1aef3a1c0ea97f8c064e8",
+      "due": "2026-11-22T11:30:00.000Z",
+      "at": "2026-11-09T11:30:59Z",
+      "title": "Ronaldinho - Billie Jean ⚽"
+    },
+    "7523929550464486678": {
+      "post_id": "6af1aef7c7aab911b360e6b9",
+      "due": "2026-11-22T17:30:00.000Z",
+      "at": "2026-11-09T11:31:04Z",
+      "title": "Neymar ⚽"
+    },
+    "7637386956938300694": {
+      "post_id": "6af1aefb56a4abd5c29341ea",
+      "due": "2026-11-22T20:45:00.000Z",
+      "at": "2026-11-09T11:31:07Z",
+      "title": "Cherki is a🥶 ⚽"
+    },
+    "7660162928586280225": {
+      "post_id": "6af1aeff9541fd37f9406269",
+      "due": "2026-11-23T08:15:00.000Z",
+      "at": "2026-11-09T11:31:11Z",
+      "title": "Le jour où Mbappe et Dembele ont détruit ⚽"
     }
   },
   "failed": {},
-  "counter": 81,
+  "counter": 86,
   "recent_players": [
-    "yamal",
-    "pogba",
-    "messi",
-    "ronaldo"
+    "ronaldinho",
+    "neymar",
+    "cherki",
+    "dembele"
   ],
   "recent_creators": [
-    "FootH25-TikTok",
-    "FootballEditsHD-TikTok",
-    "Football8568-TikTok",
-    "FootH25-TikTok",
-    "HRPlays01-TikTok",
     "F11Skillz-TikTok",
     "KickVibesEdit-TikTok",
     "FootH25-TikTok",
@@ -519,14 +544,14 @@
     "FootballEditsHD-TikTok",
     "Football8568-TikTok",
     "F11Skillz-TikTok",
-    "HRPlays01-TikTok"
+    "HRPlays01-TikTok",
+    "F11Skillz-TikTok",
+    "R10Comps-TikTok",
+    "FootballEditsHD-TikTok",
+    "Football8568-TikTok",
+    "FootH25-TikTok"
   ],
   "recent_titles": [
-    "rare penalty moments 😳 ⚽",
-    "vini 23/24 ⚽",
-    "marsilo⚽ 🤕 ⚽",
-    "the day mbappe almost saved paris after entering ⚽",
-    "100% epic yamal moments ⚽",
     "3 years ago… ☠️ peope will provoke you when ⚽",
     "le fameux match dont dembelé parlait contre real ⚽",
     "bojan krkić ⚽",
@@ -551,14 +576,14 @@
     "paul pogba ⚽",
     "messi first el classico 😱 ⚽",
     "today or never ⚽",
-    "ronaldo unselfish moments 😍 ⚽"
+    "ronaldo unselfish moments 😍 ⚽",
+    "people will provoke you because they’re scared of ⚽",
+    "ronaldinho - billie jean ⚽",
+    "neymar ⚽",
+    "cherki is a🥶 ⚽",
+    "le jour où mbappe et dembele ont détruit ⚽"
   ],
   "recent_stars": [
-    0,
-    1,
-    1,
-    1,
-    1,
     1,
     1,
     1,
@@ -573,14 +598,14 @@
     0,
     1,
     0,
+    1,
+    0,
+    0,
+    1,
+    1,
     1
   ],
   "recent_long": [
-    "",
-    "neymar",
-    "barcola",
-    "olise",
-    "doue",
     "foden",
     "ronaldo",
     "kvaratskhelia",
@@ -595,6 +620,11 @@
     "",
     "messi",
     "",
-    "ronaldo"
+    "ronaldo",
+    "",
+    "",
+    "neymar",
+    "cherki",
+    "dembele"
   ]
 }
