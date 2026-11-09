@@ -1106,6 +1106,15 @@
       "day": "2026-11-09",
       "source": "Sport",
       "at": "2026-11-09T07:30:33Z"
+    },
+    {
+      "id": "6af18bb6e29b1359f0e0f940",
+      "kind": "stat",
+      "text": "📊 Erling Haaland (Man City), 3e des buteurs de Ligue des champions avec 5 buts en 4 matchs. Le compteur tourne à plein régime : Haaland ne traîne pas devant le but. Qui peut l’arrêter ?\n\n#Haaland #ManCity",
+      "due": "2026-11-09T13:00Z",
+      "day": "2026-11-09",
+      "source": "football-data CL",
+      "at": "2026-11-09T09:00:40Z"
     }
   ],
   "slots": {
@@ -1174,7 +1183,8 @@
     "2026-11-08T20:15": "done",
     "2026-11-08T22:35": "done",
     "2026-11-09T08:05": "done",
-    "2026-11-09T10:45": "done"
+    "2026-11-09T10:45": "done",
+    "2026-11-09T14:00": "done"
   },
   "slot_tries": {
     "2026-10-27T20:15": 1,
@@ -1239,7 +1249,8 @@
     "2026-11-08T20:15": 1,
     "2026-11-08T22:35": 1,
     "2026-11-09T08:05": 1,
-    "2026-11-09T10:45": 1
+    "2026-11-09T10:45": 1,
+    "2026-11-09T14:00": 1
   },
   "reacted": [
     "559648",
@@ -1349,18 +1360,18 @@
     "d982d9653835",
     "cd3b5667df1c"
   ],
-  "counter": 123,
+  "counter": 124,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 207,
-        "in": 141547,
-        "out": 31117
+        "calls": 208,
+        "in": 142598,
+        "out": 31269
       },
       "gpt-6.1-sol": {
-        "calls": 197,
-        "in": 69164,
-        "out": 10738
+        "calls": 198,
+        "in": 69652,
+        "out": 10779
       }
     }
   },
@@ -1427,7 +1438,8 @@
     "donyell malen",
     "raphinha",
     "patrik schick",
-    "lamine yamal"
+    "lamine yamal",
+    "erling haaland"
   ],
   "debates": {
     "CL": {
