@@ -1,33 +1,5 @@
 {
   "items": {
-    "p564700": {
-      "kind": "preview",
-      "match_id": 564700,
-      "label": "BARÇA-GETAFE",
-      "kickoff": "2026-10-10T16:30:00Z",
-      "status": "scheduled",
-      "poster": "posters/p564700-20261010.jpg",
-      "post_id": "6ac92580d9cab260a79a037a",
-      "due": "2026-10-10T15:30:00Z",
-      "created": "2026-10-09T17:33:21Z",
-      "fails": 0,
-      "design": "crests-v1",
-      "tg": "skip"
-    },
-    "p560600": {
-      "kind": "preview",
-      "match_id": 560600,
-      "label": "MAN UNITED-TOTTENHAM",
-      "kickoff": "2026-10-10T16:30:00Z",
-      "status": "scheduled",
-      "poster": "posters/p560600-20261010.jpg",
-      "post_id": "6ac92582810582311aec81ef",
-      "due": "2026-10-10T15:30:00Z",
-      "created": "2026-10-09T17:33:21Z",
-      "fails": 0,
-      "design": "crests-v1",
-      "tg": "skip"
-    },
     "p559672": {
       "kind": "preview",
       "match_id": 559672,
@@ -83,34 +55,6 @@
       "fails": 0,
       "design": "crests-v1",
       "tg": "skip"
-    },
-    "r564700": {
-      "kind": "result",
-      "match_id": 564700,
-      "label": "BARÇA-GETAFE",
-      "kickoff": "2026-10-10T16:30:00Z",
-      "status": "scheduled",
-      "poster": "posters/r564700-20261010.jpg",
-      "post_id": "6aca9169b07d37ac97842289",
-      "due": null,
-      "created": "2026-10-10T19:26:18Z",
-      "fails": 0,
-      "design": "crests-v1",
-      "tg": "sent"
-    },
-    "r560600": {
-      "kind": "result",
-      "match_id": 560600,
-      "label": "MAN UNITED-TOTTENHAM",
-      "kickoff": "2026-10-10T16:30:00Z",
-      "status": "scheduled",
-      "poster": "posters/r560600-20261010.jpg",
-      "post_id": "6aca916ded92ed8fa5dd4240",
-      "due": null,
-      "created": "2026-10-10T19:26:18Z",
-      "fails": 0,
-      "design": "crests-v1",
-      "tg": "sent"
     },
     "r559672": {
       "kind": "result",
