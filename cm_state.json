@@ -1151,6 +1151,15 @@
       "day": "2026-11-10",
       "source": "Ouest-France",
       "at": "2026-11-09T23:00:57Z"
+    },
+    {
+      "id": "6af28b2026f9e6aeeade7089",
+      "kind": "stat",
+      "text": "📊 Rayan Cherki (Man City), 8e des buteurs de Premier League avec 5 buts et 2 passes décisives en 10 matchs. Le meneur a aussi le sens du dernier geste : Cherki soigne ses entrées dans le tableau d’affichage.\n\n#Cherki #ManCity",
+      "due": "2026-11-10T07:05Z",
+      "day": "2026-11-10",
+      "source": "football-data PL",
+      "at": "2026-11-10T03:10:24Z"
     }
   ],
   "slots": {
@@ -1223,7 +1232,8 @@
     "2026-11-09T14:00": "done",
     "2026-11-09T16:30": "done",
     "2026-11-09T20:15": "done",
-    "2026-11-09T22:35": "done"
+    "2026-11-09T22:35": "done",
+    "2026-11-10T08:05": "done"
   },
   "slot_tries": {
     "2026-10-27T20:15": 1,
@@ -1292,7 +1302,8 @@
     "2026-11-09T14:00": 1,
     "2026-11-09T16:30": 1,
     "2026-11-09T20:15": 1,
-    "2026-11-09T22:35": 1
+    "2026-11-09T22:35": 1,
+    "2026-11-10T08:05": 1
   },
   "reacted": [
     "559648",
@@ -1404,18 +1415,18 @@
     "86d43e914545",
     "f14d77da54ed"
   ],
-  "counter": 128,
+  "counter": 129,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 215,
-        "in": 149200,
-        "out": 32918
+        "calls": 216,
+        "in": 150265,
+        "out": 32987
       },
       "gpt-6.1-sol": {
-        "calls": 203,
-        "in": 71486,
-        "out": 11005
+        "calls": 204,
+        "in": 71995,
+        "out": 11042
       }
     }
   },
@@ -1485,7 +1496,8 @@
     "raphinha",
     "patrik schick",
     "lamine yamal",
-    "erling haaland"
+    "erling haaland",
+    "rayan cherki"
   ],
   "debates": {
     "CL": {
