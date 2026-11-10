@@ -1,33 +1,5 @@
 {
   "items": {
-    "p559671": {
-      "kind": "preview",
-      "match_id": 559671,
-      "label": "TROYES-OM",
-      "kickoff": "2026-10-11T18:45:00Z",
-      "status": "scheduled",
-      "poster": "posters/p559671-20261011.jpg",
-      "post_id": "6ac9fbfcd9cab260a7ba0410",
-      "due": "2026-10-11T17:45:00Z",
-      "created": "2026-10-10T08:48:48Z",
-      "fails": 0,
-      "design": "crests-v1",
-      "tg": "skip"
-    },
-    "r559671": {
-      "kind": "result",
-      "match_id": 559671,
-      "label": "TROYES-OM",
-      "kickoff": "2026-10-11T18:45:00Z",
-      "status": "scheduled",
-      "poster": "posters/r559671-20261011.jpg",
-      "post_id": "6acc1b998e8dd50ffc5c989d",
-      "due": null,
-      "created": "2026-10-11T23:28:19Z",
-      "fails": 0,
-      "design": "crests-v1",
-      "tg": "sent"
-    },
     "p575344": {
       "kind": "preview",
       "match_id": 575344,
