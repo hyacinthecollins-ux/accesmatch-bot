@@ -1178,6 +1178,15 @@
       "day": "2026-11-10",
       "source": "Foot National",
       "at": "2026-11-10T06:20:32Z"
+    },
+    {
+      "id": "6af2c81d223aa16048f78440",
+      "kind": "breaking",
+      "text": "🚨 Selon Foot Mercato, Vinicius Jr agacerait Jude Bellingham au Real Madrid, alors que Yan Diomandé aurait marqué des points pendant la suspension du Brésilien. À Madrid, la concurrence ne dort pas.\n\n#Vinicius #Bellingham",
+      "due": "2026-11-10T07:40Z",
+      "day": "2026-11-10",
+      "source": "Foot Mercato",
+      "at": "2026-11-10T07:30:37Z"
     }
   ],
   "slots": {
@@ -1434,20 +1443,21 @@
     "cd3b5667df1c",
     "86d43e914545",
     "f14d77da54ed",
-    "a65657963a8f"
+    "a65657963a8f",
+    "951b7ade44e3"
   ],
-  "counter": 131,
+  "counter": 132,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 218,
-        "in": 152120,
-        "out": 33379
+        "calls": 219,
+        "in": 153072,
+        "out": 33439
       },
       "gpt-6.1-sol": {
-        "calls": 206,
-        "in": 72761,
-        "out": 11127
+        "calls": 207,
+        "in": 73167,
+        "out": 11165
       }
     }
   },
@@ -1493,7 +1503,8 @@
     "Le Real Madrid débarque en Angleterre pour aller chercher Haaland",
     "[Podcasts] Neuer, Musiala, Kane, Olise...Polo détaille les dossiers du moment du Bayern – 09/11",
     "Équipe de France. Pour Ibrahima Konaté, Kylian Mbappé revient chez les Bleus avec « un très bon état d’esprit »",
-    "Real Madrid-PFC, PSG-Bayern, Juventus-OL Lyonnes : le programme complet de la quatrième journée de Ligue des champions (F)"
+    "Real Madrid-PFC, PSG-Bayern, Juventus-OL Lyonnes : le programme complet de la quatrième journée de Ligue des champions (F)",
+    "Real Madrid : Vinicius Jr agacerait beaucoup Jude Bellingham"
   ],
   "recent_stats": [
     "erling haaland",
