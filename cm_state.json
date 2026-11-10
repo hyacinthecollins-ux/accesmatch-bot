@@ -1214,6 +1214,15 @@
       "day": "2026-11-10",
       "source": "football-data PL",
       "at": "2026-11-10T14:20:25Z"
+    },
+    {
+      "id": "6af3363e42d372a81f6405a4",
+      "kind": "duel",
+      "text": "⚽ En Ligue des champions, Erling Haaland (Man City) compte 5 buts en 4 matchs. Sehrou Guirassy (Dortmund) en a inscrit 4 en 4 matchs. Haaland ou Guirassy : les tribunes vont s’enflammer !\n\n#Haaland #ManCity",
+      "due": "2026-11-10T19:15Z",
+      "day": "2026-11-10",
+      "source": "football-data CL",
+      "at": "2026-11-10T15:20:30Z"
     }
   ],
   "slots": {
@@ -1291,7 +1300,8 @@
     "2026-11-10T10:45": "done",
     "2026-11-10T14:00": "done",
     "2026-11-10T16:30": "done",
-    "2026-11-10T19:15": "done"
+    "2026-11-10T19:15": "done",
+    "2026-11-10T20:15": "done"
   },
   "slot_tries": {
     "2026-10-27T20:15": 1,
@@ -1365,7 +1375,8 @@
     "2026-11-10T10:45": 1,
     "2026-11-10T14:00": 1,
     "2026-11-10T16:30": 1,
-    "2026-11-10T19:15": 1
+    "2026-11-10T19:15": 1,
+    "2026-11-10T20:15": 1
   },
   "reacted": [
     "559648",
@@ -1479,18 +1490,18 @@
     "a65657963a8f",
     "951b7ade44e3"
   ],
-  "counter": 135,
+  "counter": 136,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 222,
-        "in": 156154,
-        "out": 33833
+        "calls": 223,
+        "in": 157105,
+        "out": 34042
       },
       "gpt-6.1-sol": {
-        "calls": 210,
-        "in": 74495,
-        "out": 11271
+        "calls": 211,
+        "in": 74861,
+        "out": 11306
       }
     }
   },
@@ -1589,6 +1600,7 @@
     "donyell malen|marcus thuram-ulien",
     "alphadjo cisse|donyell malen",
     "kylian mbappe|raphinha",
-    "erling haaland|joao pedro"
+    "erling haaland|joao pedro",
+    "erling haaland|sehrou guirassy"
   ]
 }
