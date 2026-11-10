@@ -1169,6 +1169,15 @@
       "day": "2026-11-10",
       "source": "football-data CL",
       "at": "2026-11-10T05:50:25Z"
+    },
+    {
+      "id": "6af2b7b0b59b34913a5ddcfa",
+      "kind": "breaking",
+      "text": "🚨 Selon Foot National, Real Madrid-PFC, PSG-Bayern et Juventus-OL Lyonnes sont au programme de la quatrième journée de Ligue des champions féminine. Le PSG et l’OL Lyonnes seront tous deux en lice.\n\n#PSG #RealMadrid",
+      "due": "2026-11-10T06:30Z",
+      "day": "2026-11-10",
+      "source": "Foot National",
+      "at": "2026-11-10T06:20:32Z"
     }
   ],
   "slots": {
@@ -1424,20 +1433,21 @@
     "d982d9653835",
     "cd3b5667df1c",
     "86d43e914545",
-    "f14d77da54ed"
+    "f14d77da54ed",
+    "a65657963a8f"
   ],
-  "counter": 130,
+  "counter": 131,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 217,
-        "in": 151220,
-        "out": 33162
+        "calls": 218,
+        "in": 152120,
+        "out": 33379
       },
       "gpt-6.1-sol": {
-        "calls": 205,
-        "in": 72412,
-        "out": 11090
+        "calls": 206,
+        "in": 72761,
+        "out": 11127
       }
     }
   },
@@ -1482,7 +1492,8 @@
     "Le pire ennemi de Neymar au PSG n’était pas Mbappé",
     "Le Real Madrid débarque en Angleterre pour aller chercher Haaland",
     "[Podcasts] Neuer, Musiala, Kane, Olise...Polo détaille les dossiers du moment du Bayern – 09/11",
-    "Équipe de France. Pour Ibrahima Konaté, Kylian Mbappé revient chez les Bleus avec « un très bon état d’esprit »"
+    "Équipe de France. Pour Ibrahima Konaté, Kylian Mbappé revient chez les Bleus avec « un très bon état d’esprit »",
+    "Real Madrid-PFC, PSG-Bayern, Juventus-OL Lyonnes : le programme complet de la quatrième journée de Ligue des champions (F)"
   ],
   "recent_stats": [
     "erling haaland",
