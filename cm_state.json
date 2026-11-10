@@ -1232,6 +1232,15 @@
       "day": "2026-11-10",
       "source": "football-data SA",
       "at": "2026-11-10T17:40:32Z"
+    },
+    {
+      "id": "6af3a21f063707b23557c13c",
+      "kind": "breaking",
+      "text": "🚨 Selon SO FOOT, Gerrard estime que Yamal est en avance sur Messi et Ronaldo. À ce rythme, les comparaisons vont devoir prendre un ticket.\n\n#Yamal #Messi",
+      "due": "2026-11-10T23:10Z",
+      "day": "2026-11-11",
+      "source": "SO FOOT",
+      "at": "2026-11-10T23:00:47Z"
     }
   ],
   "slots": {
@@ -1499,20 +1508,21 @@
     "86d43e914545",
     "f14d77da54ed",
     "a65657963a8f",
-    "951b7ade44e3"
+    "951b7ade44e3",
+    "e8fd96ae6c99"
   ],
-  "counter": 137,
+  "counter": 138,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 224,
-        "in": 158060,
-        "out": 34215
+        "calls": 226,
+        "in": 159882,
+        "out": 34618
       },
       "gpt-6.1-sol": {
-        "calls": 212,
-        "in": 75231,
-        "out": 11359
+        "calls": 214,
+        "in": 75880,
+        "out": 11503
       }
     }
   },
@@ -1559,7 +1569,8 @@
     "[Podcasts] Neuer, Musiala, Kane, Olise...Polo détaille les dossiers du moment du Bayern – 09/11",
     "Équipe de France. Pour Ibrahima Konaté, Kylian Mbappé revient chez les Bleus avec « un très bon état d’esprit »",
     "Real Madrid-PFC, PSG-Bayern, Juventus-OL Lyonnes : le programme complet de la quatrième journée de Ligue des champions (F)",
-    "Real Madrid : Vinicius Jr agacerait beaucoup Jude Bellingham"
+    "Real Madrid : Vinicius Jr agacerait beaucoup Jude Bellingham",
+    "Pour Gerrard, Yamal est en avance sur Messi et Ronaldo"
   ],
   "recent_stats": [
     "erling haaland",
