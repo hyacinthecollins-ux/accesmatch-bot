@@ -1160,6 +1160,15 @@
       "day": "2026-11-10",
       "source": "football-data PL",
       "at": "2026-11-10T03:10:24Z"
+    },
+    {
+      "id": "6af2b0a1d35dff5701e031b1",
+      "kind": "debate",
+      "text": "Como 1907 est 4e, devant le Barça et Aston Villa, avec 9 points après 4 matchs. Le classement a glissé un invité surprise à la table des grands. Vous l’aviez vu venir ?\n\n#FCBarcelona #LDC",
+      "due": "2026-11-10T09:45Z",
+      "day": "2026-11-10",
+      "source": "football-data CL",
+      "at": "2026-11-10T05:50:25Z"
     }
   ],
   "slots": {
@@ -1233,7 +1242,8 @@
     "2026-11-09T16:30": "done",
     "2026-11-09T20:15": "done",
     "2026-11-09T22:35": "done",
-    "2026-11-10T08:05": "done"
+    "2026-11-10T08:05": "done",
+    "2026-11-10T10:45": "done"
   },
   "slot_tries": {
     "2026-10-27T20:15": 1,
@@ -1303,7 +1313,8 @@
     "2026-11-09T16:30": 1,
     "2026-11-09T20:15": 1,
     "2026-11-09T22:35": 1,
-    "2026-11-10T08:05": 1
+    "2026-11-10T08:05": 1,
+    "2026-11-10T10:45": 1
   },
   "reacted": [
     "559648",
@@ -1415,18 +1426,18 @@
     "86d43e914545",
     "f14d77da54ed"
   ],
-  "counter": 129,
+  "counter": 130,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 216,
-        "in": 150265,
-        "out": 32987
+        "calls": 217,
+        "in": 151220,
+        "out": 33162
       },
       "gpt-6.1-sol": {
-        "calls": 204,
-        "in": 71995,
-        "out": 11042
+        "calls": 205,
+        "in": 72412,
+        "out": 11090
       }
     }
   },
@@ -1501,8 +1512,8 @@
   ],
   "debates": {
     "CL": {
-      "sig": "9278bec5e383",
-      "at": "2026-11-06T05:50:14.772966+00:00"
+      "sig": "a6cf1a494585",
+      "at": "2026-11-10T05:50:16.955581+00:00"
     },
     "PD": {
       "sig": "7b099506c712",
