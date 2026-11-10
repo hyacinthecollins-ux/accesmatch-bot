@@ -1187,6 +1187,15 @@
       "day": "2026-11-10",
       "source": "Foot Mercato",
       "at": "2026-11-10T07:30:37Z"
+    },
+    {
+      "id": "6af2dd346043a21c9f5b821f",
+      "kind": "stat",
+      "text": "📊 Amine Gouiri (Marseille), 2e des buteurs de Ligue 1 : 7 buts et 3 passes décisives en 10 matchs. Le Phocéen coche les deux cases du dernier geste. Quel chiffre vous marque le plus ?\n\n#OM #Ligue1",
+      "due": "2026-11-10T13:00Z",
+      "day": "2026-11-10",
+      "source": "football-data FL1",
+      "at": "2026-11-10T09:00:36Z"
     }
   ],
   "slots": {
@@ -1261,7 +1270,8 @@
     "2026-11-09T20:15": "done",
     "2026-11-09T22:35": "done",
     "2026-11-10T08:05": "done",
-    "2026-11-10T10:45": "done"
+    "2026-11-10T10:45": "done",
+    "2026-11-10T14:00": "done"
   },
   "slot_tries": {
     "2026-10-27T20:15": 1,
@@ -1332,7 +1342,8 @@
     "2026-11-09T20:15": 1,
     "2026-11-09T22:35": 1,
     "2026-11-10T08:05": 1,
-    "2026-11-10T10:45": 1
+    "2026-11-10T10:45": 1,
+    "2026-11-10T14:00": 1
   },
   "reacted": [
     "559648",
@@ -1446,18 +1457,18 @@
     "a65657963a8f",
     "951b7ade44e3"
   ],
-  "counter": 132,
+  "counter": 133,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 219,
-        "in": 153072,
-        "out": 33439
+        "calls": 220,
+        "in": 154139,
+        "out": 33595
       },
       "gpt-6.1-sol": {
-        "calls": 207,
-        "in": 73167,
-        "out": 11165
+        "calls": 208,
+        "in": 73667,
+        "out": 11204
       }
     }
   },
@@ -1530,7 +1541,8 @@
     "patrik schick",
     "lamine yamal",
     "erling haaland",
-    "rayan cherki"
+    "rayan cherki",
+    "amine gouiri"
   ],
   "debates": {
     "CL": {
