@@ -1223,6 +1223,15 @@
       "day": "2026-11-10",
       "source": "football-data CL",
       "at": "2026-11-10T15:20:30Z"
+    },
+    {
+      "id": "6af357101d932748c7dee707",
+      "kind": "duel",
+      "text": "⚽ En Serie A, Marcus Thuram (Inter) affiche 6 buts et 2 passes décisives en 11 matchs. Alphadjo Cissé (Milan) compte 5 buts en 11 matchs. Thuram ou Cissé ? Mon vote va à Thuram.\n\n#SerieA",
+      "due": "2026-11-10T21:35Z",
+      "day": "2026-11-10",
+      "source": "football-data SA",
+      "at": "2026-11-10T17:40:32Z"
     }
   ],
   "slots": {
@@ -1301,7 +1310,8 @@
     "2026-11-10T14:00": "done",
     "2026-11-10T16:30": "done",
     "2026-11-10T19:15": "done",
-    "2026-11-10T20:15": "done"
+    "2026-11-10T20:15": "done",
+    "2026-11-10T22:35": "done"
   },
   "slot_tries": {
     "2026-10-27T20:15": 1,
@@ -1376,7 +1386,8 @@
     "2026-11-10T14:00": 1,
     "2026-11-10T16:30": 1,
     "2026-11-10T19:15": 1,
-    "2026-11-10T20:15": 1
+    "2026-11-10T20:15": 1,
+    "2026-11-10T22:35": 1
   },
   "reacted": [
     "559648",
@@ -1490,18 +1501,18 @@
     "a65657963a8f",
     "951b7ade44e3"
   ],
-  "counter": 136,
+  "counter": 137,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 223,
-        "in": 157105,
-        "out": 34042
+        "calls": 224,
+        "in": 158060,
+        "out": 34215
       },
       "gpt-6.1-sol": {
-        "calls": 211,
-        "in": 74861,
-        "out": 11306
+        "calls": 212,
+        "in": 75231,
+        "out": 11359
       }
     }
   },
@@ -1601,6 +1612,7 @@
     "alphadjo cisse|donyell malen",
     "kylian mbappe|raphinha",
     "erling haaland|joao pedro",
-    "erling haaland|sehrou guirassy"
+    "erling haaland|sehrou guirassy",
+    "alphadjo cisse|marcus thuram-ulien"
   ]
 }
