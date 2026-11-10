@@ -1205,6 +1205,15 @@
       "day": "2026-11-10",
       "source": "football-data PL",
       "at": "2026-11-10T11:30:26Z"
+    },
+    {
+      "id": "6af32829f81255e03a75a66f",
+      "kind": "stat",
+      "text": "📊 Alexander Isak (Liverpool), 2e des buteurs de Premier League avec 7 buts en 9 matchs. L’attaquant garde le filet dans son viseur : il a marqué 7 fois.\n\n#Liverpool #PremierLeague",
+      "due": "2026-11-10T18:15Z",
+      "day": "2026-11-10",
+      "source": "football-data PL",
+      "at": "2026-11-10T14:20:25Z"
     }
   ],
   "slots": {
@@ -1281,7 +1290,8 @@
     "2026-11-10T08:05": "done",
     "2026-11-10T10:45": "done",
     "2026-11-10T14:00": "done",
-    "2026-11-10T16:30": "done"
+    "2026-11-10T16:30": "done",
+    "2026-11-10T19:15": "done"
   },
   "slot_tries": {
     "2026-10-27T20:15": 1,
@@ -1354,7 +1364,8 @@
     "2026-11-10T08:05": 1,
     "2026-11-10T10:45": 1,
     "2026-11-10T14:00": 1,
-    "2026-11-10T16:30": 1
+    "2026-11-10T16:30": 1,
+    "2026-11-10T19:15": 1
   },
   "reacted": [
     "559648",
@@ -1468,18 +1479,18 @@
     "a65657963a8f",
     "951b7ade44e3"
   ],
-  "counter": 134,
+  "counter": 135,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 221,
-        "in": 155101,
-        "out": 33778
+        "calls": 222,
+        "in": 156154,
+        "out": 33833
       },
       "gpt-6.1-sol": {
-        "calls": 209,
-        "in": 74029,
-        "out": 11236
+        "calls": 210,
+        "in": 74495,
+        "out": 11271
       }
     }
   },
@@ -1553,7 +1564,8 @@
     "lamine yamal",
     "erling haaland",
     "rayan cherki",
-    "amine gouiri"
+    "amine gouiri",
+    "alexander isak"
   ],
   "debates": {
     "CL": {
