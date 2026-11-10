@@ -1196,6 +1196,15 @@
       "day": "2026-11-10",
       "source": "football-data FL1",
       "at": "2026-11-10T09:00:36Z"
+    },
+    {
+      "id": "6af3005267f99540fd973ddd",
+      "kind": "duel",
+      "text": "⚽ Erling Haaland (Man City) : 9 buts en 10 matchs. João Pedro (Chelsea) : 5 buts et 3 passes décisives en 6 matchs. Haaland ou João Pedro ? Les supporters sortent déjà la calculette !\n\n#Haaland #ManCity",
+      "due": "2026-11-10T15:30Z",
+      "day": "2026-11-10",
+      "source": "football-data PL",
+      "at": "2026-11-10T11:30:26Z"
     }
   ],
   "slots": {
@@ -1271,7 +1280,8 @@
     "2026-11-09T22:35": "done",
     "2026-11-10T08:05": "done",
     "2026-11-10T10:45": "done",
-    "2026-11-10T14:00": "done"
+    "2026-11-10T14:00": "done",
+    "2026-11-10T16:30": "done"
   },
   "slot_tries": {
     "2026-10-27T20:15": 1,
@@ -1343,7 +1353,8 @@
     "2026-11-09T22:35": 1,
     "2026-11-10T08:05": 1,
     "2026-11-10T10:45": 1,
-    "2026-11-10T14:00": 1
+    "2026-11-10T14:00": 1,
+    "2026-11-10T16:30": 1
   },
   "reacted": [
     "559648",
@@ -1457,18 +1468,18 @@
     "a65657963a8f",
     "951b7ade44e3"
   ],
-  "counter": 133,
+  "counter": 134,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 220,
-        "in": 154139,
-        "out": 33595
+        "calls": 221,
+        "in": 155101,
+        "out": 33778
       },
       "gpt-6.1-sol": {
-        "calls": 208,
-        "in": 73667,
-        "out": 11204
+        "calls": 209,
+        "in": 74029,
+        "out": 11236
       }
     }
   },
@@ -1565,6 +1576,7 @@
     "adrien rabiot|donyell malen",
     "donyell malen|marcus thuram-ulien",
     "alphadjo cisse|donyell malen",
-    "kylian mbappe|raphinha"
+    "kylian mbappe|raphinha",
+    "erling haaland|joao pedro"
   ]
 }
