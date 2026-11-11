@@ -1322,6 +1322,15 @@
       "day": "2026-11-11",
       "source": "football-data PL",
       "at": "2026-11-11T17:40:29Z"
+    },
+    {
+      "id": "6af4f397304f8985c46e0b20",
+      "kind": "breaking",
+      "text": "🚨 Selon Sud Ouest, sans Kylian Mbappé face à l’Italie, Désiré Doué prend la lumière et l’axe. À lui de faire parler le terrain : convaincu ?\n\n#Mbappé #Doué",
+      "due": "2026-11-11T23:10Z",
+      "day": "2026-11-12",
+      "source": "Sud Ouest",
+      "at": "2026-11-11T23:00:39Z"
     }
   ],
   "slots": {
@@ -1606,20 +1615,21 @@
     "951b7ade44e3",
     "e8fd96ae6c99",
     "9e388c1064c7",
-    "388a2998dabb"
+    "388a2998dabb",
+    "a34ce65d6858"
   ],
-  "counter": 147,
+  "counter": 148,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 240,
-        "in": 174223,
-        "out": 37446
+        "calls": 241,
+        "in": 175130,
+        "out": 37674
       },
       "gpt-6.1-sol": {
-        "calls": 226,
-        "in": 81006,
-        "out": 12185
+        "calls": 227,
+        "in": 81348,
+        "out": 12221
       }
     }
   },
@@ -1669,7 +1679,8 @@
     "Real Madrid : Vinicius Jr agacerait beaucoup Jude Bellingham",
     "Pour Gerrard, Yamal est en avance sur Messi et Ronaldo",
     "Entre le capitaine Kylian Mbappé et le sélectionneur Zinédine Zidane, une ligne à établir chez les Bleus",
-    "Jungkook (BTS) dépasse l'attrait de Messi et Ronaldo"
+    "Jungkook (BTS) dépasse l'attrait de Messi et Ronaldo",
+    "Italie - france. sans kylian mbappé, désiré doué prend la lumière… et l’axe"
   ],
   "recent_stats": [
     "erling haaland",
