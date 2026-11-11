@@ -1295,6 +1295,15 @@
       "day": "2026-11-11",
       "source": "football-data SA",
       "at": "2026-11-11T11:30:31Z"
+    },
+    {
+      "id": "6af479bac6fc3e4d41b46000",
+      "kind": "stat",
+      "text": "📊 Raphinha (Barça), en tête des buteurs de Liga : 15 buts et 2 passes décisives en 11 matchs. Le compteur tourne, le Barça récolte. Quel geste vous plaît chez lui ?\n\n#Raphinha #FCBarcelona",
+      "due": "2026-11-11T18:15Z",
+      "day": "2026-11-11",
+      "source": "football-data PD",
+      "at": "2026-11-11T14:20:42Z"
     }
   ],
   "slots": {
@@ -1378,7 +1387,8 @@
     "2026-11-11T08:05": "done",
     "2026-11-11T10:45": "done",
     "2026-11-11T14:00": "done",
-    "2026-11-11T16:30": "done"
+    "2026-11-11T16:30": "done",
+    "2026-11-11T19:15": "done"
   },
   "slot_tries": {
     "2026-10-27T20:15": 1,
@@ -1458,7 +1468,8 @@
     "2026-11-11T08:05": 1,
     "2026-11-11T10:45": 1,
     "2026-11-11T14:00": 1,
-    "2026-11-11T16:30": 1
+    "2026-11-11T16:30": 1,
+    "2026-11-11T19:15": 1
   },
   "reacted": [
     "559648",
@@ -1575,18 +1586,18 @@
     "9e388c1064c7",
     "388a2998dabb"
   ],
-  "counter": 144,
+  "counter": 145,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 235,
-        "in": 169049,
-        "out": 36299
+        "calls": 238,
+        "in": 172325,
+        "out": 36940
       },
       "gpt-6.1-sol": {
-        "calls": 222,
-        "in": 79302,
-        "out": 12035
+        "calls": 224,
+        "in": 80279,
+        "out": 12107
       }
     }
   },
@@ -1666,7 +1677,8 @@
     "amine gouiri",
     "alexander isak",
     "kylian mbappe",
-    "michael olise"
+    "michael olise",
+    "raphinha"
   ],
   "debates": {
     "CL": {
