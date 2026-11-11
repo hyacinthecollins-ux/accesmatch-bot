@@ -1304,6 +1304,15 @@
       "day": "2026-11-11",
       "source": "football-data PD",
       "at": "2026-11-11T14:20:42Z"
+    },
+    {
+      "id": "6af4880f74ad7524f8994755",
+      "kind": "duel",
+      "text": "⚽ Haaland (Man City) : 9 buts en 10 matchs. Rogers (Chelsea) : 5 buts et 1 passe décisive en 10 matchs. Haaland ou Rogers ? Aux supporters de trancher, la calculette ne choisira pas les couleurs !\n\n#Haaland #ManCity",
+      "due": "2026-11-11T19:15Z",
+      "day": "2026-11-11",
+      "source": "football-data PL",
+      "at": "2026-11-11T15:21:51Z"
     }
   ],
   "slots": {
@@ -1388,7 +1397,8 @@
     "2026-11-11T10:45": "done",
     "2026-11-11T14:00": "done",
     "2026-11-11T16:30": "done",
-    "2026-11-11T19:15": "done"
+    "2026-11-11T19:15": "done",
+    "2026-11-11T20:15": "done"
   },
   "slot_tries": {
     "2026-10-27T20:15": 1,
@@ -1469,7 +1479,8 @@
     "2026-11-11T10:45": 1,
     "2026-11-11T14:00": 1,
     "2026-11-11T16:30": 1,
-    "2026-11-11T19:15": 1
+    "2026-11-11T19:15": 1,
+    "2026-11-11T20:15": 1
   },
   "reacted": [
     "559648",
@@ -1586,18 +1597,18 @@
     "9e388c1064c7",
     "388a2998dabb"
   ],
-  "counter": 145,
+  "counter": 146,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 238,
-        "in": 172325,
-        "out": 36940
+        "calls": 239,
+        "in": 173270,
+        "out": 37164
       },
       "gpt-6.1-sol": {
-        "calls": 224,
-        "in": 80279,
-        "out": 12107
+        "calls": 225,
+        "in": 80644,
+        "out": 12146
       }
     }
   },
@@ -1705,6 +1716,7 @@
     "erling haaland|joao pedro",
     "erling haaland|sehrou guirassy",
     "alphadjo cisse|marcus thuram-ulien",
-    "adrien rabiot|marcus thuram-ulien"
+    "adrien rabiot|marcus thuram-ulien",
+    "erling haaland|morgan rogers"
   ]
 }
