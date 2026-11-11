@@ -539,21 +539,41 @@
       "due": "2026-11-24T08:15:00.000Z",
       "at": "2026-11-10T11:12:23Z",
       "title": "Desire Doue X Kakalika 🕺🏻 ⚽"
+    },
+    "7386669879249653024": {
+      "post_id": "6af44a124335c02d1df2cde4",
+      "due": "2026-11-24T11:30:00.000Z",
+      "at": "2026-11-11T10:57:22Z",
+      "title": "Jude Bellingham ⚽"
+    },
+    "7394965634855062817": {
+      "post_id": "6af44a15d18307dbac686395",
+      "due": "2026-11-24T17:30:00.000Z",
+      "at": "2026-11-11T10:57:25Z",
+      "title": "Haaland Respect Moments ⚽"
+    },
+    "ppiAGshBcW0": {
+      "post_id": "6af44a186a8034856ea9affb",
+      "due": "2026-11-24T20:45:00.000Z",
+      "at": "2026-11-11T10:57:28Z",
+      "title": "OLISE NEVER LEAVES TOUCH LINE 😂 ⚽"
+    },
+    "7632221679229406486": {
+      "post_id": "6af44a1cb4e8551038967654",
+      "due": "2026-11-25T08:15:00.000Z",
+      "at": "2026-11-11T10:57:32Z",
+      "title": "Normal skill vs the GOAT 🐐🤕⚽"
     }
   },
   "failed": {},
-  "counter": 90,
+  "counter": 94,
   "recent_players": [
-    "mbappe",
-    "pedri",
-    "neymar",
-    "doue"
+    "doue",
+    "bellingham",
+    "haaland",
+    "olise"
   ],
   "recent_creators": [
-    "HRPlays01-TikTok",
-    "L7-Shorts",
-    "Football8568-TikTok",
-    "L7-Shorts",
     "HRPlays01-TikTok",
     "L7-Shorts",
     "TeoCRi-Shorts",
@@ -573,13 +593,13 @@
     "HRPlays01-TikTok",
     "FootH25-TikTok",
     "F11Skillz-TikTok",
-    "KickVibesEdit-TikTok"
+    "KickVibesEdit-TikTok",
+    "FootballEditsHD-TikTok",
+    "HRPlays01-TikTok",
+    "L7-Shorts",
+    "Football8568-TikTok"
   ],
   "recent_titles": [
-    "personne n’était prêt pour ce psg vs man city 🥶🔥",
-    "mesut ozil - when passing becomes art ⚽",
-    "neymar’s reaction to mbappe revenging him 😂 ⚽",
-    "barcola x doué 🇫🇷 🧊 ⚽",
     "pose-toi 1 min 34 et admire le génie micheal olisé.🤩🇫🇷 ⚽",
     "desire doue ⚽",
     "rare foden son moments 😂 ⚽",
@@ -605,13 +625,13 @@
     "mbappe & vini jr following their idol ⚽",
     "barça vs séville le but de pedri ⚽",
     "mbappé x neymar 💔 ⚽",
-    "desire doue x kakalika 🕺🏻 ⚽"
+    "desire doue x kakalika 🕺🏻 ⚽",
+    "jude bellingham ⚽",
+    "haaland respect moments ⚽",
+    "olise never leaves touch line 😂 ⚽",
+    "normal skill vs the goat 🐐🤕⚽"
   ],
   "recent_stars": [
-    1,
-    1,
-    0,
-    1,
     0,
     1,
     1,
@@ -627,13 +647,13 @@
     1,
     1,
     1,
-    1
+    1,
+    1,
+    1,
+    1,
+    0
   ],
   "recent_long": [
-    "haaland",
-    "messi",
-    "",
-    "vinicius",
     "",
     "mbappe",
     "yamal",
@@ -649,6 +669,10 @@
     "mbappe",
     "pedri",
     "neymar",
-    "doue"
+    "doue",
+    "bellingham",
+    "haaland",
+    "olise",
+    ""
   ]
 }
