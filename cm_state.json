@@ -1313,6 +1313,15 @@
       "day": "2026-11-11",
       "source": "football-data PL",
       "at": "2026-11-11T15:21:51Z"
+    },
+    {
+      "id": "6af4a88de2a4a708f4cf66f9",
+      "kind": "duel",
+      "text": "⚽ En Premier League, Erling Haaland compte 9 buts en 10 matchs ; Rayan Cherki, 5 buts et 2 passes décisives en 10 matchs. Haaland ou Cherki ? Les deux évoluent à Manchester City.\n\n#Haaland #Cherki",
+      "due": "2026-11-11T21:35Z",
+      "day": "2026-11-11",
+      "source": "football-data PL",
+      "at": "2026-11-11T17:40:29Z"
     }
   ],
   "slots": {
@@ -1398,7 +1407,8 @@
     "2026-11-11T14:00": "done",
     "2026-11-11T16:30": "done",
     "2026-11-11T19:15": "done",
-    "2026-11-11T20:15": "done"
+    "2026-11-11T20:15": "done",
+    "2026-11-11T22:35": "done"
   },
   "slot_tries": {
     "2026-10-27T20:15": 1,
@@ -1480,7 +1490,8 @@
     "2026-11-11T14:00": 1,
     "2026-11-11T16:30": 1,
     "2026-11-11T19:15": 1,
-    "2026-11-11T20:15": 1
+    "2026-11-11T20:15": 1,
+    "2026-11-11T22:35": 1
   },
   "reacted": [
     "559648",
@@ -1597,18 +1608,18 @@
     "9e388c1064c7",
     "388a2998dabb"
   ],
-  "counter": 146,
+  "counter": 147,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 239,
-        "in": 173270,
-        "out": 37164
+        "calls": 240,
+        "in": 174223,
+        "out": 37446
       },
       "gpt-6.1-sol": {
-        "calls": 225,
-        "in": 80644,
-        "out": 12146
+        "calls": 226,
+        "in": 81006,
+        "out": 12185
       }
     }
   },
@@ -1717,6 +1728,7 @@
     "erling haaland|sehrou guirassy",
     "alphadjo cisse|marcus thuram-ulien",
     "adrien rabiot|marcus thuram-ulien",
-    "erling haaland|morgan rogers"
+    "erling haaland|morgan rogers",
+    "erling haaland|rayan cherki"
   ]
 }
