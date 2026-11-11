@@ -1286,6 +1286,15 @@
       "day": "2026-11-11",
       "source": "football-data BL1",
       "at": "2026-11-11T09:00:40Z"
+    },
+    {
+      "id": "6af451d742a5c8fca2428991",
+      "kind": "duel",
+      "text": "⚽ En Serie A, Marcus Thuram-Ulien : 6 buts et 2 passes décisives en 11 matchs. Adrien Rabiot : 5 buts et 4 passes décisives en 9 matchs. Thuram ou Rabiot ? À vos couleurs, les supporters !\n\n#SerieA",
+      "due": "2026-11-11T15:30Z",
+      "day": "2026-11-11",
+      "source": "football-data SA",
+      "at": "2026-11-11T11:30:31Z"
     }
   ],
   "slots": {
@@ -1368,7 +1377,8 @@
     "2026-11-10T22:35": "done",
     "2026-11-11T08:05": "done",
     "2026-11-11T10:45": "done",
-    "2026-11-11T14:00": "done"
+    "2026-11-11T14:00": "done",
+    "2026-11-11T16:30": "done"
   },
   "slot_tries": {
     "2026-10-27T20:15": 1,
@@ -1447,7 +1457,8 @@
     "2026-11-10T22:35": 1,
     "2026-11-11T08:05": 1,
     "2026-11-11T10:45": 1,
-    "2026-11-11T14:00": 1
+    "2026-11-11T14:00": 1,
+    "2026-11-11T16:30": 1
   },
   "reacted": [
     "559648",
@@ -1564,18 +1575,18 @@
     "9e388c1064c7",
     "388a2998dabb"
   ],
-  "counter": 143,
+  "counter": 144,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 234,
-        "in": 168087,
-        "out": 36091
+        "calls": 235,
+        "in": 169049,
+        "out": 36299
       },
       "gpt-6.1-sol": {
-        "calls": 221,
-        "in": 78922,
-        "out": 12008
+        "calls": 222,
+        "in": 79302,
+        "out": 12035
       }
     }
   },
@@ -1681,6 +1692,7 @@
     "kylian mbappe|raphinha",
     "erling haaland|joao pedro",
     "erling haaland|sehrou guirassy",
-    "alphadjo cisse|marcus thuram-ulien"
+    "alphadjo cisse|marcus thuram-ulien",
+    "adrien rabiot|marcus thuram-ulien"
   ]
 }
