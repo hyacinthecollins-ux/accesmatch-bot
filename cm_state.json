@@ -1250,6 +1250,15 @@
       "day": "2026-11-11",
       "source": "football-data PD",
       "at": "2026-11-11T03:10:35Z"
+    },
+    {
+      "id": "6af40227e324ad28736aefd8",
+      "kind": "debate",
+      "text": "Après 12 journées, le Barça mène avec 33 points, devant le Real Madrid (30) et l’Atlético (28). La course au titre a déjà trois candidats bien placés : qui vous fait vibrer ? 🔥\n\n#FCBarcelona #RealMadrid",
+      "due": "2026-11-11T09:45Z",
+      "day": "2026-11-11",
+      "source": "football-data PD",
+      "at": "2026-11-11T05:50:31Z"
     }
   ],
   "slots": {
@@ -1330,7 +1339,8 @@
     "2026-11-10T19:15": "done",
     "2026-11-10T20:15": "done",
     "2026-11-10T22:35": "done",
-    "2026-11-11T08:05": "done"
+    "2026-11-11T08:05": "done",
+    "2026-11-11T10:45": "done"
   },
   "slot_tries": {
     "2026-10-27T20:15": 1,
@@ -1407,7 +1417,8 @@
     "2026-11-10T19:15": 1,
     "2026-11-10T20:15": 1,
     "2026-11-10T22:35": 1,
-    "2026-11-11T08:05": 1
+    "2026-11-11T08:05": 1,
+    "2026-11-11T10:45": 1
   },
   "reacted": [
     "559648",
@@ -1522,18 +1533,18 @@
     "951b7ade44e3",
     "e8fd96ae6c99"
   ],
-  "counter": 139,
+  "counter": 140,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 228,
-        "in": 162039,
-        "out": 35089
+        "calls": 230,
+        "in": 164032,
+        "out": 35338
       },
       "gpt-6.1-sol": {
-        "calls": 215,
-        "in": 76377,
-        "out": 11633
+        "calls": 217,
+        "in": 77212,
+        "out": 11801
       }
     }
   },
@@ -1618,8 +1629,8 @@
       "at": "2026-11-10T05:50:16.955581+00:00"
     },
     "PD": {
-      "sig": "7b099506c712",
-      "at": "2026-11-08T11:30:14.917790+00:00"
+      "sig": "8913e7a8bc87",
+      "at": "2026-11-11T05:50:14.409869+00:00"
     },
     "FL1": {
       "sig": "68bab02d12ee",
