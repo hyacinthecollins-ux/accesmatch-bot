@@ -1268,6 +1268,15 @@
       "day": "2026-11-11",
       "source": "L'Equipe",
       "at": "2026-11-11T06:20:28Z"
+    },
+    {
+      "id": "6af419961da76fd3d2cb5274",
+      "kind": "breaking",
+      "text": "🚨 Selon Laodong.vn, Jungkook (BTS) dépasse l’attrait de Messi et Ronaldo. Quand la pop culture entre dans le match, le débat change de terrain. Vous y croyez ?\n\n#Messi #Ronaldo",
+      "due": "2026-11-11T07:40Z",
+      "day": "2026-11-11",
+      "source": "Laodong.vn",
+      "at": "2026-11-11T07:30:30Z"
     }
   ],
   "slots": {
@@ -1541,20 +1550,21 @@
     "a65657963a8f",
     "951b7ade44e3",
     "e8fd96ae6c99",
-    "9e388c1064c7"
+    "9e388c1064c7",
+    "388a2998dabb"
   ],
-  "counter": 141,
+  "counter": 142,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 231,
-        "in": 164999,
-        "out": 35520
+        "calls": 232,
+        "in": 165908,
+        "out": 35745
       },
       "gpt-6.1-sol": {
-        "calls": 218,
-        "in": 77619,
-        "out": 11839
+        "calls": 219,
+        "in": 77957,
+        "out": 11881
       }
     }
   },
@@ -1603,7 +1613,8 @@
     "Real Madrid-PFC, PSG-Bayern, Juventus-OL Lyonnes : le programme complet de la quatrième journée de Ligue des champions (F)",
     "Real Madrid : Vinicius Jr agacerait beaucoup Jude Bellingham",
     "Pour Gerrard, Yamal est en avance sur Messi et Ronaldo",
-    "Entre le capitaine Kylian Mbappé et le sélectionneur Zinédine Zidane, une ligne à établir chez les Bleus"
+    "Entre le capitaine Kylian Mbappé et le sélectionneur Zinédine Zidane, une ligne à établir chez les Bleus",
+    "Jungkook (BTS) dépasse l'attrait de Messi et Ronaldo"
   ],
   "recent_stats": [
     "erling haaland",
