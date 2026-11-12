@@ -1394,6 +1394,15 @@
       "day": "2026-11-12",
       "source": "football-data SA",
       "at": "2026-11-12T14:20:28Z"
+    },
+    {
+      "id": "6af5d947e4e14a2516e4a76b",
+      "kind": "duel",
+      "text": "⚽ En Serie A, Alphadjo Cisse a inscrit 5 buts en 11 matchs. Adrien Rabiot compte 5 buts et 4 passes décisives en 9 matchs. Cisse ou Rabiot ? Les supporters ont la parole, écharpes au vent !\n\n#SerieA",
+      "due": "2026-11-12T19:15Z",
+      "day": "2026-11-12",
+      "source": "football-data SA",
+      "at": "2026-11-12T15:20:40Z"
     }
   ],
   "slots": {
@@ -1485,7 +1494,8 @@
     "2026-11-12T10:45": "done",
     "2026-11-12T14:00": "done",
     "2026-11-12T16:30": "done",
-    "2026-11-12T19:15": "done"
+    "2026-11-12T19:15": "done",
+    "2026-11-12T20:15": "done"
   },
   "slot_tries": {
     "2026-10-27T20:15": 1,
@@ -1573,7 +1583,8 @@
     "2026-11-12T10:45": 1,
     "2026-11-12T14:00": 1,
     "2026-11-12T16:30": 1,
-    "2026-11-12T19:15": 1
+    "2026-11-12T19:15": 1,
+    "2026-11-12T20:15": 1
   },
   "reacted": [
     "559648",
@@ -1693,18 +1704,18 @@
     "3a6de0a376c2",
     "e028073506d2"
   ],
-  "counter": 155,
+  "counter": 156,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 250,
-        "in": 184173,
-        "out": 39246
+        "calls": 251,
+        "in": 185129,
+        "out": 39378
       },
       "gpt-6.1-sol": {
-        "calls": 235,
-        "in": 84793,
-        "out": 12593
+        "calls": 236,
+        "in": 85165,
+        "out": 12624
       }
     }
   },
@@ -1823,6 +1834,7 @@
     "adrien rabiot|marcus thuram-ulien",
     "erling haaland|morgan rogers",
     "erling haaland|rayan cherki",
-    "erling haaland|raphinha"
+    "erling haaland|raphinha",
+    "adrien rabiot|alphadjo cisse"
   ]
 }
