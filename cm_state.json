@@ -1376,6 +1376,15 @@
       "day": "2026-11-12",
       "source": "football-data CL",
       "at": "2026-11-12T09:00:36Z"
+    },
+    {
+      "id": "6af5a3545389053222271b95",
+      "kind": "duel",
+      "text": "⚽ En Ligue des champions, Erling Haaland (Man City) compte 5 buts en 4 matchs. Raphinha (Barça) en a inscrit 4 en 3 matchs. Haaland ou Raphinha ? Les supporters sortent la calculette, mais pas pour compter les occasions ratées !\n\n#Haaland #Raphinha",
+      "due": "2026-11-12T15:30Z",
+      "day": "2026-11-12",
+      "source": "football-data CL",
+      "at": "2026-11-12T11:30:28Z"
     }
   ],
   "slots": {
@@ -1465,7 +1474,8 @@
     "2026-11-11T22:35": "done",
     "2026-11-12T08:05": "done",
     "2026-11-12T10:45": "done",
-    "2026-11-12T14:00": "done"
+    "2026-11-12T14:00": "done",
+    "2026-11-12T16:30": "done"
   },
   "slot_tries": {
     "2026-10-27T20:15": 1,
@@ -1551,7 +1561,8 @@
     "2026-11-11T22:35": 1,
     "2026-11-12T08:05": 1,
     "2026-11-12T10:45": 1,
-    "2026-11-12T14:00": 1
+    "2026-11-12T14:00": 1,
+    "2026-11-12T16:30": 1
   },
   "reacted": [
     "559648",
@@ -1671,18 +1682,18 @@
     "3a6de0a376c2",
     "e028073506d2"
   ],
-  "counter": 153,
+  "counter": 154,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 248,
-        "in": 182168,
-        "out": 39010
+        "calls": 249,
+        "in": 183115,
+        "out": 39182
       },
       "gpt-6.1-sol": {
-        "calls": 233,
-        "in": 83926,
-        "out": 12509
+        "calls": 234,
+        "in": 84295,
+        "out": 12544
       }
     }
   },
@@ -1800,6 +1811,7 @@
     "alphadjo cisse|marcus thuram-ulien",
     "adrien rabiot|marcus thuram-ulien",
     "erling haaland|morgan rogers",
-    "erling haaland|rayan cherki"
+    "erling haaland|rayan cherki",
+    "erling haaland|raphinha"
   ]
 }
