@@ -1358,6 +1358,15 @@
       "day": "2026-11-12",
       "source": "RTL",
       "at": "2026-11-12T06:20:29Z"
+    },
+    {
+      "id": "6af56b1a15999d2da11b3ac9",
+      "kind": "breaking",
+      "text": "🚨 Selon L’Équipe, Michael Olise est impliqué sur 24 buts depuis le début de saison, avec le Bayern et les Bleus. Le Français a le pied chaud : ça promet !\n\n#Olise #FCBayern",
+      "due": "2026-11-12T07:40Z",
+      "day": "2026-11-12",
+      "source": "L'Equipe",
+      "at": "2026-11-12T07:30:34Z"
     }
   ],
   "slots": {
@@ -1648,20 +1657,21 @@
     "9e388c1064c7",
     "388a2998dabb",
     "a34ce65d6858",
-    "3a6de0a376c2"
+    "3a6de0a376c2",
+    "e028073506d2"
   ],
-  "counter": 151,
+  "counter": 152,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 245,
-        "in": 179081,
-        "out": 38367
+        "calls": 247,
+        "in": 181085,
+        "out": 38876
       },
       "gpt-6.1-sol": {
-        "calls": 231,
-        "in": 83015,
-        "out": 12419
+        "calls": 232,
+        "in": 83423,
+        "out": 12462
       }
     }
   },
@@ -1713,7 +1723,8 @@
     "Entre le capitaine Kylian Mbappé et le sélectionneur Zinédine Zidane, une ligne à établir chez les Bleus",
     "Jungkook (BTS) dépasse l'attrait de Messi et Ronaldo",
     "Italie - france. sans kylian mbappé, désiré doué prend la lumière… et l’axe",
-    "Doué, Pagis, Barcola Mayulu, Kroupi... Le casse-tête de Zidane pour remplacer Mbappé à la pointe de l'attaque des Bleus face à l'Italie"
+    "Doué, Pagis, Barcola Mayulu, Kroupi... Le casse-tête de Zidane pour remplacer Mbappé à la pointe de l'attaque des Bleus face à l'Italie",
+    "Plus de buts que Kane avec le Bayern et capital avec les Bleus : Olise, décisif comme jamais"
   ],
   "recent_stats": [
     "erling haaland",
