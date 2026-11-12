@@ -1349,6 +1349,15 @@
       "day": "2026-11-12",
       "source": "football-data PL",
       "at": "2026-11-12T05:50:31Z"
+    },
+    {
+      "id": "6af55aad853b382e4d879837",
+      "kind": "breaking",
+      "text": "🚨 Selon RTL, Zidane cherche comment remplacer Mbappé en pointe face à l’Italie, avec Doué, Pagis, Barcola, Mayulu et Kroupi dans le débat. À qui confieriez-vous le poste ?\n\n#Mbappé #Doué",
+      "due": "2026-11-12T06:30Z",
+      "day": "2026-11-12",
+      "source": "RTL",
+      "at": "2026-11-12T06:20:29Z"
     }
   ],
   "slots": {
@@ -1638,20 +1647,21 @@
     "e8fd96ae6c99",
     "9e388c1064c7",
     "388a2998dabb",
-    "a34ce65d6858"
+    "a34ce65d6858",
+    "3a6de0a376c2"
   ],
-  "counter": 150,
+  "counter": 151,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 244,
-        "in": 178165,
-        "out": 38154
+        "calls": 245,
+        "in": 179081,
+        "out": 38367
       },
       "gpt-6.1-sol": {
-        "calls": 230,
-        "in": 82652,
-        "out": 12386
+        "calls": 231,
+        "in": 83015,
+        "out": 12419
       }
     }
   },
@@ -1702,7 +1712,8 @@
     "Pour Gerrard, Yamal est en avance sur Messi et Ronaldo",
     "Entre le capitaine Kylian Mbappé et le sélectionneur Zinédine Zidane, une ligne à établir chez les Bleus",
     "Jungkook (BTS) dépasse l'attrait de Messi et Ronaldo",
-    "Italie - france. sans kylian mbappé, désiré doué prend la lumière… et l’axe"
+    "Italie - france. sans kylian mbappé, désiré doué prend la lumière… et l’axe",
+    "Doué, Pagis, Barcola Mayulu, Kroupi... Le casse-tête de Zidane pour remplacer Mbappé à la pointe de l'attaque des Bleus face à l'Italie"
   ],
   "recent_stats": [
     "erling haaland",
