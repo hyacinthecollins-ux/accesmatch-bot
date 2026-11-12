@@ -1331,6 +1331,15 @@
       "day": "2026-11-12",
       "source": "Sud Ouest",
       "at": "2026-11-11T23:00:39Z"
+    },
+    {
+      "id": "6af52e252f7f0a6952e964e3",
+      "kind": "stat",
+      "text": "📊 Patrik Schick (Leverkusen), 2e des buteurs de Bundesliga : 8 buts et 2 passes décisives en 9 matchs. L’attaquant a le sens du rendez-vous.\n\n#Bundesliga",
+      "due": "2026-11-12T07:05Z",
+      "day": "2026-11-12",
+      "source": "football-data BL1",
+      "at": "2026-11-12T03:10:29Z"
     }
   ],
   "slots": {
@@ -1417,7 +1426,8 @@
     "2026-11-11T16:30": "done",
     "2026-11-11T19:15": "done",
     "2026-11-11T20:15": "done",
-    "2026-11-11T22:35": "done"
+    "2026-11-11T22:35": "done",
+    "2026-11-12T08:05": "done"
   },
   "slot_tries": {
     "2026-10-27T20:15": 1,
@@ -1500,7 +1510,8 @@
     "2026-11-11T16:30": 1,
     "2026-11-11T19:15": 1,
     "2026-11-11T20:15": 1,
-    "2026-11-11T22:35": 1
+    "2026-11-11T22:35": 1,
+    "2026-11-12T08:05": 1
   },
   "reacted": [
     "559648",
@@ -1618,18 +1629,18 @@
     "388a2998dabb",
     "a34ce65d6858"
   ],
-  "counter": 148,
+  "counter": 149,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 241,
-        "in": 175130,
-        "out": 37674
+        "calls": 242,
+        "in": 176183,
+        "out": 37864
       },
       "gpt-6.1-sol": {
-        "calls": 227,
-        "in": 81348,
-        "out": 12221
+        "calls": 228,
+        "in": 81831,
+        "out": 12262
       }
     }
   },
@@ -1711,7 +1722,8 @@
     "alexander isak",
     "kylian mbappe",
     "michael olise",
-    "raphinha"
+    "raphinha",
+    "patrik schick"
   ],
   "debates": {
     "CL": {
