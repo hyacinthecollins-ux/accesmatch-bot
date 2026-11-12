@@ -1385,6 +1385,15 @@
       "day": "2026-11-12",
       "source": "football-data CL",
       "at": "2026-11-12T11:30:28Z"
+    },
+    {
+      "id": "6af5cb2c0900687297eda5bb",
+      "kind": "stat",
+      "text": "📊 Donyell Malen (Roma), 2e des buteurs de Serie A avec 8 buts et 2 passes décisives en 10 matchs. Malen pèse au score comme à la passe : il a participé à 10 buts.\n\n#SerieA",
+      "due": "2026-11-12T18:15Z",
+      "day": "2026-11-12",
+      "source": "football-data SA",
+      "at": "2026-11-12T14:20:28Z"
     }
   ],
   "slots": {
@@ -1475,7 +1484,8 @@
     "2026-11-12T08:05": "done",
     "2026-11-12T10:45": "done",
     "2026-11-12T14:00": "done",
-    "2026-11-12T16:30": "done"
+    "2026-11-12T16:30": "done",
+    "2026-11-12T19:15": "done"
   },
   "slot_tries": {
     "2026-10-27T20:15": 1,
@@ -1562,7 +1572,8 @@
     "2026-11-12T08:05": 1,
     "2026-11-12T10:45": 1,
     "2026-11-12T14:00": 1,
-    "2026-11-12T16:30": 1
+    "2026-11-12T16:30": 1,
+    "2026-11-12T19:15": 1
   },
   "reacted": [
     "559648",
@@ -1682,18 +1693,18 @@
     "3a6de0a376c2",
     "e028073506d2"
   ],
-  "counter": 154,
+  "counter": 155,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 249,
-        "in": 183115,
-        "out": 39182
+        "calls": 250,
+        "in": 184173,
+        "out": 39246
       },
       "gpt-6.1-sol": {
-        "calls": 234,
-        "in": 84295,
-        "out": 12544
+        "calls": 235,
+        "in": 84793,
+        "out": 12593
       }
     }
   },
@@ -1749,7 +1760,6 @@
     "Plus de buts que Kane avec le Bayern et capital avec les Bleus : Olise, décisif comme jamais"
   ],
   "recent_stats": [
-    "raphinha",
     "rayan cherki",
     "bukayo saka",
     "michael olise",
@@ -1778,7 +1788,8 @@
     "michael olise",
     "raphinha",
     "patrik schick",
-    "harry kane"
+    "harry kane",
+    "donyell malen"
   ],
   "debates": {
     "CL": {
