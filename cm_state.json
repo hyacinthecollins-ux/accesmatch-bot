@@ -1412,6 +1412,15 @@
       "day": "2026-11-12",
       "source": "football-data PD",
       "at": "2026-11-12T17:40:27Z"
+    },
+    {
+      "id": "6af64528da25c4db3e7f251f",
+      "kind": "breaking",
+      "text": "🚨 Selon 433foot, après le 3-1 de l’Italie face à la France, Gusto reçoit 2, Olise et Cherki 5 ; Doué figure aussi parmi les décevants. La feuille de notes n’a pas sorti le bleu de chauffe.\n\n#Olise #Doué",
+      "due": "2026-11-12T23:10Z",
+      "day": "2026-11-13",
+      "source": "www.433foot",
+      "at": "2026-11-12T23:00:56Z"
     }
   ],
   "slots": {
@@ -1713,20 +1722,21 @@
     "388a2998dabb",
     "a34ce65d6858",
     "3a6de0a376c2",
-    "e028073506d2"
+    "e028073506d2",
+    "64330a093acc"
   ],
-  "counter": 157,
+  "counter": 158,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 252,
-        "in": 186085,
-        "out": 39532
+        "calls": 255,
+        "in": 189016,
+        "out": 40407
       },
       "gpt-6.1-sol": {
-        "calls": 237,
-        "in": 85543,
-        "out": 12661
+        "calls": 240,
+        "in": 86665,
+        "out": 12856
       }
     }
   },
@@ -1779,7 +1789,8 @@
     "Jungkook (BTS) dépasse l'attrait de Messi et Ronaldo",
     "Italie - france. sans kylian mbappé, désiré doué prend la lumière… et l’axe",
     "Doué, Pagis, Barcola Mayulu, Kroupi... Le casse-tête de Zidane pour remplacer Mbappé à la pointe de l'attaque des Bleus face à l'Italie",
-    "Plus de buts que Kane avec le Bayern et capital avec les Bleus : Olise, décisif comme jamais"
+    "Plus de buts que Kane avec le Bayern et capital avec les Bleus : Olise, décisif comme jamais",
+    "Les notes d'Italie - France (3-1) : Gusto (2), catastrophique, Doué, Olise (5) et Cherki (5) décevants"
   ],
   "recent_stats": [
     "rayan cherki",
