@@ -1340,6 +1340,15 @@
       "day": "2026-11-12",
       "source": "football-data BL1",
       "at": "2026-11-12T03:10:29Z"
+    },
+    {
+      "id": "6af553a7016d3b89d8a7901f",
+      "kind": "debate",
+      "text": "Arsenal est leader, mais Brighton colle au sommet avec une différence de buts qui fait de l’ombre à tout le monde. Le classement a trouvé son trouble-fête : Brighton peut-il tenir la cadence ? 🐦\n\n#Arsenal #PremierLeague",
+      "due": "2026-11-12T09:45Z",
+      "day": "2026-11-12",
+      "source": "football-data PL",
+      "at": "2026-11-12T05:50:31Z"
     }
   ],
   "slots": {
@@ -1427,7 +1436,8 @@
     "2026-11-11T19:15": "done",
     "2026-11-11T20:15": "done",
     "2026-11-11T22:35": "done",
-    "2026-11-12T08:05": "done"
+    "2026-11-12T08:05": "done",
+    "2026-11-12T10:45": "done"
   },
   "slot_tries": {
     "2026-10-27T20:15": 1,
@@ -1511,7 +1521,8 @@
     "2026-11-11T19:15": 1,
     "2026-11-11T20:15": 1,
     "2026-11-11T22:35": 1,
-    "2026-11-12T08:05": 1
+    "2026-11-12T08:05": 1,
+    "2026-11-12T10:45": 1
   },
   "reacted": [
     "559648",
@@ -1629,18 +1640,18 @@
     "388a2998dabb",
     "a34ce65d6858"
   ],
-  "counter": 149,
+  "counter": 150,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 242,
-        "in": 176183,
-        "out": 37864
+        "calls": 244,
+        "in": 178165,
+        "out": 38154
       },
       "gpt-6.1-sol": {
-        "calls": 228,
-        "in": 81831,
-        "out": 12262
+        "calls": 230,
+        "in": 82652,
+        "out": 12386
       }
     }
   },
@@ -1737,6 +1748,10 @@
     "FL1": {
       "sig": "68bab02d12ee",
       "at": "2026-11-09T05:50:15.827223+00:00"
+    },
+    "PL": {
+      "sig": "16fd85c4a8b7",
+      "at": "2026-11-12T05:50:15.752203+00:00"
     }
   },
   "recent_duels": [
