@@ -1430,6 +1430,15 @@
       "day": "2026-11-13",
       "source": "football-data PL",
       "at": "2026-11-13T03:10:28Z"
+    },
+    {
+      "id": "6af6a525ba218f32637f296e",
+      "kind": "debate",
+      "text": "Le Barça mène, mais le Real Madrid et l’Atlético restent dans le sillage. Trois poids lourds lancés dans la course au titre : qui a le plus de chances de faire vibrer ses supporters ? 🔥\n\n#FCBarcelona #RealMadrid",
+      "due": "2026-11-13T09:45Z",
+      "day": "2026-11-13",
+      "source": "football-data PD",
+      "at": "2026-11-13T05:50:29Z"
     }
   ],
   "slots": {
@@ -1524,7 +1533,8 @@
     "2026-11-12T19:15": "done",
     "2026-11-12T20:15": "done",
     "2026-11-12T22:35": "done",
-    "2026-11-13T08:05": "done"
+    "2026-11-13T08:05": "done",
+    "2026-11-13T10:45": "done"
   },
   "slot_tries": {
     "2026-10-27T20:15": 1,
@@ -1615,7 +1625,8 @@
     "2026-11-12T19:15": 1,
     "2026-11-12T20:15": 1,
     "2026-11-12T22:35": 1,
-    "2026-11-13T08:05": 1
+    "2026-11-13T08:05": 1,
+    "2026-11-13T10:45": 1
   },
   "reacted": [
     "559648",
@@ -1736,18 +1747,18 @@
     "e028073506d2",
     "64330a093acc"
   ],
-  "counter": 159,
+  "counter": 160,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 256,
-        "in": 190056,
-        "out": 40762
+        "calls": 257,
+        "in": 191029,
+        "out": 40972
       },
       "gpt-6.1-sol": {
-        "calls": 241,
-        "in": 87132,
-        "out": 12885
+        "calls": 242,
+        "in": 87548,
+        "out": 12941
       }
     }
   },
@@ -1841,8 +1852,8 @@
       "at": "2026-11-10T05:50:16.955581+00:00"
     },
     "PD": {
-      "sig": "8913e7a8bc87",
-      "at": "2026-11-11T05:50:14.409869+00:00"
+      "sig": "23036d7662e6",
+      "at": "2026-11-13T05:50:17.386550+00:00"
     },
     "FL1": {
       "sig": "68bab02d12ee",
