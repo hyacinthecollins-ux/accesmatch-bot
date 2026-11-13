@@ -1421,6 +1421,15 @@
       "day": "2026-11-13",
       "source": "www.433foot",
       "at": "2026-11-12T23:00:56Z"
+    },
+    {
+      "id": "6af67fa4ba218f3263755d40",
+      "kind": "stat",
+      "text": "📊 Erling Haaland (Man City) est en tête des buteurs de Premier League avec 9 buts en 10 matchs. Le classement commence par son nom : 9 réalisations en 10 rencontres.\n\n#Haaland #ManCity",
+      "due": "2026-11-13T07:05Z",
+      "day": "2026-11-13",
+      "source": "football-data PL",
+      "at": "2026-11-13T03:10:28Z"
     }
   ],
   "slots": {
@@ -1514,7 +1523,8 @@
     "2026-11-12T16:30": "done",
     "2026-11-12T19:15": "done",
     "2026-11-12T20:15": "done",
-    "2026-11-12T22:35": "done"
+    "2026-11-12T22:35": "done",
+    "2026-11-13T08:05": "done"
   },
   "slot_tries": {
     "2026-10-27T20:15": 1,
@@ -1604,7 +1614,8 @@
     "2026-11-12T16:30": 1,
     "2026-11-12T19:15": 1,
     "2026-11-12T20:15": 1,
-    "2026-11-12T22:35": 1
+    "2026-11-12T22:35": 1,
+    "2026-11-13T08:05": 1
   },
   "reacted": [
     "559648",
@@ -1725,18 +1736,18 @@
     "e028073506d2",
     "64330a093acc"
   ],
-  "counter": 158,
+  "counter": 159,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 255,
-        "in": 189016,
-        "out": 40407
+        "calls": 256,
+        "in": 190056,
+        "out": 40762
       },
       "gpt-6.1-sol": {
-        "calls": 240,
-        "in": 86665,
-        "out": 12856
+        "calls": 241,
+        "in": 87132,
+        "out": 12885
       }
     }
   },
@@ -1793,7 +1804,6 @@
     "Les notes d'Italie - France (3-1) : Gusto (2), catastrophique, Doué, Olise (5) et Cherki (5) décevants"
   ],
   "recent_stats": [
-    "rayan cherki",
     "bukayo saka",
     "michael olise",
     "alexander isak",
@@ -1822,7 +1832,8 @@
     "raphinha",
     "patrik schick",
     "harry kane",
-    "donyell malen"
+    "donyell malen",
+    "erling haaland"
   ],
   "debates": {
     "CL": {
