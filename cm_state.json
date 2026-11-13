@@ -1439,6 +1439,15 @@
       "day": "2026-11-13",
       "source": "football-data PD",
       "at": "2026-11-13T05:50:29Z"
+    },
+    {
+      "id": "6af6ac33ba218f32638185d1",
+      "kind": "breaking",
+      "text": "🚨 Selon Le Dauphiné Libéré, Olise a marqué avant de s’effacer en seconde période face à l’Italie : son match a été mitigé. Une étincelle, puis le silence.\n\n#Olise",
+      "due": "2026-11-13T06:30Z",
+      "day": "2026-11-13",
+      "source": "Le Dauphiné Libéré",
+      "at": "2026-11-13T06:20:35Z"
     }
   ],
   "slots": {
@@ -1745,20 +1754,21 @@
     "a34ce65d6858",
     "3a6de0a376c2",
     "e028073506d2",
-    "64330a093acc"
+    "64330a093acc",
+    "2ef08644778e"
   ],
-  "counter": 160,
+  "counter": 161,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 257,
-        "in": 191029,
-        "out": 40972
+        "calls": 259,
+        "in": 192958,
+        "out": 41383
       },
       "gpt-6.1-sol": {
-        "calls": 242,
-        "in": 87548,
-        "out": 12941
+        "calls": 244,
+        "in": 88258,
+        "out": 13035
       }
     }
   },
@@ -1812,7 +1822,8 @@
     "Italie - france. sans kylian mbappé, désiré doué prend la lumière… et l’axe",
     "Doué, Pagis, Barcola Mayulu, Kroupi... Le casse-tête de Zidane pour remplacer Mbappé à la pointe de l'attaque des Bleus face à l'Italie",
     "Plus de buts que Kane avec le Bayern et capital avec les Bleus : Olise, décisif comme jamais",
-    "Les notes d'Italie - France (3-1) : Gusto (2), catastrophique, Doué, Olise (5) et Cherki (5) décevants"
+    "Les notes d'Italie - France (3-1) : Gusto (2), catastrophique, Doué, Olise (5) et Cherki (5) décevants",
+    "Équipe de France. Un but avant de s'effacer en seconde période : un match mitigé pour Olise face à l'Italie"
   ],
   "recent_stats": [
     "bukayo saka",
