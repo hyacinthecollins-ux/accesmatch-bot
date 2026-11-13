@@ -1,19 +1,5 @@
 {
   "items": {
-    "p575350": {
-      "kind": "preview",
-      "match_id": 575350,
-      "label": "LASK-LIVERPOOL",
-      "kickoff": "2026-10-14T16:45:00Z",
-      "status": "failed",
-      "poster": "posters/p575350-20261014.jpg",
-      "post_id": null,
-      "due": null,
-      "created": "2026-10-13T09:04:21Z",
-      "fails": 3,
-      "design": "crests-v1",
-      "tg": "skip"
-    },
     "p575353": {
       "kind": "preview",
       "match_id": 575353,
@@ -41,20 +27,6 @@
       "fails": 3,
       "design": "crests-v1",
       "tg": "skip"
-    },
-    "r575350": {
-      "kind": "result",
-      "match_id": 575350,
-      "label": "LASK-LIVERPOOL",
-      "kickoff": "2026-10-14T16:45:00Z",
-      "status": "failed",
-      "poster": "posters/r575350-20261014.jpg",
-      "post_id": null,
-      "due": null,
-      "created": "2026-10-14T20:04:33Z",
-      "fails": 3,
-      "design": "crests-v1",
-      "tg": "sent"
     },
     "r575353": {
       "kind": "result",
