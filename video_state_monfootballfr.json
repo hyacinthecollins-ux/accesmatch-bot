@@ -587,21 +587,41 @@
       "due": "2026-11-26T08:15:00.000Z",
       "at": "2026-11-12T11:09:17Z",
       "title": "Les deux penalties manqués par Mbappé 🤯🥶 ⚽"
+    },
+    "V21vkHxBfcA": {
+      "post_id": "6af6ed5c10ced6793b2cc0c3",
+      "due": "2026-11-26T11:30:00.000Z",
+      "at": "2026-11-13T10:58:36Z",
+      "title": "Marcelo Skills ⚽"
+    },
+    "7447957734328225046": {
+      "post_id": "6af6ed5fd414da1f7d9caff2",
+      "due": "2026-11-26T17:30:00.000Z",
+      "at": "2026-11-13T10:58:39Z",
+      "title": "Neymar taught him his skills 🤩 🎵 Noedv - Want U ⚽"
+    },
+    "6P5DlpKUYbQ": {
+      "post_id": "6af6ed627828e7ae1b03c169",
+      "due": "2026-11-26T20:45:00.000Z",
+      "at": "2026-11-13T10:58:43Z",
+      "title": "Acrobatic Ball Control 🥶 ⚽"
+    },
+    "CBunUTCQ9Yk": {
+      "post_id": "6af6ed667828e7ae1b03c242",
+      "due": "2026-11-27T08:15:00.000Z",
+      "at": "2026-11-13T10:58:46Z",
+      "title": "Olise & Yamal Ball Control 💀 ⚽"
     }
   },
   "failed": {},
-  "counter": 98,
+  "counter": 102,
   "recent_players": [
-    "olise",
-    "vinicius",
-    "barcola",
-    "mbappe"
+    "mbappe",
+    "marcelo",
+    "neymar",
+    "yamal"
   ],
   "recent_creators": [
-    "F11Skillz-TikTok",
-    "KickVibesEdit-TikTok",
-    "L7-Shorts",
-    "FootballEditsHD-TikTok",
     "Football8568-TikTok",
     "F11Skillz-TikTok",
     "HRPlays01-TikTok",
@@ -621,13 +641,13 @@
     "L7-Shorts",
     "HRPlays01-TikTok",
     "L7-Shorts",
-    "FootH25-TikTok"
+    "FootH25-TikTok",
+    "L7-Shorts",
+    "F11Skillz-TikTok",
+    "TeoCRi-Shorts",
+    "L7-Shorts"
   ],
   "recent_titles": [
-    "this player is literally unstoppable🥶⚽️",
-    "bellingham comedy moments 😂 ⚽",
-    "when haaland loses control ⚽",
-    "when players cheat against messi 🐐 ⚽",
     "revenge moments 😲 ⚽",
     "vini jr backheels 💀 ⚽",
     "pov ： you gave everything to win the champions ⚽",
@@ -653,13 +673,13 @@
     "vini did not forget 🥶 ⚽",
     "most humiliating penalty kicks 😱 ⚽",
     "barcola 0 finishing ⚽",
-    "les deux penalties manqués par mbappé 🤯🥶 ⚽"
+    "les deux penalties manqués par mbappé 🤯🥶 ⚽",
+    "marcelo skills ⚽",
+    "neymar taught him his skills 🤩 🎵 noedv - want u ⚽",
+    "acrobatic ball control 🥶 ⚽",
+    "olise & yamal ball control 💀 ⚽"
   ],
   "recent_stars": [
-    1,
-    0,
-    1,
-    0,
     0,
     1,
     1,
@@ -675,13 +695,13 @@
     1,
     0,
     1,
+    1,
+    0,
+    1,
+    0,
     1
   ],
   "recent_long": [
-    "messi",
-    "",
-    "ronaldo",
-    "",
     "",
     "neymar",
     "cherki",
@@ -697,6 +717,10 @@
     "vinicius",
     "",
     "barcola",
-    "mbappe"
+    "mbappe",
+    "",
+    "neymar",
+    "",
+    "yamal"
   ]
 }
