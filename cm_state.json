@@ -1448,6 +1448,15 @@
       "day": "2026-11-13",
       "source": "Le Dauphiné Libéré",
       "at": "2026-11-13T06:20:35Z"
+    },
+    {
+      "id": "6af6bc955ec1c9d5be68c8c8",
+      "kind": "breaking",
+      "text": "🚨 Selon Foot Mercato, sans Mbappé ni Dembélé, l’attaque des Bleus n’a pas assuré face à l’Italie (3-1), malgré une bonne entame. Sur le papier, le quatuor avait pourtant fière allure.\n\n#Mbappé #Dembélé",
+      "due": "2026-11-13T07:40Z",
+      "day": "2026-11-13",
+      "source": "Foot Mercato",
+      "at": "2026-11-13T07:30:29Z"
     }
   ],
   "slots": {
@@ -1755,20 +1764,21 @@
     "3a6de0a376c2",
     "e028073506d2",
     "64330a093acc",
-    "2ef08644778e"
+    "2ef08644778e",
+    "c8bdea5d2f85"
   ],
-  "counter": 161,
+  "counter": 162,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 259,
-        "in": 192958,
-        "out": 41383
+        "calls": 260,
+        "in": 193960,
+        "out": 41688
       },
       "gpt-6.1-sol": {
-        "calls": 244,
-        "in": 88258,
-        "out": 13035
+        "calls": 245,
+        "in": 88682,
+        "out": 13071
       }
     }
   },
@@ -1823,7 +1833,8 @@
     "Doué, Pagis, Barcola Mayulu, Kroupi... Le casse-tête de Zidane pour remplacer Mbappé à la pointe de l'attaque des Bleus face à l'Italie",
     "Plus de buts que Kane avec le Bayern et capital avec les Bleus : Olise, décisif comme jamais",
     "Les notes d'Italie - France (3-1) : Gusto (2), catastrophique, Doué, Olise (5) et Cherki (5) décevants",
-    "Équipe de France. Un but avant de s'effacer en seconde période : un match mitigé pour Olise face à l'Italie"
+    "Équipe de France. Un but avant de s'effacer en seconde période : un match mitigé pour Olise face à l'Italie",
+    "Équipe de France : sans Mbappé ni Dembélé, l’attaque des Bleus n’a pas assuré"
   ],
   "recent_stats": [
     "bukayo saka",
