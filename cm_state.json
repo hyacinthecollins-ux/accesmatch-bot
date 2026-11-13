@@ -1466,6 +1466,15 @@
       "day": "2026-11-13",
       "source": "football-data PD",
       "at": "2026-11-13T09:00:33Z"
+    },
+    {
+      "id": "6af6f4d366ff9797d87b8cbe",
+      "kind": "duel",
+      "text": "⚽ En Premier League cette saison, Alexander Isak (Liverpool) compte 7 buts en 9 matchs. João Pedro (Chelsea) : 5 buts et 3 passes décisives en 6 matchs. Isak ou João Pedro ? Les tribunes vont vibrer !\n\n#Liverpool #Chelsea",
+      "due": "2026-11-13T15:30Z",
+      "day": "2026-11-13",
+      "source": "football-data PL",
+      "at": "2026-11-13T11:30:27Z"
     }
   ],
   "slots": {
@@ -1562,7 +1571,8 @@
     "2026-11-12T22:35": "done",
     "2026-11-13T08:05": "done",
     "2026-11-13T10:45": "done",
-    "2026-11-13T14:00": "done"
+    "2026-11-13T14:00": "done",
+    "2026-11-13T16:30": "done"
   },
   "slot_tries": {
     "2026-10-27T20:15": 1,
@@ -1655,7 +1665,8 @@
     "2026-11-12T22:35": 1,
     "2026-11-13T08:05": 1,
     "2026-11-13T10:45": 1,
-    "2026-11-13T14:00": 1
+    "2026-11-13T14:00": 1,
+    "2026-11-13T16:30": 1
   },
   "reacted": [
     "559648",
@@ -1778,18 +1789,18 @@
     "2ef08644778e",
     "c8bdea5d2f85"
   ],
-  "counter": 163,
+  "counter": 164,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 261,
-        "in": 195007,
-        "out": 41897
+        "calls": 262,
+        "in": 195957,
+        "out": 42039
       },
       "gpt-6.1-sol": {
-        "calls": 246,
-        "in": 89177,
-        "out": 13109
+        "calls": 247,
+        "in": 89538,
+        "out": 13144
       }
     }
   },
@@ -1913,6 +1924,7 @@
     "erling haaland|rayan cherki",
     "erling haaland|raphinha",
     "adrien rabiot|alphadjo cisse",
-    "lamine yamal|raphinha"
+    "lamine yamal|raphinha",
+    "alexander isak|joao pedro"
   ]
 }
