@@ -1493,6 +1493,15 @@
       "day": "2026-11-13",
       "source": "football-data CL",
       "at": "2026-11-13T15:20:26Z"
+    },
+    {
+      "id": "6af74ba01047b6144cb7108e",
+      "kind": "duel",
+      "text": "⚽ Raphinha a signé 15 buts et 2 passes décisives en 11 matchs de Liga. Fermín López en compte 7 et 5 en 12 matchs : Raphinha ou Fermín ? Les deux jouent au Barça.\n\n#Raphinha #FCBarcelona",
+      "due": "2026-11-13T21:35Z",
+      "day": "2026-11-13",
+      "source": "football-data PD",
+      "at": "2026-11-13T17:40:48Z"
     }
   ],
   "slots": {
@@ -1592,7 +1601,8 @@
     "2026-11-13T14:00": "done",
     "2026-11-13T16:30": "done",
     "2026-11-13T19:15": "done",
-    "2026-11-13T20:15": "done"
+    "2026-11-13T20:15": "done",
+    "2026-11-13T22:35": "done"
   },
   "slot_tries": {
     "2026-10-27T20:15": 1,
@@ -1688,7 +1698,8 @@
     "2026-11-13T14:00": 1,
     "2026-11-13T16:30": 1,
     "2026-11-13T19:15": 1,
-    "2026-11-13T20:15": 1
+    "2026-11-13T20:15": 1,
+    "2026-11-13T22:35": 1
   },
   "reacted": [
     "559648",
@@ -1811,18 +1822,18 @@
     "2ef08644778e",
     "c8bdea5d2f85"
   ],
-  "counter": 166,
+  "counter": 167,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 264,
-        "in": 197969,
-        "out": 42374
+        "calls": 265,
+        "in": 198923,
+        "out": 42600
       },
       "gpt-6.1-sol": {
-        "calls": 249,
-        "in": 90418,
-        "out": 13218
+        "calls": 250,
+        "in": 90782,
+        "out": 13247
       }
     }
   },
@@ -1948,6 +1959,7 @@
     "adrien rabiot|alphadjo cisse",
     "lamine yamal|raphinha",
     "alexander isak|joao pedro",
-    "erling haaland|fabian ruiz"
+    "erling haaland|fabian ruiz",
+    "fermin lopez|raphinha"
   ]
 }
