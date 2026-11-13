@@ -1502,6 +1502,15 @@
       "day": "2026-11-13",
       "source": "football-data PD",
       "at": "2026-11-13T17:40:48Z"
+    },
+    {
+      "id": "6af796a7d16af15d4ddb21c4",
+      "kind": "breaking",
+      "text": "🚨 Selon RMC Sport, Kylian Mbappé a pris part à l’entraînement des Bleus, tandis que Doué reste incertain face à la Turquie. Mbappé est bien là, c’est déjà ça.\n\n#Mbappé #Doué",
+      "due": "2026-11-13T23:10Z",
+      "day": "2026-11-14",
+      "source": "RMC Sport",
+      "at": "2026-11-13T23:00:55Z"
     }
   ],
   "slots": {
@@ -1820,20 +1829,21 @@
     "e028073506d2",
     "64330a093acc",
     "2ef08644778e",
-    "c8bdea5d2f85"
+    "c8bdea5d2f85",
+    "1a40be91a813"
   ],
-  "counter": 167,
+  "counter": 168,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 265,
-        "in": 198923,
-        "out": 42600
+        "calls": 268,
+        "in": 202009,
+        "out": 43256
       },
       "gpt-6.1-sol": {
-        "calls": 250,
-        "in": 90782,
-        "out": 13247
+        "calls": 252,
+        "in": 91631,
+        "out": 13387
       }
     }
   },
@@ -1889,7 +1899,8 @@
     "Plus de buts que Kane avec le Bayern et capital avec les Bleus : Olise, décisif comme jamais",
     "Les notes d'Italie - France (3-1) : Gusto (2), catastrophique, Doué, Olise (5) et Cherki (5) décevants",
     "Équipe de France. Un but avant de s'effacer en seconde période : un match mitigé pour Olise face à l'Italie",
-    "Équipe de France : sans Mbappé ni Dembélé, l’attaque des Bleus n’a pas assuré"
+    "Équipe de France : sans Mbappé ni Dembélé, l’attaque des Bleus n’a pas assuré",
+    "Equipe de France: Mbappé présent à l'entraînement, Doué incertain face à la Turquie"
   ],
   "recent_stats": [
     "alexander isak",
