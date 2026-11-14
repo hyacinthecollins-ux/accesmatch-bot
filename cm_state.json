@@ -1511,6 +1511,15 @@
       "day": "2026-11-14",
       "source": "RMC Sport",
       "at": "2026-11-13T23:00:55Z"
+    },
+    {
+      "id": "6af7d12181e1228421dd8879",
+      "kind": "stat",
+      "text": "📊 Kylian Mbappé (Real Madrid), 2e des buteurs de Liga avec 13 buts et 2 passes décisives en 12 matchs. Il a déjà bien réglé la mire : quel but vous a marqué ?\n\n#Mbappé #RealMadrid",
+      "due": "2026-11-14T07:05Z",
+      "day": "2026-11-14",
+      "source": "football-data PD",
+      "at": "2026-11-14T03:10:25Z"
     }
   ],
   "slots": {
@@ -1611,7 +1620,8 @@
     "2026-11-13T16:30": "done",
     "2026-11-13T19:15": "done",
     "2026-11-13T20:15": "done",
-    "2026-11-13T22:35": "done"
+    "2026-11-13T22:35": "done",
+    "2026-11-14T08:05": "done"
   },
   "slot_tries": {
     "2026-10-27T20:15": 1,
@@ -1708,7 +1718,8 @@
     "2026-11-13T16:30": 1,
     "2026-11-13T19:15": 1,
     "2026-11-13T20:15": 1,
-    "2026-11-13T22:35": 1
+    "2026-11-13T22:35": 1,
+    "2026-11-14T08:05": 1
   },
   "reacted": [
     "559648",
@@ -1832,18 +1843,18 @@
     "c8bdea5d2f85",
     "1a40be91a813"
   ],
-  "counter": 168,
+  "counter": 169,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 268,
-        "in": 202009,
-        "out": 43256
+        "calls": 269,
+        "in": 203066,
+        "out": 43404
       },
       "gpt-6.1-sol": {
-        "calls": 252,
-        "in": 91631,
-        "out": 13387
+        "calls": 253,
+        "in": 92123,
+        "out": 13431
       }
     }
   },
@@ -1903,7 +1914,6 @@
     "Equipe de France: Mbappé présent à l'entraînement, Doué incertain face à la Turquie"
   ],
   "recent_stats": [
-    "alexander isak",
     "donyell malen",
     "harry kane",
     "kylian mbappe",
@@ -1932,7 +1942,8 @@
     "donyell malen",
     "erling haaland",
     "lamine yamal",
-    "rayan cherki"
+    "rayan cherki",
+    "kylian mbappe"
   ],
   "debates": {
     "CL": {
