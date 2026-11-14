@@ -1520,6 +1520,15 @@
       "day": "2026-11-14",
       "source": "football-data PD",
       "at": "2026-11-14T03:10:25Z"
+    },
+    {
+      "id": "6af7f6a5d16af15d4df562bc",
+      "kind": "debate",
+      "text": "Le PSG mène avec 23 points, mais Lille (21) et le Paris FC (20) lui collent au train après 10 matchs. Paris a deux voisins qui ne sont pas là pour faire de la figuration : qui fera trembler le leader ? 🔥\n\n#PSG #LOSC",
+      "due": "2026-11-14T09:45Z",
+      "day": "2026-11-14",
+      "source": "football-data FL1",
+      "at": "2026-11-14T05:50:29Z"
     }
   ],
   "slots": {
@@ -1621,7 +1630,8 @@
     "2026-11-13T19:15": "done",
     "2026-11-13T20:15": "done",
     "2026-11-13T22:35": "done",
-    "2026-11-14T08:05": "done"
+    "2026-11-14T08:05": "done",
+    "2026-11-14T10:45": "done"
   },
   "slot_tries": {
     "2026-10-27T20:15": 1,
@@ -1719,7 +1729,8 @@
     "2026-11-13T19:15": 1,
     "2026-11-13T20:15": 1,
     "2026-11-13T22:35": 1,
-    "2026-11-14T08:05": 1
+    "2026-11-14T08:05": 1,
+    "2026-11-14T10:45": 1
   },
   "reacted": [
     "559648",
@@ -1843,18 +1854,18 @@
     "c8bdea5d2f85",
     "1a40be91a813"
   ],
-  "counter": 169,
+  "counter": 170,
   "usage": {
     "by_model": {
       "gpt-6-luna": {
-        "calls": 269,
-        "in": 203066,
-        "out": 43404
+        "calls": 270,
+        "in": 204035,
+        "out": 43627
       },
       "gpt-6.1-sol": {
-        "calls": 253,
-        "in": 92123,
-        "out": 13431
+        "calls": 254,
+        "in": 92547,
+        "out": 13503
       }
     }
   },
@@ -1955,8 +1966,8 @@
       "at": "2026-11-13T05:50:17.386550+00:00"
     },
     "FL1": {
-      "sig": "68bab02d12ee",
-      "at": "2026-11-09T05:50:15.827223+00:00"
+      "sig": "bc3e98ab84c3",
+      "at": "2026-11-14T05:50:18.081793+00:00"
     },
     "PL": {
       "sig": "16fd85c4a8b7",
