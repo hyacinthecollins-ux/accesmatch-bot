@@ -1,19 +1,5 @@
 {
   "items": {
-    "p560603": {
-      "kind": "preview",
-      "match_id": 560603,
-      "label": "EVERTON-CHELSEA",
-      "kickoff": "2026-10-17T11:30:00Z",
-      "status": "failed",
-      "poster": "posters/p560603-20261017.jpg",
-      "post_id": null,
-      "due": null,
-      "created": "2026-10-16T03:26:12Z",
-      "fails": 3,
-      "design": "crests-v1",
-      "tg": "skip"
-    },
     "p560611": {
       "kind": "preview",
       "match_id": 560611,
@@ -139,20 +125,6 @@
       "fails": 3,
       "design": "crests-v1",
       "tg": "skip"
-    },
-    "r560603": {
-      "kind": "result",
-      "match_id": 560603,
-      "label": "EVERTON-CHELSEA",
-      "kickoff": "2026-10-17T11:30:00Z",
-      "status": "failed",
-      "poster": "posters/r560603-20261017.jpg",
-      "post_id": null,
-      "due": null,
-      "created": "2026-10-17T13:51:48Z",
-      "fails": 3,
-      "design": "crests-v1",
-      "tg": "sent"
     },
     "r560610": {
       "kind": "result",
