@@ -1,19 +1,5 @@
 {
   "items": {
-    "p559662": {
-      "kind": "preview",
-      "match_id": 559662,
-      "label": "STRASBOURG-PSG",
-      "kickoff": "2026-10-17T15:15:00Z",
-      "status": "failed",
-      "poster": "posters/p559662-20261017.jpg",
-      "post_id": null,
-      "due": null,
-      "created": "2026-10-16T03:26:12Z",
-      "fails": 3,
-      "design": "crests-v1",
-      "tg": "skip"
-    },
     "p565825": {
       "kind": "preview",
       "match_id": 565825,
@@ -97,20 +83,6 @@
       "fails": 3,
       "design": "crests-v1",
       "tg": "skip"
-    },
-    "r559662": {
-      "kind": "result",
-      "match_id": 559662,
-      "label": "STRASBOURG-PSG",
-      "kickoff": "2026-10-17T15:15:00Z",
-      "status": "failed",
-      "poster": "posters/r559662-20261017.jpg",
-      "post_id": null,
-      "due": null,
-      "created": "2026-10-17T19:03:00Z",
-      "fails": 3,
-      "design": "crests-v1",
-      "tg": "sent"
     },
     "r565825": {
       "kind": "result",
