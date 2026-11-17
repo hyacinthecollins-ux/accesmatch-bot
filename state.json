@@ -1,33 +1,5 @@
 {
   "items": {
-    "p564709": {
-      "kind": "preview",
-      "match_id": 564709,
-      "label": "REAL MADRID-SEVILLA FC",
-      "kickoff": "2026-10-18T19:00:00Z",
-      "status": "failed",
-      "poster": "posters/p564709-20261018.jpg",
-      "post_id": null,
-      "due": null,
-      "created": "2026-10-17T10:23:50Z",
-      "fails": 3,
-      "design": "crests-v1",
-      "tg": "skip"
-    },
-    "r564709": {
-      "kind": "result",
-      "match_id": 564709,
-      "label": "REAL MADRID-SEVILLA FC",
-      "kickoff": "2026-10-18T19:00:00Z",
-      "status": "failed",
-      "poster": "posters/r564709-20261018.jpg",
-      "post_id": null,
-      "due": null,
-      "created": "2026-10-18T21:17:51Z",
-      "fails": 3,
-      "design": "crests-v1",
-      "tg": "sent"
-    },
     "p575367": {
       "kind": "preview",
       "match_id": 575367,
