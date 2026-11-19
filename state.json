@@ -2001,6 +2001,32 @@
       "text": "⏱️ Atlético 1-2 Barça ! Le Barça repart avec la victoire, l’Atlético n’a pas eu le dernier mot. Le café va refaire le match : qui mérite ta mention ?\n🔗 bio\n\n#Atleti #FCBarcelona #LaLiga",
       "text_src": "IA",
       "reply": null
+    },
+    "p565859": {
+      "kind": "preview",
+      "match_id": 565859,
+      "label": "BAYERN-1. FC KÖLN",
+      "kickoff": "2026-11-20T19:30:00Z",
+      "status": "poster_ready",
+      "poster": "posters/p565859-20261120.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-19T00:00:29Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "a565859": {
+      "kind": "x24",
+      "match_id": 565859,
+      "label": "BAYERN-1. FC KÖLN",
+      "kickoff": "2026-11-20T19:30:00Z",
+      "status": "poster_ready",
+      "poster": "posters/x565859-20261120.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-19T00:00:29Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   },
   "squads": {
