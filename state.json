@@ -2028,6 +2028,19 @@
       "created": "2026-11-19T00:00:29Z",
       "fails": 3,
       "design": "crests-v1"
+    },
+    "h565859": {
+      "kind": "x1",
+      "match_id": 565859,
+      "label": "BAYERN-1. FC KÖLN",
+      "kickoff": "2026-11-20T19:30:00Z",
+      "status": "poster_ready",
+      "poster": "posters/x565859-20261120.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-19T16:30:32Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   },
   "squads": {
