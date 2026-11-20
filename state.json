@@ -2098,12 +2098,12 @@
       "match_id": 560643,
       "label": "MAN CITY-FULHAM",
       "kickoff": "2026-11-21T12:30:00Z",
-      "status": "poster_ready",
+      "status": "failed",
       "poster": "posters/x560643-20261121.jpg",
       "post_id": null,
       "due": null,
       "created": "2026-11-20T09:30:33Z",
-      "fails": 2,
+      "fails": 3,
       "design": "crests-v1"
     }
   },
@@ -2314,10 +2314,9 @@
       "stars": []
     }
   },
-  "llm_calls": 207,
-  "llm_posts": 64,
+  "llm_calls": 210,
+  "llm_posts": 65,
   "x_texts": [
-    "⏱️ Arsenal s’impose 1-0 face à Hull City ! Un seul but, et le verrou tient jusqu’au bout. Qui mérite les lauriers ?",
     "⏱️ PSG s’impose 1-0 face à Troyes ! Un but suffit, et la tension reste jusqu’au bout. Qui a le plus pesé dans cette victoire ?",
     "⏱️ Napoli et Lazio se quittent sur un 1-1 en Serie A. Un point chacun : même la calculette n’a pas réussi à les départager. Qui a mieux négocié ce nul ?",
     "⏱️ AC Milan s’impose 2-1 face à Genoa : succès serré, les points sont milanais. À qui irait ta mention spéciale ?",
@@ -2346,6 +2345,7 @@
     "🔥 Nice reçoit le PSG demain à 17h15 en Ligue 1 : Wahi, c’est 6 buts et 2 passes décisives ; Ferrán Torres, 4 buts et 1 passe. Dembélé sera aussi à surveiller. Qui fera parler la poudre ?",
     "🔥 Lille-Lyon, choc de Ligue 1 demain à 20h45 (heure de Paris) : Olivier Giroud (3 buts, 2 passes décisives) et Ernest Nuamah (4 buts, 1 passe décisive cette saison) sont à surveiller. Qui fera basculer l’affiche ?",
     "⏰ Man City-Fulham en Premier League : coup d’envoi dans 1h24, à 13h30 à Paris. Erling Haaland, 9 buts, et Rayan Cherki, 5 buts et 2 passes, seront à surveiller. Joshua King aussi. Qui gagne ?",
-    "⏰ Plus que 1h24 avant Man City-Fulham : coup d’envoi à 13h30 à Paris. Erling Haaland (9 buts), Rayan Cherki (5 buts, 2 passes) et Joshua King (2 buts, 1 passe) sont attendus. Qui l’emporte ?"
+    "⏰ Plus que 1h24 avant Man City-Fulham : coup d’envoi à 13h30 à Paris. Erling Haaland (9 buts), Rayan Cherki (5 buts, 2 passes) et Joshua King (2 buts, 1 passe) sont attendus. Qui l’emporte ?",
+    "⏰ Dans 1h24, Man City et Fulham lancent leur duel de Premier League, à 13h30 à Paris. Haaland (9 buts), Cherki (5 buts, 2 passes) et Joshua King (2 buts, 1 passe) peuvent peser. Qui l’emporte ?"
   ]
 }
