@@ -2073,6 +2073,32 @@
       "created": "2026-11-20T16:50:44Z",
       "fails": 3,
       "design": "crests-v1"
+    },
+    "r565859": {
+      "kind": "result",
+      "match_id": 565859,
+      "label": "BAYERN-1. FC KÖLN",
+      "kickoff": "2026-11-20T19:30:00Z",
+      "status": "poster_ready",
+      "poster": "posters/r565859-20261120.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-20T21:30:29Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "f565859": {
+      "kind": "xr",
+      "match_id": 565859,
+      "label": "BAYERN-1. FC KÖLN",
+      "kickoff": "2026-11-20T19:30:00Z",
+      "status": "poster_ready",
+      "poster": "posters/xr565859-20261120.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-20T21:30:29Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   },
   "squads": {
