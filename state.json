@@ -2103,7 +2103,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-20T09:30:33Z",
-      "fails": 0,
+      "fails": 1,
       "design": "crests-v1"
     }
   },
@@ -2314,10 +2314,9 @@
       "stars": []
     }
   },
-  "llm_calls": 201,
-  "llm_posts": 62,
+  "llm_calls": 203,
+  "llm_posts": 63,
   "x_texts": [
-    "⏰ Dans 1 heure, à 20h45, RC Lens reçoit l’OM en Ligue 1. Florian Thauvin (4 buts) et Amine Gouiri (6 buts) seront à surveiller. Ton score ?",
     "⏰ Dans 1 heure, à 21h, Atlético-Barça lance un choc de gala en Liga. Álex Baena (5 buts), Raphinha (15) et Lamine Yamal (10) sont à surveiller. Qui gagne ?",
     "⏱️ Arsenal s’impose 1-0 face à Hull City ! Un seul but, et le verrou tient jusqu’au bout. Qui mérite les lauriers ?",
     "⏱️ PSG s’impose 1-0 face à Troyes ! Un but suffit, et la tension reste jusqu’au bout. Qui a le plus pesé dans cette victoire ?",
@@ -2346,6 +2345,7 @@
     "🔥 M'gladbach × Dortmund demain à 15h30 !",
     "⚽ Bundesliga : Leverkusen × SC Paderborn demain à 15h30 !",
     "🔥 Nice reçoit le PSG demain à 17h15 en Ligue 1 : Wahi, c’est 6 buts et 2 passes décisives ; Ferrán Torres, 4 buts et 1 passe. Dembélé sera aussi à surveiller. Qui fera parler la poudre ?",
-    "🔥 Lille-Lyon, choc de Ligue 1 demain à 20h45 (heure de Paris) : Olivier Giroud (3 buts, 2 passes décisives) et Ernest Nuamah (4 buts, 1 passe décisive cette saison) sont à surveiller. Qui fera basculer l’affiche ?"
+    "🔥 Lille-Lyon, choc de Ligue 1 demain à 20h45 (heure de Paris) : Olivier Giroud (3 buts, 2 passes décisives) et Ernest Nuamah (4 buts, 1 passe décisive cette saison) sont à surveiller. Qui fera basculer l’affiche ?",
+    "⏰ Man City-Fulham en Premier League : coup d’envoi dans 1h24, à 13h30 à Paris. Erling Haaland, 9 buts, et Rayan Cherki, 5 buts et 2 passes, seront à surveiller. Joshua King aussi. Qui gagne ?"
   ]
 }
