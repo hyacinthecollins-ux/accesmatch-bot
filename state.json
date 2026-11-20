@@ -2085,7 +2085,8 @@
       "due": null,
       "created": "2026-11-20T21:30:29Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "sent"
     },
     "f565859": {
       "kind": "xr",
@@ -2097,7 +2098,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-20T21:30:29Z",
-      "fails": 0,
+      "fails": 1,
       "design": "crests-v1"
     }
   },
@@ -2308,10 +2309,9 @@
       "stars": []
     }
   },
-  "llm_calls": 245,
-  "llm_posts": 72,
+  "llm_calls": 247,
+  "llm_posts": 73,
   "x_texts": [
-    "🔥 Demain à 13h30 (heure de Paris), Man City reçoit Fulham en Premier League. Haaland (9 buts), Cherki (5 buts, 2 passes décisives) et Joshua King (2 buts, 1 passe décisive) sont à surveiller. Qui repart avec le sourire ?",
     "🔥 M'gladbach–Dortmund, un grand rendez-vous de Bundesliga demain à 15h30 (heure de Paris) ! Scally (4 buts, 1 passe décisive) et Guirassy (3 buts, 2 passes décisives) sont à surveiller. Qui l’emporte ?",
     "🔥 Leverkusen reçoit SC Paderborn demain à 15h30 (heure de Paris) en Bundesliga : soirée de gala, avec Patrik Schick (8 buts, 2 passes décisives) et Ibrahim Maza (3 buts, 3 passes décisives) attendus. Qui l’emporte ?",
     "🔥 Nice × PSG demain à 17h15 !",
@@ -2340,6 +2340,7 @@
     "⏰ Coup d'envoi dans 1 heure : Nice × PSG !",
     "⏰ Lille-Lyon, choc de Ligue 1 : coup d’envoi dans 1 heure, à 20h45. Olivier Giroud (3 buts, 2 passes) et Ernest Nuamah (4 buts, 1 passe) peuvent faire trembler les filets. Qui marque en premier ?",
     "🚨 Lille-Lyon, duel de poids en Ligue 1 : coup d’envoi dans 1 heure, à 20h45. Giroud (3 buts, 2 passes décisives) et Nuamah (4 buts, 1 passe) sont à surveiller. Qui fera la différence ?",
-    "🚨 Lille × Lyon dans 1 heure (Ligue 1) !"
+    "🚨 Lille × Lyon dans 1 heure (Ligue 1) !",
+    "⏱️ Bayern 1-1 1. FC Köln. Le partage des points laisse le duel sans vainqueur, mais pas sans tension. Qui a le plus marqué ce match ?"
   ]
 }
