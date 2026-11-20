@@ -2093,12 +2093,12 @@
       "match_id": 565859,
       "label": "BAYERN-1. FC KÖLN",
       "kickoff": "2026-11-20T19:30:00Z",
-      "status": "poster_ready",
+      "status": "failed",
       "poster": "posters/xr565859-20261120.jpg",
       "post_id": null,
       "due": null,
       "created": "2026-11-20T21:30:29Z",
-      "fails": 2,
+      "fails": 3,
       "design": "crests-v1"
     }
   },
@@ -2309,10 +2309,9 @@
       "stars": []
     }
   },
-  "llm_calls": 249,
-  "llm_posts": 74,
+  "llm_calls": 251,
+  "llm_posts": 75,
   "x_texts": [
-    "🔥 Leverkusen reçoit SC Paderborn demain à 15h30 (heure de Paris) en Bundesliga : soirée de gala, avec Patrik Schick (8 buts, 2 passes décisives) et Ibrahim Maza (3 buts, 3 passes décisives) attendus. Qui l’emporte ?",
     "🔥 Nice × PSG demain à 17h15 !",
     "⚽ Ligue 1 : Lille × Lyon demain à 20h45 !",
     "⚽ Premier League : Man City × Fulham demain à 13h30 !",
@@ -2341,6 +2340,7 @@
     "🚨 Lille-Lyon, duel de poids en Ligue 1 : coup d’envoi dans 1 heure, à 20h45. Giroud (3 buts, 2 passes décisives) et Nuamah (4 buts, 1 passe) sont à surveiller. Qui fera la différence ?",
     "🚨 Lille × Lyon dans 1 heure (Ligue 1) !",
     "⏱️ Bayern 1-1 1. FC Köln. Le partage des points laisse le duel sans vainqueur, mais pas sans tension. Qui a le plus marqué ce match ?",
-    "⏱️ Bayern 1-1 1. FC Köln. Un partage qui laisse le duel ouvert jusqu’au bout : personne n’a réussi à faire pencher la balance. Quel joueur vous a le plus convaincus ?"
+    "⏱️ Bayern 1-1 1. FC Köln. Un partage qui laisse le duel ouvert jusqu’au bout : personne n’a réussi à faire pencher la balance. Quel joueur vous a le plus convaincus ?",
+    "⏱️ Bayern 1-1 1. FC Köln. Au bout du compte, personne n’a trouvé la faille décisive : ce nul laisse matière à débat. Quel joueur sort du lot ?"
   ]
 }
