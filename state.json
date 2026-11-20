@@ -2144,6 +2144,19 @@
       "created": "2026-11-20T13:20:29Z",
       "fails": 3,
       "design": "crests-v1"
+    },
+    "h559624": {
+      "kind": "x1",
+      "match_id": 559624,
+      "label": "LILLE-LYON",
+      "kickoff": "2026-11-21T19:45:00Z",
+      "status": "poster_ready",
+      "poster": "posters/x559624-20261121.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-20T16:50:44Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   },
   "squads": {
