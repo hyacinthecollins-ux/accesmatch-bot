@@ -1982,7 +1982,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-20T00:00:28Z",
-      "fails": 1,
+      "fails": 2,
       "design": "crests-v1"
     },
     "a565862": {
@@ -1995,7 +1995,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-20T00:00:28Z",
-      "fails": 1,
+      "fails": 2,
       "design": "crests-v1"
     },
     "a565857": {
@@ -2008,7 +2008,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-20T00:00:28Z",
-      "fails": 1,
+      "fails": 2,
       "design": "crests-v1"
     },
     "p560642": {
@@ -2049,7 +2049,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-20T00:00:28Z",
-      "fails": 1,
+      "fails": 2,
       "design": "crests-v1"
     },
     "p560651": {
@@ -2076,7 +2076,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-20T00:00:28Z",
-      "fails": 1,
+      "fails": 2,
       "design": "crests-v1"
     },
     "p564754": {
@@ -2301,14 +2301,9 @@
       "stars": []
     }
   },
-  "llm_calls": 172,
-  "llm_posts": 58,
+  "llm_calls": 187,
+  "llm_posts": 60,
   "x_texts": [
-    "🔥 Crystal Palace reçoit Liverpool demain à 15h (heure de Paris) en Premier League. Tyrick Mitchell (2 buts) et Alexander Isak (6 buts) sont à surveiller, Florian Wirtz aussi. Qui fera la différence ?",
-    "🔥 Genoa et AC Milan se retrouvent demain à 15h (heure de Paris) en Serie A. Milutin Osmajić (4 buts, 1 passe décisive) et Adrien Rabiot (5 buts, 3 passes) sont attendus. Qui repart avec les trois points ?",
-    "🔥 RC Lens-OM, demain à 20h45 (heure de Paris) en Ligue 1 : chaque ballon pèsera lourd. Florian Thauvin (4 buts, 8 passes décisives) et Amine Gouiri (6 buts, 3 passes décisives) sont attendus. Qui fera basculer le match ?",
-    "🔥 Atlético-Barça, c’est demain à 21h (heure de Paris) en Liga : Álex Baena (5 buts, 3 passes décisives) et Raphinha (15 buts, 2 passes) sont à surveiller, comme Lamine Yamal (10 buts, 7 passes). Qui fera pencher le match ?",
-    "⏰ Coup d'envoi dans 1 heure : Napoli × Lazio !",
     "🚨 Crystal Palace × Liverpool dans 1 heure (Premier League) !",
     "⏰ Coup d'envoi dans 1 heure : Genoa × AC Milan !",
     "⏱️ Leeds United bat Tottenham 1-0 en Premier League. Le genre de soirée où un but suffit à faire chavirer tout un stade. Ton joueur du match ?",
@@ -2333,6 +2328,11 @@
     "🔥 M'gladbach–Dortmund, un grand rendez-vous de Bundesliga demain à 15h30 (heure de Paris) ! Scally (4 buts, 1 passe décisive) et Guirassy (3 buts, 2 passes décisives) sont à surveiller. Qui l’emporte ?",
     "🔥 Leverkusen reçoit SC Paderborn demain à 15h30 (heure de Paris) en Bundesliga : soirée de gala, avec Patrik Schick (8 buts, 2 passes décisives) et Ibrahim Maza (3 buts, 3 passes décisives) attendus. Qui l’emporte ?",
     "🔥 Nice × PSG demain à 17h15 !",
+    "⚽ Ligue 1 : Lille × Lyon demain à 20h45 !",
+    "⚽ Premier League : Man City × Fulham demain à 13h30 !",
+    "🔥 M'gladbach × Dortmund demain à 15h30 !",
+    "🔥 Leverkusen reçoit SC Paderborn en Bundesliga demain à 15h30 (heure de Paris) : Patrik Schick (8 buts, 2 passes décisives) et Stefano Marino (2 buts) seront à surveiller. Qui prendra le dessus ?",
+    "🔥 Nice reçoit le PSG demain à 17h15 (heure de Paris) en Ligue 1. Sepe Elye Wahi (6 buts, 2 passes décisives) et Ferrán Torres (4 buts, 1 passe décisive) sont attendus. Qui ouvre le bal ?",
     "⚽ Ligue 1 : Lille × Lyon demain à 20h45 !"
   ]
 }
