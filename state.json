@@ -2364,7 +2364,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-21T18:30:27Z",
-      "fails": 1,
+      "fails": 2,
       "design": "crests-v1"
     }
   },
@@ -2593,10 +2593,9 @@
       "stars": []
     }
   },
-  "llm_calls": 368,
-  "llm_posts": 101,
+  "llm_calls": 370,
+  "llm_posts": 102,
   "x_texts": [
-    "🔥 Juventus × Venezia FC demain à 12h30 !",
     "🔥 Barça-Villarreal, chaque accélération peut faire basculer l’affiche. Demain à 14h (heure de Paris), en Liga, Raphinha (15 buts, 2 passes) et Mikautadze (3 buts, 1 passe) sont à surveiller. Qui frappe le premier ?",
     "🚨 Liverpool × Man United : rendez-vous demain à 17h30 !",
     "🔥 AC Milan × Frosinone demain à 18h !",
@@ -2625,6 +2624,7 @@
     "⏱️ M'gladbach 0-1 Dortmund : Dortmund conclut cette affiche de gala par une victoire, au terme d’un duel qui se joue sur un fil. Ton homme du match ?",
     "🔥 C'est bientôt : OM × Le Mans dans 1 heure !",
     "⏰ OM-Le Mans, rendez-vous à 20h45 en Ligue 1 : coup d’envoi dans 1 heure. Gouiri (7 buts, 3 passes) et Mafouta (4 buts) peuvent peser. Qui fait la différence ?",
-    "⏱️ Nice 2-3 PSG ! Ton joueur du match ? 👇"
+    "⏱️ Nice 2-3 PSG ! Ton joueur du match ? 👇",
+    "⏱️ Nice et PSG se quittent sur un match nul. Le score exact et les buteurs ne sont pas précisés : impossible de distribuer les bons points ! Ton avis ?"
   ]
 }
