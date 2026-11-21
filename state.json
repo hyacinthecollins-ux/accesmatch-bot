@@ -2218,7 +2218,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-21T08:30:28Z",
-      "fails": 0,
+      "fails": 1,
       "design": "crests-v1"
     }
   },
@@ -2447,10 +2447,9 @@
       "stars": []
     }
   },
-  "llm_calls": 299,
-  "llm_posts": 85,
+  "llm_calls": 302,
+  "llm_posts": 86,
   "x_texts": [
-    "⏰ Dans une heure, M'gladbach reçoit Dortmund en Bundesliga : coup d’envoi à 15h30 à Paris. Scally (4 buts, 1 passe), Nmecha (4 buts) et Guirassy (3 buts, 2 passes) sont à surveiller. Qui gagne ?",
     "🚨 Leverkusen reçoit SC Paderborn en Bundesliga : coup d’envoi dans 1 heure, à 15h30 à Paris. Schick (8 buts, 2 passes) et Maza (3 buts, 3 passes) sont attendus ; Marino aussi, avec ses 2 buts. Qui gagne ?",
     "⏰ M'gladbach-Dortmund, dans une heure à 15h30 en Bundesliga. Scally (4 buts, 1 passe), Bolin (2 buts) et Guirassy (3 buts, 2 passes) sont à surveiller. Jobe Bellingham aussi, pour garder Dortmund sur ses gardes ! Ton score ?",
     "🚨 Leverkusen accueille SC Paderborn en Bundesliga : rendez-vous à 15h30, dans une heure. Schick (8 buts, 2 passes), Maza (3 buts, 3 passes) et Marino (2 buts) sont à surveiller. Qui fait trembler les filets ?",
@@ -2479,6 +2478,7 @@
     "🔥 Barça-Villarreal, chaque accélération peut faire basculer l’affiche. Demain à 14h (heure de Paris), en Liga, Raphinha (15 buts, 2 passes) et Mikautadze (3 buts, 1 passe) sont à surveiller. Qui frappe le premier ?",
     "🚨 Liverpool × Man United : rendez-vous demain à 17h30 !",
     "🔥 AC Milan × Frosinone demain à 18h !",
-    "🔥 OM-Le Mans en Ligue 1 : demain à 20h45 (heure de Paris), place au face-à-face. Amine Gouiri (7 buts, 3 passes), Amine Harit (3 buts, 1 passe) et Louis Mafouta (4 buts) sont à surveiller. Qui aura le dernier mot ?"
+    "🔥 OM-Le Mans en Ligue 1 : demain à 20h45 (heure de Paris), place au face-à-face. Amine Gouiri (7 buts, 3 passes), Amine Harit (3 buts, 1 passe) et Louis Mafouta (4 buts) sont à surveiller. Qui aura le dernier mot ?",
+    "⏰ Juventus-Venezia FC, gros rendez-vous de Serie A : coup d’envoi dans 1 heure, à 12h30 (heure de Paris). Bremer (3 buts), Edon Zhegrova (2 buts, 2 passes) et Akor Adams (2 buts) seront à suivre. Qui gagne ?"
   ]
 }
