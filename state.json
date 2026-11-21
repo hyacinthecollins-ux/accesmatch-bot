@@ -2231,7 +2231,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-21T10:00:42Z",
-      "fails": 0,
+      "fails": 1,
       "design": "crests-v1"
     }
   },
@@ -2460,10 +2460,9 @@
       "stars": []
     }
   },
-  "llm_calls": 308,
-  "llm_posts": 86,
+  "llm_calls": 310,
+  "llm_posts": 87,
   "x_texts": [
-    "🚨 Leverkusen accueille SC Paderborn en Bundesliga : rendez-vous à 15h30, dans une heure. Schick (8 buts, 2 passes), Maza (3 buts, 3 passes) et Marino (2 buts) sont à surveiller. Qui fait trembler les filets ?",
     "⏰ Coup d'envoi dans 1 heure : M'gladbach × Dortmund !",
     "⏰ Coup d'envoi dans 1 heure : Leverkusen × SC Paderborn !",
     "⏰ Nice reçoit le PSG en Ligue 1 : coup d’envoi dans 1 heure, à 17h15. Elye Wahi (6 buts, 2 passes) et Ferrán Torres (4 buts, 1 passe) peuvent peser. Clauss ou Dembélé pour faire basculer la soirée ?",
@@ -2492,6 +2491,7 @@
     "🔥 OM-Le Mans en Ligue 1 : demain à 20h45 (heure de Paris), place au face-à-face. Amine Gouiri (7 buts, 3 passes), Amine Harit (3 buts, 1 passe) et Louis Mafouta (4 buts) sont à surveiller. Qui aura le dernier mot ?",
     "⏰ Juventus-Venezia FC, gros rendez-vous de Serie A : coup d’envoi dans 1 heure, à 12h30 (heure de Paris). Bremer (3 buts), Edon Zhegrova (2 buts, 2 passes) et Akor Adams (2 buts) seront à suivre. Qui gagne ?",
     "🚨 Juventus × Venezia FC dans 1 heure (Serie A) !",
-    "🚨 Juventus × Venezia FC dans 1 heure (Serie A) !"
+    "🚨 Juventus × Venezia FC dans 1 heure (Serie A) !",
+    "⏰ Barça-Villarreal, la Liga s’invite dans 1 heure, à 14h (heure de Paris) ! Raphinha (15 buts, 2 passes), Lamine Yamal (10 buts, 8 passes) et Mikautadze (3 buts, 1 passe) à surveiller. Qui gagne ?"
   ]
 }
