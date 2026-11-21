@@ -2318,12 +2318,12 @@
       "match_id": 559629,
       "label": "OM-LE MANS",
       "kickoff": "2026-11-22T19:45:00Z",
-      "status": "poster_ready",
+      "status": "failed",
       "poster": "posters/x559629-20261122.jpg",
       "post_id": null,
       "due": null,
       "created": "2026-11-21T16:50:39Z",
-      "fails": 2,
+      "fails": 3,
       "design": "crests-v1"
     }
   },
@@ -2552,10 +2552,9 @@
       "stars": []
     }
   },
-  "llm_calls": 361,
-  "llm_posts": 100,
+  "llm_calls": 364,
+  "llm_posts": 101,
   "x_texts": [
-    "🔥 Demain à 18h (heure de Paris), AC Milan reçoit Frosinone en Serie A. Alphadjo Cisse (5 buts) et Antonio Raimondo (8 buts) sont à surveiller : lequel va gâcher la soirée de l’autre camp ?",
     "🔥 L’OM et Le Mans se retrouvent demain à 20h45 (heure de Paris) en Ligue 1 : Amine Gouiri (7 buts, 3 passes décisives) et Louis Mafouta (4 buts) sont attendus. Qui repart avec la victoire ?",
     "🔥 Juventus × Venezia FC demain à 12h30 !",
     "🔥 Barça-Villarreal, chaque accélération peut faire basculer l’affiche. Demain à 14h (heure de Paris), en Liga, Raphinha (15 buts, 2 passes) et Mikautadze (3 buts, 1 passe) sont à surveiller. Qui frappe le premier ?",
@@ -2584,6 +2583,7 @@
     "⏰ OM-Le Mans en Ligue 1 : coup d’envoi dans 1 heure, à 20h45. Amine Gouiri (7 buts, 3 passes décisives) et Louis Mafouta (4 buts) sont à surveiller. Qui gagne ?",
     "⏱️ Leverkusen 4-0 SC Paderborn : Leverkusen fait parler la poudre et signe une soirée de gala. Quel joueur mérite les projecteurs ?",
     "⏱️ M'gladbach 0-1 Dortmund : Dortmund conclut cette affiche de gala par une victoire, au terme d’un duel qui se joue sur un fil. Ton homme du match ?",
-    "🔥 C'est bientôt : OM × Le Mans dans 1 heure !"
+    "🔥 C'est bientôt : OM × Le Mans dans 1 heure !",
+    "⏰ OM-Le Mans, rendez-vous à 20h45 en Ligue 1 : coup d’envoi dans 1 heure. Gouiri (7 buts, 3 passes) et Mafouta (4 buts) peuvent peser. Qui fait la différence ?"
   ]
 }
