@@ -2339,6 +2339,32 @@
       "fails": 0,
       "design": "crests-v1",
       "tg": "sent"
+    },
+    "r559628": {
+      "kind": "result",
+      "match_id": 559628,
+      "label": "NICE-PSG",
+      "kickoff": "2026-11-21T16:15:00Z",
+      "status": "poster_ready",
+      "poster": "posters/r559628-20261121.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-21T18:30:27Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "f559628": {
+      "kind": "xr",
+      "match_id": 559628,
+      "label": "NICE-PSG",
+      "kickoff": "2026-11-21T16:15:00Z",
+      "status": "poster_ready",
+      "poster": "posters/xr559628-20261121.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-21T18:30:27Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   },
   "squads": {
