@@ -2284,7 +2284,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-21T14:30:26Z",
-      "fails": 1,
+      "fails": 2,
       "design": "crests-v1"
     }
   },
@@ -2513,10 +2513,9 @@
       "stars": []
     }
   },
-  "llm_calls": 338,
-  "llm_posts": 91,
+  "llm_calls": 340,
+  "llm_posts": 92,
   "x_texts": [
-    "⏱️ Bayern 1-1 1. FC Köln. Un partage qui laisse le duel ouvert jusqu’au bout : personne n’a réussi à faire pencher la balance. Quel joueur vous a le plus convaincus ?",
     "⏱️ Bayern 1-1 1. FC Köln. Au bout du compte, personne n’a trouvé la faille décisive : ce nul laisse matière à débat. Quel joueur sort du lot ?",
     "🔥 La Juventus reçoit Venezia FC demain à 12h30 (heure de Paris) en Serie A : Bremer, Edon Zhegrova et Akor Adams seront à surveiller, avec respectivement 3, 2 et 2 buts cette saison. Qui fera la différence ?",
     "🔥 Le Barça et Villarreal se retrouvent demain à 14h (heure de Paris) en Liga : Raphinha (15 buts) et Lamine Yamal (10 buts, 8 passes décisives) sont à surveiller. Qui gagne ?",
@@ -2545,6 +2544,7 @@
     "⏰ AC Milan reçoit Frosinone en Serie A : coup d’envoi dans 1 heure, à 18h (heure de Paris). Alphadjo Cisse et Adrien Rabiot (5 buts chacun), Antonio Raimondo (8 buts) sont attendus. Qui gagne ?",
     "⏰ Coup d'envoi dans 1 heure : AC Milan × Frosinone !",
     "⏰ Coup d'envoi dans 1 heure : AC Milan × Frosinone !",
-    "⏱️ Man City 1-1 Fulham : chacun repart avec sa part, impossible de départager les deux. Le nul a tranché… en ne tranchant rien ! Ton avis ?"
+    "⏱️ Man City 1-1 Fulham : chacun repart avec sa part, impossible de départager les deux. Le nul a tranché… en ne tranchant rien ! Ton avis ?",
+    "⏱️ Man City 1-1 Fulham : les deux équipes se quittent sur un nul. Personne n’a pris le dessus, le tableau a choisi la paix. Qui t’a le plus convaincu ?"
   ]
 }
