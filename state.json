@@ -2359,12 +2359,12 @@
       "match_id": 559628,
       "label": "NICE-PSG",
       "kickoff": "2026-11-21T16:15:00Z",
-      "status": "poster_ready",
+      "status": "failed",
       "poster": "posters/xr559628-20261121.jpg",
       "post_id": null,
       "due": null,
       "created": "2026-11-21T18:30:27Z",
-      "fails": 2,
+      "fails": 3,
       "design": "crests-v1"
     }
   },
@@ -2593,10 +2593,9 @@
       "stars": []
     }
   },
-  "llm_calls": 370,
-  "llm_posts": 102,
+  "llm_calls": 376,
+  "llm_posts": 103,
   "x_texts": [
-    "🔥 Barça-Villarreal, chaque accélération peut faire basculer l’affiche. Demain à 14h (heure de Paris), en Liga, Raphinha (15 buts, 2 passes) et Mikautadze (3 buts, 1 passe) sont à surveiller. Qui frappe le premier ?",
     "🚨 Liverpool × Man United : rendez-vous demain à 17h30 !",
     "🔥 AC Milan × Frosinone demain à 18h !",
     "🔥 OM-Le Mans en Ligue 1 : demain à 20h45 (heure de Paris), place au face-à-face. Amine Gouiri (7 buts, 3 passes), Amine Harit (3 buts, 1 passe) et Louis Mafouta (4 buts) sont à surveiller. Qui aura le dernier mot ?",
@@ -2625,6 +2624,7 @@
     "🔥 C'est bientôt : OM × Le Mans dans 1 heure !",
     "⏰ OM-Le Mans, rendez-vous à 20h45 en Ligue 1 : coup d’envoi dans 1 heure. Gouiri (7 buts, 3 passes) et Mafouta (4 buts) peuvent peser. Qui fait la différence ?",
     "⏱️ Nice 2-3 PSG ! Ton joueur du match ? 👇",
-    "⏱️ Nice et PSG se quittent sur un match nul. Le score exact et les buteurs ne sont pas précisés : impossible de distribuer les bons points ! Ton avis ?"
+    "⏱️ Nice et PSG se quittent sur un match nul. Le score exact et les buteurs ne sont pas précisés : impossible de distribuer les bons points ! Ton avis ?",
+    "⏱️ Nice 2-3 PSG ! Les Parisiens repartent avec la victoire, Nice avec un score qui ne laisse pas le temps de souffler. Qui t’a le plus convaincu ?"
   ]
 }
