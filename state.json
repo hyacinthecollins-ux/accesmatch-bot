@@ -2252,12 +2252,12 @@
       "match_id": 558523,
       "label": "AC MILAN-FROSINONE",
       "kickoff": "2026-11-22T17:00:00Z",
-      "status": "poster_ready",
+      "status": "failed",
       "poster": "posters/x558523-20261122.jpg",
       "post_id": null,
       "due": null,
       "created": "2026-11-21T14:00:35Z",
-      "fails": 2,
+      "fails": 3,
       "design": "crests-v1"
     }
   },
@@ -2486,10 +2486,9 @@
       "stars": []
     }
   },
-  "llm_calls": 331,
+  "llm_calls": 334,
   "llm_posts": 90,
   "x_texts": [
-    "🚨 Lille × Lyon dans 1 heure (Ligue 1) !",
     "⏱️ Bayern 1-1 1. FC Köln. Le partage des points laisse le duel sans vainqueur, mais pas sans tension. Qui a le plus marqué ce match ?",
     "⏱️ Bayern 1-1 1. FC Köln. Un partage qui laisse le duel ouvert jusqu’au bout : personne n’a réussi à faire pencher la balance. Quel joueur vous a le plus convaincus ?",
     "⏱️ Bayern 1-1 1. FC Köln. Au bout du compte, personne n’a trouvé la faille décisive : ce nul laisse matière à débat. Quel joueur sort du lot ?",
@@ -2518,6 +2517,7 @@
     "🔥 C'est bientôt : Liverpool × Man United dans 1 heure !",
     "🔥 C'est bientôt : Liverpool × Man United dans 1 heure !",
     "⏰ AC Milan reçoit Frosinone en Serie A : coup d’envoi dans 1 heure, à 18h (heure de Paris). Alphadjo Cisse et Adrien Rabiot (5 buts chacun), Antonio Raimondo (8 buts) sont attendus. Qui gagne ?",
+    "⏰ Coup d'envoi dans 1 heure : AC Milan × Frosinone !",
     "⏰ Coup d'envoi dans 1 heure : AC Milan × Frosinone !"
   ]
 }
