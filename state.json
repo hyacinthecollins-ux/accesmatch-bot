@@ -2325,6 +2325,19 @@
       "created": "2026-11-21T16:50:39Z",
       "fails": 3,
       "design": "crests-v1"
+    },
+    "r560642": {
+      "kind": "result",
+      "match_id": 560642,
+      "label": "CHELSEA-LEEDS UNITED",
+      "kickoff": "2026-11-21T15:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/r560642-20261121.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-21T17:20:39Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   },
   "squads": {
