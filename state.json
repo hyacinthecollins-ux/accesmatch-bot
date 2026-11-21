@@ -2312,6 +2312,19 @@
       "created": "2026-11-21T16:40:26Z",
       "fails": 1,
       "design": "crests-v1"
+    },
+    "h559629": {
+      "kind": "x1",
+      "match_id": 559629,
+      "label": "OM-LE MANS",
+      "kickoff": "2026-11-22T19:45:00Z",
+      "status": "poster_ready",
+      "poster": "posters/x559629-20261122.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-21T16:50:39Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   },
   "squads": {
