@@ -2391,7 +2391,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-21T21:50:25Z",
-      "fails": 0,
+      "fails": 1,
       "design": "crests-v1"
     }
   },
@@ -2620,10 +2620,9 @@
       "stars": []
     }
   },
-  "llm_calls": 376,
-  "llm_posts": 103,
+  "llm_calls": 379,
+  "llm_posts": 104,
   "x_texts": [
-    "🚨 Liverpool × Man United : rendez-vous demain à 17h30 !",
     "🔥 AC Milan × Frosinone demain à 18h !",
     "🔥 OM-Le Mans en Ligue 1 : demain à 20h45 (heure de Paris), place au face-à-face. Amine Gouiri (7 buts, 3 passes), Amine Harit (3 buts, 1 passe) et Louis Mafouta (4 buts) sont à surveiller. Qui aura le dernier mot ?",
     "⏰ Juventus-Venezia FC, gros rendez-vous de Serie A : coup d’envoi dans 1 heure, à 12h30 (heure de Paris). Bremer (3 buts), Edon Zhegrova (2 buts, 2 passes) et Akor Adams (2 buts) seront à suivre. Qui gagne ?",
@@ -2652,6 +2651,7 @@
     "⏰ OM-Le Mans, rendez-vous à 20h45 en Ligue 1 : coup d’envoi dans 1 heure. Gouiri (7 buts, 3 passes) et Mafouta (4 buts) peuvent peser. Qui fait la différence ?",
     "⏱️ Nice 2-3 PSG ! Ton joueur du match ? 👇",
     "⏱️ Nice et PSG se quittent sur un match nul. Le score exact et les buteurs ne sont pas précisés : impossible de distribuer les bons points ! Ton avis ?",
-    "⏱️ Nice 2-3 PSG ! Les Parisiens repartent avec la victoire, Nice avec un score qui ne laisse pas le temps de souffler. Qui t’a le plus convaincu ?"
+    "⏱️ Nice 2-3 PSG ! Les Parisiens repartent avec la victoire, Nice avec un score qui ne laisse pas le temps de souffler. Qui t’a le plus convaincu ?",
+    "⏱️ Lille 0-1 Lyon ! Un but suffit à Lyon pour repartir vainqueur, Lille reste muet. Verdict sur ce résultat ?"
   ]
 }
