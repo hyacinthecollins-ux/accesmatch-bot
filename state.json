@@ -2259,6 +2259,32 @@
       "created": "2026-11-21T14:00:35Z",
       "fails": 3,
       "design": "crests-v1"
+    },
+    "r560643": {
+      "kind": "result",
+      "match_id": 560643,
+      "label": "MAN CITY-FULHAM",
+      "kickoff": "2026-11-21T12:30:00Z",
+      "status": "poster_ready",
+      "poster": "posters/r560643-20261121.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-21T14:30:26Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "f560643": {
+      "kind": "xr",
+      "match_id": 560643,
+      "label": "MAN CITY-FULHAM",
+      "kickoff": "2026-11-21T12:30:00Z",
+      "status": "poster_ready",
+      "poster": "posters/xr560643-20261121.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-21T14:30:26Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   },
   "squads": {
