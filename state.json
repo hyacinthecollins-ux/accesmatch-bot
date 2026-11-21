@@ -2292,12 +2292,12 @@
       "match_id": 565857,
       "label": "LEVERKUSEN-SC PADERBORN",
       "kickoff": "2026-11-21T14:30:00Z",
-      "status": "poster_ready",
+      "status": "failed",
       "poster": "posters/xr565857-20261121.jpg",
       "post_id": null,
       "due": null,
       "created": "2026-11-21T16:40:26Z",
-      "fails": 2,
+      "fails": 3,
       "design": "crests-v1"
     },
     "f565862": {
@@ -2305,12 +2305,12 @@
       "match_id": 565862,
       "label": "M'GLADBACH-DORTMUND",
       "kickoff": "2026-11-21T14:30:00Z",
-      "status": "poster_ready",
+      "status": "failed",
       "poster": "posters/xr565862-20261121.jpg",
       "post_id": null,
       "due": null,
       "created": "2026-11-21T16:40:26Z",
-      "fails": 2,
+      "fails": 3,
       "design": "crests-v1"
     },
     "h559629": {
@@ -2323,7 +2323,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-21T16:50:39Z",
-      "fails": 1,
+      "fails": 2,
       "design": "crests-v1"
     }
   },
@@ -2552,12 +2552,9 @@
       "stars": []
     }
   },
-  "llm_calls": 353,
-  "llm_posts": 98,
+  "llm_calls": 361,
+  "llm_posts": 100,
   "x_texts": [
-    "🔥 Juventus × Venezia FC demain à 12h30 !",
-    "⚽ Liga : Barça × Villarreal demain à 14h !",
-    "🔥 Liverpool-Man United, le choc de Premier League peut déjà électriser l’affiche ! Demain à 17h30 (heure de Paris), Isak (7 buts) et Bruno Fernandes (4 buts, 2 passes) sont à surveiller. Qui l’emporte ?",
     "🔥 Demain à 18h (heure de Paris), AC Milan reçoit Frosinone en Serie A. Alphadjo Cisse (5 buts) et Antonio Raimondo (8 buts) sont à surveiller : lequel va gâcher la soirée de l’autre camp ?",
     "🔥 L’OM et Le Mans se retrouvent demain à 20h45 (heure de Paris) en Ligue 1 : Amine Gouiri (7 buts, 3 passes décisives) et Louis Mafouta (4 buts) sont attendus. Qui repart avec la victoire ?",
     "🔥 Juventus × Venezia FC demain à 12h30 !",
@@ -2584,6 +2581,9 @@
     "⏱️ M'gladbach 0-1 Dortmund : Dortmund repart avec la victoire, mais aucun buteur n’est indiqué dans les faits. Un petit score, une soirée réussie : ton joueur du match ?",
     "⏱️ Leverkusen 4-0 SC Paderborn : Leverkusen transforme l’affiche en soirée de gala, avec quatre buts au rendez-vous. À qui donnerais-tu les projecteurs ?",
     "⏱️ M'gladbach 0-1 Dortmund : Dortmund repart avec le gros morceau au terme d’une affiche serrée. Le score est court, le coup compte. Qui t’a convaincu ?",
-    "⏰ OM-Le Mans en Ligue 1 : coup d’envoi dans 1 heure, à 20h45. Amine Gouiri (7 buts, 3 passes décisives) et Louis Mafouta (4 buts) sont à surveiller. Qui gagne ?"
+    "⏰ OM-Le Mans en Ligue 1 : coup d’envoi dans 1 heure, à 20h45. Amine Gouiri (7 buts, 3 passes décisives) et Louis Mafouta (4 buts) sont à surveiller. Qui gagne ?",
+    "⏱️ Leverkusen 4-0 SC Paderborn : Leverkusen fait parler la poudre et signe une soirée de gala. Quel joueur mérite les projecteurs ?",
+    "⏱️ M'gladbach 0-1 Dortmund : Dortmund conclut cette affiche de gala par une victoire, au terme d’un duel qui se joue sur un fil. Ton homme du match ?",
+    "🔥 C'est bientôt : OM × Le Mans dans 1 heure !"
   ]
 }
