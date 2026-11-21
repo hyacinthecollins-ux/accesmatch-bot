@@ -2393,6 +2393,19 @@
       "created": "2026-11-21T21:50:25Z",
       "fails": 2,
       "design": "crests-v1"
+    },
+    "r564754": {
+      "kind": "result",
+      "match_id": 564754,
+      "label": "REAL MADRID-CELTA",
+      "kickoff": "2026-11-21T20:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/r564754-20261121.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-21T22:10:31Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   },
   "squads": {
