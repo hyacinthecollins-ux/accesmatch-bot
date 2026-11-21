@@ -2111,7 +2111,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-21T00:00:31Z",
-      "fails": 0,
+      "fails": 1,
       "design": "crests-v1"
     },
     "p564749": {
@@ -2125,7 +2125,8 @@
       "due": null,
       "created": "2026-11-21T00:00:31Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "sent"
     },
     "a564749": {
       "kind": "x24",
@@ -2137,7 +2138,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-21T00:00:31Z",
-      "fails": 0,
+      "fails": 1,
       "design": "crests-v1"
     },
     "p560645": {
@@ -2151,7 +2152,8 @@
       "due": null,
       "created": "2026-11-21T00:00:31Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "sent"
     },
     "a560645": {
       "kind": "x24",
@@ -2163,7 +2165,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-21T00:00:31Z",
-      "fails": 0,
+      "fails": 1,
       "design": "crests-v1"
     },
     "a558523": {
@@ -2176,7 +2178,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-21T00:00:31Z",
-      "fails": 0,
+      "fails": 1,
       "design": "crests-v1"
     },
     "p559629": {
@@ -2190,7 +2192,8 @@
       "due": null,
       "created": "2026-11-21T00:00:31Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "sent"
     },
     "a559629": {
       "kind": "x24",
@@ -2202,7 +2205,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-21T00:00:31Z",
-      "fails": 0,
+      "fails": 1,
       "design": "crests-v1"
     }
   },
@@ -2212,7 +2215,7 @@
       "stars": []
     },
     "66": {
-      "t": "2026-10-31T02:58:16Z",
+      "t": "2026-11-21T00:00:44Z",
       "stars": []
     },
     "65": {
@@ -2242,7 +2245,7 @@
       ]
     },
     "81": {
-      "t": "2026-10-31T02:58:16Z",
+      "t": "2026-11-21T00:00:44Z",
       "stars": [
         "Rodri",
         "Pedri",
@@ -2268,7 +2271,7 @@
       ]
     },
     "64": {
-      "t": "2026-10-31T02:58:16Z",
+      "t": "2026-11-21T00:00:44Z",
       "stars": [
         "Florian Wirtz",
         "Bradley Barcola"
@@ -2281,7 +2284,7 @@
       ]
     },
     "516": {
-      "t": "2026-10-31T02:58:16Z",
+      "t": "2026-11-21T00:00:44Z",
       "stars": []
     },
     "511": {
@@ -2293,7 +2296,7 @@
       "stars": []
     },
     "94": {
-      "t": "2026-11-02T00:00:52Z",
+      "t": "2026-11-21T00:00:44Z",
       "stars": []
     },
     "524": {
@@ -2371,7 +2374,7 @@
       "stars": []
     },
     "98": {
-      "t": "2026-11-07T00:00:58Z",
+      "t": "2026-11-21T00:00:44Z",
       "stars": []
     },
     "546": {
@@ -2411,16 +2414,29 @@
     "523": {
       "t": "2026-11-20T00:00:50Z",
       "stars": []
+    },
+    "109": {
+      "t": "2026-11-21T00:00:44Z",
+      "stars": []
+    },
+    "454": {
+      "t": "2026-11-21T00:00:44Z",
+      "stars": [
+        "Lamine Dabo"
+      ]
+    },
+    "470": {
+      "t": "2026-11-21T00:00:44Z",
+      "stars": []
+    },
+    "535": {
+      "t": "2026-11-21T00:00:44Z",
+      "stars": []
     }
   },
-  "llm_calls": 251,
-  "llm_posts": 75,
+  "llm_calls": 267,
+  "llm_posts": 80,
   "x_texts": [
-    "🔥 Nice × PSG demain à 17h15 !",
-    "⚽ Ligue 1 : Lille × Lyon demain à 20h45 !",
-    "⚽ Premier League : Man City × Fulham demain à 13h30 !",
-    "🔥 M'gladbach × Dortmund demain à 15h30 !",
-    "🔥 Leverkusen reçoit SC Paderborn en Bundesliga demain à 15h30 (heure de Paris) : Patrik Schick (8 buts, 2 passes décisives) et Stefano Marino (2 buts) seront à surveiller. Qui prendra le dessus ?",
     "🔥 Nice reçoit le PSG demain à 17h15 (heure de Paris) en Ligue 1. Sepe Elye Wahi (6 buts, 2 passes décisives) et Ferrán Torres (4 buts, 1 passe décisive) sont attendus. Qui ouvre le bal ?",
     "⚽ Ligue 1 : Lille × Lyon demain à 20h45 !",
     "⚽ Premier League : Man City × Fulham demain à 13h30 !",
@@ -2445,6 +2461,11 @@
     "🚨 Lille × Lyon dans 1 heure (Ligue 1) !",
     "⏱️ Bayern 1-1 1. FC Köln. Le partage des points laisse le duel sans vainqueur, mais pas sans tension. Qui a le plus marqué ce match ?",
     "⏱️ Bayern 1-1 1. FC Köln. Un partage qui laisse le duel ouvert jusqu’au bout : personne n’a réussi à faire pencher la balance. Quel joueur vous a le plus convaincus ?",
-    "⏱️ Bayern 1-1 1. FC Köln. Au bout du compte, personne n’a trouvé la faille décisive : ce nul laisse matière à débat. Quel joueur sort du lot ?"
+    "⏱️ Bayern 1-1 1. FC Köln. Au bout du compte, personne n’a trouvé la faille décisive : ce nul laisse matière à débat. Quel joueur sort du lot ?",
+    "🔥 La Juventus reçoit Venezia FC demain à 12h30 (heure de Paris) en Serie A : Bremer, Edon Zhegrova et Akor Adams seront à surveiller, avec respectivement 3, 2 et 2 buts cette saison. Qui fera la différence ?",
+    "🔥 Le Barça et Villarreal se retrouvent demain à 14h (heure de Paris) en Liga : Raphinha (15 buts) et Lamine Yamal (10 buts, 8 passes décisives) sont à surveiller. Qui gagne ?",
+    "🔥 Liverpool-Man United, c’est demain à 17h30 (heure de Paris) en Premier League. Alexander Isak (7 buts), Florian Wirtz et Bruno Fernandes (4 buts, 2 passes décisives) seront à surveiller. Qui fait la différence ?",
+    "🔥 Demain à 18h (heure de Paris), AC Milan reçoit Frosinone en Serie A. Alphadjo Cisse et Adrien Rabiot (5 buts chacun) sont à surveiller, comme Antonio Raimondo (8 buts). Qui repart avec les points ?",
+    "🔥 L’OM reçoit Le Mans demain à 20h45 (heure de Paris) en Ligue 1 : Amine Gouiri (7 buts, 3 passes décisives) et Louis Mafouta (4 buts) seront à surveiller. Qui trouvera la faille ?"
   ]
 }
