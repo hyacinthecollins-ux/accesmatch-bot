@@ -2297,7 +2297,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-21T16:40:26Z",
-      "fails": 0,
+      "fails": 1,
       "design": "crests-v1"
     },
     "f565862": {
@@ -2310,7 +2310,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-21T16:40:26Z",
-      "fails": 0,
+      "fails": 1,
       "design": "crests-v1"
     }
   },
@@ -2539,11 +2539,9 @@
       "stars": []
     }
   },
-  "llm_calls": 342,
-  "llm_posts": 93,
+  "llm_calls": 346,
+  "llm_posts": 95,
   "x_texts": [
-    "🔥 La Juventus reçoit Venezia FC demain à 12h30 (heure de Paris) en Serie A : Bremer, Edon Zhegrova et Akor Adams seront à surveiller, avec respectivement 3, 2 et 2 buts cette saison. Qui fera la différence ?",
-    "🔥 Le Barça et Villarreal se retrouvent demain à 14h (heure de Paris) en Liga : Raphinha (15 buts) et Lamine Yamal (10 buts, 8 passes décisives) sont à surveiller. Qui gagne ?",
     "🔥 Liverpool-Man United, c’est demain à 17h30 (heure de Paris) en Premier League. Alexander Isak (7 buts), Florian Wirtz et Bruno Fernandes (4 buts, 2 passes décisives) seront à surveiller. Qui fait la différence ?",
     "🔥 Demain à 18h (heure de Paris), AC Milan reçoit Frosinone en Serie A. Alphadjo Cisse et Adrien Rabiot (5 buts chacun) sont à surveiller, comme Antonio Raimondo (8 buts). Qui repart avec les points ?",
     "🔥 L’OM reçoit Le Mans demain à 20h45 (heure de Paris) en Ligue 1 : Amine Gouiri (7 buts, 3 passes décisives) et Louis Mafouta (4 buts) seront à surveiller. Qui trouvera la faille ?",
@@ -2571,6 +2569,8 @@
     "⏰ Coup d'envoi dans 1 heure : AC Milan × Frosinone !",
     "⏱️ Man City 1-1 Fulham : chacun repart avec sa part, impossible de départager les deux. Le nul a tranché… en ne tranchant rien ! Ton avis ?",
     "⏱️ Man City 1-1 Fulham : les deux équipes se quittent sur un nul. Personne n’a pris le dessus, le tableau a choisi la paix. Qui t’a le plus convaincu ?",
-    "⏱️ Man City 1-1 Fulham. Personne n’a plié, même le tableau d’affichage a refusé de choisir son camp. Qui mérite ton vote ?"
+    "⏱️ Man City 1-1 Fulham. Personne n’a plié, même le tableau d’affichage a refusé de choisir son camp. Qui mérite ton vote ?",
+    "⏱️ Leverkusen 4-0 SC Paderborn : Leverkusen s’offre une soirée de gala et laisse le tableau parler pour lui. Quel joueur t’a le plus marqué ?",
+    "⏱️ M'gladbach 0-1 Dortmund : Dortmund repart avec la victoire, mais aucun buteur n’est indiqué dans les faits. Un petit score, une soirée réussie : ton joueur du match ?"
   ]
 }
