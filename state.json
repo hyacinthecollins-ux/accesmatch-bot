@@ -2271,7 +2271,8 @@
       "due": null,
       "created": "2026-11-21T14:30:26Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "sent"
     },
     "f560643": {
       "kind": "xr",
@@ -2283,7 +2284,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-21T14:30:26Z",
-      "fails": 0,
+      "fails": 1,
       "design": "crests-v1"
     }
   },
@@ -2512,10 +2513,9 @@
       "stars": []
     }
   },
-  "llm_calls": 334,
-  "llm_posts": 90,
+  "llm_calls": 338,
+  "llm_posts": 91,
   "x_texts": [
-    "⏱️ Bayern 1-1 1. FC Köln. Le partage des points laisse le duel sans vainqueur, mais pas sans tension. Qui a le plus marqué ce match ?",
     "⏱️ Bayern 1-1 1. FC Köln. Un partage qui laisse le duel ouvert jusqu’au bout : personne n’a réussi à faire pencher la balance. Quel joueur vous a le plus convaincus ?",
     "⏱️ Bayern 1-1 1. FC Köln. Au bout du compte, personne n’a trouvé la faille décisive : ce nul laisse matière à débat. Quel joueur sort du lot ?",
     "🔥 La Juventus reçoit Venezia FC demain à 12h30 (heure de Paris) en Serie A : Bremer, Edon Zhegrova et Akor Adams seront à surveiller, avec respectivement 3, 2 et 2 buts cette saison. Qui fera la différence ?",
@@ -2544,6 +2544,7 @@
     "🔥 C'est bientôt : Liverpool × Man United dans 1 heure !",
     "⏰ AC Milan reçoit Frosinone en Serie A : coup d’envoi dans 1 heure, à 18h (heure de Paris). Alphadjo Cisse et Adrien Rabiot (5 buts chacun), Antonio Raimondo (8 buts) sont attendus. Qui gagne ?",
     "⏰ Coup d'envoi dans 1 heure : AC Milan × Frosinone !",
-    "⏰ Coup d'envoi dans 1 heure : AC Milan × Frosinone !"
+    "⏰ Coup d'envoi dans 1 heure : AC Milan × Frosinone !",
+    "⏱️ Man City 1-1 Fulham : chacun repart avec sa part, impossible de départager les deux. Le nul a tranché… en ne tranchant rien ! Ton avis ?"
   ]
 }
