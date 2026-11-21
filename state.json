@@ -2111,7 +2111,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-21T00:00:31Z",
-      "fails": 1,
+      "fails": 2,
       "design": "crests-v1"
     },
     "p564749": {
@@ -2138,7 +2138,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-21T00:00:31Z",
-      "fails": 1,
+      "fails": 2,
       "design": "crests-v1"
     },
     "p560645": {
@@ -2165,7 +2165,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-21T00:00:31Z",
-      "fails": 1,
+      "fails": 2,
       "design": "crests-v1"
     },
     "a558523": {
@@ -2178,7 +2178,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-21T00:00:31Z",
-      "fails": 1,
+      "fails": 2,
       "design": "crests-v1"
     },
     "p559629": {
@@ -2205,7 +2205,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-21T00:00:31Z",
-      "fails": 1,
+      "fails": 2,
       "design": "crests-v1"
     }
   },
@@ -2434,14 +2434,9 @@
       "stars": []
     }
   },
-  "llm_calls": 267,
-  "llm_posts": 80,
+  "llm_calls": 282,
+  "llm_posts": 83,
   "x_texts": [
-    "🔥 Nice reçoit le PSG demain à 17h15 (heure de Paris) en Ligue 1. Sepe Elye Wahi (6 buts, 2 passes décisives) et Ferrán Torres (4 buts, 1 passe décisive) sont attendus. Qui ouvre le bal ?",
-    "⚽ Ligue 1 : Lille × Lyon demain à 20h45 !",
-    "⚽ Premier League : Man City × Fulham demain à 13h30 !",
-    "🔥 M'gladbach × Dortmund demain à 15h30 !",
-    "⚽ Bundesliga : Leverkusen × SC Paderborn demain à 15h30 !",
     "🔥 Nice reçoit le PSG demain à 17h15 en Ligue 1 : Wahi, c’est 6 buts et 2 passes décisives ; Ferrán Torres, 4 buts et 1 passe. Dembélé sera aussi à surveiller. Qui fera parler la poudre ?",
     "🔥 Lille-Lyon, choc de Ligue 1 demain à 20h45 (heure de Paris) : Olivier Giroud (3 buts, 2 passes décisives) et Ernest Nuamah (4 buts, 1 passe décisive cette saison) sont à surveiller. Qui fera basculer l’affiche ?",
     "⏰ Man City-Fulham en Premier League : coup d’envoi dans 1h24, à 13h30 à Paris. Erling Haaland, 9 buts, et Rayan Cherki, 5 buts et 2 passes, seront à surveiller. Joshua King aussi. Qui gagne ?",
@@ -2466,6 +2461,11 @@
     "🔥 Le Barça et Villarreal se retrouvent demain à 14h (heure de Paris) en Liga : Raphinha (15 buts) et Lamine Yamal (10 buts, 8 passes décisives) sont à surveiller. Qui gagne ?",
     "🔥 Liverpool-Man United, c’est demain à 17h30 (heure de Paris) en Premier League. Alexander Isak (7 buts), Florian Wirtz et Bruno Fernandes (4 buts, 2 passes décisives) seront à surveiller. Qui fait la différence ?",
     "🔥 Demain à 18h (heure de Paris), AC Milan reçoit Frosinone en Serie A. Alphadjo Cisse et Adrien Rabiot (5 buts chacun) sont à surveiller, comme Antonio Raimondo (8 buts). Qui repart avec les points ?",
-    "🔥 L’OM reçoit Le Mans demain à 20h45 (heure de Paris) en Ligue 1 : Amine Gouiri (7 buts, 3 passes décisives) et Louis Mafouta (4 buts) seront à surveiller. Qui trouvera la faille ?"
+    "🔥 L’OM reçoit Le Mans demain à 20h45 (heure de Paris) en Ligue 1 : Amine Gouiri (7 buts, 3 passes décisives) et Louis Mafouta (4 buts) seront à surveiller. Qui trouvera la faille ?",
+    "🔥 Juventus × Venezia FC demain à 12h30 !",
+    "⚽ Liga : Barça × Villarreal demain à 14h !",
+    "🔥 Liverpool-Man United, le choc de Premier League peut déjà électriser l’affiche ! Demain à 17h30 (heure de Paris), Isak (7 buts) et Bruno Fernandes (4 buts, 2 passes) sont à surveiller. Qui l’emporte ?",
+    "🔥 Demain à 18h (heure de Paris), AC Milan reçoit Frosinone en Serie A. Alphadjo Cisse (5 buts) et Antonio Raimondo (8 buts) sont à surveiller : lequel va gâcher la soirée de l’autre camp ?",
+    "🔥 L’OM et Le Mans se retrouvent demain à 20h45 (heure de Paris) en Ligue 1 : Amine Gouiri (7 buts, 3 passes décisives) et Louis Mafouta (4 buts) sont attendus. Qui repart avec la victoire ?"
   ]
 }
