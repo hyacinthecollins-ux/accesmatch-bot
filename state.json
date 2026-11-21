@@ -2279,12 +2279,12 @@
       "match_id": 560643,
       "label": "MAN CITY-FULHAM",
       "kickoff": "2026-11-21T12:30:00Z",
-      "status": "poster_ready",
+      "status": "failed",
       "poster": "posters/xr560643-20261121.jpg",
       "post_id": null,
       "due": null,
       "created": "2026-11-21T14:30:26Z",
-      "fails": 2,
+      "fails": 3,
       "design": "crests-v1"
     }
   },
@@ -2513,10 +2513,9 @@
       "stars": []
     }
   },
-  "llm_calls": 340,
-  "llm_posts": 92,
+  "llm_calls": 342,
+  "llm_posts": 93,
   "x_texts": [
-    "⏱️ Bayern 1-1 1. FC Köln. Au bout du compte, personne n’a trouvé la faille décisive : ce nul laisse matière à débat. Quel joueur sort du lot ?",
     "🔥 La Juventus reçoit Venezia FC demain à 12h30 (heure de Paris) en Serie A : Bremer, Edon Zhegrova et Akor Adams seront à surveiller, avec respectivement 3, 2 et 2 buts cette saison. Qui fera la différence ?",
     "🔥 Le Barça et Villarreal se retrouvent demain à 14h (heure de Paris) en Liga : Raphinha (15 buts) et Lamine Yamal (10 buts, 8 passes décisives) sont à surveiller. Qui gagne ?",
     "🔥 Liverpool-Man United, c’est demain à 17h30 (heure de Paris) en Premier League. Alexander Isak (7 buts), Florian Wirtz et Bruno Fernandes (4 buts, 2 passes décisives) seront à surveiller. Qui fait la différence ?",
@@ -2545,6 +2544,7 @@
     "⏰ Coup d'envoi dans 1 heure : AC Milan × Frosinone !",
     "⏰ Coup d'envoi dans 1 heure : AC Milan × Frosinone !",
     "⏱️ Man City 1-1 Fulham : chacun repart avec sa part, impossible de départager les deux. Le nul a tranché… en ne tranchant rien ! Ton avis ?",
-    "⏱️ Man City 1-1 Fulham : les deux équipes se quittent sur un nul. Personne n’a pris le dessus, le tableau a choisi la paix. Qui t’a le plus convaincu ?"
+    "⏱️ Man City 1-1 Fulham : les deux équipes se quittent sur un nul. Personne n’a pris le dessus, le tableau a choisi la paix. Qui t’a le plus convaincu ?",
+    "⏱️ Man City 1-1 Fulham. Personne n’a plié, même le tableau d’affichage a refusé de choisir son camp. Qui mérite ton vote ?"
   ]
 }
