@@ -2207,6 +2207,19 @@
       "created": "2026-11-21T00:00:31Z",
       "fails": 3,
       "design": "crests-v1"
+    },
+    "h558521": {
+      "kind": "x1",
+      "match_id": 558521,
+      "label": "JUVENTUS-VENEZIA FC",
+      "kickoff": "2026-11-22T11:30:00Z",
+      "status": "poster_ready",
+      "poster": "posters/x558521-20261122.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-21T08:30:28Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   },
   "squads": {
