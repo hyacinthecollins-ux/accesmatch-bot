@@ -2286,6 +2286,32 @@
       "created": "2026-11-21T14:30:26Z",
       "fails": 3,
       "design": "crests-v1"
+    },
+    "f565857": {
+      "kind": "xr",
+      "match_id": 565857,
+      "label": "LEVERKUSEN-SC PADERBORN",
+      "kickoff": "2026-11-21T14:30:00Z",
+      "status": "poster_ready",
+      "poster": "posters/xr565857-20261121.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-21T16:40:26Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "f565862": {
+      "kind": "xr",
+      "match_id": 565862,
+      "label": "M'GLADBACH-DORTMUND",
+      "kickoff": "2026-11-21T14:30:00Z",
+      "status": "poster_ready",
+      "poster": "posters/xr565862-20261121.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-21T16:40:26Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   },
   "squads": {
