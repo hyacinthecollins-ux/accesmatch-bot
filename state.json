@@ -2297,7 +2297,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-21T16:40:26Z",
-      "fails": 1,
+      "fails": 2,
       "design": "crests-v1"
     },
     "f565862": {
@@ -2310,7 +2310,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-21T16:40:26Z",
-      "fails": 1,
+      "fails": 2,
       "design": "crests-v1"
     },
     "h559629": {
@@ -2323,7 +2323,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-21T16:50:39Z",
-      "fails": 0,
+      "fails": 1,
       "design": "crests-v1"
     }
   },
@@ -2552,12 +2552,9 @@
       "stars": []
     }
   },
-  "llm_calls": 346,
-  "llm_posts": 95,
+  "llm_calls": 353,
+  "llm_posts": 98,
   "x_texts": [
-    "🔥 Liverpool-Man United, c’est demain à 17h30 (heure de Paris) en Premier League. Alexander Isak (7 buts), Florian Wirtz et Bruno Fernandes (4 buts, 2 passes décisives) seront à surveiller. Qui fait la différence ?",
-    "🔥 Demain à 18h (heure de Paris), AC Milan reçoit Frosinone en Serie A. Alphadjo Cisse et Adrien Rabiot (5 buts chacun) sont à surveiller, comme Antonio Raimondo (8 buts). Qui repart avec les points ?",
-    "🔥 L’OM reçoit Le Mans demain à 20h45 (heure de Paris) en Ligue 1 : Amine Gouiri (7 buts, 3 passes décisives) et Louis Mafouta (4 buts) seront à surveiller. Qui trouvera la faille ?",
     "🔥 Juventus × Venezia FC demain à 12h30 !",
     "⚽ Liga : Barça × Villarreal demain à 14h !",
     "🔥 Liverpool-Man United, le choc de Premier League peut déjà électriser l’affiche ! Demain à 17h30 (heure de Paris), Isak (7 buts) et Bruno Fernandes (4 buts, 2 passes) sont à surveiller. Qui l’emporte ?",
@@ -2584,6 +2581,9 @@
     "⏱️ Man City 1-1 Fulham : les deux équipes se quittent sur un nul. Personne n’a pris le dessus, le tableau a choisi la paix. Qui t’a le plus convaincu ?",
     "⏱️ Man City 1-1 Fulham. Personne n’a plié, même le tableau d’affichage a refusé de choisir son camp. Qui mérite ton vote ?",
     "⏱️ Leverkusen 4-0 SC Paderborn : Leverkusen s’offre une soirée de gala et laisse le tableau parler pour lui. Quel joueur t’a le plus marqué ?",
-    "⏱️ M'gladbach 0-1 Dortmund : Dortmund repart avec la victoire, mais aucun buteur n’est indiqué dans les faits. Un petit score, une soirée réussie : ton joueur du match ?"
+    "⏱️ M'gladbach 0-1 Dortmund : Dortmund repart avec la victoire, mais aucun buteur n’est indiqué dans les faits. Un petit score, une soirée réussie : ton joueur du match ?",
+    "⏱️ Leverkusen 4-0 SC Paderborn : Leverkusen transforme l’affiche en soirée de gala, avec quatre buts au rendez-vous. À qui donnerais-tu les projecteurs ?",
+    "⏱️ M'gladbach 0-1 Dortmund : Dortmund repart avec le gros morceau au terme d’une affiche serrée. Le score est court, le coup compte. Qui t’a convaincu ?",
+    "⏰ OM-Le Mans en Ligue 1 : coup d’envoi dans 1 heure, à 20h45. Amine Gouiri (7 buts, 3 passes décisives) et Louis Mafouta (4 buts) sont à surveiller. Qui gagne ?"
   ]
 }
