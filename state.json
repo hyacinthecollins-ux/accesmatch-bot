@@ -2220,6 +2220,19 @@
       "created": "2026-11-21T08:30:28Z",
       "fails": 3,
       "design": "crests-v1"
+    },
+    "h564749": {
+      "kind": "x1",
+      "match_id": 564749,
+      "label": "BARÇA-VILLARREAL",
+      "kickoff": "2026-11-22T13:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/x564749-20261122.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-21T10:00:42Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   },
   "squads": {
