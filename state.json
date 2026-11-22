@@ -2472,7 +2472,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-22T18:31:00Z",
-      "fails": 1,
+      "fails": 2,
       "design": "crests-v1"
     }
   },
@@ -2701,10 +2701,9 @@
       "stars": []
     }
   },
-  "llm_calls": 404,
-  "llm_posts": 112,
+  "llm_calls": 406,
+  "llm_posts": 113,
   "x_texts": [
-    "🔥 C'est bientôt : Liverpool × Man United dans 1 heure !",
     "🔥 C'est bientôt : Liverpool × Man United dans 1 heure !",
     "⏰ AC Milan reçoit Frosinone en Serie A : coup d’envoi dans 1 heure, à 18h (heure de Paris). Alphadjo Cisse et Adrien Rabiot (5 buts chacun), Antonio Raimondo (8 buts) sont attendus. Qui gagne ?",
     "⏰ Coup d'envoi dans 1 heure : AC Milan × Frosinone !",
@@ -2733,6 +2732,7 @@
     "⏱️ Barça 3-2 Villarreal ! Le Barça s’impose au terme d’un final sous haute tension. Qui a tenu le match par les nerfs ?",
     "⏱️ Barça 3-2 Villarreal ! Au bout d’un match sous tension, le Barça s’impose. Qui a gardé la tête froide dans ce final électrique ?",
     "⏱️ Barça 3-2 Villarreal ! Le Barça prend la victoire dans un score serré, Villarreal n’a jamais été loin. À qui revient le match ?",
-    "⏱️ Liverpool 4-0 Man United. Liverpool s’impose, mais aucun buteur n’est précisé dans les faits. Qui mérite le titre de joueur du match ?"
+    "⏱️ Liverpool 4-0 Man United. Liverpool s’impose, mais aucun buteur n’est précisé dans les faits. Qui mérite le titre de joueur du match ?",
+    "⏱️ Liverpool 4-0 Man United ! Liverpool impose sa loi, Man United ne trouve pas la faille. Qui a marqué les esprits ?"
   ]
 }
