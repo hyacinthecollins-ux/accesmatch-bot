@@ -2485,7 +2485,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-22T19:00:44Z",
-      "fails": 0,
+      "fails": 1,
       "design": "crests-v1"
     }
   },
@@ -2714,10 +2714,9 @@
       "stars": []
     }
   },
-  "llm_calls": 408,
-  "llm_posts": 114,
+  "llm_calls": 410,
+  "llm_posts": 115,
   "x_texts": [
-    "⏰ AC Milan reçoit Frosinone en Serie A : coup d’envoi dans 1 heure, à 18h (heure de Paris). Alphadjo Cisse et Adrien Rabiot (5 buts chacun), Antonio Raimondo (8 buts) sont attendus. Qui gagne ?",
     "⏰ Coup d'envoi dans 1 heure : AC Milan × Frosinone !",
     "⏰ Coup d'envoi dans 1 heure : AC Milan × Frosinone !",
     "⏱️ Man City 1-1 Fulham : chacun repart avec sa part, impossible de départager les deux. Le nul a tranché… en ne tranchant rien ! Ton avis ?",
@@ -2746,6 +2745,7 @@
     "⏱️ Barça 3-2 Villarreal ! Le Barça prend la victoire dans un score serré, Villarreal n’a jamais été loin. À qui revient le match ?",
     "⏱️ Liverpool 4-0 Man United. Liverpool s’impose, mais aucun buteur n’est précisé dans les faits. Qui mérite le titre de joueur du match ?",
     "⏱️ Liverpool 4-0 Man United ! Liverpool impose sa loi, Man United ne trouve pas la faille. Qui a marqué les esprits ?",
-    "⏱️ Liverpool et Man United se quittent sur un match nul. Pas de vainqueur au bout du compte. Qui a le plus pesé dans ce match ?"
+    "⏱️ Liverpool et Man United se quittent sur un match nul. Pas de vainqueur au bout du compte. Qui a le plus pesé dans ce match ?",
+    "⏱️ AC Milan 5-1 Frosinone ! L’AC Milan s’offre une belle soirée, Frosinone a surtout servi de décor au festival. Qui a le plus régalé ?"
   ]
 }
