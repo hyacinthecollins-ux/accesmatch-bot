@@ -2420,6 +2420,32 @@
       "created": "2026-11-22T13:30:27Z",
       "fails": 3,
       "design": "crests-v1"
+    },
+    "r564749": {
+      "kind": "result",
+      "match_id": 564749,
+      "label": "BARÇA-VILLARREAL",
+      "kickoff": "2026-11-22T13:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/r564749-20261122.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-22T15:10:29Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "f564749": {
+      "kind": "xr",
+      "match_id": 564749,
+      "label": "BARÇA-VILLARREAL",
+      "kickoff": "2026-11-22T13:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/xr564749-20261122.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-22T15:10:29Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   },
   "squads": {
