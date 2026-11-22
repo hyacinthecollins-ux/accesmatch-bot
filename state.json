@@ -2447,6 +2447,32 @@
       "created": "2026-11-22T15:10:29Z",
       "fails": 3,
       "design": "crests-v1"
+    },
+    "r560645": {
+      "kind": "result",
+      "match_id": 560645,
+      "label": "LIVERPOOL-MAN UNITED",
+      "kickoff": "2026-11-22T16:30:00Z",
+      "status": "poster_ready",
+      "poster": "posters/r560645-20261122.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-22T18:31:00Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "f560645": {
+      "kind": "xr",
+      "match_id": 560645,
+      "label": "LIVERPOOL-MAN UNITED",
+      "kickoff": "2026-11-22T16:30:00Z",
+      "status": "poster_ready",
+      "poster": "posters/xr560645-20261122.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-22T18:31:00Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   },
   "squads": {
