@@ -2485,7 +2485,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-22T19:00:44Z",
-      "fails": 1,
+      "fails": 2,
       "design": "crests-v1"
     }
   },
@@ -2714,10 +2714,9 @@
       "stars": []
     }
   },
-  "llm_calls": 410,
-  "llm_posts": 115,
+  "llm_calls": 413,
+  "llm_posts": 116,
   "x_texts": [
-    "⏰ Coup d'envoi dans 1 heure : AC Milan × Frosinone !",
     "⏰ Coup d'envoi dans 1 heure : AC Milan × Frosinone !",
     "⏱️ Man City 1-1 Fulham : chacun repart avec sa part, impossible de départager les deux. Le nul a tranché… en ne tranchant rien ! Ton avis ?",
     "⏱️ Man City 1-1 Fulham : les deux équipes se quittent sur un nul. Personne n’a pris le dessus, le tableau a choisi la paix. Qui t’a le plus convaincu ?",
@@ -2746,6 +2745,7 @@
     "⏱️ Liverpool 4-0 Man United. Liverpool s’impose, mais aucun buteur n’est précisé dans les faits. Qui mérite le titre de joueur du match ?",
     "⏱️ Liverpool 4-0 Man United ! Liverpool impose sa loi, Man United ne trouve pas la faille. Qui a marqué les esprits ?",
     "⏱️ Liverpool et Man United se quittent sur un match nul. Pas de vainqueur au bout du compte. Qui a le plus pesé dans ce match ?",
-    "⏱️ AC Milan 5-1 Frosinone ! L’AC Milan s’offre une belle soirée, Frosinone a surtout servi de décor au festival. Qui a le plus régalé ?"
+    "⏱️ AC Milan 5-1 Frosinone ! L’AC Milan s’offre une belle soirée, Frosinone a surtout servi de décor au festival. Qui a le plus régalé ?",
+    "⏱️ AC Milan 5-1 Frosinone. AC Milan a fait trembler les filets, Frosinone a surtout compté les dégâts. Quel joueur vous a le plus convaincu ?"
   ]
 }
