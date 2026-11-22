@@ -2459,7 +2459,8 @@
       "due": null,
       "created": "2026-11-22T18:31:00Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "sent"
     },
     "f560645": {
       "kind": "xr",
@@ -2471,7 +2472,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-22T18:31:00Z",
-      "fails": 0,
+      "fails": 1,
       "design": "crests-v1"
     }
   },
@@ -2700,10 +2701,9 @@
       "stars": []
     }
   },
-  "llm_calls": 402,
-  "llm_posts": 111,
+  "llm_calls": 404,
+  "llm_posts": 112,
   "x_texts": [
-    "⏰ Liverpool-Man United, le duel de Premier League démarre dans 1 heure, à 17h30 (heure de Paris) ! Isak (7 buts), Wirtz et Bruno Fernandes (4 buts, 2 passes) sont à surveiller. Ton score ?",
     "🔥 C'est bientôt : Liverpool × Man United dans 1 heure !",
     "🔥 C'est bientôt : Liverpool × Man United dans 1 heure !",
     "⏰ AC Milan reçoit Frosinone en Serie A : coup d’envoi dans 1 heure, à 18h (heure de Paris). Alphadjo Cisse et Adrien Rabiot (5 buts chacun), Antonio Raimondo (8 buts) sont attendus. Qui gagne ?",
@@ -2732,6 +2732,7 @@
     "⏱️ Juventus 4-0 Venezia FC. Juventus s’impose avec autorité : ce score a de quoi donner le sourire aux supporters. Quel joueur t’a convaincu ?",
     "⏱️ Barça 3-2 Villarreal ! Le Barça s’impose au terme d’un final sous haute tension. Qui a tenu le match par les nerfs ?",
     "⏱️ Barça 3-2 Villarreal ! Au bout d’un match sous tension, le Barça s’impose. Qui a gardé la tête froide dans ce final électrique ?",
-    "⏱️ Barça 3-2 Villarreal ! Le Barça prend la victoire dans un score serré, Villarreal n’a jamais été loin. À qui revient le match ?"
+    "⏱️ Barça 3-2 Villarreal ! Le Barça prend la victoire dans un score serré, Villarreal n’a jamais été loin. À qui revient le match ?",
+    "⏱️ Liverpool 4-0 Man United. Liverpool s’impose, mais aucun buteur n’est précisé dans les faits. Qui mérite le titre de joueur du match ?"
   ]
 }
