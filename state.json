@@ -2512,7 +2512,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-22T21:50:31Z",
-      "fails": 1,
+      "fails": 2,
       "design": "crests-v1"
     }
   },
@@ -2741,10 +2741,9 @@
       "stars": []
     }
   },
-  "llm_calls": 417,
+  "llm_calls": 420,
   "llm_posts": 118,
   "x_texts": [
-    "⏱️ Man City 1-1 Fulham : les deux équipes se quittent sur un nul. Personne n’a pris le dessus, le tableau a choisi la paix. Qui t’a le plus convaincu ?",
     "⏱️ Man City 1-1 Fulham. Personne n’a plié, même le tableau d’affichage a refusé de choisir son camp. Qui mérite ton vote ?",
     "⏱️ Leverkusen 4-0 SC Paderborn : Leverkusen s’offre une soirée de gala et laisse le tableau parler pour lui. Quel joueur t’a le plus marqué ?",
     "⏱️ M'gladbach 0-1 Dortmund : Dortmund repart avec la victoire, mais aucun buteur n’est indiqué dans les faits. Un petit score, une soirée réussie : ton joueur du match ?",
@@ -2773,6 +2772,7 @@
     "⏱️ AC Milan 5-1 Frosinone ! L’AC Milan s’offre une belle soirée, Frosinone a surtout servi de décor au festival. Qui a le plus régalé ?",
     "⏱️ AC Milan 5-1 Frosinone. AC Milan a fait trembler les filets, Frosinone a surtout compté les dégâts. Quel joueur vous a le plus convaincu ?",
     "⏱️ AC Milan 5-1 Frosinone. AC Milan a réglé l’addition, Frosinone a laissé le pourboire. Ton joueur du match ?",
-    "⏱️ OM 2-3 Le Mans. Le Mans repart avec la victoire, l’OM voit la soirée lui échapper. Ce score va faire parler : qui mérite le titre d’homme du match ?"
+    "⏱️ OM 2-3 Le Mans. Le Mans repart avec la victoire, l’OM voit la soirée lui échapper. Ce score va faire parler : qui mérite le titre d’homme du match ?",
+    "⏱️ OM 2-3 Le Mans ! Ton joueur du match ? 👇"
   ]
 }
