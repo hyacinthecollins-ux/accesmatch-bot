@@ -1,19 +1,5 @@
 {
   "items": {
-    "p560614": {
-      "kind": "preview",
-      "match_id": 560614,
-      "label": "ASTON VILLA-MAN CITY",
-      "kickoff": "2026-10-24T11:30:00Z",
-      "status": "failed",
-      "poster": "posters/p560614-20261024.jpg",
-      "post_id": null,
-      "due": null,
-      "created": "2026-10-23T01:24:38Z",
-      "fails": 3,
-      "design": "crests-v1",
-      "tg": "skip"
-    },
     "p560616": {
       "kind": "preview",
       "match_id": 560616,
