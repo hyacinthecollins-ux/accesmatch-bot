@@ -2553,6 +2553,45 @@
       "created": "2026-11-23T00:00:30Z",
       "fails": 3,
       "design": "crests-v1"
+    },
+    "h575398": {
+      "kind": "x1",
+      "match_id": 575398,
+      "label": "MAN CITY-NAPOLI",
+      "kickoff": "2026-11-24T20:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/x575398-20261124.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-23T17:00:40Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "h575399": {
+      "kind": "x1",
+      "match_id": 575399,
+      "label": "ARSENAL-DORTMUND",
+      "kickoff": "2026-11-24T20:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/x575399-20261124.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-23T17:00:40Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "h575397": {
+      "kind": "x1",
+      "match_id": 575397,
+      "label": "REAL MADRID-PSV",
+      "kickoff": "2026-11-24T20:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/x575397-20261124.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-23T17:00:40Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   },
   "squads": {
