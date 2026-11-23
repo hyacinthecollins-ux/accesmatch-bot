@@ -2526,7 +2526,8 @@
       "due": null,
       "created": "2026-11-23T00:00:30Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "sent"
     },
     "a575399": {
       "kind": "x24",
@@ -2538,7 +2539,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-23T00:00:30Z",
-      "fails": 0,
+      "fails": 1,
       "design": "crests-v1"
     },
     "p575397": {
@@ -2552,7 +2553,8 @@
       "due": null,
       "created": "2026-11-23T00:00:30Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "sent"
     },
     "a575397": {
       "kind": "x24",
@@ -2564,7 +2566,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-23T00:00:30Z",
-      "fails": 0,
+      "fails": 1,
       "design": "crests-v1"
     },
     "p575398": {
@@ -2578,7 +2580,8 @@
       "due": null,
       "created": "2026-11-23T00:00:30Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "sent"
     },
     "a575398": {
       "kind": "x24",
@@ -2590,7 +2593,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-23T00:00:30Z",
-      "fails": 0,
+      "fails": 1,
       "design": "crests-v1"
     }
   },
@@ -2647,7 +2650,7 @@
       "stars": []
     },
     "86": {
-      "t": "2026-10-31T02:58:16Z",
+      "t": "2026-11-23T00:00:40Z",
       "stars": [
         "Eduardo Camavinga",
         "Jude Bellingham",
@@ -2663,7 +2666,7 @@
       ]
     },
     "57": {
-      "t": "2026-10-31T02:58:16Z",
+      "t": "2026-11-23T00:00:40Z",
       "stars": [
         "Bukayo Saka"
       ]
@@ -2743,7 +2746,7 @@
       "stars": []
     },
     "113": {
-      "t": "2026-11-07T00:00:58Z",
+      "t": "2026-11-23T00:00:40Z",
       "stars": []
     },
     "110": {
@@ -2817,14 +2820,15 @@
     "535": {
       "t": "2026-11-21T00:00:44Z",
       "stars": []
+    },
+    "674": {
+      "t": "2026-11-23T00:00:40Z",
+      "stars": []
     }
   },
-  "llm_calls": 423,
-  "llm_posts": 119,
+  "llm_calls": 429,
+  "llm_posts": 122,
   "x_texts": [
-    "⏱️ Leverkusen 4-0 SC Paderborn : Leverkusen s’offre une soirée de gala et laisse le tableau parler pour lui. Quel joueur t’a le plus marqué ?",
-    "⏱️ M'gladbach 0-1 Dortmund : Dortmund repart avec la victoire, mais aucun buteur n’est indiqué dans les faits. Un petit score, une soirée réussie : ton joueur du match ?",
-    "⏱️ Leverkusen 4-0 SC Paderborn : Leverkusen transforme l’affiche en soirée de gala, avec quatre buts au rendez-vous. À qui donnerais-tu les projecteurs ?",
     "⏱️ M'gladbach 0-1 Dortmund : Dortmund repart avec le gros morceau au terme d’une affiche serrée. Le score est court, le coup compte. Qui t’a convaincu ?",
     "⏰ OM-Le Mans en Ligue 1 : coup d’envoi dans 1 heure, à 20h45. Amine Gouiri (7 buts, 3 passes décisives) et Louis Mafouta (4 buts) sont à surveiller. Qui gagne ?",
     "⏱️ Leverkusen 4-0 SC Paderborn : Leverkusen fait parler la poudre et signe une soirée de gala. Quel joueur mérite les projecteurs ?",
@@ -2851,6 +2855,9 @@
     "⏱️ AC Milan 5-1 Frosinone. AC Milan a réglé l’addition, Frosinone a laissé le pourboire. Ton joueur du match ?",
     "⏱️ OM 2-3 Le Mans. Le Mans repart avec la victoire, l’OM voit la soirée lui échapper. Ce score va faire parler : qui mérite le titre d’homme du match ?",
     "⏱️ OM 2-3 Le Mans ! Ton joueur du match ? 👇",
-    "⏱️ OM 2-3 Le Mans. Le Mans repart vainqueur, l’OM reste à quai : ce score a le goût d’un final irrespirable. Ton joueur du match ?"
+    "⏱️ OM 2-3 Le Mans. Le Mans repart vainqueur, l’OM reste à quai : ce score a le goût d’un final irrespirable. Ton joueur du match ?",
+    "🔥 Demain à 21h (heure de Paris), Arsenal reçoit Dortmund en Ligue des champions. Deux très grosses équipes face à face : Eberechi Eze (2 buts) et Sehrou Guirassy (4) sont à surveiller. Qui gagne ?",
+    "🔥 Les grands soirs n’attendent personne : demain à 21h (heure de Paris), le Real Madrid reçoit le PSV en Ligue des champions. Mbappé (4 buts, 1 passe décisive) et Valverde (2 buts) à surveiller. Qui fait la différence ?",
+    "🔥 Man City reçoit Napoli demain à 21h (heure de Paris) en Ligue des champions : Haaland (5 buts) et McTominay (3) sont à surveiller, Cherki aussi. Qui repart avec le sourire ?"
   ]
 }
