@@ -2564,7 +2564,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-23T17:00:40Z",
-      "fails": 0,
+      "fails": 1,
       "design": "crests-v1"
     },
     "h575399": {
@@ -2577,7 +2577,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-23T17:00:40Z",
-      "fails": 0,
+      "fails": 1,
       "design": "crests-v1"
     },
     "h575397": {
@@ -2590,7 +2590,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-23T17:00:40Z",
-      "fails": 0,
+      "fails": 1,
       "design": "crests-v1"
     }
   },
@@ -2823,12 +2823,9 @@
       "stars": []
     }
   },
-  "llm_calls": 447,
-  "llm_posts": 128,
+  "llm_calls": 454,
+  "llm_posts": 131,
   "x_texts": [
-    "⏱️ Nice 2-3 PSG ! Ton joueur du match ? 👇",
-    "⏱️ Nice et PSG se quittent sur un match nul. Le score exact et les buteurs ne sont pas précisés : impossible de distribuer les bons points ! Ton avis ?",
-    "⏱️ Nice 2-3 PSG ! Les Parisiens repartent avec la victoire, Nice avec un score qui ne laisse pas le temps de souffler. Qui t’a le plus convaincu ?",
     "⏱️ Lille 0-1 Lyon ! Un but suffit à Lyon pour repartir vainqueur, Lille reste muet. Verdict sur ce résultat ?",
     "⏱️ Lille 0-1 Lyon ! Un écart minuscule, un verdict net : Lyon repart vainqueur. Quel moment t’a marqué ?",
     "⏱️ Lille 0-1 Lyon ! Lyon repart avec la victoire, Lille reste muet. Une soirée sous tension jusqu’au bout : qui mérite le titre d’homme du match ?",
@@ -2855,6 +2852,9 @@
     "🔥 Pas le moment de cligner des yeux : Man City reçoit Napoli demain à 21h (heure de Paris) en Ligue des champions. Haaland (5 buts), Foden (3 buts, 1 passe décisive) et McTominay (3 buts) sont à surveiller. Qui ouvre le bal ?",
     "🔥 Arsenal et Dortmund se retrouvent demain à 21h (heure de Paris) en Ligue des champions : Eberechi Eze (2 buts) et Sehrou Guirassy (4) seront à surveiller. Qui frappe le premier ?",
     "🚨 Le Real Madrid reçoit le PSV demain à 21h (heure de Paris) en Ligue des champions. Mbappé (4 buts, 1 passe décisive), Valverde (2 buts) et Camavinga sont attendus. Qui repartira avec la victoire ?",
-    "🔥 Man City-Napoli, les poids lourds entrent en scène demain à 21h (heure de Paris) en Ligue des champions. Haaland (5 buts) et Foden (3 buts, 1 passe décisive) sont à surveiller. Qui va marquer le premier ?"
+    "🔥 Man City-Napoli, les poids lourds entrent en scène demain à 21h (heure de Paris) en Ligue des champions. Haaland (5 buts) et Foden (3 buts, 1 passe décisive) sont à surveiller. Qui va marquer le premier ?",
+    "⏰ Man City-Napoli, choc de Ligue des champions : coup d’envoi dans 1 heure, à 21h (heure de Paris). Haaland (5 buts), Foden (3 buts, 1 passe décisive) et McTominay (3 buts) sont attendus. Qui gagne ?",
+    "⏰ Arsenal-Dortmund, choc de Ligue des champions : coup d’envoi dans 1 heure, à 21h (heure de Paris). Eberechi Eze (2 buts) et Sehrou Guirassy (4) sont attendus, Bukayo Saka aussi à surveiller. Ton buteur ?",
+    "⏰ Dans 1 heure, le Real Madrid accueille le PSV en Ligue des champions : coup d’envoi à 21h (heure de Paris). Mbappé (4 buts, 1 passe décisive) et Valverde (2 buts) sont à surveiller. Le PSV gâche la fête ?"
   ]
 }
