@@ -2677,7 +2677,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-24T22:00:33Z",
-      "fails": 1,
+      "fails": 2,
       "design": "crests-v1"
     },
     "r575399": {
@@ -2704,7 +2704,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-24T22:00:33Z",
-      "fails": 1,
+      "fails": 2,
       "design": "crests-v1"
     },
     "r575397": {
@@ -2731,7 +2731,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-24T22:00:33Z",
-      "fails": 1,
+      "fails": 2,
       "design": "crests-v1"
     }
   },
@@ -2980,12 +2980,9 @@
       "stars": []
     }
   },
-  "llm_calls": 574,
-  "llm_posts": 152,
+  "llm_calls": 582,
+  "llm_posts": 155,
   "x_texts": [
-    "🔥 Demain à 21h (heure de Paris), Inter reçoit Stuttgart en Ligue des champions. Lautaro Martínez (2 buts, 1 passe décisive) et Ermedin Demirovic (4 buts) sont à surveiller. Qui trouvera la faille ?",
-    "🔥 Demain à 21h (heure de Paris), l’Atlético accueille Viking en Ligue des champions. Zlatko Tripić (2 buts, 3 passes décisives) et Peter Christiansen (2 buts, 1 passe décisive) sont à surveiller. Qui fera la différence ?",
-    "🔥 Demain à 18h45 (heure de Paris), Sabah FK reçoit le Barça en Ligue des champions : Raphinha (4 buts) et Lamine Yamal (3 buts, 4 passes décisives) sont les noms à retenir. Qui fera trembler les filets ?",
     "🚨 PSG × Roma : rendez-vous demain à 21h !",
     "🔥 Lille reçoit le Bayern demain à 21h (heure de Paris) en Ligue des champions. Soriba Diaoune (2 buts cette saison) et Harry Kane (4 buts, 3 passes décisives) sont à l’affiche. Qui va frapper en premier ?",
     "🔥 Inter × Stuttgart demain à 21h !",
@@ -3012,6 +3009,9 @@
     "🚨 Atlético × Viking dans 1 heure (Ligue des champions) !",
     "⏱️ Man City 2-2 Napoli : les deux équipes se neutralisent, et personne ne repart avec la couronne. Le partage des points est acté, les débats restent ouverts : qui vous a le plus convaincu ?",
     "⏱️ Arsenal 1-1 Dortmund : les deux équipes se quittent sur un nul, au bout d’un duel sous tension. Qui t’a le plus convaincu ?",
-    "⏱️ Real Madrid 5-1 PSV : le Real Madrid s’offre une soirée de gala, avec un score qui fait office de feu d’artifice. Quel moment retiens-tu ?"
+    "⏱️ Real Madrid 5-1 PSV : le Real Madrid s’offre une soirée de gala, avec un score qui fait office de feu d’artifice. Quel moment retiens-tu ?",
+    "⏱️ Man City 2-2 Napoli : personne ne prend le dessus, les points sont partagés. Les défenses ont laissé le spectacle aux attaquants… elles leur doivent bien ça. Ton joueur du match ?",
+    "⏱️ Arsenal 1-1 Dortmund : les deux camps ont tenu bon jusqu’au bout, sans réussir à faire pencher la soirée. La tension était là, le vainqueur manque. Ton joueur du match ?",
+    "⏱️ Real Madrid 5-1 PSV : le Real Madrid transforme l’affiche en soirée de gala. Quel joueur mérite les projecteurs ?"
   ]
 }
