@@ -2682,7 +2682,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-24T14:50:45Z",
-      "fails": 1,
+      "fails": 2,
       "design": "crests-v1"
     }
   },
@@ -2931,10 +2931,9 @@
       "stars": []
     }
   },
-  "llm_calls": 523,
-  "llm_posts": 142,
+  "llm_calls": 527,
+  "llm_posts": 143,
   "x_texts": [
-    "🔥 Une affiche de gala attend le Real Madrid : demain à 21h (heure de Paris), le PSV débarque en Ligue des champions. Kylian Mbappé (4 buts, 1 passe décisive) et Federico Valverde (2 buts) sont à surveiller. Votre score ?",
     "🔥 Pas le moment de cligner des yeux : Man City reçoit Napoli demain à 21h (heure de Paris) en Ligue des champions. Haaland (5 buts), Foden (3 buts, 1 passe décisive) et McTominay (3 buts) sont à surveiller. Qui ouvre le bal ?",
     "🔥 Arsenal et Dortmund se retrouvent demain à 21h (heure de Paris) en Ligue des champions : Eberechi Eze (2 buts) et Sehrou Guirassy (4) seront à surveiller. Qui frappe le premier ?",
     "🚨 Le Real Madrid reçoit le PSV demain à 21h (heure de Paris) en Ligue des champions. Mbappé (4 buts, 1 passe décisive), Valverde (2 buts) et Camavinga sont attendus. Qui repartira avec la victoire ?",
@@ -2963,6 +2962,7 @@
     "⚽ Ligue des champions : Lille × Bayern demain à 21h !",
     "🔥 Inter × Stuttgart demain à 21h !",
     "🔥 Atlético × Viking demain à 21h !",
-    "⏰ Sabah FK–Barça : coup d’envoi dans 1 heure, à 18h45 ! Raphinha, auteur de 4 buts en Ligue des champions cette saison, et Lamine Yamal (3 buts, 4 passes décisives) sont à surveiller. Qui gagne ?"
+    "⏰ Sabah FK–Barça : coup d’envoi dans 1 heure, à 18h45 ! Raphinha, auteur de 4 buts en Ligue des champions cette saison, et Lamine Yamal (3 buts, 4 passes décisives) sont à surveiller. Qui gagne ?",
+    "⏰ Sabah FK reçoit le Barça en Ligue des champions : rendez-vous dans 1 heure, à 18h45 ! Raphinha (4 buts), Lamine Yamal (3 buts, 4 passes décisives) et Rodri seront à surveiller. Qui fait la différence ?"
   ]
 }
