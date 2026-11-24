@@ -2672,12 +2672,12 @@
       "match_id": 575398,
       "label": "MAN CITY-NAPOLI",
       "kickoff": "2026-11-24T20:00:00Z",
-      "status": "poster_ready",
+      "status": "failed",
       "poster": "posters/xr575398-20261124.jpg",
       "post_id": null,
       "due": null,
       "created": "2026-11-24T22:00:33Z",
-      "fails": 2,
+      "fails": 3,
       "design": "crests-v1"
     },
     "r575399": {
@@ -2699,12 +2699,12 @@
       "match_id": 575399,
       "label": "ARSENAL-DORTMUND",
       "kickoff": "2026-11-24T20:00:00Z",
-      "status": "poster_ready",
+      "status": "failed",
       "poster": "posters/xr575399-20261124.jpg",
       "post_id": null,
       "due": null,
       "created": "2026-11-24T22:00:33Z",
-      "fails": 2,
+      "fails": 3,
       "design": "crests-v1"
     },
     "r575397": {
@@ -2726,12 +2726,12 @@
       "match_id": 575397,
       "label": "REAL MADRID-PSV",
       "kickoff": "2026-11-24T20:00:00Z",
-      "status": "poster_ready",
+      "status": "failed",
       "poster": "posters/xr575397-20261124.jpg",
       "post_id": null,
       "due": null,
       "created": "2026-11-24T22:00:33Z",
-      "fails": 2,
+      "fails": 3,
       "design": "crests-v1"
     }
   },
@@ -2980,12 +2980,9 @@
       "stars": []
     }
   },
-  "llm_calls": 582,
-  "llm_posts": 155,
+  "llm_calls": 592,
+  "llm_posts": 157,
   "x_texts": [
-    "🚨 PSG × Roma : rendez-vous demain à 21h !",
-    "🔥 Lille reçoit le Bayern demain à 21h (heure de Paris) en Ligue des champions. Soriba Diaoune (2 buts cette saison) et Harry Kane (4 buts, 3 passes décisives) sont à l’affiche. Qui va frapper en premier ?",
-    "🔥 Inter × Stuttgart demain à 21h !",
     "🔥 Atlético × Viking demain à 21h !",
     "🚨 Sabah FK × Barça : rendez-vous demain à 18h45 !",
     "🚨 PSG × Roma : rendez-vous demain à 21h !",
@@ -3012,6 +3009,9 @@
     "⏱️ Real Madrid 5-1 PSV : le Real Madrid s’offre une soirée de gala, avec un score qui fait office de feu d’artifice. Quel moment retiens-tu ?",
     "⏱️ Man City 2-2 Napoli : personne ne prend le dessus, les points sont partagés. Les défenses ont laissé le spectacle aux attaquants… elles leur doivent bien ça. Ton joueur du match ?",
     "⏱️ Arsenal 1-1 Dortmund : les deux camps ont tenu bon jusqu’au bout, sans réussir à faire pencher la soirée. La tension était là, le vainqueur manque. Ton joueur du match ?",
-    "⏱️ Real Madrid 5-1 PSV : le Real Madrid transforme l’affiche en soirée de gala. Quel joueur mérite les projecteurs ?"
+    "⏱️ Real Madrid 5-1 PSV : le Real Madrid transforme l’affiche en soirée de gala. Quel joueur mérite les projecteurs ?",
+    "⏱️ Man City 2-2 Napoli ! Ton joueur du match ? 👇",
+    "⏱️ Arsenal 1-1 Dortmund : le bras de fer s’achève sans vainqueur. Le score reste verrouillé à égalité, et la tension n’aura pas désigné de camp gagnant. Ton joueur du match ?",
+    "⏱️ Real Madrid 5-1 PSV : le Real Madrid donne à ce choc des allures de grande soirée, avec un score qui parle de lui-même. Ton joueur du match ?"
   ]
 }
