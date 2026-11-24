@@ -1,19 +1,5 @@
 {
   "items": {
-    "p559649": {
-      "kind": "preview",
-      "match_id": 559649,
-      "label": "OM-LE HAVRE",
-      "kickoff": "2026-10-25T16:15:00Z",
-      "status": "failed",
-      "poster": "posters/p559649-20261025.jpg",
-      "post_id": null,
-      "due": null,
-      "created": "2026-10-24T06:55:18Z",
-      "fails": 3,
-      "design": "crests-v1",
-      "tg": "skip"
-    },
     "p565836": {
       "kind": "preview",
       "match_id": 565836,
@@ -52,20 +38,6 @@
       "post_id": null,
       "due": null,
       "created": "2026-10-25T08:58:38Z",
-      "fails": 3,
-      "design": "crests-v1",
-      "tg": "sent"
-    },
-    "r559649": {
-      "kind": "result",
-      "match_id": 559649,
-      "label": "OM-LE HAVRE",
-      "kickoff": "2026-10-25T16:15:00Z",
-      "status": "failed",
-      "poster": "posters/r559649-20261025.jpg",
-      "post_id": null,
-      "due": null,
-      "created": "2026-10-25T19:53:18Z",
       "fails": 3,
       "design": "crests-v1",
       "tg": "sent"
