@@ -2604,7 +2604,8 @@
       "due": null,
       "created": "2026-11-24T00:00:43Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "sent"
     },
     "a575404": {
       "kind": "x24",
@@ -2616,7 +2617,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-24T00:00:43Z",
-      "fails": 0,
+      "fails": 1,
       "design": "crests-v1"
     },
     "p575408": {
@@ -2630,7 +2631,8 @@
       "due": null,
       "created": "2026-11-24T00:00:43Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "sent"
     },
     "a575408": {
       "kind": "x24",
@@ -2642,7 +2644,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-24T00:00:43Z",
-      "fails": 0,
+      "fails": 1,
       "design": "crests-v1"
     },
     "p575410": {
@@ -2656,7 +2658,8 @@
       "due": null,
       "created": "2026-11-24T00:00:43Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "sent"
     },
     "a575410": {
       "kind": "x24",
@@ -2668,7 +2671,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-24T00:00:43Z",
-      "fails": 0,
+      "fails": 1,
       "design": "crests-v1"
     },
     "a575406": {
@@ -2681,7 +2684,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-24T00:00:43Z",
-      "fails": 0,
+      "fails": 1,
       "design": "crests-v1"
     },
     "a575407": {
@@ -2694,7 +2697,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-24T00:00:43Z",
-      "fails": 0,
+      "fails": 1,
       "design": "crests-v1"
     },
     "p575409": {
@@ -2708,7 +2711,8 @@
       "due": null,
       "created": "2026-11-24T00:00:43Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "sent"
     },
     "p575411": {
       "kind": "preview",
@@ -2721,7 +2725,8 @@
       "due": null,
       "created": "2026-11-24T00:00:43Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "sent"
     }
   },
   "squads": {
@@ -2823,11 +2828,11 @@
       ]
     },
     "78": {
-      "t": "2026-11-02T00:00:52Z",
+      "t": "2026-11-24T00:00:58Z",
       "stars": []
     },
     "100": {
-      "t": "2026-11-02T00:00:52Z",
+      "t": "2026-11-24T00:00:58Z",
       "stars": [
         "Anass Salah-Eddine"
       ]
@@ -2951,16 +2956,27 @@
     "674": {
       "t": "2026-11-23T00:00:40Z",
       "stars": []
+    },
+    "10233": {
+      "t": "2026-11-24T00:00:58Z",
+      "stars": []
+    },
+    "108": {
+      "t": "2026-11-24T00:00:58Z",
+      "stars": []
+    },
+    "10": {
+      "t": "2026-11-24T00:00:58Z",
+      "stars": []
+    },
+    "5720": {
+      "t": "2026-11-24T00:00:58Z",
+      "stars": []
     }
   },
-  "llm_calls": 474,
-  "llm_posts": 134,
+  "llm_calls": 489,
+  "llm_posts": 139,
   "x_texts": [
-    "⏱️ Barça 3-2 Villarreal ! Le Barça s’impose au terme d’un final sous haute tension. Qui a tenu le match par les nerfs ?",
-    "⏱️ Barça 3-2 Villarreal ! Au bout d’un match sous tension, le Barça s’impose. Qui a gardé la tête froide dans ce final électrique ?",
-    "⏱️ Barça 3-2 Villarreal ! Le Barça prend la victoire dans un score serré, Villarreal n’a jamais été loin. À qui revient le match ?",
-    "⏱️ Liverpool 4-0 Man United. Liverpool s’impose, mais aucun buteur n’est précisé dans les faits. Qui mérite le titre de joueur du match ?",
-    "⏱️ Liverpool 4-0 Man United ! Liverpool impose sa loi, Man United ne trouve pas la faille. Qui a marqué les esprits ?",
     "⏱️ Liverpool et Man United se quittent sur un match nul. Pas de vainqueur au bout du compte. Qui a le plus pesé dans ce match ?",
     "⏱️ AC Milan 5-1 Frosinone ! L’AC Milan s’offre une belle soirée, Frosinone a surtout servi de décor au festival. Qui a le plus régalé ?",
     "⏱️ AC Milan 5-1 Frosinone. AC Milan a fait trembler les filets, Frosinone a surtout compté les dégâts. Quel joueur vous a le plus convaincu ?",
@@ -2985,6 +3001,11 @@
     "🔥 C'est bientôt : Real Madrid × PSV dans 1 heure !",
     "⏰ Man City-Napoli, l’affiche de Ligue des champions approche : coup d’envoi dans 1 heure, à 21h (heure de Paris). Haaland (5 buts) et McTominay (3) auront un rôle à suivre. Qui l’emporte ?",
     "🚨 Arsenal reçoit Dortmund en Ligue des champions : coup d’envoi dans 1 heure, à 21h (heure de Paris). Eberechi Eze (2 buts) et Sehrou Guirassy (4) peuvent faire basculer l’affiche. Qui l’emporte ?",
-    "🔥 C'est bientôt : Real Madrid × PSV dans 1 heure !"
+    "🔥 C'est bientôt : Real Madrid × PSV dans 1 heure !",
+    "🔥 Demain à 18h45 (heure de Paris), Sabah FK reçoit le Barça en Ligue des champions : chaque ballon pourrait peser lourd. Raphinha (4 buts) et Lamine Yamal (3 buts, 4 passes décisives) seront à surveiller. Qui l’emporte ?",
+    "🔥 Demain à 21h (heure de Paris), PSG-Roma en Ligue des champions : Fabián Ruiz (4 buts, 1 passe décisive) et Donyell Malen (4 buts, 2 passes) sont à surveiller. Les filets vont avoir du travail : qui marque ?",
+    "🔥 Demain à 21h (heure de Paris), Lille défie Bayern en Ligue des champions. Soriba Diaoune (2 buts) et Harry Kane (4 buts, 3 passes décisives) sont à surveiller. Deux très grosses équipes face à face : qui imposera son jeu ?",
+    "🔥 Demain à 21h (heure de Paris), Inter reçoit Stuttgart en Ligue des champions. Lautaro Martínez (2 buts, 1 passe décisive) et Ermedin Demirovic (4 buts) sont à surveiller. Qui trouvera la faille ?",
+    "🔥 Demain à 21h (heure de Paris), l’Atlético accueille Viking en Ligue des champions. Zlatko Tripić (2 buts, 3 passes décisives) et Peter Christiansen (2 buts, 1 passe décisive) sont à surveiller. Qui fera la différence ?"
   ]
 }
