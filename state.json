@@ -2628,6 +2628,58 @@
       "created": "2026-11-24T14:50:45Z",
       "fails": 3,
       "design": "crests-v1"
+    },
+    "h575410": {
+      "kind": "x1",
+      "match_id": 575410,
+      "label": "LILLE-BAYERN",
+      "kickoff": "2026-11-25T20:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/x575410-20261125.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-24T17:00:42Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "h575406": {
+      "kind": "x1",
+      "match_id": 575406,
+      "label": "INTER-STUTTGART",
+      "kickoff": "2026-11-25T20:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/x575406-20261125.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-24T17:00:42Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "h575408": {
+      "kind": "x1",
+      "match_id": 575408,
+      "label": "PSG-ROMA",
+      "kickoff": "2026-11-25T20:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/x575408-20261125.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-24T17:00:42Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "h575407": {
+      "kind": "x1",
+      "match_id": 575407,
+      "label": "ATLÉTICO-VIKING",
+      "kickoff": "2026-11-25T20:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/x575407-20261125.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-24T17:00:42Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   },
   "squads": {
