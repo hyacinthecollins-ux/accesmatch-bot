@@ -2664,7 +2664,8 @@
       "due": null,
       "created": "2026-11-24T22:00:33Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "sent"
     },
     "f575398": {
       "kind": "xr",
@@ -2676,7 +2677,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-24T22:00:33Z",
-      "fails": 0,
+      "fails": 1,
       "design": "crests-v1"
     },
     "r575399": {
@@ -2690,7 +2691,8 @@
       "due": null,
       "created": "2026-11-24T22:00:33Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "sent"
     },
     "f575399": {
       "kind": "xr",
@@ -2702,7 +2704,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-24T22:00:33Z",
-      "fails": 0,
+      "fails": 1,
       "design": "crests-v1"
     },
     "r575397": {
@@ -2716,7 +2718,8 @@
       "due": null,
       "created": "2026-11-24T22:00:33Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "sent"
     },
     "f575397": {
       "kind": "xr",
@@ -2728,7 +2731,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-24T22:00:33Z",
-      "fails": 0,
+      "fails": 1,
       "design": "crests-v1"
     }
   },
@@ -2977,12 +2980,9 @@
       "stars": []
     }
   },
-  "llm_calls": 567,
-  "llm_posts": 149,
+  "llm_calls": 574,
+  "llm_posts": 152,
   "x_texts": [
-    "🔥 Demain à 18h45 (heure de Paris), Sabah FK reçoit le Barça en Ligue des champions : chaque ballon pourrait peser lourd. Raphinha (4 buts) et Lamine Yamal (3 buts, 4 passes décisives) seront à surveiller. Qui l’emporte ?",
-    "🔥 Demain à 21h (heure de Paris), PSG-Roma en Ligue des champions : Fabián Ruiz (4 buts, 1 passe décisive) et Donyell Malen (4 buts, 2 passes) sont à surveiller. Les filets vont avoir du travail : qui marque ?",
-    "🔥 Demain à 21h (heure de Paris), Lille défie Bayern en Ligue des champions. Soriba Diaoune (2 buts) et Harry Kane (4 buts, 3 passes décisives) sont à surveiller. Deux très grosses équipes face à face : qui imposera son jeu ?",
     "🔥 Demain à 21h (heure de Paris), Inter reçoit Stuttgart en Ligue des champions. Lautaro Martínez (2 buts, 1 passe décisive) et Ermedin Demirovic (4 buts) sont à surveiller. Qui trouvera la faille ?",
     "🔥 Demain à 21h (heure de Paris), l’Atlético accueille Viking en Ligue des champions. Zlatko Tripić (2 buts, 3 passes décisives) et Peter Christiansen (2 buts, 1 passe décisive) sont à surveiller. Qui fera la différence ?",
     "🔥 Demain à 18h45 (heure de Paris), Sabah FK reçoit le Barça en Ligue des champions : Raphinha (4 buts) et Lamine Yamal (3 buts, 4 passes décisives) sont les noms à retenir. Qui fera trembler les filets ?",
@@ -3009,6 +3009,9 @@
     "🔥 C'est bientôt : Lille × Bayern dans 1 heure !",
     "🔥 C'est bientôt : Inter × Stuttgart dans 1 heure !",
     "⏰ Coup d'envoi dans 1 heure : PSG × Roma !",
-    "🚨 Atlético × Viking dans 1 heure (Ligue des champions) !"
+    "🚨 Atlético × Viking dans 1 heure (Ligue des champions) !",
+    "⏱️ Man City 2-2 Napoli : les deux équipes se neutralisent, et personne ne repart avec la couronne. Le partage des points est acté, les débats restent ouverts : qui vous a le plus convaincu ?",
+    "⏱️ Arsenal 1-1 Dortmund : les deux équipes se quittent sur un nul, au bout d’un duel sous tension. Qui t’a le plus convaincu ?",
+    "⏱️ Real Madrid 5-1 PSV : le Real Madrid s’offre une soirée de gala, avec un score qui fait office de feu d’artifice. Quel moment retiens-tu ?"
   ]
 }
