@@ -2671,6 +2671,19 @@
       "fails": 0,
       "design": "crests-v1",
       "tg": "sent"
+    },
+    "h575404": {
+      "kind": "x1",
+      "match_id": 575404,
+      "label": "SABAH FK-BARÇA",
+      "kickoff": "2026-11-25T17:45:00Z",
+      "status": "poster_ready",
+      "poster": "posters/x575404-20261125.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-24T14:50:45Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   },
   "squads": {
