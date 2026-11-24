@@ -2639,7 +2639,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-24T17:00:42Z",
-      "fails": 1,
+      "fails": 2,
       "design": "crests-v1"
     },
     "h575406": {
@@ -2652,7 +2652,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-24T17:00:42Z",
-      "fails": 1,
+      "fails": 2,
       "design": "crests-v1"
     },
     "h575408": {
@@ -2665,7 +2665,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-24T17:00:42Z",
-      "fails": 1,
+      "fails": 2,
       "design": "crests-v1"
     },
     "h575407": {
@@ -2678,7 +2678,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-24T17:00:42Z",
-      "fails": 1,
+      "fails": 2,
       "design": "crests-v1"
     }
   },
@@ -2927,13 +2927,9 @@
       "stars": []
     }
   },
-  "llm_calls": 542,
-  "llm_posts": 147,
+  "llm_calls": 555,
+  "llm_posts": 149,
   "x_texts": [
-    "⏰ Arsenal-Dortmund, choc de Ligue des champions : coup d’envoi dans 1 heure, à 21h (heure de Paris). Eberechi Eze (2 buts) et Sehrou Guirassy (4) sont attendus, Bukayo Saka aussi à surveiller. Ton buteur ?",
-    "⏰ Dans 1 heure, le Real Madrid accueille le PSV en Ligue des champions : coup d’envoi à 21h (heure de Paris). Mbappé (4 buts, 1 passe décisive) et Valverde (2 buts) sont à surveiller. Le PSV gâche la fête ?",
-    "🔥 C'est bientôt : Man City × Napoli dans 1 heure !",
-    "⏰ Arsenal-Dortmund, le duel s’ouvre dans 1 heure, à 21h (heure de Paris), en Ligue des champions. Eberechi Eze (2 buts) et Sehrou Guirassy (4) sont à surveiller, comme Saka et Jobe Bellingham. Qui l’emporte ?",
     "🔥 C'est bientôt : Real Madrid × PSV dans 1 heure !",
     "⏰ Man City-Napoli, l’affiche de Ligue des champions approche : coup d’envoi dans 1 heure, à 21h (heure de Paris). Haaland (5 buts) et McTominay (3) auront un rôle à suivre. Qui l’emporte ?",
     "🚨 Arsenal reçoit Dortmund en Ligue des champions : coup d’envoi dans 1 heure, à 21h (heure de Paris). Eberechi Eze (2 buts) et Sehrou Guirassy (4) peuvent faire basculer l’affiche. Qui l’emporte ?",
@@ -2959,6 +2955,10 @@
     "⏰ Lille reçoit le Bayern en Ligue des champions : coup d’envoi dans 1 heure, à 21h ! Soriba Diaoune (2 buts) et Harry Kane (4 buts, 3 passes décisives) seront à surveiller. Ton score ?",
     "⏰ Inter–Stuttgart, grand rendez-vous de Ligue des champions : coup d’envoi dans 1 heure, à 21h ! Lautaro Martínez (2 buts, 1 passe décisive) et Ermedin Demirovic (4 buts) seront à surveiller. Qui gagne ?",
     "⏰ PSG-Roma, choc de Ligue des champions : coup d’envoi dans 1 heure, à 21h ! Fabián Ruiz (4 buts, 1 passe décisive) et Donyell Malen (4 buts, 2 passes décisives) sont attendus. Qui gagne ?",
-    "⏰ À 21h, Atlético reçoit Viking en Ligue des champions : coup d’envoi dans 1 heure ! Zlatko Tripić (2 buts, 3 passes décisives) et Peter Christiansen (2 buts, 1 passe décisive) sont attendus. Qui aura le dernier mot ?"
+    "⏰ À 21h, Atlético reçoit Viking en Ligue des champions : coup d’envoi dans 1 heure ! Zlatko Tripić (2 buts, 3 passes décisives) et Peter Christiansen (2 buts, 1 passe décisive) sont attendus. Qui aura le dernier mot ?",
+    "⏰ Lille-Bayern, duel de poids lourds en Ligue des champions : rendez-vous à 21h, dans 1 heure ! Soriba Diaoune (2 buts), Harry Kane (4 buts, 3 passes décisives) et Jamal Musiala sont à suivre. Ton buteur ?",
+    "🔥 C'est bientôt : Inter × Stuttgart dans 1 heure !",
+    "⏰ À 21h, le PSG défie la Roma en Ligue des champions : coup d’envoi dans 1 heure. Ousmane Dembélé (3 buts, 3 passes décisives) et Anass Salah-Eddine sont à surveiller. Votre buteur ?",
+    "🚨 Atlético × Viking dans 1 heure (Ligue des champions) !"
   ]
 }
