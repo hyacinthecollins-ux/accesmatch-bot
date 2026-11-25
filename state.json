@@ -2772,6 +2772,58 @@
       "created": "2026-11-25T22:00:34Z",
       "fails": 1,
       "design": "crests-v1"
+    },
+    "r575409": {
+      "kind": "result",
+      "match_id": 575409,
+      "label": "CLUB BRUGGE-LIVERPOOL",
+      "kickoff": "2026-11-25T20:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/r575409-20261125.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-25T22:10:55Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "r575411": {
+      "kind": "result",
+      "match_id": 575411,
+      "label": "SPORTING CP-MAN UNITED",
+      "kickoff": "2026-11-25T20:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/r575411-20261125.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-25T22:10:55Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "r575408": {
+      "kind": "result",
+      "match_id": 575408,
+      "label": "PSG-ROMA",
+      "kickoff": "2026-11-25T20:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/r575408-20261125.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-25T22:10:55Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "f575408": {
+      "kind": "xr",
+      "match_id": 575408,
+      "label": "PSG-ROMA",
+      "kickoff": "2026-11-25T20:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/xr575408-20261125.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-25T22:10:55Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   },
   "squads": {
