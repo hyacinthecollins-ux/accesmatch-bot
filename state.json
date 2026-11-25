@@ -2730,7 +2730,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-25T22:00:34Z",
-      "fails": 1,
+      "fails": 2,
       "design": "crests-v1"
     },
     "r575410": {
@@ -2757,7 +2757,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-25T22:00:34Z",
-      "fails": 1,
+      "fails": 2,
       "design": "crests-v1"
     },
     "f575407": {
@@ -2770,7 +2770,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-25T22:00:34Z",
-      "fails": 1,
+      "fails": 2,
       "design": "crests-v1"
     },
     "r575409": {
@@ -2784,7 +2784,8 @@
       "due": null,
       "created": "2026-11-25T22:10:55Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "sent"
     },
     "r575411": {
       "kind": "result",
@@ -2797,7 +2798,8 @@
       "due": null,
       "created": "2026-11-25T22:10:55Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "sent"
     },
     "r575408": {
       "kind": "result",
@@ -2810,7 +2812,8 @@
       "due": null,
       "created": "2026-11-25T22:10:55Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "sent"
     },
     "f575408": {
       "kind": "xr",
@@ -2822,7 +2825,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-25T22:10:55Z",
-      "fails": 0,
+      "fails": 1,
       "design": "crests-v1"
     }
   },
@@ -3071,13 +3074,9 @@
       "stars": []
     }
   },
-  "llm_calls": 607,
-  "llm_posts": 162,
+  "llm_calls": 616,
+  "llm_posts": 166,
   "x_texts": [
-    "⏰ Sabah FK–Barça : coup d’envoi dans 1 heure, à 18h45 ! Raphinha, auteur de 4 buts en Ligue des champions cette saison, et Lamine Yamal (3 buts, 4 passes décisives) sont à surveiller. Qui gagne ?",
-    "⏰ Sabah FK reçoit le Barça en Ligue des champions : rendez-vous dans 1 heure, à 18h45 ! Raphinha (4 buts), Lamine Yamal (3 buts, 4 passes décisives) et Rodri seront à surveiller. Qui fait la différence ?",
-    "🚨 Sabah FK × Barça dans 1 heure (Ligue des champions) !",
-    "⏰ Lille reçoit le Bayern en Ligue des champions : coup d’envoi dans 1 heure, à 21h ! Soriba Diaoune (2 buts) et Harry Kane (4 buts, 3 passes décisives) seront à surveiller. Ton score ?",
     "⏰ Inter–Stuttgart, grand rendez-vous de Ligue des champions : coup d’envoi dans 1 heure, à 21h ! Lautaro Martínez (2 buts, 1 passe décisive) et Ermedin Demirovic (4 buts) seront à surveiller. Qui gagne ?",
     "⏰ PSG-Roma, choc de Ligue des champions : coup d’envoi dans 1 heure, à 21h ! Fabián Ruiz (4 buts, 1 passe décisive) et Donyell Malen (4 buts, 2 passes décisives) sont attendus. Qui gagne ?",
     "⏰ À 21h, Atlético reçoit Viking en Ligue des champions : coup d’envoi dans 1 heure ! Zlatko Tripić (2 buts, 3 passes décisives) et Peter Christiansen (2 buts, 1 passe décisive) sont attendus. Qui aura le dernier mot ?",
@@ -3103,6 +3102,10 @@
     "⏱️ Sabah FK 1-4 Barça : le Barça fait parler le score, et la tension a fini par retomber. Quel moment t’a le plus marqué ?",
     "⏱️ Inter 2-0 Stuttgart : l’Inter boucle la soirée avec deux buts d’avance. Le tableau d’affichage a fait le travail, les nerfs peuvent souffler ! Ton joueur du match ?",
     "⏱️ Lille 2-1 Bayern : Lille fait plier le Bayern ! Une victoire qui se savoure, face à un tel adversaire. Ton homme du match ?",
-    "⏱️ Atlético 2-0 Viking ! Ton joueur du match ? 👇"
+    "⏱️ Atlético 2-0 Viking ! Ton joueur du match ? 👇",
+    "⏱️ Inter s’impose 2-0 face à Stuttgart : soirée bien maîtrisée, les supporters peuvent savourer. Quel joueur t’a le plus convaincu ?",
+    "⏱️ Lille 2-1 Bayern ! Lille fait tomber le Bayern au bout d’un match sous tension. Qui a le plus pesé dans cette victoire ?",
+    "⏱️ Atlético 2-0 Viking ! L’Atlético s’offre une soirée européenne à la hauteur de l’affiche. Qui mérite le plus les projecteurs ?",
+    "⏱️ PSG 2-2 Roma ! Les deux équipes se quittent dos à dos : impossible de faire pencher la balance. Qui a le plus marqué ce match ?"
   ]
 }
