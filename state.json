@@ -2725,12 +2725,12 @@
       "match_id": 575406,
       "label": "INTER-STUTTGART",
       "kickoff": "2026-11-25T20:00:00Z",
-      "status": "poster_ready",
+      "status": "failed",
       "poster": "posters/xr575406-20261125.jpg",
       "post_id": null,
       "due": null,
       "created": "2026-11-25T22:00:34Z",
-      "fails": 2,
+      "fails": 3,
       "design": "crests-v1"
     },
     "r575410": {
@@ -2752,12 +2752,12 @@
       "match_id": 575410,
       "label": "LILLE-BAYERN",
       "kickoff": "2026-11-25T20:00:00Z",
-      "status": "poster_ready",
+      "status": "failed",
       "poster": "posters/xr575410-20261125.jpg",
       "post_id": null,
       "due": null,
       "created": "2026-11-25T22:00:34Z",
-      "fails": 2,
+      "fails": 3,
       "design": "crests-v1"
     },
     "f575407": {
@@ -2765,12 +2765,12 @@
       "match_id": 575407,
       "label": "ATLÉTICO-VIKING",
       "kickoff": "2026-11-25T20:00:00Z",
-      "status": "poster_ready",
+      "status": "failed",
       "poster": "posters/xr575407-20261125.jpg",
       "post_id": null,
       "due": null,
       "created": "2026-11-25T22:00:34Z",
-      "fails": 2,
+      "fails": 3,
       "design": "crests-v1"
     },
     "r575409": {
@@ -2825,7 +2825,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-25T22:10:55Z",
-      "fails": 1,
+      "fails": 2,
       "design": "crests-v1"
     }
   },
@@ -3074,13 +3074,9 @@
       "stars": []
     }
   },
-  "llm_calls": 616,
-  "llm_posts": 166,
+  "llm_calls": 626,
+  "llm_posts": 169,
   "x_texts": [
-    "⏰ Inter–Stuttgart, grand rendez-vous de Ligue des champions : coup d’envoi dans 1 heure, à 21h ! Lautaro Martínez (2 buts, 1 passe décisive) et Ermedin Demirovic (4 buts) seront à surveiller. Qui gagne ?",
-    "⏰ PSG-Roma, choc de Ligue des champions : coup d’envoi dans 1 heure, à 21h ! Fabián Ruiz (4 buts, 1 passe décisive) et Donyell Malen (4 buts, 2 passes décisives) sont attendus. Qui gagne ?",
-    "⏰ À 21h, Atlético reçoit Viking en Ligue des champions : coup d’envoi dans 1 heure ! Zlatko Tripić (2 buts, 3 passes décisives) et Peter Christiansen (2 buts, 1 passe décisive) sont attendus. Qui aura le dernier mot ?",
-    "⏰ Lille-Bayern, duel de poids lourds en Ligue des champions : rendez-vous à 21h, dans 1 heure ! Soriba Diaoune (2 buts), Harry Kane (4 buts, 3 passes décisives) et Jamal Musiala sont à suivre. Ton buteur ?",
     "🔥 C'est bientôt : Inter × Stuttgart dans 1 heure !",
     "⏰ À 21h, le PSG défie la Roma en Ligue des champions : coup d’envoi dans 1 heure. Ousmane Dembélé (3 buts, 3 passes décisives) et Anass Salah-Eddine sont à surveiller. Votre buteur ?",
     "🚨 Atlético × Viking dans 1 heure (Ligue des champions) !",
@@ -3106,6 +3102,10 @@
     "⏱️ Inter s’impose 2-0 face à Stuttgart : soirée bien maîtrisée, les supporters peuvent savourer. Quel joueur t’a le plus convaincu ?",
     "⏱️ Lille 2-1 Bayern ! Lille fait tomber le Bayern au bout d’un match sous tension. Qui a le plus pesé dans cette victoire ?",
     "⏱️ Atlético 2-0 Viking ! L’Atlético s’offre une soirée européenne à la hauteur de l’affiche. Qui mérite le plus les projecteurs ?",
-    "⏱️ PSG 2-2 Roma ! Les deux équipes se quittent dos à dos : impossible de faire pencher la balance. Qui a le plus marqué ce match ?"
+    "⏱️ PSG 2-2 Roma ! Les deux équipes se quittent dos à dos : impossible de faire pencher la balance. Qui a le plus marqué ce match ?",
+    "⏱️ Inter 2-0 Stuttgart ! Ton joueur du match ? 👇",
+    "⏱️ Lille 2-1 Bayern ! Lille fait chavirer l’affiche et garde le dernier mot. Quel joueur a fait basculer ce match ?",
+    "⏱️ Atlético 2-0 Viking ! Atlético transforme l’affiche en soirée de gala, sans laisser Viking trouver la faille. Qui a donné le ton ?",
+    "⏱️ PSG 2-2 Roma ! Personne ne lâche, personne ne gagne : le suspense a pris le volant jusqu’au bout. Qui mérite le titre de joueur du match ?"
   ]
 }
