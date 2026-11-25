@@ -2730,7 +2730,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-25T22:00:34Z",
-      "fails": 0,
+      "fails": 1,
       "design": "crests-v1"
     },
     "r575410": {
@@ -2744,7 +2744,8 @@
       "due": null,
       "created": "2026-11-25T22:00:34Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "sent"
     },
     "f575410": {
       "kind": "xr",
@@ -2756,7 +2757,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-25T22:00:34Z",
-      "fails": 0,
+      "fails": 1,
       "design": "crests-v1"
     },
     "f575407": {
@@ -2769,7 +2770,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-25T22:00:34Z",
-      "fails": 0,
+      "fails": 1,
       "design": "crests-v1"
     }
   },
@@ -3018,12 +3019,9 @@
       "stars": []
     }
   },
-  "llm_calls": 598,
-  "llm_posts": 160,
+  "llm_calls": 607,
+  "llm_posts": 162,
   "x_texts": [
-    "⚽ Ligue des champions : Lille × Bayern demain à 21h !",
-    "🔥 Inter × Stuttgart demain à 21h !",
-    "🔥 Atlético × Viking demain à 21h !",
     "⏰ Sabah FK–Barça : coup d’envoi dans 1 heure, à 18h45 ! Raphinha, auteur de 4 buts en Ligue des champions cette saison, et Lamine Yamal (3 buts, 4 passes décisives) sont à surveiller. Qui gagne ?",
     "⏰ Sabah FK reçoit le Barça en Ligue des champions : rendez-vous dans 1 heure, à 18h45 ! Raphinha (4 buts), Lamine Yamal (3 buts, 4 passes décisives) et Rodri seront à surveiller. Qui fait la différence ?",
     "🚨 Sabah FK × Barça dans 1 heure (Ligue des champions) !",
@@ -3050,6 +3048,9 @@
     "⏱️ Real Madrid 5-1 PSV : le Real Madrid donne à ce choc des allures de grande soirée, avec un score qui parle de lui-même. Ton joueur du match ?",
     "⏱️ Sabah FK 1-4 Barça : le Barça repart avec la victoire. Les filets ont tremblé, le score a tranché. Qui a marqué les esprits ?",
     "⏱️ Sabah FK 1-4 Barça : le Barça repart vainqueur de ce match de Ligue des champions. Qui a fait basculer la rencontre selon toi ?",
-    "⏱️ Sabah FK 1-4 Barça : le Barça fait parler le score, et la tension a fini par retomber. Quel moment t’a le plus marqué ?"
+    "⏱️ Sabah FK 1-4 Barça : le Barça fait parler le score, et la tension a fini par retomber. Quel moment t’a le plus marqué ?",
+    "⏱️ Inter 2-0 Stuttgart : l’Inter boucle la soirée avec deux buts d’avance. Le tableau d’affichage a fait le travail, les nerfs peuvent souffler ! Ton joueur du match ?",
+    "⏱️ Lille 2-1 Bayern : Lille fait plier le Bayern ! Une victoire qui se savoure, face à un tel adversaire. Ton homme du match ?",
+    "⏱️ Atlético 2-0 Viking ! Ton joueur du match ? 👇"
   ]
 }
