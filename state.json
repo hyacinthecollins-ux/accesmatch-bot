@@ -2820,12 +2820,12 @@
       "match_id": 575408,
       "label": "PSG-ROMA",
       "kickoff": "2026-11-25T20:00:00Z",
-      "status": "poster_ready",
+      "status": "failed",
       "poster": "posters/xr575408-20261125.jpg",
       "post_id": null,
       "due": null,
       "created": "2026-11-25T22:10:55Z",
-      "fails": 2,
+      "fails": 3,
       "design": "crests-v1"
     }
   },
@@ -3074,10 +3074,9 @@
       "stars": []
     }
   },
-  "llm_calls": 626,
-  "llm_posts": 169,
+  "llm_calls": 629,
+  "llm_posts": 170,
   "x_texts": [
-    "🔥 C'est bientôt : Inter × Stuttgart dans 1 heure !",
     "⏰ À 21h, le PSG défie la Roma en Ligue des champions : coup d’envoi dans 1 heure. Ousmane Dembélé (3 buts, 3 passes décisives) et Anass Salah-Eddine sont à surveiller. Votre buteur ?",
     "🚨 Atlético × Viking dans 1 heure (Ligue des champions) !",
     "🔥 C'est bientôt : Lille × Bayern dans 1 heure !",
@@ -3106,6 +3105,7 @@
     "⏱️ Inter 2-0 Stuttgart ! Ton joueur du match ? 👇",
     "⏱️ Lille 2-1 Bayern ! Lille fait chavirer l’affiche et garde le dernier mot. Quel joueur a fait basculer ce match ?",
     "⏱️ Atlético 2-0 Viking ! Atlético transforme l’affiche en soirée de gala, sans laisser Viking trouver la faille. Qui a donné le ton ?",
-    "⏱️ PSG 2-2 Roma ! Personne ne lâche, personne ne gagne : le suspense a pris le volant jusqu’au bout. Qui mérite le titre de joueur du match ?"
+    "⏱️ PSG 2-2 Roma ! Personne ne lâche, personne ne gagne : le suspense a pris le volant jusqu’au bout. Qui mérite le titre de joueur du match ?",
+    "⏱️ PSG 2-2 Roma ! Le partage est acté, personne n’a réussi à prendre le dessus. Qui a mis tout le monde d’accord ?"
   ]
 }
