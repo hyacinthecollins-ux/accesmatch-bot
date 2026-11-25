@@ -2704,7 +2704,8 @@
       "due": null,
       "created": "2026-11-25T19:50:29Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "sent"
     },
     "f575404": {
       "kind": "xr",
@@ -2716,7 +2717,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-25T19:50:29Z",
-      "fails": 0,
+      "fails": 1,
       "design": "crests-v1"
     }
   },
@@ -2965,10 +2966,9 @@
       "stars": []
     }
   },
-  "llm_calls": 592,
-  "llm_posts": 157,
+  "llm_calls": 594,
+  "llm_posts": 158,
   "x_texts": [
-    "🔥 Atlético × Viking demain à 21h !",
     "🚨 Sabah FK × Barça : rendez-vous demain à 18h45 !",
     "🚨 PSG × Roma : rendez-vous demain à 21h !",
     "⚽ Ligue des champions : Lille × Bayern demain à 21h !",
@@ -2997,6 +2997,7 @@
     "⏱️ Real Madrid 5-1 PSV : le Real Madrid transforme l’affiche en soirée de gala. Quel joueur mérite les projecteurs ?",
     "⏱️ Man City 2-2 Napoli ! Ton joueur du match ? 👇",
     "⏱️ Arsenal 1-1 Dortmund : le bras de fer s’achève sans vainqueur. Le score reste verrouillé à égalité, et la tension n’aura pas désigné de camp gagnant. Ton joueur du match ?",
-    "⏱️ Real Madrid 5-1 PSV : le Real Madrid donne à ce choc des allures de grande soirée, avec un score qui parle de lui-même. Ton joueur du match ?"
+    "⏱️ Real Madrid 5-1 PSV : le Real Madrid donne à ce choc des allures de grande soirée, avec un score qui parle de lui-même. Ton joueur du match ?",
+    "⏱️ Sabah FK 1-4 Barça : le Barça repart avec la victoire. Les filets ont tremblé, le score a tranché. Qui a marqué les esprits ?"
   ]
 }
