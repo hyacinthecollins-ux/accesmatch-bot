@@ -1,46 +1,5 @@
 {
   "items": {
-    "p559648": {
-      "kind": "preview",
-      "match_id": 559648,
-      "label": "PSG-OLYMPIQUE LYON",
-      "kickoff": "2026-10-26T19:30:00Z",
-      "status": "failed",
-      "poster": "posters/p559648-20261026.jpg",
-      "post_id": null,
-      "due": null,
-      "created": "2026-10-25T08:58:38Z",
-      "fails": 3,
-      "design": "crests-v1",
-      "tg": "sent"
-    },
-    "x559648": {
-      "kind": "xpreview",
-      "match_id": 559648,
-      "label": "PSG-OLYMPIQUE LYON",
-      "kickoff": "2026-10-26T19:30:00Z",
-      "status": "scheduled",
-      "poster": "posters/x559648-20261026.jpg",
-      "post_id": "6adee9b3b217de1f80548ce3",
-      "due": "2026-10-26T16:30:00Z",
-      "created": "2026-10-26T05:48:30Z",
-      "fails": 0,
-      "design": "crests-v1"
-    },
-    "r559648": {
-      "kind": "result",
-      "match_id": 559648,
-      "label": "PSG-OLYMPIQUE LYON",
-      "kickoff": "2026-10-26T19:30:00Z",
-      "status": "poster_ready",
-      "poster": "posters/r559648-20261026.jpg",
-      "post_id": null,
-      "due": null,
-      "created": "2026-10-26T23:02:44Z",
-      "fails": 0,
-      "design": "crests-v1",
-      "tg": "sent"
-    },
     "p559644": {
       "kind": "preview",
       "match_id": 559644,
