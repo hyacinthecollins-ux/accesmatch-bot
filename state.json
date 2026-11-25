@@ -2712,12 +2712,12 @@
       "match_id": 575404,
       "label": "SABAH FK-BARÇA",
       "kickoff": "2026-11-25T17:45:00Z",
-      "status": "poster_ready",
+      "status": "failed",
       "poster": "posters/xr575404-20261125.jpg",
       "post_id": null,
       "due": null,
       "created": "2026-11-25T19:50:29Z",
-      "fails": 2,
+      "fails": 3,
       "design": "crests-v1"
     }
   },
@@ -2966,10 +2966,9 @@
       "stars": []
     }
   },
-  "llm_calls": 596,
-  "llm_posts": 159,
+  "llm_calls": 598,
+  "llm_posts": 160,
   "x_texts": [
-    "🚨 PSG × Roma : rendez-vous demain à 21h !",
     "⚽ Ligue des champions : Lille × Bayern demain à 21h !",
     "🔥 Inter × Stuttgart demain à 21h !",
     "🔥 Atlético × Viking demain à 21h !",
@@ -2998,6 +2997,7 @@
     "⏱️ Arsenal 1-1 Dortmund : le bras de fer s’achève sans vainqueur. Le score reste verrouillé à égalité, et la tension n’aura pas désigné de camp gagnant. Ton joueur du match ?",
     "⏱️ Real Madrid 5-1 PSV : le Real Madrid donne à ce choc des allures de grande soirée, avec un score qui parle de lui-même. Ton joueur du match ?",
     "⏱️ Sabah FK 1-4 Barça : le Barça repart avec la victoire. Les filets ont tremblé, le score a tranché. Qui a marqué les esprits ?",
-    "⏱️ Sabah FK 1-4 Barça : le Barça repart vainqueur de ce match de Ligue des champions. Qui a fait basculer la rencontre selon toi ?"
+    "⏱️ Sabah FK 1-4 Barça : le Barça repart vainqueur de ce match de Ligue des champions. Qui a fait basculer la rencontre selon toi ?",
+    "⏱️ Sabah FK 1-4 Barça : le Barça fait parler le score, et la tension a fini par retomber. Quel moment t’a le plus marqué ?"
   ]
 }
