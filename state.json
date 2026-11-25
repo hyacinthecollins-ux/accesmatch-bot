@@ -2692,6 +2692,32 @@
       "created": "2026-11-24T22:00:33Z",
       "fails": 3,
       "design": "crests-v1"
+    },
+    "r575404": {
+      "kind": "result",
+      "match_id": 575404,
+      "label": "SABAH FK-BARÇA",
+      "kickoff": "2026-11-25T17:45:00Z",
+      "status": "poster_ready",
+      "poster": "posters/r575404-20261125.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-25T19:50:29Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "f575404": {
+      "kind": "xr",
+      "match_id": 575404,
+      "label": "SABAH FK-BARÇA",
+      "kickoff": "2026-11-25T17:45:00Z",
+      "status": "poster_ready",
+      "poster": "posters/xr575404-20261125.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-25T19:50:29Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   },
   "squads": {
