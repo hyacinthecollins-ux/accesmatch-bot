@@ -2839,7 +2839,8 @@
       "due": null,
       "created": "2026-11-26T00:00:28Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "sent"
     },
     "a560658": {
       "kind": "x24",
@@ -2851,13 +2852,13 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-26T00:00:28Z",
-      "fails": 0,
+      "fails": 1,
       "design": "crests-v1"
     }
   },
   "squads": {
     "61": {
-      "t": "2026-10-31T02:58:16Z",
+      "t": "2026-11-26T00:00:34Z",
       "stars": []
     },
     "66": {
@@ -3098,12 +3099,15 @@
     "5720": {
       "t": "2026-11-24T00:00:58Z",
       "stars": []
+    },
+    "351": {
+      "t": "2026-11-26T00:00:34Z",
+      "stars": []
     }
   },
-  "llm_calls": 629,
-  "llm_posts": 170,
+  "llm_calls": 631,
+  "llm_posts": 171,
   "x_texts": [
-    "⏰ À 21h, le PSG défie la Roma en Ligue des champions : coup d’envoi dans 1 heure. Ousmane Dembélé (3 buts, 3 passes décisives) et Anass Salah-Eddine sont à surveiller. Votre buteur ?",
     "🚨 Atlético × Viking dans 1 heure (Ligue des champions) !",
     "🔥 C'est bientôt : Lille × Bayern dans 1 heure !",
     "🔥 C'est bientôt : Inter × Stuttgart dans 1 heure !",
@@ -3132,6 +3136,7 @@
     "⏱️ Lille 2-1 Bayern ! Lille fait chavirer l’affiche et garde le dernier mot. Quel joueur a fait basculer ce match ?",
     "⏱️ Atlético 2-0 Viking ! Atlético transforme l’affiche en soirée de gala, sans laisser Viking trouver la faille. Qui a donné le ton ?",
     "⏱️ PSG 2-2 Roma ! Personne ne lâche, personne ne gagne : le suspense a pris le volant jusqu’au bout. Qui mérite le titre de joueur du match ?",
-    "⏱️ PSG 2-2 Roma ! Le partage est acté, personne n’a réussi à prendre le dessus. Qui a mis tout le monde d’accord ?"
+    "⏱️ PSG 2-2 Roma ! Le partage est acté, personne n’a réussi à prendre le dessus. Qui a mis tout le monde d’accord ?",
+    "🔥 Demain à 21h, Nottingham reçoit Chelsea en Premier League. Liam Delap (3 buts) et João Pedro (5 buts, 3 passes décisives) seront à surveiller. Les filets peuvent déjà se préparer… Qui trouve la cible ?"
   ]
 }
