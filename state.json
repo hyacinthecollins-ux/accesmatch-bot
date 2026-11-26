@@ -2860,12 +2860,12 @@
       "match_id": 560658,
       "label": "NOTTINGHAM-CHELSEA",
       "kickoff": "2026-11-27T20:00:00Z",
-      "status": "poster_ready",
+      "status": "failed",
       "poster": "posters/x560658-20261127.jpg",
       "post_id": null,
       "due": null,
       "created": "2026-11-26T17:02:34Z",
-      "fails": 2,
+      "fails": 3,
       "design": "crests-v1"
     }
   },
@@ -3118,10 +3118,9 @@
       "stars": []
     }
   },
-  "llm_calls": 641,
+  "llm_calls": 644,
   "llm_posts": 173,
   "x_texts": [
-    "🚨 Atlético × Viking dans 1 heure (Ligue des champions) !",
     "⏱️ Man City 2-2 Napoli : les deux équipes se neutralisent, et personne ne repart avec la couronne. Le partage des points est acté, les débats restent ouverts : qui vous a le plus convaincu ?",
     "⏱️ Arsenal 1-1 Dortmund : les deux équipes se quittent sur un nul, au bout d’un duel sous tension. Qui t’a le plus convaincu ?",
     "⏱️ Real Madrid 5-1 PSV : le Real Madrid s’offre une soirée de gala, avec un score qui fait office de feu d’artifice. Quel moment retiens-tu ?",
@@ -3150,6 +3149,7 @@
     "⚽ Premier League : Nottingham × Chelsea demain à 21h !",
     "🔥 Demain à 21h, Nottingham défie Chelsea en Premier League. Liam Delap (3 buts) et João Pedro (5 buts, 3 passes décisives) sont à surveiller. Les gardiens vont devoir garder les yeux ouverts… Qui trouve le chemin des filets ?",
     "⏰ Dans 1 heure, à 21h, Nottingham reçoit Chelsea en Premier League. Liam Delap (3 buts) et João Pedro (5 buts, 3 passes décisives) sont attendus. Qui va frapper le premier ?",
+    "⏰ Coup d'envoi dans 1 heure : Nottingham × Chelsea !",
     "⏰ Coup d'envoi dans 1 heure : Nottingham × Chelsea !"
   ]
 }
