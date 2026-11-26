@@ -2865,7 +2865,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-26T17:02:34Z",
-      "fails": 0,
+      "fails": 1,
       "design": "crests-v1"
     }
   },
@@ -3118,10 +3118,9 @@
       "stars": []
     }
   },
-  "llm_calls": 636,
-  "llm_posts": 172,
+  "llm_calls": 638,
+  "llm_posts": 173,
   "x_texts": [
-    "🔥 C'est bientôt : Inter × Stuttgart dans 1 heure !",
     "⏰ Coup d'envoi dans 1 heure : PSG × Roma !",
     "🚨 Atlético × Viking dans 1 heure (Ligue des champions) !",
     "⏱️ Man City 2-2 Napoli : les deux équipes se neutralisent, et personne ne repart avec la couronne. Le partage des points est acté, les débats restent ouverts : qui vous a le plus convaincu ?",
@@ -3150,6 +3149,7 @@
     "⏱️ PSG 2-2 Roma ! Le partage est acté, personne n’a réussi à prendre le dessus. Qui a mis tout le monde d’accord ?",
     "🔥 Demain à 21h, Nottingham reçoit Chelsea en Premier League. Liam Delap (3 buts) et João Pedro (5 buts, 3 passes décisives) seront à surveiller. Les filets peuvent déjà se préparer… Qui trouve la cible ?",
     "⚽ Premier League : Nottingham × Chelsea demain à 21h !",
-    "🔥 Demain à 21h, Nottingham défie Chelsea en Premier League. Liam Delap (3 buts) et João Pedro (5 buts, 3 passes décisives) sont à surveiller. Les gardiens vont devoir garder les yeux ouverts… Qui trouve le chemin des filets ?"
+    "🔥 Demain à 21h, Nottingham défie Chelsea en Premier League. Liam Delap (3 buts) et João Pedro (5 buts, 3 passes décisives) sont à surveiller. Les gardiens vont devoir garder les yeux ouverts… Qui trouve le chemin des filets ?",
+    "⏰ Dans 1 heure, à 21h, Nottingham reçoit Chelsea en Premier League. Liam Delap (3 buts) et João Pedro (5 buts, 3 passes décisives) sont attendus. Qui va frapper le premier ?"
   ]
 }
