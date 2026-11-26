@@ -2827,6 +2827,32 @@
       "created": "2026-11-25T22:10:55Z",
       "fails": 3,
       "design": "crests-v1"
+    },
+    "p560658": {
+      "kind": "preview",
+      "match_id": 560658,
+      "label": "NOTTINGHAM-CHELSEA",
+      "kickoff": "2026-11-27T20:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/p560658-20261127.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-26T00:00:28Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "a560658": {
+      "kind": "x24",
+      "match_id": 560658,
+      "label": "NOTTINGHAM-CHELSEA",
+      "kickoff": "2026-11-27T20:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/x560658-20261127.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-26T00:00:28Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   },
   "squads": {
