@@ -3001,6 +3001,19 @@
       "created": "2026-11-27T11:32:13Z",
       "fails": 3,
       "design": "crests-v1"
+    },
+    "h560655": {
+      "kind": "x1",
+      "match_id": 560655,
+      "label": "MAN UNITED-BRENTFORD",
+      "kickoff": "2026-11-28T15:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/x560655-20261128.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-27T12:02:29Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   },
   "squads": {
