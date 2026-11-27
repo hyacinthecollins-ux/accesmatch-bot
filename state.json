@@ -2988,6 +2988,19 @@
       "fails": 0,
       "design": "crests-v1",
       "tg": "sent"
+    },
+    "h565874": {
+      "kind": "x1",
+      "match_id": 565874,
+      "label": "HSV-BAYERN",
+      "kickoff": "2026-11-28T14:30:00Z",
+      "status": "poster_ready",
+      "poster": "posters/x565874-20261128.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-27T11:32:13Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   },
   "squads": {
