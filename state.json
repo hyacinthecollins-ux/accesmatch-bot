@@ -3038,7 +3038,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-27T16:52:34Z",
-      "fails": 1,
+      "fails": 2,
       "design": "crests-v1"
     },
     "h559614": {
@@ -3051,7 +3051,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-27T16:52:34Z",
-      "fails": 1,
+      "fails": 2,
       "design": "crests-v1"
     }
   },
@@ -3320,11 +3320,9 @@
       "stars": []
     }
   },
-  "llm_calls": 722,
-  "llm_posts": 188,
+  "llm_calls": 729,
+  "llm_posts": 189,
   "x_texts": [
-    "🔥 Demain à 21h, Nottingham défie Chelsea en Premier League. Liam Delap (3 buts) et João Pedro (5 buts, 3 passes décisives) sont à surveiller. Les gardiens vont devoir garder les yeux ouverts… Qui trouve le chemin des filets ?",
-    "⏰ Dans 1 heure, à 21h, Nottingham reçoit Chelsea en Premier League. Liam Delap (3 buts) et João Pedro (5 buts, 3 passes décisives) sont attendus. Qui va frapper le premier ?",
     "⏰ Coup d'envoi dans 1 heure : Nottingham × Chelsea !",
     "⏰ Coup d'envoi dans 1 heure : Nottingham × Chelsea !",
     "⚽ Bundesliga : HSV × Bayern demain à 15h30 !",
@@ -3352,6 +3350,8 @@
     "⏰ Dans une heure, à 18h30, Elche défie Atlético en Liga. Fer Niño (6 buts), Germán Valera (2 buts, 1 passe décisive) et Álex Baena (6 buts, 3 passes décisives) sont à surveiller. Qui gagne ?",
     "🔥 C'est bientôt : Elche × Atlético dans 1 heure !",
     "⏰ Le Mans reçoit Lille en Ligue 1 : coup d’envoi dans une heure, à 20h45 ! Louis Mafouta (5 buts) et Olivier Giroud (3 buts, 2 passes décisives) sont attendus. Qui sortira du vestiaire avec le sourire ?",
-    "⏰ PSG-Lorient en Ligue 1 : rendez-vous à 20h45, dans une heure ! Ferrán Torres (5 buts, 1 passe décisive), Marquinhos (3 buts) et Jean-Victor Makengo (2 buts, 1 passe décisive) seront à guetter. Votre buteur ?"
+    "⏰ PSG-Lorient en Ligue 1 : rendez-vous à 20h45, dans une heure ! Ferrán Torres (5 buts, 1 passe décisive), Marquinhos (3 buts) et Jean-Victor Makengo (2 buts, 1 passe décisive) seront à guetter. Votre buteur ?",
+    "🚨 Le Mans × Lille dans 1 heure (Ligue 1) !",
+    "⏰ PSG-Lorient, le compte à rebours s’accélère : coup d’envoi dans 1 heure, à 20h45 en Ligue 1. Ferrán Torres (5 buts, 1 passe), Marquinhos (3 buts) et Jean-Victor Makengo (2 buts, 1 passe) sont attendus. Qui gagne ?"
   ]
 }
