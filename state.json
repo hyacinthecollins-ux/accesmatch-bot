@@ -2879,7 +2879,8 @@
       "due": null,
       "created": "2026-11-27T00:02:39Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "sent"
     },
     "a565874": {
       "kind": "x24",
@@ -2891,7 +2892,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-27T00:02:39Z",
-      "fails": 0,
+      "fails": 1,
       "design": "crests-v1"
     },
     "p560655": {
@@ -2905,7 +2906,8 @@
       "due": null,
       "created": "2026-11-27T00:02:39Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "sent"
     },
     "a560655": {
       "kind": "x24",
@@ -2917,7 +2919,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-27T00:02:39Z",
-      "fails": 0,
+      "fails": 1,
       "design": "crests-v1"
     },
     "a564759": {
@@ -2930,7 +2932,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-27T00:02:39Z",
-      "fails": 0,
+      "fails": 1,
       "design": "crests-v1"
     },
     "a559617": {
@@ -2943,7 +2945,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-27T00:02:39Z",
-      "fails": 0,
+      "fails": 1,
       "design": "crests-v1"
     },
     "p559614": {
@@ -2957,7 +2959,8 @@
       "due": null,
       "created": "2026-11-27T00:02:39Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "sent"
     },
     "a559614": {
       "kind": "x24",
@@ -2969,7 +2972,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-27T00:02:39Z",
-      "fails": 0,
+      "fails": 1,
       "design": "crests-v1"
     },
     "p564762": {
@@ -2983,7 +2986,8 @@
       "due": null,
       "created": "2026-11-27T00:02:39Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "sent"
     }
   },
   "squads": {
@@ -3233,16 +3237,27 @@
     "351": {
       "t": "2026-11-26T00:00:34Z",
       "stars": []
+    },
+    "7": {
+      "t": "2026-11-27T00:02:49Z",
+      "stars": []
+    },
+    "402": {
+      "t": "2026-11-27T00:02:49Z",
+      "stars": []
+    },
+    "285": {
+      "t": "2026-11-27T00:02:49Z",
+      "stars": []
+    },
+    "525": {
+      "t": "2026-11-27T00:02:49Z",
+      "stars": []
     }
   },
-  "llm_calls": 644,
-  "llm_posts": 173,
+  "llm_calls": 661,
+  "llm_posts": 177,
   "x_texts": [
-    "⏱️ Man City 2-2 Napoli : les deux équipes se neutralisent, et personne ne repart avec la couronne. Le partage des points est acté, les débats restent ouverts : qui vous a le plus convaincu ?",
-    "⏱️ Arsenal 1-1 Dortmund : les deux équipes se quittent sur un nul, au bout d’un duel sous tension. Qui t’a le plus convaincu ?",
-    "⏱️ Real Madrid 5-1 PSV : le Real Madrid s’offre une soirée de gala, avec un score qui fait office de feu d’artifice. Quel moment retiens-tu ?",
-    "⏱️ Man City 2-2 Napoli : personne ne prend le dessus, les points sont partagés. Les défenses ont laissé le spectacle aux attaquants… elles leur doivent bien ça. Ton joueur du match ?",
-    "⏱️ Arsenal 1-1 Dortmund : les deux camps ont tenu bon jusqu’au bout, sans réussir à faire pencher la soirée. La tension était là, le vainqueur manque. Ton joueur du match ?",
     "⏱️ Real Madrid 5-1 PSV : le Real Madrid transforme l’affiche en soirée de gala. Quel joueur mérite les projecteurs ?",
     "⏱️ Man City 2-2 Napoli ! Ton joueur du match ? 👇",
     "⏱️ Arsenal 1-1 Dortmund : le bras de fer s’achève sans vainqueur. Le score reste verrouillé à égalité, et la tension n’aura pas désigné de camp gagnant. Ton joueur du match ?",
@@ -3267,6 +3282,11 @@
     "🔥 Demain à 21h, Nottingham défie Chelsea en Premier League. Liam Delap (3 buts) et João Pedro (5 buts, 3 passes décisives) sont à surveiller. Les gardiens vont devoir garder les yeux ouverts… Qui trouve le chemin des filets ?",
     "⏰ Dans 1 heure, à 21h, Nottingham reçoit Chelsea en Premier League. Liam Delap (3 buts) et João Pedro (5 buts, 3 passes décisives) sont attendus. Qui va frapper le premier ?",
     "⏰ Coup d'envoi dans 1 heure : Nottingham × Chelsea !",
-    "⏰ Coup d'envoi dans 1 heure : Nottingham × Chelsea !"
+    "⏰ Coup d'envoi dans 1 heure : Nottingham × Chelsea !",
+    "⚽ Bundesliga : HSV × Bayern demain à 15h30 !",
+    "🔥 Demain à 16h (heure de Paris), Man United reçoit Brentford en Premier League. Bruno Fernandes (4 buts, 2 passes décisives) et Bryan Mbeumo (4 buts) sont à surveiller. Qui fera la différence ?",
+    "🔥 Elche et Atlético se retrouvent en Liga demain à 18h30 (heure de Paris) : Fer Niño, 6 buts, et Álex Baena, 6 buts et 3 passes décisives, peuvent faire parler la poudre. Qui fera mouche ?",
+    "🔥 Le Mans accueille Lille en Ligue 1 demain à 20h45 (heure de Paris) : Louis Mafouta (5 buts) et Olivier Giroud (3 buts, 2 passes décisives) ont une soirée de gala à jouer. Qui fera trembler les filets ?",
+    "🔥 Le PSG reçoit Lorient demain à 20h45 (heure de Paris) en Ligue 1 : Ferrán Torres (5 buts, 1 passe décisive) et Jean-Victor Makengo (2 buts, 1 passe décisive) sont attendus. Qui fera la différence ?"
   ]
 }
