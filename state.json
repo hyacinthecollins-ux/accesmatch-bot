@@ -2887,12 +2887,12 @@
       "match_id": 565874,
       "label": "HSV-BAYERN",
       "kickoff": "2026-11-28T14:30:00Z",
-      "status": "poster_ready",
+      "status": "failed",
       "poster": "posters/x565874-20261128.jpg",
       "post_id": null,
       "due": null,
       "created": "2026-11-27T00:02:39Z",
-      "fails": 2,
+      "fails": 3,
       "design": "crests-v1"
     },
     "p560655": {
@@ -2914,12 +2914,12 @@
       "match_id": 560655,
       "label": "MAN UNITED-BRENTFORD",
       "kickoff": "2026-11-28T15:00:00Z",
-      "status": "poster_ready",
+      "status": "failed",
       "poster": "posters/x560655-20261128.jpg",
       "post_id": null,
       "due": null,
       "created": "2026-11-27T00:02:39Z",
-      "fails": 2,
+      "fails": 3,
       "design": "crests-v1"
     },
     "a564759": {
@@ -2927,12 +2927,12 @@
       "match_id": 564759,
       "label": "ELCHE-ATLÉTICO",
       "kickoff": "2026-11-28T17:30:00Z",
-      "status": "poster_ready",
+      "status": "failed",
       "poster": "posters/x564759-20261128.jpg",
       "post_id": null,
       "due": null,
       "created": "2026-11-27T00:02:39Z",
-      "fails": 2,
+      "fails": 3,
       "design": "crests-v1"
     },
     "a559617": {
@@ -2940,12 +2940,12 @@
       "match_id": 559617,
       "label": "LE MANS-LILLE",
       "kickoff": "2026-11-28T19:45:00Z",
-      "status": "poster_ready",
+      "status": "failed",
       "poster": "posters/x559617-20261128.jpg",
       "post_id": null,
       "due": null,
       "created": "2026-11-27T00:02:39Z",
-      "fails": 2,
+      "fails": 3,
       "design": "crests-v1"
     },
     "p559614": {
@@ -2967,12 +2967,12 @@
       "match_id": 559614,
       "label": "PSG-LORIENT",
       "kickoff": "2026-11-28T19:45:00Z",
-      "status": "poster_ready",
+      "status": "failed",
       "poster": "posters/x559614-20261128.jpg",
       "post_id": null,
       "due": null,
       "created": "2026-11-27T00:02:39Z",
-      "fails": 2,
+      "fails": 3,
       "design": "crests-v1"
     },
     "p564762": {
@@ -3255,14 +3255,9 @@
       "stars": []
     }
   },
-  "llm_calls": 676,
-  "llm_posts": 178,
+  "llm_calls": 689,
+  "llm_posts": 182,
   "x_texts": [
-    "⏱️ Sabah FK 1-4 Barça : le Barça repart vainqueur de ce match de Ligue des champions. Qui a fait basculer la rencontre selon toi ?",
-    "⏱️ Sabah FK 1-4 Barça : le Barça fait parler le score, et la tension a fini par retomber. Quel moment t’a le plus marqué ?",
-    "⏱️ Inter 2-0 Stuttgart : l’Inter boucle la soirée avec deux buts d’avance. Le tableau d’affichage a fait le travail, les nerfs peuvent souffler ! Ton joueur du match ?",
-    "⏱️ Lille 2-1 Bayern : Lille fait plier le Bayern ! Une victoire qui se savoure, face à un tel adversaire. Ton homme du match ?",
-    "⏱️ Atlético 2-0 Viking ! Ton joueur du match ? 👇",
     "⏱️ Inter s’impose 2-0 face à Stuttgart : soirée bien maîtrisée, les supporters peuvent savourer. Quel joueur t’a le plus convaincu ?",
     "⏱️ Lille 2-1 Bayern ! Lille fait tomber le Bayern au bout d’un match sous tension. Qui a le plus pesé dans cette victoire ?",
     "⏱️ Atlético 2-0 Viking ! L’Atlético s’offre une soirée européenne à la hauteur de l’affiche. Qui mérite le plus les projecteurs ?",
@@ -3287,6 +3282,11 @@
     "🚨 Man United × Brentford : rendez-vous demain à 16h !",
     "⚽ Liga : Elche × Atlético demain à 18h30 !",
     "🚨 Le Mans × Lille : rendez-vous demain à 20h45 !",
-    "⚽ Ligue 1 : PSG × Lorient demain à 20h45 !"
+    "⚽ Ligue 1 : PSG × Lorient demain à 20h45 !",
+    "🔥 Demain à 15h30, HSV reçoit le Bayern en Bundesliga : chaque duel comptera. Miro Muheim, 3 buts et 1 passe décisive, et Michael Olise, 6 buts et 3 passes décisives, seront à surveiller. Qui l’emporte ?",
+    "🔥 Les points sont en jeu : Man United reçoit Brentford demain à 16h en Premier League. Bruno Fernandes (4 buts, 2 passes décisives) et Keane Lewis-Potter (4 buts, 1 passe décisive) à surveiller. Qui fait la différence ?",
+    "⚽ Liga : Elche × Atlético demain à 18h30 !",
+    "🔥 Le Mans-Lille, c’est demain à 20h45 en Ligue 1 : le décor est posé pour un gros rendez-vous. Louis Mafouta, 5 buts, et Olivier Giroud, 3 buts, à surveiller. Qui repart avec la victoire ?",
+    "🔥 Le PSG et Lorient se retrouvent demain à 20h45 en Ligue 1 : chaque duel peut peser lourd. Ferrán Torres, 5 buts et 1 passe décisive, et Ousmane Dembélé seront à surveiller. Qui sort vainqueur ?"
   ]
 }
