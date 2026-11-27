@@ -2999,7 +2999,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-27T11:32:13Z",
-      "fails": 1,
+      "fails": 2,
       "design": "crests-v1"
     }
   },
@@ -3268,10 +3268,9 @@
       "stars": []
     }
   },
-  "llm_calls": 691,
+  "llm_calls": 694,
   "llm_posts": 183,
   "x_texts": [
-    "⏱️ Lille 2-1 Bayern ! Lille fait tomber le Bayern au bout d’un match sous tension. Qui a le plus pesé dans cette victoire ?",
     "⏱️ Atlético 2-0 Viking ! L’Atlético s’offre une soirée européenne à la hauteur de l’affiche. Qui mérite le plus les projecteurs ?",
     "⏱️ PSG 2-2 Roma ! Les deux équipes se quittent dos à dos : impossible de faire pencher la balance. Qui a le plus marqué ce match ?",
     "⏱️ Inter 2-0 Stuttgart ! Ton joueur du match ? 👇",
@@ -3300,6 +3299,7 @@
     "⚽ Liga : Elche × Atlético demain à 18h30 !",
     "🔥 Le Mans-Lille, c’est demain à 20h45 en Ligue 1 : le décor est posé pour un gros rendez-vous. Louis Mafouta, 5 buts, et Olivier Giroud, 3 buts, à surveiller. Qui repart avec la victoire ?",
     "🔥 Le PSG et Lorient se retrouvent demain à 20h45 en Ligue 1 : chaque duel peut peser lourd. Ferrán Torres, 5 buts et 1 passe décisive, et Ousmane Dembélé seront à surveiller. Qui sort vainqueur ?",
-    "⏰ HSV-Bayern en Bundesliga : coup d’envoi dans 1 heure, à 15h30 ! Miro Muheim (3 buts, 1 passe décisive) et Michael Olise (6 buts, 3 passes) à surveiller. Qui gagne ?"
+    "⏰ HSV-Bayern en Bundesliga : coup d’envoi dans 1 heure, à 15h30 ! Miro Muheim (3 buts, 1 passe décisive) et Michael Olise (6 buts, 3 passes) à surveiller. Qui gagne ?",
+    "🔥 C'est bientôt : HSV × Bayern dans 1 heure !"
   ]
 }
