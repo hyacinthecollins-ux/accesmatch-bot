@@ -3320,6 +3320,19 @@
       "created": "2026-11-28T17:02:37Z",
       "fails": 3,
       "design": "crests-v1"
+    },
+    "f564759": {
+      "kind": "xr",
+      "match_id": 564759,
+      "label": "ELCHE-ATLÉTICO",
+      "kickoff": "2026-11-28T17:30:00Z",
+      "status": "poster_ready",
+      "poster": "posters/xr564759-20261128.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-28T19:42:31Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   },
   "squads": {
