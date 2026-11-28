@@ -3233,12 +3233,12 @@
       "match_id": 560654,
       "label": "ARSENAL-MAN CITY",
       "kickoff": "2026-11-29T16:30:00Z",
-      "status": "poster_ready",
+      "status": "failed",
       "poster": "posters/x560654-20261129.jpg",
       "post_id": null,
       "due": null,
       "created": "2026-11-28T13:32:28Z",
-      "fails": 2,
+      "fails": 3,
       "design": "crests-v1"
     }
   },
@@ -3523,10 +3523,9 @@
       ]
     }
   },
-  "llm_calls": 811,
+  "llm_calls": 814,
   "llm_posts": 207,
   "x_texts": [
-    "🚨 Le Mans × Lille dans 1 heure (Ligue 1) !",
     "⏰ PSG-Lorient, le compte à rebours s’accélère : coup d’envoi dans 1 heure, à 20h45 en Ligue 1. Ferrán Torres (5 buts, 1 passe), Marquinhos (3 buts) et Jean-Victor Makengo (2 buts, 1 passe) sont attendus. Qui gagne ?",
     "⏰ Le Mans et Lille peaufinent les derniers détails : rendez-vous en Ligue 1 dans 1 heure, à 20h45 ! Louis Mafouta (5 buts) et Olivier Giroud (3 buts, 2 passes) seront à surveiller. Qui régale ce soir ?",
     "⏰ Coup d'envoi dans 1 heure : PSG × Lorient !",
@@ -3555,6 +3554,7 @@
     "⏰ Auxerre-OM en Ligue 1 : rendez-vous à 15h, dans 1 heure ! Cameron Archer (6 buts) et Amine Gouiri (8 buts, 4 passes décisives) peuvent faire basculer l’affiche. Qui fera mouche ?",
     "⏰ Auxerre-OM en Ligue 1 : dans 1 heure, le coup d’envoi sera donné à 15h ! Cameron Archer (6 buts) et Amine Gouiri (8 buts, 4 passes décisives) peuvent faire parler la poudre. Qui gagne ?",
     "⏰ Arsenal-Man City, choc de Premier League : rendez-vous dans 1 heure, à 17h30 ! Kai Havertz (3 buts, 1 passe décisive), Bukayo Saka (3 buts) et Erling Haaland (9 buts) peuvent frapper. Qui marquera le premier ?",
-    "⏰ Arsenal-Man City, l’affiche est lancée : coup d’envoi dans 1 heure, à 17h30 ! Kai Havertz (3 buts, 1 passe décisive), Bukayo Saka (3 buts) et Erling Haaland (9 buts) sont à surveiller. Qui gagne ?"
+    "⏰ Arsenal-Man City, l’affiche est lancée : coup d’envoi dans 1 heure, à 17h30 ! Kai Havertz (3 buts, 1 passe décisive), Bukayo Saka (3 buts) et Erling Haaland (9 buts) sont à surveiller. Qui gagne ?",
+    "⏰ Coup d'envoi dans 1 heure : Arsenal × Man City !"
   ]
 }
