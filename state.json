@@ -3253,6 +3253,32 @@
       "created": "2026-11-28T15:32:27Z",
       "fails": 3,
       "design": "crests-v1"
+    },
+    "r565874": {
+      "kind": "result",
+      "match_id": 565874,
+      "label": "HSV-BAYERN",
+      "kickoff": "2026-11-28T14:30:00Z",
+      "status": "poster_ready",
+      "poster": "posters/r565874-20261128.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-28T16:32:38Z",
+      "fails": 0,
+      "design": "crests-v1"
+    },
+    "f565874": {
+      "kind": "xr",
+      "match_id": 565874,
+      "label": "HSV-BAYERN",
+      "kickoff": "2026-11-28T14:30:00Z",
+      "status": "poster_ready",
+      "poster": "posters/xr565874-20261128.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-28T16:32:38Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   },
   "squads": {
