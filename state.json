@@ -3214,6 +3214,19 @@
       "created": "2026-11-28T09:02:39Z",
       "fails": 3,
       "design": "crests-v1"
+    },
+    "h559619": {
+      "kind": "x1",
+      "match_id": 559619,
+      "label": "AUXERRE-OM",
+      "kickoff": "2026-11-29T14:00:00Z",
+      "status": "poster_ready",
+      "poster": "posters/x559619-20261129.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-28T11:02:29Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   },
   "squads": {
