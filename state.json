@@ -3291,7 +3291,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-28T16:52:29Z",
-      "fails": 1,
+      "fails": 2,
       "design": "crests-v1"
     },
     "r560655": {
@@ -3305,7 +3305,8 @@
       "due": null,
       "created": "2026-11-28T17:02:37Z",
       "fails": 0,
-      "design": "crests-v1"
+      "design": "crests-v1",
+      "tg": "sent"
     },
     "f560655": {
       "kind": "xr",
@@ -3317,7 +3318,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-28T17:02:37Z",
-      "fails": 0,
+      "fails": 1,
       "design": "crests-v1"
     }
   },
@@ -3602,11 +3603,9 @@
       ]
     }
   },
-  "llm_calls": 831,
-  "llm_posts": 214,
+  "llm_calls": 837,
+  "llm_posts": 216,
   "x_texts": [
-    "🔥 Auxerre reçoit l’OM demain à 15h (heure de Paris) en Ligue 1 : chaque ballon pourrait faire basculer l’ambiance. Cameron Archer (6 buts) et Amine Gouiri (8 buts, 4 passes décisives) seront à suivre. Qui fera la différence ?",
-    "🔥 Arsenal × Man City demain à 17h30 !",
     "🔥 Dortmund × Leverkusen demain à 19h30 !",
     "🔥 Lyon-Monaco, duel de poids en Ligue 1 demain à 20h45 (heure de Paris) : Ernest Nuamah (4 buts, 1 passe décisive) et Paris Brunner (4 buts) sont à surveiller. Qui fera trembler les filets ?",
     "🔥 Everton-Liverpool demain à 13h (heure de Paris), en Premier League : chaque duel peut faire basculer ce match. Thierno Barry (6 buts, 1 passe décisive) et Alexander Isak (7 buts) seront à surveiller. Qui va marquer ?",
@@ -3634,6 +3633,8 @@
     "⏱️ HSV et Bayern se quittent sur un 0-0. Les filets sont restés muets : la tension, elle, n’a pas trouvé de sortie. Qui a le mieux maîtrisé ce bras de fer ?",
     "⏱️ HSV 0-0 Bayern. Aucun but pour départager les deux équipes : la tension est restée jusqu’au bout, sans faire trembler les filets. Qui a le mieux tenu son rang ?",
     "⏱️ HSV 0-0 Bayern. Au terme d’un match tendu, personne n’a trouvé la faille : les filets sont restés sages jusqu’au bout. Qui a le mieux résisté ?",
-    "⏰ Lyon-Monaco, choc de Ligue 1 : rendez-vous dans 1h, coup d’envoi à 20h45 ! Nuamah (4 buts, 1 passe), Athekame (2 buts, 3 passes) et Brunner (4 buts) sont attendus. Qui gagne ?"
+    "⏰ Lyon-Monaco, choc de Ligue 1 : rendez-vous dans 1h, coup d’envoi à 20h45 ! Nuamah (4 buts, 1 passe), Athekame (2 buts, 3 passes) et Brunner (4 buts) sont attendus. Qui gagne ?",
+    "⏱️ Man United 0-4 Brentford. Brentford frappe fort, Man United n’a pas trouvé la réponse. La victoire est nette : quel moment a tout changé selon toi ?",
+    "⏰ Plus qu’une heure avant Lyon-Monaco : coup d’envoi à 20h45 en Ligue 1. Nuamah (4 buts, 1 passe), Athekame (2 buts, 3 passes) et Brunner (4 buts) sont à surveiller. Votre buteur ?"
   ]
 }
