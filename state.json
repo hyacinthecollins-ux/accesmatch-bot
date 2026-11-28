@@ -3227,6 +3227,19 @@
       "created": "2026-11-28T11:02:29Z",
       "fails": 3,
       "design": "crests-v1"
+    },
+    "h560654": {
+      "kind": "x1",
+      "match_id": 560654,
+      "label": "ARSENAL-MAN CITY",
+      "kickoff": "2026-11-29T16:30:00Z",
+      "status": "poster_ready",
+      "poster": "posters/x560654-20261129.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-28T13:32:28Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   },
   "squads": {
