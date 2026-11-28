@@ -3278,7 +3278,7 @@
       "post_id": null,
       "due": null,
       "created": "2026-11-28T16:32:38Z",
-      "fails": 1,
+      "fails": 2,
       "design": "crests-v1"
     }
   },
@@ -3563,10 +3563,9 @@
       ]
     }
   },
-  "llm_calls": 824,
-  "llm_posts": 211,
+  "llm_calls": 826,
+  "llm_posts": 212,
   "x_texts": [
-    "⏱️ Nottingham 3-2 Chelsea ! Nottingham s’impose et Chelsea repart avec un tableau d’affichage qui ne lui fera pas de cadeau. Qui a fait basculer le match ?",
     "⏱️ Nottingham 3-2 Chelsea ! Nottingham s’offre la victoire, Chelsea devra revoir ses calculs : le tableau n’a pas été dupe. Qui a marqué le match ?",
     "🔥 Demain à 13h (heure de Paris), Everton reçoit Liverpool en Premier League. Thierno Barry (6 buts cette saison) et Alexander Isak (7) sont à surveiller. Qui trouvera la faille ?",
     "🔥 Auxerre reçoit l’OM demain à 15h (heure de Paris) en Ligue 1 : chaque ballon pourrait faire basculer l’ambiance. Cameron Archer (6 buts) et Amine Gouiri (8 buts, 4 passes décisives) seront à suivre. Qui fera la différence ?",
@@ -3595,6 +3594,7 @@
     "⏰ Dortmund-Leverkusen en Bundesliga : encore 1h24 avant le coup d’envoi à 19h30 ! Guirassy (3 buts, 2 passes décisives) et Schick (9 buts, 2 passes décisives) ont de quoi gâcher le dîner adverse. Qui va l’emporter ?",
     "⏰ Dortmund-Leverkusen, choc de Bundesliga : coup d’envoi dans 1h24, à 19h30 ! Guirassy (3 buts, 2 passes décisives) et Schick (9 buts, 2 passes décisives) sont attendus. Qui fera trembler les filets ?",
     "⏰ Dortmund-Leverkusen, choc de Bundesliga : coup d’envoi dans 1h24, à 19h30 ! Nmecha (5 buts), Guirassy (3 buts, 2 passes) et Schick (9 buts, 2 passes) sont à surveiller. Qui l’emporte, sans faire durer le suspense ?",
-    "⏱️ HSV et Bayern se quittent sur un 0-0. Les filets sont restés muets : la tension, elle, n’a pas trouvé de sortie. Qui a le mieux maîtrisé ce bras de fer ?"
+    "⏱️ HSV et Bayern se quittent sur un 0-0. Les filets sont restés muets : la tension, elle, n’a pas trouvé de sortie. Qui a le mieux maîtrisé ce bras de fer ?",
+    "⏱️ HSV 0-0 Bayern. Aucun but pour départager les deux équipes : la tension est restée jusqu’au bout, sans faire trembler les filets. Qui a le mieux tenu son rang ?"
   ]
 }
