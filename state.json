@@ -3100,12 +3100,12 @@
       "match_id": 560656,
       "label": "EVERTON-LIVERPOOL",
       "kickoff": "2026-11-29T12:00:00Z",
-      "status": "poster_ready",
+      "status": "failed",
       "poster": "posters/x560656-20261129.jpg",
       "post_id": null,
       "due": null,
       "created": "2026-11-28T00:02:28Z",
-      "fails": 2,
+      "fails": 3,
       "design": "crests-v1"
     },
     "p559619": {
@@ -3127,12 +3127,12 @@
       "match_id": 559619,
       "label": "AUXERRE-OM",
       "kickoff": "2026-11-29T14:00:00Z",
-      "status": "poster_ready",
+      "status": "failed",
       "poster": "posters/x559619-20261129.jpg",
       "post_id": null,
       "due": null,
       "created": "2026-11-28T00:02:28Z",
-      "fails": 2,
+      "fails": 3,
       "design": "crests-v1"
     },
     "p564766": {
@@ -3168,12 +3168,12 @@
       "match_id": 560654,
       "label": "ARSENAL-MAN CITY",
       "kickoff": "2026-11-29T16:30:00Z",
-      "status": "poster_ready",
+      "status": "failed",
       "poster": "posters/x560654-20261129.jpg",
       "post_id": null,
       "due": null,
       "created": "2026-11-28T00:02:28Z",
-      "fails": 2,
+      "fails": 3,
       "design": "crests-v1"
     },
     "a565872": {
@@ -3181,12 +3181,12 @@
       "match_id": 565872,
       "label": "DORTMUND-LEVERKUSEN",
       "kickoff": "2026-11-29T18:30:00Z",
-      "status": "poster_ready",
+      "status": "failed",
       "poster": "posters/x565872-20261129.jpg",
       "post_id": null,
       "due": null,
       "created": "2026-11-28T00:02:28Z",
-      "fails": 2,
+      "fails": 3,
       "design": "crests-v1"
     },
     "a559615": {
@@ -3194,12 +3194,12 @@
       "match_id": 559615,
       "label": "LYON-MONACO",
       "kickoff": "2026-11-29T19:45:00Z",
-      "status": "poster_ready",
+      "status": "failed",
       "poster": "posters/x559615-20261129.jpg",
       "post_id": null,
       "due": null,
       "created": "2026-11-28T00:02:28Z",
-      "fails": 2,
+      "fails": 3,
       "design": "crests-v1"
     }
   },
@@ -3484,14 +3484,9 @@
       ]
     }
   },
-  "llm_calls": 773,
-  "llm_posts": 199,
+  "llm_calls": 787,
+  "llm_posts": 200,
   "x_texts": [
-    "🔥 Le Mans-Lille, c’est demain à 20h45 en Ligue 1 : le décor est posé pour un gros rendez-vous. Louis Mafouta, 5 buts, et Olivier Giroud, 3 buts, à surveiller. Qui repart avec la victoire ?",
-    "🔥 Le PSG et Lorient se retrouvent demain à 20h45 en Ligue 1 : chaque duel peut peser lourd. Ferrán Torres, 5 buts et 1 passe décisive, et Ousmane Dembélé seront à surveiller. Qui sort vainqueur ?",
-    "⏰ HSV-Bayern en Bundesliga : coup d’envoi dans 1 heure, à 15h30 ! Miro Muheim (3 buts, 1 passe décisive) et Michael Olise (6 buts, 3 passes) à surveiller. Qui gagne ?",
-    "🔥 C'est bientôt : HSV × Bayern dans 1 heure !",
-    "🔥 C'est bientôt : HSV × Bayern dans 1 heure !",
     "⏰ Coup d'envoi dans 1 heure : Man United × Brentford !",
     "⏰ Man United reçoit Brentford en Premier League : rendez-vous à 16h, coup d’envoi dans 1 heure ! Bruno Fernandes (4 buts, 2 passes) et Keane Lewis-Potter (4 buts, 1 passe) sont à surveiller. Ton buteur ?",
     "⏰ Coup d'envoi dans 1 heure : Man United × Brentford !",
@@ -3516,6 +3511,11 @@
     "🚨 Auxerre × OM : rendez-vous demain à 15h !",
     "🔥 Arsenal-Man City, demain à 17h30 (heure de Paris) en Premier League : deux poids lourds, avec Kai Havertz (3 buts, 1 passe décisive) et Erling Haaland (9 buts) à surveiller. Qui frappe le premier ?",
     "🔥 La Bundesliga sort le grand jeu : Dortmund reçoit Leverkusen demain à 19h30 (heure de Paris). Felix Kalu Nmecha (5 buts) et Patrik Schick (9 buts, 2 passes décisives) sont à surveiller. Qui gagne ?",
+    "🔥 Lyon × Monaco demain à 20h45 !",
+    "🔥 Everton-Liverpool, demain à 13h (heure de Paris) en Premier League : Thierno Barry (6 buts, 1 passe décisive) et Alexander Isak (7 buts) sont attendus, Florian Wirtz à surveiller. Qui fera la différence ?",
+    "🚨 Auxerre × OM : rendez-vous demain à 15h !",
+    "🔥 Arsenal × Man City demain à 17h30 !",
+    "🔥 Dortmund × Leverkusen demain à 19h30 !",
     "🔥 Lyon × Monaco demain à 20h45 !"
   ]
 }
