@@ -3240,6 +3240,19 @@
       "created": "2026-11-28T13:32:28Z",
       "fails": 3,
       "design": "crests-v1"
+    },
+    "h565872": {
+      "kind": "x1",
+      "match_id": 565872,
+      "label": "DORTMUND-LEVERKUSEN",
+      "kickoff": "2026-11-29T18:30:00Z",
+      "status": "poster_ready",
+      "poster": "posters/x565872-20261129.jpg",
+      "post_id": null,
+      "due": null,
+      "created": "2026-11-28T15:32:27Z",
+      "fails": 0,
+      "design": "crests-v1"
     }
   },
   "squads": {
